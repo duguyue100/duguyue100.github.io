@@ -18,7 +18,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Random Thoughts : SVM and Softmax Regression</title>
+        <title>Random Thoughts : Softmax Regression</title>
         <meta name="description" content="A wiki of my random thoughts.">
 	
 	<link rel="stylesheet" type="text/css"
@@ -147,7 +147,7 @@
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-svm-softmax.html">SVM and Softmax Regression</a></li>
+            <li data-order=""><a href="/tut/tut-svm-softmax.html">Softmax Regression</a></li>
         
             
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
@@ -156,7 +156,7 @@
             <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
+            <li data-order=""><a href="/tut/tut-convnet.html">ConvNets</a></li>
         
             
             <li data-order=""><a href="/tut/tut-autoencoder.html">Auto-encoder</a></li>
@@ -197,12 +197,60 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h2>SVM and Softmax Regression
+    <h2>Softmax Regression
         
     </h2>
 </div>
 
+<p>Softmax Regression can be recognize as a feedforward layer with a softmax activation function. It’s extremely popular in Deep Learning Community for multi-class classification. It is a direct derivation from Logistic Regression. The output of each sample is a probability distribution \(p(y|x)\) where \(y\) is the label.</p>
 
+<p>We usually minimize Categorical Cross Entropy cost to train a Softmax Regression Layer. This cost can measure the cross entropy between predicted output and target output.</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">SoftmaxLayer</span>(Layer):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Softmax Layer</span><span style="color:black">&quot;&quot;&quot;</span></span>
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">__init__</span>(<span style="color:#069">self</span>, **kwargs):
+        <span style="color:#369;font-weight:bold">super</span>(SoftmaxLayer, <span style="color:#069">self</span>).__init__(**kwargs);
+        
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">apply</span>(<span style="color:#069">self</span>, X):
+        <span style="color:#080;font-weight:bold">return</span> nnfuns.softmax(<span style="color:#069">self</span>.apply_lin(X));
+    
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">predict</span>(<span style="color:#069">self</span>, X_out):
+        <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Predict label</span><span>
+</span><span>        </span><span>
+</span><span>        Parameters</span><span>
+</span><span>        ----------</span><span>
+</span><span>        X_out : matrix</span><span>
+</span><span>            input sample outputs, the size is (number of cases, number of classes)</span><span>
+</span><span>            </span><span>
+</span><span>        Returns</span><span>
+</span><span>        -------</span><span>
+</span><span>        Y_pred : vector</span><span>
+</span><span>            predicted label, the size is (number of cases)</span><span>
+</span><span>        </span><span style="color:black">&quot;&quot;&quot;</span></span>
+        
+        <span style="color:#080;font-weight:bold">return</span> T.argmax(X_out, axis=<span style="color:#00D">1</span>);
+    
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">error</span>(<span style="color:#069">self</span>, X_out, Y):
+        <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Mis-classified label</span><span>
+</span><span>        </span><span>
+</span><span>        Parameters</span><span>
+</span><span>        ----------</span><span>
+</span><span>        X_out : vector</span><span>
+</span><span>            predict labels, the size is (number of cases, number of classes)</span><span>
+</span><span>        Y : vector</span><span>
+</span><span>            correct labels, the size is (number of cases)</span><span>
+</span><span>            </span><span>
+</span><span>        Returns</span><span>
+</span><span>        -------</span><span>
+</span><span>        error : scalar</span><span>
+</span><span>            difference between predicted label and true label.</span><span>
+</span><span>        </span><span style="color:black">&quot;&quot;&quot;</span></span>
+    
+        <span style="color:#080;font-weight:bold">return</span> T.mean(T.neq(<span style="color:#069">self</span>.predict(X_out), Y));
+</pre></div>
+</div>
+</div>
 
 
                     </div>

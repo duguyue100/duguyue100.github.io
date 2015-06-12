@@ -147,7 +147,7 @@
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-svm-softmax.html">SVM and Softmax Regression</a></li>
+            <li data-order=""><a href="/tut/tut-svm-softmax.html">Softmax Regression</a></li>
         
             
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
@@ -156,7 +156,7 @@
             <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
+            <li data-order=""><a href="/tut/tut-convnet.html">ConvNets</a></li>
         
             
             <li data-order=""><a href="/tut/tut-autoencoder.html">Auto-encoder</a></li>
@@ -202,7 +202,153 @@
     </h2>
 </div>
 
+<p><strong>I assumed you have the knowledge of following topics:</strong></p>
 
+<ul>
+  <li><strong><a href="tut-layer.html">Feedforward Layer</a></strong></li>
+  <li><strong><a href="tut-svm-softmax.html">SVM and Softmax Regression</a></strong></li>
+  <li><strong><a href="tut-mlp.html">MLP Layers</a></strong></li>
+</ul>
+
+<p>Now we are finally going to construct a complete Feedforward Neural Network. All the layers are hooked up by a process of <em>Forward Propagation</em>. And later in this tutorial, we will train this network with <em>Backpropagation Algorithm</em>, a close derivation of Gradient-based Optimization.</p>
+
+<h3 id="forward-propagation">Forward Propagation</h3>
+
+<p>Forward Propagation, or usually <code>fprop</code> is rather simple in feedforward layer, you can take previous output as input and produce the output for next layer.</p>
+
+<p>A example implementation looks like this (<a href="https://github.com/duguyue100/telaugesa/blob/master/telaugesa/model.py#L24-L47">here</a>):</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">fprop</span>(<span style="color:#069">self</span>,
+              X):
+        <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Forward propagation</span><span>
+</span><span>        </span><span>
+</span><span>        Parameters</span><span>
+</span><span>        ----------</span><span>
+</span><span>        X : matrix or 4D tensor</span><span>
+</span><span>            input samples, the size is (number of cases, in_dim)</span><span>
+</span><span>            </span><span>
+</span><span>        Returns</span><span>
+</span><span>        -------</span><span>
+</span><span>        out : list</span><span>
+</span><span>            output list from each layer</span><span>
+</span><span>        </span><span style="color:black">&quot;&quot;&quot;</span></span>
+        
+        out=[];
+        level_out=X;
+        <span style="color:#080;font-weight:bold">for</span> k, layer <span style="color:#080;font-weight:bold">in</span> <span style="color:#369;font-weight:bold">enumerate</span>(<span style="color:#069">self</span>.layers):
+            
+            level_out=layer.apply(level_out);
+            
+            out.append(level_out);
+            
+        <span style="color:#080;font-weight:bold">return</span> out;
+</pre></div>
+</div>
+</div>
+
+<p>Here the loop iterates through all the layers and each layer is applied to previous layer’s output. Note that a uniform API is important when you develop a Deep Learning algorithm.</p>
+
+<h4 id="example-of-create-a-network-model">Example of create a network model</h4>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>layer_0=ReLULayer(in_dim=<span style="color:#00D">784</span>,
+                  out_dim=<span style="color:#00D">500</span>);
+layer_1=ReLULayer(in_dim=<span style="color:#00D">500</span>,
+                  out_dim=<span style="color:#00D">200</span>);
+layer_2=SoftmaxLayer(in_dim=<span style="color:#00D">200</span>,
+                     out_dim=<span style="color:#00D">10</span>);
+                                          
+model=FeedForward(layers=[layer_0, layer_1, layer_2]);
+</pre></div>
+</div>
+</div>
+
+<p>The above code describes 3 layers network, the first 2 layers are <code>ReLULayer</code> and the output layer is <code>SoftmaxLayer</code>.</p>
+
+<h3 id="cost-function">Cost Function</h3>
+
+<p>In order to train a neural network using gradient-based algorithm, there are two necessary parts: a cost function and a list of parameters that is subject to change. The simplest form <em>Stochastic Gradient Descent</em> (SGD) is updated by:</p>
+
+<script type="math/tex; mode=display">W^{*}=\frac{\partial}{\partial W} J</script>
+
+<p>where \(J\) is the function.</p>
+
+<p>A cost is defined as the difference between actual output and target output. Here since we use Softmax layer, we described here in code for categorical cross entropy cost (<a href="https://github.com/duguyue100/telaugesa/blob/master/telaugesa/cost.py#L50-L66">here</a>).</p>
+
+<p>Categorical cross entropy summarized cross entropy between 2 probability distribution (Remember that output of Softmax Layer is a probability distribution).</p>
+
+<script type="math/tex; mode=display">H(p,q)=-\sum_{x}p(x)\log(q(x))</script>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">categorical_cross_entropy_cost</span>(Y_hat, Y_star):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Categorical Cross Entropy Cost</span><span>
+</span><span>    </span><span>
+</span><span>    Parameters</span><span>
+</span><span>    ----------</span><span>
+</span><span>    Y_hat : tensor</span><span>
+</span><span>        predicted output of neural network</span><span>
+</span><span>    Y_star : tensor</span><span>
+</span><span>        optimal output of neural network</span><span>
+</span><span>        </span><span>
+</span><span>    Returns</span><span>
+</span><span>    -------</span><span>
+</span><span>    costs : scalar</span><span>
+</span><span>        cost of Categorical Cross Entropy Cost</span><span>
+</span><span>    </span><span style="color:black">&quot;&quot;&quot;</span></span>
+    
+    <span style="color:#080;font-weight:bold">return</span> T.nnet.categorical_crossentropy(Y_hat, Y_star).mean();
+</pre></div>
+</div>
+</div>
+
+<p>Besides the cost between actual output and target, we usually also introduce L1 and L2 regularization</p>
+
+<h3 id="summary-parameters">Summary Parameters</h3>
+
+<p>All relevant parameters in the model should be documented together in order to get the correct gradient for the entire model. You can use an one-liner to do this job:</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>    <span style="color:#B0B">@property</span>
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">params</span>(<span style="color:#069">self</span>):
+        <span style="color:#080;font-weight:bold">return</span> [param <span style="color:#080;font-weight:bold">for</span> layer <span style="color:#080;font-weight:bold">in</span> <span style="color:#069">self</span>.layers <span style="color:#080;font-weight:bold">if</span> <span style="color:#369;font-weight:bold">hasattr</span>(layer, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">params</span><span style="color:#710">'</span></span>) <span style="color:#080;font-weight:bold">for</span> param <span style="color:#080;font-weight:bold">in</span> layer.params];
+</pre></div>
+</div>
+</div>
+
+<p>The above code is what I used to zip all parameters in the neural network.</p>
+
+<h3 id="training-model">Training Model</h3>
+
+<p>Usually, writing a BP algorithm is tedious and complex. Since Theano introduced auto-gradient method based on computation graph search. This process is now easy and flexible to all kinds of use.</p>
+
+<p>You just need to call the function <code>grad(cost, params)</code>, it will compute a corresponding list of parameter gradients.</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>    gparams=T.grad(cost, params);
+    
+    <span style="color:#080;font-weight:bold">for</span> gparam, param <span style="color:#080;font-weight:bold">in</span> <span style="color:#369;font-weight:bold">zip</span>(gparams, params):
+        <span style="color:#080;font-weight:bold">if</span> method==<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">sgd</span><span style="color:#710">&quot;</span></span>:
+            updates[param]=param-learning_rate*gparam;
+</pre></div>
+</div>
+</div>
+
+<p>The above is a typical example of SGD.</p>
+
+<p>You can then use the updates of the parameters to build a training model:</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>train=theano.function(inputs=[idx],
+                      outputs=cost,
+                      updates=updates,
+                      givens={X: train_set_x[idx * batch_size: (idx + <span style="color:#00D">1</span>) * batch_size],
+                              y: train_set_y[idx * batch_size: (idx + <span style="color:#00D">1</span>) * batch_size]});
+</pre></div>
+</div>
+</div>
+
+<p>The above Theano function can be used to train all the parameters. Given a batch of data, the cost is used to update the parameters. the rest for the training is just to call this function on every training batch in number of epochs.</p>
 
 
                     </div>
