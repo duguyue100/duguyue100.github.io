@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : Convolutional Auto-encoder</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -196,11 +202,12 @@
     </h2>
 </div>
 
-<p>This post summarizes my idea of <em>Convolutional Auto-encoder</em> (ConvAE), which is the direct extension of Auto-encoder model by using ConvNet&#39;s architecture (they are essentially same actually considering same size filters). This post assumed that the reader understand how ConvNet works.</p>
+<p>This post summarizes my idea of <em>Convolutional Auto-encoder</em> (ConvAE), which is the direct extension of Auto-encoder model by using ConvNet’s architecture (they are essentially same actually considering same size filters). This post assumed that the reader understand how ConvNet works.</p>
 
-<h3 id="convae:-basic-theory">ConvAE: Basic Theory</h3>
+<h3 id="convae-basic-theory">ConvAE: Basic Theory</h3>
 
-<p>As any other Auto-encoder model, ConvAE tries to learn representation of input signal (primarily 2D data) by employing <em>encoder-decoder</em> paradigm. The basic structure is a ConvNet with 3 layers, but you can actually improve it to a symmetric network that has multiple layers. Conventionally, auto-encoders are forced to learn the entire receptive field since the constraints of MLP networks. Therefore, in order to learn filters of local receptive fields, people collect random image patches from the dataset and feed them in a MLP network. This is proven to be a good initialization of ConvNet in some early papers. The major advantage of ConvAE is that all the filters are traveling through all possible position of the image, so we don&#39;t have to collect the image patches manually. And the result filters can also be used by further supervised ConvNet models.</p>
+<p>As any other Auto-encoder model, ConvAE tries to learn representation of input signal (primarily 2D data) by employing <em>encoder-decoder</em> paradigm. The basic structure is a ConvNet with 3 layers, but you can actually improve it to a symmetric network that has multiple layers. Conventionally, auto-encoders are forced to learn the entire receptive field since the constraints of MLP networks. Therefore, in order to learn filters of local receptive fields, people collect random image patches from the dataset and feed them in a MLP network. This is proven to be a good initialization of ConvNet in some early papers. The major advantage of ConvAE is that all the filters are traveling through all possible position of the image, so we don’t have to collect the image patches manually. And the result filters can also be used by further supervised ConvNet models.</p>
+
 
 
                     </div>

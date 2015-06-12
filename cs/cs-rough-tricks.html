@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : Rough Tricks</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -196,91 +202,119 @@
     </h2>
 </div>
 
-<p>I&#39;m learning stuffs everyday. Sometimes when I had an idea, and tried to implement it, I will do lots of searches and trails in order to complete the mission. But I&#39;m a horrible person of memorizing these tricks (especially on web programming). Hence, I had this page to document all kinds of tricks related to programming and application design.</p>
+<p>I’m learning stuffs everyday. Sometimes when I had an idea, and tried to implement it, I will do lots of searches and trails in order to complete the mission. But I’m a horrible person of memorizing these tricks (especially on web programming). Hence, I had this page to document all kinds of tricks related to programming and application design.</p>
 
-<h3 id="highlight.js-language-highlighting-reference">highlight.js Language Highlighting Reference</h3>
+<h3 id="highlightjs-language-highlighting-reference">highlight.js Language Highlighting Reference</h3>
 
 <p>Sometimes I forget the shortcut of the programming language when I use code highlighting, you can find it <a href="http://highlightjs.readthedocs.org/en/latest/css-classes-reference.html">here</a>.</p>
 
 <h3 id="customize-html-table-style">Customize HTML Table Style</h3>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">table</span> <span class="p">{</span>
-    <span class="k">border-collapse</span><span class="o">:</span> <span class="k">collapse</span><span class="p">;</span>
-<span class="p">}</span>
 
-<span class="nt">table</span><span class="o">,</span> <span class="nt">th</span><span class="o">,</span> <span class="nt">td</span><span class="p">{</span>
-    <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#dedede</span><span class="p">;</span>
-<span class="p">}</span>
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#070;font-weight:bold">table</span> {
+    <span style="color:#606">border-collapse</span>: <span style="color:#088">collapse</span>;
+}
 
-<span class="nt">tr</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span><span class="p">{</span>
-    <span class="k">background</span><span class="o">:</span> <span class="m">#f2f2f2</span>
-<span class="p">}</span>
+<span style="color:#070;font-weight:bold">table</span>, <span style="color:#070;font-weight:bold">th</span>, <span style="color:#070;font-weight:bold">td</span>{
+    <span style="color:#606">border</span>: <span style="color:#60E">1px</span> <span style="color:#088">solid</span> <span style="color:#0A0">#dedede</span>;
+}
 
-<span class="nt">tr</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">odd</span><span class="o">)</span><span class="p">{</span>
-    <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span>
-<span class="p">}</span>
+<span style="color:#070;font-weight:bold">tr</span><span style="color:#00C;font-weight:bold">:nth-child</span>(<span style="color:#070;font-weight:bold">even</span>){
+    <span style="color:#606">background</span>: <span style="color:#0A0">#f2f2f2</span>
+}
 
-<span class="nc">.table</span> <span class="nt">th</span><span class="o">,</span> <span class="nc">.table</span> <span class="nt">td</span><span class="p">{</span>
-    <span class="k">padding</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span>
+<span style="color:#070;font-weight:bold">tr</span><span style="color:#00C;font-weight:bold">:nth-child</span>(<span style="color:#070;font-weight:bold">odd</span>){
+    <span style="color:#606">background</span>: <span style="color:#0A0">#fff</span>
+}
 
-<span class="nt">tr</span><span class="nd">:hover</span><span class="o">,</span> <span class="nt">td</span><span class="nd">:hover</span><span class="p">{</span>
-    <span class="k">background</span><span class="o">:</span> <span class="m">#ffff99</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
+<span style="color:#B06;font-weight:bold">.table</span> <span style="color:#070;font-weight:bold">th</span>, <span style="color:#B06;font-weight:bold">.table</span> <span style="color:#070;font-weight:bold">td</span>{
+    <span style="color:#606">padding</span>: <span style="color:#60E">20px</span>;
+}
+
+<span style="color:#070;font-weight:bold">tr</span><span style="color:#00C;font-weight:bold">:hover</span>, <span style="color:#070;font-weight:bold">td</span><span style="color:#00C;font-weight:bold">:hover</span>{
+    <span style="color:#606">background</span>: <span style="color:#0A0">#ffff99</span>;
+}
+</pre></div>
+</div>
+</div>
+
 <h3 id="use-google-maps">Use Google Maps</h3>
 
-<p>A good start of this is to check out Google&#39;s documentation: <a href="https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map">Add a Google Map to your website</a>. Here I give an example of include Google Map in GitHub pages.</p>
+<p>A good start of this is to check out Google’s documentation: <a href="https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map">Add a Google Map to your website</a>. Here I give an example of include Google Map in GitHub pages.</p>
 
 <p>First of all, you need to include Google Maps javascript in your layout:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://maps.googleapis.com/maps/api/js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</code></pre></div>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">https://maps.googleapis.com/maps/api/js</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
+</pre></div>
+</div>
+</div>
+
 <p>You can usually find layout scripts in <code>_layout</code> (<a href="https://github.com/duguyue100/duguyue100.github.io/blob/master/_layouts/default.html#L4">example</a>).</p>
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#map-canvas</span> <span class="p">{</span>
-    <span class="k">width</span><span class="o">:</span> <span class="m">500px</span><span class="p">;</span>
-    <span class="k">height</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#33D;font-weight:bold">#map-canvas</span> {
+    <span style="color:#606">width</span>: <span style="color:#60E">500px</span>;
+    <span style="color:#606">height</span>: <span style="color:#60E">400px</span>;
+}
+</pre></div>
+</div>
+</div>
+
 <p>Here you can set the width and height of the map that you want to display.</p>
 
 <p>Then, in you post, you need to define the specifics by implementing <code>initialize</code> function:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>
-    <span class="kd">function</span> <span class="nx">initialize</span><span class="p">()</span> <span class="p">{</span>
-        <span class="kd">var</span> <span class="nx">mapCanvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;map-canvas&#39;</span><span class="p">);</span>
-        <span class="kd">var</span> <span class="nx">mapOptions</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="nx">center</span><span class="o">:</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">LatLng</span><span class="p">(</span><span class="mf">44.5403</span><span class="p">,</span> <span class="o">-</span><span class="mf">78.5463</span><span class="p">),</span>
-            <span class="nx">zoom</span><span class="o">:</span> <span class="mi">8</span><span class="p">,</span>
-            <span class="nx">mapTypeId</span><span class="o">:</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">MapTypeId</span><span class="p">.</span><span class="nx">ROADMAP</span>
-        <span class="p">}</span>
-        <span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">Map</span><span class="p">(</span><span class="nx">mapCanvas</span><span class="p">,</span> <span class="nx">mapOptions</span><span class="p">)</span>
-    <span class="p">}</span>
-    <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">addDomListener</span><span class="p">(</span><span class="nb">window</span><span class="p">,</span> <span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="nx">initialize</span><span class="p">);</span>
-<span class="nt">&lt;/script&gt;</span>
-</code></pre></div>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#070;font-weight:bold">&lt;script&gt;</span>
+<span style="background-color:hsla(0,0%,0%,0.07);color:black">    <span style="color:#080;font-weight:bold">function</span> <span style="color:#06B;font-weight:bold">initialize</span>() {
+        <span style="color:#080;font-weight:bold">var</span> mapCanvas = document.getElementById(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">map-canvas</span><span style="color:#710">'</span></span>);
+        <span style="color:#080;font-weight:bold">var</span> mapOptions = {
+            <span style="color:#606">center</span>: <span style="color:#080;font-weight:bold">new</span> google.maps.LatLng(<span style="color:#60E">44.5403</span>, -<span style="color:#60E">78.5463</span>),
+            <span style="color:#606">zoom</span>: <span style="color:#00D">8</span>,
+            <span style="color:#606">mapTypeId</span>: google.maps.MapTypeId.ROADMAP
+        }
+        <span style="color:#080;font-weight:bold">var</span> map = <span style="color:#080;font-weight:bold">new</span> google.maps.Map(mapCanvas, mapOptions)
+    }
+    google.maps.event.addDomListener(window, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">load</span><span style="color:#710">'</span></span>, initialize);</span>
+<span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
+</pre></div>
+</div>
+</div>
+
 <p>In <code>mapOptions</code>, you can specify details of your desire map. You can find all supported options from <a href="https://developers.google.com/maps/documentation/javascript/reference#MapOptions">here</a>.</p>
 
 <p>After you did everything, you can simply include the map as follows:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;map-canvas&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-</code></pre></div>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#070;font-weight:bold">&lt;div</span> <span style="color:#b48">id</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">map-canvas</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/div&gt;</span>
+</pre></div>
+</div>
+</div>
+
 <h3 id="google-charts">Google Charts</h3>
 
-<p>I&#39;m looking for a way of visualizing my data in website, and then I found this nice API that is written by Google, namely Google Charts, you can find the full documentation <a href="https://developers.google.com/chart/interactive/docs/index">here</a></p>
+<p>I’m looking for a way of visualizing my data in website, and then I found this nice API that is written by Google, namely Google Charts, you can find the full documentation <a href="https://developers.google.com/chart/interactive/docs/index">here</a></p>
 
 <h3 id="setup-theano-in-osx">Setup Theano in OSX</h3>
 
-<p>Setting up Theano on my MacBook Pro used to be hard. I don&#39;t have a GPU on it, and apparently it&#39;s hard to get all requirements easily for OSX. I found the solution today, first, install <a href="http://continuum.io/downloads">Anaconda</a>, a nice python distribution that is designed for scientific computing.</p>
+<p>Setting up Theano on my MacBook Pro used to be hard. I don’t have a GPU on it, and apparently it’s hard to get all requirements easily for OSX. I found the solution today, first, install <a href="http://continuum.io/downloads">Anaconda</a>, a nice python distribution that is designed for scientific computing.</p>
 
 <p>However, you will notice that Anaconda itself does not offer you a maintained install of Theano. Then we have to get it from another place: <a href="https://binstar.org/">binstar</a>.</p>
 
 <p>You can install the OSX build Theano by:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">conda install -c https://conda.binstar.org/shoyer theano
-</code></pre></div>
+
+<pre><code>conda install -c https://conda.binstar.org/shoyer theano
+</code></pre>
+
 <h4 id="test-for-embedding-youtube-videos">Test for embedding YouTube Videos</h4>
 
 <div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nfWlot6h_JM" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nfWlot6h_JM" frameborder="0" allowfullscreen=""></iframe>
 </div>
 
 <h4 id="generate-a-pure-html-site">Generate a pure HTML site</h4>
+
 
 
                     </div>

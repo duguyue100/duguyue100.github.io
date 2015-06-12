@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : Using ctexart</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -196,58 +202,73 @@
     </h2>
 </div>
 
-<p>I&#39;m using \(\LaTeX\) for a quite long time. And for the most of time, I used it to typeset English materials. And since it gives me a way of writing non-ASCII characters using pure ASCII characters, I really enjoy it.</p>
+<p>I’m using \(\LaTeX\) for a quite long time. And for the most of time, I used it to typeset English materials. And since it gives me a way of writing non-ASCII characters using pure ASCII characters, I really enjoy it.</p>
 
-<p>Recently I&#39;m starting to use <code>ctexart</code> in order to typeset Chinese texts. And I found that there are many configurations I needed to tune in order to get the right effects (which one isn&#39;t?). Well, actually it&#39;s not a fair opinion to say to <code>ctexart</code>. It has simplified the entire workflow already. At least, I can use all the standard packages without a single problem.</p>
+<p>Recently I’m starting to use <code>ctexart</code> in order to typeset Chinese texts. And I found that there are many configurations I needed to tune in order to get the right effects (which one isn’t?). Well, actually it’s not a fair opinion to say to <code>ctexart</code>. It has simplified the entire workflow already. At least, I can use all the standard packages without a single problem.</p>
 
 <p>You can find a complete documentation from <a href="http://www.ctex.org/PackageCTeX/files.xml?action=download&amp;file=ctex.pdf">here</a>.</p>
 
 <h3 id="select-the-right-compiler">Select The Right Compiler</h3>
 
-<p>In principle, on major Linux distributions and Windows, you can use most of compiling sequence to work with <code>ctexart</code>. However, the way of OSX handling fonts is a nightmare. This particular situation made me to use <code>XeLaTeX</code> instead. Honestly, I don&#39;t have any hard feeling of using <code>XeLaTeX</code>, I&#39;m just feeling more comfortable when I use <code>LaTeX</code> or <code>PDFLaTeX</code> as my default compiling sequence.</p>
+<p>In principle, on major Linux distributions and Windows, you can use most of compiling sequence to work with <code>ctexart</code>. However, the way of OSX handling fonts is a nightmare. This particular situation made me to use <code>XeLaTeX</code> instead. Honestly, I don’t have any hard feeling of using <code>XeLaTeX</code>, I’m just feeling more comfortable when I use <code>LaTeX</code> or <code>PDFLaTeX</code> as my default compiling sequence.</p>
 
 <h3 id="configure-fonts-on-osx">Configure Fonts on OSX</h3>
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\setCJKmainfont</span><span class="na">[BoldFont=STHeiti, ItalicFont=STKaiti]</span><span class="nb">{</span>STSong<span class="nb">}</span>
-<span class="k">\setCJKsansfont</span><span class="na">[BoldFont=STHeiti]</span><span class="nb">{</span>STXihei<span class="nb">}</span>
-<span class="k">\setCJKmonofont</span><span class="nb">{</span>STFangsong<span class="nb">}</span>
-</code></pre></div>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>\setCJKmainfont[BoldFont=STHeiti, ItalicFont=STKaiti]{STSong}
+\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+\setCJKmonofont{STFangsong}
+</pre></div>
+</div>
+</div>
+
 <h3 id="define-a-custom-framed-box">Define a Custom Framed Box</h3>
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\newcounter</span><span class="nb">{</span>faqbox<span class="nb">}</span>[section]
-<span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\thefaqbox</span><span class="nb">}{</span><span class="k">\thechapter</span>.<span class="k">\arabic</span><span class="nb">{</span>faqbox<span class="nb">}}</span>
-<span class="k">\usepackage</span><span class="na">[framemethod=TikZ]</span><span class="nb">{</span>mdframed<span class="nb">}</span>
-<span class="k">\newenvironment</span><span class="nb">{</span>faqbox<span class="nb">}</span>[1][]<span class="nb">{</span>
-    <span class="k">\refstepcounter</span><span class="nb">{</span>faqbox<span class="nb">}</span>
-    <span class="k">\begin</span><span class="nb">{</span>mdframed<span class="nb">}</span>[
-        frametitle=<span class="nb">{</span>FAQ <span class="k">\thefaqbox\ </span>#1<span class="nb">}</span>,
-        skipabove=<span class="k">\baselineskip</span> plus 2pt minus 1pt,
-        skipbelow=<span class="k">\baselineskip</span> plus 2pt minus 1pt,
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>\newcounter{faqbox}[section]
+\renewcommand{\thefaqbox}{\thechapter.\arabic{faqbox}}
+\usepackage[framemethod=TikZ]{mdframed}
+\newenvironment{faqbox}[1][]{
+    \refstepcounter{faqbox}
+    \begin{mdframed}[
+        frametitle={FAQ \thefaqbox\ #1},
+        skipabove=\baselineskip plus 2pt minus 1pt,
+        skipbelow=\baselineskip plus 2pt minus 1pt,
         linewidth=0.5pt,
         frametitlerule=true,
         frametitlebackgroundcolor=gray!30
     ]
-<span class="nb">}{</span>
-    <span class="k">\end</span><span class="nb">{</span>mdframed<span class="nb">}</span>
-<span class="nb">}</span>
-</code></pre></div>
+}{
+    \end{mdframed}
+}
+</pre></div>
+</div>
+</div>
+
 <h3 id="custom-chapter-display-style">Custom Chapter Display Style</h3>
 
-<p>You can use <code>titlesec</code> to redefine the specific style of your chapter&#39;s style.</p>
-<div class="highlight"><pre><code class="language-latex" data-lang="latex"><span class="k">\titleformat</span>
-<span class="nb">{</span><span class="k">\chapter</span><span class="nb">}</span> <span class="c">% command</span>
-[display] <span class="c">% shape</span>
-<span class="nb">{</span><span class="k">\bfseries\Large</span><span class="nb">}</span> <span class="c">% format</span>
-<span class="nb">{</span>第 <span class="k">\ </span><span class="nb">{</span><span class="k">\Huge\thechapter</span><span class="nb">}</span> 章<span class="nb">}</span> <span class="c">% label</span>
-<span class="nb">{</span>0.5ex<span class="nb">}</span> <span class="c">% sep</span>
-<span class="nb">{</span>
-    <span class="k">\rule</span><span class="nb">{</span><span class="k">\textwidth</span><span class="nb">}{</span>1pt<span class="nb">}</span>
-    <span class="k">\vspace</span><span class="nb">{</span>1ex<span class="nb">}</span>
-    <span class="c">%\centering</span>
-<span class="nb">}</span> <span class="c">% before-code</span>
+<p>You can use <code>titlesec</code> to redefine the specific style of your chapter’s style.</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>\titleformat
+{\chapter} % command
+[display] % shape
+{\bfseries\Large} % format
+{第 \ {\Huge\thechapter} 章} % label
+{0.5ex} % sep
+{
+    \rule{\textwidth}{1pt}
+    \vspace{1ex}
+    %\centering
+} % before-code
 [
-<span class="c">%\vspace{-0.5ex}%</span>
-<span class="c">%\rule{\textwidth}{0.3pt}</span>
-] <span class="c">% after-code</span>
-</code></pre></div>
+%\vspace{-0.5ex}%
+%\rule{\textwidth}{0.3pt}
+] % after-code
+</pre></div>
+</div>
+</div>
+
 
                     </div>
                 

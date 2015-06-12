@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : ConvNetJS</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -196,19 +202,24 @@
     </h2>
 </div>
 
-<p>I&#39;m a fan of using Machine Learning everywhere. And few months ago, when I learned there are some teams that are working on libraries that can run on web browsers, I checked them right away. There are few popular choices: <a href="http://cs.stanford.edu/people/karpathy/convnetjs/index.html">ConvNetJS</a>, <a href="http://deeplearning4j.org/">DeepLearning4j</a>, <a href="https://github.com/mil-tokyo/sushi">sushi</a> and its sisters <a href="https://github.com/mil-tokyo/sashimi">sashimi</a>, <a href="https://github.com/mil-tokyo/sukiyaki">sukiyaki</a>.</p>
+<p>I’m a fan of using Machine Learning everywhere. And few months ago, when I learned there are some teams that are working on libraries that can run on web browsers, I checked them right away. There are few popular choices: <a href="http://cs.stanford.edu/people/karpathy/convnetjs/index.html">ConvNetJS</a>, <a href="http://deeplearning4j.org/">DeepLearning4j</a>, <a href="https://github.com/mil-tokyo/sushi">sushi</a> and its sisters <a href="https://github.com/mil-tokyo/sashimi">sashimi</a>, <a href="https://github.com/mil-tokyo/sukiyaki">sukiyaki</a>.</p>
 
-<p>Among these choices, I love the idea of ConvNetJS, and now I finally got the chance and time to use and hack it. This page is not just a tutorial for beginners, but also a chance for me to study. And I&#39;m not gonna lie, I&#39;m a terrible HTML coder, all the knowledge I knew about HTML is from a big book from Apache that I read approximately 7 years ago.</p>
+<p>Among these choices, I love the idea of ConvNetJS, and now I finally got the chance and time to use and hack it. This page is not just a tutorial for beginners, but also a chance for me to study. And I’m not gonna lie, I’m a terrible HTML coder, all the knowledge I knew about HTML is from a big book from Apache that I read approximately 7 years ago.</p>
 
 <p>The future belongs to your internet and browser, not some sort of big-ass server. Billions of computers out there are the most powerful computing resources on this planet.</p>
 
 <h3 id="how-to-start">How to start</h3>
 
 <p>The reason why I love ConvNetJS is because it offered a clean design. If you are just a user that wants to use it, then you might be interested in its core build <a href="http://cs.stanford.edu/people/karpathy/convnetjs/build/convnet-min.js">convnet-min.js</a>. Once you include it in your HTML source, then you are ready to go:</p>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- some script here --&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;/path/to/convnet-min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</code></pre></div>
-<p>On the another hand, I suggest you to fork the GitHub repo if you planned to make some changes, it&#39;s <a href="https://github.com/karpathy/convnetjs">here</a>.</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#777">&lt;!-- some script here --&gt;</span>
+<span style="color:#070;font-weight:bold">&lt;script</span> <span style="color:#b48">src</span>=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">/path/to/convnet-min.js</span><span style="color:#710">&quot;</span></span><span style="color:#070;font-weight:bold">&gt;</span><span style="color:#070;font-weight:bold">&lt;/script&gt;</span>
+</pre></div>
+</div>
+</div>
+
+<p>On the another hand, I suggest you to fork the GitHub repo if you planned to make some changes, it’s <a href="https://github.com/karpathy/convnetjs">here</a>.</p>
 
 <h3 id="start-with-a-simple-test">Start with a simple test</h3>
 

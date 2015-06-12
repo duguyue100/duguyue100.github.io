@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : Interpretive Models</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -203,18 +209,16 @@
 <p>Efficient Coding Hypothesis:</p>
 
 <blockquote>
-<p>Suppose the goal is to <em>represent images as faithfully and efficiently as possible</em> using neurons with receptive \(RF_1\), \(RF_1\), etc.</p>
+  <p>Suppose the goal is to <em>represent images as faithfully and efficiently as possible</em> using neurons with receptive \(RF_1\), \(RF_1\), etc.</p>
 </blockquote>
 
 <p>Given Image \(I\), we can <em>reconstruct</em> \(I\) using neural responses \(r_{1}\), \(r_{2}\), ..:</p>
 
-<p>$$
-\hat{I}=\sum_{i}RF_{i} r_{i}
-$$</p>
+<script type="math/tex; mode=display">\hat{I}=\sum\_{i}RF\_{i} r\_{i}</script>
 
 <p>Idea is what are the \(RF_{i}\) that <em>minimize</em> the total squared pixelwise <em>errors</em> between \(I\) and \(\hat{I}\) and are as <em>independent</em> as possible?</p>
 
-<p>One can start out with random \(RF_{i}\) and run <em>efficient coding algorithm</em> on <em>natural image patches</em><em>, you can use Sparse Coding, ICA (independent component analysis)  or predictive coding. The brain may be trying to find _faithful and efficient</em> representation of an animal&#39;s natural environment.</p>
+<p>One can start out with random \(RF_{i}\) and run <em>efficient coding algorithm</em> on <em>natural image patches__, you can use Sparse Coding, ICA (independent component analysis)  or predictive coding. The brain may be trying to find _faithful and efficient</em> representation of an animal’s natural environment.</p>
 
 
                     </div>

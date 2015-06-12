@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : Neuron</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -199,9 +205,15 @@
 <h3 id="neuron-doctrine">Neuron Doctrine</h3>
 
 <ul>
-<li><p>The neuron is the fundamental structural &amp; functional unit of the brain.</p></li>
-<li><p>Neurons are discrete cells and not continuous with other cells.</p></li>
-<li><p>Information flows from the <em>dendrites</em> to the <em>axon</em> via the cell body (<em>soma</em>).</p></li>
+  <li>
+    <p>The neuron is the fundamental structural &amp; functional unit of the brain.</p>
+  </li>
+  <li>
+    <p>Neurons are discrete cells and not continuous with other cells.</p>
+  </li>
+  <li>
+    <p>Information flows from the <em>dendrites</em> to the <em>axon</em> via the cell body (<em>soma</em>).</p>
+  </li>
 </ul>
 
 <h3 id="idealized-neuron">Idealized Neuron</h3>
@@ -211,12 +223,12 @@
 <div>
 <p>
 <center>
-    <img class="img-responsive" src="http://rt.dgyblog.com/images/idealized_neuron.png" alt="" width="60%">
+    <img class="img-responsive" src="http://rt.dgyblog.com/images/idealized_neuron.png" alt="" width="60%" />
 </center>
 </p>
 </div>
 
-<p>A neuron is nothing but a &quot;leaky bag of charged liquid&quot;. Contents of the neuron enclosed within a <em>cell membrane</em>. Cell membrane is a <em>lipid</em> bilayer that is <em>impermeable</em> to charged ion species such as \(\text{Na}^{+}\), \(\text{Cl}^{-}\), \(\text{K}^{+}\). <em>Ionic channels</em> embedded in membrane allow ions to flow in or out.</p>
+<p>A neuron is nothing but a “leaky bag of charged liquid”. Contents of the neuron enclosed within a <em>cell membrane</em>. Cell membrane is a <em>lipid</em> bilayer that is <em>impermeable</em> to charged ion species such as \(\text{Na}^{+}\), \(\text{Cl}^{-}\), \(\text{K}^{+}\). <em>Ionic channels</em> embedded in membrane allow ions to flow in or out.</p>
 
 <h3 id="ionic-channels">Ionic Channels</h3>
 
@@ -225,14 +237,20 @@
 <p>Ionic channels in membranes are proteins that are <em>selective</em> and allow <em>only specific ions</em> to pass through. For example, one ionic channel may only pass \(\text{Na}^{+}\) but not \(\text{K}^{+}\) or \(\text{Cl}^{-}\). Ionic channels are <em>gated</em>, and there are typically 3 types of gated ionic channels:</p>
 
 <ul>
-<li><p><strong>Voltage-gated</strong>: probability of opening depends on membrane voltage.</p></li>
-<li><p><strong>Chemically-gated</strong>: Binding to a chemical causes to open.</p></li>
-<li><p><strong>Mechanically-gated</strong>: Sensitive to pressure or stretch.</p></li>
+  <li>
+    <p><strong>Voltage-gated</strong>: probability of opening depends on membrane voltage.</p>
+  </li>
+  <li>
+    <p><strong>Chemically-gated</strong>: Binding to a chemical causes to open.</p>
+  </li>
+  <li>
+    <p><strong>Mechanically-gated</strong>: Sensitive to pressure or stretch.</p>
+  </li>
 </ul>
 
 <p>Gated channels allow neuronal signaling. Inputs from other neurons causes <em>chemically-gated channels</em> open and then changes in local membrane potential is occurred.</p>
 
-<p>This in turn causes opening/closing of <em>voltage-gated channels</em> in dendrites, body and axon, resulting <em>depolarization</em> (positive change in voltage) or <em>hyperpolarization</em> (negative change in voltage). Strong depolarization causes a spike or &quot;action potential&quot;.</p>
+<p>This in turn causes opening/closing of <em>voltage-gated channels</em> in dendrites, body and axon, resulting <em>depolarization</em> (positive change in voltage) or <em>hyperpolarization</em> (negative change in voltage). Strong depolarization causes a spike or “action potential”.</p>
 
 <h3 id="action-potential">Action Potential</h3>
 
@@ -241,14 +259,14 @@
 <div>
 <p>
 <center>
-    <img class="img-responsive" src="http://rt.dgyblog.com/images/action_potential.png" alt="" width="60%">
+    <img class="img-responsive" src="http://rt.dgyblog.com/images/action_potential.png" alt="" width="60%" />
 </center>
 </p>
 </div>
 
 <p>The spike propagates along the axon.</p>
 
-<p>Myelin due to oligodendrocytes (glial cells) wrap axons and enable <em>fast long-range spike communication</em>. Action potential &quot;hops&quot; from one non-myelinated region (node of ranvier) to the next (<em>saltatory conduction</em>). This &quot;active wire&quot; allows <em>lossless signal propagation</em>.</p>
+<p>Myelin due to oligodendrocytes (glial cells) wrap axons and enable <em>fast long-range spike communication</em>. Action potential “hops” from one non-myelinated region (node of ranvier) to the next (<em>saltatory conduction</em>). This “active wire” allows <em>lossless signal propagation</em>.</p>
 
 
                     </div>

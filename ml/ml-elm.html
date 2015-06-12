@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : Extreme Learning Machine</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -196,55 +202,55 @@
     </h2>
 </div>
 
-<p>Recently I&#39;m studying this idea called &quot;Extreme Learning Machine&quot;. I dated with this method around 2 years ago, and at that time I was using this method to help me quickly classifying some features. And I didn&#39;t really dive into this.</p>
+<p>Recently I’m studying this idea called “Extreme Learning Machine”. I dated with this method around 2 years ago, and at that time I was using this method to help me quickly classifying some features. And I didn’t really dive into this.</p>
 
-<p>Extreme Learning Machine (ELM) is a fairly simple method. It is a generalization of Single-hidden Layer Feedforward Neural Networks (SLFNs). You just have to project your data to hidden layer by random weights and then compute the target using least-square solutions. All of this suggest that it&#39;s a simple regression model.</p>
+<p>Extreme Learning Machine (ELM) is a fairly simple method. It is a generalization of Single-hidden Layer Feedforward Neural Networks (SLFNs). You just have to project your data to hidden layer by random weights and then compute the target using least-square solutions. All of this suggest that it’s a simple regression model.</p>
 
 <p>ELM is known for its simplicity, short running time and unusual performance. These three maybe the most problematic part in conventional models. MLP or Convolutional Neural Networks (CNNs) are very painful to train. RBM methods are even more painful without proper optimization. However before I write something about ELM, I need to tell my major concerns:</p>
 
 <ul>
-<li><p>Are there any reasons that major Machine Learning community distanced itself with ELM? This probably a strong word. As I know of, NTU in Singapore invented this method, and they have even their own ELM conference in China. However, we couldn&#39;t find many discussion over this method. And people are not taking so serious with it.</p></li>
-<li><p>The big doubt of this method is that it&#39;s heavily computing inverse of a square matrix. Well, it&#39;s a product of your cost function&#39;s solution, it&#39;s normal in computing. However, we usually don&#39;t want this in learning algorithm because most inverse computing kit are having limited precision so your performance is also limited. And that is pretty much why we like Gradient Descent.</p></li>
-<li><p>ELM is designed for SLFNs, therefore, by default, it has only 1 hidden layer. We can use some other ways to make it deep, however, it&#39;s not natural. You need to train the model like a Stacked Auto-encoders using Greedy Layer-wise Training to construct a deeper net.</p></li>
+  <li>
+    <p>Are there any reasons that major Machine Learning community distanced itself with ELM? This probably a strong word. As I know of, NTU in Singapore invented this method, and they have even their own ELM conference in China. However, we couldn’t find many discussion over this method. And people are not taking so serious with it.</p>
+  </li>
+  <li>
+    <p>The big doubt of this method is that it’s heavily computing inverse of a square matrix. Well, it’s a product of your cost function’s solution, it’s normal in computing. However, we usually don’t want this in learning algorithm because most inverse computing kit are having limited precision so your performance is also limited. And that is pretty much why we like Gradient Descent.</p>
+  </li>
+  <li>
+    <p>ELM is designed for SLFNs, therefore, by default, it has only 1 hidden layer. We can use some other ways to make it deep, however, it’s not natural. You need to train the model like a Stacked Auto-encoders using Greedy Layer-wise Training to construct a deeper net.</p>
+  </li>
 </ul>
 
-<p><strong>While I&#39;m writing this note, I received many comments from other researchers&#39; comments on ELM. I felt that I should list down all the perspectives so that you can have a complete view of this method.</strong></p>
+<p><strong>While I’m writing this note, I received many comments from other researchers’ comments on ELM. I felt that I should list down all the perspectives so that you can have a complete view of this method.</strong></p>
 
 <ul>
-<li><a href="https://plus.google.com/+YuhuangHu/posts/MoEFUJu7938">My post to Deep Learning community at Google+</a></li>
-<li><a href="https://www.facebook.com/yann.lecun/posts/10152872571572143">Yann LeCun&#39;s recent comments on ELM</a></li>
-<li><a href="http://theanonymousemail.com/view/?msg=ZHEZJ1AJ">The ELM Scandal</a></li>
-<li><a href="http://www.reddit.com/r/MachineLearning/comments/34u0go/yann_lecun_whats_so_great_about_extreme_learning/">Reddit&#39;s discussion on Yann LeCun&#39;s comments</a></li>
-<li><a href="http://www.reddit.com/r/MachineLearning/comments/34y2nk/the_elm_scandal_a_formal_complaint_launched/">Reddit&#39;s discussion on The ELM Scandal</a></li>
-<li><a href="http://www.ntu.edu.sg/home/egbhuang/pdf/ELM-Rosenblatt-Neumann.pdf">What are Extreme Learning Machines? ELM inventor&#39;s fight back</a></li>
-<li><a href="http://libgen.in/scimag/get.php?doi=10.1016%2Fj.neunet.2014.10.001">Trends in extreme learning machines: A review</a></li>
+  <li><a href="https://plus.google.com/+YuhuangHu/posts/MoEFUJu7938">My post to Deep Learning community at Google+</a></li>
+  <li><a href="https://www.facebook.com/yann.lecun/posts/10152872571572143">Yann LeCun’s recent comments on ELM</a></li>
+  <li><a href="http://theanonymousemail.com/view/?msg=ZHEZJ1AJ">The ELM Scandal</a></li>
+  <li><a href="http://www.reddit.com/r/MachineLearning/comments/34u0go/yann_lecun_whats_so_great_about_extreme_learning/">Reddit’s discussion on Yann LeCun’s comments</a></li>
+  <li><a href="http://www.reddit.com/r/MachineLearning/comments/34y2nk/the_elm_scandal_a_formal_complaint_launched/">Reddit’s discussion on The ELM Scandal</a></li>
+  <li><a href="http://www.ntu.edu.sg/home/egbhuang/pdf/ELM-Rosenblatt-Neumann.pdf">What are Extreme Learning Machines? ELM inventor’s fight back</a></li>
+  <li><a href="http://libgen.in/scimag/get.php?doi=10.1016%2Fj.neunet.2014.10.001">Trends in extreme learning machines: A review</a></li>
 </ul>
 
-<p>There are thousands ways of criticizing ELM, and there are also another thousands ways of supporting the method. Bottom line, in current scale of data, it&#39;s working. It may not work in large scale (Never saw it produced comparable results in large datasets such as ImageNet or MIT Places), but it may not be wasting time. The potential of random weights are now fully discovered yet and there is no way to tell current ANN models are plausible in biological system (definitely not, if our brain is firing like this, then we are screwed).</p>
+<p>There are thousands ways of criticizing ELM, and there are also another thousands ways of supporting the method. Bottom line, in current scale of data, it’s working. It may not work in large scale (Never saw it produced comparable results in large datasets such as ImageNet or MIT Places), but it may not be wasting time. The potential of random weights are now fully discovered yet and there is no way to tell current ANN models are plausible in biological system (definitely not, if our brain is firing like this, then we are screwed).</p>
 
-<h3 id="extreme-learning-machine:-basic-story">Extreme Learning Machine: basic story</h3>
+<h3 id="extreme-learning-machine-basic-story">Extreme Learning Machine: basic story</h3>
 
 <p><em>You may find different terminology that is used by ELM papers in this section, but the idea is the same</em></p>
 
 <p>ELM is a SLFN. Let \(W_{i}\) as input weights, \(X=\{x^{(1)}, x^{(1)}, \ldots, x^{(N)}\}\) as input samples, \(b\) as bias. Then the hidden activation \(H\) is computed by</p>
 
-<p>$$
-H=f(X\cdot W_{i} + b)
-$$</p>
+<script type="math/tex; mode=display">H=f(X\cdot W\_{i} + b)</script>
 
 <p>where \(f(\cdot)\) is activation function.</p>
 
 <p>Given output weight \(W_{o}\) and output target \(T\), ELM is to minimize following cost function:</p>
 
-<p>$$
-J(H, T, W_{o})=C||H\cdot W_{o} - T||_{p}^{\sigma_{1}}+||W_{o}||_{q}^{\sigma_{2}}
-$$</p>
+<script type="math/tex; mode=display">J(H, T, W\_{o})=C||H\cdot W\_{o} - T||\_{p}^{\sigma\_{1}}+||W\_{o}||\_{q}^{\sigma\_{2}}</script>
 
-<p>where \(C\) is regularization term, \(\sigma_{1}&gt;0\) and \(\sigma_{2}&gt;0\), \(p\) and \(q\) is indicating the norm. The above function is clearly a Linear Regression formulation. Note that unlike conventional neural networks, there is no activation function (or say it&#39;s a linear activation) to output layer. It&#39;s not hard to say that we can use Gradient Descent to find the representation of \(W_{o}\). However, ELM offered an analytical solution when \(p=q=\sigma_{1}=\sigma_{2}=2\):</p>
+<p>where \(C\) is regularization term, \(\sigma_{1}&gt;0\) and \(\sigma_{2}&gt;0\), \(p\) and \(q\) is indicating the norm. The above function is clearly a Linear Regression formulation. Note that unlike conventional neural networks, there is no activation function (or say it’s a linear activation) to output layer. It’s not hard to say that we can use Gradient Descent to find the representation of \(W_{o}\). However, ELM offered an analytical solution when \(p=q=\sigma_{1}=\sigma_{2}=2\):</p>
 
-<p>$$
-W_{o}=\left(\frac{I}{C}+H^{\top}H\right)^{-1}H^{\top}T
-$$</p>
+<script type="math/tex; mode=display">W\_{o}=\left(\frac{I}{C}+H^{\top}H\right)^{-1}H^{\top}T</script>
 
 <p>And this is the entire story of basic ELM.</p>
 
@@ -252,25 +258,21 @@ $$</p>
 
 <p>ELM is trying to learn a mapping between randomly projected weights and target. This makes itself as a decoder. Therefore, we can modify cost function a little, so that it can learn a mapping between signal and projected weights.</p>
 
-<p>$$
-J(H, X, W_{o})=C||H\cdot W_{o} - X||_{p}^{\sigma_{1}}+||W_{o}||_{q}^{\sigma_{2}}
-$$</p>
+<script type="math/tex; mode=display">J(H, X, W\_{o})=C||H\cdot W\_{o} - X||\_{p}^{\sigma\_{1}}+||W\_{o}||\_{q}^{\sigma\_{2}}</script>
 
 <p>This makes ELM is acting like an auto-encoder. And transformation of output weight matrix \(W_{o}^{\top}\) is a encoder.</p>
 
 <h3 id="stacked-elm-auto-encoders">Stacked ELM Auto-encoders</h3>
 
-<p>Like Stacked Auto-encoders (SAEs), you can use the same principle as Greedy Layer-wise Training to train a multi layered ELM network. At the end you will have a unsupervised feature extractor (or a supervised network if you plug a normal ELM at the end of the network). And it doesn&#39;t need any further tuning.</p>
+<p>Like Stacked Auto-encoders (SAEs), you can use the same principle as Greedy Layer-wise Training to train a multi layered ELM network. At the end you will have a unsupervised feature extractor (or a supervised network if you plug a normal ELM at the end of the network). And it doesn’t need any further tuning.</p>
 
-<h3 id="local-receptive-field-elm-(lrf-elm)">Local Receptive Field-ELM (LRF-ELM)</h3>
+<h3 id="local-receptive-field-elm-lrf-elm">Local Receptive Field-ELM (LRF-ELM)</h3>
 
 <p>As we know, ELM is essentially a generalization of SLFNs. Therefore, all the variants of SLFNs can apply the same learning principle as ELM. And we can extend this theory to Convolutional Neural Networks (ConvNets). The basic understanding of ConvNet is that instead of learning complex function of entire receptive field, it learns representation from small region of the receptive fields. And in results, you need to have many feature maps in order to obtain better results.</p>
 
 <p>Assume that you understand the idea of ConvNets, LRF-ELM firstly initialized \(K\) random filters (you can also orthogonalize these weights by using SVD), then it computes feature \(f^{(k)}\) by:</p>
 
-<p>$$
-f^{(k)}=F\left(X* w^{(k)}\right)
-$$</p>
+<script type="math/tex; mode=display">f^{(k)}=F\left(X* w^{(k)}\right)</script>
 
 <p>where \(w^{(k)}\) is the \(k\)-th random filter and \(F\) is the activation function. After this, you can then apply a pooling operation to the feature maps.</p>
 
@@ -278,58 +280,44 @@ $$</p>
 
 <h3 id="lrf-elm-auto-encoder">LRF-ELM Auto-encoder</h3>
 
-<p>The solution to LRF-ELM Auto-encoder is not so obvious once you tried to figure it out. Because LRF-ELM is similar to ConvNet, therefore you couldn&#39;t use the same solution as previous to derive the result. Here after some investigation, I figured a way of learning filters in unsupervised learning manner.</p>
+<p>The solution to LRF-ELM Auto-encoder is not so obvious once you tried to figure it out. Because LRF-ELM is similar to ConvNet, therefore you couldn’t use the same solution as previous to derive the result. Here after some investigation, I figured a way of learning filters in unsupervised learning manner.</p>
 
-<p>Consider we have \(K\) filters (size doesn&#39;t matter), then the feature map \(f^{(k)}\) is calculated as</p>
+<p>Consider we have \(K\) filters (size doesn’t matter), then the feature map \(f^{(k)}\) is calculated as</p>
 
-<p>$$
-f^{(k)}=F\left(X* w^{(k)}\right)
-$$
+<p><script type="math/tex">f^{(k)}=F\left(X* w^{(k)}\right)</script>
 where \(w^{(k)}\) is the \(k\)-th random filter and \(F(\cdot)\) is the activation function.</p>
 
 <p>In the decoding stage, the filters can be learned by using feature maps as filter. And learned filter \(\hat{w}^{(k)}\) is computed by</p>
 
-<p>$$
-\hat{w}^{(k)}=X* f^{(k)}\cdot \left(\frac{1}{\frac{I}{C}+\sum_{i,j}\left(f_{i,j}^{(k)}\right)^{2}}\right)
-$$</p>
+<script type="math/tex; mode=display">\hat{w}^{(k)}=X* f^{(k)}\cdot \left(\frac{1}{\frac{I}{C}+\sum\_{i,j}\left(f_{i,j}^{(k)}\right)^{2}}\right)</script>
 
 <h3 id="incremental-learning-of-elm">Incremental Learning of ELM</h3>
 
-<p>One of the problem of original ELM is that it doesn&#39;t mention anything about dimension of the data. And in most of recent cases, it&#39;s almost impossible to compute with entire data, therefore, we must find a way of learning output weights incrementally.</p>
+<p>One of the problem of original ELM is that it doesn’t mention anything about dimension of the data. And in most of recent cases, it’s almost impossible to compute with entire data, therefore, we must find a way of learning output weights incrementally.</p>
 
 <p>In previous paper <a href="http://www.ntu.edu.sg/home/egbhuang/pdf/OS-ELM-TNN.pdf">A Fast and Accurate Online Sequential Learning Algorithm for Feedforward Networks</a>, it offered a nice solution to this problem, you can update the output weight by:</p>
 
-<p>$$
-P_{k+1}=P_{k}-P_{k}H_{k+1}^{\top}\left(I+H_{k+1}P_{k}H_{k+1}^{\top}\right)^{-1}H_{k+1}P_{k}
-$$</p>
+<script type="math/tex; mode=display">P\_{k+1}=P\_{k}-P\_{k}H\_{k+1}^{\top}\left(I+H\_{k+1}P\_{k}H\_{k+1}^{\top}\right)^{-1}H\_{k+1}P\_{k}</script>
 
-<p>$$
-W_{o}^{k+1}=W_{o}^{k}+P_{k+1}H_{k+1}^{\top}(T_{k+1}-H_{k+1}W_{o}^{k})
-$$</p>
+<script type="math/tex; mode=display">W\_{o}^{k+1}=W\_{o}^{k}+P\_{k+1}H\_{k+1}^{\top}(T\_{k+1}-H\_{k+1}W\_{o}^{k})</script>
 
 <p>where \(P_{k}=K_{k}^{-1}\). \(K_{0}\) is \(H_{0}^{\top}H_{0}\), \(W_{o}^{0}\) is \(K_{0}^{-1}H_{0}^{\top}T_{0}\) and</p>
 
-<p>$$
-K_{k+1}=K_{k}+H_{k+1}^{\top}H_{k}
-$$</p>
+<script type="math/tex; mode=display">K\_{k+1}=K\_{k}+H\_{k+1}^{\top}H\_{k}</script>
 
-<p>You might think that if this is the way of computing output weights, then the LRF-ELM is a real mess. Turns out, it&#39;s even simpler since \(K\) in LRF-ELM is a scalar. And it&#39;s inverse is \(\frac{1}{K}\).</p>
+<p>You might think that if this is the way of computing output weights, then the LRF-ELM is a real mess. Turns out, it’s even simpler since \(K\) in LRF-ELM is a scalar. And it’s inverse is \(\frac{1}{K}\).</p>
 
 <p>Another way of updating output weights is suggested by another paper: <a href="http://arxiv.org/abs/1412.8307">Fast, simple and accurate handwritten digit classification using extreme learning machines with shaped input-weights</a>. Instead of updating output weights, it simply updating to component of learning function: \(H^{\top}H\) and \(H^{\top}T\). In this way, you will only maintain this two fixed size matrix, and the output weights can be computed anytime from this two components. The updating rule is easy to derive:</p>
 
-<p>$$
-K_{k+1}=K_{k}+H_{k+1}^{\top}H_{k}
-$$</p>
+<script type="math/tex; mode=display">K\_{k+1}=K\_{k}+H\_{k+1}^{\top}H\_{k}</script>
 
-<p>$$
-A_{k+1}=A_{k}+H_{k+1}^{\top}T_{k+1}
-$$</p>
+<script type="math/tex; mode=display">A\_{k+1}=A\_{k}+H\_{k+1}^{\top}T\_{k+1}</script>
 
 <p>where \(K_{0}=H_{0}^{\top}H_{0}\) and \(A_{0}=H_{0}^{\top}T_{0}\)</p>
 
 <h3 id="maybe-another-way-of-training-elm">Maybe another way of training ELM</h3>
 
-<p>So far we reviewed and explored variants of ELM. However, it doesn&#39;t really fit in conventional Machine Learning where we use back-propagation and everything. The last section of incremental learning is somewhat &quot;Machine Learning&quot;-ish. I still felt it&#39;s not natural enough.</p>
+<p>So far we reviewed and explored variants of ELM. However, it doesn’t really fit in conventional Machine Learning where we use back-propagation and everything. The last section of incremental learning is somewhat “Machine Learning”-ish. I still felt it’s not natural enough.</p>
 
 <p>This brought me to a recent proposed method, it is described in <a href="http://arxiv.org/abs/1411.0247">Random feedback weights support learning in deep neural networks</a>. I admired the approach that it is described. Without computing the gradient of weights and bias, one can still use back-propagation algorithm to train a neural network. With this approach, one can train MLP, ConvNets and other Feedforward Network variants without any trouble.</p>
 
@@ -339,45 +327,35 @@ $$</p>
 
 <p>Okay, so far, like other neural networks, ELM tries to model either a target (classification labels or a regression target) or the input itself. This is conventional. However, what if we replace the target as hidden activation itself? So the cost function looks like this:</p>
 
-<p>$$
-J(H, W_{o})=C||H\cdot W_{o} - H||_{p}^{\sigma_{1}}+||W_{o}||_{q}^{\sigma_{2}}
-$$</p>
+<script type="math/tex; mode=display">J(H, W\_{o})=C||H\cdot W\_{o} - H||\_{p}^{\sigma\_{1}}+||W\_{o}||\_{q}^{\sigma\_{2}}</script>
 
-<p>Is this even making any sense? Every one will say that in this case \(W_{o}\) is basically a regularized identity map. It&#39;s very clear that the cost will decrease to 0 if \(W_{0}\) is an identity matrix. So, if it&#39;s an identity matrix, why would I even try to learn it?</p>
+<p>Is this even making any sense? Every one will say that in this case \(W_{o}\) is basically a regularized identity map. It’s very clear that the cost will decrease to 0 if \(W_{0}\) is an identity matrix. So, if it’s an identity matrix, why would I even try to learn it?</p>
 
-<p>Well, wrong. There are plenty things you can discover. If you replace \(T\) as \(H\) in your ELM&#39;s solution, it&#39;s not hard to discover that actually this \(W_{o}\) is closely related to hidden activation&#39;s correlation matrix. And, why does ELM&#39;s hidden layer have to be a feedforward hidden layer? Can it be a recurrent layer? The answer is YES. And by the way, this whole thing is called conceptor network. It is developed by Herbert Jaeger from Jacobs University Bremen, you can find the complete technical paper from <a href="http://minds.jacobs-university.de/conceptors">here</a>. I think Professor Jaeger himself didn&#39;t realized that there is a close relative of this idea that has been invented for almost 10 years.</p>
+<p>Well, wrong. There are plenty things you can discover. If you replace \(T\) as \(H\) in your ELM’s solution, it’s not hard to discover that actually this \(W_{o}\) is closely related to hidden activation’s correlation matrix. And, why does ELM’s hidden layer have to be a feedforward hidden layer? Can it be a recurrent layer? The answer is YES. And by the way, this whole thing is called conceptor network. It is developed by Herbert Jaeger from Jacobs University Bremen, you can find the complete technical paper from <a href="http://minds.jacobs-university.de/conceptors">here</a>. I think Professor Jaeger himself didn’t realized that there is a close relative of this idea that has been invented for almost 10 years.</p>
 
-<p>Alright, so you can extend ELM to conceptors, what&#39;s the big deal? The BIG DEAL is that ELM and it&#39;s theory doesn&#39;t have to be only a generalization of SLFNs, it can be a multi-layer hierarchy that can automatically clean and learn pattern of the data, offers a way of control neural dynamics naturally and biologically plausible. Well, I&#39;m not going to review the full context of the naive conceptor formulation, but directly pay attention on its final offer of the entire theory: Random Feature Conceptor. (The following context needs understanding of naive conceptor and auto-conceptor). In following context, I&#39;m using conceptor&#39;s terminology.</p>
+<p>Alright, so you can extend ELM to conceptors, what’s the big deal? The BIG DEAL is that ELM and it’s theory doesn’t have to be only a generalization of SLFNs, it can be a multi-layer hierarchy that can automatically clean and learn pattern of the data, offers a way of control neural dynamics naturally and biologically plausible. Well, I’m not going to review the full context of the naive conceptor formulation, but directly pay attention on its final offer of the entire theory: Random Feature Conceptor. (The following context needs understanding of naive conceptor and auto-conceptor). In following context, I’m using conceptor’s terminology.</p>
 
 <p>The basic idea is to project reservoir state to a large feature state, so the formulation of the network is:</p>
 
-<p>$$
-r(n+1)=\tanh(Gz(n)+W^{\text{in}}p(n)+b)
-$$</p>
+<script type="math/tex; mode=display">r(n+1)=\tanh(Gz(n)+W^{\text{in}}p(n)+b)</script>
 
-<p>$$
-z(n+1)=\text{diag}(c(n))F&#39;r(n)
-$$</p>
+<script type="math/tex; mode=display">z(n+1)=\text{diag}(c(n))F'r(n)</script>
 
-<p>where \(r(n)\in\mathbb{R}^{N\times 1}\), \(G\in\mathbb{R}^{N\times M}\), \(z(n)\in\mathbb{R}^{M\times 1}\), \(p(n)\in\mathbb{R}^{L\times 1}\), \(c(n)\in\mathbb{R}^{M\times 1}\), \(F&#39;\in\mathbb{R}^{M\times N}\).</p>
+<p>where \(r(n)\in\mathbb{R}^{N\times 1}\), \(G\in\mathbb{R}^{N\times M}\), \(z(n)\in\mathbb{R}^{M\times 1}\), \(p(n)\in\mathbb{R}^{L\times 1}\), \(c(n)\in\mathbb{R}^{M\times 1}\), \(F’\in\mathbb{R}^{M\times N}\).</p>
 
-<p>Now it&#39;s easy to formulate the cost function as previous mentioned:</p>
+<p>Now it’s easy to formulate the cost function as previous mentioned:</p>
 
-<p>$$
-J(z, c)=\frac{1}{M}\sum_{i}||z_{i}-c_{i}z_{i}||^{2}+\frac{\alpha^{-2}}{M}\sum_{i}c_{i}^{2}
-$$</p>
+<script type="math/tex; mode=display">J(z, c)=\frac{1}{M}\sum\_{i}||z\_{i}-c\_{i}z\_{i}||^{2}+\frac{\alpha^{-2}}{M}\sum\_{i}c\_{i}^{2}</script>
 
 <p>You can also calculate the fixed-point solution in this way:</p>
 
-<p>$$
-c_{i}=E[z_{i}^{2}] (E[z_{i}]+\alpha^{-2})^{-1}
-$$</p>
+<script type="math/tex; mode=display">c\_{i}=E\[z\_{i}^{2}\] (E[z\_{i}]+\alpha^{-2})^{-1}</script>
 
 <p>And of course you can adapt the entire \(c\) using stochastic gradient descent.</p>
 
-<p>Well, here is a drawback, and it&#39;s a serious one: it&#39;s very hard to scale up, especially for high-dimensional data like images. Withe millions of images, the system is going to compute between very large matrices.</p>
+<p>Well, here is a drawback, and it’s a serious one: it’s very hard to scale up, especially for high-dimensional data like images. Withe millions of images, the system is going to compute between very large matrices.</p>
 
-<p>At this point, we don&#39;t really understand the full power of conceptor network and ELM yet. But one thing is for sure, there is no evidence where ELM or conceptor network is succeeded in large datasets, and this is also what we mostly worried.</p>
+<p>At this point, we don’t really understand the full power of conceptor network and ELM yet. But one thing is for sure, there is no evidence where ELM or conceptor network is succeeded in large datasets, and this is also what we mostly worried.</p>
 
 
                     </div>

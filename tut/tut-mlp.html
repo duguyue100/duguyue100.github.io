@@ -18,9 +18,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Random Thoughts : Multi Layer Perceptron</title>
+        <title>Random Thoughts : Multi Layer Perceptron Layers</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -191,145 +197,217 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h2>Multi Layer Perceptron
+    <h2>Multi Layer Perceptron Layers
         
     </h2>
 </div>
 
-<h3 id="activation-function">Activation function</h3>
+<p><strong>I assume that you have the knowledge and understand following knowledge</strong></p>
 
-<p>In this section we introduce 6 popular activation function for the neuron</p>
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">theano.tensor</span> <span class="kn">as</span> <span class="nn">T</span>
+<ul>
+  <li>
+    <p><strong>Multi Layer Perceptron</strong></p>
+  </li>
+  <li>
+    <p><strong>Activation</strong></p>
+  </li>
+  <li>
+    <p><strong><a href="tut-layer.html">Feedforward layer</a></strong></p>
+  </li>
+</ul>
 
-<span class="k">def</span> <span class="nf">tanh</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">  Hyperbolic tangent nonlinearity</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-  <span class="k">return</span> <span class="n">T</span><span class="o">.</span><span class="n">tanh</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<h3 id="activation-function">Activation Function</h3>
 
-<span class="k">def</span> <span class="nf">sigmoid</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">  Standard sigmoid nonlinearity</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-  <span class="k">return</span> <span class="n">T</span><span class="o">.</span><span class="n">nnet</span><span class="o">.</span><span class="n">sigmoid</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<p>In this section we introduce 6 popular activation function for the neuron. They are usually introduced in Deep Neural Network research.</p>
 
-<span class="k">def</span> <span class="nf">softplus</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">  Softplus nonlinearity</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-  <span class="k">return</span> <span class="n">T</span><span class="o">.</span><span class="n">nnet</span><span class="o">.</span><span class="n">softplus</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<p>As you can see, all of them are simple functions that can be called from library easily. So why would I write it anyway. I decided to create a mask so that I don’t have to bother with remembering the current path from different places. The following is an example (<a href="https://github.com/duguyue100/telaugesa/blob/master/telaugesa/nnfuns.py">here</a>):</p>
 
-<span class="k">def</span> <span class="nf">relu</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">  Rectified linear unit</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-  <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">&gt;</span><span class="mf">1e-13</span><span class="p">);</span>
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#080;font-weight:bold">import</span> <span style="color:#B44;font-weight:bold">theano.tensor</span> <span style="color:#080;font-weight:bold">as</span> T
 
-<span class="k">def</span> <span class="nf">softmax</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">  Softmax function</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-  <span class="k">return</span> <span class="n">T</span><span class="o">.</span><span class="n">nnet</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">tanh</span>(x):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Hyperbolic tangent nonlinearity</span><span style="color:black">&quot;&quot;&quot;</span></span>
+    <span style="color:#080;font-weight:bold">return</span> T.tanh(x);
 
-<span class="k">def</span> <span class="nf">linear</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">  Linear function</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-  <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
-</code></pre></div>
-<p>Most of the functions are directly called from Theano&#39;s tensor module and saved to a script so that we can manage the activation function easily. You can access this code from my Telauges <a href="https://github.com/duguyue100/telauges/blob/master/telauges/nnfuns.py">nnfuns</a>.</p>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">sigmoid</span>(x):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Standard sigmoid nonlinearity</span><span style="color:black">&quot;&quot;&quot;</span></span>
+    <span style="color:#080;font-weight:bold">return</span> T.nnet.sigmoid(x);
 
-<h3 id="activate-a-layer">Activate a layer</h3>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">softplus</span>(x):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Softplus nonlinearity</span><span style="color:black">&quot;&quot;&quot;</span></span>
+    <span style="color:#080;font-weight:bold">return</span> T.nnet.softplus(x);
 
-<p>Suppose a row vector \(x\) is a sample and the weights \(w\) is a column vector, the bias \(b\) is a scalar, then the activation can be computed as:</p>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">relu</span>(x):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Rectified linear unit</span><span style="color:black">&quot;&quot;&quot;</span></span>
+    <span style="color:#080;font-weight:bold">return</span> x*(x&gt;<span style="color:#60E">1e-13</span>);
 
-<p>$$a=f(x\cdot w+b)$$</p>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">softmax</span>(x):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Softmax function</span><span style="color:black">&quot;&quot;&quot;</span></span>
+    <span style="color:#080;font-weight:bold">return</span> T.nnet.softmax(x);
 
-<p>In python, you can write it as:</p>
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">a</span><span class="o">=</span><span class="n">activation</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span><span class="o">+</span><span class="n">b</span><span class="p">);</span>
-</code></pre></div>
-<p>The reason why we want to use row wise vector to represent data is because 1-d array in python is a row vector, this made easy for us to implementing activation function without worrying problem caused by dimension mismatch.</p>
+<span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">identity</span>(x):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Identity function</span><span style="color:black">&quot;&quot;&quot;</span></span>
+    <span style="color:#080;font-weight:bold">return</span> x;
+</pre></div>
+</div>
+</div>
 
-<p>Given a set of vector \( X\in \mathbb{R}^{N\times m} \) that has \(N\) samples, weight matrix \( W\in \mathbb{R}^{m\times K} \) that has \(K\) neurons for the layer, and also bias is \( b\in \mathbb{R}^{K} \), the activation of the layer can be computed as:</p>
+<h3 id="activate-a-layer">Activate a Layer</h3>
 
-<p>$$A=f(X\cdot W+b)$$</p>
+<p>Suppose a set of samples \(X\) and weights \(W\), the bias \(b\), then the activation can be computed as:</p>
 
-<p>In python, you can write it as:</p>
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">a</span><span class="o">=</span><span class="n">activation</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">W</span><span class="p">)</span><span class="o">+</span><span class="n">b</span><span class="p">);</span>
-</code></pre></div>
+<script type="math/tex; mode=display">A=f(Y)</script>
+
+<p>where \(Y=W\cdot X+b\). Turns out, this is extremely easy to write in Python.</p>
+
+<p>In python, you can write it as (<a href="https://github.com/duguyue100/telaugesa/blob/master/telaugesa/fflayers.py#L36-L37">example</a>):</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#080;font-weight:bold">return</span> activation(<span style="color:#069">self</span>.apply_lin(X));
+</pre></div>
+</div>
+</div>
+
+<p>Note <code>apply_lin</code> is the linear transformation function from your abstract <code>Layer</code> class in <a href="tut-layer.html">Feedforward Layer</a>.</p>
+
+<h3 id="mlp-layers">MLP Layers</h3>
+
+<p>We mostly interested in 4 type of layers:</p>
+
+<ul>
+  <li>
+    <p>Identity layer: apply identity function as activation.</p>
+  </li>
+  <li>
+    <p>Hyperbolic tangent layer: apply \(\tanh\) function as activation</p>
+  </li>
+  <li>
+    <p>Sigmoid Layer: apply sigmoid function as activation</p>
+  </li>
+  <li>
+    <p>ReLU layer: apply rectified linear unit as activation</p>
+  </li>
+</ul>
+
+<p>The above 4 usually served as hidden layer in MLP network. Softmax layer is usually used as classification layer, we introduced it in <a href="tut-svm-softmax.html">Softmax Regression</a>.</p>
+
+<p>If you write your <code>Layer</code> correctly, then it’s very easy to extend them to be the above mentioned 4 types of layers. Here is an example (<a href="https://github.com/duguyue100/telaugesa/blob/master/telaugesa/fflayers.py#L17-L58">here</a>):</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">IdentityLayer</span>(Layer):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Identity Layer</span><span>
+</span><span>    </span><span style="color:black">&quot;&quot;&quot;</span></span>
+    
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">__init__</span>(<span style="color:#069">self</span>, **kwargs):
+        <span style="color:#369;font-weight:bold">super</span>(IdentityLayer, <span style="color:#069">self</span>).__init__(**kwargs);
+    
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">apply</span>(<span style="color:#069">self</span>, X):
+        <span style="color:#080;font-weight:bold">return</span> <span style="color:#069">self</span>.apply_lin(X);
+        
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">TanhLayer</span>(Layer):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Tanh Layer</span><span>
+</span><span>    </span><span style="color:black">&quot;&quot;&quot;</span></span>
+    
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">__init__</span>(<span style="color:#069">self</span>, **kwargs):
+        <span style="color:#369;font-weight:bold">super</span>(TanhLayer, <span style="color:#069">self</span>).__init__(**kwargs);
+        
+        <span style="color:#069">self</span>.initialize(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">tanh</span><span style="color:#710">&quot;</span></span>);
+        
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">apply</span>(<span style="color:#069">self</span>, X):
+        <span style="color:#080;font-weight:bold">return</span> nnfuns.tanh(<span style="color:#069">self</span>.apply_lin(X));
+    
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">SigmoidLayer</span>(Layer):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Sigmoid Layer</span><span style="color:black">&quot;&quot;&quot;</span></span>
+    
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">__init__</span>(<span style="color:#069">self</span>, **kwargs):
+        
+        <span style="color:#369;font-weight:bold">super</span>(SigmoidLayer, <span style="color:#069">self</span>).__init__(**kwargs);
+        
+        <span style="color:#069">self</span>.initialize(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">sigmoid</span><span style="color:#710">&quot;</span></span>);
+        
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">apply</span>(<span style="color:#069">self</span>, X):
+        <span style="color:#080;font-weight:bold">return</span> nnfuns.sigmoid(<span style="color:#069">self</span>.apply_lin(X));
+
+<span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">ReLULayer</span>(Layer):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>ReLU Layer</span><span style="color:black">&quot;&quot;&quot;</span></span>
+    
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">__init__</span>(<span style="color:#069">self</span>, **kwargs):
+        <span style="color:#369;font-weight:bold">super</span>(ReLULayer, <span style="color:#069">self</span>).__init__(**kwargs);
+        
+    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">apply</span>(<span style="color:#069">self</span>, X):
+        <span style="color:#080;font-weight:bold">return</span> nnfuns.relu(<span style="color:#069">self</span>.apply_lin(X));
+</pre></div>
+</div>
+</div>
+
+<p>In above codes, <code>TanhLayer</code> and <code>SigmoidLayer</code> is a little different in <code>__init__</code> than others. They can a better weight initialization strategy.</p>
+
 <h3 id="initialize-weights">Initialize Weights</h3>
 
 <p>There are few heuristics that we can apply when we initialize the weights of a MLP layer. It should be uniformly sampled from a symmetric interval that depends on the activation function.  If the activation function is \(\tanh\), then the interval is</p>
 
-<p>$$
-\left[-\sqrt{\frac{6}{fan_{in}+fan_{out}}}, \sqrt{\frac{6}{fan_{in}+fan_{out}}}\right]
-$$</p>
+<script type="math/tex; mode=display">\left[-\sqrt{\frac{6}{fan_{in}+fan_{out}}}, \sqrt{\frac{6}{fan_{in}+fan_{out}}}\right]</script>
 
 <p>where \(fan_{in}\) is number of neuron of \((i-1)\)-th layer and \(fan_{out}\) is the number of neuron of \(i\)-th layer. For sigmoid function, the range is</p>
 
-<p>$$
-\left[-4\sqrt{\frac{6}{fan_{in}+fan_{out}}}, 4\sqrt{\frac{6}{fan_{in}+fan_{out}}}\right]
-$$</p>
+<script type="math/tex; mode=display">\left[-4\sqrt{\frac{6}{fan_{in}+fan_{out}}}, 4\sqrt{\frac{6}{fan_{in}+fan_{out}}}\right]</script>
 
 <p>Generally, this boundary should be close to 0 and weights are randomly generated.</p>
 
 <p>Related contribution can be found at this paper: <a href="http://jmlr.org/proceedings/papers/v9/glorot10a/glorot10a.pdf">Understanding the difficulty of training deep feedforward neuralnetworks</a>.</p>
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">get_shared_matrix</span><span class="p">(</span><span class="n">name</span><span class="p">,</span>
-                      <span class="n">out_size</span><span class="p">,</span>
-                      <span class="n">in_size</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
-                      <span class="n">weight_type</span><span class="o">=</span><span class="s">&quot;none&quot;</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">  create shared weights or weights</span>
 
-<span class="sd">  @param out_size: output size (int)</span>
-<span class="sd">  @param in_size: input size (int)</span>
-<span class="sd">  @param weight_type: &quot;none&quot;, &quot;tanh&quot; and &quot;sigmoid&quot;</span>
+<p>The following is an example for a weight initialization function (<a href="https://github.com/duguyue100/telaugesa/blob/master/telaugesa/util.py">here</a>):</p>
 
-<span class="sd">  @return: a shared matrix with size of in_size x out_size</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-
-  <span class="k">if</span> <span class="n">in_size</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">weight_type</span><span class="o">==</span><span class="s">&quot;tanh&quot;</span><span class="p">:</span>
-      <span class="n">lower_bound</span><span class="o">=-</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">6.</span> <span class="o">/</span> <span class="p">(</span><span class="n">in_size</span> <span class="o">+</span> <span class="n">out_size</span><span class="p">));</span>
-      <span class="n">upper_bound</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">6.</span> <span class="o">/</span> <span class="p">(</span><span class="n">in_size</span> <span class="o">+</span> <span class="n">out_size</span><span class="p">));</span>
-    <span class="k">elif</span> <span class="n">weight_type</span><span class="o">==</span><span class="s">&quot;sigmoid&quot;</span><span class="p">:</span>
-      <span class="n">lower_bound</span><span class="o">=-</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">6.</span> <span class="o">/</span> <span class="p">(</span><span class="n">in_size</span> <span class="o">+</span> <span class="n">out_size</span><span class="p">));</span>
-      <span class="n">upper_bound</span><span class="o">=</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">6.</span> <span class="o">/</span> <span class="p">(</span><span class="n">in_size</span> <span class="o">+</span> <span class="n">out_size</span><span class="p">));</span>
-    <span class="k">elif</span> <span class="n">weight_type</span><span class="o">==</span><span class="s">&quot;none&quot;</span><span class="p">:</span>
-      <span class="n">lower_bound</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-      <span class="n">upper_bound</span><span class="o">=</span><span class="mf">1.</span><span class="o">/</span><span class="p">(</span><span class="n">in_size</span><span class="o">+</span><span class="n">out_size</span><span class="p">);</span>
-
-  <span class="k">if</span> <span class="n">in_size</span><span class="o">==</span><span class="bp">None</span><span class="p">:</span>
-    <span class="k">return</span> <span class="n">theano</span><span class="o">.</span><span class="n">shared</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-                                                            <span class="n">high</span><span class="o">=</span><span class="mf">1.</span><span class="o">/</span><span class="n">out_size</span><span class="p">,</span>
-                                                            <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">out_size</span><span class="p">,</span> <span class="p">)),</span>
-                                          <span class="n">dtype</span><span class="o">=</span><span class="s">&quot;float32&quot;</span><span class="p">),</span>
-                         <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
-                         <span class="n">borrow</span><span class="o">=</span><span class="bp">True</span><span class="p">);</span>
-  <span class="k">else</span><span class="p">:</span>
-    <span class="k">return</span> <span class="n">theano</span><span class="o">.</span><span class="n">shared</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="n">low</span><span class="o">=</span><span class="n">lower_bound</span><span class="p">,</span>
-                                                            <span class="n">high</span><span class="o">=</span><span class="n">upper_bound</span><span class="p">,</span>
-                                                            <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">in_size</span><span class="p">,</span> <span class="n">out_size</span><span class="p">)),</span>
-                                          <span class="n">dtype</span><span class="o">=</span><span class="s">&quot;float32&quot;</span><span class="p">),</span>
-                         <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
-                         <span class="n">borrow</span><span class="o">=</span><span class="bp">True</span><span class="p">);</span>
-</code></pre></div>
-<p>The code above is taken from <a href="https://github.com/duguyue100/telauges/blob/master/telauges/utils.py#L179">Telauges</a>. The parameters of neural network should all be <code>shared</code> so that they can be updated or accessed.</p>
-
-<h3 id="make-a-network">Make a Network</h3>
-
-<p>Based on the information above and your knowledge on Multi Layer Perceptron Network, it&#39;s not hard to write a class that described the layer, your class should at least got 4 functions:</p>
-
-<ul>
-<li><p><code>get_weights</code> that initialize both weight matrix and bias.</p></li>
-<li><p><code>get_pre_activation</code> that receives a set of samples then computes results before applying activation function.</p></li>
-<li><p><code>get_activation</code> that receives <code>pre-activation</code> and apply chosen activation function.</p></li>
-<li><p><code>get_output</code> that receives a set of input samples and then computes outputs.</p></li>
-</ul>
-
-<p>A sample code of such layer looks like <a href="https://github.com/duguyue100/telauges/blob/master/telauges/layer.py">this</a>.</p>
-
-<h3 id="training-a-network">Training a Network</h3>
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">init_weights</span>(name,
+                 out_dim,
+                 in_dim=<span style="color:#069">None</span>,
+                 weight_type=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">none</span><span style="color:#710">&quot;</span></span>):
+    <span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>Create shared weights or bias</span><span>
+</span><span>    </span><span>
+</span><span>    Parameters</span><span>
+</span><span>    ----------</span><span>
+</span><span>    out_dim : int</span><span>
+</span><span>        output dimension</span><span>
+</span><span>    in_dim : int</span><span>
+</span><span>        input dimension</span><span>
+</span><span>    weight_type : string</span><span>
+</span><span>        type of weights: &quot;none&quot;, &quot;tanh&quot;, &quot;sigmoid&quot;</span><span>
+</span><span>    </span><span>
+</span><span>    Returns</span><span>
+</span><span>    -------</span><span>
+</span><span>    Weights : matrix or vector</span><span>
+</span><span>        shared matrix with respect size</span><span>
+</span><span>    </span><span style="color:black">&quot;&quot;&quot;</span></span>
+  
+    <span style="color:#080;font-weight:bold">if</span> in_dim <span style="color:#080;font-weight:bold">is</span> <span style="color:#080;font-weight:bold">not</span> <span style="color:#069">None</span>:
+        <span style="color:#080;font-weight:bold">if</span> weight_type==<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">tanh</span><span style="color:#710">&quot;</span></span>:
+            lower_bound=-np.sqrt(<span style="color:#60E">6.</span> / (in_dim + out_dim));
+            upper_bound=np.sqrt(<span style="color:#60E">6.</span> / (in_dim + out_dim));
+        <span style="color:#080;font-weight:bold">elif</span> weight_type==<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">sigmoid</span><span style="color:#710">&quot;</span></span>:
+            lower_bound=-<span style="color:#00D">4</span>*np.sqrt(<span style="color:#60E">6.</span> / (in_dim + out_dim));
+            upper_bound=<span style="color:#00D">4</span>*np.sqrt(<span style="color:#60E">6.</span> / (in_dim + out_dim));
+        <span style="color:#080;font-weight:bold">elif</span> weight_type==<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">none</span><span style="color:#710">&quot;</span></span>:
+            lower_bound=<span style="color:#00D">0</span>;
+            upper_bound=<span style="color:#60E">1.</span>/(in_dim+out_dim);
+  
+    <span style="color:#080;font-weight:bold">if</span> in_dim==<span style="color:#069">None</span>:
+        <span style="color:#080;font-weight:bold">return</span> theano.shared(value=np.asarray(np.random.uniform(low=<span style="color:#00D">0</span>,
+                                                                high=<span style="color:#60E">1.</span>/out_dim,
+                                                                size=(out_dim, )),
+                                              dtype=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">float32</span><span style="color:#710">&quot;</span></span>),
+                             name=name,
+                             borrow=<span style="color:#069">True</span>);
+    <span style="color:#080;font-weight:bold">else</span>:
+        <span style="color:#080;font-weight:bold">return</span> theano.shared(value=np.asarray(np.random.uniform(low=lower_bound,
+                                                                high=upper_bound,
+                                                                size=(in_dim, out_dim)),
+                                              dtype=<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">float32</span><span style="color:#710">&quot;</span></span>),
+                             name=name,
+                             borrow=<span style="color:#069">True</span>);
+</pre></div>
+</div>
+</div>
 
 
                     </div>

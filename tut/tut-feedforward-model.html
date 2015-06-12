@@ -18,7 +18,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Random Thoughts : Neural Encoding</title>
+        <title>Random Thoughts : Feedforword Model</title>
         <meta name="description" content="A wiki of my random thoughts.">
 	
 	<link rel="stylesheet" type="text/css"
@@ -197,124 +197,12 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h2>Neural Encoding
+    <h2>Feedforword Model
         
     </h2>
 </div>
 
-<h3 id="encoding-and-decoding">Encoding and Decoding</h3>
 
-<ul>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Encoding solves “how does a stimulus cause a pattern of responses?” (\(P(\text{response}</td>
-          <td>\text{stimulus})\)).</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Decoding solves “what do these responses tell us about the stimulus?” (\(P(\text{stimulus}</td>
-          <td>\text{response})\)).</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-</ul>
-
-<h3 id="basic-coding-model">Basic Coding Model</h3>
-
-<p>In the following context, \(s(\cdot)\) represents signal, \(r(\cdot)\) represents response, \(f(\cdot)\) represents filter and \(g(\cdot)\) represents nonlinear function.</p>
-
-<h4 id="linear-response">Linear response</h4>
-
-<script type="math/tex; mode=display">r(t)=\phi s(t)</script>
-
-<h4 id="temporal-filtering-linear-filters">Temporal filtering: linear filters</h4>
-
-<script type="math/tex; mode=display">r(t)=\sum\_{k=0}^{n}s\_{t-k}f\_{k}</script>
-
-<script type="math/tex; mode=display">r(t)=\int\_{-\infty}^{t}d\,\tau s(t-\tau)f(\tau)</script>
-
-<h4 id="spatial-filtering">Spatial filtering</h4>
-
-<script type="math/tex; mode=display">r(x,y)=\sum\_{x'=-n, y'=-n}^{n}s\_{x-x', y-y'}f\_{x'y'}</script>
-
-<script type="math/tex; mode=display">r(x,y)=\int\_{-\infty}^{\infty}d\,x' d\,y' s(x-x', y-y')f(x', y')</script>
-
-<h4 id="spatio-temporal-filtering">Spatio-temporal filtering</h4>
-
-<script type="math/tex; mode=display">r\_{x,y}(t)=\iiint d\,x' d\,y' d\,\tau f(x',y',\tau)s(x-x',y-y',t-\tau)</script>
-
-<h4 id="linear-filter--nonlinearity">Linear filter &amp; nonlinearity</h4>
-
-<script type="math/tex; mode=display">r(t)=g(s*f)</script>
-
-<h3 id="feature-selection">Feature Selection</h3>
-
-<p>We want to sample the responses of the system to many stimuli so we can characterize what it is about the input that triggers responses.</p>
-
-<h3 id="variability">Variability</h3>
-
-<p>Kullback-Leibler divergence: difference between two probability distribution.</p>
-
-<script type="math/tex; mode=display">D\_{KL}(P(s), Q(s))=\int d\,s P(s)\log\_{2}\frac{P(s)}{Q(s)}</script>
-
-<p>Tuning curve:</p>
-
-<script type="math/tex; mode=display">P(\text{spike}|s\_{f})=\frac{P(s\_{f}|\text{spike})P(\text{spike})}{P(s\_{f})}</script>
-
-<table>
-  <tbody>
-    <tr>
-      <td>The Goodness measure between \(P(s_{f}</td>
-      <td>\text{spike})\) and \(P(s_{f})\):</td>
-    </tr>
-  </tbody>
-</table>
-
-<script type="math/tex; mode=display">D\_{KL}(P(s\_{f}|\text{spike}), P(s\_{f}))</script>
-
-<h4 id="binominal-spiking">Binominal spiking</h4>
-
-<p>Distribution:</p>
-
-<script type="math/tex; mode=display">P\_{n}[k]=p^{k}(1-p)^{k}</script>
-
-<p>Mean:</p>
-
-<script type="math/tex; mode=display">\langle k\rangle=np</script>
-
-<p>Variance:</p>
-
-<script type="math/tex; mode=display">\sigma^{2}=np(1-p)</script>
-
-<h4 id="poisson-spiking">Poisson spiking</h4>
-
-<p>Distribution:</p>
-
-<script type="math/tex; mode=display">P\_{T}[k]=(rT)^{k}\frac{\exp(-rT)}{k!}</script>
-
-<p>Mean:</p>
-
-<script type="math/tex; mode=display">\langle k\rangle=rT</script>
-
-<p>Variance:</p>
-
-<script type="math/tex; mode=display">\sigma^{2}=rT</script>
-
-<p>Fano factor:</p>
-
-<script type="math/tex; mode=display">F=1</script>
-
-<p>Interval distribution:</p>
-
-<script type="math/tex; mode=display">P(T)=r\exp(-rT)</script>
 
 
                     </div>

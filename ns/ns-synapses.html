@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : Synapse</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -196,11 +202,15 @@
     </h2>
 </div>
 
-<p>A <em>synapse</em> is a &quot;connection&quot; or junction between neurons, there are two types of synapse:</p>
+<p>A <em>synapse</em> is a “connection” or junction between neurons, there are two types of synapse:</p>
 
 <ul>
-<li><p><em>Electrical</em> synapses use <em>gap junctions</em></p></li>
-<li><p><em>Chemical</em> synapses use <em>neurotransmitters</em></p></li>
+  <li>
+    <p><em>Electrical</em> synapses use <em>gap junctions</em></p>
+  </li>
+  <li>
+    <p><em>Chemical</em> synapses use <em>neurotransmitters</em></p>
+  </li>
 </ul>
 
 <p>The Synapses Doctrine: Synapses are the basis for <em>memory</em> and <em>learning</em>.</p>
@@ -212,15 +222,15 @@
 <p>An <em>excitatory synapse</em> works like this</p>
 
 <blockquote>
-<p>Input spike --&gt; Neurotransmitter release (e.g. Glutamate) --&gt; Binds to ion channel receptors --&gt;
-Ion channel open --&gt; \(\text{Na}^{+}\) influx --&gt; Depolarization due to EPSP (excitatory postsynaptic potential)</p>
+  <p>Input spike –&gt; Neurotransmitter release (e.g. Glutamate) –&gt; Binds to ion channel receptors –&gt;
+Ion channel open –&gt; \(\text{Na}^{+}\) influx –&gt; Depolarization due to EPSP (excitatory postsynaptic potential)</p>
 </blockquote>
 
 <p>And <em>inhibitory synapse</em> works like this</p>
 
 <blockquote>
-<p>Input spike --&gt; Neurotransmitter release (e.g. GABA) --&gt; Binds to receptors --&gt; Ion channel open --&gt;
-\(\text{K}^{+}\) leaves cell --&gt; Hyperpolarization due to IPSP (inhibitory postsynaptic potential)</p>
+  <p>Input spike –&gt; Neurotransmitter release (e.g. GABA) –&gt; Binds to receptors –&gt; Ion channel open –&gt;
+\(\text{K}^{+}\) leaves cell –&gt; Hyperpolarization due to IPSP (inhibitory postsynaptic potential)</p>
 </blockquote>
 
 <h3 id="synaptic-plasticity">Synaptic Plasticity</h3>
@@ -228,25 +238,25 @@ Ion channel open --&gt; \(\text{Na}^{+}\) influx --&gt; Depolarization due to EP
 <p>Hebbian Plasticity:</p>
 
 <blockquote>
-<p>If neuron A repeatedly takes part in firing neuron B, then the synapse from A to B is strengthened.</p>
+  <p>If neuron A repeatedly takes part in firing neuron B, then the synapse from A to B is strengthened.</p>
 </blockquote>
 
 <ul>
-<li>Long Term Potentation (LSP): Experimentally observed increase in synaptic strength that lasts for hours or days.</li>
-<li>Long Term Depression (LSD): Experimentally observed decrease in synaptic strength that lasts for hours or days.</li>
+  <li>Long Term Potentation (LSP): Experimentally observed increase in synaptic strength that lasts for hours or days.</li>
+  <li>Long Term Depression (LSD): Experimentally observed decrease in synaptic strength that lasts for hours or days.</li>
 </ul>
 
 <p>Synaptic Plasticity depends on spike timing. LTP/LTD depends on <em>relative timing</em> of input and output spikes:</p>
 
 <ul>
-<li>LTP: Input spike before output spike</li>
-<li>LTD: Input spike after output spike</li>
+  <li>LTP: Input spike before output spike</li>
+  <li>LTD: Input spike after output spike</li>
 </ul>
 
 <div>
 <p>
 <center>
-    <img class="img-responsive" src="http://rt.dgyblog.com/images/ltp_ltd_relative_timing.png" alt="" width="70%">
+    <img class="img-responsive" src="http://rt.dgyblog.com/images/ltp_ltd_relative_timing.png" alt="" width="70%" />
 </center>
 </p>
 </div>
@@ -254,7 +264,7 @@ Ion channel open --&gt; \(\text{Na}^{+}\) influx --&gt; Depolarization due to EP
 <div>
 <p>
 <center>
-    <img class="img-responsive" src="http://rt.dgyblog.com/images/stdp.png" alt="" width="60%">
+    <img class="img-responsive" src="http://rt.dgyblog.com/images/stdp.png" alt="" width="60%" />
 </center>
 </p>
 </div>

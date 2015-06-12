@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : Linux Tricks</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -196,19 +202,25 @@
     </h2>
 </div>
 
-<p>While I&#39;m using Linux, I discovered there are many handy tricks I can use to speed up my workload. I will document these tricks so I don&#39;t have to look them up again and again. And to be clear, I&#39;m using Ubuntu.</p>
+<p>While I’m using Linux, I discovered there are many handy tricks I can use to speed up my workload. I will document these tricks so I don’t have to look them up again and again. And to be clear, I’m using Ubuntu.</p>
 
 <h4 id="extract-a-tar-file-and-place-it-in-the-same-name-folder">Extract a tar file and place it in the same name folder</h4>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ for f in *.tar; do mkdir ./${f%%.*} &amp;&amp; tar -xf $f -C. /${f%%.*}; done
-</code></pre></div>
+
+<pre><code>$ for f in *.tar; do mkdir ./${f%%.*} &amp;&amp; tar -xf $f -C. /${f%%.*}; done
+</code></pre>
+
 <h4 id="exfat-support">exFAT support</h4>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo apt-get install exfat-utils exfat-fuse
-</code></pre></div>
-<p>And you don&#39;t need to reboot</p>
+
+<pre><code>$ sudo apt-get install exfat-utils exfat-fuse
+</code></pre>
+
+<p>And you don’t need to reboot</p>
 
 <h4 id="rar-support">RAR support</h4>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ sudo apt-get install unrar
-</code></pre></div>
+
+<pre><code>$ sudo apt-get install unrar
+</code></pre>
+
 
                     </div>
                 

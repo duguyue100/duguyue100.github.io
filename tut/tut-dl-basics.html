@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : Deep Learning Prequel</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -209,16 +215,24 @@
 <p>Numpy and SciPy is a powerful couple that supports scientific computing in Python. Here I documented some useful tricks and this list will keep growing if I found new ones.</p>
 
 <ul>
-<li><p><strong>Use Array, Not Matrix</strong></p>
+  <li>
+    <p><strong>Use Array, Not Matrix</strong></p>
 
-<p>Numpy offers two data structures that handles multi-dimensional data. The one is Array, and another one is Matrix. We should understand that Matrix is extended by Array, and Array has more functions to use. The main difference is some computing operators.</p></li>
-<li><p><strong>Use library whenever you can</strong></p>
+    <p>Numpy offers two data structures that handles multi-dimensional data. The one is Array, and another one is Matrix. We should understand that Matrix is extended by Array, and Array has more functions to use. The main difference is some computing operators.</p>
+  </li>
+  <li>
+    <p><strong>Use library whenever you can</strong></p>
 
-<p>Beginners of Python or Numpy tend to write their own functions because they have no idea if the functions is available. I strongly suggest that you should search internet before you proceed. Using library&#39;s function will offer you much more faster speed and stable performance</p></li>
-<li><p><strong>Sort array by first column</strong></p>
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]);</span>
-<span class="n">A</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="s">&quot;float32, float32, float32&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">order</span><span class="o">=</span><span class="p">[</span><span class="s">&quot;f1&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</code></pre></div></li>
+    <p>Beginners of Python or Numpy tend to write their own functions because they have no idea if the functions is available. I strongly suggest that you should search internet before you proceed. Using library’s function will offer you much more faster speed and stable performance</p>
+  </li>
+  <li>
+    <p><strong>Sort array by first column</strong></p>
+
+    <p>~~~ python
+  A=np.asarray([[1,2,3], [4,5,6], [0,0,1]]);
+  A.view(“float32, float32, float32”).sort(order=[“f1”], axis=0)
+  ~~~</p>
+  </li>
 </ul>
 
 <h3 id="mind-your-doc-strings">Mind Your Doc-strings</h3>
@@ -226,15 +240,25 @@
 <p>Python offered two styles of comment, and one of them is called doc-strings. Doc-strings allow you write and generate appropriate documentations.</p>
 
 <p>They looks like this:</p>
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">some comments about the function</span>
-<span class="sd">&quot;&quot;&quot;</span>
-</code></pre></div>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#D42"><span style="color:black">&quot;&quot;&quot;</span><span>
+</span><span>some comments about the function</span><span>
+</span><span style="color:black">&quot;&quot;&quot;</span></span>
+</pre></div>
+</div>
+</div>
+
 <p>or</p>
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">some comments about the function</span>
-<span class="sd">&#39;&#39;&#39;</span>
-</code></pre></div>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span style="color:#D42"><span style="color:black">'''</span><span>
+</span><span>some comments about the function</span><span>
+</span><span style="color:black">'''</span></span>
+</pre></div>
+</div>
+</div>
+
 <p>There are few head-ups:
 + Use doc-strings to write some general description about the script or the module.
 + Always write doc-strings for your function.
@@ -246,8 +270,10 @@
 <p>You will need to conduct and document your experiments in different configurations frequently. It is important that you can keep track everything automatically with minimal efforts. <code>sacred</code> is created for addressing this issue, you can find it <a href="https://github.com/IDSIA/sacred">here</a>.</p>
 
 <p>You can install it through <code>pip</code>:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$ pip install sacred
-</code></pre></div>
+
+<pre><code>$ pip install sacred
+</code></pre>
+
 <p>You can check out the documentation of sacred from <a href="http://sacred.readthedocs.org/en/latest/">here</a>.</p>
 
 <h3 id="prepare-datasets">Prepare Datasets</h3>
@@ -260,11 +286,11 @@
 
 <h4 id="cifar-10">CIFAR-10</h4>
 
-<p>The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. </p>
+<p>The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.</p>
 
 <p>The dataset is divided into five training batches and one test batch, each with 10000 images. The test batch contains exactly 1000 randomly-selected images from each class. The training batches contain the remaining images in random order, but some training batches may contain more images from one class than another. Between them, the training batches contain exactly 5000 images from each class.</p>
 
-<p>You can get a copy of CIFAR-10 from <a href="http://www.cs.toronto.edu/%7Ekriz/cifar.html">here</a></p>
+<p>You can get a copy of CIFAR-10 from <a href="http://www.cs.toronto.edu/~kriz/cifar.html">here</a></p>
 
 <h4 id="pre-processing-techniques">Pre-processing Techniques</h4>
 

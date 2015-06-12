@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : Learning Deep Learning</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -196,87 +202,177 @@
     </h2>
 </div>
 
-<p><strong>[NOTICE]</strong> I&#39;m in the middle of adding NLP and Speech Recognition key references.</p>
+<p><strong>[NOTICE]</strong> I’m in the middle of adding NLP and Speech Recognition key references.</p>
 
-<p>There are lots of awesome reading lists or posts that summarized materials related to Deep Learning. So why would I commit another one? Well, the primary objective is to develop a complete reading list that allows readers to build a solid academic and practical background of Deep Learning. And this list is developed while I&#39;m preparing my Deep Learning workshop. My research is related to Deep Neural Networks (DNNs) in general. Hence, this posts tends to summary contributions in DNNs instead of generative models.</p>
+<p>There are lots of awesome reading lists or posts that summarized materials related to Deep Learning. So why would I commit another one? Well, the primary objective is to develop a complete reading list that allows readers to build a solid academic and practical background of Deep Learning. And this list is developed while I’m preparing my Deep Learning workshop. My research is related to Deep Neural Networks (DNNs) in general. Hence, this posts tends to summary contributions in DNNs instead of generative models.</p>
 
 <h3 id="for-novice">For Novice</h3>
 
-<p><em>If you have no idea about Machine Learning and Scientific Computing, I suggest you learn the following materials while you are reading Machine Learning or Deep Learning books. You don&#39;t have to master these materials, but basic understanding is important. It&#39;s hard to open a meaningful conversation if the person has no idea about matrix or single variable calculus.</em></p>
+<p><em>If you have no idea about Machine Learning and Scientific Computing, I suggest you learn the following materials while you are reading Machine Learning or Deep Learning books. You don’t have to master these materials, but basic understanding is important. It’s hard to open a meaningful conversation if the person has no idea about matrix or single variable calculus.</em></p>
 
 <ul>
-<li><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/">Introduction to Algorithms</a> by Erik Demaine and Srinivas Devadas.</li>
-<li><a href="http://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/">Single Variable Calculus</a> by David Jerison.</li>
-<li><a href="http://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/">Multivariable Calculus</a> by Denis Auroux.</li>
-<li><a href="http://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/">Differential Equations</a> by Arthur Mattuck, Haynes Miller, Jeremy Orloff, John Lewis.</li>
-<li><a href="http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/">Linear Algebra</a> by Gilbert Strang.</li>
+  <li><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/">Introduction to Algorithms</a> by Erik Demaine and Srinivas Devadas.</li>
+  <li><a href="http://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/">Single Variable Calculus</a> by David Jerison.</li>
+  <li><a href="http://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/">Multivariable Calculus</a> by Denis Auroux.</li>
+  <li><a href="http://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/">Differential Equations</a> by Arthur Mattuck, Haynes Miller, Jeremy Orloff, John Lewis.</li>
+  <li><a href="http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/">Linear Algebra</a> by Gilbert Strang.</li>
 </ul>
 
-<h3 id="theory-of-computation,-learning-theory,-neuroscience,-etc">Theory of Computation, Learning Theory, Neuroscience, etc</h3>
+<h3 id="theory-of-computation-learning-theory-neuroscience-etc">Theory of Computation, Learning Theory, Neuroscience, etc</h3>
 
 <ul>
-<li><p><a href="http://www.cs.virginia.edu/%7Erobins/Sipser_2006_Second_Edition_Problems.pdf">Introduction to the Theory of Computation</a> by Michael Sipser.</p></li>
-<li><p><a href="http://aima.cs.berkeley.edu/">Artificial Intelligence: A Modern Approach</a> by Stuart Russell and Peter Norvig.</p></li>
-<li><p><a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/">Pattern Recognition and Machine Learning</a> by Christopher Bishop.</p></li>
-<li><p><a href="http://www.cs.ubc.ca/%7Emurphyk/MLbook/">Machine Learning: A probabilistic perspective</a> by Kevin Patrick Murphy.</p></li>
-<li><p><a href="http://cs229.stanford.edu/materials.html">CS229 Machine Learning Course Materials</a> by Andrew Ng at Stanford University.</p></li>
-<li><p><a href="http://webdocs.cs.ualberta.ca/%7Esutton/book/the-book.html">Reinforcement Learning: An Introduction</a> by Richard S. Sutton and Andrew G. Barto.</p></li>
-<li><p><a href="http://mitpress.mit.edu/books/probabilistic-graphical-models">Probabilistic Graphical Models: Principles and Techniques</a> by Daphne Koller and Nir Friedman.</p></li>
-<li><p><a href="http://stanford.edu/%7Eboyd/cvxbook/">Convex Optimization</a> by Stephen Boyd and Lieven Vandenberghe.</p></li>
-<li><p><a href="http://www-bcf.usc.edu/%7Egareth/ISL/">An Introduction to Statistical Learning with application in R</a> by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani.</p></li>
-<li><p><a href="http://neuronaldynamics.epfl.ch/index.html">Neuronal Dynamics: From single neurons to networks and models of cognition</a> by Wulfram Gerstner, Werner M. Kistler, Richard Naud and Liam Paninski.</p></li>
-<li><p><a href="http://mitpress.mit.edu/books/theoretical-neuroscience">Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems</a> by Peter Dayan and Laurence F. Abbott.</p></li>
-<li><p><a href="https://news.ycombinator.com/item?id=1055042">Michael I. Jordan Reading List of Machine Learning</a> at Hacker News.</p></li>
+  <li>
+    <p><a href="http://www.cs.virginia.edu/~robins/Sipser_2006_Second_Edition_Problems.pdf">Introduction to the Theory of Computation</a> by Michael Sipser.</p>
+  </li>
+  <li>
+    <p><a href="http://aima.cs.berkeley.edu/">Artificial Intelligence: A Modern Approach</a> by Stuart Russell and Peter Norvig.</p>
+  </li>
+  <li>
+    <p><a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/">Pattern Recognition and Machine Learning</a> by Christopher Bishop.</p>
+  </li>
+  <li>
+    <p><a href="http://www.cs.ubc.ca/~murphyk/MLbook/">Machine Learning: A probabilistic perspective</a> by Kevin Patrick Murphy.</p>
+  </li>
+  <li>
+    <p><a href="http://cs229.stanford.edu/materials.html">CS229 Machine Learning Course Materials</a> by Andrew Ng at Stanford University.</p>
+  </li>
+  <li>
+    <p><a href="http://webdocs.cs.ualberta.ca/~sutton/book/the-book.html">Reinforcement Learning: An Introduction</a> by Richard S. Sutton and Andrew G. Barto.</p>
+  </li>
+  <li>
+    <p><a href="http://mitpress.mit.edu/books/probabilistic-graphical-models">Probabilistic Graphical Models: Principles and Techniques</a> by Daphne Koller and Nir Friedman.</p>
+  </li>
+  <li>
+    <p><a href="http://stanford.edu/~boyd/cvxbook/">Convex Optimization</a> by Stephen Boyd and Lieven Vandenberghe.</p>
+  </li>
+  <li>
+    <p><a href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning with application in R</a> by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani.</p>
+  </li>
+  <li>
+    <p><a href="http://neuronaldynamics.epfl.ch/index.html">Neuronal Dynamics: From single neurons to networks and models of cognition</a> by Wulfram Gerstner, Werner M. Kistler, Richard Naud and Liam Paninski.</p>
+  </li>
+  <li>
+    <p><a href="http://mitpress.mit.edu/books/theoretical-neuroscience">Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems</a> by Peter Dayan and Laurence F. Abbott.</p>
+  </li>
+  <li>
+    <p><a href="https://news.ycombinator.com/item?id=1055042">Michael I. Jordan Reading List of Machine Learning</a> at Hacker News.</p>
+  </li>
 </ul>
 
 <h3 id="fundamentals-of-deep-learning">Fundamentals of Deep Learning</h3>
 
 <ul>
-<li><p><a href="http://people.idsia.ch/%7Ejuergen/deep-learning-overview.html">Deep Learning in Neural Networks: An Overview</a> by Jürgen Schmidhuber.</p></li>
-<li><p><a href="http://www.iro.umontreal.ca/%7Ebengioy/dlbook/">Deep Learning Book</a> by Yoshua Bengio, Ian Goodfellow and Aaron Courville.</p></li>
-<li><p><a href="http://www.iro.umontreal.ca/%7Ebengioy/papers/ftml_book.pdf">Learning Deep Architectures for AI</a> by Yoshua Bengio</p></li>
-<li><p><a href="http://arxiv.org/abs/1206.5538">Representation Learning: A Review and New Perspectives</a> by Yoshua Bengio, Aaron Courville, Pascal Vincent.</p></li>
-<li><p><a href="https://docs.google.com/document/d/1IXF3h0RU5zz4ukmTrVKVotPQypChscNGf5k6E25HGvA/edit#heading=h.5r7p5dbrilt4">Reading lists for new LISA students</a> by LISA Lab, University of Montreal.</p></li>
+  <li>
+    <p><a href="http://people.idsia.ch/~juergen/deep-learning-overview.html">Deep Learning in Neural Networks: An Overview</a> by Jürgen Schmidhuber.</p>
+  </li>
+  <li>
+    <p><a href="http://www.iro.umontreal.ca/~bengioy/dlbook/">Deep Learning Book</a> by Yoshua Bengio, Ian Goodfellow and Aaron Courville.</p>
+  </li>
+  <li>
+    <p><a href="http://www.iro.umontreal.ca/~bengioy/papers/ftml_book.pdf">Learning Deep Architectures for AI</a> by Yoshua Bengio</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1206.5538">Representation Learning: A Review and New Perspectives</a> by Yoshua Bengio, Aaron Courville, Pascal Vincent.</p>
+  </li>
+  <li>
+    <p><a href="https://docs.google.com/document/d/1IXF3h0RU5zz4ukmTrVKVotPQypChscNGf5k6E25HGvA/edit#heading=h.5r7p5dbrilt4">Reading lists for new LISA students</a> by LISA Lab, University of Montreal.</p>
+  </li>
 </ul>
 
-<h3 id="tutorials,-practical-guides,-and-useful-software">Tutorials, Practical Guides, and Useful Software</h3>
+<h3 id="tutorials-practical-guides-and-useful-software">Tutorials, Practical Guides, and Useful Software</h3>
 
 <ul>
-<li><p><a href="https://www.coursera.org/course/ml">Machine Learning</a> by Andrew Ng.</p></li>
-<li><p><a href="https://www.coursera.org/course/neuralnets">Neural Networks for Machine Learning</a> by Geoffrey Hinton.</p></li>
-<li><p><a href="http://deeplearning.net/tutorial/">Deep Learning Tutorial</a> by LISA Lab, University of Montreal.</p></li>
-<li><p><a href="http://deeplearning.stanford.edu/tutorial/">Unsupervised Feature Learning and Deep Learning Tutorial</a> by AI Lab, Stanford University.</p></li>
-<li><p><a href="http://cs231n.stanford.edu/">CS231n: Convolutional Neural Networks for Visual Recognition</a> by Stanford University.</p></li>
-<li><p><a href="http://cs224d.stanford.edu/">CS224d: Deep Learning for Natural Language Processing</a> by Stanford University.</p></li>
-<li><p><a href="http://deeplearning.net/software/theano/">Theano</a> by LISA Lab, University of Montreal.</p></li>
-<li><p><a href="http://deeplearning.net/software/pylearn2/">PyLearn2</a> by LISA Lab, University of Montreal.</p></li>
-<li><p><a href="http://caffe.berkeleyvision.org/">Caffe</a> by Berkeley Vision and Learning Center (BVLC) and community contributor Yangqing Jia.</p></li>
-<li><p><a href="http://torch.ch/">Torch 7</a></p></li>
-<li><p><a href="http://neon.nervanasys.com/docs/latest/index.html">neon</a> by Nervana.</p></li>
-<li><p><a href="https://developer.nvidia.com/cuDNN">cuDNN</a> by NVIDIA.</p></li>
-<li><p><a href="http://cs.stanford.edu/people/karpathy/convnetjs/index.html">ConvNetJS</a> by Andrej Karpathy.</p></li>
-<li><p><a href="http://deeplearning4j.org/">DeepLearning4j</a></p></li>
-<li><p><a href="http://chainer.org/">Chainer: Neural network framework</a> by Preferred Networks, Inc.</p></li>
-<li><p><a href="https://github.com/mila-udem/blocks">Blocks</a> by LISA Lab, University of Montreal.</p></li>
-<li><p><a href="https://github.com/mila-udem/fuel">Fuel</a> by LISA Lab, University of Montreal.</p></li>
+  <li>
+    <p><a href="https://www.coursera.org/course/ml">Machine Learning</a> by Andrew Ng.</p>
+  </li>
+  <li>
+    <p><a href="https://www.coursera.org/course/neuralnets">Neural Networks for Machine Learning</a> by Geoffrey Hinton.</p>
+  </li>
+  <li>
+    <p><a href="http://deeplearning.net/tutorial/">Deep Learning Tutorial</a> by LISA Lab, University of Montreal.</p>
+  </li>
+  <li>
+    <p><a href="http://deeplearning.stanford.edu/tutorial/">Unsupervised Feature Learning and Deep Learning Tutorial</a> by AI Lab, Stanford University.</p>
+  </li>
+  <li>
+    <p><a href="http://cs231n.stanford.edu/">CS231n: Convolutional Neural Networks for Visual Recognition</a> by Stanford University.</p>
+  </li>
+  <li>
+    <p><a href="http://cs224d.stanford.edu/">CS224d: Deep Learning for Natural Language Processing</a> by Stanford University.</p>
+  </li>
+  <li>
+    <p><a href="http://deeplearning.net/software/theano/">Theano</a> by LISA Lab, University of Montreal.</p>
+  </li>
+  <li>
+    <p><a href="http://deeplearning.net/software/pylearn2/">PyLearn2</a> by LISA Lab, University of Montreal.</p>
+  </li>
+  <li>
+    <p><a href="http://caffe.berkeleyvision.org/">Caffe</a> by Berkeley Vision and Learning Center (BVLC) and community contributor Yangqing Jia.</p>
+  </li>
+  <li>
+    <p><a href="http://torch.ch/">Torch 7</a></p>
+  </li>
+  <li>
+    <p><a href="http://neon.nervanasys.com/docs/latest/index.html">neon</a> by Nervana.</p>
+  </li>
+  <li>
+    <p><a href="https://developer.nvidia.com/cuDNN">cuDNN</a> by NVIDIA.</p>
+  </li>
+  <li>
+    <p><a href="http://cs.stanford.edu/people/karpathy/convnetjs/index.html">ConvNetJS</a> by Andrej Karpathy.</p>
+  </li>
+  <li>
+    <p><a href="http://deeplearning4j.org/">DeepLearning4j</a></p>
+  </li>
+  <li>
+    <p><a href="http://chainer.org/">Chainer: Neural network framework</a> by Preferred Networks, Inc.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/mila-udem/blocks">Blocks</a> by LISA Lab, University of Montreal.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/mila-udem/fuel">Fuel</a> by LISA Lab, University of Montreal.</p>
+  </li>
 </ul>
 
 <h3 id="literature-in-deep-learning-and-feature-learning">Literature in Deep Learning and Feature Learning</h3>
 
-<p><em>Deep Learning is a fast-moving community. Therefore the line between &quot;Recent Advances&quot; and &quot;Literature that matter&quot; is kind of blurred. Here I collected articles that are either introducing fundamental algorithms, techniques or highly cited by the community.</em></p>
+<p><em>Deep Learning is a fast-moving community. Therefore the line between “Recent Advances” and “Literature that matter” is kind of blurred. Here I collected articles that are either introducing fundamental algorithms, techniques or highly cited by the community.</em></p>
 
 <ul>
-<li><p><a href="http://link.springer.com/book/10.1007%2F978-1-4471-5779-3">Automatic Speech Recognition - A Deep Learning Approach</a> by Dong Yu and Li Deng (<em>Published by Springer, no Open Access</em>)</p></li>
-<li><p><a href="https://www.ics.uci.edu/%7Ewelling/teaching/273ASpring09/lecun-89e.pdf">Backpropagation Applied to Handwritten Zip Code Recognition</a> by Y. LeCun, B. Boser, J. S. Denker, D. Henderson, R. E. Howard, W. Hubbard and L. D. Jackel.</p></li>
-<li><p><a href="http://arxiv.org/abs/1504.06825">Comparison of Training Methods for Deep Neural Networks</a> by Patrick O. Glauner.</p></li>
-<li><p><a href="http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html">Deep Learning</a> by Yann LeCun, Yoshua Bengio, Geoffrey Hinton. (NO FREE COPY AVAILABLE)</p></li>
-<li><p><a href="http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">Distributed Representations of Words and Phrases and their Compositionality</a> by Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado and Jeffrey Dean.</p></li>
-<li><p><a href="http://arxiv.org/abs/1301.3781">Efficient Estimation of Word Representations in Vector Space</a> by Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.06250">Efficient Large Scale Video Classification</a> by Balakrishnan Varadarajan, George Toderici, Sudheendra Vijayanarasimhan, Apostol Natsev.</p></li>
-<li><p><a href="http://research.microsoft.com/pubs/219984/BOOK2014.pdf">Foundations and Trends in Signal Processing: DEEP LEARNING --- Methods and Applications</a> by Li Deng and Dong Yu.</p></li>
-<li><p><a href="http://www.jair.org/media/2934/live-2934-4846-jair.pdf">From Frequency to Meaning: Vector Space Models of Semantics</a> by Peter D. Turney and Patrick Pantel.</p></li>
-<li><p><a href="http://arxiv.org/abs/1503.04069">LSTM: A Search Space Odyssey</a> by Klaus Greff, Rupesh Kumar Srivastava, Jan Koutník, Bas R. Steunebrink, Jürgen Schmidhuber.</p></li>
-<li><p><a href="http://www.cs.toronto.edu/%7Egraves/preprint.pdf">Supervised Sequence Labelling with Recurrent Neural Networks</a> by Alex Graves.</p></li>
+  <li>
+    <p><a href="http://link.springer.com/book/10.1007%2F978-1-4471-5779-3">Automatic Speech Recognition - A Deep Learning Approach</a> by Dong Yu and Li Deng (<em>Published by Springer, no Open Access</em>)</p>
+  </li>
+  <li>
+    <p><a href="https://www.ics.uci.edu/~welling/teaching/273ASpring09/lecun-89e.pdf">Backpropagation Applied to Handwritten Zip Code Recognition</a> by Y. LeCun, B. Boser, J. S. Denker, D. Henderson, R. E. Howard, W. Hubbard and L. D. Jackel.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1504.06825">Comparison of Training Methods for Deep Neural Networks</a> by Patrick O. Glauner.</p>
+  </li>
+  <li>
+    <p><a href="http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html">Deep Learning</a> by Yann LeCun,	Yoshua Bengio, Geoffrey Hinton. (NO FREE COPY AVAILABLE)</p>
+  </li>
+  <li>
+    <p><a href="http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf">Distributed Representations of Words and Phrases and their Compositionality</a> by Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado and Jeffrey Dean.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1301.3781">Efficient Estimation of Word Representations in Vector Space</a> by Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.06250">Efficient Large Scale Video Classification</a> by Balakrishnan Varadarajan, George Toderici, Sudheendra Vijayanarasimhan, Apostol Natsev.</p>
+  </li>
+  <li>
+    <p><a href="http://research.microsoft.com/pubs/219984/BOOK2014.pdf">Foundations and Trends in Signal Processing: DEEP LEARNING — Methods and Applications</a> by Li Deng and Dong Yu.</p>
+  </li>
+  <li>
+    <p><a href="http://www.jair.org/media/2934/live-2934-4846-jair.pdf">From Frequency to Meaning: Vector Space Models of Semantics</a> by Peter D. Turney and Patrick Pantel.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1503.04069">LSTM: A Search Space Odyssey</a> by Klaus Greff, Rupesh Kumar Srivastava, Jan Koutník, Bas R. Steunebrink, Jürgen Schmidhuber.</p>
+  </li>
+  <li>
+    <p><a href="http://www.cs.toronto.edu/~graves/preprint.pdf">Supervised Sequence Labelling with Recurrent Neural Networks</a> by Alex Graves.</p>
+  </li>
 </ul>
 
 <h3 id="recent-must-read-advances-in-deep-learning">Recent Must-Read Advances in Deep Learning</h3>
@@ -284,100 +380,268 @@
 <p><em>Most of papers here are produced in 2014 and after. Survey papers or review papers are not included.</em></p>
 
 <ul>
-<li><p><a href="http://arxiv.org/abs/1505.05914">A Multi-scale Multiple Instance Video Description Network</a> by Huijuan Xu, Subhashini Venugopalan, Vasili Ramanishka, Marcus Rohrbach, Kate Saenko.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.06798">Accelerating Very Deep Convolutional Networks for Classification and Detection</a> by Xiangyu Zhang, Jianhua Zou, Kaiming He, Jian Sun.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.04868">Action Recognition With Trajectory-Pooled Deep-Convolutional Descriptors</a> by Limin Wang, Yu Qiao, Xiaoou Tang.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.05612">Are You Talking to a Machine? Dataset and Methods for Multilingual Image Question Answering</a> by Haoyuan Gao, Junhua Mao, Jie Zhou, Zhiheng Huang, Lei Wang, Wei Xu.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.01121">Ask Your Neurons: A Neural-based Approach to Answering Questions about Images</a> by Mateusz Malinowski, Marcus Rohrbach, Mario Fritz.</p></li>
-<li><p><a href="http://arxiv.org/abs/1502.03167">Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</a> by Sergey Ioffe and Christian Szegedy.</p></li>
-<li><p><a href="http://arxiv.org/abs/1503.08909">Beyond Short Snipets: Deep Networks for Video Classification</a> by Joe Yue-Hei Ng, Matthew Hausknecht, Sudheendra Vijayanarasimhan, Oriol Vinyals, Rajat Monga, George Toderici.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.01911">Beyond Temporal Pooling: Recurrence and Temporal Convolutions for Gesture Recognition in Video</a> by Lionel Pigou, Aäron van den Oord, Sander Dieleman, Mieke Van Herreweghe, Joni Dambre.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.02146">DeepBox: Learning Objectness with Convolutional Networks</a> by Weicheng Kuo, Bharath Hariharan, Jitendra Malik.</p></li>
-<li><p><a href="http://arxiv.org/abs/1412.5661">DeepID-Net: Deformable Deep Convolutional Neural Networks for Object Detection</a> by Wanli Ouyang, Xiaogang Wang, Xingyu Zeng, Shi Qiu, Ping Luo, Yonglong Tian, Hongsheng Li, Shuo Yang, Zhe Wang, Chen-Change Loy, Xiaoou Tang.</p></li>
-<li><p><a href="http://arxiv.org/abs/1407.3068">Deep Networks with Internal Selective Attention through Feedback Connections</a> by Marijn Stollenga, Jonathan Masci, Faustino Gomez, Jürgen Schmidhuber.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.03059">Deep SimNets</a> by Nadav Cohen, Or Sharir, Amnon Shashua.</p></li>
-<li><p><a href="http://arxiv.org/abs/1412.5567">Deep Speech: Scaling up end-to-end speech recognition</a> by Awni Hannun, Carl Case, Jared Casper, Bryan Catanzaro, Greg Diamos, Erich Elsen, Ryan Prenger, Sanjeev Satheesh, Shubho Sengupta, Adam Coates, Andrew Y. Ng.</p></li>
-<li><p><a href="http://cs.stanford.edu/people/karpathy/deepimagesent/">Deep Visual-Semantic Alignments for Generating Image Descriptions</a> by Andrej Karpathy, Fei-Fei Li.</p></li>
-<li><p><a href="http://arxiv.org/abs/1502.08029">Describing Videos by Exploiting Temporal Structure</a> by Li Yao, Atousa Torabi, Kyunghyun Cho, Nicolas Ballas, Christopher Pal, Hugo Larochelle, Aaron Courville.</p></li>
-<li><p><a href="http://arxiv.org/abs/1502.04623">DRAW: A Recurrent Neural Network For Image Generation</a> by Karol Gregor, Ivo Danihelka, Alex Graves, Daan Wierstra.</p></li>
-<li><p><a href="http://jmlr.org/papers/v15/srivastava14a.html">Dropout: A Simple Way to Prevent Neural Networks from Overfitting</a> by Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov.</p></li>
-<li><p><a href="http://arxiv.org/abs/1503.03832">FaceNet: A Unified Embedding for Face Recognition and Clustering</a> by Florian Schroff, Dmitry Kalenichenko, James Philbin.</p></li>
-<li><p><a href="http://www.ini.uzh.ch/admin/extras/doc_get.php?id=54478">Fast-Classifying, High-Accuracy Spiking Deep Networks Through Weight and Threshold Balancing</a> by Peter U. Diehl, Daniel Neil, Jonathan Binas, Matthew Cook, Shih-Chii Liu, and Michael Pfeiffer.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.01497">Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks</a> by Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun.</p></li>
-<li><p><a href="http://arxiv.org/abs/1412.6550">FitNets: Hints for Thin Deep Nets</a> by Adriana Romero, Nicolas Ballas, Samira Ebrahimi Kahou, Antoine Chassang, Carlo Gatta, Yoshua Bengio.</p></li>
-<li><p><a href="http://arxiv.org/abs/1504.06852">FlowNet: Learning Optical Flow with Convolutional Networks</a> by Philipp Fischer, Alexey Dosovitskiy, Eddy Ilg, Philip Häusser, Caner Hazırbaş, Vladimir Golkov, Patrick van der Smagt, Daniel Cremers, Thomas Brox.</p></li>
-<li><p><a href="http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html">Human-level control through deep reinforcement learning</a> by Google DeepMind.</p></li>
-<li><p><a href="http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional">ImageNet Classification with Deep Convolutional Neural Networks</a> by Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.01144">Image Captioning with an Intermediate Attributes Layer</a> by Qi Wu, Chunhua Shen, Anton van den Hengel, Lingqiao Liu, Anthony Dick.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.05190">Image Reconstruction from Bag-of-Visual-Words</a> by Hiroharu Kato, Tatsuya Harada.</p></li>
-<li><p><a href="http://arxiv.org/abs/1501.00092">Image Super-Resolution Using Deep Convolutional Networks</a> by Chao Dong, Chen Change Loy, Kaiming He, Xiaoou Tang.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.02074">Image Question Answering: A Visual Semantic Embedding Model and a New Dataset</a> by Mengye Ren, Ryan Kiros, Richard Zemel.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.02753">Inverting Convolutional Networks with Convolutional Networks</a> by Alexey Dosovitskiy, Thomas Brox.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.02075">Large-scale Simple Question Answering with Memory Networks</a> by Antoine Bordes, Nicolas Usunier, Sumit Chopra, Jason Weston.</p></li>
-<li><p><a href="http://arxiv.org/abs/1504.06692">Learning like a Child: Fast Novel Visual Concept Learning from Sentence Descriptions of Images</a> by Junhua Mao, Wei Xu, Yi Yang, Jiang Wang, Zhiheng Huang, Alan Yuille.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.04366">Learning Deconvolution Network for Semantic Segmentation</a> by Hyeonwoo Noh, Seunghoon Hong, Bohyung Han.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.02117">Learning Multiple Tasks with Deep Relationship Networks</a> by Mingsheng Long, Jianmin Wang.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.01929">Learning to track for spatio-temporal action localization</a> by Philippe Weinzaepfel, Zaid Harchaoui, Cordelia Schmid.</p></li>
-<li><p><a href="http://arxiv.org/abs/1502.02791">Learning Transferable Features with Deep Adaptation Networks</a> by Mingsheng Long, Yue Cao, Jianmin Wang, Michael I. Jordan.</p></li>
-<li><p><a href="http://jeffdonahue.com/lrcn/">Long-term Recurrent Convolutional Networks for Visual Recognition and Description</a> by Jeff Donahue, Lisa Anne Hendricks, Sergio Guadarrama, Marcus Rohrbach, Subhashini Venugopalan, Kate Saenko, Trevor Darrell.</p></li>
-<li><p><a href="http://arxiv.org/abs/1502.03509">MADE: Masked Autoencoder for Distribution Estimation</a> by Mathieu Germain, Karol Gregor, Iain Murray, Hugo Larochelle.</p></li>
-<li><p><a href="http://jmlr.org/proceedings/papers/v28/goodfellow13.pdf">Maxout Networks</a> by Ian J. Goodfellow, David Warde-Farley, Mehdi Mirza, Aaron Courville, Yoshua Bengio.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.01110">Multi-view Machines</a> by Bokai Cao, Hucheng Zhou, Philip S. Yu.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.02617">Path-SGD: Path-Normalized Optimization in Deep Neural Networks</a> by Behnam Neyshabur, Ruslan Salakhutdinov, Nathan Srebro.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.00511">Predicting Deep Zero-Shot Convolutional Neural Networks using Textual Descriptions</a> by Jimmy Ba, Kevin Swersky, Sanja Fidler, Ruslan Salakhutdinov.</p></li>
-<li><p><a href="http://arxiv.org/abs/1406.6247">Recurrent Models of Visual Attention</a> by Volodymyr Mnih, Nicolas Heess, Alex Graves, Koray Kavukcuoglu.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.05641">Render for CNN: Viewpoint Estimation in Images Using CNNs Trained with Rendered 3D Model Views</a> by Hao Su, Charles R. Qi, Yangyan Li, Leonidas Guibas.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.00393">ReNet: A Recurrent Neural Network Based Alternative to Convolutional Networks</a> by Francesco Visin, Kyle Kastner, Kyunghyun Cho, Matteo Matteucci, Aaron Courville, Yoshua Bengio.</p></li>
-<li><p><a href="http://www.cs.toronto.edu/%7Ergrosse/icml2015-fang.pdf">Scaling Up Natural Gradient by Sparsely Factorizing the Inverse Fisher Matrix</a> by Roger B. Grosse, Ruslan Salakhutdinov.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.03099">Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks</a> by Samy Bengio, Oriol Vinyals, Navdeep Jaitly, Noam Shazeer.</p></li>
-<li><p><a href="http://papers.nips.cc/paper/5351-searching-for-higgs-boson-decay-modes-with-deep-learning.pdf">Searching for Higgs Boson Decay Modes with Deep Learning</a> by Peter Sadowski, Pierre Baldi, Daniel Whiteson.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.07293">SegNet: A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling</a> by Vijay Badrinarayanan, Ankur Handa, Roberto Cipolla.</p></li>
-<li><p><a href="http://arxiv.org/abs/1411.4555">Show and Tell: A Neural Image Caption Generator</a> by Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan</p></li>
-<li><p><a href="http://arxiv.org/abs/1502.03044">Show, Attend and Tell: Neural Image Caption Generation with Visual Attention</a> by Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhutdinov, Richard Zemel, Yoshua Bengio.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.02025">Spatial Transformer Networks</a> by Max Jaderberg, Karen Simonyan, Andrew Zisserman, Koray Kavukcuoglu.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.02351">Stacked What-Where Auto-encoders</a> by Junbo Zhao, Michael Mathieu, Ross Goroshin, Yann Lecun.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.03340">Teaching Machines to Read and Comprehend</a> by Karl Moritz Hermann, Tomáš Kočiský, Edward Grefenstette, Lasse Espeholt, Will Kay, Mustafa Suleyman, Phil Blunsom.</p></li>
-<li><p><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Neural Networks</a> by Andrej Karpathy.</p></li>
-<li><p><a href="http://arxiv.org/abs/1502.04156">Towards Biologically Plausible Deep Learning</a> by Yoshua Bengio, Dong-Hyun Lee, Jorg Bornschein, Zhouhan Lin.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.07428">Training a Convolutional Neural Network for Appearance-Invariant Place Recognition</a> by Ruben Gomez-Ojeda, Manuel Lopez-Antequera, Nicolai Petkov, Javier Gonzalez-Jimenez.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.02496">Training Deeper Convolutional Networks with Deep Supervision</a> by Liwei Wang, Chen-Yu Lee, Zhuowen Tu, Svetlana Lazebnik.</p></li>
-<li><p><a href="http://arxiv.org/abs/1412.4729">Translating Videos to Natural Language Using Deep Recurrent Neural Networks</a> by Subhashini Venugopalan, Huijuan Xu, Jeff Donahue, Marcus Rohrbach, Raymond Mooney, Kate Saenko.</p></li>
-<li><p><a href="http://arxiv.org/abs/1410.1165">Understanding Locally Competitive Networks</a> by Rupesh Kumar Srivastava, Jonathan Masci, Faustino Gomez, Jürgen Schmidhuber.</p></li>
-<li><p><a href="http://arxiv.org/abs/1502.04681">Unsupervised Learning of Video Representations using LSTMs</a> by Nitish Srivastava, Elman Mansimov, Ruslan Salakhutdinov.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.00687">Unsupervised Learning of Visual Representations using Videos</a> by Xiaolong Wang, Abhinav Gupta.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.05192">Unsupervised Visual Representation Learning by Context Prediction</a> by Carl Doersch, Abhinav Gupta, Alexei A. Efros.</p></li>
-<li><p><a href="http://arxiv.org/abs/1503.01070">Using Descriptive Video Services to Create a Large Data Source for Video Annotation Research</a> by Atousa Torabi, Christopher Pal, Hugo Larochelle, Aaron Courville.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.02078">Visualizing and Understanding Recurrent Networks</a> by Andrej Karpathy, Justin Johnson, Fei-Fei Li.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.05769">Watch and Learn: Semi-Supervised Learning of Object Detectors from Videos</a> by Ishan Misra, Abhinav Shrivastava, Martial Hebert.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.06027">Weakly-Supervised Alignment of Video With Text</a> by P. Bojanowski, R. Lagugie, Edouard Grave, Francis Bach, I. Laptev, J. Ponce, C. Schmid.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.05424">Weight Uncertainty in Neural Networks</a> by Charles Blundell, Julien Cornebise, Koray Kavukcuoglu, Daan Wierstra.</p></li>
-<li><p><a href="http://arxiv.org/abs/1505.05561">Why Regularized Auto-Encoders learn Sparse Representation?</a> by Devansh Arpit, Yingbo Zhou, Hung Ngo, Venu Govindaraju.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.02761">WordRank: Learning Word Embeddings via Robust Ranking</a> by Shihao Ji, Hyokun Yun, Pinar Yanardag, Shin Matsushima, S. V. N. Vishwanathan.</p></li>
-<li><p><a href="http://arxiv.org/abs/1506.02640">You Only Look Once: Unified, Real-Time Object Detection</a> by Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi.</p></li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.05914">A Multi-scale Multiple Instance Video Description Network</a> by Huijuan Xu, Subhashini Venugopalan, Vasili Ramanishka, Marcus Rohrbach, Kate Saenko.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.06798">Accelerating Very Deep Convolutional Networks for Classification and Detection</a> by Xiangyu Zhang, Jianhua Zou, Kaiming He, Jian Sun.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.04868">Action Recognition With Trajectory-Pooled Deep-Convolutional Descriptors</a> by Limin Wang, Yu Qiao, Xiaoou Tang.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.05612">Are You Talking to a Machine? Dataset and Methods for Multilingual Image Question Answering</a> by Haoyuan Gao, Junhua Mao, Jie Zhou, Zhiheng Huang, Lei Wang, Wei Xu.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.01121">Ask Your Neurons: A Neural-based Approach to Answering Questions about Images</a> by Mateusz Malinowski, Marcus Rohrbach, Mario Fritz.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1502.03167">Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</a> by Sergey Ioffe and Christian Szegedy.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1503.08909">Beyond Short Snipets: Deep Networks for Video Classification</a> by Joe Yue-Hei Ng, Matthew Hausknecht, Sudheendra Vijayanarasimhan, Oriol Vinyals, Rajat Monga, George Toderici.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.01911">Beyond Temporal Pooling: Recurrence and Temporal Convolutions for Gesture Recognition in Video</a> by Lionel Pigou, Aäron van den Oord, Sander Dieleman, Mieke Van Herreweghe, Joni Dambre.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.02146">DeepBox: Learning Objectness with Convolutional Networks</a> by Weicheng Kuo, Bharath Hariharan, Jitendra Malik.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1412.5661">DeepID-Net: Deformable Deep Convolutional Neural Networks for Object Detection</a> by Wanli Ouyang, Xiaogang Wang, Xingyu Zeng, Shi Qiu, Ping Luo, Yonglong Tian, Hongsheng Li, Shuo Yang, Zhe Wang, Chen-Change Loy, Xiaoou Tang.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1407.3068">Deep Networks with Internal Selective Attention through Feedback Connections</a> by Marijn Stollenga, Jonathan Masci, Faustino Gomez, Jürgen Schmidhuber.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.03059">Deep SimNets</a> by Nadav Cohen, Or Sharir, Amnon Shashua.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1412.5567">Deep Speech: Scaling up end-to-end speech recognition</a> by Awni Hannun, Carl Case, Jared Casper, Bryan Catanzaro, Greg Diamos, Erich Elsen, Ryan Prenger, Sanjeev Satheesh, Shubho Sengupta, Adam Coates, Andrew Y. Ng.</p>
+  </li>
+  <li>
+    <p><a href="http://cs.stanford.edu/people/karpathy/deepimagesent/">Deep Visual-Semantic Alignments for Generating Image Descriptions</a> by Andrej Karpathy, Fei-Fei Li.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1502.08029">Describing Videos by Exploiting Temporal Structure</a> by Li Yao, Atousa Torabi, Kyunghyun Cho, Nicolas Ballas, Christopher Pal, Hugo Larochelle, Aaron Courville.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1502.04623">DRAW: A Recurrent Neural Network For Image Generation</a> by Karol Gregor, Ivo Danihelka, Alex Graves, Daan Wierstra.</p>
+  </li>
+  <li>
+    <p><a href="http://jmlr.org/papers/v15/srivastava14a.html">Dropout: A Simple Way to Prevent Neural Networks from Overfitting</a> by Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1503.03832">FaceNet: A Unified Embedding for Face Recognition and Clustering</a> by Florian Schroff, Dmitry Kalenichenko, James Philbin.</p>
+  </li>
+  <li>
+    <p><a href="http://www.ini.uzh.ch/admin/extras/doc_get.php?id=54478">Fast-Classifying, High-Accuracy Spiking Deep Networks Through Weight and Threshold Balancing</a> by Peter U. Diehl, Daniel Neil, Jonathan Binas, Matthew Cook, Shih-Chii Liu, and Michael Pfeiffer.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.01497">Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks</a> by Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1412.6550">FitNets: Hints for Thin Deep Nets</a> by Adriana Romero, Nicolas Ballas, Samira Ebrahimi Kahou, Antoine Chassang, Carlo Gatta, Yoshua Bengio.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1504.06852">FlowNet: Learning Optical Flow with Convolutional Networks</a> by Philipp Fischer, Alexey Dosovitskiy, Eddy Ilg, Philip Häusser, Caner Hazırbaş, Vladimir Golkov, Patrick van der Smagt, Daniel Cremers, Thomas Brox.</p>
+  </li>
+  <li>
+    <p><a href="http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html">Human-level control through deep reinforcement learning</a> by Google DeepMind.</p>
+  </li>
+  <li>
+    <p><a href="http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional">ImageNet Classification with Deep Convolutional Neural Networks</a> by Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.01144">Image Captioning with an Intermediate Attributes Layer</a> by Qi Wu, Chunhua Shen, Anton van den Hengel, Lingqiao Liu, Anthony Dick.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.05190">Image Reconstruction from Bag-of-Visual-Words</a> by Hiroharu Kato, Tatsuya Harada.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1501.00092">Image Super-Resolution Using Deep Convolutional Networks</a> by Chao Dong, Chen Change Loy, Kaiming He, Xiaoou Tang.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.02074">Image Question Answering: A Visual Semantic Embedding Model and a New Dataset</a> by Mengye Ren, Ryan Kiros, Richard Zemel.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.02753">Inverting Convolutional Networks with Convolutional Networks</a> by Alexey Dosovitskiy, Thomas Brox.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.02075">Large-scale Simple Question Answering with Memory Networks</a> by Antoine Bordes, Nicolas Usunier, Sumit Chopra, Jason Weston.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1504.06692">Learning like a Child: Fast Novel Visual Concept Learning from Sentence Descriptions of Images</a> by Junhua Mao, Wei Xu, Yi Yang, Jiang Wang, Zhiheng Huang, Alan Yuille.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.04366">Learning Deconvolution Network for Semantic Segmentation</a> by Hyeonwoo Noh, Seunghoon Hong, Bohyung Han.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.02117">Learning Multiple Tasks with Deep Relationship Networks</a> by Mingsheng Long, Jianmin Wang.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.01929">Learning to track for spatio-temporal action localization</a> by Philippe Weinzaepfel, Zaid Harchaoui, Cordelia Schmid.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1502.02791">Learning Transferable Features with Deep Adaptation Networks</a> by Mingsheng Long, Yue Cao, Jianmin Wang, Michael I. Jordan.</p>
+  </li>
+  <li>
+    <p><a href="http://jeffdonahue.com/lrcn/">Long-term Recurrent Convolutional Networks for Visual Recognition and Description</a> by Jeff Donahue, Lisa Anne Hendricks, Sergio Guadarrama, Marcus Rohrbach, Subhashini Venugopalan, Kate Saenko, Trevor Darrell.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1502.03509">MADE: Masked Autoencoder for Distribution Estimation</a> by Mathieu Germain, Karol Gregor, Iain Murray, Hugo Larochelle.</p>
+  </li>
+  <li>
+    <p><a href="http://jmlr.org/proceedings/papers/v28/goodfellow13.pdf">Maxout Networks</a> by Ian J. Goodfellow, David Warde-Farley, Mehdi Mirza, Aaron Courville, Yoshua Bengio.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.01110">Multi-view Machines</a> by Bokai Cao, Hucheng Zhou, Philip S. Yu.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.02617">Path-SGD: Path-Normalized Optimization in Deep Neural Networks</a> by Behnam Neyshabur, Ruslan Salakhutdinov, Nathan Srebro.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.00511">Predicting Deep Zero-Shot Convolutional Neural Networks using Textual Descriptions</a> by Jimmy Ba, Kevin Swersky, Sanja Fidler, Ruslan Salakhutdinov.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1406.6247">Recurrent Models of Visual Attention</a> by Volodymyr Mnih, Nicolas Heess, Alex Graves, Koray Kavukcuoglu.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.05641">Render for CNN: Viewpoint Estimation in Images Using CNNs Trained with Rendered 3D Model Views</a> by Hao Su, Charles R. Qi, Yangyan Li, Leonidas Guibas.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.00393">ReNet: A Recurrent Neural Network Based Alternative to Convolutional Networks</a> by Francesco Visin, Kyle Kastner, Kyunghyun Cho, Matteo Matteucci, Aaron Courville, Yoshua Bengio.</p>
+  </li>
+  <li>
+    <p><a href="http://www.cs.toronto.edu/~rgrosse/icml2015-fang.pdf">Scaling Up Natural Gradient by Sparsely Factorizing the Inverse Fisher Matrix</a> by Roger B. Grosse, Ruslan Salakhutdinov.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.03099">Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks</a> by Samy Bengio, Oriol Vinyals, Navdeep Jaitly, Noam Shazeer.</p>
+  </li>
+  <li>
+    <p><a href="http://papers.nips.cc/paper/5351-searching-for-higgs-boson-decay-modes-with-deep-learning.pdf">Searching for Higgs Boson Decay Modes with Deep Learning</a> by Peter Sadowski, Pierre Baldi, Daniel Whiteson.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.07293">SegNet: A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling</a> by Vijay Badrinarayanan, Ankur Handa, Roberto Cipolla.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1411.4555">Show and Tell: A Neural Image Caption Generator</a> by Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1502.03044">Show, Attend and Tell: Neural Image Caption Generation with Visual Attention</a> by Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhutdinov, Richard Zemel, Yoshua Bengio.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.02025">Spatial Transformer Networks</a> by Max Jaderberg, Karen Simonyan, Andrew Zisserman, Koray Kavukcuoglu.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.02351">Stacked What-Where Auto-encoders</a> by Junbo Zhao, Michael Mathieu, Ross Goroshin, Yann Lecun.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.03340">Teaching Machines to Read and Comprehend</a> by Karl Moritz Hermann, Tomáš Kočiský, Edward Grefenstette, Lasse Espeholt, Will Kay, Mustafa Suleyman, Phil Blunsom.</p>
+  </li>
+  <li>
+    <p><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Neural Networks</a> by Andrej Karpathy.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1502.04156">Towards Biologically Plausible Deep Learning</a> by Yoshua Bengio, Dong-Hyun Lee, Jorg Bornschein, Zhouhan Lin.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.07428">Training a Convolutional Neural Network for Appearance-Invariant Place Recognition</a> by Ruben Gomez-Ojeda, Manuel Lopez-Antequera, Nicolai Petkov, Javier Gonzalez-Jimenez.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.02496">Training Deeper Convolutional Networks with Deep Supervision</a> by Liwei Wang, Chen-Yu Lee, Zhuowen Tu, Svetlana Lazebnik.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1412.4729">Translating Videos to Natural Language Using Deep Recurrent Neural Networks</a> by Subhashini Venugopalan, Huijuan Xu, Jeff Donahue, Marcus Rohrbach, Raymond Mooney, Kate Saenko.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1410.1165">Understanding Locally Competitive Networks</a> by Rupesh Kumar Srivastava, Jonathan Masci, Faustino Gomez, Jürgen Schmidhuber.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1502.04681">Unsupervised Learning of Video Representations using LSTMs</a> by Nitish Srivastava, Elman Mansimov, Ruslan Salakhutdinov.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.00687">Unsupervised Learning of Visual Representations using Videos</a> by Xiaolong Wang, Abhinav Gupta.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.05192">Unsupervised Visual Representation Learning by Context Prediction</a> by Carl Doersch, Abhinav Gupta, Alexei A. Efros.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1503.01070">Using Descriptive Video Services to Create a Large Data Source for Video Annotation Research</a> by Atousa Torabi, Christopher Pal, Hugo Larochelle, Aaron Courville.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.02078">Visualizing and Understanding Recurrent Networks</a> by Andrej Karpathy, Justin Johnson, Fei-Fei Li.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.05769">Watch and Learn: Semi-Supervised Learning of Object Detectors from Videos</a> by Ishan Misra, Abhinav Shrivastava, Martial Hebert.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.06027">Weakly-Supervised Alignment of Video With Text</a> by P. Bojanowski, R. Lagugie, Edouard Grave, Francis Bach, I. Laptev, J. Ponce, C. Schmid.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.05424">Weight Uncertainty in Neural Networks</a> by Charles Blundell, Julien Cornebise, Koray Kavukcuoglu, Daan Wierstra.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1505.05561">Why Regularized Auto-Encoders learn Sparse Representation?</a> by Devansh Arpit, Yingbo Zhou, Hung Ngo, Venu Govindaraju.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.02761">WordRank: Learning Word Embeddings via Robust Ranking</a> by Shihao Ji, Hyokun Yun, Pinar Yanardag, Shin Matsushima, S. V. N. Vishwanathan.</p>
+  </li>
+  <li>
+    <p><a href="http://arxiv.org/abs/1506.02640">You Only Look Once: Unified, Real-Time Object Detection</a> by Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi.</p>
+  </li>
 </ul>
 
 <h3 id="dataset">Dataset</h3>
 
 <ul>
-<li><p><a href="http://www.vision.caltech.edu/Image_Datasets/Caltech101/">Caltech 101</a> by L. Fei-Fei, R. Fergus and P. Perona.</p></li>
-<li><p><a href="http://www.vision.caltech.edu/Image_Datasets/Caltech256/">Caltech 256</a> by G. Griffin, AD. Holub, P. Perona.</p></li>
-<li><p><a href="http://www.cs.toronto.edu/%7Ekriz/cifar.html">CIFAR-10</a> by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton.</p></li>
-<li><p><a href="http://www.cs.toronto.edu/%7Ekriz/cifar.html">CIFAR-100</a> by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton.</p></li>
-<li><p><a href="http://shannon.cs.illinois.edu/DenotationGraph/">Flickr30k</a> by Peter Young, Alice Lai, Micah Hodosh, Julia Hockenmaier.</p></li>
-<li><p><a href="http://image-net.org/download-images">ImageNet</a> by Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg and Li Fei-Fei.</p></li>
-<li><p><a href="http://mscoco.org/">Microsoft COCO</a> by Microsoft Research.</p></li>
-<li><p><a href="http://yann.lecun.com/exdb/mnist/">MNIST</a> by Yann LeCun, Corinna Cortes, Christopher J.C. Burges.</p></li>
-<li><p><a href="http://places.csail.mit.edu/">Places</a> by MIT Computer Science and Artificial Intelligence Laboratory.</p></li>
-<li><p><a href="http://cs.stanford.edu/%7Eacoates/stl10/">STL-10</a> by Adam Coates, Honglak Lee, Andrew Y. Ng.</p></li>
-<li><p><a href="http://ufldl.stanford.edu/housenumbers/">SVHN</a> by Yuval Netzer, Tao Wang, Adam Coates, Alessandro Bissacco, Bo Wu, Andrew Y. Ng.</p></li>
+  <li>
+    <p><a href="http://www.vision.caltech.edu/Image_Datasets/Caltech101/">Caltech 101</a> by L. Fei-Fei, R. Fergus and P. Perona.</p>
+  </li>
+  <li>
+    <p><a href="http://www.vision.caltech.edu/Image_Datasets/Caltech256/">Caltech 256</a> by G. Griffin, AD. Holub, P. Perona.</p>
+  </li>
+  <li>
+    <p><a href="http://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-10</a> by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton.</p>
+  </li>
+  <li>
+    <p><a href="http://www.cs.toronto.edu/~kriz/cifar.html">CIFAR-100</a> by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton.</p>
+  </li>
+  <li>
+    <p><a href="http://shannon.cs.illinois.edu/DenotationGraph/">Flickr30k</a> by Peter Young, Alice Lai, Micah Hodosh, Julia Hockenmaier.</p>
+  </li>
+  <li>
+    <p><a href="http://image-net.org/download-images">ImageNet</a> by Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg and Li Fei-Fei.</p>
+  </li>
+  <li>
+    <p><a href="http://mscoco.org/">Microsoft COCO</a> by Microsoft Research.</p>
+  </li>
+  <li>
+    <p><a href="http://yann.lecun.com/exdb/mnist/">MNIST</a> by Yann LeCun, Corinna Cortes, Christopher J.C. Burges.</p>
+  </li>
+  <li>
+    <p><a href="http://places.csail.mit.edu/">Places</a> by MIT Computer Science and Artificial Intelligence Laboratory.</p>
+  </li>
+  <li>
+    <p><a href="http://cs.stanford.edu/~acoates/stl10/">STL-10</a> by Adam Coates, Honglak Lee, Andrew Y. Ng.</p>
+  </li>
+  <li>
+    <p><a href="http://ufldl.stanford.edu/housenumbers/">SVHN</a> by Yuval Netzer, Tao Wang, Adam Coates, Alessandro Bissacco, Bo Wu, Andrew Y. Ng.</p>
+  </li>
 </ul>
 
-<h3 id="podcast,-talks,-etc.">Podcast, Talks, etc.</h3>
+<h3 id="podcast-talks-etc">Podcast, Talks, etc.</h3>
 
 <ul>
-<li><p><a href="http://www.thetalkingmachines.com/">Talking Machines</a> hosted by Katherine Gorman and Ryan Adams.</p></li>
-<li><p><a href="http://www.ted.com/talks/fei_fei_li_how_we_re_teaching_computers_to_understand_pictures?language=en">How we&#39;re teaching computers to understand pictures</a> by Fei-Fei Li, Stanford University.</p></li>
-<li><p><a href="https://plus.google.com/communities/112866381580457264725">Deep Learning Community</a></p></li>
+  <li>
+    <p><a href="http://www.thetalkingmachines.com/">Talking Machines</a> hosted by Katherine Gorman and Ryan Adams.</p>
+  </li>
+  <li>
+    <p><a href="http://www.ted.com/talks/fei_fei_li_how_we_re_teaching_computers_to_understand_pictures?language=en">How we’re teaching computers to understand pictures</a> by Fei-Fei Li, Stanford University.</p>
+  </li>
+  <li>
+    <p><a href="https://plus.google.com/communities/112866381580457264725">Deep Learning Community</a></p>
+  </li>
 </ul>
 
 <h3 id="amazon-web-service-public-ami-for-deep-learning">Amazon Web Service Public AMI for Deep Learning</h3>
@@ -391,8 +655,8 @@
 <p><em>If you are doing analysis or experiments, I suggest you to request spot instance instead of on-demand instance. This will save you a lot of costs.</em></p>
 
 <ul>
-<li><strong>DGYDLGPUv4</strong> (ami-ba516ee8) [Based on g2.2xlarge]</li>
-<li><strong>DGYDLGPUXv1</strong> (ami-52516e00) [Based on g2.8xlarge]</li>
+  <li><strong>DGYDLGPUv4</strong> (ami-ba516ee8) [Based on g2.2xlarge]</li>
+  <li><strong>DGYDLGPUXv1</strong> (ami-52516e00) [Based on g2.8xlarge]</li>
 </ul>
 
 <p><em>Currently, my build of Caffe in the instance is failed. You can use the AMI that is provided by Caffe community. You can get more details from <a href="https://github.com/BVLC/caffe/wiki/Caffe-on-EC2-Ubuntu-14.04-Cuda-7">here</a></em></p>
@@ -400,7 +664,7 @@
 <p><em>So far the instance is only available at US East (N. Virginia)</em></p>
 
 <ul>
-<li><strong>Caffe/CuDNN built 2015-05-04</strong> (ami-763a331e) [For both g2.2xlarge and g2.8xlarge]</li>
+  <li><strong>Caffe/CuDNN built 2015-05-04</strong> (ami-763a331e) [For both g2.2xlarge and g2.8xlarge]</li>
 </ul>
 
 <h3 id="practical-deep-neural-networks---gpu-computing-perspective">Practical Deep Neural Networks - GPU computing perspective</h3>
@@ -410,37 +674,37 @@
 <h4 id="slides">Slides</h4>
 
 <ul>
-<li><a href="http://rt.dgyblog.com/res/dlworkshop/introduction.pdf">Introduction</a></li>
-<li><a href="http://rt.dgyblog.com/res/dlworkshop/python_for_computing.pdf">Python Platform for Scientific Computing</a></li>
-<li><a href="http://rt.dgyblog.com/res/dlworkshop/theano_crash_course.pdf">Theano Crash Course</a></li>
-<li>[Machine Learning Basics]</li>
-<li>[Support Vector Machine and Softmax Regression]</li>
-<li>[Feedforward Neural Networks]</li>
-<li>[Convolutional Neural Networks]</li>
-<li>[Recurrent Neural Networks]</li>
+  <li><a href="http://rt.dgyblog.com/res/dlworkshop/introduction.pdf">Introduction</a></li>
+  <li><a href="http://rt.dgyblog.com/res/dlworkshop/python_for_computing.pdf">Python Platform for Scientific Computing</a></li>
+  <li><a href="http://rt.dgyblog.com/res/dlworkshop/theano_crash_course.pdf">Theano Crash Course</a></li>
+  <li>[Machine Learning Basics]</li>
+  <li>[Support Vector Machine and Softmax Regression]</li>
+  <li>[Feedforward Neural Networks]</li>
+  <li>[Convolutional Neural Networks]</li>
+  <li>[Recurrent Neural Networks]</li>
 </ul>
 
 <h4 id="practical-tutorials">Practical tutorials</h4>
 
 <ul>
-<li><a href="http://rt.dgyblog.com/tut/tut-dl-basics.html">Python Warm-up, pre-processing</a></li>
-<li><a href="http://rt.dgyblog.com/tut/tut-svm-softmax.html">Support Vector Machine, Softmax Regression</a></li>
-<li><a href="http://rt.dgyblog.com/tut/tut-mlp.html">Multi Layer Perceptron Network</a></li>
-<li><a href="http://rt.dgyblog.com/tut/tut-autoencoder.html">Auto-encoder</a></li>
-<li><a href="http://rt.dgyblog.com/tut/tut-convnet.html">Convolutional Neural Networks</a></li>
-<li><a href="http://rt.dgyblog.com/tut/tut-rnn.html">Recurrent Neural Networks</a></li>
+  <li><a href="http://rt.dgyblog.com/tut/tut-dl-basics.html">Python Warm-up, pre-processing</a></li>
+  <li><a href="http://rt.dgyblog.com/tut/tut-svm-softmax.html">Support Vector Machine, Softmax Regression</a></li>
+  <li><a href="http://rt.dgyblog.com/tut/tut-mlp.html">Multi Layer Perceptron Network</a></li>
+  <li><a href="http://rt.dgyblog.com/tut/tut-autoencoder.html">Auto-encoder</a></li>
+  <li><a href="http://rt.dgyblog.com/tut/tut-convnet.html">Convolutional Neural Networks</a></li>
+  <li><a href="http://rt.dgyblog.com/tut/tut-rnn.html">Recurrent Neural Networks</a></li>
 </ul>
 
 <h4 id="codes">Codes</h4>
 
 <ul>
-<li><a href="https://github.com/duguyue100/telauges">Telauges</a>
-
-<ul>
-<li>A new deep learning libraries for education</li>
-<li>Right now implements MLP Hidden Layer, Softmax Layer, Auto-encoder, ConvNet Layer</li>
-<li>In the middle of transforming coding style, I suggest you explore it, but do not use it seriously.</li>
-</ul></li>
+  <li><a href="https://github.com/duguyue100/telauges">Telauges</a>
+    <ul>
+      <li>A new deep learning libraries for education</li>
+      <li>Right now implements MLP Hidden Layer, Softmax Layer, Auto-encoder, ConvNet Layer</li>
+      <li>In the middle of transforming coding style, I suggest you explore it, but do not use it seriously.</li>
+    </ul>
+  </li>
 </ul>
 
 

@@ -20,7 +20,7 @@
 
         <title>Random Thoughts : Set up Emacs</title>
         <meta name="description" content="A wiki of my random thoughts.">
-
+	
 	<link rel="stylesheet" type="text/css"
 	      href="http://spratt.github.io/Computer-Modern/cmserif.css" />
 
@@ -138,6 +138,12 @@
             
                 <li class=nav-header>Tutorial</li>
             
+            <li data-order=""><a href="/tut/tut-feedforward-model.html">Feedforword Model</a></li>
+        
+            
+            <li data-order=""><a href="/tut/tut-layer.html">Feedforward Layer</a></li>
+        
+            
             <li data-order=""><a href="/tut/google-chart.html">Google Charts</a></li>
         
             
@@ -147,7 +153,7 @@
             <li data-order=""><a href="/tut/tut-rnn.html">Recurrent Neural Neworks</a></li>
         
             
-            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron</a></li>
+            <li data-order=""><a href="/tut/tut-mlp.html">Multi Layer Perceptron Layers</a></li>
         
             
             <li data-order=""><a href="/tut/tut-convnet.html">ConvNet</a></li>
@@ -198,53 +204,79 @@
 
 <p>Here is my setting of using Emacs as my major editor across OS X and Linux platform. You can refer my configuration from <a href="https://github.com/duguyue100/.emacs.d">here</a>.</p>
 
-<p>It&#39;s a fun experience that plays with Emacs, knowing all the shortcuts and packages. And we must also face the truth: it&#39;s powerful, but it&#39;s an editor. I rarely use Emacs to develop my entire project. There are better solution given by IDEs (especially for OS X, iOS applications).</p>
+<p>It’s a fun experience that plays with Emacs, knowing all the shortcuts and packages. And we must also face the truth: it’s powerful, but it’s an editor. I rarely use Emacs to develop my entire project. There are better solution given by IDEs (especially for OS X, iOS applications).</p>
 
 <h4 id="setup-melpa">Setup MELPA</h4>
 
-<p><a href="http://melpa.org/">MELPA</a> (Milkypostman&#39;s Emacs Lisp Package Archive) is an archive of Emacs packages. It&#39;s stable and easy to use. You can setup MELPA as:</p>
-<div class="highlight"><pre><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;package</span><span class="p">)</span>
-<span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;package-archives</span>
-             <span class="o">&#39;</span><span class="p">(</span><span class="s">&quot;melpa&quot;</span> <span class="o">.</span> <span class="s">&quot;http://melpa.org/packages/&quot;</span><span class="p">)</span> <span class="no">t</span><span class="p">)</span>
-<span class="p">(</span><span class="nv">package-initialize</span><span class="p">)</span>
-</code></pre></div>
-<h4 id="setup-for-shell-support-(os-x-only)">Setup for Shell Support (OS X only)</h4>
+<p><a href="http://melpa.org/">MELPA</a> (Milkypostman’s Emacs Lisp Package Archive) is an archive of Emacs packages. It’s stable and easy to use. You can setup MELPA as:</p>
 
-<p>Emacs does not adapt <code>.profile</code> automatically, then when you wish to call your shell an run some commands, there may some issues (I&#39;m using Anaconda for my Python support, and I noticed this when I tried and failed to plot somethings). You can use <code>exec-path-from-shell</code> to resolve this problem, the code is <a href="https://github.com/purcell/exec-path-from-shell">here</a>. The package is also available in MELPA.</p>
-<div class="highlight"><pre><code class="language-lisp" data-lang="lisp"><span class="c1">; add to list if you install manually</span>
-<span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;load-path</span> <span class="s">&quot;~/.emacs.d/site-lisp/exec-path-from-shell&quot;</span><span class="p">)</span>
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>(require 'package)
+(add-to-list 'package-archives
+             '(&quot;melpa&quot; . &quot;http://melpa.org/packages/&quot;) t)
+(package-initialize)
+</pre></div>
+</div>
+</div>
 
-<span class="c1">; you only enable the mode when it&#39;s running on OS X</span>
-<span class="p">(</span><span class="nb">require</span> <span class="ss">&#39;exec-path-from-shell</span><span class="p">)</span>
-<span class="p">(</span><span class="nb">when</span> <span class="p">(</span><span class="nv">memq</span> <span class="nv">window-system</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">mac</span> <span class="nv">ns</span><span class="p">))</span>
-  <span class="p">(</span><span class="nv">exec-path-from-shell-initialize</span><span class="p">))</span>
-</code></pre></div>
-<h4 id="start-full-screen,-turn-off-scroll-bar-and-menu-bar">Start Full Screen, Turn Off Scroll Bar and Menu Bar</h4>
+<h4 id="setup-for-shell-support-os-x-only">Setup for Shell Support (OS X only)</h4>
+
+<p>Emacs does not adapt <code>.profile</code> automatically, then when you wish to call your shell an run some commands, there may some issues (I’m using Anaconda for my Python support, and I noticed this when I tried and failed to plot somethings). You can use <code>exec-path-from-shell</code> to resolve this problem, the code is <a href="https://github.com/purcell/exec-path-from-shell">here</a>. The package is also available in MELPA.</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>; add to list if you install manually
+(add-to-list 'load-path &quot;~/.emacs.d/site-lisp/exec-path-from-shell&quot;)
+
+; you only enable the mode when it's running on OS X
+(require 'exec-path-from-shell)
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+</pre></div>
+</div>
+</div>
+
+<h4 id="start-full-screen-turn-off-scroll-bar-and-menu-bar">Start Full Screen, Turn Off Scroll Bar and Menu Bar</h4>
 
 <p>Scroll bar is a pain for the most of time and menu bar will take many spaces when you are working on a laptop. I prefer to turn off them. Furthermore, the usual way of maximizing Emacs window is not working perfectly with OS X. It always leave a slide of space on the top. So you need another way of settling this:</p>
-<div class="highlight"><pre><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nv">tool-bar-mode</span> <span class="mi">-1</span><span class="p">)</span>
-<span class="p">(</span><span class="nv">scroll-bar-mode</span> <span class="mi">-1</span><span class="p">)</span>
-<span class="p">(</span><span class="k">setq</span> <span class="nv">frame-resize-pixelwise</span> <span class="no">t</span><span class="p">)</span>
-</code></pre></div>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>(tool-bar-mode -1)
+(scroll-bar-mode -1)
+(setq frame-resize-pixelwise t)
+</pre></div>
+</div>
+</div>
+
 <h4 id="simplify-yes-and-no">Simplify Yes-and-No</h4>
 
 <p>I would rather use <code>y-and-n</code> instead of typing entire <code>yes</code> or <code>no</code>, would you?</p>
-<div class="highlight"><pre><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nv">defalias</span> <span class="ss">&#39;yes-or-no-p</span> <span class="ss">&#39;y-or-n-p</span><span class="p">)</span>
-</code></pre></div>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>(defalias 'yes-or-no-p 'y-or-n-p)
+</pre></div>
+</div>
+</div>
+
 <h4 id="configure-fonts">Configure Fonts</h4>
 
-<p>There are some difference between Ubuntu&#39;s font and OS X&#39;s font. I then configure them differently</p>
-<div class="highlight"><pre><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nb">eq</span> <span class="nv">system-type</span> <span class="ss">&#39;gnu/linux</span><span class="p">)</span>
-    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;default-frame-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">font</span> <span class="o">.</span>  <span class="s">&quot;Courier 10 Pitch-15&quot;</span> <span class="p">))</span>
-<span class="p">)</span>
+<p>There are some difference between Ubuntu’s font and OS X’s font. I then configure them differently</p>
 
-<span class="p">(</span><span class="k">if</span> <span class="p">(</span><span class="nb">eq</span> <span class="nv">system-type</span> <span class="ss">&#39;darwin</span><span class="p">)</span>
-    <span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;default-frame-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">font</span> <span class="o">.</span>  <span class="s">&quot;Courier-15&quot;</span> <span class="p">))</span>
-<span class="p">)</span>
-</code></pre></div>
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>(if (eq system-type 'gnu/linux)
+    (add-to-list 'default-frame-alist '(font .  &quot;Courier 10 Pitch-15&quot; ))
+)
+
+(if (eq system-type 'darwin)
+    (add-to-list 'default-frame-alist '(font .  &quot;Courier-15&quot; ))
+)
+</pre></div>
+</div>
+</div>
+
 <h4 id="setup-auctex">Setup AUCTeX</h4>
 
-<h4 id="setup-aspell-through-macports-(os-x-only)">Setup aspell through MacPorts (OS X only)</h4>
+<h4 id="setup-aspell-through-macports-os-x-only">Setup aspell through MacPorts (OS X only)</h4>
+
 
 
                     </div>
