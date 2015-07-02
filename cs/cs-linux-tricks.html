@@ -206,19 +206,28 @@
 
 <h4 id="extract-a-tar-file-and-place-it-in-the-same-name-folder">Extract a tar file and place it in the same name folder</h4>
 
-<pre><code>$ for f in *.tar; do mkdir ./${f%%.*} &amp;&amp; tar -xf $f -C. /${f%%.*}; done
+<pre><code>for f in *.tar; do mkdir ./${f%%.*} &amp;&amp; tar -xf $f -C. /${f%%.*}; done
 </code></pre>
 
 <h4 id="exfat-support">exFAT support</h4>
 
-<pre><code>$ sudo apt-get install exfat-utils exfat-fuse
+<pre><code>sudo apt-get install exfat-utils exfat-fuse
 </code></pre>
 
 <p>And you don’t need to reboot</p>
 
 <h4 id="rar-support">RAR support</h4>
 
-<pre><code>$ sudo apt-get install unrar
+<pre><code>sudo apt-get install unrar
+</code></pre>
+
+<h3 id="ubuntu-switch-to-console-mode-and-display-black-screen">Ubuntu switch to console mode and display black screen</h3>
+
+<p>The graphical text-mode resolution set at boot up is not compatible with your video card.</p>
+
+<pre><code>sudo sed -i -e 's/#GRUB_TERMINAL/GRUB_TERMINAL/g' /etc/default/grub
+sudo update-grub
+sudo reboot
 </code></pre>
 
 
