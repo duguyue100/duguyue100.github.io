@@ -313,8 +313,16 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nfWlot6h_JM" frameborder="0" allowfullscreen=""></iframe>
 </div>
 
-<h4 id="generate-a-pure-html-site">Generate a pure HTML site</h4>
+<h4 id="switch-off-dropout-in-torch-7">Switch off dropout in Torch 7</h4>
 
+<p><code>evaluate()</code> sets the mode of the Module (or sub-modules) to <code>train=false</code>. This is useful for modules like Dropout that have a different behaviour during training vs evaluation.</p>
+
+<div class="highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre>net=loadcaffe.<span style="color:#369;font-weight:bold">load</span>(prototxt, binary);
+net:evaluate(); <span style="color:#777">-- switch off dropout</span>
+</pre></div>
+</div>
+</div>
 
 
                     </div>
