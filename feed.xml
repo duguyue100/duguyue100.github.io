@@ -12,7 +12,7 @@
 
 &lt;p&gt;And this is a test for the math &lt;script type=&quot;math/tex&quot;&gt;a^2+b^2=c^2&lt;/script&gt;.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;a^2+b^2=c^2&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma ^2}}&lt;/script&gt;
 </description>
         <pubDate>Tue, 29 Sep 2015 00:00:00 +0800</pubDate>
         <link>http://dgyblog.com/life/2015/09/29/the-day-i-leave-wordpress/</link>
