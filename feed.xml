@@ -10,7 +10,7 @@
         <title>The day I leave WordPress</title>
         <description>&lt;p&gt;I’ve been using WordPress as my primary blogging system for almost 10 years. And today, I have to say goodbye to it.&lt;/p&gt;
 
-&lt;p&gt;And this is a test for the math (a^2+b^2=c^2).&lt;/p&gt;
+&lt;p&gt;And this is a test for the math \(a^2+b^2=c^2\).&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;a^2+b^2=c^2&lt;/script&gt;
 </description>
