@@ -1,6 +1,6 @@
 #!/bin/sh
 
-now="$(date): update site: jekyll setup"
+now="$(date): update site: dgyblog.com setup"
 
 git add -A
 

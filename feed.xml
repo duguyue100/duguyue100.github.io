@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DGY Blog</title>
+    <description>A proud WE-ARE-NOT-DOOMED fan.</description>
+    <link>http://dgyblog.com/</link>
+    <atom:link href="http://dgyblog.com/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>The day I leave WordPress</title>
+        <description>&lt;p&gt;I’ve been using WordPress as my primary blogging system for almost 10 years. And today, I have to say goodbye to it.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 Sep 2015 00:00:00 +0800</pubDate>
+        <link>http://dgyblog.com/life/2015/09/29/the-day-i-leave-wordpress/</link>
+        <guid isPermaLink="true">http://dgyblog.com/life/2015/09/29/the-day-i-leave-wordpress/</guid>
+      </item>
+    
+      <item>
+        <title>Overwrite folders in FTP</title>
+        <description>&lt;p&gt;I’m not hosting my main blog on GitHub instead, I need to host it on my old WordPress space.&lt;/p&gt;
+
+&lt;p&gt;However, because I can’t simply modify and upload my entire site like with Git, so I have to figure out a way of wiping the entire &lt;code&gt;public_html&lt;/code&gt; folder and then upload the site entirely (painful, painful, and bye bye, pictures, well, maybe a little pictures).&lt;/p&gt;
+
+&lt;p&gt;Anyway, this is the solution so far&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scp -r mydir username@example.com:destdir
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Tue, 29 Sep 2015 00:00:00 +0800</pubDate>
+        <link>http://dgyblog.com/tech/2015/09/29/test-for-ftp/</link>
+        <guid isPermaLink="true">http://dgyblog.com/tech/2015/09/29/test-for-ftp/</guid>
+      </item>
+    
+  </channel>
+</rss>

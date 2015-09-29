@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DGY Blog</title>
+    <title>Overwrite folders in FTP &#8211; DGY Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A proud WE-ARE-NOT-DOOMED fan.">
+    <meta name="description" content="Well, time to make the sync easier.">
     <meta name="author" content="Yuhuang Hu">
-    
-    <link rel="canonical" href="http://dgyblog.com/">
+    <meta name="keywords" content="tech">
+    <link rel="canonical" href="http://dgyblog.com/tech/2015/09/29/test-for-ftp/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
@@ -26,9 +26,9 @@
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="DGY Blog">
+    <meta property="og:title" content="Overwrite folders in FTP">
     <meta property="og:description" content="A proud WE-ARE-NOT-DOOMED fan.">
-    <meta property="og:url" content="http://dgyblog.com/">
+    <meta property="og:url" content="http://dgyblog.com/tech/2015/09/29/test-for-ftp/">
     <meta property="og:site_name" content="DGY Blog">
 
     <!-- Twitter Card -->
@@ -36,9 +36,9 @@
     
         <meta name="twitter:site" content="@duguyue100" />
     
-    <meta name="twitter:title" content="DGY Blog" />
-    <meta name="twitter:description" content="A proud WE-ARE-NOT-DOOMED fan." />
-    <meta name="twitter:url" content="http://dgyblog.com/" />
+    <meta name="twitter:title" content="Overwrite folders in FTP" />
+    <meta name="twitter:description" content="Well, time to make the sync easier." />
+    <meta name="twitter:url" content="http://dgyblog.com/tech/2015/09/29/test-for-ftp/" />
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -79,46 +79,41 @@
 
     <div class="post p2 p-responsive wrap" role="main">
       <div class="measure">
-        <div class="home">
+        
 
-  <div class="posts">
-    
-      <div class="post py3">
-        <p class="post-meta">Sep 29, 2015</p>
-        <a href="/life/2015/09/29/the-day-i-leave-wordpress/" class="post-link"><h3 class="h1 post-title">The day I leave WordPress</h3></a>
-        <p class="post-summary">
-          
-            After a long painful process, I have to break up with WordPress.
-          
-        </p>
-      </div>
-    
-      <div class="post py3">
-        <p class="post-meta">Sep 29, 2015</p>
-        <a href="/tech/2015/09/29/test-for-ftp/" class="post-link"><h3 class="h1 post-title">Overwrite folders in FTP</h3></a>
-        <p class="post-summary">
-          
-            Well, time to make the sync easier.
-          
-        </p>
-      </div>
-    
-  </div>
 
-  <div class="pagination clearfix mb1 mt4">
-  <div class="left">
-    
-      <span class="pagination-item disabled">Newer</span>
-    
-  </div>
-  <div class="right">
-    
-      <span class="pagination-item disabled">Older</span>
-    
-  </div>
+
+
+<div class="post-header mb2">
+  <h1>Overwrite folders in FTP</h1>
+  <span class="post-meta">Sep 29, 2015</span><br>
+  
+  <span class="post-meta small">
+  
+    1 minute read
+  
+  </span>
 </div>
 
-</div>
+<article class="post-content">
+  <p>I’m not hosting my main blog on GitHub instead, I need to host it on my old WordPress space.</p>
+
+<p>However, because I can’t simply modify and upload my entire site like with Git, so I have to figure out a way of wiping the entire <code>public_html</code> folder and then upload the site entirely (painful, painful, and bye bye, pictures, well, maybe a little pictures).</p>
+
+<p>Anyway, this is the solution so far</p>
+
+<pre><code>scp -r mydir username@example.com:destdir
+</code></pre>
+
+</article>
+
+
+
+
+
+
+
+
 
       </div>
     </div>
