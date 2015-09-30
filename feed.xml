@@ -8,31 +8,28 @@
     
       <item>
         <title>The day I leave WordPress</title>
-        <description>&lt;p&gt;I’ve been using WordPress as my primary blogging system for almost 10 years. And today, I have to say goodbye to it.&lt;/p&gt;
+        <description>&lt;p&gt;I’ve been using WordPress as my primary blogging system for almost 10 years. And today, I have to say goodbye.&lt;/p&gt;
 
-&lt;p&gt;And this is a test for the math &lt;script type=&quot;math/tex&quot;&gt;a^2+b^2=c^2&lt;/script&gt;.&lt;/p&gt;
+&lt;p&gt;I started to know WordPress when I tried to setup my personal blog and was searching for best blogging service provider. And it’s tough, there were Baidu, Microsoft, and bunch of other providers. Then I found out that there is an impressive blog client. And that is the first time I tried WordPress.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma ^2}}&lt;/script&gt;
+&lt;p&gt;I’m not a natural blogging person. For start, I don’t really write about everything. I have other ways of expressing my emotion and feelings. So it’s always my secondary way of writing things.&lt;/p&gt;
+
+&lt;p&gt;OK, enough history, to you (my beloved readers) and to me. Let’s talk about the recent problem. I hosted my old WordPress powered blog on my host and with my domain. Few days ago, my provider reached me and say:”Man, we have to suspend your site for awhile, the spam is not like spam, it’s more like attack.” Honestly, I was on something else, so I replied “sure”. And I decided to change my entire site to pure HTML site. Since I’ve fought with spam for too long, I need to find a secure way of doing the comment block.&lt;/p&gt;
+
+&lt;p&gt;My plan is to change everything on my GitHub and host everything there. It’s very obvious, GitHub has better strategy of fighting with hostile behavior and DisQus can provide even better comment system. I actually no feeling if anyone would leave message below my post, however, I got to find out if I can really stop this.&lt;/p&gt;
+
+&lt;p&gt;It’s more secure too. I don’t have to worry that if I’m hacked (as long as they don’t have my passwords). It’s pure HTML, no database, no anything. And I can control basically everything with minimal knowledge in HTML and CSS (well, a bit better than the minimal).&lt;/p&gt;
+
+&lt;p&gt;Anyway, like Taylor Swift’s song, SHAKE IT OFF, SHAKE IT OFF!&lt;/p&gt;
+
+&lt;div align=&quot;center&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/nfWlot6h_JM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 </description>
         <pubDate>Tue, 29 Sep 2015 00:00:00 +0800</pubDate>
         <link>http://dgyblog.com/life/2015/09/29/the-day-i-leave-wordpress/</link>
         <guid isPermaLink="true">http://dgyblog.com/life/2015/09/29/the-day-i-leave-wordpress/</guid>
-      </item>
-    
-      <item>
-        <title>Overwrite folders in FTP</title>
-        <description>&lt;p&gt;I’m not hosting my main blog on GitHub instead, I need to host it on my old WordPress space.&lt;/p&gt;
-
-&lt;p&gt;However, because I can’t simply modify and upload my entire site like with Git, so I have to figure out a way of wiping the entire &lt;code&gt;public_html&lt;/code&gt; folder and then upload the site entirely (painful, painful, and bye bye, pictures, well, maybe a little pictures).&lt;/p&gt;
-
-&lt;p&gt;Anyway, this is the solution so far&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;scp -r mydir username@example.com:destdir
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-        <pubDate>Tue, 29 Sep 2015 00:00:00 +0800</pubDate>
-        <link>http://dgyblog.com/tech/2015/09/29/test-for-ftp/</link>
-        <guid isPermaLink="true">http://dgyblog.com/tech/2015/09/29/test-for-ftp/</guid>
       </item>
     
   </channel>
