@@ -66,5 +66,411 @@
         <guid isPermaLink="true">http://dgyblog.com/yang/2015/08/30/help-me/</guid>
       </item>
     
+      <item>
+        <title>Quantum Mechanics for Scientists and Engineers Notes 7</title>
+        <description>&lt;h2 id=&quot;angular-momentum&quot;&gt;1. Angular Momentum&lt;/h2&gt;
+
+&lt;h3 id=&quot;angular-momentum-operators&quot;&gt;1.1. Angular momentum operators&lt;/h3&gt;
+
+&lt;p&gt;We will have operators corresponding to angular momentum about different orthogonal axes &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{y}}&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt; though they will not commute with each other, in contrast to the linear momentum operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{p}_{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{p}_{y}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{p}_{z}}&lt;/script&gt; which do commute. We will, however, find another useful angular momentum operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}^{2}}&lt;/script&gt; which does commute separately with each of &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{y}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt;. The eignfunctions for &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{y}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt; are simple. Those for &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}^{2}}&lt;/script&gt;, the spherical harmonics, are more complicated, but can be understood relatively simply and form the angular shapes of the hydrogen atom orbitals.&lt;/p&gt;
+
+&lt;p&gt;The classical angular momentum of a small object of (vector) linear momentum &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{p}}&lt;/script&gt; centered at a point given by the vector displacement &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{r}}&lt;/script&gt; relative to some origin is &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{L}=\mathbf{r}\times\mathbf{p}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;As usual&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\mathbf{C}=\mathbf{A}\times\mathbf{B}=\mathbf{c}Ab\sin\theta\equiv\left|\begin{array}{ccc}\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ A_{x} &amp; A_{y} &amp; A_{z} \\ B_{x} &amp; B_{y} &amp; B_{z}\end{array}\right| %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{i}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{j}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{k}}&lt;/script&gt; are unit vectors in &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt; directions. &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{C}}&lt;/script&gt; is perpendicular to the plane of &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{B}}&lt;/script&gt;. &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt; is the angle between the vector &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{B}}&lt;/script&gt;. &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{c}}&lt;/script&gt; is unit vector in the direction of the vector &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{C}}&lt;/script&gt;. Note that, in previous equation, the ordering of the multiplications in the second line is chosen to work also for operators instead of numbers for one or other vector, the sequence of multiplications in each term is always in the sequence of the rows from top to bottom.&lt;/p&gt;
+
+&lt;p&gt;With classical angular momentum, we can explicitly write out the various components&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L_{x}=yp_{z}-zp_{y}\quad L_{y}=zp_{x}-xp_{z}\quad L_{z}=xp_{y}-yp_{x}&lt;/script&gt;
+
+&lt;p&gt;Now we can propose a quantum mechanical angular momentum operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{\mathbf{L}}}&lt;/script&gt; based on substituting the position and momentum operators&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{\mathbf{L}}=\hat{\mathbf{r}}\times\hat{\mathbf{p}}=-i\hbar(\mathbf{r}\times\nabla)&lt;/script&gt;
+
+&lt;p&gt;and similarly write out component operators&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  \hat{L}_{x}&amp;=&amp;\hat{y}\hat{p}_{z}-\hat{z}\hat{p}_{y}=-i\hbar\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right) \\ \hat{L}_{y}&amp;=&amp;\hat{z}\hat{p}_{x}-\hat{x}\hat{p}_{z}=-i\hbar\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right) \\ \hat{L}_{z}&amp;=&amp;\hat{x}\hat{p}_{y}-\hat{y}\hat{p}_{x}=-i\hbar\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right) \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;which are each Hermitian, and so, correspondingly, is the operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{\mathbf{L}}}&lt;/script&gt; itself.&lt;/p&gt;
+
+&lt;p&gt;The operators corresponding to individual coordinate directions obey commutation relations&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  \hat{L}_{x}\hat{L}_{y}-\hat{L}_{y}\hat{L}_{x}&amp;=&amp;[\hat{L}_{x}, \hat{L}_{y}]=i\hbar\hat{L}_{z} \\ \hat{L}_{y}\hat{L}_{z}-\hat{L}_{z}\hat{L}_{y}&amp;=&amp;[\hat{L}_{y}, \hat{L}_{z}]=i\hbar\hat{L}_{x} \\ \hat{L}_{z}\hat{L}_{x}-\hat{L}_{x}\hat{L}_{z}&amp;=&amp;[\hat{L}_{z}, \hat{L}_{x}]=i\hbar\hat{L}_{y} \\ \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;These individual commutation relations can be written in a more compact form&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{\mathbf{L}}\times \hat{\mathbf{L}}=i\hbar\hat{\mathbf{L}}&lt;/script&gt;
+
+&lt;p&gt;Unlike operators for position and for linear momentum, the different components of this angular momentum operator do not commute with one another. Though a particle can have simultaneously a well-defined position in both &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; directions or have simultaneously a well-defined momentum in both the &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; directions. A particle cannot in general simultaneously have a well-defined angular momentum component in more than one direction.&lt;/p&gt;
+
+&lt;h3 id=&quot;angular-momentum-eigenfunctions&quot;&gt;1.2. Angular momentum eigenfunctions&lt;/h3&gt;
+
+&lt;p&gt;The relation between spherical polar and Cartesian coordinates is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  x&amp;=&amp; r\sin\theta\cos\phi \\ y&amp;=&amp; r\sin\theta\sin\phi \\ z&amp;=&amp; r\cos\theta \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt; is called polar angle and &lt;script type=&quot;math/tex&quot;&gt;{\phi}&lt;/script&gt; is the azimuthal angle.&lt;/p&gt;
+
+&lt;p&gt;In inverse form&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  r&amp;=&amp;\sqrt{x^{2}+y^{2}+z^{2}} \\ \theta&amp;=&amp;\sin^{-1}\left(\frac{\sqrt{x^{2}+y^{2}}}{\sqrt{x^{2}+y^{2}+z^{2}}}\right) \\ \phi&amp;=&amp;\tan^{-1}\left(\frac{y}{x}\right) \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;With these definitions of spherical polar coordinates and with standard partial derivative relations of the form&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial}{\partial x}=\frac{\partial r}{\partial x}\frac{\partial}{\partial r}+\frac{\partial\theta}{\partial x}\frac{\partial}{\partial\theta}+\frac{\partial\phi}{\partial x}\frac{\partial}{\partial\phi}&lt;/script&gt;
+
+&lt;p&gt;for each of the Cartesian coordinate directions, we can rewrite the angular momentum operator components in spherical polar coordinates.&lt;/p&gt;
+
+&lt;p&gt;From previous obtained commutators, we obtain&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  \hat{L}_{x}&amp;=&amp;i\hbar\left(\sin\phi\frac{\partial}{\partial\theta}+\cot\theta\cos\phi\frac{\partial}{\partial\phi}\right) \\ \hat{L}_{y}&amp;=&amp;i\hbar\left(-\cos\phi\frac{\partial}{\partial\theta}+\cot\theta\cos\phi\frac{\partial}{\partial\phi}\right) \\ \hat{L}_{z}&amp;=&amp;-i\hbar\frac{\partial}{\partial\phi} \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Using &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}=-i\hbar\frac{\partial}{\partial\phi}}&lt;/script&gt;, we solve for the eigenfunctions and eigenvalues of &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt;. The eigen equation is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}_{z}\Phi(\phi)=m\hbar\Phi(\phi)&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{m\hbar}&lt;/script&gt; is the eigenvalue to be determined. The solution of this equation is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Phi(\phi)=\exp(im\phi)&lt;/script&gt;
+
+&lt;p&gt;The requirements that the wavefunction and its derivative are continuous when we return to where we started, mean that &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; must be an integer (positive, negative or zero). Hence we find that the angular momentum around the &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt; axis is quantized with units of angular momentum of &lt;script type=&quot;math/tex&quot;&gt;{\hbar}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-l-squared-operator&quot;&gt;2. The L Squared Operator&lt;/h2&gt;
+
+&lt;h3 id=&quot;separating-the-l-squared-operator&quot;&gt;2.1. Separating the L squared operator&lt;/h3&gt;
+
+&lt;p&gt;In quantum mechanics, we also consider another operator associated with angular momentum the operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}^{2}}&lt;/script&gt;. This should be thought of as the “dot” product of &lt;script type=&quot;math/tex&quot;&gt;{\hat{\mathbf{L}}}&lt;/script&gt; with itself and is defined as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}^{2}=\hat{L}_{x}^{2}+\hat{L}_{y}^{2}+\hat{L}_{z}^{2}&lt;/script&gt;
+
+&lt;p&gt;It is straightforward to show when that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}^{2}=-\hbar^{2}\nabla_{\theta,\phi}^{2}&lt;/script&gt;
+
+&lt;p&gt;when the operator &lt;script type=&quot;math/tex&quot;&gt;{\nabla_{\theta,\phi}^{2}}&lt;/script&gt; is given by&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla_{\theta,\phi}^{2}=\left[\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{\sin^{2}\theta}\frac{\partial^{2}}{\partial\phi^{2}}\right]&lt;/script&gt;
+
+&lt;p&gt;which is actually &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\phi}&lt;/script&gt; part of the Laplacian (&lt;script type=&quot;math/tex&quot;&gt;{\nabla^{2}}&lt;/script&gt;) operator in spherical polar coordinator hence the notation.&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;{\hat{L}^{2}}&lt;/script&gt; commutes with each of &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{y}}&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt;. Of course, the choice of the &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt; direction is arbitrary. We could equally well have chosen the polar axis along the &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; directions. Then it would similarly be obvious that &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}^{2}}&lt;/script&gt; commutes with &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{x}}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{y}}&lt;/script&gt;. And the reason why &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}^{2}}&lt;/script&gt; commute with each of &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{y}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt; is that we can choose the eigenfunctions of &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}^{2}}&lt;/script&gt; to be the same as those of any one of &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{y}}&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;We want eigenfunctions of &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}^{2}}&lt;/script&gt; or, equivalently, &lt;script type=&quot;math/tex&quot;&gt;{\nabla_{\theta, \phi}^{2}}&lt;/script&gt; and so the equation we hope to solve is of the form&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla_{\theta,\phi}^{2}Y_{lm}(\theta,\phi)=-l(l+1)Y_{lm}(\theta,\phi)&lt;/script&gt;
+
+&lt;p&gt;We anticipate the answer by writing the eigenvalue in the form &lt;script type=&quot;math/tex&quot;&gt;{-l(l+1)}&lt;/script&gt; but it is just any arbitrary number to be determined. The notation &lt;script type=&quot;math/tex&quot;&gt;{Y_{lm}(\theta,\phi)}&lt;/script&gt; also anticipates the final answer but it is arbitrary function to be determined.&lt;/p&gt;
+
+&lt;p&gt;We presume that the final eigenfunctions can be separated in the form&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Y_{lm}(\theta,\phi)=\Theta(\theta)\Phi(\phi)&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\Theta(\theta)}&lt;/script&gt; only depends on &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\Phi(\phi)}&lt;/script&gt; only depends on &lt;script type=&quot;math/tex&quot;&gt;{\phi}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Substituting this form in the previous equation gives&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\Phi(\phi)}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)\Theta(\theta)+\frac{\Theta(\theta)}{\sin^{2}\theta}\frac{\partial^{2}\Phi(\phi)}{\partial\phi^{2}}=-l(l+1)\Theta(\theta)\Phi(\phi)&lt;/script&gt;
+
+&lt;p&gt;Multiplying by &lt;script type=&quot;math/tex&quot;&gt;{\sin^{2}\theta/\Theta(\theta)\Phi(\phi)}&lt;/script&gt; and rearranging, gives&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{1}{\Phi(\phi)}\frac{\partial^{2}\Phi(i)}{\partial\phi^{2}}=-l(l+1)\sin^{2}\theta-\frac{\sin\theta}{\Theta(\theta)}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)\Theta(\theta)&lt;/script&gt;
+
+&lt;p&gt;The left hand side depends on only &lt;script type=&quot;math/tex&quot;&gt;{\phi}&lt;/script&gt; whereas the right hand side depends only on &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt; so these must both equal a (“separation”) constant. Anticipating the answer, we choose a separation constant of &lt;script type=&quot;math/tex&quot;&gt;{-m^{2}}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; is still to be determined.&lt;/p&gt;
+
+&lt;p&gt;Now for &lt;script type=&quot;math/tex&quot;&gt;{\phi}&lt;/script&gt; equation, we have in the following form:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d^{2}\Phi(\phi)}{d\phi^{2}}=-m^{2}\Phi(\phi)&lt;/script&gt;
+
+&lt;p&gt;The solutions to an equation like this are of the form &lt;script type=&quot;math/tex&quot;&gt;{\sin m\phi}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\cos m\phi}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\exp im\phi}&lt;/script&gt;. We choose the exponential form &lt;script type=&quot;math/tex&quot;&gt;{\exp im\phi}&lt;/script&gt;, so &lt;script type=&quot;math/tex&quot;&gt;{\Phi}&lt;/script&gt; is also a solution of the &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt; eigen equation&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}_{z}\Phi(\phi)=m\hbar\Phi(\phi)&lt;/script&gt;
+
+&lt;p&gt;We expect that &lt;script type=&quot;math/tex&quot;&gt;{\Phi}&lt;/script&gt; and its derivative are continuous, so this wavefunction must repeat every &lt;script type=&quot;math/tex&quot;&gt;{2\pi}&lt;/script&gt; of angle &lt;script type=&quot;math/tex&quot;&gt;{\phi}&lt;/script&gt;, hence, &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; must be an integer.&lt;/p&gt;
+
+&lt;p&gt;For &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt; equation, we have in the following form (already rearranged)&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{1}{\sin\theta}\frac{d}{d\theta}\left(\sin\theta\frac{d}{d\theta}\right)\Theta(\theta)-\frac{m^{2}}{\sin^{2}\theta}\Theta(\theta)+l(l+1)\Theta(\theta)=0&lt;/script&gt;
+
+&lt;p&gt;This is the associated Legendre equation whose solution are the associated Legendre function&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Theta(\theta)=P_{l}^{m}(\cos\theta)&lt;/script&gt;
+
+&lt;p&gt;The solutions required that &lt;script type=&quot;math/tex&quot;&gt;{l=0,1,2,3,\ldots,}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{-l\leq m\leq l}&lt;/script&gt; (&lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; is integer).&lt;/p&gt;
+
+&lt;p&gt;The associated Legendre functions can conveniently be defined as using Rodrigue’s formula&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P_{l}^{m}(x)=\frac{1}{2^{l}l!}(1-x^{2})^{m/2}\frac{d^{l+m}}{dx^{l+m}}(x^{2}-1)^{l}&lt;/script&gt;
+
+&lt;p&gt;We see that these functions &lt;script type=&quot;math/tex&quot;&gt;{P_{l}^{m}(x)}&lt;/script&gt; have following properties:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The highest power of the argument &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; is always &lt;script type=&quot;math/tex&quot;&gt;{x^{l}}&lt;/script&gt;.&lt;/li&gt;
+  &lt;li&gt;The functions for a given &lt;script type=&quot;math/tex&quot;&gt;{l}&lt;/script&gt; for &lt;script type=&quot;math/tex&quot;&gt;{+m}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{-m}&lt;/script&gt; are identical other than for numerical perfactors.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Less obviously, between -1 and +1 and not including the values at those end points the function have $$ {l-&lt;/td&gt;
+          &lt;td&gt;m&lt;/td&gt;
+          &lt;td&gt;}$$ zeros.&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Putting this all together, the eigen equation is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}^{2}Y_{lm}(\theta,\phi)=\hbar^{2}l(l+1)Y_{lm}(\theta,\phi)&lt;/script&gt;
+
+&lt;p&gt;with &lt;em&gt;spherical harmonics&lt;/em&gt; &lt;script type=&quot;math/tex&quot;&gt;{Y_{lm}(\theta,\phi)}&lt;/script&gt; as the eigenfunctions which, after normalization, can be written&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Y_{lm}(\theta,\phi)=(-1)^{m}\sqrt{\frac{2l+1}{4\pi}\frac{(l-m)!}{(l+m)!}}P_{l}^{m}(\cos\theta)\exp(im\phi)&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{l=0,1,2,3,\ldots}&lt;/script&gt;, where &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; is an integer, &lt;script type=&quot;math/tex&quot;&gt;{-l\leq m\leq l}&lt;/script&gt; and the eigenvalues are &lt;script type=&quot;math/tex&quot;&gt;{\hbar^{2}l(l+1)}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;As is easily verify these spherical harmonics are also eigenfunctions of the &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt; operator. Explicitly, we have the eigen equation&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}_{z}Y_{lm}(\theta,\phi)=m\hbar Y_{lm}(\theta,\theta)&lt;/script&gt;
+
+&lt;p&gt;with eigenvalues of &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt; being &lt;script type=&quot;math/tex&quot;&gt;{m\hbar}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;It makes no difference to the &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt; eigenfunctions if we multiply them by a function of &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;visualizing-spherical-harmonics&quot;&gt;2.2. Visualizing spherical harmonics&lt;/h3&gt;
+
+&lt;p&gt;The lowest solution &lt;script type=&quot;math/tex&quot;&gt;{l=0}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{m=0}&lt;/script&gt; is called “breathing” mode. The spherical shell expands and contracts periodically. For all other solutions there are one or more nodal circles on the sphere. A nodal circle is one that is unchanged in that particular oscillating mode.&lt;/p&gt;
+
+&lt;p&gt;Note the following rules for the spherical shell modes&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the surfaces on opposite sides of a nodal circle oscillate in opposite directions.&lt;/li&gt;
+  &lt;li&gt;the total number of nodal circles is equal to &lt;script type=&quot;math/tex&quot;&gt;{l}&lt;/script&gt;.&lt;/li&gt;
+  &lt;li&gt;the number of total nodal circles passing through the poles in &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt;, and they divide the sphere equally in the azimuthal angle &lt;script type=&quot;math/tex&quot;&gt;{\phi}&lt;/script&gt;.&lt;/li&gt;
+  &lt;li&gt;the remaining nodal circles are either equatorial or parallel to the equator symmetrically distributed between top and bottom halves of the sphere.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;notations-for-spherical-harmonics-b&quot;&gt;2.3. Notations for spherical harmonics &amp;lt;/b&amp;gt;&lt;/h3&gt;
+
+&lt;p&gt;We often use Dirac notation in writing equations associated with angular momentum. It is common to write&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}^{2}|l,m\rangle=\hbar^{2}l(l+1)|l,m\rangle&lt;/script&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}_{z}|l,m\rangle=m\hbar|l,m\rangle&lt;/script&gt;
+
+&lt;p&gt;The spherical harmonics arises in the solution of the hydrogen atom problem. Different value of &lt;script type=&quot;math/tex&quot;&gt;{l}&lt;/script&gt; give rise to different sets of spectral lines from hydrogen identified empirically in the 19th century. Spectroscopists identified groups of lines called&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“spectral” (s)&lt;/li&gt;
+  &lt;li&gt;“principal” (p)&lt;/li&gt;
+  &lt;li&gt;“diffuse” (d) and&lt;/li&gt;
+  &lt;li&gt;“fundamental” (f)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Each of these is now identified with the specific values of &lt;script type=&quot;math/tex&quot;&gt;{l}&lt;/script&gt;. Now we also alphabetically extend to higher &lt;script type=&quot;math/tex&quot;&gt;{l}&lt;/script&gt; values: s: &lt;script type=&quot;math/tex&quot;&gt;{l=0}&lt;/script&gt;, p: &lt;script type=&quot;math/tex&quot;&gt;{l=1}&lt;/script&gt;, d: &lt;script type=&quot;math/tex&quot;&gt;{l=2}&lt;/script&gt;, f: &lt;script type=&quot;math/tex&quot;&gt;{l=3}&lt;/script&gt;, g: &lt;script type=&quot;math/tex&quot;&gt;{l=4}&lt;/script&gt;, h: &lt;script type=&quot;math/tex&quot;&gt;{l=5}&lt;/script&gt; and so on. It is convenient that the “s” wavefunctions are all spherically symmetric even though the “s” of the notation originally had nothing to do with the spherical symmetry.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-hydrogen-atom&quot;&gt;3. The Hydrogen Atom&lt;/h2&gt;
+
+&lt;h3 id=&quot;multiple-particle-wavefunctions&quot;&gt;3.1. Multiple particle wavefunctions&lt;/h3&gt;
+
+&lt;p&gt;We start by generalizing the Schroedinger equation, writing generally for time-dependent problems&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{H}\psi=E\psi&lt;/script&gt;
+
+&lt;p&gt;where now we mean that the Hamiltonian &lt;script type=&quot;math/tex&quot;&gt;{\hat{H}}&lt;/script&gt; is the operator representing the energy of the entire system. And &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; is the wavefunction representing the state of the entire system.&lt;/p&gt;
+
+&lt;p&gt;For a hydrogen atom, there are two particles: the electron and the proton. Each of these has a set of coordinates associated with it: &lt;script type=&quot;math/tex&quot;&gt;{x_{e}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{y_{e}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{z_{e}}&lt;/script&gt; for the electron and &lt;script type=&quot;math/tex&quot;&gt;{x_{p}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{y_{p}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{z_{p}}&lt;/script&gt; for the proton. The wavefunction will therefore in general be a function of all six of these coordinates.&lt;/p&gt;
+
+&lt;h3 id=&quot;solving-the-hydrogen-atom-problem&quot;&gt;3.2. Solving the hydrogen atom problem&lt;/h3&gt;
+
+&lt;p&gt;The electron and proton each have a mass &lt;script type=&quot;math/tex&quot;&gt;{m_{e}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{m_{p}}&lt;/script&gt; respectively. We expected kinetic energy operators associated with each of theses masses and potential energy from the electrostatic attraction of electron and proton.&lt;/p&gt;
+
+&lt;p&gt;Hence, the Hamiltonian becomes&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{H}=-\frac{\hbar^{2}}{2m_{e}}\nabla_{e}^{2}-\frac{\hbar^{2}}{2m_{p}}\nabla_{p}^{2}+V(|\mathbf{r}_{e}-\mathbf{r}_{p}|)&lt;/script&gt;
+
+&lt;p&gt;where we mean &lt;script type=&quot;math/tex&quot;&gt;{\nabla_{e}^{2}\equiv\frac{\partial^{2}}{\partial x_{e}^{2}}+\frac{\partial^{2}}{\partial y_{e}^{2}}+\frac{\partial^{2}}{\partial z_{e}^{2}}}&lt;/script&gt; and similarly for &lt;script type=&quot;math/tex&quot;&gt;{\nabla_{p}^{2}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{r}_{e}=x_{e}\mathbf{i}+y_{e}\mathbf{j}+z_{e}\mathbf{k}}&lt;/script&gt; is the position vector of the electron coordinates and similarly for &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{r}_{p}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Coulomb potential energy&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;V(|\mathbf{r}_{e}-\mathbf{r}_{p}|)=-\frac{e^{2}}{4\pi\varepsilon_{0}|\mathbf{r}_{e}-\mathbf{r}_{p}|}&lt;/script&gt;
+
+&lt;p&gt;depends on the distance between the electron and proton coordinates which is important in simplifying the solution.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;The potential here is only a function of $$ {&lt;/td&gt;
+      &lt;td&gt;\mathbf{r}&lt;em&gt;{e}-\mathbf{r}&lt;/em&gt;{p}&lt;/td&gt;
+      &lt;td&gt;}&lt;script type=&quot;math/tex&quot;&gt;. We could choose a new set of six coordinates in which three are the relative positions&lt;/script&gt; {x=x_{e}-x_{p}}&lt;script type=&quot;math/tex&quot;&gt;,&lt;/script&gt; {y=y_{e}-y_{p}}&lt;script type=&quot;math/tex&quot;&gt;,&lt;/script&gt; {z=z_{e}-z_{p}}$$ from which we obtain&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;r=\sqrt{x^{2}+y^{2}+z^{2}}=|\mathbf{r}_{e}-\mathbf{r}_{p}|&lt;/script&gt;
+
+&lt;p&gt;The position &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{R}}&lt;/script&gt; of the center of mass of two masses is the same as the balance point of a light-weight beam with the two masses at possible ends and so is the weighted average of the positions of the two individual masses&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbf{R}=\frac{m_{e}\mathbf{r}_{e}+m_{p}\mathbf{r}_{p}}{M}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{M}&lt;/script&gt; is the total mass &lt;script type=&quot;math/tex&quot;&gt;{M=m_{e}+m_{p}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now we construct the differential operators we need in terms of these coordinates with&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbf{R}=X\mathbf{i}+Y\mathbf{j}+Z\mathbf{k}&lt;/script&gt;
+
+&lt;p&gt;then for the new coordinates in the &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; direction, we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;X=\frac{m_{e}x_{e}+m_{p}x_{p}}{M}&lt;/script&gt;
+
+&lt;p&gt;and similarly for the &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt; directions.&lt;/p&gt;
+
+&lt;p&gt;Using the standard method of changing partial derivatives to new coordinates and fully notating the variables held constant. The first derivatives in the &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; direction become&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial}{\partial x_{e}}\right|_{x_{p}}=\left.\frac{\partial X}{\partial x_{e}}\right|_{x_{p}}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial x}{\partial x_{e}}\right|_{x_{p}}\left.\frac{\partial}{\partial x}\right|_{X}=\frac{m_{e}}{M}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial}{\partial x}\right|_{X}&lt;/script&gt;
+
+&lt;p&gt;and similarly&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial}{\partial x_{p}}\right|_{x_{e}}=\left.\frac{\partial X}{\partial x_{p}}\right|_{x_{e}}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial x}{\partial x_{p}}\right|_{x_{e}}\left.\frac{\partial}{\partial x}\right|_{X}=\frac{m_{p}}{M}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial}{\partial x}\right|_{X}&lt;/script&gt;
+
+&lt;p&gt;The second derivatives become&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial^{2}}{\partial x_{e}^{2}}\right|_{x_{p}}=\left(\frac{m_{e}}{M}\right)^{2}\left.\frac{\partial^{2}}{\partial X^{2}}\right|_{x}+\left.\frac{\partial^{2}}{\partial x^{2}}\right|_{X}+\frac{m_{e}}{M}\left(\left.\frac{\partial}{\partial x}\right|_{X}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial}{\partial X}\right|_{x}\left.\frac{\partial}{\partial x}\right|_{X}\right)&lt;/script&gt;
+
+&lt;p&gt;and similarly&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial^{2}}{\partial x_{p}^{2}}\right|_{x_{e}}=\left(\frac{m_{p}}{M}\right)^{2}\left.\frac{\partial^{2}}{\partial X^{2}}\right|_{x}+\left.\frac{\partial^{2}}{\partial x^{2}}\right|_{X}-\frac{m_{p}}{M}\left(\left.\frac{\partial}{\partial x}\right|_{X}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial}{\partial X}\right|_{x}\left.\frac{\partial}{\partial x}\right|_{X}\right)&lt;/script&gt;
+
+&lt;p&gt;So dropping the explicit statement of variables held constant&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{1}{m_{e}}\frac{\partial^{2}}{\partial x_{e}^{2}}+\frac{1}{m_{p}}\frac{\partial^{2}}{\partial x_{p}^{2}}=\frac{1}{M}\frac{\partial^{2}}{\partial X^{2}}+\frac{1}{\mu}\frac{\partial^{2}}{\partial x^{2}}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\mu}&lt;/script&gt; is the so-called reduced mass &lt;script type=&quot;math/tex&quot;&gt;{\mu=\frac{m_{e}m_{p}}{m_{e}+m_{p}}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;The same kind of relations can be written for each of the other Cartesian directions, so if we define&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla_{\mathbf{R}}^{2}\equiv\frac{\partial^{2}}{\partial X^{2}}+\frac{\partial^{2}}{\partial Y^{2}}+\frac{\partial^{2}}{\partial Z^{2}}\quad \nabla_{\mathbf{r}}^{2}\equiv\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}&lt;/script&gt;
+
+&lt;p&gt;We can write the Hamiltonian in a new form with center of mass coordinates&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{H}=-\frac{\hbar}{2M}\nabla_{\mathbf{R}}^{2}-\frac{\hbar^{2}}{2\mu}\nabla_{\mathbf{r}}^{2}+V(\mathbf{r})&lt;/script&gt;
+
+&lt;p&gt;which now allows us to separate the problem.&lt;/p&gt;
+
+&lt;p&gt;Presume the wavefunction can be written&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(\mathbf{R},\mathbf{r})=S(\mathbf{R})U(\mathbf{r})&lt;/script&gt;
+
+&lt;p&gt;Substituting this form in the Schroedinger equation with the Hamiltonian above. We obtain&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{1}{S(\mathbf{R})}\frac{\hbar^{2}}{2M}\nabla_{\mathbf{R}}^{2}S(\mathbf{R})=E-\frac{1}{U(\mathbf{r})}\left[-\frac{\hbar^{2}}{2\mu}\nabla_{\mathbf{r}}^{2}+V(\mathbf{r})\right]U(\mathbf{r})=E_{CoM}&lt;/script&gt;
+
+&lt;p&gt;The left hand side depends only on &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{R}}&lt;/script&gt; and the right hand side depends only on &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{r}}&lt;/script&gt;, so both must equal a “separation” constant which we call &lt;script type=&quot;math/tex&quot;&gt;{E_{CoM}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hence, we have two separated equations&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\hbar^{2}}{2M}\nabla_{\mathbf{R}}^{2}S(\mathbf{R})=E_{CoM}S(\mathbf{R})\quad\text{Center of mass motion}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left[-\frac{\hbar^{2}}{2\mu}\nabla_{\mathbf{r}}^{2}+V(\mathbf{r})\right]U(\mathbf{r})=E_{H}U(\mathbf{r})\quad\text{Relative motion}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{E_{H}=E-E_{CoM}}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;center of mass motion&lt;/em&gt; is the Schroedinger equation for free particle of mass &lt;script type=&quot;math/tex&quot;&gt;{M}&lt;/script&gt; with wavefunction solutions&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S(\mathbf{R})=\exp(i\mathbf{K}\cdot\mathbf{R})&lt;/script&gt;
+
+&lt;p&gt;and eigenenergies&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;E_{CoM}=\frac{\hbar^{2}K^{2}}{2M}&lt;/script&gt;
+
+&lt;p&gt;This is the motion of the entire hydrogen atom as a particle of mass &lt;script type=&quot;math/tex&quot;&gt;{M}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;relative motion&lt;/em&gt; equation corresponds to the “internal” relative motion of the electron and proton and will give us the internal states of the hydrogen atom.&lt;/p&gt;
+
+&lt;h3 id=&quot;informal-solution-for-the-relative-motion&quot;&gt;3.3. Informal solution for the relative motion&lt;/h3&gt;
+
+&lt;p&gt;We presume that the hydrogen atom will have some characteristic size which is called the Bohr radius &lt;script type=&quot;math/tex&quot;&gt;{a_{0}}&lt;/script&gt;. We expect that the “average” potential energy strictly, its expectation value will therefore be&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle E_{potential}\rangle\approx-\frac{e^{2}}{4\pi\varepsilon_{0}a_{0}}&lt;/script&gt;
+
+&lt;p&gt;For a reasonable smooth wavefunction &lt;script type=&quot;math/tex&quot;&gt;{\psi(\textbf{r})}&lt;/script&gt; of size &lt;script type=&quot;math/tex&quot;&gt;{\sim a_{0}}&lt;/script&gt;, the second spatial derivative will be&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sim-\psi(0)/a_{0}^{2}&lt;/script&gt;
+
+&lt;p&gt;Remembering that for a mass &lt;script type=&quot;math/tex&quot;&gt;{\mu}&lt;/script&gt;, the kinetic energy operator is &lt;script type=&quot;math/tex&quot;&gt;{-(\hbar^{2}/2\mu)\nabla^{2}}&lt;/script&gt;. The “average” kinetic energy will therefore be&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle E_{kinetic}\rangle\approx\frac{\hbar^{2}}{2\mu a_{0}^{2}}&lt;/script&gt;
+
+&lt;p&gt;Now, in the spirit of a “variational” calculation. We adjust the parameter &lt;script type=&quot;math/tex&quot;&gt;{a_{0}}&lt;/script&gt; to get the lowest value of the total energy. Some variational approaches can be justified rigorously as approximation for the lowest energy.&lt;/p&gt;
+
+&lt;p&gt;With our very simple model, the total energy is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle E_{total}\rangle\approx\frac{\hbar^{2}}{2\mu a_{0}^{2}}-\frac{e^{2}}{4\pi\varepsilon_{0}a_{0}}&lt;/script&gt;
+
+&lt;p&gt;The total energy is balance between the potential energy and the kinetic energy. For this simple model, differentiation shows that the chose of &lt;script type=&quot;math/tex&quot;&gt;{a_{0}}&lt;/script&gt; that minimizes the energy overall is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_{0}=\frac{4\pi\varepsilon_{0}\hbar^{2}}{e^{2}\mu}\approx 0.529\AA=5.29\times 10^{-11} m&lt;/script&gt;
+
+&lt;p&gt;which is the standard definition of the Bohr radius. With this choice of &lt;script type=&quot;math/tex&quot;&gt;{a_{0}}&lt;/script&gt;, the corresponding total energy of the state is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;E_{total}=-\frac{\mu}{2}\left(\frac{e^{2}}{4\pi\varepsilon_{0}\hbar}\right)^{2}&lt;/script&gt;
+
+&lt;p&gt;We can usually define a “Rydberg” energy unit.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Ry=-\langle E_{total}\rangle\approx 13.6eV&lt;/script&gt;
+</description>
+        <pubDate>Mon, 29 Dec 2014 00:00:00 +0800</pubDate>
+        <link>http://dgyblog.com/oldtimes/2014/12/29/quantum-for-scieng-7/</link>
+        <guid isPermaLink="true">http://dgyblog.com/oldtimes/2014/12/29/quantum-for-scieng-7/</guid>
+      </item>
+    
+      <item>
+        <title>关上灯都一样</title>
+        <description>&lt;p&gt;怎么会突然冒出来的呢，因为在颓废了一天之后闲逛网页的时候发现这个站的最后一篇文章竟是一年前的。整个2014年都没有一篇文章不免略显尴尬。好像白交钱供着以往的旧品一样，失去了存在的意义。因为旧品在哪都能供，死了的都要入土，除了那些花大价钱留在水晶棺材里的。我们这种旧品显然不值得受这样的待遇。所以既然还给着钱，就要做点事。哪怕撒野也好，反正是自己的地盘。&lt;/p&gt;
+
+&lt;p&gt;于是就来写了。要写什么也不知道。突然要写，却不知道写什么。这样的情况以前也是有的。然而以前总能写下去。现在却非要凭着点什么我怎么也要写点东西出来的感觉才能写了。相比以前，现在连凭空写点什么乱七八糟的都不太提得起兴趣了。写着写着总要泄气，然后就割弃了。上学的时候总还喜欢写。因为那时候总还需要天天握着笔。在语文课本上写的最多。突然想到什么就在课本旁边空白处写起来。当然语文课本上的再多也多不过历史政治课本上的。因为那些是老师强行让你写到空白处的。要背诵的。。。想想现在一年写的字可能还没有那时候一天写的多。当然说的是真正用笔写的。&lt;/p&gt;
+
+&lt;p&gt;买了个新电脑。犹犹豫豫，断断续续。说要买说了一年多。真正买的时候也挺突然的。说实话无论我现在如何去判断当时到底为何那么突然就买了电脑，我都无法判断出原因。结果就是买了。亚马逊上买的。联想的。没有带系统。现在正在用着。当时虽然买的快，但是也是做了比较的。做比较已然成了我买任何东西之前的功课。不过我一年也买不了多少东西就是了。做了比较自然买的就是自认为最好的。最好的其实不恰当。应该说是性价比很高的。做比较不光和德国其他产品进行比较，也和国内产品的价格进行了比较。发现的结果就是，在德国买电脑不一定就真的那么贵。当然别人买也不会像我这样费劲的去做功课。其实如果我有钱，就是很富裕那种，我也还是会做功课的。所以这和钱没关系。因为做功课会有成就感之类的东西。也算是购买的乐趣吧。可能和女生逛街感觉爽是一个性质的。总之就是买了个新电脑。&lt;/p&gt;
+
+&lt;p&gt;最近读研了。跑来亚琛工大读可能也还是从众心理做崇吧。大家都说要来，于是我也来了。来之前还雄心壮志来着。现在才三个月也已然无所谓了。这也正常。如果来之前就无所谓，现在估计已经辍学了。现在不像以前了。记得我刚上本科时候还嚷嚷着学校教学怎么怎么不好，专业怎么怎么不喜欢。现在也不嚷嚷了。然而不是因为现在的教学变好了，专业也开始喜欢了。恰恰相反，来了这边发现教学可能还不如本科时候的。专业更是没好感到爆。但是却不嚷嚷了。反正就是混毕业。毕业又不好混。嚷嚷还不如看会书。人家又没拉着你来，自己要来就自己给自己解释。不想解释就继续该干嘛干嘛呗。很多事就是这样。该干嘛干嘛。想看星星首先等天黑。急也没用，嚷嚷更没用。研究生就这么混吧。&lt;/p&gt;
+
+&lt;p&gt;去年十月开始接触教会。基督教会。每周聚一次。吃吃饭，唱唱赞美诗，查查经，聊聊天。每周一次，很少落下。今年十月来了亚琛后第一件事就是联系当地的华人教会。然后还是每周聚一次。后来渐渐熟了，就更多的参加聚会活动。教会的人都很好。教会的活动也都很好。基督教本身也是很好的。然而我还没有正式的加入。没有受洗。连决志祷告都没有做过。不过今年十月来亚琛后开始睡前祷告。一直坚持到现在。没有断过一天。我倒是真的从心里感觉基督徒的生活是好的。然而没有加入。也有人问我，什么时候加入。目前的话我还是没有真的想要加入。不加入却做着基督徒该做的事。我觉得这样的状态很好。然而不对。这样是肯定不对的。心理上不对，行为上也欠妥当。可是目前就这样吧。我发现我的人生越来越像一个大海上的去了船桨的小舟。就是随浪漂流而已。并不希望加入什么舰队。也没有目的地。活着，仅此而已。&lt;/p&gt;
+
+&lt;p&gt;写到这里觉得新的电脑键盘打字挺舒服的。现在要出去一趟。坚持每天出去一趟，哪怕倒个垃圾也是好的。马上出去想去转转家附近的那个FH校园。希望今天开着。一会回来再继续写吧。&lt;/p&gt;
+
+&lt;p&gt;散步中……&lt;/p&gt;
+
+&lt;p&gt;回来了。。。好冷。。。先洗个澡暖和一下。。。&lt;/p&gt;
+
+&lt;p&gt;洗澡中……&lt;/p&gt;
+
+&lt;p&gt;洗完了，暖和多了。其实外面也并没有很冷。前两天预报今天会是零下十一度来着。挺吓人的。但真到了今天也就零下一两度吧。昨天下了雪，今天路边的泥土里还能看到雪的印记。街上的车的外壳也都是一层雪。本来是黑色的车子都成了白色。但是也就是这样了。没有一脚踩下去咯吱响的积雪。也没有能反光的结冰的雪。沉睡了一天的身体走在外面反而有说不出的舒适感。这趟也走了很远吧。走了一个小时。本来说要去FH学校转转的。但是果不其然大门紧锁。虽然里面远处的楼里貌似有灯光，但是大门确实是紧紧关着的。但是不要紧。意料之中罢了。于是接着往前走，走没有走过的路。&lt;/p&gt;
+
+&lt;p&gt;我挺喜欢走路的。不是散步，也不是远行，更不是拖着疲惫的身躯上下学或去超市或逛街。我喜欢的走路就是漫无目的的走上一大段没走过的路。城市里的，一般是去郊区。刚来德国的时候是在一个小的不能再小的小镇上。我曾经描述过这个名叫Linnich的小镇有多小。现在能想到的一个描述方式是：这个镇子如果原比例制作成游戏地图都毫不费事。总之就是在那个小镇子上，我走过很多路。大多是夜里走的。走着走着就走出镇子了，然后就绕着丛林小路走，绕着高速公路走，绕着铁道走，绕着河流走，绕着田野走，绕着风车走，绕着一幢幢别墅走。遇到过野兔，山猫，刺猬，狐狸或者臭鼬之类的，还遇到过裸女。。。是的。裸女。当时多半是边听歌边走。脑子里也几乎不想东西。景色也没什么好看的。因为是夜里。荒郊野地几乎没有亮光，并没什么好看的。后来去了杜伊斯堡上本科。第一年在Moers住。这是个比Linnich大一点的城市。就大一点而已。刚去没多久就走遍市内了。然后就开始绕着城市走。城市周围几乎全是高速，没什么好走的。后来发现城市里有很多河。河水连着土壤，土壤扩展出公园之类的地方。很多野鸭子野鹅什么的。倒是也有了走的乐趣。在Moers就住了将近一年。之后就搬到杜伊斯堡了。杜伊斯堡是个无趣的城市。又破又没有古色。所以市内几乎没什么好走的。后来发现了森林。专门为徒步慢跑者准备的森林。沿着最长的一条路径可以走两个小时。很舒服。也可以直接通向附近的城市，那边很多同学居住。于是我也经常从森林里绕向他们家。坐一会后再从公路折回。很好的走路经历。再之后就到了现在的亚琛了。我住的地方往南走就是大片的树林。郊区的感觉。挺适合走路的。今天走的就是这样的路。&lt;/p&gt;
+
+&lt;p&gt;我走路的特点是，第一不能走回头路，第二不走重复的路，第三不能看地图。&lt;/p&gt;
+
+&lt;p&gt;一般是沿着一条路不管三七二十一走到头。走到不能再走。然后拐弯开始想办法折回。大方向把握住了怎么都能折回的。绕远一点也无关。但是绝对不走走过的路。有时候走着走着就和之前走过的路联系上了。于是这一片基本就在脑子里有了图像。以后也就不再走这一片了。去找新的没走过的路走。有时候走着走着看到公交站也蛮惊讶的。原来这趟车开到这啊，的感觉。公交站一般都有地图。有时候也会看看，然后觉得其实走了这么远在地图上也就一小块。走这些路的过程中也会期待很多特别的遇见。可惜几乎没发生过。可惜的很啊。&lt;/p&gt;
+
+&lt;p&gt;总觉得自己还不能把握未来。这一点不假。但问题是已经到了需要把握未来的年龄了。然而不想去把握。总想着日子到了一切自然会有定夺。但是很可能那被定夺的是现在的放弃所决定的。然而还是不想去把握。想着说家里都无牵无挂了自己就随便找个生活方式供着自己就行了。确实是一副听天由命的无所谓的脸。甚至连生存本身都无所谓。简直是废柴。。。这就是现实的我。几年如一日的不变的我。还没进社会就自己把自己的棱角磨平的我。每天都做梦且梦境必然比现实精彩的我。隔三差五颓废人生无聊走路的我。看什么都已经提不起兴趣，觉得关上灯都一样的我。&lt;/p&gt;
+
+&lt;p&gt;不写了。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 29 Dec 2014 00:00:00 +0800</pubDate>
+        <link>http://dgyblog.com/yang/2014/12/29/only-one/</link>
+        <guid isPermaLink="true">http://dgyblog.com/yang/2014/12/29/only-one/</guid>
+      </item>
+    
   </channel>
 </rss>
