@@ -290,11 +290,11 @@
 
 &lt;p&gt;We often use Dirac notation in writing equations associated with angular momentum. It is common to write&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}^{2}|l,m\rangle=\hbar^{2}l(l+1)|l,m\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}^{2}\vert l,m\rangle=\hbar^{2}l(l+1)\vert l,m\rangle&lt;/script&gt;
 
 &lt;p&gt;and&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}_{z}|l,m\rangle=m\hbar|l,m\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{L}_{z}\vert l,m\rangle=m\hbar\vert l,m\rangle&lt;/script&gt;
 
 &lt;p&gt;The spherical harmonics arises in the solution of the hydrogen atom problem. Different value of &lt;script type=&quot;math/tex&quot;&gt;{l}&lt;/script&gt; give rise to different sets of spectral lines from hydrogen identified empirically in the 19th century. Spectroscopists identified groups of lines called&lt;/p&gt;
 
@@ -325,27 +325,19 @@
 
 &lt;p&gt;Hence, the Hamiltonian becomes&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{H}=-\frac{\hbar^{2}}{2m_{e}}\nabla_{e}^{2}-\frac{\hbar^{2}}{2m_{p}}\nabla_{p}^{2}+V(|\mathbf{r}_{e}-\mathbf{r}_{p}|)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{H}=-\frac{\hbar^{2}}{2m_{e}}\nabla_{e}^{2}-\frac{\hbar^{2}}{2m_{p}}\nabla_{p}^{2}+V(\vert \mathbf{r}_{e}-\mathbf{r}_{p}\vert)&lt;/script&gt;
 
 &lt;p&gt;where we mean &lt;script type=&quot;math/tex&quot;&gt;{\nabla_{e}^{2}\equiv\frac{\partial^{2}}{\partial x_{e}^{2}}+\frac{\partial^{2}}{\partial y_{e}^{2}}+\frac{\partial^{2}}{\partial z_{e}^{2}}}&lt;/script&gt; and similarly for &lt;script type=&quot;math/tex&quot;&gt;{\nabla_{p}^{2}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{r}_{e}=x_{e}\mathbf{i}+y_{e}\mathbf{j}+z_{e}\mathbf{k}}&lt;/script&gt; is the position vector of the electron coordinates and similarly for &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{r}_{p}}&lt;/script&gt;.&lt;/p&gt;
 
 &lt;p&gt;The Coulomb potential energy&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;V(|\mathbf{r}_{e}-\mathbf{r}_{p}|)=-\frac{e^{2}}{4\pi\varepsilon_{0}|\mathbf{r}_{e}-\mathbf{r}_{p}|}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;V(\vert\mathbf{r}_{e}-\mathbf{r}_{p}\vert)=-\frac{e^{2}}{4\pi\varepsilon_{0}\vert\mathbf{r}_{e}-\mathbf{r}_{p}\vert}&lt;/script&gt;
 
 &lt;p&gt;depends on the distance between the electron and proton coordinates which is important in simplifying the solution.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;The potential here is only a function of $$ {&lt;/td&gt;
-      &lt;td&gt;\mathbf{r}&lt;em&gt;{e}-\mathbf{r}&lt;/em&gt;{p}&lt;/td&gt;
-      &lt;td&gt;}&lt;script type=&quot;math/tex&quot;&gt;. We could choose a new set of six coordinates in which three are the relative positions&lt;/script&gt; {x=x_{e}-x_{p}}&lt;script type=&quot;math/tex&quot;&gt;,&lt;/script&gt; {y=y_{e}-y_{p}}&lt;script type=&quot;math/tex&quot;&gt;,&lt;/script&gt; {z=z_{e}-z_{p}}$$ from which we obtain&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;The potential here is only a function of &lt;script type=&quot;math/tex&quot;&gt;{\vert \mathbf{r}_{e}-\mathbf{r}_{p}\vert}&lt;/script&gt;. We could choose a new set of six coordinates in which three are the relative positions &lt;script type=&quot;math/tex&quot;&gt;{x=x_{e}-x_{p}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{y=y_{e}-y_{p}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{z=z_{e}-z_{p}}&lt;/script&gt; from which we obtain&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;r=\sqrt{x^{2}+y^{2}+z^{2}}=|\mathbf{r}_{e}-\mathbf{r}_{p}|&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;r=\sqrt{x^{2}+y^{2}+z^{2}}=\vert \mathbf{r}_{e}-\mathbf{r}_{p}\vert&lt;/script&gt;
 
 &lt;p&gt;The position &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{R}}&lt;/script&gt; of the center of mass of two masses is the same as the balance point of a light-weight beam with the two masses at possible ends and so is the weighted average of the positions of the two individual masses&lt;/p&gt;
 
@@ -365,19 +357,19 @@
 
 &lt;p&gt;Using the standard method of changing partial derivatives to new coordinates and fully notating the variables held constant. The first derivatives in the &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; direction become&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial}{\partial x_{e}}\right|_{x_{p}}=\left.\frac{\partial X}{\partial x_{e}}\right|_{x_{p}}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial x}{\partial x_{e}}\right|_{x_{p}}\left.\frac{\partial}{\partial x}\right|_{X}=\frac{m_{e}}{M}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial}{\partial x}\right|_{X}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial}{\partial x_{e}}\right\vert_{x_{p}}=\left.\frac{\partial X}{\partial x_{e}}\right\vert_{x_{p}}\left.\frac{\partial}{\partial X}\right\vert_{x}+\left.\frac{\partial x}{\partial x_{e}}\right\vert_{x_{p}}\left.\frac{\partial}{\partial x}\right\vert_{X}=\frac{m_{e}}{M}\left.\frac{\partial}{\partial X}\right\vert_{x}+\left.\frac{\partial}{\partial x}\right\vert_{X}&lt;/script&gt;
 
 &lt;p&gt;and similarly&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial}{\partial x_{p}}\right|_{x_{e}}=\left.\frac{\partial X}{\partial x_{p}}\right|_{x_{e}}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial x}{\partial x_{p}}\right|_{x_{e}}\left.\frac{\partial}{\partial x}\right|_{X}=\frac{m_{p}}{M}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial}{\partial x}\right|_{X}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial}{\partial x_{p}}\right\vert_{x_{e}}=\left.\frac{\partial X}{\partial x_{p}}\right\vert_{x_{e}}\left.\frac{\partial}{\partial X}\right\vert_{x}+\left.\frac{\partial x}{\partial x_{p}}\right\vert_{x_{e}}\left.\frac{\partial}{\partial x}\right\vert_{X}=\frac{m_{p}}{M}\left.\frac{\partial}{\partial X}\right\vert_{x}+\left.\frac{\partial}{\partial x}\right\vert_{X}&lt;/script&gt;
 
 &lt;p&gt;The second derivatives become&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial^{2}}{\partial x_{e}^{2}}\right|_{x_{p}}=\left(\frac{m_{e}}{M}\right)^{2}\left.\frac{\partial^{2}}{\partial X^{2}}\right|_{x}+\left.\frac{\partial^{2}}{\partial x^{2}}\right|_{X}+\frac{m_{e}}{M}\left(\left.\frac{\partial}{\partial x}\right|_{X}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial}{\partial X}\right|_{x}\left.\frac{\partial}{\partial x}\right|_{X}\right)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial^{2}}{\partial x_{e}^{2}}\right\vert_{x_{p}}=\left(\frac{m_{e}}{M}\right)^{2}\left.\frac{\partial^{2}}{\partial X^{2}}\right\vert_{x}+\left.\frac{\partial^{2}}{\partial x^{2}}\right\vert_{X}+\frac{m_{e}}{M}\left(\left.\frac{\partial}{\partial x}\right\vert_{X}\left.\frac{\partial}{\partial X}\right\vert_{x}+\left.\frac{\partial}{\partial X}\right\vert_{x}\left.\frac{\partial}{\partial x}\right\vert_{X}\right)&lt;/script&gt;
 
 &lt;p&gt;and similarly&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial^{2}}{\partial x_{p}^{2}}\right|_{x_{e}}=\left(\frac{m_{p}}{M}\right)^{2}\left.\frac{\partial^{2}}{\partial X^{2}}\right|_{x}+\left.\frac{\partial^{2}}{\partial x^{2}}\right|_{X}-\frac{m_{p}}{M}\left(\left.\frac{\partial}{\partial x}\right|_{X}\left.\frac{\partial}{\partial X}\right|_{x}+\left.\frac{\partial}{\partial X}\right|_{x}\left.\frac{\partial}{\partial x}\right|_{X}\right)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial^{2}}{\partial x_{p}^{2}}\right\vert_{x_{e}}=\left(\frac{m_{p}}{M}\right)^{2}\left.\frac{\partial^{2}}{\partial X^{2}}\right\vert_{x}+\left.\frac{\partial^{2}}{\partial x^{2}}\right\vert_{X}-\frac{m_{p}}{M}\left(\left.\frac{\partial}{\partial x}\right\vert_{X}\left.\frac{\partial}{\partial X}\right\vert_{x}+\left.\frac{\partial}{\partial X}\right\vert_{x}\left.\frac{\partial}{\partial x}\right\vert_{X}\right)&lt;/script&gt;
 
 &lt;p&gt;So dropping the explicit statement of variables held constant&lt;/p&gt;
 
