@@ -21,7 +21,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201510110028" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201510110036" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -537,9 +537,20 @@
 
 </body>
 
-<script type="text/javascript">
-  $("script[type='math/tex']").replaceWith(function(){var a=$(this).text();return'<span class="inline-equation">'+katex.renderToString(a)+"</span>"});
-  $("script[type='math/tex; mode=display']").replaceWith(function(){var a=$(this).text();return'<div class="equation">'+katex.renderToString("\\displaystyle "+a)+"</div>"});
+<script>
+    var scripts = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; i++) {
+      /* TODO: keep going after an individual parse error. */
+      var script = scripts[i];
+      if (script.type.match(/^math\/tex/)) {
+        var text = script.text === "" ? script.innerHTML : script.text;
+        var options = script.type.match(/mode\s*=\s*display/) ?
+                      {displayMode: true} : {};
+        script.insertAdjacentHTML("beforebegin",
+                                  katex.renderToString(text, options));
+      }
+    }
+    document.body.className += " math_finished";
 </script>
 
 </html>
