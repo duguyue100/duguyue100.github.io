@@ -21,7 +21,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201510110009" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201510110011" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -199,7 +199,8 @@
   $("script[type='math/tex; mode=display']").replaceWith(
   function(){
   var tex = $(this).text();
-  return "<div class=\"equation\" data-expr=\"katex.renderToString("\\displaystyle "+tex)\" >" + 
+  return "<div class=\"equation\">" + 
+    katex.renderToString("\\displaystyle "+tex) +
     "</div>";
   });
 </script>
