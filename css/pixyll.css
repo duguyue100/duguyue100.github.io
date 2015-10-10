@@ -18,7 +18,7 @@
 /* Basscss Base Buttons */
 button,
 .button {
-  font-family: "Computer Modern Serif", "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Computer Modern Serif", "STFangSong", "Lato", "Helvetica Neue", Helvetica, sans-serif;
   font-size: inherit;
   font-weight: normal;
   text-decoration: none;
@@ -109,7 +109,7 @@ svg {
 
 /* Basscss Base Typography */
 body {
-  font-family: "Computer Modern Serif", "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: "Computer Modern Serif", "STFangSong", "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
   line-height: 1.5;
   font-size: 100%; }
 
@@ -119,7 +119,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Computer Modern Serif", "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Computer Modern Serif", "STFangSong", "Lato", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 900;
   line-height: 1.25;
   margin-top: 1em;
