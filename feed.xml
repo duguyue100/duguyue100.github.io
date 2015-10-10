@@ -41,5 +41,30 @@
         <guid isPermaLink="true">http://dgyblog.com/life/2015/09/29/the-day-i-leave-wordpress/</guid>
       </item>
     
+      <item>
+        <title>弱爆了的我求助數學大神</title>
+        <description>&lt;p&gt;最近做的工作中涉及到一個小的數學問題，想把它記錄在這里。&lt;/p&gt;
+
+&lt;p&gt;這個問題可以簡化為這樣：有一個包含&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;個隨機實數（&lt;script type=&quot;math/tex&quot;&gt;a_{1}, a_{2}, \ldots, a_{n}&lt;/script&gt;）的集合&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;。我希望它滿足兩個條件。 條件1：所有元素都大於等於零。 條件2：所有元素之和（記為&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;）小於等於某個大於零的實數&lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt;。由於這個集合&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;的元素都是隨機的，為了使它滿足這兩個條件，我對它進行兩個操作。操作1：使&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;的所有元素都減去一個非負的實數&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;。操作2：使&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;的所有為負數的元素變為零。要求進行完操作1和操作2之後集合A滿足條件1和條件2。求&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;的最小值（記為&lt;script type=&quot;math/tex&quot;&gt;b_{\min}&lt;/script&gt;）。&lt;/p&gt;
+
+&lt;p&gt;為了形象的說明問題，我舉個例子。比如現在這個隨機的集合&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;包含的元素是&lt;script type=&quot;math/tex&quot;&gt;\{1,2,3\}&lt;/script&gt;。而我要求的&lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt;等於3。這時候發現&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;已經滿足條件1，但不滿足條件2。&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;所有元素的和&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;等於6，比3大。這時候我根據操作1對&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;的所有元素都減去一個數&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;。這裡顯然&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;的最小值是1。這樣減完之後&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;為&lt;script type=&quot;math/tex&quot;&gt;\{0,1,2\}&lt;/script&gt;。&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;剛好等於3。操作2也不需要進行了因為&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;現在的元素沒有負數。&lt;/p&gt;
+
+&lt;p&gt;怎麼能證明例子中的&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;等於1就是&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;的最小值了呢？&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;比1稍微小一點,比如0.9，那么總和就會比3稍微大一點，於是也就不滿足條件了。而如果&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;比1稍微大一點，比如1.1，那么總和就比3小了，於是雖然滿足了條件但是我們有更小的&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;也可以滿足條件，所以1.1就不是最小值了。所以兩邊逼近的結果就是&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;等於1剛剛好滿足條件，也就是&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;的最小值。&lt;/p&gt;
+
+&lt;p&gt;然而這種描述既不算嚴謹的證明，也無法適用於更一般的情況。我們先不管如何嚴格找出&lt;script type=&quot;math/tex&quot;&gt;b_{\min}&lt;/script&gt;的表達式，我們先來看看什麼是更一般的情況。&lt;/p&gt;
+
+&lt;p&gt;首先上面的例子根本沒有用到操作2。什麼時候需要用到呢？比如一個簡單的情況，&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;中原本就存在負數元素。這時候由於&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;是個非負數，所以所有元素減完&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;之後必定還存在負數元素。這時候就不符合條件1了。所以進行操作2，也就是使這些負數變為零。當然還有一種情況就是即使原本&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;中沒有負數元素，當進行完操作1之後，由於所有元素都減去了&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;，就有可能會使一些元素變為負數。這時候也要通過操作2來保證&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;滿足條件1。請注意，這個操作2是會影響到&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;的選取的。為什麼呢？因為操作2的過程可能會使元素總和&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;增大。因為本來是負數的變為零了么。而我認為這個問題的難點也正在於此。試想一下，假如我們在不考慮操作2的情況下已經找到了最小的&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;，然後減完發現有負數元素，不滿足條件1，於是進行操作2，然後發現總和&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;大於&lt;script type=&quot;math/tex&quot;&gt;p&lt;/script&gt;，不滿足條件2，於是需要讓一開始的&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;變得更大。但是大多少呢？更大之後會不會產生新的負數呢？如果產生了新的負數豈不是又要調整&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;？這種情況下有沒有&lt;script type=&quot;math/tex&quot;&gt;b_{\min}&lt;/script&gt;的非遞歸表達式呢？如果沒有，如何證明沒有呢？又該怎麼求呢？&lt;/p&gt;
+
+&lt;p&gt;我一開始分析這個問題的時候並沒有清晰的看到這兩個操作互相之間的影響。我只是寫了幾個簡單的例子去分析不同情況下（初始的&lt;script type=&quot;math/tex&quot;&gt;A&lt;/script&gt;不滿足1或不滿足2或兩個都不滿足）&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;的選取會隨操作2怎樣的變化。然後逐步調整&lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt;來達到最佳表達式。當我自以為分析了所有情況的時候我高興異常的寫了個程序去進行一般化驗算。然後不出意料的出現了各種錯誤。然後我想到了一些我想法中的漏洞。然後細思極恐。因為當我意識到這兩個操作實際上一個是會使&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;減小（操作1）而另一個是會使&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;增大的（操作2）。所以我直覺的感覺到應該是沒有一般性的代數解。只能不斷的搜索&lt;script type=&quot;math/tex&quot;&gt;b_{\min}&lt;/script&gt;了。搜索的話倒是很簡單，我們設置一個&lt;script type=&quot;math/tex&quot;&gt;b_{\min}&lt;/script&gt;的下限0，再設置一個&lt;script type=&quot;math/tex&quot;&gt;b_{\min}&lt;/script&gt;的上限，然後用二分法不停的搜索&lt;script type=&quot;math/tex&quot;&gt;b_{\min}&lt;/script&gt;就行了。這樣雖然簡單暴力，但是不精確。要知道我們題目中的元素可都是實數啊。但是我確實想不到什麼好辦法了。&lt;/p&gt;
+
+&lt;p&gt;說點題外話。&lt;/p&gt;
+
+&lt;p&gt;作為很弱的我經常分析問題都是憑直覺的。我並沒有什麼很好的數學能力，無論從經驗上還是邏輯上。眼下導師特別想讓我自己推導很多式子，分析很多問題。並且給我很多好的數學材料去閱讀并一再強調遇到問題不要遲疑想問就問，他會盡量解答。當然除了數學上的，導師還很熱衷於給我講通信網絡的知識（畢竟我們的課題就是干這些的）。每每當我覺得我的英語表達還是不盡人意讓我有種有力使不上的感覺的時候，我更多的是欣喜於通過和導師討論快速的得到知識的快感。這樣的環境使我這個弱爆了的懶蛋有了一絲進取的精神。這是我最最最缺乏的元素了。希望這是個好的開始吧。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 30 Aug 2015 00:00:00 +0800</pubDate>
+        <link>http://dgyblog.com/yang/2015/08/30/help-me/</link>
+        <guid isPermaLink="true">http://dgyblog.com/yang/2015/08/30/help-me/</guid>
+      </item>
+    
   </channel>
 </rss>

