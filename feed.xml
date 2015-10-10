@@ -113,8 +113,9 @@
 
 &lt;p&gt;The classical angular momentum of a small object of (vector) linear momentum &lt;script type=&quot;math/tex&quot;&gt;\mathbf{p}&lt;/script&gt; centered at a point given by the vector displacement &lt;script type=&quot;math/tex&quot;&gt;\mathbf{r}&lt;/script&gt; relative to some origin is &lt;script type=&quot;math/tex&quot;&gt;\mathbf{L}=\mathbf{r}\times\mathbf{p}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;p&gt;As usual &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-\mathbf{C}=\mathbf{A}\times\mathbf{B}=\mathbf{c}Ab\sin\theta\equiv\left\vert\begin{array}{ccc}\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ A_{x} &amp; A_{y} &amp; A_{z} \\ B_{x} &amp; B_{y} &amp; B_{z}\end{array}\right\vert %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;As usual&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a^{2}+b^{2}=c^{2}&lt;/script&gt;
 
 &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{i}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{j}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{k}}&lt;/script&gt; are unit vectors in &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt; directions. &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{C}}&lt;/script&gt; is perpendicular to the plane of &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{B}}&lt;/script&gt;. &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt; is the angle between the vector &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{B}}&lt;/script&gt;. &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{c}}&lt;/script&gt; is unit vector in the direction of the vector &lt;script type=&quot;math/tex&quot;&gt;{\mathbf{C}}&lt;/script&gt;. Note that, in previous equation, the ordering of the multiplications in the second line is chosen to work also for operators instead of numbers for one or other vector, the sequence of multiplications in each term is always in the sequence of the rows from top to bottom.&lt;/p&gt;
 
