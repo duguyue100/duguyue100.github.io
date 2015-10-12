@@ -21,7 +21,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201510121631" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201510121643" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -131,9 +131,8 @@
 
 <p>As usual</p>
 
-<p>[
-\mathbf{C}=\mathbf{A}\times\mathbf{B}=\mathbf{c}Ab\sin\theta\equiv\begin{vmatrix}\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \newline A_{x} &amp; A_{y} &amp; A_{z} \newline B_{x} &amp; B_{y} &amp; B_{z}\end{vmatrix}
-]</p>
+<script type="math/tex; mode=display">% <![CDATA[
+\mathbf{C}=\mathbf{A}\times\mathbf{B}=\mathbf{c}Ab\sin\theta\equiv\begin{vmatrix}\mathbf{i} & \mathbf{j} & \mathbf{k} \newline A_{x} & A_{y} & A_{z} \newline B_{x} & B_{y} & B_{z}\end{vmatrix} %]]></script>
 
 <p>where <script type="math/tex">{\mathbf{i}}</script>, <script type="math/tex">{\mathbf{j}}</script>, <script type="math/tex">{\mathbf{k}}</script> are unit vectors in <script type="math/tex">{x}</script>, <script type="math/tex">{y}</script> and <script type="math/tex">{z}</script> directions. <script type="math/tex">{\mathbf{C}}</script> is perpendicular to the plane of <script type="math/tex">{\mathbf{A}}</script> and <script type="math/tex">{\mathbf{B}}</script>. <script type="math/tex">{\theta}</script> is the angle between the vector <script type="math/tex">{\mathbf{A}}</script> and <script type="math/tex">{\mathbf{B}}</script>. <script type="math/tex">{\mathbf{c}}</script> is unit vector in the direction of the vector <script type="math/tex">{\mathbf{C}}</script>. Note that, in previous equation, the ordering of the multiplications in the second line is chosen to work also for operators instead of numbers for one or other vector, the sequence of multiplications in each term is always in the sequence of the rows from top to bottom.</p>
 
@@ -147,8 +146,8 @@
 
 <p>and similarly write out component operators</p>
 
-<script type="math/tex; mode=display"><![CDATA[
-\begin{array}{rcl}  \hat{L}_{x}&=&\hat{y}\hat{p}_{z}-\hat{z}\hat{p}_{y}=-i\hbar\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right) \\ \hat{L}_{y}&=&\hat{z}\hat{p}_{x}-\hat{x}\hat{p}_{z}=-i\hbar\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right) \\ \hat{L}_{z}&=&\hat{x}\hat{p}_{y}-\hat{y}\hat{p}_{x}=-i\hbar\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right) \end{array} ]]></script>
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rcl}  \hat{L}_{x}&=&\hat{y}\hat{p}_{z}-\hat{z}\hat{p}_{y}=-i\hbar\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right) \\ \hat{L}_{y}&=&\hat{z}\hat{p}_{x}-\hat{x}\hat{p}_{z}=-i\hbar\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right) \\ \hat{L}_{z}&=&\hat{x}\hat{p}_{y}-\hat{y}\hat{p}_{x}=-i\hbar\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right) \end{array} %]]></script>
 
 <p>which are each Hermitian, and so, correspondingly, is the operator <script type="math/tex">{\hat{\mathbf{L}}}</script> itself.</p>
 
@@ -545,8 +544,7 @@
       /* TODO: keep going after an individual parse error. */
       var script = scripts[i];
       if (script.type.match(/^math\/tex/)) {
-        var text = script.text === "" ? script.innerHTML : script.text;
-	text=text.replace("% <![CDATA[", "").replace("%]]>", "");
+        var text = script.text === "" ? "hey" : script.text;
 	var options = script.type.match(/mode\s*=\s*display/) ?
                       {displayMode: true} : {};
         script.insertAdjacentHTML("beforebegin",

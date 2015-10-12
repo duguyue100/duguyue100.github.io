@@ -21,7 +21,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201510121631" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201510121643" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -204,8 +204,7 @@
       /* TODO: keep going after an individual parse error. */
       var script = scripts[i];
       if (script.type.match(/^math\/tex/)) {
-        var text = script.text === "" ? script.innerHTML : script.text;
-	text=text.replace("% <![CDATA[", "").replace("%]]>", "");
+        var text = script.text === "" ? "hey" : script.text;
 	var options = script.type.match(/mode\s*=\s*display/) ?
                       {displayMode: true} : {};
         script.insertAdjacentHTML("beforebegin",
