@@ -423,7 +423,7 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle E_{potential}\rangle\approx-\frac{e^{2}}{4\pi\varepsilon_{0}a_{0}}&lt;/script&gt;
 
-&lt;p&gt;For a reasonable smooth wavefunction &lt;script type=&quot;math/tex&quot;&gt;{\psi(\textbf{r})}&lt;/script&gt; of size &lt;script type=&quot;math/tex&quot;&gt;{\sim a_{0}}&lt;/script&gt;, the second spatial derivative will be&lt;/p&gt;
+&lt;p&gt;For a reasonable smooth wavefunction &lt;script type=&quot;math/tex&quot;&gt;{\psi(\mathbf{r})}&lt;/script&gt; of size &lt;script type=&quot;math/tex&quot;&gt;{\sim a_{0}}&lt;/script&gt;, the second spatial derivative will be&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\sim-\psi(0)/a_{0}^{2}&lt;/script&gt;
 
