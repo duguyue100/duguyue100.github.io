@@ -21,7 +21,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201510121624" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201510121631" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -147,8 +147,8 @@
 
 <p>and similarly write out component operators</p>
 
-<script type="math/tex; mode=display">
-\begin{array}{rcl}  \hat{L}_{x}&=&\hat{y}\hat{p}_{z}-\hat{z}\hat{p}_{y}=-i\hbar\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right) \\ \hat{L}_{y}&=&\hat{z}\hat{p}_{x}-\hat{x}\hat{p}_{z}=-i\hbar\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right) \\ \hat{L}_{z}&=&\hat{x}\hat{p}_{y}-\hat{y}\hat{p}_{x}=-i\hbar\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right) \end{array}</script>
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rcl}  \hat{L}_{x}&=&\hat{y}\hat{p}_{z}-\hat{z}\hat{p}_{y}=-i\hbar\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right) \\ \hat{L}_{y}&=&\hat{z}\hat{p}_{x}-\hat{x}\hat{p}_{z}=-i\hbar\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right) \\ \hat{L}_{z}&=&\hat{x}\hat{p}_{y}-\hat{y}\hat{p}_{x}=-i\hbar\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right) \end{array} %]]></script>
 
 <p>which are each Hermitian, and so, correspondingly, is the operator <script type="math/tex">{\hat{\mathbf{L}}}</script> itself.</p>
 
@@ -546,7 +546,8 @@
       var script = scripts[i];
       if (script.type.match(/^math\/tex/)) {
         var text = script.text === "" ? script.innerHTML : script.text;
-        var options = script.type.match(/mode\s*=\s*display/) ?
+	text=text.replace("% <![CDATA[", "").replace("%]]>", "");
+	var options = script.type.match(/mode\s*=\s*display/) ?
                       {displayMode: true} : {};
         script.insertAdjacentHTML("beforebegin",
                                   katex.renderToString(text, options));
