@@ -15,7 +15,7 @@
     <meta name="description" content="A proud WE-ARE-NOT-DOOMED fan.">
     <meta name="author" content="Yuhuang Hu">
     
-    <link rel="canonical" href="http://dgyblog.com/404.html">
+    <link rel="canonical" href="http://dgyblog.com/page2/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
@@ -40,7 +40,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="DGY Life Blog">
     <meta property="og:description" content="A proud WE-ARE-NOT-DOOMED fan.">
-    <meta property="og:url" content="http://dgyblog.com/404.html">
+    <meta property="og:url" content="http://dgyblog.com/page2/">
     <meta property="og:site_name" content="DGY Life Blog">
 
     <!-- Twitter Card -->
@@ -50,13 +50,13 @@
     
     <meta name="twitter:title" content="DGY Life Blog" />
     <meta name="twitter:description" content="A proud WE-ARE-NOT-DOOMED fan." />
-    <meta name="twitter:url" content="http://dgyblog.com/404.html" />
+    <meta name="twitter:url" content="http://dgyblog.com/page2/" />
     
     
 </head>
 
 <body class="site">
-  <div class="site-wrap center">
+  <div class="site-wrap">
     <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
@@ -104,13 +104,47 @@
 
     <div class="post p2 p-responsive wrap" role="main">
       <div class="measure">
-        <h1 id="section">404</h1>
+        <div class="home">
 
-<p>One empty hole here right, mate?</p>
+  <div class="posts">
+    
+      <div class="post py3">
+        <p class="post-meta">Oct 21, 2010</p>
+        <a href="/oldtimes/2010/10/21/photos-friends-theme-coffe-shop/" class="post-link"><h3 class="h2 post-title">旧照发布：去FRIENDS主题咖啡馆的时候</h3></a>
+        <p class="post-summary">
+          
+            Photos from FRIENDS Theme Coffee Shop
+          
+        </p>
+      </div>
+    
+      <div class="post py3">
+        <p class="post-meta">Oct 21, 2010</p>
+        <a href="/oldtimes/2010/10/21/about-public-trust/" class="post-link"><h3 class="h2 post-title">重提所谓公信力</h3></a>
+        <p class="post-summary">
+          
+            About Public Trust
+          
+        </p>
+      </div>
+    
+  </div>
 
-<div class="mt3">
-  <a href="/" class="button button-blue button-big">Home</a>
-  <a href="/contact/" class="button button-blue button-big">Contact</a>
+  <div class="pagination clearfix mb1 mt4">
+  <div class="left">
+    
+      
+        <a class="pagination-item" href="/">Newer</a>
+      
+    
+  </div>
+  <div class="right">
+    
+      <span class="pagination-item disabled">Older</span>
+    
+  </div>
+</div>
+
 </div>
 
       </div>
@@ -126,6 +160,26 @@
     </small>
   </div>
 </footer>
+
+
+<script>
+  $("script[type='math/tex']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<span class=\"inline-equation\">" + 
+           katex.renderToString(tex) +
+           "</span>";
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    var restex=tex.replace("% <![CDATA[", " ").replace("%]]>", " ");
+    return "<div align=\"center\" class=\"equation\">" + 
+           katex.renderToString("\\displaystyle "+restex)+
+           "</div>";
+  });
+</script>
 
 </body>
 </html>
