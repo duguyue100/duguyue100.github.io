@@ -439,7 +439,7 @@
 
 &lt;p&gt;The total energy is balance between the potential energy and the kinetic energy. For this simple model, differentiation shows that the chose of &lt;script type=&quot;math/tex&quot;&gt;{a_{0}}&lt;/script&gt; that minimizes the energy overall is&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_{0}=\frac{4\pi\varepsilon_{0}\hbar^{2}}{e^{2}\mu}\approx 0.529\AA=5.29\times 10^{-11} m&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_{0}=\frac{4\pi\varepsilon_{0}\hbar^{2}}{e^{2}\mu}\approx 0.529 A=5.29\times 10^{-11} m&lt;/script&gt;
 
 &lt;p&gt;which is the standard definition of the Bohr radius. With this choice of &lt;script type=&quot;math/tex&quot;&gt;{a_{0}}&lt;/script&gt;, the corresponding total energy of the state is&lt;/p&gt;
 
