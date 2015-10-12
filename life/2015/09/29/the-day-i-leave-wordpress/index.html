@@ -6,7 +6,6 @@
 
     <link rel="stylesheet" href="//khan.github.io/KaTeX/bower_components/katex/dist/katex.min.css" type="text/css" rel="stylesheet">
     <script src="//khan.github.io/KaTeX/bower_components/katex/dist/katex.min.js" type="text/javascript"></script>
-    <script src="//khan.github.io/KaTeX/bower_components/katex/dist/contrib/auto-render.min.js" type="text/javascript"></script>
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +19,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201510121721" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201510121732" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -211,9 +210,25 @@
 </footer>
 
 
-  <script>
-    renderMathInElement(document.body);
-  </script>
 </body>
+
+<script>
+  $("script[type='math/tex']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<span class=\"inline-equation\">" + 
+           katex.renderToString(tex) +
+           "</span>";
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<span class=\"equation\">" + 
+           katex.renderToString("\\displaystyle "+tex)+
+           "</span>";
+  });
+</script>
+
 
 </html>
