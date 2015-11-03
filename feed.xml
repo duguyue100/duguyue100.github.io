@@ -583,25 +583,25 @@
 
 &lt;p&gt;If there is an energy &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt; for which there is a solution, then we already know what form the solution has to take. Sinusoidal in the middle exponentially decaying on either side.&lt;/p&gt;
 
-&lt;p&gt;For some eigenenergy &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;{k=\sqrt{2mE/\hbar^{2}}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\kappa=\sqrt{2m(V_{o}-E)/\hbar^{2}}}&lt;/script&gt;:&lt;/p&gt;
+&lt;p&gt;For some eigenenergy &lt;script type=&quot;math/tex&quot;&gt;E&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;k=\sqrt{2mE/\hbar^{2}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\kappa=\sqrt{2m(V_{o}-E)/\hbar^{2}}&lt;/script&gt;:&lt;/p&gt;
 
 &lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-{z&lt;-L_{z}/2} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+z&lt;-L_{z}/2 %]]&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=G\exp(\kappa z)&lt;/script&gt;
 
 &lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-{-L_{z}/2&lt;z&lt;L_{z}/2} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+-L_{z}/2&lt;z&lt;L_{z}/2 %]]&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=A\sin(kz)+B\cos(kz)&lt;/script&gt;
 
-&lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;{z&gt;L_{z}/2}&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;z&gt;L_{z}/2&lt;/script&gt;&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=F\exp(-\kappa z)&lt;/script&gt;
 
 &lt;p&gt;with constant &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{B}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{G}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{F}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;p&gt;From continuity of the wavefunction at &lt;script type=&quot;math/tex&quot;&gt;{z=L_{z}/2}&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;From continuity of the wavefunction at &lt;script type=&quot;math/tex&quot;&gt;z=L_{z}/2&lt;/script&gt;&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;FX_{L}=AS_{L}+BC_{L}&lt;/script&gt;
 
