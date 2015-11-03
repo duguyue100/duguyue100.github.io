@@ -455,6 +455,210 @@
       </item>
     
       <item>
+        <title>Quantum Mechanics for Scientists and Engineers Notes 2</title>
+        <description>&lt;h3 id=&quot;wave-propagation&quot;&gt;1. Wave Propagation&lt;/h3&gt;
+
+&lt;h4 id=&quot;plane-waves-and-interference-b&quot;&gt;1.1. Plane waves and interference &amp;lt;/b&amp;gt;&lt;/h4&gt;
+
+&lt;p&gt;Generalizing to 3 dimensions, the wave equation becomes&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\phi-\frac{1}{c^{2}}\frac{\partial^{2}\phi}{\partial t^{2}}=0&lt;/script&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\equiv \frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}&lt;/script&gt;
+
+&lt;p&gt;or equivalently, with unit vectors &lt;script type=&quot;math/tex&quot;&gt;{\hat{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{y}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{z}}&lt;/script&gt; in the corresponding directions&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\equiv \nabla\cdot\nabla=\left(\hat{x}\frac{\partial}{\partial x}+\hat{y}\frac{\partial}{\partial y}+\hat{z}\frac{\partial}{\partial z}\right)\left(\hat{x}\frac{\partial}{\partial x}+\hat{y}\frac{\partial}{\partial y}+\hat{z}\frac{\partial}{\partial z}\right)&lt;/script&gt;
+
+&lt;p&gt;Here is an example of plane wave. We can check that a monochromatic (one frequency) “plane wave” of the form &lt;script type=&quot;math/tex&quot;&gt;{\exp[i(\vec{k}\dot\vec{r}-\omega t)]}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}=x\hat{x}+y\hat{y}+z\hat{z}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\vec{k}=k_{x}\hat{x}+k_{y}\hat{y}+k_{z}\hat{z}}&lt;/script&gt; is a solution when &lt;script type=&quot;math/tex&quot;&gt;{k=\omega/c}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\exp[i(\vec{k}\cdot\vec{r}-\omega t)]=\nabla\cdot\nabla\exp[i(\vec{k}\cdot\vec{r}-\omega t)]=-(k_{x}^{2}+k_{y}^{2}+k_{z}^{2})\exp[i(\vec{k}\cdot\vec{r}-\omega t)]&lt;/script&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}}{\partial t^{2}}\exp[i(\vec{k}\cdot\vec{r}-\omega t)]=-\omega^{2}\exp[i(k\cdot r-\omega t)]&lt;/script&gt;
+
+&lt;p&gt;Then choosing &lt;script type=&quot;math/tex&quot;&gt;{k=\omega/c}&lt;/script&gt;, the left hand of wave equation is 0.&lt;/p&gt;
+
+&lt;p&gt;Because the wave equation is linear, the sum is also a solution showing interference.&lt;/p&gt;
+
+&lt;h4 id=&quot;diffraction&quot;&gt;1.2. Diffraction&lt;/h4&gt;
+
+&lt;p&gt;For a source or aperture of width &lt;script type=&quot;math/tex&quot;&gt;{d}&lt;/script&gt;, the diffraction angle&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta\sim\frac{\lambda}{d}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt; is the wavelength.&lt;/p&gt;
+
+&lt;h4 id=&quot;diffraction-from-periodic-structures&quot;&gt;1.3. Diffraction from Periodic Structures&lt;/h4&gt;
+
+&lt;p&gt;The angle &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt; of theses diffracted waves is given by simple geometry&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sin\theta=\frac{\lambda}{s}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt; is the wave length.&lt;/p&gt;
+
+&lt;h3 id=&quot;schroedingers-wave-equation&quot;&gt;2. Schroedinger’s Wave Equation&lt;/h3&gt;
+
+&lt;h4 id=&quot;from-de-broglie-to-schroedinger&quot;&gt;2.1. From de Broglie to Schroedinger&lt;/h4&gt;
+
+&lt;p&gt;Recall de Broglie is that the electron wavelength &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt; is given by&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\lambda=\frac{h}{p}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{p}&lt;/script&gt; is the electron momentum and &lt;script type=&quot;math/tex&quot;&gt;{h}&lt;/script&gt; is Plank’s constant: &lt;script type=&quot;math/tex&quot;&gt;{h=6.63\times10^{-34}J\cdot s}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;In three dimensions, we can rewrite Helmholtz wave equation as:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\psi=-k^{2}\psi&lt;/script&gt;
+
+&lt;p&gt;And with de Broglie hypothesis and the definition &lt;script type=&quot;math/tex&quot;&gt;{k=2\pi/\lambda}&lt;/script&gt;, therefore &lt;script type=&quot;math/tex&quot;&gt;{k=p/\hbar}&lt;/script&gt;. Hence,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\psi=-\frac{p^{2}}{\hbar^{2}}\psi&lt;/script&gt;
+
+&lt;p&gt;Suppose the mass of the particle is &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt;, then we can change the equation to&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\hbar{2}}{2m}\nabla^{2}\psi=\frac{p^{2}}{2m}\psi&lt;/script&gt;
+
+&lt;p&gt;Notice that &lt;script type=&quot;math/tex&quot;&gt;{\frac{p^{2}}{2m}}&lt;/script&gt; is the kinetic energy of the particle. Let &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt; as the total energy of the particle and &lt;script type=&quot;math/tex&quot;&gt;{V(\vec{r})}&lt;/script&gt; as potential energy of the particle. Finally, we can generate time-independent Schroedinger equation&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left(-\frac{\hbar^{2}}{2m}\nabla^{2}+V(\vec{r})\right)\psi=E\psi&lt;/script&gt;
+
+&lt;p&gt;Born’s postulate is that the probability &lt;script type=&quot;math/tex&quot;&gt;{P(\vec{r})}&lt;/script&gt; of finding an electron near any specific point &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}}&lt;/script&gt; in space is proportional to the modulus squared &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi(\vec{r})\vert ^{2}}&lt;/script&gt; of the wave amplitude &lt;script type=&quot;math/tex&quot;&gt;{\psi(\vec{r})}&lt;/script&gt;. &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi(\vec{r}\vert ^{2}}&lt;/script&gt; can therefore be viewed as a “probability density” with &lt;script type=&quot;math/tex&quot;&gt;{\psi(\vec{r})}&lt;/script&gt; called a “probability amplitude” or a “quantum mechanical amplitude”.&lt;/p&gt;
+
+&lt;h4 id=&quot;diffraction-by-two-slits&quot;&gt;2.2. Diffraction by two slits&lt;/h4&gt;
+
+&lt;p&gt;Young’s slits is an opaque mask has two slits cut in it, a distance &lt;script type=&quot;math/tex&quot;&gt;{s}&lt;/script&gt; apart. Then we shine a plane wave on the mask from the left. The slits as point sources give an interference pattern.&lt;/p&gt;
+
+&lt;p&gt;The distance from the upper source to point &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; on the screen is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{(x-s/2)^{2}+z_{o}^{2}}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; is the distance between the point and middle point of the screen, &lt;script type=&quot;math/tex&quot;&gt;{s}&lt;/script&gt; is the distance between two slits, and &lt;script type=&quot;math/tex&quot;&gt;{z_{o}}&lt;/script&gt; is the distance between mask and screen. Take the approximation of the above equation&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{\left(x-\frac{s}{2}\right)^{2}+z_{o}^{2}}\simeq z_{o}+\frac{(x-s/2)^{2}}{2z_{o}}=z_{o}+\frac{x^{2}}{2z_{o}}+\frac{s^{2}}{8z_{o}}-\frac{sx}{2z_{o}}&lt;/script&gt;
+
+&lt;p&gt;Similarly, the distance from the lower source to point &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; on the screen is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{(x+s/2)^{2}+z_{o}^{2}}&lt;/script&gt;
+
+&lt;p&gt;and the approximation is given by&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{\left(x+\frac{s}{2}\right)^{2}+z_{o}^{2}}\simeq z_{o}+\frac{(x+s/2)^{2}}{2z_{o}}=z_{o}+\frac{x^{2}}{2z_{o}}+\frac{s^{2}}{8z_{o}}+\frac{sx}{2z_{o}}&lt;/script&gt;
+
+&lt;p&gt;For large &lt;script type=&quot;math/tex&quot;&gt;{z_{o}}&lt;/script&gt; the waves are approximately uniformly “bright”&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{s}(x)\propto \exp\left[ik\sqrt{\left(x-\frac{s}{2}\right)^{2}+z_{o}^{2}}\right]+\exp\left[ik\sqrt{\left(x+\frac{s}{2}\right)^{2}+z_{o}^{2}}\right]&lt;/script&gt;
+
+&lt;p&gt;Using the approximation for the distance gives&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{s}(x)\propto \exp(i\alpha)\left\{\exp\left[ik\frac{sx}{2z_{o}}\right]+\exp\left[-ik\frac{sx}{2z_{o}}\right]\right\}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\alpha=k(z_{o}+x^{2}/2z_{o}+s^{2}/8z_{o})}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, noted that &lt;script type=&quot;math/tex&quot;&gt;{\exp(i\theta)+\exp(-i\theta)=2\cos(\theta)}&lt;/script&gt; and in general, angular wavenumber &lt;script type=&quot;math/tex&quot;&gt;{k=2\pi/\lambda}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{s}(x)\propto \exp(i\alpha)\cos\left(k\frac{sx}{2z_{o}}\right)=\exp(i\alpha)\cos\left(\frac{\pi sx}{\lambda z_{o}}\right)&lt;/script&gt;
+
+&lt;p&gt;So the “intensity” of the beam&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert \psi_{s}(x)\vert ^{2}\propto \cos^{2}\left(\frac{\pi sx}{\lambda z_{o}}\right)=\frac{1}{2}\left[1+\cos\left(\frac{2\pi sx}{\lambda z_{o}}\right)\right]&lt;/script&gt;
+
+&lt;p&gt;Therefore, the interference fringes are spaced by &lt;script type=&quot;math/tex&quot;&gt;{d_{s}=\lambda z_{o}/s}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;particle-in-box&quot;&gt;3. Particle in Box&lt;/h3&gt;
+
+&lt;h4 id=&quot;linearity-and-normalization&quot;&gt;3.1. Linearity and normalization&lt;/h4&gt;
+
+&lt;p&gt;We see that Schroedinger’s equation is linear. The wave function &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; appears only in first order, there are no second order or higher order terms. So if &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; is a solution to Schroedinger’s equation, so also is &lt;script type=&quot;math/tex&quot;&gt;{a\psi}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Born postulated the probability &lt;script type=&quot;math/tex&quot;&gt;{P(\vec{r})}&lt;/script&gt; of finding a particle near a point &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}}&lt;/script&gt; is &lt;script type=&quot;math/tex&quot;&gt;{\propto\vert \psi(\vec{r})\vert ^{2}}&lt;/script&gt;. Specifically let us define &lt;script type=&quot;math/tex&quot;&gt;{P(\vec{r})}&lt;/script&gt; as a “probability density”. For some very small (infinitesimal) volume &lt;script type=&quot;math/tex&quot;&gt;{d^{3}\vec{r}}&lt;/script&gt; around &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}}&lt;/script&gt;. The probability of finding the particle in that volume is &lt;script type=&quot;math/tex&quot;&gt;{P(\vec{r})d^{3}r}&lt;/script&gt;. So, the sum of all such probabilities should be 1&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int P(\vec{r})d^{3}\vec{r}=1&lt;/script&gt;
+
+&lt;p&gt;However, unless we have been lucky, out solution to Schroedinger’s equation did not give a &lt;script type=&quot;math/tex&quot;&gt;{\psi(\vec{r})}&lt;/script&gt; so that &lt;script type=&quot;math/tex&quot;&gt;{\int\vert \psi(\vec{r})\vert ^{2}d^{3}\vec{r}=1}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Generally, this integral would give some other real positive number which we could write as &lt;script type=&quot;math/tex&quot;&gt;{1/\vert a\vert ^{2}}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; is some (possible complex) number. That is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int\vert \psi(\vec{r})\vert ^{2}d^{3}\vec{r}=\frac{1}{\vert a\vert ^{2}}&lt;/script&gt;
+
+&lt;p&gt;But we know that if &lt;script type=&quot;math/tex&quot;&gt;{\psi(\vec{r})}&lt;/script&gt; is a solution of Schroedinger equation, so also is &lt;script type=&quot;math/tex&quot;&gt;{a\psi(\vec{r})}&lt;/script&gt;. So if we use the solution &lt;script type=&quot;math/tex&quot;&gt;{\psi_{N}=a\psi}&lt;/script&gt; instead of &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; then&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int\vert \psi_{N}(\vec{r})\vert ^{2}d^{3}\vec{r}=1&lt;/script&gt;
+
+&lt;p&gt;and we can use &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{N}(\vec{r})\vert ^{2}}&lt;/script&gt; as the probability density. &lt;script type=&quot;math/tex&quot;&gt;{\psi_{N}(\vec{r})}&lt;/script&gt; would then be called a “normalization wave function”.&lt;/p&gt;
+
+&lt;p&gt;Note that normalization only sets the magnitude of &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt;, not the phase. We are free to choose any phase for &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; or indeed for the original solution &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt;. If we think of space as infinite functions like &lt;script type=&quot;math/tex&quot;&gt;{\sin(kx)}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\cos(kx)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\exp(i\vec{k}\cdot\vec{r})}&lt;/script&gt; cannot be normalized in this way. Technically, their squared modulus is not “Lebesgue integrable” (They are not “L2” functions). This difficulty is mathematical, not physical. It is caused by over-idealizing the mathematics to get functions that are simple to use. There are few “work-around” for this difficulty&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;only work with finite volumes in actual problems (this is the most common solution)&lt;/li&gt;
+  &lt;li&gt;use “normalization to delta function” (introduces another infinity to compensate for the first one)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;solving-for-the-particle-in-a-box&quot;&gt;3.2. Solving for the particle in a box&lt;/h4&gt;
+
+&lt;p&gt;We consider a particle of mass &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; with a spatially-varying potential &lt;script type=&quot;math/tex&quot;&gt;{V(z)}&lt;/script&gt; in the &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt; direction, so the Schroedinger equation&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\hbar^{2}}{2m}\frac{d^{2}\psi(z)}{dz^{2}}+V(z)\psi(z)=E\psi(z)&lt;/script&gt;
+
+&lt;p&gt;when &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt; is the energy of the particle and &lt;script type=&quot;math/tex&quot;&gt;{\psi(z)}&lt;/script&gt; is the wave function.&lt;/p&gt;
+
+&lt;p&gt;Suppose the potential energy is a simple “rectangular” potential well thickness &lt;script type=&quot;math/tex&quot;&gt;{L_{z}}&lt;/script&gt;. Potential energy is constant inside, and we choose &lt;script type=&quot;math/tex&quot;&gt;{V=0}&lt;/script&gt; there. Rising to infinity at the walls. We will sometimes call this an infinite or infinitely deep (potential) well. Because these potentials at &lt;script type=&quot;math/tex&quot;&gt;{z=0}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{z=L_{z}}&lt;/script&gt; are infinitely high, but the particle’s energy &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt; is presumably finite. We presume there is no possibility of finding the particle outside. So the wave function &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; is 0 there so &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; should be 0 at the walls. With these choices, the Schroedinger’s equation becomes&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\hbar^{2}}{2m}\frac{d^{2}\psi(z)}{dz^{2}}=E\psi(z)&lt;/script&gt;
+
+&lt;p&gt;with the boundary conditions &lt;script type=&quot;math/tex&quot;&gt;{\psi(0)=0}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\psi(L_{z})=0}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;The general solution to previous equation is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=A\sin(kz)+B\cos(kz)&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{B}&lt;/script&gt; are constants and &lt;script type=&quot;math/tex&quot;&gt;{k\sqrt{2mE/\hbar^{2}}}&lt;/script&gt;. The boundary condition &lt;script type=&quot;math/tex&quot;&gt;{\psi(0)=0}&lt;/script&gt;, means &lt;script type=&quot;math/tex&quot;&gt;{B=0}&lt;/script&gt;. Then the solution reduced to&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=A\sin(kz)&lt;/script&gt;
+
+&lt;p&gt;and because of boundary &lt;script type=&quot;math/tex&quot;&gt;{\psi(L_{z})=0}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{kz}&lt;/script&gt; must be multiple of &lt;script type=&quot;math/tex&quot;&gt;{\pi}&lt;/script&gt;, therefore &lt;script type=&quot;math/tex&quot;&gt;{k=\sqrt{2mE/\hbar^{2}}=n\pi/L_{z}}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; is an integer. Since &lt;script type=&quot;math/tex&quot;&gt;{E=(\hbar^{2}k^{2})/2m}&lt;/script&gt;, the solutions are&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{n}(z)=A\sin\left(\frac{n\pi z}{L_{z}}\right) \text{ with } E_{n}=\frac{\hbar^{2}}{2m}\left(\frac{n\pi}{L_{z}}\right)^{2}&lt;/script&gt;
+
+&lt;p&gt;We restrict &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; to positive integers for following reasons: since &lt;script type=&quot;math/tex&quot;&gt;{\sin(-a)=-sin(a)}&lt;/script&gt; for any real number &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt;, the wave functions with negative &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; are same as those with positive &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; with an arbitrary factor, here -1. The wave function for &lt;script type=&quot;math/tex&quot;&gt;{n=0}&lt;/script&gt; is trivial, the wave function is 0 everywhere.&lt;/p&gt;
+
+&lt;p&gt;We can normalize the wave function&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{0}^{L_{z}}\vert A_{n}\vert ^{2}\sin^{2}\left(\frac{n\pi z}{L_{z}}\right)\,dz=\vert A_{n}\vert ^{2}\frac{L_{z}}{2}&lt;/script&gt;
+
+&lt;p&gt;to have this integral equal 1 by choosing &lt;script type=&quot;math/tex&quot;&gt;{\vert A_{n}\vert=\sqrt{2/L_{z}}}&lt;/script&gt;. Note that &lt;script type=&quot;math/tex&quot;&gt;{A_{n}}&lt;/script&gt; can be complex.&lt;/p&gt;
+
+&lt;h4 id=&quot;nature-of-the-particle-in-a-box-solutions&quot;&gt;3.3. Nature of the particle-in-a-box solutions&lt;/h4&gt;
+
+&lt;p&gt;Solutions with a specific set of allowed values of a parameter (here energy) are eigenvalues and with a particular function associated with each such value are eigenfunctions or eigensolutions. Here, since the parameter is an energy, we can call the eigenvalues as eigenenergies and we can refer to the eigenfunctions as the energy eigenfunctions.&lt;/p&gt;
+
+&lt;p&gt;Note in some problem, it can be possible to have more then one eigenfunction with a given eigenvalue, this phenomenon is known as “degeneracy”. The number of such states with a same eigenvalue is called “the degeneracy” of that state.&lt;/p&gt;
+
+&lt;p&gt;Note that these eigenfunctions have definite symmetry the &lt;script type=&quot;math/tex&quot;&gt;{n=2k-1}&lt;/script&gt; functions are the mirror image on the left of what they are on the right, such a function has “even parity” or is said to be an “even function”. The &lt;script type=&quot;math/tex&quot;&gt;{n=2k}&lt;/script&gt; eigenfunctions are an inverted image. The value at any point on the right of the center is exactly minus the value of the “mirror image” point on the left of the center. Such a function has “odd parity” or is said to be an “odd function”.&lt;/p&gt;
+
+&lt;p&gt;This particle-in-a-box behavior is very different from the classical case&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;there is only a discrete set of possible value for the energy&lt;/li&gt;
+  &lt;li&gt;there is a minimum possible energy for the particle, corresponding to &lt;script type=&quot;math/tex&quot;&gt;{n=1}&lt;/script&gt;, sometimes called a “zero-point energy”&lt;/li&gt;
+  &lt;li&gt;the particle is not uniformly distributed over the box, and its distribution is different for different energies. The probability obeys a standing wave pattern.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In quantum mechanical calculations, we can always use Joules as unit of energy but these are rather large. A very convenient energy unit which also has a simple physical significance is electron-volt (eV)&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;1\text{eV}\simeq1.602\times10^{-19}J&lt;/script&gt;
+
+&lt;p&gt;1 eV is the energy change of an electron in moving through an electrostatic potential change of 1 V.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Oct 2013 00:00:00 +0800</pubDate>
+        <link>http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/</link>
+        <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/</guid>
+      </item>
+    
+      <item>
         <title>Quantum Mechanics for Scientists and Engineers Notes 1</title>
         <description>&lt;h3 id=&quot;background-mathematics-review&quot;&gt;1. Background Mathematics Review&lt;/h3&gt;
 
@@ -1079,101 +1283,6 @@
         <pubDate>Sun, 27 Jan 2013 00:00:00 +0800</pubDate>
         <link>http://dgyblog.com/oldtimes/2013/01/27/tian-ming-2/</link>
         <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/01/27/tian-ming-2/</guid>
-      </item>
-    
-      <item>
-        <title>天明集录 说假</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;余幼顽劣，性情乖张。不事学事，犹好左道。及长，至于游于万里之遥，不能奉父母，亲宗族，是不孝。然幸得慈父，教育读书，以《三国演义》为蒙学，后入《史记》，《诸子》，古文小说之类，不可胜数。又有旁门杂学为辅，故于人前多妄言。二十，应冠，未得字，故自字之，又不得。字之不得，且少，不得妄言号，终未得字号。及学王子安之《滕王阁序》，见有“慕宗悫之长风”句，故阴以“悫”为假号。后揣度数年，约以“讷”为佳，是取钱先生字“默存”为示。&lt;/p&gt;
-
-  &lt;p&gt;余少爱文，犹喜唐宋韩柳之古文，又爱诗，犹以太白为尊。于是恣意放荡，目不见人。每每思之，便觉羞于见人。好仿古，便特立独行，后觉之，乃停笔，与人曰：“吾竖子，何能逞大圣之功哉？”又学民国诸先生体，不成，乃弃作文。敖之公尝修改东坡之《前赤壁赋》，得一两字。觉古文约以登峰造极，难以下笔，于是改易白话文。余又何能？&lt;/p&gt;
-
-  &lt;p&gt;今暇，故试撰此片，名之“天明集录”。余自幼时不嗜睡，常卧床达旦。少长，则犹好挑灯夜战。慈父数训，而屡被之。故喜破晓，是云“天明”。“集”者，《说文》：“群鸟在木上也。”“录”，“借抄写字也。”故所谓“集录”者，是抄写集编，改易成文，不敢言功，是琐碎叨叨，冀无大错。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;假书&lt;/h3&gt;
-
-&lt;p&gt;《红楼梦》中有一本杜撰的书，名作《古今人物通考》。贾宝玉因从引之道：“西方有石名黛，可代画眉之墨。”以《说文》解：“黛，画眉也。”又《楚辞 大招》云：“粉白黛黑。”又可见宝玉之言，虽书无根据，而话却说到了点子上。后来宝玉说：“我赐妹妹一妙字，莫若‘颦颦’二字极妙。”这又是为什么呢？宝玉的原因是说：“况这林妹妹眉尖若蹙。”不错，这个“蹙”字正是照应了前面的“两弯似蹙非蹙罥烟眉”。宝玉说“若蹙”，所以赠了“颦颦”二字。《说文》：“蹙，迫也。”用在眉毛上，是说眉毛挤在了一起，有愁态，而“颦”呢？《玉篇》：“颦蹙，忧愁不乐之状也。”又有李白之《怨情》：“美人卷珠帘，深坐蹙蛾眉”。这一个“黛”字，是从这本本来没有的假书《古今人物通考》上选下来的，然而佐证者，竟是一堆真书。&lt;/p&gt;
-
-&lt;p&gt;然而杜撰书的并非只是“红楼”一人而已。世传小说《诛仙》之作者萧鼎，也玩了一把。我读其书时，时常在文末见其自注，其中约莫杜撰了三四本书，如今只记得《神魔志异》一本。贾宝玉的书，之间其中一句，而《神魔志异》，却在书中大模大样的说出了来历：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;萧鼎其人，不载史册，野史九峰山人笔记《山河记》有言：古人萧氏，生卒不详。幼即聪慧，过目而不忘。尝行天下，尽访名山古泽，乃著《神魔志异》十篇，奇幻瑰丽，为天下第一奇书，多佚，惜哉！&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这个家伙不仅给这部书取了名字，而且还给了作者，竟然还“多佚”。其中有些是古书上有的，有些是古书上没有的。此有一例，名之“饕餮”。饕餮这东西，八成现在问谁谁都知道了，是个猛兽，按照《神魔志异》的说法：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;神州极南有恶兽，四目黑皮，长颈四足，性凶悍，极贪吃。行进迅疾若风，为祸一方。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;看来萧鼎虽然聪慧过人，过目不忘，不过写文章的功力不怎么样。《山海经 北山经》说：“其状如羊身人面，其目在腋下，虎齿人爪，其音如婴兒，名曰狍鸮，是食人。”此处的“狍鸮”据郭璞讲，就是饕餮。然而饕餮这奇兽，在不同书里有不一样的注解，有时是人名，有时是做形容词，说到是一个兽的，都散见在其他的一些古书里，比如《吕氏春秋》说：“周鼎饕餮，有首无身。食人未咽，害及其身。”《吕氏春秋》并没有描述饕餮的样子，但是却描述了饕餮这家伙一个有趣的状态，说的是饕餮吃人，但是人还没咽下去，就想着继续吃，结果把自己给吃了，于是就剩下个脸了。如今去看周鼎，饕餮纹，也都是只有头。但是故事还没有完，古传东方朔写了一部书，叫《神异经》，里面听说有一句话：“饕餮，兽名，身如牛，人面，目在腋下，食人。”对比《山海经》来看，山海经说是羊的样子，神异经说是牛的样子。估计是时代间隔，饕餮也长肥了，从羊变成了牛。奇之又奇的是，翻开《神异经》，反反复复，从头到尾，都找不到这一句话，这一句话是没有的，而《神异经》中三次提到饕餮：其一是描述西南方有一种人，叫“饕餮”，其次是引《左传》中的典故，是人名，第三次说的是一种人，他们“为人饕餮”。不过简单的翻翻就知道，这东方朔写的《神异经》，是本伪书，而这本伪书，竟然还只有一篇。这一篇，还大部分都是从《山海经》中抄出来的。言归“饕餮”，现在说起饕餮，有人讲是龙九子之一。不过这真正的排名，是从明朝开始的，所以也不怎么可听。总之，围绕着饕餮的，就是一堆伪书，假书。然而许多有趣的事却从来都是这些伪书，假书所造。这世上的荒诞之说，远多于正经，难怪贾宝玉说：“除《四书》外，杜撰的太多，偏只我是杜撰不成？”&lt;/p&gt;
-
-&lt;p&gt;假书，伪书，在历史上其实多得很。就拿大名鼎鼎的《老子》，也是个找不到作者的伪书，至于老子西出函谷关，也是个没什么影的事。《封神演义》中，老子作为至高的天神下界主持公道，一个老头，骑个青牛，淡淡的就把事平了。其实仔细看过《封神演义》的就会发现，原来佛教的好多神仙都是道教的，比如燃灯道人，就是燃灯古佛么。这明摆着就是在佛教头顶上拉屎。这些算是题外话。中国的文化人是会编故事的，而且编的是有模有样，但是多无根据。比如晏子出使楚国时，我估计这家伙大部分都是在瞎掰，不过出于政治手腕，还算是值得佩服。可见这假书也有假书的好处，至少辩论的时候不会输，人都知道理论三千，不敌事实一个。《三国志》裴松之的注中，引了《蜀记》所载郭冲五事。郭冲这家伙，是诸葛亮的大粉丝，有评论说：“金城郭冲以为亮权智英略，有逾管、晏，功业未济，论者惑焉，条亮五事隐没不闻于世者，宝等亦不能复难。扶风王慨然善冲。”这五件事，其实每件都不大站的住脚，最著名的已经被破了案的，就是“空城计”，压根没这么回事。但是“宝等亦不能复难。”在辩论中胜了，这就是杜撰的功劳。&lt;/p&gt;
-
-&lt;p&gt;其实古人大约也不想杜撰，因为杜撰要花心思，所以我估计大多数是道听途说，可惜时间久远，难以查证，这再说的时候，尤其是再说一些大人物的奇闻轶事的时候，又是时间上能错达几十年，而且那时的风俗与杜撰者的风俗又大不相同，于是被杜撰的，如诸葛亮等，便变得扭扭歪歪，过了上千年，竟然成了个完人。司马昭又是一例，成了个十恶不赦的大坏蛋。&lt;/p&gt;
-
-&lt;p&gt;假书之事，我还想起另外一件事，约莫七八年前，我读到一文，引以为奇，为何？这篇文章的连贯，是用一大堆假书连起来的。这一大堆假书中，有史书，有地理志，有文章，总之是什么都有。于是我便仿冒了一篇，也造了几部书，也造了一堆文章，互相引证。不过终究没有成什么气候，我约莫记得几个名字，但时日已久，恐怕已经不准确了。但录几个如下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;《胡氏十朝源流考》，《纵横图志》，《地理注》，《三代异变考》&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;大约如是，那时心高气傲，便抹下了一篇文字，现在想起，实为有趣。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;道德&lt;/h3&gt;
-
-&lt;p&gt;道德这件事，实在是件难事。可是首先得弄明白的，是道德这东西到底能不能算是一件事。以我来看，道德不算一件事，因为道德本身不指一件事。由此观之，我这第一句话，其实是个语病。&lt;/p&gt;
-
-&lt;p&gt;什么是“道”呢？《说文》：“所行道也。”《尔雅 释宫》：“一达谓之道路。”意思很简单，就是一条路吗。鲁迅先生说：“其实地上本没有路，走的人多了，也便成了路。”那么这里的“道”是什么呢？是说的三王之道，也就是说是真理。&lt;/p&gt;
-
-&lt;p&gt;可是这个“道”真的是真理的意思么？《汉书 淮南衡山济北王传》中有：“诸使者道长安来”，这个“道”，就是“到”。也就是说“道德”其实是“到德”，就是达到“德”这个境界。&lt;/p&gt;
-
-&lt;p&gt;按《道德经》的说法，《道德经》是两篇组成，一是《道经》，一是《德经》。可见“道德”一词，其实并非如今之意，甚至并非从此处“道德”转义而来的。难怪《道经》之首不言德而只言道，所谓：“道可道，非常道。”于是窃以为“道德”二字，应该从第二个意思，意指到达“德”的境界。&lt;/p&gt;
-
-&lt;p&gt;那么这个问题就算是简化了一点，可是“德”这个东西，又是个说不大清的东西，因为它不是一个具体的概念，而是一个抽象的表示。但它本身又是一个判断的标杆，那么以什么为判断呢？就是以所谓的先王之道来判断，从道的，就是德，不从道的，就是不德。不过这里还是要插播一点《说文》的解释，《说文》：“德，升也。”这就奇怪了，怎么“德”，成了“升”呢，难道是易义？不妨假定如此，因为《玉篇》中说：“德，惠也。”这意思就更明白了一点，原来“德”并不是指的什么，而是一个增益自己的过程。但是这个增益过程中要什么呢？《周礼 地官》中有言：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;以乡三物教万民而宾兴之：一曰六德：知、仁、圣、义、忠、和。二曰六行：教、友、睦、姻、任、恤。三日六艺：礼、乐、射、御、书、数。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;可见“德”是有标准的。可是这六个字还是太抽象了，于是《礼记 聘仪》中有此言：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;子贡问于孔子曰：“敢问君子贵玉而贱珉者何也。为玉之寡而珉之多与？” 孔子曰：“非为珉之多，故贱之也，玉之寡，故贵之也。夫昔者君子比德于玉焉。温润而泽，仁也；缜密以栗，知也；廉而不刿，义也；垂之如队礼也：叩之 其声清越以长，其终诎然，乐也；瑕不掩瑜、瑜不掩瑕，忠也；孚尹旁达，信也； 气如白虹，天也；精神见于山川，地也；圭璋特达、德也。天下莫不贵者，道也， 《诗》云：“言念君子，温其如玉。”故君子贵之也。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;此言又见于《孔子家语 问玉》中。这个算是个对“德”的比喻。不过这样的“德”，太高尚了，也太贵了，凡人是消受不起的，这写标准，说起来都是所谓的贵族标准。穷人那里来的玉呢？贵族的“德”是所谓的“大德”，是立标杆的。比如所谓的十恶不赦，按隋《开皇律》：“谋反，谋大逆，谋叛，恶逆，不道，大不敬，不孝，不睦，不义，内乱。”这十件罪过，违反了便不能获得赦免。这十条罪状，也就是一个标杆，贵族是不会违反这些的，于是就是“大德”，从这些大的“德行”而衍生出的小的德行，比如何谓“不孝”？《孟子 离娄下》：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;孟子曰：“世俗所谓有不孝者五，惰其四支，不顾父母之养，一不孝也；博弈好饮酒，不顾父母之养，二不孝也；好货财，私妻子，不顾父母之养，三不孝也；从耳目之欲，以为父母戮，四不孝也；好勇斗很，以危父母，五不孝也。”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这么多的德行，到底怎么达到呢？原来《大学》中已经有了修炼套路：“格物，致知，意诚，心正，身修，齐家，治国，平天下。”《大学》接着说：“自天子以至庶人，一是皆以修身为本。”看到这里，看官也许看明白了点东西，原来“道德”已经有路了。&lt;/p&gt;
-
-&lt;p&gt;这条道也许是通的，不过可行性不高，光是格物这一项，就够人受的。于是更多见到的，并不是去努力修炼，而是用所谓的“人比人”的方法，站在道德的高处，这样就把自己给拔高了，既然把自己给拔高了，那么就算是变相的道德好了一点，里到达“德”的境界又近了一点。这样一下子把对手打晕的情况并不少见，《三国演义》第九十三回“姜伯约归降孔明 武乡侯骂死王朗”。这骂死人可需要功夫，首先得挑好对手，比如这王朗，乃是“白髯老者”，其次是“汉朝大老元臣”。这一架，就是借着汉朝的“二十四帝”的道德大旗，把这位“大老元臣”气的“大叫一声，撞死于马下”。再一例，《西厢记》中，老太太在白马将军退敌之后，本来要给张生和崔莺莺成亲，可无奈这老妇人耍赖：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;这相思今番害定也。只见他目定口呆神色沮，只见他不哼不动低头坐。真是个积世老婆婆，竟说出妹妹拜哥哥，我静儿低垂呀心儿苦，满口话儿难倾诉，肠转折，眼模糊，却摆这筵席做什么啊。——越剧《西厢记》&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这是越剧中红娘的词。老妇人这一招实在是狠毒，这样不仅是悔了婚，更是断了张生的念想，因为从这往后，张生要是对莺莺动一个手指头，就算是乱伦。莺莺也说：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;张生啊，你无缘，我命薄，你我从此咫尺天涯阻隔。休道他脸上笑呵呵，我知他泪入愁肠比酒多。——越剧《西厢记》&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这下打了张生个措手不及。不过这站在道德的高处也并不是个很结结实实的举动，若是按着诸葛孔明的做法，一下把王朗给骂死了，就永绝了后患，也多亏王朗活了一辈子，是个要脸面的人。不过这西厢记可就不一样了，这越剧“拷红”这一折中便写到：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;月儿才上柳梢头，早已人约黄昏后。常言道女大不中留，其间你何必苦追究。夫人啊你得放手时须放手，得罢休时你且罢休。哎呀夫人呀，红娘不曾把日月记，月余来早已情意两相投。——越剧《西厢记》&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这要是对手不要脸，这道德的优势便顺势就土崩瓦解了。故有俗语说：“欺负老别欺负小”。&lt;/p&gt;
-</description>
-        <pubDate>Mon, 21 Jan 2013 00:00:00 +0800</pubDate>
-        <link>http://dgyblog.com/oldtimes/2013/01/21/tian-ming-1/</link>
-        <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/01/21/tian-ming-1/</guid>
       </item>
     
   </channel>

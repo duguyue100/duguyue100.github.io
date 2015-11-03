@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="//khan.github.io/KaTeX/bower_components/katex/dist/katex.min.css" type="text/css" rel="stylesheet">
+    <script src="//khan.github.io/KaTeX/bower_components/katex/dist/katex.min.js" type="text/javascript"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quantum Mechanics for Scientists and Engineers Notes 2 &#8211; DGY Life Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quantum Mechanics Learning Notes">
+    <meta name="author" content="Yuhuang Hu">
+    <meta name="keywords" content="oldtimes">
+    <link rel="canonical" href="http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css?201511031809" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" type="text/css"
+	  href="http://spratt.github.io/Computer-Modern/cmserif.css" />
+    
+    <!-- Verifications -->
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Quantum Mechanics for Scientists and Engineers Notes 2">
+    <meta property="og:description" content="A proud WE-ARE-NOT-DOOMED fan.">
+    <meta property="og:url" content="http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/">
+    <meta property="og:site_name" content="DGY Life Blog">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@duguyue100" />
+    
+    <meta name="twitter:title" content="Quantum Mechanics for Scientists and Engineers Notes 2" />
+    <meta name="twitter:description" content="Quantum Mechanics Learning Notes" />
+    <meta name="twitter:url" content="http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/" />
+    
+    
+</head>
+
+<body class="site">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://dgyblog.com" class="site-title">DGY Life Blog</a>
+      <nav class="site-nav">
+        <a href="/about/">About</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+        <div class="social-icons">
+  <div class="social-icons-right">
+    
+      <a class="fa fa-github" href="https://github.com/duguyue100"></a>
+    
+    
+    
+    <a class="fa fa-rss" href="/feed.xml"></a>
+    
+      <a class="fa fa-twitter" href="https://twitter.com/duguyue100"></a>
+    
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/+YuhuangHu/posts"></a>
+    
+    
+      <a class="fa fa-envelope" href="mailto:duguyue100@gmail.com"></a>
+    
+    
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h2>Quantum Mechanics for Scientists and Engineers Notes 2</h2>
+  <span class="post-meta">Oct 7, 2013</span><br>
+  
+  <span class="post-meta small">
+  
+    6 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <h3 id="wave-propagation">1. Wave Propagation</h3>
+
+<h4 id="plane-waves-and-interference-b">1.1. Plane waves and interference &lt;/b&gt;</h4>
+
+<p>Generalizing to 3 dimensions, the wave equation becomes</p>
+
+<script type="math/tex; mode=display">\nabla^{2}\phi-\frac{1}{c^{2}}\frac{\partial^{2}\phi}{\partial t^{2}}=0</script>
+
+<p>where</p>
+
+<script type="math/tex; mode=display">\nabla^{2}\equiv \frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}</script>
+
+<p>or equivalently, with unit vectors <script type="math/tex">{\hat{x}}</script>, <script type="math/tex">{\hat{y}}</script> and <script type="math/tex">{\hat{z}}</script> in the corresponding directions</p>
+
+<script type="math/tex; mode=display">\nabla^{2}\equiv \nabla\cdot\nabla=\left(\hat{x}\frac{\partial}{\partial x}+\hat{y}\frac{\partial}{\partial y}+\hat{z}\frac{\partial}{\partial z}\right)\left(\hat{x}\frac{\partial}{\partial x}+\hat{y}\frac{\partial}{\partial y}+\hat{z}\frac{\partial}{\partial z}\right)</script>
+
+<p>Here is an example of plane wave. We can check that a monochromatic (one frequency) “plane wave” of the form <script type="math/tex">{\exp[i(\vec{k}\dot\vec{r}-\omega t)]}</script> where <script type="math/tex">{\vec{r}=x\hat{x}+y\hat{y}+z\hat{z}}</script> and <script type="math/tex">{\vec{k}=k_{x}\hat{x}+k_{y}\hat{y}+k_{z}\hat{z}}</script> is a solution when <script type="math/tex">{k=\omega/c}</script>.</p>
+
+<script type="math/tex; mode=display">\nabla^{2}\exp[i(\vec{k}\cdot\vec{r}-\omega t)]=\nabla\cdot\nabla\exp[i(\vec{k}\cdot\vec{r}-\omega t)]=-(k_{x}^{2}+k_{y}^{2}+k_{z}^{2})\exp[i(\vec{k}\cdot\vec{r}-\omega t)]</script>
+
+<p>and</p>
+
+<script type="math/tex; mode=display">\frac{\partial^{2}}{\partial t^{2}}\exp[i(\vec{k}\cdot\vec{r}-\omega t)]=-\omega^{2}\exp[i(k\cdot r-\omega t)]</script>
+
+<p>Then choosing <script type="math/tex">{k=\omega/c}</script>, the left hand of wave equation is 0.</p>
+
+<p>Because the wave equation is linear, the sum is also a solution showing interference.</p>
+
+<h4 id="diffraction">1.2. Diffraction</h4>
+
+<p>For a source or aperture of width <script type="math/tex">{d}</script>, the diffraction angle</p>
+
+<script type="math/tex; mode=display">\theta\sim\frac{\lambda}{d}</script>
+
+<p>where <script type="math/tex">{\lambda}</script> is the wavelength.</p>
+
+<h4 id="diffraction-from-periodic-structures">1.3. Diffraction from Periodic Structures</h4>
+
+<p>The angle <script type="math/tex">{\theta}</script> of theses diffracted waves is given by simple geometry</p>
+
+<script type="math/tex; mode=display">\sin\theta=\frac{\lambda}{s}</script>
+
+<p>where <script type="math/tex">{\lambda}</script> is the wave length.</p>
+
+<h3 id="schroedingers-wave-equation">2. Schroedinger’s Wave Equation</h3>
+
+<h4 id="from-de-broglie-to-schroedinger">2.1. From de Broglie to Schroedinger</h4>
+
+<p>Recall de Broglie is that the electron wavelength <script type="math/tex">{\lambda}</script> is given by</p>
+
+<script type="math/tex; mode=display">\lambda=\frac{h}{p}</script>
+
+<p>where <script type="math/tex">{p}</script> is the electron momentum and <script type="math/tex">{h}</script> is Plank’s constant: <script type="math/tex">{h=6.63\times10^{-34}J\cdot s}</script>.</p>
+
+<p>In three dimensions, we can rewrite Helmholtz wave equation as:</p>
+
+<script type="math/tex; mode=display">\nabla^{2}\psi=-k^{2}\psi</script>
+
+<p>And with de Broglie hypothesis and the definition <script type="math/tex">{k=2\pi/\lambda}</script>, therefore <script type="math/tex">{k=p/\hbar}</script>. Hence,</p>
+
+<script type="math/tex; mode=display">\nabla^{2}\psi=-\frac{p^{2}}{\hbar^{2}}\psi</script>
+
+<p>Suppose the mass of the particle is <script type="math/tex">{m}</script>, then we can change the equation to</p>
+
+<script type="math/tex; mode=display">-\frac{\hbar{2}}{2m}\nabla^{2}\psi=\frac{p^{2}}{2m}\psi</script>
+
+<p>Notice that <script type="math/tex">{\frac{p^{2}}{2m}}</script> is the kinetic energy of the particle. Let <script type="math/tex">{E}</script> as the total energy of the particle and <script type="math/tex">{V(\vec{r})}</script> as potential energy of the particle. Finally, we can generate time-independent Schroedinger equation</p>
+
+<script type="math/tex; mode=display">\left(-\frac{\hbar^{2}}{2m}\nabla^{2}+V(\vec{r})\right)\psi=E\psi</script>
+
+<p>Born’s postulate is that the probability <script type="math/tex">{P(\vec{r})}</script> of finding an electron near any specific point <script type="math/tex">{\vec{r}}</script> in space is proportional to the modulus squared <script type="math/tex">{\vert \psi(\vec{r})\vert ^{2}}</script> of the wave amplitude <script type="math/tex">{\psi(\vec{r})}</script>. <script type="math/tex">{\vert \psi(\vec{r}\vert ^{2}}</script> can therefore be viewed as a “probability density” with <script type="math/tex">{\psi(\vec{r})}</script> called a “probability amplitude” or a “quantum mechanical amplitude”.</p>
+
+<h4 id="diffraction-by-two-slits">2.2. Diffraction by two slits</h4>
+
+<p>Young’s slits is an opaque mask has two slits cut in it, a distance <script type="math/tex">{s}</script> apart. Then we shine a plane wave on the mask from the left. The slits as point sources give an interference pattern.</p>
+
+<p>The distance from the upper source to point <script type="math/tex">{x}</script> on the screen is</p>
+
+<script type="math/tex; mode=display">\sqrt{(x-s/2)^{2}+z_{o}^{2}}</script>
+
+<p>where <script type="math/tex">{x}</script> is the distance between the point and middle point of the screen, <script type="math/tex">{s}</script> is the distance between two slits, and <script type="math/tex">{z_{o}}</script> is the distance between mask and screen. Take the approximation of the above equation</p>
+
+<script type="math/tex; mode=display">\sqrt{\left(x-\frac{s}{2}\right)^{2}+z_{o}^{2}}\simeq z_{o}+\frac{(x-s/2)^{2}}{2z_{o}}=z_{o}+\frac{x^{2}}{2z_{o}}+\frac{s^{2}}{8z_{o}}-\frac{sx}{2z_{o}}</script>
+
+<p>Similarly, the distance from the lower source to point <script type="math/tex">{x}</script> on the screen is</p>
+
+<script type="math/tex; mode=display">\sqrt{(x+s/2)^{2}+z_{o}^{2}}</script>
+
+<p>and the approximation is given by</p>
+
+<script type="math/tex; mode=display">\sqrt{\left(x+\frac{s}{2}\right)^{2}+z_{o}^{2}}\simeq z_{o}+\frac{(x+s/2)^{2}}{2z_{o}}=z_{o}+\frac{x^{2}}{2z_{o}}+\frac{s^{2}}{8z_{o}}+\frac{sx}{2z_{o}}</script>
+
+<p>For large <script type="math/tex">{z_{o}}</script> the waves are approximately uniformly “bright”</p>
+
+<script type="math/tex; mode=display">\psi_{s}(x)\propto \exp\left[ik\sqrt{\left(x-\frac{s}{2}\right)^{2}+z_{o}^{2}}\right]+\exp\left[ik\sqrt{\left(x+\frac{s}{2}\right)^{2}+z_{o}^{2}}\right]</script>
+
+<p>Using the approximation for the distance gives</p>
+
+<script type="math/tex; mode=display">\psi_{s}(x)\propto \exp(i\alpha)\left\{\exp\left[ik\frac{sx}{2z_{o}}\right]+\exp\left[-ik\frac{sx}{2z_{o}}\right]\right\}</script>
+
+<p>where <script type="math/tex">{\alpha=k(z_{o}+x^{2}/2z_{o}+s^{2}/8z_{o})}</script>.</p>
+
+<p>Now, noted that <script type="math/tex">{\exp(i\theta)+\exp(-i\theta)=2\cos(\theta)}</script> and in general, angular wavenumber <script type="math/tex">{k=2\pi/\lambda}</script></p>
+
+<script type="math/tex; mode=display">\psi_{s}(x)\propto \exp(i\alpha)\cos\left(k\frac{sx}{2z_{o}}\right)=\exp(i\alpha)\cos\left(\frac{\pi sx}{\lambda z_{o}}\right)</script>
+
+<p>So the “intensity” of the beam</p>
+
+<script type="math/tex; mode=display">\vert \psi_{s}(x)\vert ^{2}\propto \cos^{2}\left(\frac{\pi sx}{\lambda z_{o}}\right)=\frac{1}{2}\left[1+\cos\left(\frac{2\pi sx}{\lambda z_{o}}\right)\right]</script>
+
+<p>Therefore, the interference fringes are spaced by <script type="math/tex">{d_{s}=\lambda z_{o}/s}</script>.</p>
+
+<h3 id="particle-in-box">3. Particle in Box</h3>
+
+<h4 id="linearity-and-normalization">3.1. Linearity and normalization</h4>
+
+<p>We see that Schroedinger’s equation is linear. The wave function <script type="math/tex">{\psi}</script> appears only in first order, there are no second order or higher order terms. So if <script type="math/tex">{\psi}</script> is a solution to Schroedinger’s equation, so also is <script type="math/tex">{a\psi}</script>.</p>
+
+<p>Born postulated the probability <script type="math/tex">{P(\vec{r})}</script> of finding a particle near a point <script type="math/tex">{\vec{r}}</script> is <script type="math/tex">{\propto\vert \psi(\vec{r})\vert ^{2}}</script>. Specifically let us define <script type="math/tex">{P(\vec{r})}</script> as a “probability density”. For some very small (infinitesimal) volume <script type="math/tex">{d^{3}\vec{r}}</script> around <script type="math/tex">{\vec{r}}</script>. The probability of finding the particle in that volume is <script type="math/tex">{P(\vec{r})d^{3}r}</script>. So, the sum of all such probabilities should be 1</p>
+
+<script type="math/tex; mode=display">\int P(\vec{r})d^{3}\vec{r}=1</script>
+
+<p>However, unless we have been lucky, out solution to Schroedinger’s equation did not give a <script type="math/tex">{\psi(\vec{r})}</script> so that <script type="math/tex">{\int\vert \psi(\vec{r})\vert ^{2}d^{3}\vec{r}=1}</script>.</p>
+
+<p>Generally, this integral would give some other real positive number which we could write as <script type="math/tex">{1/\vert a\vert ^{2}}</script> where <script type="math/tex">{a}</script> is some (possible complex) number. That is</p>
+
+<script type="math/tex; mode=display">\int\vert \psi(\vec{r})\vert ^{2}d^{3}\vec{r}=\frac{1}{\vert a\vert ^{2}}</script>
+
+<p>But we know that if <script type="math/tex">{\psi(\vec{r})}</script> is a solution of Schroedinger equation, so also is <script type="math/tex">{a\psi(\vec{r})}</script>. So if we use the solution <script type="math/tex">{\psi_{N}=a\psi}</script> instead of <script type="math/tex">{\psi}</script> then</p>
+
+<script type="math/tex; mode=display">\int\vert \psi_{N}(\vec{r})\vert ^{2}d^{3}\vec{r}=1</script>
+
+<p>and we can use <script type="math/tex">{\vert \psi_{N}(\vec{r})\vert ^{2}}</script> as the probability density. <script type="math/tex">{\psi_{N}(\vec{r})}</script> would then be called a “normalization wave function”.</p>
+
+<p>Note that normalization only sets the magnitude of <script type="math/tex">{a}</script>, not the phase. We are free to choose any phase for <script type="math/tex">{a}</script> or indeed for the original solution <script type="math/tex">{\psi}</script>. If we think of space as infinite functions like <script type="math/tex">{\sin(kx)}</script>, <script type="math/tex">{\cos(kx)}</script> and <script type="math/tex">{\exp(i\vec{k}\cdot\vec{r})}</script> cannot be normalized in this way. Technically, their squared modulus is not “Lebesgue integrable” (They are not “L2” functions). This difficulty is mathematical, not physical. It is caused by over-idealizing the mathematics to get functions that are simple to use. There are few “work-around” for this difficulty</p>
+
+<ul>
+  <li>only work with finite volumes in actual problems (this is the most common solution)</li>
+  <li>use “normalization to delta function” (introduces another infinity to compensate for the first one)</li>
+</ul>
+
+<h4 id="solving-for-the-particle-in-a-box">3.2. Solving for the particle in a box</h4>
+
+<p>We consider a particle of mass <script type="math/tex">{m}</script> with a spatially-varying potential <script type="math/tex">{V(z)}</script> in the <script type="math/tex">{z}</script> direction, so the Schroedinger equation</p>
+
+<script type="math/tex; mode=display">-\frac{\hbar^{2}}{2m}\frac{d^{2}\psi(z)}{dz^{2}}+V(z)\psi(z)=E\psi(z)</script>
+
+<p>when <script type="math/tex">{E}</script> is the energy of the particle and <script type="math/tex">{\psi(z)}</script> is the wave function.</p>
+
+<p>Suppose the potential energy is a simple “rectangular” potential well thickness <script type="math/tex">{L_{z}}</script>. Potential energy is constant inside, and we choose <script type="math/tex">{V=0}</script> there. Rising to infinity at the walls. We will sometimes call this an infinite or infinitely deep (potential) well. Because these potentials at <script type="math/tex">{z=0}</script> and <script type="math/tex">{z=L_{z}}</script> are infinitely high, but the particle’s energy <script type="math/tex">{E}</script> is presumably finite. We presume there is no possibility of finding the particle outside. So the wave function <script type="math/tex">{\psi}</script> is 0 there so <script type="math/tex">{\psi}</script> should be 0 at the walls. With these choices, the Schroedinger’s equation becomes</p>
+
+<script type="math/tex; mode=display">-\frac{\hbar^{2}}{2m}\frac{d^{2}\psi(z)}{dz^{2}}=E\psi(z)</script>
+
+<p>with the boundary conditions <script type="math/tex">{\psi(0)=0}</script> and <script type="math/tex">{\psi(L_{z})=0}</script>.</p>
+
+<p>The general solution to previous equation is</p>
+
+<script type="math/tex; mode=display">\psi(z)=A\sin(kz)+B\cos(kz)</script>
+
+<p>where <script type="math/tex">{A}</script> and <script type="math/tex">{B}</script> are constants and <script type="math/tex">{k\sqrt{2mE/\hbar^{2}}}</script>. The boundary condition <script type="math/tex">{\psi(0)=0}</script>, means <script type="math/tex">{B=0}</script>. Then the solution reduced to</p>
+
+<script type="math/tex; mode=display">\psi(z)=A\sin(kz)</script>
+
+<p>and because of boundary <script type="math/tex">{\psi(L_{z})=0}</script>, <script type="math/tex">{kz}</script> must be multiple of <script type="math/tex">{\pi}</script>, therefore <script type="math/tex">{k=\sqrt{2mE/\hbar^{2}}=n\pi/L_{z}}</script> where <script type="math/tex">{n}</script> is an integer. Since <script type="math/tex">{E=(\hbar^{2}k^{2})/2m}</script>, the solutions are</p>
+
+<script type="math/tex; mode=display">\psi_{n}(z)=A\sin\left(\frac{n\pi z}{L_{z}}\right) \text{ with } E_{n}=\frac{\hbar^{2}}{2m}\left(\frac{n\pi}{L_{z}}\right)^{2}</script>
+
+<p>We restrict <script type="math/tex">{n}</script> to positive integers for following reasons: since <script type="math/tex">{\sin(-a)=-sin(a)}</script> for any real number <script type="math/tex">{a}</script>, the wave functions with negative <script type="math/tex">{n}</script> are same as those with positive <script type="math/tex">{n}</script> with an arbitrary factor, here -1. The wave function for <script type="math/tex">{n=0}</script> is trivial, the wave function is 0 everywhere.</p>
+
+<p>We can normalize the wave function</p>
+
+<script type="math/tex; mode=display">\int_{0}^{L_{z}}\vert A_{n}\vert ^{2}\sin^{2}\left(\frac{n\pi z}{L_{z}}\right)\,dz=\vert A_{n}\vert ^{2}\frac{L_{z}}{2}</script>
+
+<p>to have this integral equal 1 by choosing <script type="math/tex">{\vert A_{n}\vert=\sqrt{2/L_{z}}}</script>. Note that <script type="math/tex">{A_{n}}</script> can be complex.</p>
+
+<h4 id="nature-of-the-particle-in-a-box-solutions">3.3. Nature of the particle-in-a-box solutions</h4>
+
+<p>Solutions with a specific set of allowed values of a parameter (here energy) are eigenvalues and with a particular function associated with each such value are eigenfunctions or eigensolutions. Here, since the parameter is an energy, we can call the eigenvalues as eigenenergies and we can refer to the eigenfunctions as the energy eigenfunctions.</p>
+
+<p>Note in some problem, it can be possible to have more then one eigenfunction with a given eigenvalue, this phenomenon is known as “degeneracy”. The number of such states with a same eigenvalue is called “the degeneracy” of that state.</p>
+
+<p>Note that these eigenfunctions have definite symmetry the <script type="math/tex">{n=2k-1}</script> functions are the mirror image on the left of what they are on the right, such a function has “even parity” or is said to be an “even function”. The <script type="math/tex">{n=2k}</script> eigenfunctions are an inverted image. The value at any point on the right of the center is exactly minus the value of the “mirror image” point on the left of the center. Such a function has “odd parity” or is said to be an “odd function”.</p>
+
+<p>This particle-in-a-box behavior is very different from the classical case</p>
+
+<ul>
+  <li>there is only a discrete set of possible value for the energy</li>
+  <li>there is a minimum possible energy for the particle, corresponding to <script type="math/tex">{n=1}</script>, sometimes called a “zero-point energy”</li>
+  <li>the particle is not uniformly distributed over the box, and its distribution is different for different energies. The probability obeys a standing wave pattern.</li>
+</ul>
+
+<p>In quantum mechanical calculations, we can always use Joules as unit of energy but these are rather large. A very convenient energy unit which also has a simple physical significance is electron-volt (eV)</p>
+
+<script type="math/tex; mode=display">1\text{eV}\simeq1.602\times10^{-19}J</script>
+
+<p>1 eV is the energy change of an electron in moving through an electrostatic potential change of 1 V.</p>
+
+</article>
+
+
+  <div class="share-page">
+   
+
+  <div class="share-links">
+    
+      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/" rel="nofollow" target="_blank" title="Share on Facebook"></a>
+    
+
+    
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Quantum Mechanics for Scientists and Engineers Notes 2&url=http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/" rel="nofollow" target="_blank" title="Share on Twitter"></a>
+    
+
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/" rel="nofollow" target="_blank" title="Share on Google+"></a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+  </div>
+</div>
+
+
+
+
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname  = 'dgyblog';
+    var disqus_identifier = '/oldtimes/2013/10/07/quantum-for-scieng-2';
+    var disqus_title      = '';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <small>
+      Except where otherwise noted, content on this site is licensed under a <br>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> <br>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    </small>
+  </div>
+</footer>
+
+
+<script>
+  $("script[type='math/tex']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<span class=\"inline-equation\">" + 
+           katex.renderToString(tex) +
+           "</span>";
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    var restex=tex.replace("% <![CDATA[", " ").replace("%]]>", " ");
+    return "<div align=\"center\" class=\"equation\">" + 
+           katex.renderToString("\\displaystyle "+restex)+
+           "</div>";
+  });
+</script>
+
+</body>
+</html>
