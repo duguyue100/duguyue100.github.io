@@ -380,7 +380,7 @@
     var tex = $(this).text();
     var restex=tex.replace("% <![CDATA[", " ").replace("%]]>", " ");
     return "<span class=\"inline-equation\">" + 
-           katex.renderToString(retex) +
+           katex.renderToString(restex) +
            "</span>";
   });
 
