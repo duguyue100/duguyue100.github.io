@@ -541,8 +541,7 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d^{2}\psi(z)}{dz^{2}}=\frac{2m}{\hbar^{2}}(V_{o}-E)\psi(z)&lt;/script&gt;
 
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-{V_{o}&amp;gt;E} %]]&gt;&lt;/script&gt;. The general solution for the wave on the right is&lt;/p&gt;
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{V_{o}&gt;E}&lt;/script&gt;. The general solution for the wave on the right is&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{\text{right}}=F\exp(\kappa z)+G\exp(-\kappa z)&lt;/script&gt;
 
@@ -587,17 +586,16 @@
 &lt;p&gt;For some eigenenergy &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;{k=\sqrt{2mE/\hbar^{2}}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\kappa=\sqrt{2m(V_{o}-E)/\hbar^{2}}}&lt;/script&gt;:&lt;/p&gt;
 
 &lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-{z&amp;lt;-L_{z}/2} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+{z&lt;-L_{z}/2} %]]&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=G\exp(\kappa z)&lt;/script&gt;
 
 &lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-{-L_{z}/2&amp;lt;z&amp;lt;L_{z}/2} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+{-L_{z}/2&lt;z&lt;L_{z}/2} %]]&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=A\sin(kz)+B\cos(kz)&lt;/script&gt;
 
-&lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-{z&amp;gt;L_{z}/2} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;{z&gt;L_{z}/2}&lt;/script&gt;&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=F\exp(-\kappa z)&lt;/script&gt;
 
