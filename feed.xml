@@ -522,16 +522,16 @@
 
 &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; are both real numbers, is called complex number. &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; is called the “real part” of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{a=\text{Re}(g)}&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; is called the “imaginary part” of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{b=\text{Im}(g)}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Definition 4 (Complex conjugate and modulus)&lt;/strong&gt; The “complex conjugate” has the sign of the imaginary part reversed. And is indicated by a superscript “*”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 4 (Complex conjugate and modulus)&lt;/strong&gt; The “complex conjugate” has the sign of the imaginary part reversed. And is indicated by a superscript “&lt;script type=&quot;math/tex&quot;&gt;\star&lt;/script&gt;”&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;g^{*}=-ai+b&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g^{\star}=-ai+b&lt;/script&gt;
 
 &lt;table&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;Modulus squared of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: $$ {&lt;/td&gt;
+      &lt;td&gt;Modulus squared of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt;: $$&lt;/td&gt;
       &lt;td&gt;g&lt;/td&gt;
-      &lt;td&gt;^{2}=g^{&lt;em&gt;}g=gg^{&lt;/em&gt;}}&lt;script type=&quot;math/tex&quot;&gt;. The positive square root of this is called the &quot;modulus&quot; of&lt;/script&gt; {g}$$&lt;/td&gt;
+      &lt;td&gt;^{2}=g^{\star}g=gg^{\star}&lt;script type=&quot;math/tex&quot;&gt;. The positive square root of this is called the &quot;modulus&quot; of&lt;/script&gt;g$$&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -544,7 +544,7 @@
 
 &lt;p&gt;Note that&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;[\exp(i\theta)]^{*}=\exp(-i\theta)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[\exp(i\theta)]^{\star}=\exp(-i\theta)&lt;/script&gt;
 
 &lt;p&gt;Also&lt;/p&gt;
 
