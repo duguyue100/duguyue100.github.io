@@ -512,53 +512,43 @@
 
 &lt;h4 id=&quot;power-logs-exponentials-complex-numbers&quot;&gt;1.2. Power logs, exponentials, complex numbers&lt;/h4&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Definition 1 (Logarithms)&lt;/strong&gt; A chain of &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; numbers &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt; multiplied together is &lt;script type=&quot;math/tex&quot;&gt;{g\times g\times\ldots\times g=g^{n}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; is the “log to the base &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;” of &lt;script type=&quot;math/tex&quot;&gt;{g^{n}}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{n=\log_{n}(g^{n})}&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Definition 1 (Logarithms)&lt;/strong&gt; A chain of &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; numbers &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt; multiplied together is &lt;script type=&quot;math/tex&quot;&gt;{g\times g\times\ldots\times g=g^{n}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; is the “log to the base &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;” of &lt;script type=&quot;math/tex&quot;&gt;{g^{n}}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{n=\log_{n}(g^{n})}&lt;/script&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Definition 2 (Imaginary Unit)&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;{i=\sqrt{-1}}&lt;/script&gt;, so &lt;script type=&quot;math/tex&quot;&gt;{i^{2}=-1}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{(-i)^{2}=-1}&lt;/script&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Definition 2 (Imaginary Unit)&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;{i=\sqrt{-1}}&lt;/script&gt;, so &lt;script type=&quot;math/tex&quot;&gt;{i^{2}=-1}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{(-i)^{2}=-1}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Definition 3 (Complex Numbers)&lt;/strong&gt; A number that can be written&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 3 (Complex Numbers)&lt;/strong&gt; A number that can be written&lt;/p&gt;
 
-  &lt;script type=&quot;math/tex; mode=display&quot;&gt;g=ai+b&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g=ai+b&lt;/script&gt;
 
-  &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; are both real numbers, is called complex number. &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; is called the “real part” of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{a=\text{Re}(g)}&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; is called the “imaginary part” of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{b=\text{Im}(g)}&lt;/script&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; are both real numbers, is called complex number. &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; is called the “real part” of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{a=\text{Re}(g)}&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; is called the “imaginary part” of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{b=\text{Im}(g)}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Definition 4 (Complex conjugate and modulus)&lt;/strong&gt; The “complex conjugate” has the sign of the imaginary part reversed. And is indicated by a superscript “*”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 4 (Complex conjugate and modulus)&lt;/strong&gt; The “complex conjugate” has the sign of the imaginary part reversed. And is indicated by a superscript “*”&lt;/p&gt;
 
-  &lt;script type=&quot;math/tex; mode=display&quot;&gt;g^{*}=-ai+b&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g^{*}=-ai+b&lt;/script&gt;
 
-  &lt;table&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td&gt;Modulus squared of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: $$ {&lt;/td&gt;
-        &lt;td&gt;g&lt;/td&gt;
-        &lt;td&gt;^{2}=g^{&lt;em&gt;}g=gg^{&lt;/em&gt;}}&lt;script type=&quot;math/tex&quot;&gt;. The positive square root of this is called the &quot;modulus&quot; of&lt;/script&gt; {g}$$&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Modulus squared of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: $$ {&lt;/td&gt;
+      &lt;td&gt;g&lt;/td&gt;
+      &lt;td&gt;^{2}=g^{&lt;em&gt;}g=gg^{&lt;/em&gt;}}&lt;script type=&quot;math/tex&quot;&gt;. The positive square root of this is called the &quot;modulus&quot; of&lt;/script&gt; {g}$$&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-  &lt;script type=&quot;math/tex; mode=display&quot;&gt;|g|=+\sqrt{|g|^{2}}&lt;/script&gt;
-&lt;/blockquote&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;|g|=+\sqrt{|g|^{2}}&lt;/script&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Theorem 5 (Euler’s formula)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Theorem 5 (Euler’s formula)&lt;/strong&gt;&lt;/p&gt;
 
-  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\exp(i\theta)=\cos\theta+i\sin\theta&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\exp(i\theta)=\cos\theta+i\sin\theta&lt;/script&gt;
 
-  &lt;p&gt;Note that&lt;/p&gt;
+&lt;p&gt;Note that&lt;/p&gt;
 
-  &lt;script type=&quot;math/tex; mode=display&quot;&gt;[\exp(i\theta)]^{*}=\exp(-i\theta)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[\exp(i\theta)]^{*}=\exp(-i\theta)&lt;/script&gt;
 
-  &lt;p&gt;Also&lt;/p&gt;
+&lt;p&gt;Also&lt;/p&gt;
 
-  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\exp(i\theta)\exp(-i\theta)=exp(i\theta-i\theta)=1&lt;/script&gt;
-&lt;/blockquote&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\exp(i\theta)\exp(-i\theta)=exp(i\theta-i\theta)=1&lt;/script&gt;
 
 &lt;p&gt;For any complex number &lt;script type=&quot;math/tex&quot;&gt;{g=a+ib}&lt;/script&gt;, we can write&lt;/p&gt;
 
@@ -574,33 +564,29 @@
 
 &lt;p&gt;Dot product among vectors gives a scalar result, cross product gives vector result.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Definition 6 (Dot product)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 6 (Dot product)&lt;/strong&gt;&lt;/p&gt;
 
-  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\cdot\vec{b}=|\vec{a}||\vec{b}|\cos\theta&lt;/script&gt;
-&lt;/blockquote&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\cdot\vec{b}=|\vec{a}||\vec{b}|\cos\theta&lt;/script&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Definition 7 (Cross product)&lt;/strong&gt; For two vectors:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 7 (Cross product)&lt;/strong&gt; For two vectors:&lt;/p&gt;
 
-  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}=a_{x}\vec{i}+a_{y}\vec{j}+a_{z}\vec{k}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}=a_{x}\vec{i}+a_{y}\vec{j}+a_{z}\vec{k}&lt;/script&gt;
 
-  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{b}=b_{x}\vec{i}+b_{y}\vec{j}+b_{z}\vec{k}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{b}=b_{x}\vec{i}+b_{y}\vec{j}+b_{z}\vec{k}&lt;/script&gt;
 
-  &lt;p&gt;the vector cross product is&lt;/p&gt;
+&lt;p&gt;the vector cross product is&lt;/p&gt;
 
-  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\times\vec{b}=\vec{n}|\vec{a}||\vec{b}|\sin\theta&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\times\vec{b}=\vec{n}|\vec{a}||\vec{b}|\sin\theta&lt;/script&gt;
 
-  &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;{\vec{n}}&lt;/script&gt; is a unit vector with a direction given by the right hand screw rule.&lt;/p&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;{\vec{n}}&lt;/script&gt; is a unit vector with a direction given by the right hand screw rule.&lt;/p&gt;
 
-  &lt;p&gt;Note that&lt;/p&gt;
+&lt;p&gt;Note that&lt;/p&gt;
 
-  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\times\vec{b}=-\vec{b}\times\vec{a}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\times\vec{b}=-\vec{b}\times\vec{a}&lt;/script&gt;
 
-  &lt;p&gt;A equivalent algebraic formula for the vector cross product is
+&lt;p&gt;A equivalent algebraic formula for the vector cross product is
 &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
 \vec{a}\times\vec{b}=\left|\begin{array}{ccc}\vec{i} &amp; \vec{j} &amp; \vec{k} \\ a_{x} &amp; a_{y} &amp; a_{z} \\ b_{x} &amp; b_{y} &amp; b_{z}\end{array}\right| %]]&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 
 &lt;h4 id=&quot;differential-calculus&quot;&gt;1.4. Differential calculus&lt;/h4&gt;
 
