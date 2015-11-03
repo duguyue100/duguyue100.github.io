@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="//khan.github.io/KaTeX/bower_components/katex/dist/katex.min.css" type="text/css" rel="stylesheet">
+    <script src="//khan.github.io/KaTeX/bower_components/katex/dist/katex.min.js" type="text/javascript"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quantum Mechanics for Scientists and Engineers Notes 6 &#8211; DGY Life Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quantum Mechanics Learning Notes">
+    <meta name="author" content="Yuhuang Hu">
+    <meta name="keywords" content="oldtimes">
+    <link rel="canonical" href="http://dgyblog.com/oldtimes/2013/11/01/quantum-for-scieng-6/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css?201511032003" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" type="text/css"
+	  href="http://spratt.github.io/Computer-Modern/cmserif.css" />
+    
+    <!-- Verifications -->
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Quantum Mechanics for Scientists and Engineers Notes 6">
+    <meta property="og:description" content="A proud WE-ARE-NOT-DOOMED fan.">
+    <meta property="og:url" content="http://dgyblog.com/oldtimes/2013/11/01/quantum-for-scieng-6/">
+    <meta property="og:site_name" content="DGY Life Blog">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@duguyue100" />
+    
+    <meta name="twitter:title" content="Quantum Mechanics for Scientists and Engineers Notes 6" />
+    <meta name="twitter:description" content="Quantum Mechanics Learning Notes" />
+    <meta name="twitter:url" content="http://dgyblog.com/oldtimes/2013/11/01/quantum-for-scieng-6/" />
+    
+    
+</head>
+
+<body class="site">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://dgyblog.com" class="site-title">DGY Life Blog</a>
+      <nav class="site-nav">
+        <a href="/about/">About</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+        <div class="social-icons">
+  <div class="social-icons-right">
+    
+      <a class="fa fa-github" href="https://github.com/duguyue100"></a>
+    
+    
+    
+    <a class="fa fa-rss" href="/feed.xml"></a>
+    
+      <a class="fa fa-twitter" href="https://twitter.com/duguyue100"></a>
+    
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/+YuhuangHu/posts"></a>
+    
+    
+      <a class="fa fa-envelope" href="mailto:duguyue100@gmail.com"></a>
+    
+    
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h2>Quantum Mechanics for Scientists and Engineers Notes 6</h2>
+  <span class="post-meta">Nov 1, 2013</span><br>
+  
+  <span class="post-meta small">
+  
+    12 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <h3 id="types-of-linear-operators">1. Types of Linear Operators</h3>
+
+<h4 id="bilinear-expansion-of-operators">1.1. Bilinear expansion of operators</h4>
+
+<p>We know that we can expand functions in a basis set as in <script type="math/tex">{f(x)=\sum_{n}c_{n}\psi_{n}(x)}</script> or <script type="math/tex">{\vert f(x)\rangle=\sum_{n}c_{n}\vert \psi_{n}(x)\rangle}</script>. What is the equivalent expansion for an operator? We can deduce this from our matrix representation.</p>
+
+<p>Consider an arbitrary function <script type="math/tex">{f}</script>, written as the ket <script type="math/tex">{\vert f\rangle}</script> from which we can calculate a function <script type="math/tex">{g}</script>, written as the ket <script type="math/tex">{\vert g\rangle}</script> by acting with a specific operator <script type="math/tex">{\hat{A}}</script>:</p>
+
+<script type="math/tex; mode=display">\vert g\rangle=\hat{A}\vert f\rangle</script>
+
+<p>We expand <script type="math/tex">{g}</script> and <script type="math/tex">{f}</script> on the basis set <script type="math/tex">{\psi_{i}}</script>: <script type="math/tex">{\vert g\rangle=\sum_{i}d_{i}\vert \psi_{i}\rangle}</script>, <script type="math/tex">{\vert f\rangle=\sum_{j}c_{j}\vert \psi_{j}\rangle}</script>. From our matrix representation of <script type="math/tex">{\vert g\rangle=\hat{A}\vert f\rangle}</script>, we know that <script type="math/tex">{d_{i}=\sum_{j}A_{ij}c_{j}}</script>, and, by the definition of the expansion coefficient, we know that <script type="math/tex">{c_{j}=\langle\psi_{j}\vert f\rangle}</script> so</p>
+
+<script type="math/tex; mode=display">d_{i}=\sum_{j}\langle\psi_{j}\vert f\rangle</script>
+
+<p>Substituting the above equation to <script type="math/tex">{\vert g\rangle=\sum_{i}d_{i}\vert \psi_{i}\rangle}</script>, gives</p>
+
+<script type="math/tex; mode=display">\vert g\rangle=\sum_{i,j}A_{ij}\langle\psi_{i}\vert f\rangle\vert \psi_{i}\rangle</script>
+
+<p>Remember that <script type="math/tex">{\langle\psi_{j}\vert f\rangle\equiv c_{j}}</script> is simply a number, so we can move it within the multiplication expression. Hence we have</p>
+
+<script type="math/tex; mode=display">\vert g\rangle=\sum_{i,j}A_{ij}\vert \psi_{i}\rangle\langle\psi_{j}\vert f\rangle=\left[\sum_{i,j}A_{ij}\vert \psi_{i}\rangle\langle\psi_{j}\vert \right]\vert f\rangle</script>
+
+<p>But <script type="math/tex">{\vert g\rangle=\hat{A}\vert f\rangle}</script> and <script type="math/tex">{\vert g\rangle}</script> and <script type="math/tex">{\vert f\rangle}</script> are arbitrary, so</p>
+
+<script type="math/tex; mode=display">\hat{A}\equiv\sum_{i,j}A_{ij}\vert \psi_{i}\rangle\langle\psi_{j}\vert</script>
+
+<p>This form is referred to as a “bilinear expansion” of the operator <script type="math/tex">{\hat{A}}</script> on the basis <script type="math/tex">{\vert \psi_{i}\rangle}</script> and is analogous to the linear expansion of a vector on a basis. Any linear operator that operates within the space can be written this way.</p>
+
+<p>Though the Dirac notation is more general and elegant for functions of a simple variables where</p>
+
+<script type="math/tex; mode=display">g(x)=\int\hat{A}f(x_{1})\,dx_{1}</script>
+
+<p>We can analogously write the bilinear expansion in the form</p>
+
+<script type="math/tex; mode=display">\hat{A}\equiv\sum_{i,j}A_{ij}\psi_{i}(x)\psi_{j}^{*}(x_{1})</script>
+
+<p>The Dirac form of expansion contains an outer product of two vectors. An outer product expression of the form <script type="math/tex">{\vert g\rangle\langle f\vert }</script> generates matrix. The specific notation <script type="math/tex">{\hat{A}\equiv A_{ij}\vert \psi_{i}\rangle\langle\psi_{j}\vert }</script> is actually, then, a sum of matrices. In the matrix <script type="math/tex">{\vert \psi_{i}\rangle\langle\psi_{j}\vert }</script> the element in the <script type="math/tex">{j}</script>th column and <script type="math/tex">{i}</script>th row is 1, all other elements are zero.</p>
+
+<h4 id="the-identity-operator">1.2. The identity operator</h4>
+
+<p>The identity operator <script type="math/tex">{\hat{I}}</script> is the operator that when it operates on a vector (function) leaves it unchanged. In matrix form, the identity operator is</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\left[\begin{array}{cccc}1 & 0 & 0 & \cdots \\ 0 & 1 & 0 & \cdots \\ 0 & 0 & 1 & \cdots \\ \vdots & \vdots & \vdots & \ddots\end{array}\right] %]]></script>
+
+<p>In bra-ket form, the identity operator can be written as</p>
+
+<script type="math/tex; mode=display">\hat{I}=\sum_{i}\vert \psi_{i}\rangle\langle\psi_{i}\vert</script>
+
+<p>where the <script type="math/tex">{\vert \psi_{i}\rangle}</script> form a complete basis for the space. This statement is trivial if <script type="math/tex">{\vert \psi_{i}\rangle}</script> is the basis used to represent the space.</p>
+
+<p>Note, however that <script type="math/tex">{\hat{I}=\sum_{i}\vert \psi_{i}\rangle\langle\psi_{i}\vert }</script> even if the basis used is not the set <script type="math/tex">{\vert \psi_{i}\rangle}</script>. Then some specific <script type="math/tex">{\vert \psi_{i}\rangle}</script> is not a vector with an <script type="math/tex">{i}</script>th element of 1 and all other elements 0 and the matrix <script type="math/tex">{\vert \psi_{i}\rangle\langle\psi_{i}\vert }</script> in general has possibly and of its elements non-zero. Nonetheless, the sum of all matrices <script type="math/tex">{\vert \psi_{i}\rangle\langle\psi_{i}\vert }</script> still gives the identity matrix <script type="math/tex">{\hat{I}}</script>.</p>
+
+<p>The expression above has a simple vector meaning. In the expression <script type="math/tex">{\vert f\rangle=\sum_{i}\vert \psi_{i}\rangle\langle\psi_{i}\vert f\rangle}</script>, <script type="math/tex">{\langle\psi_{i}\vert f\rangle}</script> is just the projection of <script type="math/tex">{\vert f\rangle}</script> onto the <script type="math/tex">{\vert \psi_{i}\rangle}</script> axis, so multiplying <script type="math/tex">{\vert \psi_{i}\rangle}</script> by <script type="math/tex">{\langle\psi_{i}\vert f\rangle}</script> that is <script type="math/tex">{\langle\psi_{i}\vert f\rangle\vert \psi_{i}\rangle=\vert \psi_{i}\rangle\langle\psi_{i}\vert f\rangle}</script> gives the vector component of <script type="math/tex">{\vert f\rangle}</script> on the <script type="math/tex">{\vert \psi_{i}\rangle}</script> axis.</p>
+
+<p>Since the identity matrix is the identity matrix, so no matter what complete orthonormal basis we use to represent it, we can use the following tricks: First, we “insert” the identity matrix in some basis into a expression. Then, we rearrange the expression. Then, we find an identity matrix we can take out of the result.</p>
+
+<p>Consider the sum <script type="math/tex">{S}</script> of the diagonal elements of an operator <script type="math/tex">{\hat{A}}</script> on some complete orthonormal basis <script type="math/tex">{\vert \psi_{i}\rangle}</script></p>
+
+<script type="math/tex; mode=display">S=\sum_{i}\langle\psi_{i}\vert \hat{A}\vert \psi_{i}\rangle</script>
+
+<p>Now we suppose we have some other complete orthonormal basis <script type="math/tex">{\vert \phi_{m}\rangle}</script>. We can therefore also write the identity operator as</p>
+
+<script type="math/tex; mode=display">\hat{I}=\sum_{m}\vert \phi_{m}\rangle\langle\phi_{m}\vert</script>
+
+<p>In <script type="math/tex">{S}</script>, we can insert an identity operator just before <script type="math/tex">{\hat{A}}</script> which makes no difference to the result since <script type="math/tex">{\hat{I}\hat{A}=\hat{A}}</script>, so we have</p>
+
+<script type="math/tex; mode=display">S=\sum_{i}\langle\psi_{i}\vert \hat{I}\hat{A}\vert \psi_{i}\rangle=\sum_{i}\langle\psi_{i}\vert \left(\sum_{m}\vert \phi_{m}\rangle\langle\phi_{m}\vert \right)\hat{A}\vert \psi_{i}\rangle</script>
+
+<p>Then we can rearranging the above equation in following sequence:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rcl}  S&=&\sum_{m}\sum_{i}\langle\psi_{i}\vert \phi_{m}\rangle\langle\phi_{m}\vert \hat{A}\vert \psi_{i}\rangle \\ &=&\sum_{m}\sum_{i}\langle\phi_{m}\vert \hat{A}\vert \psi_{i}\rangle\langle\psi_{i}\vert \phi_{i}\rangle \\ &=&\sum_{m}\langle\phi_{m}\vert \hat{A}\left(\sum_{i}\vert \psi_{i}\rangle\langle\psi_{i}\vert \right)\vert \phi_{m}\rangle \\ &=&\sum_{m}\langle\phi_{m}\vert \hat{A}\vert \phi_{m}\rangle \end{array} %]]></script>
+
+<p>Hence the trace of an operator (the sum of the diagonal elements) is independent of the basis used to represent the operator.</p>
+
+<h4 id="inverse-and-unitary-operators">1.3. Inverse and unitary operators</h4>
+
+<p>For an operator <script type="math/tex">{\hat{A}}</script> on an arbitrary function <script type="math/tex">{\vert f\rangle}</script>, then the inverse operator, if it exists is that operator <script type="math/tex">{\hat{A}^{-1}}</script> such that</p>
+
+<script type="math/tex; mode=display">\vert f\rangle=\hat{A}^{-1}\hat{A}\vert f\rangle</script>
+
+<p>Since the function <script type="math/tex">{\vert f\rangle}</script> is arbitrary, we can therefore identify</p>
+
+<script type="math/tex; mode=display">\hat{A}^{-1}\hat{A}=\hat{I}</script>
+
+<p>Since the operator can be represent by a matrix, finding the inverse of the operator reduces to finding the inverse of a matrix.</p>
+
+<p>A unitary operator <script type="math/tex">{\hat{U}}</script>, is one for which</p>
+
+<script type="math/tex; mode=display">\hat{U}^{-1}=\hat{U}^{\dag}</script>
+
+<p>that is, its inverse is its Hermitian adjoint.</p>
+
+<p>Note first that it can shown generally that for two matrices <script type="math/tex">{\hat{A}}</script> and <script type="math/tex">{\hat{B}}</script> that can be multiplied</p>
+
+<script type="math/tex; mode=display">(\hat{A}\hat{B})^{\dag}=\hat{B}^{\dag}\hat{A}^{\dag}</script>
+
+<p>That is, the Hermitian adjoint of the product is the “flipped round” product of the Hermitian adjoint. Explicitly, for matrix-vector multiplication</p>
+
+<script type="math/tex; mode=display">(\hat{A}\vert h\rangle)^{\dag}=\langle h\vert \hat{A}^{\dag}</script>
+
+<p>Consider the unitary operator <script type="math/tex">{\hat{U}}</script> and vectors <script type="math/tex">{\vert f_{old}\rangle}</script> and <script type="math/tex">{\vert g\rangle}</script>. We form two new vector by operating with <script type="math/tex">{\hat{U}}</script></p>
+
+<script type="math/tex; mode=display">\vert f_{new}\rangle=\hat{U}\vert f_{old}\rangle\qquad \vert g_{new}\rangle=\hat{U}\vert g_{new}\rangle</script>
+
+<p>Then <script type="math/tex">{\langle g_{new}\vert =\langle g_{old}\vert \hat{U}^{\dag}}</script>.</p>
+
+<p>So,</p>
+
+<script type="math/tex; mode=display">\langle g_{new}\vert f_{new}\rangle=\langle g_{old}\hat{U}^{\dag}\hat{U}\vert f_{old}\rangle=\langle g_{old}\vert f_{old}\rangle</script>
+
+<p>Hence, the unitary operation does not change the inner product. So, in particular <script type="math/tex">{\langle f_{new}\vert f_{new}\rangle=\langle f_{old}\vert f_{old}\rangle}</script>, the length of a vector is not changed by a unitary operator.</p>
+
+<h3 id="unitary-and-hermitian-operators">2. Unitary and Hermitian Operators</h3>
+
+<h4 id="using-unitary-operators">2.1. Using unitary operators</h4>
+
+<p>Suppose that we have a vector (function) <script type="math/tex">{\vert f_{old}\rangle}</script> that is represented when expressed as an expansion on the function <script type="math/tex">{\vert \psi_{n}\rangle}</script> as the mathematical column vector</p>
+
+<script type="math/tex; mode=display">\vert f_{old}\rangle=\left[\begin{array}{c}c_{1} \\ c_{2} \\ c_{3} \\ \vdots\end{array}\right]</script>
+
+<p>These numbers <script type="math/tex">{c_{1}}</script>, <script type="math/tex">{c_{2}}</script>, <script type="math/tex">{c_{3}}</script>, … are projections of <script type="math/tex">{\vert f_{old}\rangle}</script> on the orthogonal coordinate axes in the vector space labeled with <script type="math/tex">{\vert \psi_{1}\rangle}</script>, <script type="math/tex">{\psi_{2}\rangle}</script>, <script type="math/tex">{\vert \psi_{3}\rangle}</script>, …</p>
+
+<p>Suppose we want to represent this vector on a set of orthogonal axes which will label <script type="math/tex">{\vert \phi_{1}\rangle}</script>, <script type="math/tex">{\vert \phi_{2}\rangle}</script>, <script type="math/tex">{\vert \phi_{3}\rangle}</script>, … Changing the axes which is equivalent to changing the basis set of functions does not change the vector we are representing but it does change the column numbers used to represent the vector.</p>
+
+<p>Write transformations for each basis vector <script type="math/tex">{\vert \psi_{n}\rangle}</script>, we get the correct transformation if we define a matrix</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\hat{U}=\left[\begin{array}{cccc}u_{11} & u_{12} & u_{13} & \cdots \\ u_{21} & u_{22} & u_{23} & \cdots \\ u_{31} & u_{32} & u_{33} & \cdots \\ \vdots & \vdots & \vdots & \ddots\end{array}\right] %]]></script>
+
+<p>where <script type="math/tex">{u_{ij}=\langle\phi_{i}\vert \psi_{j}\rangle}</script> and we define our new column of numbers <script type="math/tex">{\vert f_{new}\rangle}</script></p>
+
+<script type="math/tex; mode=display">\vert f_{new}\rangle=\hat{U}\vert f_{old}\rangle</script>
+
+<p>Now we can prove <script type="math/tex">{\hat{U}}</script> is unitary. Writing the matrix multiplication in its sum form</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rcl}  (\hat{U}^{\dag}\hat{U})_{ij}&=&\sum_{m}u_{mi}^{*}u_{mj}=\sum_{m}\langle\phi_{m}\vert \psi_{i}\rangle^{*}\langle\phi_{m}\vert \psi_{j}\rangle \\ &=&\langle\psi_{i}\vert \left(\sum_{m}\vert \phi_{m}\rangle\langle\phi_{m}\vert \right)\vert \psi_{j}\rangle \\ &=&\langle\psi_{i}\vert \psi_{j}\rangle=\delta_{ij} \end{array} %]]></script>
+
+<p>So, <script type="math/tex">{\hat{U}^{\dag}\hat{U}=\hat{I}}</script>, hence, <script type="math/tex">{\hat{U}}</script> is unitary.</p>
+
+<p>Consider a number such as <script type="math/tex">{\langle g\vert \hat{A}\vert f\rangle}</script> where vector <script type="math/tex">{\vert g\rangle}</script>, <script type="math/tex">{\vert f\rangle}</script> and operator <script type="math/tex">{\hat{A}}</script> are arbitrary. This result should not depend on the coordinate system. So the result in an “old” coordinate system should be the same in a “new” coordinate system, that is, we should have <script type="math/tex">{\langle g_{new}\vert \hat{A}_new\vert f_{new}\rangle=\langle g_{old}\vert \hat{A}\vert f_{old}\rangle}</script>. Note the subscripts “new” and “old” refer to representations not the vectors (or operators) themselves which are not changed by change of representation. Only the numbers that represent them are changed. With unitary <script type="math/tex">{\hat{U}}</script> operator to go from “old” to “new” systems, we can write</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rcl}  \langle g_{new}\vert \hat{A}_{new}\vert f_{new}\rangle&=&(\vert g_{new}\rangle^{\dag})\hat{A}_{new}\vert f_{new}\rangle \\ &=&(\hat{U}\vert g_{old}\rangle)^{\dag}\hat{A}_{new}(\hat{U}\vert f_{old}\rangle) \\ &=&\langle g_{old}\vert U^{\dag}\hat{A}_{new}\hat{U}\vert f_{old}\rangle=\langle g_{old}\vert \hat{A}_{old}\vert f_{old}\rangle \end{array} %]]></script>
+
+<p>since <script type="math/tex">{\hat{A}_{old}=\hat{U}^{\dag}\hat{A}_{new}\hat{U}}</script> or <script type="math/tex">{\hat{U}\hat{A}_{old}\hat{U}^{\dag}=(\hat{U}\hat{U}^{\dag})\hat{A}_{new}(\hat{U}\hat{U}^{\dag})=\hat{A}_{new}}</script>.</p>
+
+<p>If the quantum state <script type="math/tex">{\vert \psi\rangle}</script> is expanded on the basis <script type="math/tex">{\vert \psi_{n}\rangle}</script> to give</p>
+
+<script type="math/tex; mode=display">\vert \psi\rangle=\sum_{n}a_{n}\vert \psi_{n}\rangle</script>
+
+<p>then <script type="math/tex">{\sum_{n}\vert a_{n}\vert ^{2}=1}</script>. And if the particle is to be conserved then this sum is retained as the quantum mechanical system evolves in time. Hence, a unitary operator, which conserves length describes changes that conserve the particle.</p>
+
+<h4 id="hermitian-operators">2.2. Hermitian operators</h4>
+
+<p>A Hermitian operator is equal to its own Hermitian adjoint</p>
+
+<script type="math/tex; mode=display">\hat{M}^{\dag}=\hat{M}</script>
+
+<p>Equivalently it is self-adjoint. In matrix terms, the Hermiticity implies <script type="math/tex">{\hat{M}_{ij}=\hat{M}_{ji}^{*}}</script> for all <script type="math/tex">{i}</script> and <script type="math/tex">{j}</script>. So, also the diagonal elements of a Hermitian operator must be real.</p>
+
+<p>To understand Hermiticity in the most general sense, consider <script type="math/tex">{\langle g\vert \hat{M}\vert f\rangle}</script> for arbitrary <script type="math/tex">{\vert f\rangle}</script> and <script type="math/tex">{\vert g\rangle}</script> and some operator <script type="math/tex">{\hat{M}}</script>.</p>
+
+<p>We examine</p>
+
+<script type="math/tex; mode=display">(\langle g\vert \hat{M}\vert f\rangle)^{\dag}</script>
+
+<p>Since this is just a number, it is also true that</p>
+
+<script type="math/tex; mode=display">(\langle g\vert \hat{M}\vert f\rangle)^{\dag}=(\langle g\vert \hat{M}\vert f\rangle)^{*}</script>
+
+<p>We can analyze <script type="math/tex">{(\langle g\vert \hat{M}\vert f\rangle)^{\dag}}</script> using the rule <script type="math/tex">{(\hat{A}\hat{B})^{\dag}=\hat{B}^{\dag}\hat{A}^{\dag}}</script> for Hermitian adjoints of products. So</p>
+
+<script type="math/tex; mode=display">(\hat{A}\hat{B})^{\dag}=\hat{B}^{\dag}\hat{A}^{*}=(\hat{A}\hat{B})^{\dag}=\hat{B}^{\dag}\hat{A}^{\dag}=(\hat{M}\vert f\rangle)^{\dag}(\langle g\vert )^{\dag}=\langle f\vert \hat{M}^{\dag}\vert g\rangle</script>
+
+<p>Hence, if <script type="math/tex">{\hat{M}}</script> is Hermitian, with therefore <script type="math/tex">{\hat{M}^{\dag}=\hat{M}}</script>, then</p>
+
+<script type="math/tex; mode=display">(\langle g\vert \hat{M}\vert f\rangle)^{*}=\langle f\vert \hat{M}^{\dag}\vert g\rangle</script>
+
+<p>even if <script type="math/tex">{\vert f\rangle}</script> and <script type="math/tex">{\vert g\rangle}</script> are not orthogonal.</p>
+
+<p>In integral form, for function <script type="math/tex">{f(x)}</script> and <script type="math/tex">{g(x)}</script>, the statement above can be written</p>
+
+<script type="math/tex; mode=display">\int g^{*}(x)\hat{M}f(x)\,dx=\left[\int f^{*}(x)\hat{M}g(x)\,dx\right]^{*}</script>
+
+<p>We can rewrite the right hand side and a simple rearrangement leads to</p>
+
+<script type="math/tex; mode=display">\int\hat{g}(x)\hat{M}f(x)\,dx=\int\{\hat{M}g(x)\}^{*}f(x)\,dx</script>
+
+<p>which is a common statement of Hermiticity in integral form.</p>
+
+<p>Suppose <script type="math/tex">{\vert \psi_{n}\rangle}</script> is a normalized eigenvector of the Hermitian operator <script type="math/tex">{\hat{M}}</script> with eigenvalue <script type="math/tex">{\mu_{n}}</script>. Then by definition</p>
+
+<script type="math/tex; mode=display">\hat{M}\vert \psi_{n}\rangle=\mu_{n}\vert \psi{n}\rangle</script>
+
+<p>Therefore</p>
+
+<script type="math/tex; mode=display">\langle\psi_{n}\vert \hat{M}\vert \psi_{n}\rangle=\mu_{n}\langle\psi_{n}\vert \psi_{n}\rangle=\mu_{n}</script>
+
+<p>But from the Hermiticity of <script type="math/tex">{\hat{M}}</script> we know</p>
+
+<script type="math/tex; mode=display">\langle\psi_{n}\vert \hat{M}\vert \psi_{n}\rangle=(\langle\psi_{n}\vert \hat{M}\vert \psi_{n}\rangle)^{*}=\mu_{n}^{*}</script>
+
+<p>And hence <script type="math/tex">{\mu_{n}}</script> must be real.</p>
+
+<p>Now, let’s prove that orthogonality of eigenfunctions for different eigenvalues</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rcl}  0&=&\langle\psi_{m}\vert \hat{M}\vert \psi_{n}\rangle-\langle\psi_{m}\vert \hat{M}\vert \psi_{n}\rangle \\ 0&=&(\langle\psi_{m}\vert \hat{M})\vert \psi_{n}\rangle-\langle\psi_{m}\vert (\hat{M}\vert \psi_{n}\rangle) \\ 0&=&(\hat{M}^{\dag}\vert \psi_{m}\rangle)^{\dag}\vert \psi_{n}\rangle-\langle\psi_{m}\vert (\hat{M}\vert \psi_{n}\rangle) \\ 0&=&(\hat{M}\vert \psi_{m}\rangle)^{\dag}\vert \psi_{n}\rangle-\langle\psi_{m}\vert (\hat{M}\vert \psi_{n}\rangle) \\ 0&=&(\mu_{m}\vert \psi_{m}\rangle)^{\dag}\vert \psi_{n}\rangle-\langle\psi_{m}\vert \mu_{n}\vert \psi_{n}\rangle \\ 0&=&\mu_{m}\vert (\psi_{m}\rangle)^{\dag}\vert \psi_{n}\rangle-\mu_{n}\langle\psi_{m}\vert \psi_{n}\rangle \\ 0&=&(\mu_{m}-\mu_{n})\langle\psi_{m}\vert \psi_{n}\rangle \\ \end{array} %]]></script>
+
+<p>But <script type="math/tex">{\mu_{m}}</script> and <script type="math/tex">{\mu_{n}}</script> are different, so <script type="math/tex">{0=\langle\psi_{m}\vert \psi_{n}\rangle}</script>, i.e., orthogonality, presuming we are working with non-zero functions.</p>
+
+<p>It is quite possible and common in symmetric problems to have more than one eigenfunction associated with a given eigenvalue. This situation is known as degeneracy. It is provable that the number of such degenerate solutions for a given finite eigenvalue is itself finite.</p>
+
+<h4 id="matrix-from-of-derivative-operators">2.3. Matrix from of derivative operators</h4>
+
+<p>Returning to our original discussion of functions as vectors, we can postulate a form for the differential operator</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\frac{d}{dx}\equiv\left[\begin{array}{cccccc} & \ddots & & & & \\ \cdots & -\frac{1}{2\delta x} & 0 & \frac{1}{2\delta x} & 0 & \cdots \\ \cdots & 0 & -\frac{1}{2\delta x} & 0 & \frac{1}{2\delta x} & \cdots \\ & & & & \ddots & \end{array}\right] %]]></script>
+
+<p>where we presume we can take the limits as <script type="math/tex">{\delta x\rightarrow 0}</script>.</p>
+
+<p>If we multiply the column vector whose elements are the values of the function then</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\left[\begin{array}{cccccc} & \ddots & & & & \\ \cdots & -\frac{1}{2\delta x} & 0 & \frac{1}{2\delta x} & 0 & \cdots \\ \cdots & 0 & -\frac{1}{2\delta x} & 0 & \frac{1}{2\delta x} & \cdots \\ & & & & \ddots & \end{array}\right]\left[\begin{array}{c}\vdots \\ f(x_{i}-\delta x) \\ f(x_{i})\\ f(x_{i}+\delta x) \\f(x_{i}+2\delta x) \\ \vdots\end{array}\right]=\left[\begin{array}{c}\vdots \\ \frac{f(x_{i}-\delta x)-f(x_{i}+\delta x)}{2\delta x} \\\frac{f(x_{i}+2\delta x)-f(x_{i})}{2\delta x}\\ \vdots\end{array}\right]=\left[\begin{array}{c}\vdots \\ \left.\frac{df}{dx}\right\vert _{x_{i}} \\ \left.\frac{df}{dx}\right\vert _{x_{i}+\delta x} \\ \vdots\end{array}\right] %]]></script>
+
+<p>Note this matrix is antisymmetric reflection about the diagonal and it is not Hermitian. By similar arguments, though <script type="math/tex">{d^{2}/dx^{2}}</script> gives a symmetric matrix and is Hermitian.</p>
+
+<p>We can formally “operate” on the function <script type="math/tex">{f(x)}</script> by multiplying it by the function <script type="math/tex">{V(x)}</script> to generate another function</p>
+
+<script type="math/tex; mode=display">g(x)=V(x)f(x)</script>
+
+<p>Since <script type="math/tex">{V(x)}</script> is performing the role of an operator. We can if we wish represent it as a (diagonal) matrix whose diagonal elements are the values of the function at each of the different points.</p>
+
+<p>If <script type="math/tex">{V(x)}</script> is real then its matrix is Hermitian as required for <script type="math/tex">{\hat{H}}</script>.</p>
+
+<h3 id="operators-and-quantum-mechanics">3. Operators and Quantum Mechanics</h3>
+
+<h4 id="hermitian-operators-in-quantum-mechanics">3.1. Hermitian operators in quantum mechanics</h4>
+
+<p>For Hermitian operators <script type="math/tex">{\hat{A}}</script> and <script type="math/tex">{\hat{B}}</script> representing physical variables. It is very important to know if they commute, i.e., <script type="math/tex">{\hat{A}\hat{B}=\hat{B}\hat{A}}</script>. Remember that because these linear operators obey the same algebra as matrices in general operators do not commute.</p>
+
+<p>For quantum mechanics, we formally define an entity</p>
+
+<script type="math/tex; mode=display">[\hat{A},\hat{B}]=\hat{A}\hat{B}-\hat{B}\hat{A}</script>
+
+<p>This entity is called the commutator.</p>
+
+<p>An equivalent statement to saying <script type="math/tex">{\hat{A}\hat{B}=\hat{B}\hat{A}}</script> is then <script type="math/tex">{[\hat{A},\hat{B}]=0}</script>. Strictly, this should be written</p>
+
+<script type="math/tex; mode=display">[\hat{A},\hat{B}]=0\hat{I}</script>
+
+<p>where <script type="math/tex">{\hat{I}}</script> is the identity operator but this is usually omitted.</p>
+
+<p>If the operator do not commute, then <script type="math/tex">{[\hat{A},\hat{B}]}</script> does not hold an in general we can choose to write</p>
+
+<script type="math/tex; mode=display">[\hat{A},\hat{B}]=i\hat{C}</script>
+
+<p>where <script type="math/tex">{\hat{C}}</script> is sometimes referred to the reminder of commutation or the commutation rest.</p>
+
+<p>Operators that commute share the same set of eigenfunctions and operators that share same set of eigenfunctions commute.</p>
+
+<p>Suppose that operators <script type="math/tex">{\hat{A}}</script> and <script type="math/tex">{\hat{B}}</script> commute and suppose that <script type="math/tex">{\vert \psi_{n}\rangle}</script> are the eigenfunctions of <script type="math/tex">{\hat{A}}</script> with eigenvalues <script type="math/tex">{A_{i}}</script>, then</p>
+
+<script type="math/tex; mode=display">\hat{A}\hat{B}\vert \psi_{i}\rangle=\hat{B}\hat{A}\vert \psi_{i}\rangle=\hat{B}A_{i}\vert \psi_{i}\rangle=A_{i}\hat{B}\vert \psi_{i}\rangle</script>
+
+<p>So,</p>
+
+<script type="math/tex; mode=display">\hat{A}[\hat{B}\vert \psi_{i}\rangle]=A_{i}[\hat{B}\vert \psi\rangle]</script>
+
+<p>This means that the vector <script type="math/tex">{\hat{B}\vert \psi_{i}\rangle}</script> is also the eigenvector <script type="math/tex">{\vert \psi\rangle}</script> or is proportional to it. i.e., for some number <script type="math/tex">{B_{i}}</script></p>
+
+<script type="math/tex; mode=display">\hat{B}\vert \psi_{i}\rangle=B_{i}\vert \psi_{i}\rangle</script>
+
+<p>This kind of relation holds for all the eigenfunctions <script type="math/tex">{\vert \psi_{i}\rangle}</script>. So these eigenfunctions are also the eigenfunctions of the vector <script type="math/tex">{\hat{B}}</script> with associated eigenvalues <script type="math/tex">{B_{i}}</script>. Hence we have proved the first statement that operators that commute share the same set of eigenfunctions. Note that the eigenvalues <script type="math/tex">{A_{i}}</script> and <script type="math/tex">{B_{i}}</script> are not in general equal to one another.</p>
+
+<p>Now we consider the statement: operators that share the same set of eigenfunctions commute. Suppose that the Hermitian operators <script type="math/tex">{\hat{A}}</script> and <script type="math/tex">{\hat{B}}</script> share the same complete set <script type="math/tex">{\vert \psi_{i}\rangle}</script> of eigenfunctions with associated sets of eigenvalues <script type="math/tex">{A_{n}}</script> and <script type="math/tex">{B_{n}}</script> respectively. Then</p>
+
+<script type="math/tex; mode=display">\hat{A}\hat{B}\vert \psi_{i}\rangle=\hat{A}B_{i}\vert \psi_{i}\rangle=A_{i}B_{i}\vert \psi_{i}\rangle</script>
+
+<p>and similarly</p>
+
+<script type="math/tex; mode=display">\hat{B}\hat{A}\vert \psi_{i}\rangle=\hat{B}A_{i}\vert \psi_{i}\rangle=B_{i}A_{i}\vert \psi_{i}\rangle</script>
+
+<p>Hence, for any function <script type="math/tex">{\vert f\rangle}</script> which can always be expanded in this complete set of function <script type="math/tex">{\vert \psi_{n}\rangle}</script>, i.e., <script type="math/tex">{\vert f\rangle=\sum_{i}c_{i}\vert \psi_{i}\rangle}</script>, we have</p>
+
+<script type="math/tex; mode=display">\hat{A}\hat{B}\vert f\rangle=\sum_{i}c_{i}A_{i}B_{i}\vert \psi_{i}\rangle=\sum_{i}c_{i}B_{i}A_{i}\vert \psi_{i}\rangle=\hat{B}\hat{A}\vert f\rangle</script>
+
+<p>Since we have proved this for an arbitrary function, we have proved that the operators commute hence proving the statement operators that share the same set of eigenfunctions commute.</p>
+
+<h4 id="general-form-of-the-uncertainty-principle">3.2. General form of the uncertainty principle</h4>
+
+<p>First, we need to set up the concepts of the mean and variance of an expectation value. Using <script type="math/tex">{\bar{A}}</script> to denote the mean value of a quantity <script type="math/tex">{\hat{A}}</script>. We have, in the bra-ket notation, for a measurable quantity associated with the Hermitian operator <script type="math/tex">{\hat{A}}</script> when the state of the system is <script type="math/tex">{\vert f\rangle}</script></p>
+
+<script type="math/tex; mode=display">\bar{A}\equiv\langle A\rangle=\langle f\vert \hat{A}\vert f\rangle</script>
+
+<p>Let us define a new operator <script type="math/tex">{\Delta\hat{A}}</script> associated with the difference between the measured value of <script type="math/tex">{A}</script> and its average value</p>
+
+<script type="math/tex; mode=display">\Delta\hat{A}=\hat{A}-\bar{A}</script>
+
+<p>Strictly, we should write <script type="math/tex">{\Delta\hat{A}=\hat{A}-\bar\hat{I}}</script>, but we take such an identity operator to be understood. Note that this operator is also Hamiltonian.</p>
+
+<p>Variance in statistics is the “mean square” deviation from the average. To examine the variance of the quantity <script type="math/tex">{A}</script>, we examine the expectation value of the operator <script type="math/tex">{(\Delta\hat{A})^{2}}</script>. Expanding the arbitrary function <script type="math/tex">{\vert f\rangle}</script> on the basis of the eigenfunction <script type="math/tex">{\vert \psi_{i}\rangle}</script> of <script type="math/tex">{\hat{A}}</script>.</p>
+
+<script type="math/tex; mode=display">\vert f\rangle=\sum_{i}c_{i}\vert \psi_{i}\rangle</script>
+
+<p>We can formally evaluate the expectation value of <script type="math/tex">{(\Delta\hat{A})^{2}}</script> when the system is in the state <script type="math/tex">{\vert f\rangle}</script>.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rcl}  \langle(\Delta\hat{A})^{2}\rangle&=&\langle f\vert (\Delta\hat{A})^{2}\vert f\rangle=\left(\sum_{i}c_{i}^{*}\langle\psi_{i}\vert \right)(\hat{A}-\bar{A})^{2}\left(\sum_{j}c_{j}\vert \psi_{j}\rangle\right) \\ &=&\left(\sum_{i}c_{i}^{*}\langle\psi_{i}\vert \right)(\hat{A}-\bar{A})\left(\sum_{j}c_{j}(A_{j}-\bar{A})\vert \psi_{j}\rangle\right) \\ &=&\left(\sum_{i}c_{i}^{*}\langle\psi_{i}\vert \right)\left(\sum_{j}c_{j}(A_{j}-\bar{A})^{2}\vert \psi_{j}\rangle\right)=\sum_{i}\vert c_{i}\vert ^{2}(A_{i}-\bar{A})^{2} \end{array} %]]></script>
+
+<p>Because the <script type="math/tex">{\vert c_{i}\vert ^{2}}</script> are the probabilities that the system is found, on measurement, to be in the state <script type="math/tex">{\vert \psi_{i}\rangle}</script> and <script type="math/tex">{(A_{i}-\bar{A})^{2}}</script> for that state simply represents the squared deviation of the value of the quantity <script type="math/tex">{A}</script> from its average value then by definition</p>
+
+<script type="math/tex; mode=display">\overline{(\Delta A)^{2}}\equiv\langle(\Delta\hat{A})^{2}\rangle=\langle(\hat{A}-\bar{A})^{2}\rangle=\langle f\vert (\hat{A}-\bar{A})^{2}\vert f\rangle</script>
+
+<p>is the mean squared deviation for the quantity <script type="math/tex">{A}</script> on repeatedly measuring the system prepared in state <script type="math/tex">{\vert f\rangle}</script>.</p>
+
+<p>In statistical language, the quantity <script type="math/tex">{\overline{(\Delta A)^{2}}}</script> is called the variance, and the square root of the variance which we can write as <script type="math/tex">{\Delta A=\sqrt{\overline{(\Delta A)^{2}}}}</script> is the standard deviation. In statistics, the standard deviation gives a well-defined measure of the width of a distribution.</p>
+
+<p>We can also consider some other quantity <script type="math/tex">{B}</script> associated with the Hermitian operator <script type="math/tex">{\hat{B}}</script> and, with similar definitions</p>
+
+<script type="math/tex; mode=display">\overline{(\Delta B)^{2}}\equiv\langle(\Delta\hat{B})^{2}\rangle=\langle f\vert (\hat{B}-\bar{B})^{2}\vert f\rangle</script>
+
+<p>So we have ways of calculating the uncertainty in the measurements of the quantities <script type="math/tex">{A}</script> and <script type="math/tex">{B}</script> when the system is in the state <script type="math/tex">{\vert f\rangle}</script> to use in a general proof of the uncertainty principle.</p>
+
+<p>Suppose two Hermitian operators <script type="math/tex">{\hat{A}}</script> and <script type="math/tex">{\hat{B}}</script> do not commute and have commutation rest <script type="math/tex">{\hat{C}}</script> as defined above in <script type="math/tex">{[\hat{A},\hat{B}]=i\hat{C}}</script>. Consider, for some arbitrary real number <script type="math/tex">{\alpha}</script>, the number</p>
+
+<script type="math/tex; mode=display">G(\alpha)=\langle(\alpha\Delta\hat{A}-i\Delta\hat{B})f\vert (\alpha\Delta\hat{A}-i\Delta\hat{B})f\rangle\geq 0</script>
+
+<p>By <script type="math/tex">{\vert (\alpha\Delta\hat{A}-i\Delta\hat{B})f\rangle}</script> we mean the vector <script type="math/tex">{(a\Delta\hat{A}-i\Delta\hat{B})\vert f\rangle}</script> written this way to emphasize it is simply a vector so it must have an inner product with itself that is greater than or equal to zero. So,</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rcl}  G(\alpha)&=&\langle f\vert (\alpha\Delta\hat{A}-i\Delta\hat{B})^{\dag}(\alpha\Delta\hat{A}-i\Delta\hat{B})\vert f\rangle(\geq 0) \\ &=&\langle f\vert (\alpha\Delta\hat{A}^{\dag}+i\Delta\hat{B}^{\dag})(\alpha\Delta\hat{A}-i\Delta\hat{B})\vert f\rangle \\ &=&\langle f\vert (\alpha\Delta\hat{A}+i\Delta\hat{B})(\alpha\Delta\hat{A}-i\Delta\hat{B})\vert f\rangle \\ &=&\langle f\vert \alpha^{2}(\Delta\hat{A})^{2}+(\Delta\hat{B})^{2}-i\alpha(\Delta\hat{A}\Delta\hat{B}-\Delta\hat{B}\Delta\hat{A})\vert f\rangle \\ &=&\langle f\vert \alpha^{2}(\Delta\hat{A})^{2}+(\Delta\hat{B})^{2}-i\alpha[\Delta\hat{A},\Delta\hat{B}]\vert f\rangle \\ &=&\langle f\vert \alpha^{2}(\Delta\hat{A})^{2}+(\Delta\hat{B})^{2}+\alpha\hat{C}\vert f\rangle \\ &=&\alpha^{2}\overline{(\Delta A)^{2}}+\overline{(\Delta B)^{2}}+\alpha\bar{C} (\geq 0) \end{array} %]]></script>
+
+<p>where <script type="math/tex">{\bar{C}\equiv\langle C\rangle=\langle f\vert \hat{C}\vert f\rangle}</script>.</p>
+
+<p>By a simple (though not obvious) rearrangement</p>
+
+<script type="math/tex; mode=display">G(\alpha)=\overline{(\Delta A)^{2}}\left[\alpha+\frac{\bar{C}}{2\overline{(\Delta A)^{2}}}\right]^{2}+\overline{(\Delta B)^{2}}-\frac{(\bar{C})^{2}}{4\overline{(\Delta A)^{2}}}\geq 0</script>
+
+<p>But the equation above must be true for arbitrary <script type="math/tex">{\alpha}</script>, so it is true for</p>
+
+<script type="math/tex; mode=display">\alpha=-\frac{\bar{C}}{2\overline{(\Delta A)^{2}}}</script>
+
+<p>which sets the first term equal to zero, so</p>
+
+<script type="math/tex; mode=display">\overline{(\Delta A)^{2}}\,\overline{(\Delta B)^{2}}\geq\frac{(\bar{C})^{2}}{4}</script>
+
+<p>So, for two operators <script type="math/tex">{\hat{A}}</script> and <script type="math/tex">{\hat{B}}</script>, corresponding to measurable quantities <script type="math/tex">{A}</script> and <script type="math/tex">{B}</script> for which <script type="math/tex">{[\hat{A},\hat{B}]=i\hat{C}}</script> in some state <script type="math/tex">{\vert f\rangle}</script> for which <script type="math/tex">{\bar{C}\equiv\langle C\rangle=\langle f\vert \hat{C}\vert f\rangle}</script>, we have the uncertainty principle</p>
+
+<script type="math/tex; mode=display">\Delta A\Delta B\geq\frac{\vert \bar{C}\vert }{2}</script>
+
+<p>where <script type="math/tex">{\Delta A}</script> and <script type="math/tex">{\Delta B}</script> are the standard deviations of the values of <script type="math/tex">{A}</script> and <script type="math/tex">{B}</script> we would measure.</p>
+
+<p>The conclusion above is generally true. Only if the operators <script type="math/tex">{\hat{A}}</script> and <script type="math/tex">{\hat{B}}</script> commute. or if they do not commute, but we are in a state <script type="math/tex">{\vert f\rangle}</script> for which <script type="math/tex">{\langle f\vert \hat{C}\vert f\rangle=0}</script>. Only in those cases it is possible for both <script type="math/tex">{A}</script> and <script type="math/tex">{B}</script> simultaneously to have exact measurable values.</p>
+
+<h4 id="specific-uncertainty-principles">3.3. Specific uncertainty principles</h4>
+
+<p>We now formally derive the position-momentum relation. Consider the commutator of <script type="math/tex">{\hat{p}_{x}}</script> and <script type="math/tex">{x}</script> (we treat the function <script type="math/tex">{x}</script> as the operator for position). To be sure we are taking derivatives correctly, we have the commutator operate on an arbitrary function:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rcl}  [\hat{p}_{x},x]\vert f\rangle&=&-i\hbar\left(\frac{d}{dx}x-x\frac{d}{dx}\right)\vert f\rangle=-i\hbar\left\{\frac{d}{x}(x\vert f\rangle)-x\frac{d}{dx}\vert f\rangle\right\} \\ &=&-i\hbar\left\{\vert f\rangle+x\frac{d}{dx}\vert f\rangle-x\frac{d}{dx}\vert f\rangle\right\}=-i\hbar\vert f\rangle \end{array} %]]></script>
+
+<p>Since <script type="math/tex">{\vert f\rangle}</script> is arbitrary, we can write <script type="math/tex">{[\hat{p}_{x},x]=-i\hbar}</script> and the commutation rest operator <script type="math/tex">{\hat{C}}</script> is simply the number <script type="math/tex">{\hat{C}=-\hbar}</script>. And so, from <script type="math/tex">{\Delta A\Delta B\geq\vert \bar{C}\vert /2}</script>, we have</p>
+
+<script type="math/tex; mode=display">\Delta\hat{p}_{x}\Delta x\geq\frac{\hbar}{2}</script>
+
+<p>The energy operator is the Hamiltonian <script type="math/tex">{\hat{H}}</script> and from Schroedinger’s equation</p>
+
+<script type="math/tex; mode=display">\hat{H}\vert \psi\rangle=i\hbar\frac{\partial}{\partial t}\vert\psi\rangle</script>
+
+<p>so we use <script type="math/tex">{\hat{H}=i\hbar\partial/\partial t}</script>.</p>
+
+<p>If we take the time operator to be just <script type="math/tex">{t}</script> then using essentially identical algebra as used for the momentum-position uncertainty principle.</p>
+
+<script type="math/tex; mode=display">[\hat{H},t]=i\hbar\left(\frac{\partial}{\partial t}t-t\frac{\partial}{\partial t}\right)=i\hbar</script>
+
+<p>so, similarly we have</p>
+
+<script type="math/tex; mode=display">\Delta E\Delta t\geq\frac{\hbar}{2}</script>
+
+<p>We can relate this result mathematically to the frequency-time uncertainty principle that occurs in Fourier analysis. Noting the <script type="math/tex">{E=\hbar\omega}</script> in quantum mechanics, we have</p>
+
+<script type="math/tex; mode=display">\Delta\omega\Delta t\geq\frac{1}{2}</script>
+
+</article>
+
+
+  <div class="share-page">
+   
+
+  <div class="share-links">
+    
+      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=http://dgyblog.com/oldtimes/2013/11/01/quantum-for-scieng-6/" rel="nofollow" target="_blank" title="Share on Facebook"></a>
+    
+
+    
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Quantum Mechanics for Scientists and Engineers Notes 6&url=http://dgyblog.com/oldtimes/2013/11/01/quantum-for-scieng-6/" rel="nofollow" target="_blank" title="Share on Twitter"></a>
+    
+
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://dgyblog.com/oldtimes/2013/11/01/quantum-for-scieng-6/" rel="nofollow" target="_blank" title="Share on Google+"></a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+  </div>
+</div>
+
+
+
+
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname  = 'dgyblog';
+    var disqus_identifier = '/oldtimes/2013/11/01/quantum-for-scieng-6';
+    var disqus_title      = '';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <small>
+      Except where otherwise noted, content on this site is licensed under a <br>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> <br>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    </small>
+  </div>
+</footer>
+
+
+<script>
+  $("script[type='math/tex']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    var restex=tex.replace("% <![CDATA[", " ").replace("%]]>", " ");
+    return "<span class=\"inline-equation\">" + 
+           katex.renderToString(restex) +
+           "</span>";
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    var restex=tex.replace("% <![CDATA[", " ").replace("%]]>", " ");
+    return "<div align=\"center\" class=\"equation\">" + 
+           katex.renderToString("\\displaystyle "+restex)+
+           "</div>";
+  });
+</script>
+
+</body>
+</html>

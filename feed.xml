@@ -455,6 +455,402 @@
       </item>
     
       <item>
+        <title>Quantum Mechanics for Scientists and Engineers Notes 6</title>
+        <description>&lt;h3 id=&quot;types-of-linear-operators&quot;&gt;1. Types of Linear Operators&lt;/h3&gt;
+
+&lt;h4 id=&quot;bilinear-expansion-of-operators&quot;&gt;1.1. Bilinear expansion of operators&lt;/h4&gt;
+
+&lt;p&gt;We know that we can expand functions in a basis set as in &lt;script type=&quot;math/tex&quot;&gt;{f(x)=\sum_{n}c_{n}\psi_{n}(x)}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\vert f(x)\rangle=\sum_{n}c_{n}\vert \psi_{n}(x)\rangle}&lt;/script&gt;. What is the equivalent expansion for an operator? We can deduce this from our matrix representation.&lt;/p&gt;
+
+&lt;p&gt;Consider an arbitrary function &lt;script type=&quot;math/tex&quot;&gt;{f}&lt;/script&gt;, written as the ket &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; from which we can calculate a function &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;, written as the ket &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle}&lt;/script&gt; by acting with a specific operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert g\rangle=\hat{A}\vert f\rangle&lt;/script&gt;
+
+&lt;p&gt;We expand &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{f}&lt;/script&gt; on the basis set &lt;script type=&quot;math/tex&quot;&gt;{\psi_{i}}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle=\sum_{i}d_{i}\vert \psi_{i}\rangle}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle=\sum_{j}c_{j}\vert \psi_{j}\rangle}&lt;/script&gt;. From our matrix representation of &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle=\hat{A}\vert f\rangle}&lt;/script&gt;, we know that &lt;script type=&quot;math/tex&quot;&gt;{d_{i}=\sum_{j}A_{ij}c_{j}}&lt;/script&gt;, and, by the definition of the expansion coefficient, we know that &lt;script type=&quot;math/tex&quot;&gt;{c_{j}=\langle\psi_{j}\vert f\rangle}&lt;/script&gt; so&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;d_{i}=\sum_{j}\langle\psi_{j}\vert f\rangle&lt;/script&gt;
+
+&lt;p&gt;Substituting the above equation to &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle=\sum_{i}d_{i}\vert \psi_{i}\rangle}&lt;/script&gt;, gives&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert g\rangle=\sum_{i,j}A_{ij}\langle\psi_{i}\vert f\rangle\vert \psi_{i}\rangle&lt;/script&gt;
+
+&lt;p&gt;Remember that &lt;script type=&quot;math/tex&quot;&gt;{\langle\psi_{j}\vert f\rangle\equiv c_{j}}&lt;/script&gt; is simply a number, so we can move it within the multiplication expression. Hence we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert g\rangle=\sum_{i,j}A_{ij}\vert \psi_{i}\rangle\langle\psi_{j}\vert f\rangle=\left[\sum_{i,j}A_{ij}\vert \psi_{i}\rangle\langle\psi_{j}\vert \right]\vert f\rangle&lt;/script&gt;
+
+&lt;p&gt;But &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle=\hat{A}\vert f\rangle}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; are arbitrary, so&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{A}\equiv\sum_{i,j}A_{ij}\vert \psi_{i}\rangle\langle\psi_{j}\vert&lt;/script&gt;
+
+&lt;p&gt;This form is referred to as a “bilinear expansion” of the operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; on the basis &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; and is analogous to the linear expansion of a vector on a basis. Any linear operator that operates within the space can be written this way.&lt;/p&gt;
+
+&lt;p&gt;Though the Dirac notation is more general and elegant for functions of a simple variables where&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g(x)=\int\hat{A}f(x_{1})\,dx_{1}&lt;/script&gt;
+
+&lt;p&gt;We can analogously write the bilinear expansion in the form&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{A}\equiv\sum_{i,j}A_{ij}\psi_{i}(x)\psi_{j}^{*}(x_{1})&lt;/script&gt;
+
+&lt;p&gt;The Dirac form of expansion contains an outer product of two vectors. An outer product expression of the form &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle\langle f\vert }&lt;/script&gt; generates matrix. The specific notation &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}\equiv A_{ij}\vert \psi_{i}\rangle\langle\psi_{j}\vert }&lt;/script&gt; is actually, then, a sum of matrices. In the matrix &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle\langle\psi_{j}\vert }&lt;/script&gt; the element in the &lt;script type=&quot;math/tex&quot;&gt;{j}&lt;/script&gt;th column and &lt;script type=&quot;math/tex&quot;&gt;{i}&lt;/script&gt;th row is 1, all other elements are zero.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-identity-operator&quot;&gt;1.2. The identity operator&lt;/h4&gt;
+
+&lt;p&gt;The identity operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{I}}&lt;/script&gt; is the operator that when it operates on a vector (function) leaves it unchanged. In matrix form, the identity operator is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\left[\begin{array}{cccc}1 &amp; 0 &amp; 0 &amp; \cdots \\ 0 &amp; 1 &amp; 0 &amp; \cdots \\ 0 &amp; 0 &amp; 1 &amp; \cdots \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots\end{array}\right] %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;In bra-ket form, the identity operator can be written as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{I}=\sum_{i}\vert \psi_{i}\rangle\langle\psi_{i}\vert&lt;/script&gt;
+
+&lt;p&gt;where the &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; form a complete basis for the space. This statement is trivial if &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; is the basis used to represent the space.&lt;/p&gt;
+
+&lt;p&gt;Note, however that &lt;script type=&quot;math/tex&quot;&gt;{\hat{I}=\sum_{i}\vert \psi_{i}\rangle\langle\psi_{i}\vert }&lt;/script&gt; even if the basis used is not the set &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt;. Then some specific &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; is not a vector with an &lt;script type=&quot;math/tex&quot;&gt;{i}&lt;/script&gt;th element of 1 and all other elements 0 and the matrix &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle\langle\psi_{i}\vert }&lt;/script&gt; in general has possibly and of its elements non-zero. Nonetheless, the sum of all matrices &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle\langle\psi_{i}\vert }&lt;/script&gt; still gives the identity matrix &lt;script type=&quot;math/tex&quot;&gt;{\hat{I}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;The expression above has a simple vector meaning. In the expression &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle=\sum_{i}\vert \psi_{i}\rangle\langle\psi_{i}\vert f\rangle}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\langle\psi_{i}\vert f\rangle}&lt;/script&gt; is just the projection of &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; onto the &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; axis, so multiplying &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; by &lt;script type=&quot;math/tex&quot;&gt;{\langle\psi_{i}\vert f\rangle}&lt;/script&gt; that is &lt;script type=&quot;math/tex&quot;&gt;{\langle\psi_{i}\vert f\rangle\vert \psi_{i}\rangle=\vert \psi_{i}\rangle\langle\psi_{i}\vert f\rangle}&lt;/script&gt; gives the vector component of &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; on the &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; axis.&lt;/p&gt;
+
+&lt;p&gt;Since the identity matrix is the identity matrix, so no matter what complete orthonormal basis we use to represent it, we can use the following tricks: First, we “insert” the identity matrix in some basis into a expression. Then, we rearrange the expression. Then, we find an identity matrix we can take out of the result.&lt;/p&gt;
+
+&lt;p&gt;Consider the sum &lt;script type=&quot;math/tex&quot;&gt;{S}&lt;/script&gt; of the diagonal elements of an operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; on some complete orthonormal basis &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S=\sum_{i}\langle\psi_{i}\vert \hat{A}\vert \psi_{i}\rangle&lt;/script&gt;
+
+&lt;p&gt;Now we suppose we have some other complete orthonormal basis &lt;script type=&quot;math/tex&quot;&gt;{\vert \phi_{m}\rangle}&lt;/script&gt;. We can therefore also write the identity operator as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{I}=\sum_{m}\vert \phi_{m}\rangle\langle\phi_{m}\vert&lt;/script&gt;
+
+&lt;p&gt;In &lt;script type=&quot;math/tex&quot;&gt;{S}&lt;/script&gt;, we can insert an identity operator just before &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; which makes no difference to the result since &lt;script type=&quot;math/tex&quot;&gt;{\hat{I}\hat{A}=\hat{A}}&lt;/script&gt;, so we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S=\sum_{i}\langle\psi_{i}\vert \hat{I}\hat{A}\vert \psi_{i}\rangle=\sum_{i}\langle\psi_{i}\vert \left(\sum_{m}\vert \phi_{m}\rangle\langle\phi_{m}\vert \right)\hat{A}\vert \psi_{i}\rangle&lt;/script&gt;
+
+&lt;p&gt;Then we can rearranging the above equation in following sequence:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  S&amp;=&amp;\sum_{m}\sum_{i}\langle\psi_{i}\vert \phi_{m}\rangle\langle\phi_{m}\vert \hat{A}\vert \psi_{i}\rangle \\ &amp;=&amp;\sum_{m}\sum_{i}\langle\phi_{m}\vert \hat{A}\vert \psi_{i}\rangle\langle\psi_{i}\vert \phi_{i}\rangle \\ &amp;=&amp;\sum_{m}\langle\phi_{m}\vert \hat{A}\left(\sum_{i}\vert \psi_{i}\rangle\langle\psi_{i}\vert \right)\vert \phi_{m}\rangle \\ &amp;=&amp;\sum_{m}\langle\phi_{m}\vert \hat{A}\vert \phi_{m}\rangle \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Hence the trace of an operator (the sum of the diagonal elements) is independent of the basis used to represent the operator.&lt;/p&gt;
+
+&lt;h4 id=&quot;inverse-and-unitary-operators&quot;&gt;1.3. Inverse and unitary operators&lt;/h4&gt;
+
+&lt;p&gt;For an operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; on an arbitrary function &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt;, then the inverse operator, if it exists is that operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}^{-1}}&lt;/script&gt; such that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert f\rangle=\hat{A}^{-1}\hat{A}\vert f\rangle&lt;/script&gt;
+
+&lt;p&gt;Since the function &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; is arbitrary, we can therefore identify&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{A}^{-1}\hat{A}=\hat{I}&lt;/script&gt;
+
+&lt;p&gt;Since the operator can be represent by a matrix, finding the inverse of the operator reduces to finding the inverse of a matrix.&lt;/p&gt;
+
+&lt;p&gt;A unitary operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{U}}&lt;/script&gt;, is one for which&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{U}^{-1}=\hat{U}^{\dag}&lt;/script&gt;
+
+&lt;p&gt;that is, its inverse is its Hermitian adjoint.&lt;/p&gt;
+
+&lt;p&gt;Note first that it can shown generally that for two matrices &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}}&lt;/script&gt; that can be multiplied&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{A}\hat{B})^{\dag}=\hat{B}^{\dag}\hat{A}^{\dag}&lt;/script&gt;
+
+&lt;p&gt;That is, the Hermitian adjoint of the product is the “flipped round” product of the Hermitian adjoint. Explicitly, for matrix-vector multiplication&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{A}\vert h\rangle)^{\dag}=\langle h\vert \hat{A}^{\dag}&lt;/script&gt;
+
+&lt;p&gt;Consider the unitary operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{U}}&lt;/script&gt; and vectors &lt;script type=&quot;math/tex&quot;&gt;{\vert f_{old}\rangle}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle}&lt;/script&gt;. We form two new vector by operating with &lt;script type=&quot;math/tex&quot;&gt;{\hat{U}}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert f_{new}\rangle=\hat{U}\vert f_{old}\rangle\qquad \vert g_{new}\rangle=\hat{U}\vert g_{new}\rangle&lt;/script&gt;
+
+&lt;p&gt;Then &lt;script type=&quot;math/tex&quot;&gt;{\langle g_{new}\vert =\langle g_{old}\vert \hat{U}^{\dag}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;So,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle g_{new}\vert f_{new}\rangle=\langle g_{old}\hat{U}^{\dag}\hat{U}\vert f_{old}\rangle=\langle g_{old}\vert f_{old}\rangle&lt;/script&gt;
+
+&lt;p&gt;Hence, the unitary operation does not change the inner product. So, in particular &lt;script type=&quot;math/tex&quot;&gt;{\langle f_{new}\vert f_{new}\rangle=\langle f_{old}\vert f_{old}\rangle}&lt;/script&gt;, the length of a vector is not changed by a unitary operator.&lt;/p&gt;
+
+&lt;h3 id=&quot;unitary-and-hermitian-operators&quot;&gt;2. Unitary and Hermitian Operators&lt;/h3&gt;
+
+&lt;h4 id=&quot;using-unitary-operators&quot;&gt;2.1. Using unitary operators&lt;/h4&gt;
+
+&lt;p&gt;Suppose that we have a vector (function) &lt;script type=&quot;math/tex&quot;&gt;{\vert f_{old}\rangle}&lt;/script&gt; that is represented when expressed as an expansion on the function &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt; as the mathematical column vector&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert f_{old}\rangle=\left[\begin{array}{c}c_{1} \\ c_{2} \\ c_{3} \\ \vdots\end{array}\right]&lt;/script&gt;
+
+&lt;p&gt;These numbers &lt;script type=&quot;math/tex&quot;&gt;{c_{1}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{c_{2}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{c_{3}}&lt;/script&gt;, … are projections of &lt;script type=&quot;math/tex&quot;&gt;{\vert f_{old}\rangle}&lt;/script&gt; on the orthogonal coordinate axes in the vector space labeled with &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{1}\rangle}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\psi_{2}\rangle}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{3}\rangle}&lt;/script&gt;, …&lt;/p&gt;
+
+&lt;p&gt;Suppose we want to represent this vector on a set of orthogonal axes which will label &lt;script type=&quot;math/tex&quot;&gt;{\vert \phi_{1}\rangle}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\vert \phi_{2}\rangle}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\vert \phi_{3}\rangle}&lt;/script&gt;, … Changing the axes which is equivalent to changing the basis set of functions does not change the vector we are representing but it does change the column numbers used to represent the vector.&lt;/p&gt;
+
+&lt;p&gt;Write transformations for each basis vector &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt;, we get the correct transformation if we define a matrix&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\hat{U}=\left[\begin{array}{cccc}u_{11} &amp; u_{12} &amp; u_{13} &amp; \cdots \\ u_{21} &amp; u_{22} &amp; u_{23} &amp; \cdots \\ u_{31} &amp; u_{32} &amp; u_{33} &amp; \cdots \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots\end{array}\right] %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{u_{ij}=\langle\phi_{i}\vert \psi_{j}\rangle}&lt;/script&gt; and we define our new column of numbers &lt;script type=&quot;math/tex&quot;&gt;{\vert f_{new}\rangle}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert f_{new}\rangle=\hat{U}\vert f_{old}\rangle&lt;/script&gt;
+
+&lt;p&gt;Now we can prove &lt;script type=&quot;math/tex&quot;&gt;{\hat{U}}&lt;/script&gt; is unitary. Writing the matrix multiplication in its sum form&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  (\hat{U}^{\dag}\hat{U})_{ij}&amp;=&amp;\sum_{m}u_{mi}^{*}u_{mj}=\sum_{m}\langle\phi_{m}\vert \psi_{i}\rangle^{*}\langle\phi_{m}\vert \psi_{j}\rangle \\ &amp;=&amp;\langle\psi_{i}\vert \left(\sum_{m}\vert \phi_{m}\rangle\langle\phi_{m}\vert \right)\vert \psi_{j}\rangle \\ &amp;=&amp;\langle\psi_{i}\vert \psi_{j}\rangle=\delta_{ij} \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;So, &lt;script type=&quot;math/tex&quot;&gt;{\hat{U}^{\dag}\hat{U}=\hat{I}}&lt;/script&gt;, hence, &lt;script type=&quot;math/tex&quot;&gt;{\hat{U}}&lt;/script&gt; is unitary.&lt;/p&gt;
+
+&lt;p&gt;Consider a number such as &lt;script type=&quot;math/tex&quot;&gt;{\langle g\vert \hat{A}\vert f\rangle}&lt;/script&gt; where vector &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; and operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; are arbitrary. This result should not depend on the coordinate system. So the result in an “old” coordinate system should be the same in a “new” coordinate system, that is, we should have &lt;script type=&quot;math/tex&quot;&gt;{\langle g_{new}\vert \hat{A}_new\vert f_{new}\rangle=\langle g_{old}\vert \hat{A}\vert f_{old}\rangle}&lt;/script&gt;. Note the subscripts “new” and “old” refer to representations not the vectors (or operators) themselves which are not changed by change of representation. Only the numbers that represent them are changed. With unitary &lt;script type=&quot;math/tex&quot;&gt;{\hat{U}}&lt;/script&gt; operator to go from “old” to “new” systems, we can write&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  \langle g_{new}\vert \hat{A}_{new}\vert f_{new}\rangle&amp;=&amp;(\vert g_{new}\rangle^{\dag})\hat{A}_{new}\vert f_{new}\rangle \\ &amp;=&amp;(\hat{U}\vert g_{old}\rangle)^{\dag}\hat{A}_{new}(\hat{U}\vert f_{old}\rangle) \\ &amp;=&amp;\langle g_{old}\vert U^{\dag}\hat{A}_{new}\hat{U}\vert f_{old}\rangle=\langle g_{old}\vert \hat{A}_{old}\vert f_{old}\rangle \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;since &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}_{old}=\hat{U}^{\dag}\hat{A}_{new}\hat{U}}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\hat{U}\hat{A}_{old}\hat{U}^{\dag}=(\hat{U}\hat{U}^{\dag})\hat{A}_{new}(\hat{U}\hat{U}^{\dag})=\hat{A}_{new}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;If the quantum state &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi\rangle}&lt;/script&gt; is expanded on the basis &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt; to give&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert \psi\rangle=\sum_{n}a_{n}\vert \psi_{n}\rangle&lt;/script&gt;
+
+&lt;p&gt;then &lt;script type=&quot;math/tex&quot;&gt;{\sum_{n}\vert a_{n}\vert ^{2}=1}&lt;/script&gt;. And if the particle is to be conserved then this sum is retained as the quantum mechanical system evolves in time. Hence, a unitary operator, which conserves length describes changes that conserve the particle.&lt;/p&gt;
+
+&lt;h4 id=&quot;hermitian-operators&quot;&gt;2.2. Hermitian operators&lt;/h4&gt;
+
+&lt;p&gt;A Hermitian operator is equal to its own Hermitian adjoint&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{M}^{\dag}=\hat{M}&lt;/script&gt;
+
+&lt;p&gt;Equivalently it is self-adjoint. In matrix terms, the Hermiticity implies &lt;script type=&quot;math/tex&quot;&gt;{\hat{M}_{ij}=\hat{M}_{ji}^{*}}&lt;/script&gt; for all &lt;script type=&quot;math/tex&quot;&gt;{i}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{j}&lt;/script&gt;. So, also the diagonal elements of a Hermitian operator must be real.&lt;/p&gt;
+
+&lt;p&gt;To understand Hermiticity in the most general sense, consider &lt;script type=&quot;math/tex&quot;&gt;{\langle g\vert \hat{M}\vert f\rangle}&lt;/script&gt; for arbitrary &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle}&lt;/script&gt; and some operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{M}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;We examine&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\langle g\vert \hat{M}\vert f\rangle)^{\dag}&lt;/script&gt;
+
+&lt;p&gt;Since this is just a number, it is also true that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\langle g\vert \hat{M}\vert f\rangle)^{\dag}=(\langle g\vert \hat{M}\vert f\rangle)^{*}&lt;/script&gt;
+
+&lt;p&gt;We can analyze &lt;script type=&quot;math/tex&quot;&gt;{(\langle g\vert \hat{M}\vert f\rangle)^{\dag}}&lt;/script&gt; using the rule &lt;script type=&quot;math/tex&quot;&gt;{(\hat{A}\hat{B})^{\dag}=\hat{B}^{\dag}\hat{A}^{\dag}}&lt;/script&gt; for Hermitian adjoints of products. So&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{A}\hat{B})^{\dag}=\hat{B}^{\dag}\hat{A}^{*}=(\hat{A}\hat{B})^{\dag}=\hat{B}^{\dag}\hat{A}^{\dag}=(\hat{M}\vert f\rangle)^{\dag}(\langle g\vert )^{\dag}=\langle f\vert \hat{M}^{\dag}\vert g\rangle&lt;/script&gt;
+
+&lt;p&gt;Hence, if &lt;script type=&quot;math/tex&quot;&gt;{\hat{M}}&lt;/script&gt; is Hermitian, with therefore &lt;script type=&quot;math/tex&quot;&gt;{\hat{M}^{\dag}=\hat{M}}&lt;/script&gt;, then&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\langle g\vert \hat{M}\vert f\rangle)^{*}=\langle f\vert \hat{M}^{\dag}\vert g\rangle&lt;/script&gt;
+
+&lt;p&gt;even if &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle}&lt;/script&gt; are not orthogonal.&lt;/p&gt;
+
+&lt;p&gt;In integral form, for function &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{g(x)}&lt;/script&gt;, the statement above can be written&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int g^{*}(x)\hat{M}f(x)\,dx=\left[\int f^{*}(x)\hat{M}g(x)\,dx\right]^{*}&lt;/script&gt;
+
+&lt;p&gt;We can rewrite the right hand side and a simple rearrangement leads to&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int\hat{g}(x)\hat{M}f(x)\,dx=\int\{\hat{M}g(x)\}^{*}f(x)\,dx&lt;/script&gt;
+
+&lt;p&gt;which is a common statement of Hermiticity in integral form.&lt;/p&gt;
+
+&lt;p&gt;Suppose &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt; is a normalized eigenvector of the Hermitian operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{M}}&lt;/script&gt; with eigenvalue &lt;script type=&quot;math/tex&quot;&gt;{\mu_{n}}&lt;/script&gt;. Then by definition&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{M}\vert \psi_{n}\rangle=\mu_{n}\vert \psi{n}\rangle&lt;/script&gt;
+
+&lt;p&gt;Therefore&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle\psi_{n}\vert \hat{M}\vert \psi_{n}\rangle=\mu_{n}\langle\psi_{n}\vert \psi_{n}\rangle=\mu_{n}&lt;/script&gt;
+
+&lt;p&gt;But from the Hermiticity of &lt;script type=&quot;math/tex&quot;&gt;{\hat{M}}&lt;/script&gt; we know&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle\psi_{n}\vert \hat{M}\vert \psi_{n}\rangle=(\langle\psi_{n}\vert \hat{M}\vert \psi_{n}\rangle)^{*}=\mu_{n}^{*}&lt;/script&gt;
+
+&lt;p&gt;And hence &lt;script type=&quot;math/tex&quot;&gt;{\mu_{n}}&lt;/script&gt; must be real.&lt;/p&gt;
+
+&lt;p&gt;Now, let’s prove that orthogonality of eigenfunctions for different eigenvalues&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  0&amp;=&amp;\langle\psi_{m}\vert \hat{M}\vert \psi_{n}\rangle-\langle\psi_{m}\vert \hat{M}\vert \psi_{n}\rangle \\ 0&amp;=&amp;(\langle\psi_{m}\vert \hat{M})\vert \psi_{n}\rangle-\langle\psi_{m}\vert (\hat{M}\vert \psi_{n}\rangle) \\ 0&amp;=&amp;(\hat{M}^{\dag}\vert \psi_{m}\rangle)^{\dag}\vert \psi_{n}\rangle-\langle\psi_{m}\vert (\hat{M}\vert \psi_{n}\rangle) \\ 0&amp;=&amp;(\hat{M}\vert \psi_{m}\rangle)^{\dag}\vert \psi_{n}\rangle-\langle\psi_{m}\vert (\hat{M}\vert \psi_{n}\rangle) \\ 0&amp;=&amp;(\mu_{m}\vert \psi_{m}\rangle)^{\dag}\vert \psi_{n}\rangle-\langle\psi_{m}\vert \mu_{n}\vert \psi_{n}\rangle \\ 0&amp;=&amp;\mu_{m}\vert (\psi_{m}\rangle)^{\dag}\vert \psi_{n}\rangle-\mu_{n}\langle\psi_{m}\vert \psi_{n}\rangle \\ 0&amp;=&amp;(\mu_{m}-\mu_{n})\langle\psi_{m}\vert \psi_{n}\rangle \\ \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;But &lt;script type=&quot;math/tex&quot;&gt;{\mu_{m}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\mu_{n}}&lt;/script&gt; are different, so &lt;script type=&quot;math/tex&quot;&gt;{0=\langle\psi_{m}\vert \psi_{n}\rangle}&lt;/script&gt;, i.e., orthogonality, presuming we are working with non-zero functions.&lt;/p&gt;
+
+&lt;p&gt;It is quite possible and common in symmetric problems to have more than one eigenfunction associated with a given eigenvalue. This situation is known as degeneracy. It is provable that the number of such degenerate solutions for a given finite eigenvalue is itself finite.&lt;/p&gt;
+
+&lt;h4 id=&quot;matrix-from-of-derivative-operators&quot;&gt;2.3. Matrix from of derivative operators&lt;/h4&gt;
+
+&lt;p&gt;Returning to our original discussion of functions as vectors, we can postulate a form for the differential operator&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\frac{d}{dx}\equiv\left[\begin{array}{cccccc} &amp; \ddots &amp; &amp; &amp; &amp; \\ \cdots &amp; -\frac{1}{2\delta x} &amp; 0 &amp; \frac{1}{2\delta x} &amp; 0 &amp; \cdots \\ \cdots &amp; 0 &amp; -\frac{1}{2\delta x} &amp; 0 &amp; \frac{1}{2\delta x} &amp; \cdots \\ &amp; &amp; &amp; &amp; \ddots &amp; \end{array}\right] %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where we presume we can take the limits as &lt;script type=&quot;math/tex&quot;&gt;{\delta x\rightarrow 0}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;If we multiply the column vector whose elements are the values of the function then&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\left[\begin{array}{cccccc} &amp; \ddots &amp; &amp; &amp; &amp; \\ \cdots &amp; -\frac{1}{2\delta x} &amp; 0 &amp; \frac{1}{2\delta x} &amp; 0 &amp; \cdots \\ \cdots &amp; 0 &amp; -\frac{1}{2\delta x} &amp; 0 &amp; \frac{1}{2\delta x} &amp; \cdots \\ &amp; &amp; &amp; &amp; \ddots &amp; \end{array}\right]\left[\begin{array}{c}\vdots \\ f(x_{i}-\delta x) \\ f(x_{i})\\ f(x_{i}+\delta x) \\f(x_{i}+2\delta x) \\ \vdots\end{array}\right]=\left[\begin{array}{c}\vdots \\ \frac{f(x_{i}-\delta x)-f(x_{i}+\delta x)}{2\delta x} \\\frac{f(x_{i}+2\delta x)-f(x_{i})}{2\delta x}\\ \vdots\end{array}\right]=\left[\begin{array}{c}\vdots \\ \left.\frac{df}{dx}\right\vert _{x_{i}} \\ \left.\frac{df}{dx}\right\vert _{x_{i}+\delta x} \\ \vdots\end{array}\right] %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Note this matrix is antisymmetric reflection about the diagonal and it is not Hermitian. By similar arguments, though &lt;script type=&quot;math/tex&quot;&gt;{d^{2}/dx^{2}}&lt;/script&gt; gives a symmetric matrix and is Hermitian.&lt;/p&gt;
+
+&lt;p&gt;We can formally “operate” on the function &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; by multiplying it by the function &lt;script type=&quot;math/tex&quot;&gt;{V(x)}&lt;/script&gt; to generate another function&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g(x)=V(x)f(x)&lt;/script&gt;
+
+&lt;p&gt;Since &lt;script type=&quot;math/tex&quot;&gt;{V(x)}&lt;/script&gt; is performing the role of an operator. We can if we wish represent it as a (diagonal) matrix whose diagonal elements are the values of the function at each of the different points.&lt;/p&gt;
+
+&lt;p&gt;If &lt;script type=&quot;math/tex&quot;&gt;{V(x)}&lt;/script&gt; is real then its matrix is Hermitian as required for &lt;script type=&quot;math/tex&quot;&gt;{\hat{H}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;operators-and-quantum-mechanics&quot;&gt;3. Operators and Quantum Mechanics&lt;/h3&gt;
+
+&lt;h4 id=&quot;hermitian-operators-in-quantum-mechanics&quot;&gt;3.1. Hermitian operators in quantum mechanics&lt;/h4&gt;
+
+&lt;p&gt;For Hermitian operators &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}}&lt;/script&gt; representing physical variables. It is very important to know if they commute, i.e., &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}\hat{B}=\hat{B}\hat{A}}&lt;/script&gt;. Remember that because these linear operators obey the same algebra as matrices in general operators do not commute.&lt;/p&gt;
+
+&lt;p&gt;For quantum mechanics, we formally define an entity&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[\hat{A},\hat{B}]=\hat{A}\hat{B}-\hat{B}\hat{A}&lt;/script&gt;
+
+&lt;p&gt;This entity is called the commutator.&lt;/p&gt;
+
+&lt;p&gt;An equivalent statement to saying &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}\hat{B}=\hat{B}\hat{A}}&lt;/script&gt; is then &lt;script type=&quot;math/tex&quot;&gt;{[\hat{A},\hat{B}]=0}&lt;/script&gt;. Strictly, this should be written&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[\hat{A},\hat{B}]=0\hat{I}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\hat{I}}&lt;/script&gt; is the identity operator but this is usually omitted.&lt;/p&gt;
+
+&lt;p&gt;If the operator do not commute, then &lt;script type=&quot;math/tex&quot;&gt;{[\hat{A},\hat{B}]}&lt;/script&gt; does not hold an in general we can choose to write&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[\hat{A},\hat{B}]=i\hat{C}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\hat{C}}&lt;/script&gt; is sometimes referred to the reminder of commutation or the commutation rest.&lt;/p&gt;
+
+&lt;p&gt;Operators that commute share the same set of eigenfunctions and operators that share same set of eigenfunctions commute.&lt;/p&gt;
+
+&lt;p&gt;Suppose that operators &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}}&lt;/script&gt; commute and suppose that &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt; are the eigenfunctions of &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; with eigenvalues &lt;script type=&quot;math/tex&quot;&gt;{A_{i}}&lt;/script&gt;, then&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{A}\hat{B}\vert \psi_{i}\rangle=\hat{B}\hat{A}\vert \psi_{i}\rangle=\hat{B}A_{i}\vert \psi_{i}\rangle=A_{i}\hat{B}\vert \psi_{i}\rangle&lt;/script&gt;
+
+&lt;p&gt;So,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{A}[\hat{B}\vert \psi_{i}\rangle]=A_{i}[\hat{B}\vert \psi\rangle]&lt;/script&gt;
+
+&lt;p&gt;This means that the vector &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}\vert \psi_{i}\rangle}&lt;/script&gt; is also the eigenvector &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi\rangle}&lt;/script&gt; or is proportional to it. i.e., for some number &lt;script type=&quot;math/tex&quot;&gt;{B_{i}}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{B}\vert \psi_{i}\rangle=B_{i}\vert \psi_{i}\rangle&lt;/script&gt;
+
+&lt;p&gt;This kind of relation holds for all the eigenfunctions &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt;. So these eigenfunctions are also the eigenfunctions of the vector &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}}&lt;/script&gt; with associated eigenvalues &lt;script type=&quot;math/tex&quot;&gt;{B_{i}}&lt;/script&gt;. Hence we have proved the first statement that operators that commute share the same set of eigenfunctions. Note that the eigenvalues &lt;script type=&quot;math/tex&quot;&gt;{A_{i}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{B_{i}}&lt;/script&gt; are not in general equal to one another.&lt;/p&gt;
+
+&lt;p&gt;Now we consider the statement: operators that share the same set of eigenfunctions commute. Suppose that the Hermitian operators &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}}&lt;/script&gt; share the same complete set &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; of eigenfunctions with associated sets of eigenvalues &lt;script type=&quot;math/tex&quot;&gt;{A_{n}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{B_{n}}&lt;/script&gt; respectively. Then&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{A}\hat{B}\vert \psi_{i}\rangle=\hat{A}B_{i}\vert \psi_{i}\rangle=A_{i}B_{i}\vert \psi_{i}\rangle&lt;/script&gt;
+
+&lt;p&gt;and similarly&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{B}\hat{A}\vert \psi_{i}\rangle=\hat{B}A_{i}\vert \psi_{i}\rangle=B_{i}A_{i}\vert \psi_{i}\rangle&lt;/script&gt;
+
+&lt;p&gt;Hence, for any function &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; which can always be expanded in this complete set of function &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt;, i.e., &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle=\sum_{i}c_{i}\vert \psi_{i}\rangle}&lt;/script&gt;, we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{A}\hat{B}\vert f\rangle=\sum_{i}c_{i}A_{i}B_{i}\vert \psi_{i}\rangle=\sum_{i}c_{i}B_{i}A_{i}\vert \psi_{i}\rangle=\hat{B}\hat{A}\vert f\rangle&lt;/script&gt;
+
+&lt;p&gt;Since we have proved this for an arbitrary function, we have proved that the operators commute hence proving the statement operators that share the same set of eigenfunctions commute.&lt;/p&gt;
+
+&lt;h4 id=&quot;general-form-of-the-uncertainty-principle&quot;&gt;3.2. General form of the uncertainty principle&lt;/h4&gt;
+
+&lt;p&gt;First, we need to set up the concepts of the mean and variance of an expectation value. Using &lt;script type=&quot;math/tex&quot;&gt;{\bar{A}}&lt;/script&gt; to denote the mean value of a quantity &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt;. We have, in the bra-ket notation, for a measurable quantity associated with the Hermitian operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; when the state of the system is &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\bar{A}\equiv\langle A\rangle=\langle f\vert \hat{A}\vert f\rangle&lt;/script&gt;
+
+&lt;p&gt;Let us define a new operator &lt;script type=&quot;math/tex&quot;&gt;{\Delta\hat{A}}&lt;/script&gt; associated with the difference between the measured value of &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt; and its average value&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta\hat{A}=\hat{A}-\bar{A}&lt;/script&gt;
+
+&lt;p&gt;Strictly, we should write &lt;script type=&quot;math/tex&quot;&gt;{\Delta\hat{A}=\hat{A}-\bar\hat{I}}&lt;/script&gt;, but we take such an identity operator to be understood. Note that this operator is also Hamiltonian.&lt;/p&gt;
+
+&lt;p&gt;Variance in statistics is the “mean square” deviation from the average. To examine the variance of the quantity &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt;, we examine the expectation value of the operator &lt;script type=&quot;math/tex&quot;&gt;{(\Delta\hat{A})^{2}}&lt;/script&gt;. Expanding the arbitrary function &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; on the basis of the eigenfunction &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; of &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert f\rangle=\sum_{i}c_{i}\vert \psi_{i}\rangle&lt;/script&gt;
+
+&lt;p&gt;We can formally evaluate the expectation value of &lt;script type=&quot;math/tex&quot;&gt;{(\Delta\hat{A})^{2}}&lt;/script&gt; when the system is in the state &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  \langle(\Delta\hat{A})^{2}\rangle&amp;=&amp;\langle f\vert (\Delta\hat{A})^{2}\vert f\rangle=\left(\sum_{i}c_{i}^{*}\langle\psi_{i}\vert \right)(\hat{A}-\bar{A})^{2}\left(\sum_{j}c_{j}\vert \psi_{j}\rangle\right) \\ &amp;=&amp;\left(\sum_{i}c_{i}^{*}\langle\psi_{i}\vert \right)(\hat{A}-\bar{A})\left(\sum_{j}c_{j}(A_{j}-\bar{A})\vert \psi_{j}\rangle\right) \\ &amp;=&amp;\left(\sum_{i}c_{i}^{*}\langle\psi_{i}\vert \right)\left(\sum_{j}c_{j}(A_{j}-\bar{A})^{2}\vert \psi_{j}\rangle\right)=\sum_{i}\vert c_{i}\vert ^{2}(A_{i}-\bar{A})^{2} \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Because the &lt;script type=&quot;math/tex&quot;&gt;{\vert c_{i}\vert ^{2}}&lt;/script&gt; are the probabilities that the system is found, on measurement, to be in the state &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{(A_{i}-\bar{A})^{2}}&lt;/script&gt; for that state simply represents the squared deviation of the value of the quantity &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt; from its average value then by definition&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\overline{(\Delta A)^{2}}\equiv\langle(\Delta\hat{A})^{2}\rangle=\langle(\hat{A}-\bar{A})^{2}\rangle=\langle f\vert (\hat{A}-\bar{A})^{2}\vert f\rangle&lt;/script&gt;
+
+&lt;p&gt;is the mean squared deviation for the quantity &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt; on repeatedly measuring the system prepared in state &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;In statistical language, the quantity &lt;script type=&quot;math/tex&quot;&gt;{\overline{(\Delta A)^{2}}}&lt;/script&gt; is called the variance, and the square root of the variance which we can write as &lt;script type=&quot;math/tex&quot;&gt;{\Delta A=\sqrt{\overline{(\Delta A)^{2}}}}&lt;/script&gt; is the standard deviation. In statistics, the standard deviation gives a well-defined measure of the width of a distribution.&lt;/p&gt;
+
+&lt;p&gt;We can also consider some other quantity &lt;script type=&quot;math/tex&quot;&gt;{B}&lt;/script&gt; associated with the Hermitian operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}}&lt;/script&gt; and, with similar definitions&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\overline{(\Delta B)^{2}}\equiv\langle(\Delta\hat{B})^{2}\rangle=\langle f\vert (\hat{B}-\bar{B})^{2}\vert f\rangle&lt;/script&gt;
+
+&lt;p&gt;So we have ways of calculating the uncertainty in the measurements of the quantities &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{B}&lt;/script&gt; when the system is in the state &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; to use in a general proof of the uncertainty principle.&lt;/p&gt;
+
+&lt;p&gt;Suppose two Hermitian operators &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}}&lt;/script&gt; do not commute and have commutation rest &lt;script type=&quot;math/tex&quot;&gt;{\hat{C}}&lt;/script&gt; as defined above in &lt;script type=&quot;math/tex&quot;&gt;{[\hat{A},\hat{B}]=i\hat{C}}&lt;/script&gt;. Consider, for some arbitrary real number &lt;script type=&quot;math/tex&quot;&gt;{\alpha}&lt;/script&gt;, the number&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;G(\alpha)=\langle(\alpha\Delta\hat{A}-i\Delta\hat{B})f\vert (\alpha\Delta\hat{A}-i\Delta\hat{B})f\rangle\geq 0&lt;/script&gt;
+
+&lt;p&gt;By &lt;script type=&quot;math/tex&quot;&gt;{\vert (\alpha\Delta\hat{A}-i\Delta\hat{B})f\rangle}&lt;/script&gt; we mean the vector &lt;script type=&quot;math/tex&quot;&gt;{(a\Delta\hat{A}-i\Delta\hat{B})\vert f\rangle}&lt;/script&gt; written this way to emphasize it is simply a vector so it must have an inner product with itself that is greater than or equal to zero. So,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  G(\alpha)&amp;=&amp;\langle f\vert (\alpha\Delta\hat{A}-i\Delta\hat{B})^{\dag}(\alpha\Delta\hat{A}-i\Delta\hat{B})\vert f\rangle(\geq 0) \\ &amp;=&amp;\langle f\vert (\alpha\Delta\hat{A}^{\dag}+i\Delta\hat{B}^{\dag})(\alpha\Delta\hat{A}-i\Delta\hat{B})\vert f\rangle \\ &amp;=&amp;\langle f\vert (\alpha\Delta\hat{A}+i\Delta\hat{B})(\alpha\Delta\hat{A}-i\Delta\hat{B})\vert f\rangle \\ &amp;=&amp;\langle f\vert \alpha^{2}(\Delta\hat{A})^{2}+(\Delta\hat{B})^{2}-i\alpha(\Delta\hat{A}\Delta\hat{B}-\Delta\hat{B}\Delta\hat{A})\vert f\rangle \\ &amp;=&amp;\langle f\vert \alpha^{2}(\Delta\hat{A})^{2}+(\Delta\hat{B})^{2}-i\alpha[\Delta\hat{A},\Delta\hat{B}]\vert f\rangle \\ &amp;=&amp;\langle f\vert \alpha^{2}(\Delta\hat{A})^{2}+(\Delta\hat{B})^{2}+\alpha\hat{C}\vert f\rangle \\ &amp;=&amp;\alpha^{2}\overline{(\Delta A)^{2}}+\overline{(\Delta B)^{2}}+\alpha\bar{C} (\geq 0) \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\bar{C}\equiv\langle C\rangle=\langle f\vert \hat{C}\vert f\rangle}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;By a simple (though not obvious) rearrangement&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;G(\alpha)=\overline{(\Delta A)^{2}}\left[\alpha+\frac{\bar{C}}{2\overline{(\Delta A)^{2}}}\right]^{2}+\overline{(\Delta B)^{2}}-\frac{(\bar{C})^{2}}{4\overline{(\Delta A)^{2}}}\geq 0&lt;/script&gt;
+
+&lt;p&gt;But the equation above must be true for arbitrary &lt;script type=&quot;math/tex&quot;&gt;{\alpha}&lt;/script&gt;, so it is true for&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\alpha=-\frac{\bar{C}}{2\overline{(\Delta A)^{2}}}&lt;/script&gt;
+
+&lt;p&gt;which sets the first term equal to zero, so&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\overline{(\Delta A)^{2}}\,\overline{(\Delta B)^{2}}\geq\frac{(\bar{C})^{2}}{4}&lt;/script&gt;
+
+&lt;p&gt;So, for two operators &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}}&lt;/script&gt;, corresponding to measurable quantities &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{B}&lt;/script&gt; for which &lt;script type=&quot;math/tex&quot;&gt;{[\hat{A},\hat{B}]=i\hat{C}}&lt;/script&gt; in some state &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; for which &lt;script type=&quot;math/tex&quot;&gt;{\bar{C}\equiv\langle C\rangle=\langle f\vert \hat{C}\vert f\rangle}&lt;/script&gt;, we have the uncertainty principle&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta A\Delta B\geq\frac{\vert \bar{C}\vert }{2}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\Delta A}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\Delta B}&lt;/script&gt; are the standard deviations of the values of &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{B}&lt;/script&gt; we would measure.&lt;/p&gt;
+
+&lt;p&gt;The conclusion above is generally true. Only if the operators &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}}&lt;/script&gt; commute. or if they do not commute, but we are in a state &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; for which &lt;script type=&quot;math/tex&quot;&gt;{\langle f\vert \hat{C}\vert f\rangle=0}&lt;/script&gt;. Only in those cases it is possible for both &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{B}&lt;/script&gt; simultaneously to have exact measurable values.&lt;/p&gt;
+
+&lt;h4 id=&quot;specific-uncertainty-principles&quot;&gt;3.3. Specific uncertainty principles&lt;/h4&gt;
+
+&lt;p&gt;We now formally derive the position-momentum relation. Consider the commutator of &lt;script type=&quot;math/tex&quot;&gt;{\hat{p}_{x}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; (we treat the function &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; as the operator for position). To be sure we are taking derivatives correctly, we have the commutator operate on an arbitrary function:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  [\hat{p}_{x},x]\vert f\rangle&amp;=&amp;-i\hbar\left(\frac{d}{dx}x-x\frac{d}{dx}\right)\vert f\rangle=-i\hbar\left\{\frac{d}{x}(x\vert f\rangle)-x\frac{d}{dx}\vert f\rangle\right\} \\ &amp;=&amp;-i\hbar\left\{\vert f\rangle+x\frac{d}{dx}\vert f\rangle-x\frac{d}{dx}\vert f\rangle\right\}=-i\hbar\vert f\rangle \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Since &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; is arbitrary, we can write &lt;script type=&quot;math/tex&quot;&gt;{[\hat{p}_{x},x]=-i\hbar}&lt;/script&gt; and the commutation rest operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{C}}&lt;/script&gt; is simply the number &lt;script type=&quot;math/tex&quot;&gt;{\hat{C}=-\hbar}&lt;/script&gt;. And so, from &lt;script type=&quot;math/tex&quot;&gt;{\Delta A\Delta B\geq\vert \bar{C}\vert /2}&lt;/script&gt;, we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta\hat{p}_{x}\Delta x\geq\frac{\hbar}{2}&lt;/script&gt;
+
+&lt;p&gt;The energy operator is the Hamiltonian &lt;script type=&quot;math/tex&quot;&gt;{\hat{H}}&lt;/script&gt; and from Schroedinger’s equation&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{H}\vert \psi\rangle=i\hbar\frac{\partial}{\partial t}\vert\psi\rangle&lt;/script&gt;
+
+&lt;p&gt;so we use &lt;script type=&quot;math/tex&quot;&gt;{\hat{H}=i\hbar\partial/\partial t}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;If we take the time operator to be just &lt;script type=&quot;math/tex&quot;&gt;{t}&lt;/script&gt; then using essentially identical algebra as used for the momentum-position uncertainty principle.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;[\hat{H},t]=i\hbar\left(\frac{\partial}{\partial t}t-t\frac{\partial}{\partial t}\right)=i\hbar&lt;/script&gt;
+
+&lt;p&gt;so, similarly we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta E\Delta t\geq\frac{\hbar}{2}&lt;/script&gt;
+
+&lt;p&gt;We can relate this result mathematically to the frequency-time uncertainty principle that occurs in Fourier analysis. Noting the &lt;script type=&quot;math/tex&quot;&gt;{E=\hbar\omega}&lt;/script&gt; in quantum mechanics, we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta\omega\Delta t\geq\frac{1}{2}&lt;/script&gt;
+</description>
+        <pubDate>Fri, 01 Nov 2013 00:00:00 +0800</pubDate>
+        <link>http://dgyblog.com/oldtimes/2013/11/01/quantum-for-scieng-6/</link>
+        <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/11/01/quantum-for-scieng-6/</guid>
+      </item>
+    
+      <item>
         <title>Quantum Mechanics for Scientists and Engineers Notes 5</title>
         <description>&lt;h3 id=&quot;uncertainty-principle-and-particle-current&quot;&gt;1. Uncertainty Principle and Particle Current&lt;/h3&gt;
 
@@ -1632,393 +2028,6 @@ z&lt;-L_{z}/2 %]]&gt;&lt;/script&gt;&lt;/p&gt;
         <pubDate>Mon, 07 Oct 2013 00:00:00 +0800</pubDate>
         <link>http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/</link>
         <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/</guid>
-      </item>
-    
-      <item>
-        <title>Quantum Mechanics for Scientists and Engineers Notes 1</title>
-        <description>&lt;h3 id=&quot;background-mathematics-review&quot;&gt;1. Background Mathematics Review&lt;/h3&gt;
-
-&lt;h4 id=&quot;symbols-greek-letters-algebra-notations-functions&quot;&gt;1.1. Symbols, Greek letters, algebra notations, functions&lt;/h4&gt;
-
-&lt;p&gt;Relational symbols&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;{\equiv}&lt;/script&gt;: “is equivalent to”&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;{\simeq}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\cong}&lt;/script&gt;: “is approximately equal to”&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;{\propto}&lt;/script&gt;: “is proportional to”&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;{\gg}&lt;/script&gt;: “is much greater than”&lt;/li&gt;
-  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;{\ll}&lt;/script&gt;: “is much less than”&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Greek letters (Every Greek letter has its own Roman letter equivalent, you can search for yourself):&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Alpha: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\alpha}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Beta: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\beta}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Gamma: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Gamma}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\gamma}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Delta: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Delta}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\delta}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Epsilon: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\epsilon}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Zeta: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\zeta}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Eta: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\eta}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Theta: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Theta}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Iota: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\iota}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Kappa: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\kappa}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Lambda: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Lambda}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Mu: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\mu}&lt;/script&gt;.&lt;/li&gt;
-  &lt;li&gt;Nu: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\nu}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Xi: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Xi}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\xi}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Omicron: too similar to Roman “o”&lt;/li&gt;
-  &lt;li&gt;Pi: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Pi}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\pi}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Rho: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\rho}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Sigma: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Sigma}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\sigma}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Tau: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\tau}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Upsilon: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\upsilon}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Phi: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Phi}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\Phi}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Chi: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\chi}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Psi: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Psi}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt;&lt;/li&gt;
-  &lt;li&gt;Omega: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Omega}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\omega}&lt;/script&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Trigonometric functions:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sine: &lt;script type=&quot;math/tex&quot;&gt;{\sin\theta}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{\sin(-\theta)=-\sin(\theta)}&lt;/script&gt;,&lt;/li&gt;
-  &lt;li&gt;Cosine: &lt;script type=&quot;math/tex&quot;&gt;{\cos\theta}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{\cos(-\theta)=\cos(\theta)}&lt;/script&gt;,&lt;/li&gt;
-  &lt;li&gt;Tangent: &lt;script type=&quot;math/tex&quot;&gt;{\tan\theta=\frac{\sin\theta}{\cos\theta}}&lt;/script&gt;,&lt;/li&gt;
-  &lt;li&gt;Cosecant: &lt;script type=&quot;math/tex&quot;&gt;{\csc\theta=\frac{1}{\sin\theta}}&lt;/script&gt;,&lt;/li&gt;
-  &lt;li&gt;Secant: &lt;script type=&quot;math/tex&quot;&gt;{\sec\theta=\frac{1}{\cos\theta}}&lt;/script&gt;,&lt;/li&gt;
-  &lt;li&gt;Cotangent: &lt;script type=&quot;math/tex&quot;&gt;{\cot\theta=\frac{\cos\theta}{\sin\theta}}&lt;/script&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;power-logs-exponentials-complex-numbers&quot;&gt;1.2. Power logs, exponentials, complex numbers&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition 1 (Logarithms)&lt;/strong&gt; A chain of &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; numbers &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt; multiplied together is &lt;script type=&quot;math/tex&quot;&gt;{g\times g\times\ldots\times g=g^{n}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; is the “log to the base &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;” of &lt;script type=&quot;math/tex&quot;&gt;{g^{n}}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{n=\log_{n}(g^{n})}&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition 2 (Imaginary Unit)&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;{i=\sqrt{-1}}&lt;/script&gt;, so &lt;script type=&quot;math/tex&quot;&gt;{i^{2}=-1}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{(-i)^{2}=-1}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition 3 (Complex Numbers)&lt;/strong&gt; A number that can be written&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;g=ai+b&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt; are both real numbers, is called complex number. &lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt; is called the “real part” of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;a=\text{Re}(g)&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt; is called the “imaginary part” of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;b=\text{Im}(g)&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition 4 (Complex conjugate and modulus)&lt;/strong&gt; The “complex conjugate” has the sign of the imaginary part reversed. And is indicated by a superscript “&lt;script type=&quot;math/tex&quot;&gt;*&lt;/script&gt;”&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;g^{*}=-ai+b&lt;/script&gt;
-
-&lt;p&gt;Modulus squared of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;\vert g\vert^{2}=g^{*}g=gg^{*}&lt;/script&gt;. The positive square root of this is called the “modulus” of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt;&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert g\vert=+\sqrt{\vert g\vert^{2}}&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Theorem 5 (Euler’s formula)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\exp(i\theta)=\cos\theta+i\sin\theta&lt;/script&gt;
-
-&lt;p&gt;Note that&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;[\exp(i\theta)]^{*}=\exp(-i\theta)&lt;/script&gt;
-
-&lt;p&gt;Also&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\exp(i\theta)\exp(-i\theta)=exp(i\theta-i\theta)=1&lt;/script&gt;
-
-&lt;p&gt;For any complex number &lt;script type=&quot;math/tex&quot;&gt;{g=a+ib}&lt;/script&gt;, we can write&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;g=\vert g\vert\frac{a+ib}{\vert g\vert}=\vert g\vert(\cos\theta+i\sin\theta)=\vert g\vert exp(i\theta)&lt;/script&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt;th roots of unity&lt;/em&gt;: Note that the number &lt;script type=&quot;math/tex&quot;&gt;{\exp(2\pi i/n)}&lt;/script&gt; when raised to the power is 1 (unity)&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left[\exp\left(\frac{2\pi i}{n}\right)^{n}\right]=\exp\left(\frac{2\pi i}{n}\times n\right)=\exp(2\pi i)=1&lt;/script&gt;
-
-&lt;h4 id=&quot;coordinates-and-vectors&quot;&gt;1.3. Coordinates and vectors&lt;/h4&gt;
-
-&lt;p&gt;&lt;em&gt;Right-handed axes&lt;/em&gt;: using your right hand, &lt;em&gt;Thumb&lt;/em&gt;: &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt;, &lt;em&gt;Index (“first”) finger&lt;/em&gt;: &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt;, &lt;em&gt;middle finger&lt;/em&gt;: &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt;. No matter how you now rotate your whole hand, the axes remain right-handed.&lt;/p&gt;
-
-&lt;p&gt;Dot product among vectors gives a scalar result, cross product gives vector result.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition 6 (Dot product)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\cdot\vec{b}=\vert \vec{a}\vert\vert \vec{b}\vert\cos\theta&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Definition 7 (Cross product)&lt;/strong&gt; For two vectors:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}=a_{x}\vec{i}+a_{y}\vec{j}+a_{z}\vec{k}&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{b}=b_{x}\vec{i}+b_{y}\vec{j}+b_{z}\vec{k}&lt;/script&gt;
-
-&lt;p&gt;the vector cross product is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\times\vec{b}=\vec{n}\vert \vec{a}\vert\vert \vec{b}\vert\sin\theta&lt;/script&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;{\vec{n}}&lt;/script&gt; is a unit vector with a direction given by the right hand screw rule.&lt;/p&gt;
-
-&lt;p&gt;Note that&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\times\vec{b}=-\vec{b}\times\vec{a}&lt;/script&gt;
-
-&lt;p&gt;A equivalent algebraic formula for the vector cross product is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\vec{a}\times\vec{b}=\begin{vmatrix}\vec{i} &amp; \vec{j} &amp; \vec{k} \\ a_{x} &amp; a_{y} &amp; a_{z} \\ b_{x} &amp; b_{y} &amp; b_{z}\end{vmatrix} %]]&gt;&lt;/script&gt;
-
-&lt;h4 id=&quot;differential-calculus&quot;&gt;1.4. Differential calculus&lt;/h4&gt;
-
-&lt;p&gt;The derivative at some specific point &lt;script type=&quot;math/tex&quot;&gt;{x_{1}}&lt;/script&gt; can be written&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^{&#39;}(x_{1})\equiv\left.\frac{dy}{dx}\right\vert_{x_{1}}&lt;/script&gt;
-
-&lt;p&gt;The second derivative is the derivative of the first derivative&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^{&#39;&#39;}(x)\equiv\frac{d^{2}y}{dx^{2}}\equiv\frac{d}{dx}\frac{dy}{dx}&lt;/script&gt;
-
-&lt;p&gt;The second derivative can be thought as the “curvature” of a function.&lt;/p&gt;
-
-&lt;p&gt;For two function &lt;script type=&quot;math/tex&quot;&gt;{u(x)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{v(x)}&lt;/script&gt;, the derivative of the sum is the sum of the derivatives.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d}{dx}[u(x)+v(x)]=\frac{du}{dx}+\frac{dv}{dx}&lt;/script&gt;
-
-&lt;p&gt;For a function &lt;script type=&quot;math/tex&quot;&gt;{u(x)}&lt;/script&gt;, the derivative of a constant &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; times a function is &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; times the derivative.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d}{dx}[au]=a\frac{du}{dx}&lt;/script&gt;
-
-&lt;p&gt;An operation or function &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; is linear if&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x+z)=f(y)+f(z)&lt;/script&gt;
-
-&lt;p&gt;and&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(ax)=af(x)&lt;/script&gt;
-
-&lt;p&gt;For two functions &lt;script type=&quot;math/tex&quot;&gt;{u(x)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{v(x)}&lt;/script&gt;, the derivative of the product is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d}{dx}(uv)=u\frac{dv}{dx}+v\frac{du}{dx}&lt;/script&gt;
-
-&lt;p&gt;For two functions &lt;script type=&quot;math/tex&quot;&gt;{u(x)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{v(x)}&lt;/script&gt;, the derivative of the ratio or quotient is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d}{dx}\left(\frac{u}{v}\right)=\frac{v\frac{du}{dx}-u\frac{dv}{dx}}{v^{2}}&lt;/script&gt;
-
-&lt;p&gt;&lt;em&gt;Chain rule&lt;/em&gt;: for two functions &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{g(x)}&lt;/script&gt;, the derivative of the “function of a function” can be split into a product&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d}{dx}f(g(x))=\left(\frac{df}{dg}\right)\times\left(\frac{dg}{dx}\right)&lt;/script&gt;
-
-&lt;h4 id=&quot;partial-differentiation&quot;&gt;1.5. Partial differentiation&lt;/h4&gt;
-
-&lt;p&gt;Suppose we have a function &lt;script type=&quot;math/tex&quot;&gt;{f(x,y)}&lt;/script&gt; of two variables. Then we have the gradient of &lt;script type=&quot;math/tex&quot;&gt;{f}&lt;/script&gt; as a function of &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; with &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; held constant, which we write&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial f}{\partial x}\right\vert_{y}, \text{ or }\frac{\partial f}{\partial x}&lt;/script&gt;
-
-&lt;p&gt;Second partial derivatives is a measure of the curvature of the function in the &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; direction.&lt;/p&gt;
-
-&lt;p&gt;Cross derivative&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}f}{\partial x\partial y}\equiv\left.\frac{\partial}{\partial x}\right\vert_{y}\left.\frac{\partial f }{\partial y}\right\vert_{x}&lt;/script&gt;
-
-&lt;p&gt;is a measure of how “warped” a surface is.&lt;/p&gt;
-
-&lt;p&gt;Differential or Exact Differential&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;df=\left.\frac{\partial f}{\partial x}\right\vert_{y}dx+\left.\frac{\partial f}{\partial y}\right\vert_{x}dy&lt;/script&gt;
-
-&lt;p&gt;Total derivative&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{df}{dt}=\left.\frac{\partial f}{\partial x}\right\vert_{y}\left(\frac{dx}{dt}\right)+\left.\frac{\partial f}{\partial y}\right\vert_{x}\left(\frac{dy}{dt}\right)&lt;/script&gt;
-
-&lt;h4 id=&quot;ordinary-and-partial-differential-equations&quot;&gt;1.6. Ordinary and partial differential equations&lt;/h4&gt;
-
-&lt;p&gt;A differential equation involves derivatives of some function. It is easy to verify solutions, but it can be harder to find them.&lt;/p&gt;
-
-&lt;p&gt;“First order” differential equation has no derivatives higher than first order. The solution with undetermined constant is called “general solution”. The constants are determined by boundary condition.&lt;/p&gt;
-
-&lt;p&gt;Boundary conditions that specify the value of a function at some position or “boundary” are called “Dirichlet” boundary conditions. Boundary conditions that specify the derivatives or slope of a function at some position or “boundary” are called “Neumann” boundary condition.&lt;/p&gt;
-
-&lt;p&gt;Imaginary first derivative&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{dy}{dx}=iby&lt;/script&gt;
-
-&lt;p&gt;with &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; real has the general solution&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;y=A\exp(ibx)\equiv A(\cos(bx)+i\sin(bx))&lt;/script&gt;
-
-&lt;p&gt;Note that neither &lt;script type=&quot;math/tex&quot;&gt;{\cos(bx)}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\sin(bx)}&lt;/script&gt; is a solution of this equation.&lt;/p&gt;
-
-&lt;p&gt;A second-order differential equations contains no derivatives higher than second order. Since derivatives with respect to time arises in many situations, there is a shorthand notation using dots above the variable being differentiated with respect to time with the number of dots indicating the order of differentiating, e.g.,&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\dot{a}\equiv\frac{da}{dt}, \text{ and } \ddot{a}\equiv\frac{d^{2}a}{dt^{2}}&lt;/script&gt;
-
-&lt;p&gt;Classical one-dimensional scalar wave equation:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}\phi(z,t)}{\partial z^{2}}-\frac{1}{c^{2}}\frac{\partial^{2}\phi(z,t)}{\partial t^{2}}=0&lt;/script&gt;
-
-&lt;p&gt;relates how strongly curved a function &lt;script type=&quot;math/tex&quot;&gt;{\phi}&lt;/script&gt; is (from the second spatial derivative) to the second time (or temporal) derivate. For this function, any function of the form &lt;script type=&quot;math/tex&quot;&gt;{f(z-ct)}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{g(z+ct)}&lt;/script&gt; are solutions.&lt;/p&gt;
-
-&lt;p&gt;Monochromatic waves are oscillating at one specific (angular) frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega}&lt;/script&gt;, e.g,&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;T(t)=\exp(i\omega t), \exp(-i\omega t), \cos(\omega t), \sin(\omega t)&lt;/script&gt;
-
-&lt;p&gt;or any combination of these, then writing &lt;script type=&quot;math/tex&quot;&gt;{\phi(z,t)\equiv Z(z)T(t)}&lt;/script&gt;, we have&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}\phi}{\partial t^{2}}=-\omega^{2}\phi&lt;/script&gt;
-
-&lt;p&gt;Leaving a wave equation for the spatial part, then&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d^{2} Z(z)}{dz^{2}}+k^{2}Z(z)=0, \text{ where } k^{2}=\frac{\omega^{2}}{c^{2}}&lt;/script&gt;
-
-&lt;p&gt;The Laplacian operator can be defined for ordinary Cartesian coordinates&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\equiv\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}&lt;/script&gt;
-
-&lt;p&gt;A convenient way to say it is “del squared”. Sometimes it is written &lt;script type=&quot;math/tex&quot;&gt;{\Delta}&lt;/script&gt; instead of &lt;script type=&quot;math/tex&quot;&gt;{\nabla^{2}}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;The gradient of a function &lt;script type=&quot;math/tex&quot;&gt;{f(x,y,z)}&lt;/script&gt; is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla f\equiv\text{grad }f=\vec{i}\frac{\partial f}{\partial x}+\vec{j}\frac{\partial f}{\partial y}+\vec{k}\frac{\partial f}{\partial z}&lt;/script&gt;
-
-&lt;h4 id=&quot;matrices&quot;&gt;1.7. Matrices&lt;/h4&gt;
-
-&lt;p&gt;The leading diagonal of a matrix is the diagonal from top left to bottom right.&lt;/p&gt;
-
-&lt;p&gt;An important manipulation from matrices and vector is the transpose denoted by a superscript “&lt;script type=&quot;math/tex&quot;&gt;{T}&lt;/script&gt;”, a reflection about a diagonal line from top to bottom right for a matrix.&lt;/p&gt;
-
-&lt;p&gt;Another common manipulation is the “&lt;em&gt;Hermitian adjoint&lt;/em&gt;”, “&lt;em&gt;Hermitian transpose&lt;/em&gt;”, or “conjugate transpose”, denoted by a superscript “&lt;script type=&quot;math/tex&quot;&gt;{\dagger}&lt;/script&gt;”, a reflection about a diagonal line from top left to bottom right for a matrix and taking the complex conjugate of all the elements.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{D}^{\dagger})_{mn}=\hat{D}^{*}_{nm}&lt;/script&gt;
-
-&lt;p&gt;A matrix is said to be &lt;em&gt;Hermitian&lt;/em&gt; if it is equal to its own Hermitian adjoint:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{B}^{\dagger}=\hat{B}&lt;/script&gt;
-
-&lt;p&gt;In “inner” product of a row and a column vector collapses two vectors to a number, analogous to geometrical vector dot product. An “outer product” of a column and a row vector generates a square matrix.&lt;/p&gt;
-
-&lt;p&gt;Hermitian adjoint of a product is the reversed product of the Hermitian adjoints&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{A}\hat{B})^{\dagger}=\hat{B}^{\dagger}\hat{A}^{\dagger}&lt;/script&gt;
-
-&lt;p&gt;For a matrix, if it has an inverse &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}^{-1}}&lt;/script&gt;, it has the property &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}^{-1}\hat{A}=\hat{I}}&lt;/script&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;linear-algebra-matrices-and-eigen-equations&quot;&gt;1.8. Linear algebra, matrices and eigen equations&lt;/h4&gt;
-
-&lt;p&gt;The determinant of a matrix &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; is written in two notations&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\det(\hat{A})=\begin{vmatrix} A_{11} &amp; A_{12} &amp; \cdots &amp; A_{1N} \\ A_{21} &amp; A_{22} &amp; \cdots &amp; A_{2N} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ A_{N1} &amp; A_{N2} &amp; \cdots &amp; A_{NN}\end{vmatrix} %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;A equation of the from&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{A}d=\lambda d&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{d}&lt;/script&gt; is a vector, &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt; is a number, and &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; is a square matrix is called an eigenequation with eigenvalue &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt; and eigenvector &lt;script type=&quot;math/tex&quot;&gt;{d}&lt;/script&gt;. If there are solutions, they may only exist for specific values of &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;If &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}=\hat{A}-\lambda\hat{I}}&lt;/script&gt; have a inverse, then there is no non-zero solution &lt;script type=&quot;math/tex&quot;&gt;{d}&lt;/script&gt;. Otherwise, there is non-zero solution.&lt;/p&gt;
-
-&lt;h3 id=&quot;introduction-to-quantum-mechanics&quot;&gt;2. Introduction to Quantum Mechanics&lt;/h3&gt;
-
-&lt;h4 id=&quot;planks-proposal-december-14th-1900&quot;&gt;2.1. Plank’s Proposal (December 14th, 1900)&lt;/h4&gt;
-
-&lt;p&gt;Light is emitted in quanta of energy&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;E=h\nu&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\nu}&lt;/script&gt; (Greek letter “nu”) is the light’s frequency in Hz (Hertz) and &lt;script type=&quot;math/tex&quot;&gt;{h}&lt;/script&gt; is Plank’s constant&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;h=6.62606957\times 10^{-34}J\cdot s&lt;/script&gt;
-
-&lt;h4 id=&quot;einsteins-proposal-1905&quot;&gt;2.2. Einstein’s Proposal (1905)&lt;/h4&gt;
-
-&lt;p&gt;Light is actually made up out of particles: photons, of energy &lt;script type=&quot;math/tex&quot;&gt;{E=h\nu}&lt;/script&gt;. The kinetic energy of the emitted electrons is the energy left over after the electron has been “lifted” over the work function barrier.&lt;/p&gt;
-
-&lt;h4 id=&quot;bohr-model-of-the-hydrogen-atom&quot;&gt;2.3. Bohr model of the hydrogen atom&lt;/h4&gt;
-
-&lt;p&gt;A small negatively charged electron orbits small positively charged core (the proton) but with electrostatic attraction. Key assumption (Neils Bohr, 1913) is angular momentum is “quantized” in units of Plank’s constant, &lt;script type=&quot;math/tex&quot;&gt;{h}&lt;/script&gt; over &lt;script type=&quot;math/tex&quot;&gt;{2\pi}&lt;/script&gt;&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hbar\equiv\frac{h}{2\pi}&lt;/script&gt;
-
-&lt;h4 id=&quot;de-broglie-hypothesis&quot;&gt;2.4. de Broglie hypothesis&lt;/h4&gt;
-
-&lt;p&gt;A particle with mass also behaves as a wave with wavelength&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\lambda=\frac{h}{p}&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{p}&lt;/script&gt; is the particle’s momentum.&lt;/p&gt;
-
-&lt;h4 id=&quot;quantum-mechanics-formation&quot;&gt;2.5. Quantum mechanics formation&lt;/h4&gt;
-
-&lt;p&gt;Werner Heisenberg (1925) proposed matrix formulation of quantum mechanics.&lt;/p&gt;
-
-&lt;p&gt;Erwin Schrodinger (1926) proposed wave equation.&lt;/p&gt;
-
-&lt;p&gt;More key contributions by Max Born, Pascual Jordan, Paul Dirac, John von Neumann …&lt;/p&gt;
-
-&lt;h3 id=&quot;classical-mechanics-oscillations-and-waves&quot;&gt;3. Classical Mechanics, Oscillations and Waves&lt;/h3&gt;
-
-&lt;h4 id=&quot;elementary-classical-mechanics&quot;&gt;3.1. Elementary classical mechanics&lt;/h4&gt;
-
-&lt;p&gt;For a particle of mass &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; which is a vector because it has direction is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{p}=m\vec{v}&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\vec{v}}&lt;/script&gt; is the (vector) velocity.&lt;/p&gt;
-
-&lt;p&gt;The kinetic energy is the energy associated with motion is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;K.E.=\frac{p^{2}}{2m}&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{p^2=\vec{p}\cdot\vec{p}}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;Potential energy is defined as energy due to position. It is usually denoted by &lt;script type=&quot;math/tex&quot;&gt;{V}&lt;/script&gt; in quantum mechanics. It can be written as &lt;script type=&quot;math/tex&quot;&gt;{V(\vec{r})}&lt;/script&gt;. We can talk about potential energy if the energy only depends on where we are, not how we got there. Classical “fields” with this property are called “conservative” or “irrotational” fields.&lt;/p&gt;
-
-&lt;p&gt;The total energy can be the sum of potential energy and kinetic energies. When this total energy is written as a function of position and momentum, it can be called the (classical) “Hamiltonian”. For a classical particle of mass &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; in a conservative potential &lt;script type=&quot;math/tex&quot;&gt;{V(\vec{r})}&lt;/script&gt;&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;H=\frac{p^{2}}{2m}+V(\vec{r})&lt;/script&gt;
-
-&lt;p&gt;Newton’s second law relates force and acceleration&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{F}=m\vec{a}&lt;/script&gt;
-
-&lt;p&gt;Equivalently,&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{F}=\frac{d\vec{p}}{dt}&lt;/script&gt;
-
-&lt;p&gt;The relation between force and potential is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;F_{x}=-\frac{dV}{dx}&lt;/script&gt;
-
-&lt;p&gt;We can generalize the relation between force and potential to three dimensions with force as a vector by using the gradient operator&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{F}=-\nabla V=-\left[\frac{\partial V}{\partial x}\vec{i}+\frac{\partial V}{\partial y}\vec{j}+\frac{\partial V}{\partial z}\vec{k}\right]&lt;/script&gt;
-
-&lt;h4 id=&quot;oscillations&quot;&gt;3.2. Oscillations&lt;/h4&gt;
-
-&lt;p&gt;A simple spring will have a restoring force &lt;script type=&quot;math/tex&quot;&gt;{F}&lt;/script&gt; acting on the mass &lt;script type=&quot;math/tex&quot;&gt;{M}&lt;/script&gt; proportional to the amount &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; by which it is stretched. For some “spring constant” &lt;script type=&quot;math/tex&quot;&gt;{K}&lt;/script&gt;&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;F=-Ky&lt;/script&gt;
-
-&lt;p&gt;The minus sign is because this is restoring. This gives a “simple harmonic oscillator”.&lt;/p&gt;
-
-&lt;p&gt;From Newton’s second law&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;F=Ma=M\frac{d^{2}y}{dt^{2}}=-Ky&lt;/script&gt;
-
-&lt;p&gt;i.e.,&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d^{2}y}{dt^{2}}=-\frac{K}{M}y=-\omega^{2}&lt;/script&gt;
-
-&lt;p&gt;where we define &lt;script type=&quot;math/tex&quot;&gt;{\omega=K/M}&lt;/script&gt;. We have oscillatory solutions of angular frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega=\sqrt{K/M}}&lt;/script&gt;. e.g. &lt;script type=&quot;math/tex&quot;&gt;{y\propto\sin\omega t}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;A physical system described by an equation like&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d^{2}y}{dt^{2}}=-\omega^{2}y&lt;/script&gt;
-
-&lt;p&gt;is called a &lt;em&gt;simple harmonic oscillator&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;the-classical-wave-equation&quot;&gt;3.3. The classical wave equation&lt;/h4&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\displaystyle  \frac{\partial^{2} y}{\partial z^{2}}-\frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}}=0&lt;/script&gt;
-
-&lt;p&gt;where velocity &lt;script type=&quot;math/tex&quot;&gt;{v=\sqrt{T/\rho}}&lt;/script&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 03 Oct 2013 00:00:00 +0800</pubDate>
-        <link>http://dgyblog.com/oldtimes/2013/10/03/quantum-for-scieng-1/</link>
-        <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/10/03/quantum-for-scieng-1/</guid>
       </item>
     
   </channel>
