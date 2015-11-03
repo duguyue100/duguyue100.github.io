@@ -760,7 +760,7 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta\hat{A}=\hat{A}-\bar{A}&lt;/script&gt;
 
-&lt;p&gt;Strictly, we should write &lt;script type=&quot;math/tex&quot;&gt;{\Delta\hat{A}=\hat{A}-\bar\hat{I}}&lt;/script&gt;, but we take such an identity operator to be understood. Note that this operator is also Hamiltonian.&lt;/p&gt;
+&lt;p&gt;Strictly, we should write &lt;script type=&quot;math/tex&quot;&gt;{\Delta\hat{A}=\hat{A}-\bar{\hat{I}}}&lt;/script&gt;, but we take such an identity operator to be understood. Note that this operator is also Hamiltonian.&lt;/p&gt;
 
 &lt;p&gt;Variance in statistics is the “mean square” deviation from the average. To examine the variance of the quantity &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt;, we examine the expectation value of the operator &lt;script type=&quot;math/tex&quot;&gt;{(\Delta\hat{A})^{2}}&lt;/script&gt;. Expanding the arbitrary function &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; on the basis of the eigenfunction &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; of &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt;.&lt;/p&gt;
 
