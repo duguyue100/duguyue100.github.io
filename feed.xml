@@ -455,6 +455,414 @@
       </item>
     
       <item>
+        <title>Quantum Mechanics for Scientists and Engineers Notes 1</title>
+        <description>&lt;h3 id=&quot;background-mathematics-review&quot;&gt;1. Background Mathematics Review&lt;/h3&gt;
+
+&lt;h4 id=&quot;symbols-greek-letters-algebra-notations-functions&quot;&gt;1.1. Symbols, Greek letters, algebra notations, functions&lt;/h4&gt;
+
+&lt;p&gt;Relational symbols&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;{\equiv}&lt;/script&gt;: “is equivalent to”&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;{\simeq}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\cong}&lt;/script&gt;: “is approximately equal to”&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;{\propto}&lt;/script&gt;: “is proportional to”&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;{\gg}&lt;/script&gt;: “is much greater than”&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;{\ll}&lt;/script&gt;: “is much less than”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Greek letters (Every Greek letter has its own Roman letter equivalent, you can search for yourself):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Alpha: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\alpha}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Beta: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\beta}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Gamma: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Gamma}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\gamma}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Delta: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Delta}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\delta}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Epsilon: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\epsilon}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Zeta: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\zeta}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Eta: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\eta}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Theta: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Theta}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Iota: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\iota}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Kappa: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\kappa}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Lambda: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Lambda}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Mu: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\mu}&lt;/script&gt;.&lt;/li&gt;
+  &lt;li&gt;Nu: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\nu}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Xi: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Xi}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\xi}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Omicron: too similar to Roman “o”&lt;/li&gt;
+  &lt;li&gt;Pi: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Pi}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\pi}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Rho: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\rho}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Sigma: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Sigma}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\sigma}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Tau: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\tau}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Upsilon: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\upsilon}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Phi: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Phi}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\Phi}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Chi: Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\chi}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Psi: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Psi}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Omega: Upper case: &lt;script type=&quot;math/tex&quot;&gt;{\Omega}&lt;/script&gt;, Lower case: &lt;script type=&quot;math/tex&quot;&gt;{\omega}&lt;/script&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Trigonometric functions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sine: &lt;script type=&quot;math/tex&quot;&gt;{\sin\theta}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{\sin(-\theta)=-\sin(\theta)}&lt;/script&gt;,&lt;/li&gt;
+  &lt;li&gt;Cosine: &lt;script type=&quot;math/tex&quot;&gt;{\cos\theta}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{\cos(-\theta)=\cos(\theta)}&lt;/script&gt;,&lt;/li&gt;
+  &lt;li&gt;Tangent: &lt;script type=&quot;math/tex&quot;&gt;{\tan\theta=\frac{\sin\theta}{\cos\theta}}&lt;/script&gt;,&lt;/li&gt;
+  &lt;li&gt;Cosecant: &lt;script type=&quot;math/tex&quot;&gt;{\csc\theta=\frac{1}{\sin\theta}}&lt;/script&gt;,&lt;/li&gt;
+  &lt;li&gt;Secant: &lt;script type=&quot;math/tex&quot;&gt;{\sec\theta=\frac{1}{\cos\theta}}&lt;/script&gt;,&lt;/li&gt;
+  &lt;li&gt;Cotangent: &lt;script type=&quot;math/tex&quot;&gt;{\cot\theta=\frac{\cos\theta}{\sin\theta}}&lt;/script&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;power-logs-exponentials-complex-numbers&quot;&gt;1.2. Power logs, exponentials, complex numbers&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Definition 1 (Logarithms)&lt;/strong&gt; A chain of &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; numbers &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt; multiplied together is &lt;script type=&quot;math/tex&quot;&gt;{g\times g\times\ldots\times g=g^{n}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; is the “log to the base &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;” of &lt;script type=&quot;math/tex&quot;&gt;{g^{n}}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{n=\log_{n}(g^{n})}&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Definition 2 (Imaginary Unit)&lt;/strong&gt; &lt;script type=&quot;math/tex&quot;&gt;{i=\sqrt{-1}}&lt;/script&gt;, so &lt;script type=&quot;math/tex&quot;&gt;{i^{2}=-1}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{(-i)^{2}=-1}&lt;/script&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Definition 3 (Complex Numbers)&lt;/strong&gt; A number that can be written&lt;/p&gt;
+
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;g=ai+b&lt;/script&gt;
+
+  &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; are both real numbers, is called complex number. &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; is called the “real part” of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{a=\text{Re}(g)}&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; is called the “imaginary part” of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{b=\text{Im}(g)}&lt;/script&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Definition 4 (Complex conjugate and modulus)&lt;/strong&gt; The “complex conjugate” has the sign of the imaginary part reversed. And is indicated by a superscript “*”&lt;/p&gt;
+
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;g^{*}=-ai+b&lt;/script&gt;
+
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Modulus squared of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: $$ {&lt;/td&gt;
+        &lt;td&gt;g&lt;/td&gt;
+        &lt;td&gt;^{2}=g^{&lt;em&gt;}g=gg^{&lt;/em&gt;}}&lt;script type=&quot;math/tex&quot;&gt;. The positive square root of this is called the &quot;modulus&quot; of&lt;/script&gt; {g}$$&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;|g|=+\sqrt{|g|^{2}}&lt;/script&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Theorem 5 (Euler’s formula)&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\exp(i\theta)=\cos\theta+i\sin\theta&lt;/script&gt;
+
+  &lt;p&gt;Note that&lt;/p&gt;
+
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;[\exp(i\theta)]^{*}=\exp(-i\theta)&lt;/script&gt;
+
+  &lt;p&gt;Also&lt;/p&gt;
+
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\exp(i\theta)\exp(-i\theta)=exp(i\theta-i\theta)=1&lt;/script&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For any complex number &lt;script type=&quot;math/tex&quot;&gt;{g=a+ib}&lt;/script&gt;, we can write&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g=|g|\frac{a+ib}{|g|}=|g|(\cos\theta+i\sin\theta)=|g|exp(i\theta)&lt;/script&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt;th roots of unity&lt;/em&gt;: Note that the number &lt;script type=&quot;math/tex&quot;&gt;{\exp(2\pi i/n)}&lt;/script&gt; when raised to the power is 1 (unity)&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left[\exp\left(\frac{2\pi i}{n}\right)^{n}\right]=\exp\left(\frac{2\pi i}{n}\times n\right)=\exp(2\pi i)=1&lt;/script&gt;
+
+&lt;h4 id=&quot;coordinates-and-vectors&quot;&gt;1.3. Coordinates and vectors&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;Right-handed axes&lt;/em&gt;: using your right hand, &lt;em&gt;Thumb&lt;/em&gt;: &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt;, &lt;em&gt;Index (“first”) finger&lt;/em&gt;: &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt;, &lt;em&gt;middle finger&lt;/em&gt;: &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt;. No matter how you now rotate your whole hand, the axes remain right-handed.&lt;/p&gt;
+
+&lt;p&gt;Dot product among vectors gives a scalar result, cross product gives vector result.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Definition 6 (Dot product)&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\cdot\vec{b}=|\vec{a}||\vec{b}|\cos\theta&lt;/script&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Definition 7 (Cross product)&lt;/strong&gt; For two vectors:&lt;/p&gt;
+
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}=a_{x}\vec{i}+a_{y}\vec{j}+a_{z}\vec{k}&lt;/script&gt;
+
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{b}=b_{x}\vec{i}+b_{y}\vec{j}+b_{z}\vec{k}&lt;/script&gt;
+
+  &lt;p&gt;the vector cross product is&lt;/p&gt;
+
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\times\vec{b}=\vec{n}|\vec{a}||\vec{b}|\sin\theta&lt;/script&gt;
+
+  &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;{\vec{n}}&lt;/script&gt; is a unit vector with a direction given by the right hand screw rule.&lt;/p&gt;
+
+  &lt;p&gt;Note that&lt;/p&gt;
+
+  &lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\times\vec{b}=-\vec{b}\times\vec{a}&lt;/script&gt;
+
+  &lt;p&gt;A equivalent algebraic formula for the vector cross product is
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\vec{a}\times\vec{b}=\left|\begin{array}{ccc}\vec{i} &amp; \vec{j} &amp; \vec{k} \\ a_{x} &amp; a_{y} &amp; a_{z} \\ b_{x} &amp; b_{y} &amp; b_{z}\end{array}\right| %]]&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;differential-calculus&quot;&gt;1.4. Differential calculus&lt;/h4&gt;
+
+&lt;p&gt;The derivative at some specific point &lt;script type=&quot;math/tex&quot;&gt;{x_{1}}&lt;/script&gt; can be written&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^{&#39;}(x_{1})\equiv\left.\frac{dy}{dx}\right|_{x_{1}}&lt;/script&gt;
+
+&lt;p&gt;The second derivative is the derivative of the first derivative&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^{&#39;&#39;}(x)\equiv\frac{d^{2}y}{dx^{2}}\equiv\frac{d}{dx}\frac{dy}{dx}&lt;/script&gt;
+
+&lt;p&gt;The second derivative can be thought as the “curvature” of a function.&lt;/p&gt;
+
+&lt;p&gt;For two function &lt;script type=&quot;math/tex&quot;&gt;{u(x)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{v(x)}&lt;/script&gt;, the derivative of the sum is the sum of the derivatives.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d}{dx}[u(x)+v(x)]=\frac{du}{dx}+\frac{dv}{dx}&lt;/script&gt;
+
+&lt;p&gt;For a function &lt;script type=&quot;math/tex&quot;&gt;{u(x)}&lt;/script&gt;, the derivative of a constant &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; times a function is &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; times the derivative.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d}{dx}[au]=a\frac{du}{dx}&lt;/script&gt;
+
+&lt;p&gt;An operation or function &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; is linear if&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x+z)=f(y)+f(z)&lt;/script&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(ax)=af(x)&lt;/script&gt;
+
+&lt;p&gt;For two functions &lt;script type=&quot;math/tex&quot;&gt;{u(x)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{v(x)}&lt;/script&gt;, the derivative of the product is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d}{dx}(uv)=u\frac{dv}{dx}+v\frac{du}{dx}&lt;/script&gt;
+
+&lt;p&gt;For two functions &lt;script type=&quot;math/tex&quot;&gt;{u(x)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{v(x)}&lt;/script&gt;, the derivative of the ratio or quotient is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d}{dx}\left(\frac{u}{v}\right)=\frac{v\frac{du}{dx}-u\frac{dv}{dx}}{v^{2}}&lt;/script&gt;
+
+&lt;p&gt;&lt;em&gt;Chain rule&lt;/em&gt;: for two functions &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{g(x)}&lt;/script&gt;, the derivative of the “function of a function” can be split into a product&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d}{dx}f(g(x))=\left(\frac{df}{dg}\right)\times\left(\frac{dg}{dx}\right)&lt;/script&gt;
+
+&lt;h4 id=&quot;partial-differentiation&quot;&gt;1.5. Partial differentiation&lt;/h4&gt;
+
+&lt;p&gt;Suppose we have a function &lt;script type=&quot;math/tex&quot;&gt;{f(x,y)}&lt;/script&gt; of two variables. Then we have the gradient of &lt;script type=&quot;math/tex&quot;&gt;{f}&lt;/script&gt; as a function of &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; with &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; held constant, which we write&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial f}{\partial x}\right|_{y}, \text{ or }\frac{\partial f}{\partial x}&lt;/script&gt;
+
+&lt;p&gt;Second partial derivatives is a measure of the curvature of the function in the &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; direction.&lt;/p&gt;
+
+&lt;p&gt;Cross derivative&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}f}{\partial x\partial y}\equiv\left.\frac{\partial}{\partial x}\right|_{y}\left.\frac{\partial f }{\partial y}\right|_{x}&lt;/script&gt;
+
+&lt;p&gt;is a measure of how “warped” a surface is.&lt;/p&gt;
+
+&lt;p&gt;Differential or Exact Differential&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;df=\left.\frac{\partial f}{\partial x}\right|_{y}dx+\left.\frac{\partial f}{\partial y}\right|_{x}dy&lt;/script&gt;
+
+&lt;p&gt;Total derivative&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{df}{dt}=\left.\frac{\partial f}{\partial x}\right|_{y}\left(\frac{dx}{dt}\right)+\left.\frac{\partial f}{\partial y}\right|_{x}\left(\frac{dy}{dt}\right)&lt;/script&gt;
+
+&lt;h4 id=&quot;ordinary-and-partial-differential-equations&quot;&gt;1.6. Ordinary and partial differential equations&lt;/h4&gt;
+
+&lt;p&gt;A differential equation involves derivatives of some function. It is easy to verify solutions, but it can be harder to find them.&lt;/p&gt;
+
+&lt;p&gt;“First order” differential equation has no derivatives higher than first order. The solution with undetermined constant is called “general solution”. The constants are determined by boundary condition.&lt;/p&gt;
+
+&lt;p&gt;Boundary conditions that specify the value of a function at some position or “boundary” are called “Dirichlet” boundary conditions. Boundary conditions that specify the derivatives or slope of a function at some position or “boundary” are called “Neumann” boundary condition.&lt;/p&gt;
+
+&lt;p&gt;Imaginary first derivative&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{dy}{dx}=iby&lt;/script&gt;
+
+&lt;p&gt;with &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; real has the general solution&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y=A\exp(ibx)\equiv A(\cos(bx)+i\sin(bx))&lt;/script&gt;
+
+&lt;p&gt;Note that neither &lt;script type=&quot;math/tex&quot;&gt;{\cos(bx)}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\sin(bx)}&lt;/script&gt; is a solution of this equation.&lt;/p&gt;
+
+&lt;p&gt;A second-order differential equations contains no derivatives higher than second order. Since derivatives with respect to time arises in many situations, there is a shorthand notation using dots above the variable being differentiated with respect to time with the number of dots indicating the order of differentiating, e.g.,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\dot{a}\equiv\frac{da}{dt}, \text{ and } \ddot{a}\equiv\frac{d^{2}a}{dt^{2}}&lt;/script&gt;
+
+&lt;p&gt;Classical one-dimensional scalar wave equation:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}\phi(z,t)}{\partial z^{2}}-\frac{1}{c^{2}}\frac{\partial^{2}\phi(z,t)}{\partial t^{2}}=0&lt;/script&gt;
+
+&lt;p&gt;relates how strongly curved a function &lt;script type=&quot;math/tex&quot;&gt;{\phi}&lt;/script&gt; is (from the second spatial derivative) to the second time (or temporal) derivate. For this function, any function of the form &lt;script type=&quot;math/tex&quot;&gt;{f(z-ct)}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{g(z+ct)}&lt;/script&gt; are solutions.&lt;/p&gt;
+
+&lt;p&gt;Monochromatic waves are oscillating at one specific (angular) frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega}&lt;/script&gt;, e.g,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;T(t)=\exp(i\omega t), \exp(-i\omega t), \cos(\omega t), \sin(\omega t)&lt;/script&gt;
+
+&lt;p&gt;or any combination of these, then writing &lt;script type=&quot;math/tex&quot;&gt;{\phi(z,t)\equiv Z(z)T(t)}&lt;/script&gt;, we have&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}\phi}{\partial t^{2}}=-\omega^{2}\phi&lt;/script&gt;
+
+&lt;p&gt;Leaving a wave equation for the spatial part, then&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d^{2} Z(z)}{dz^{2}}+k^{2}Z(z)=0, \text{ where } k^{2}=\frac{\omega^{2}}{c^{2}}&lt;/script&gt;
+
+&lt;p&gt;The Laplacian operator can be defined for ordinary Cartesian coordinates&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\equiv\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}&lt;/script&gt;
+
+&lt;p&gt;A convenient way to say it is “del squared”. Sometimes it is written &lt;script type=&quot;math/tex&quot;&gt;{\Delta}&lt;/script&gt; instead of &lt;script type=&quot;math/tex&quot;&gt;{\nabla^{2}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;The gradient of a function &lt;script type=&quot;math/tex&quot;&gt;{f(x,y,z)}&lt;/script&gt; is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla f\equiv\text{grad }f=\vec{i}\frac{\partial f}{\partial x}+\vec{j}\frac{\partial f}{\partial y}+\vec{k}\frac{\partial f}{\partial z}&lt;/script&gt;
+
+&lt;h4 id=&quot;matrices&quot;&gt;1.7. Matrices&lt;/h4&gt;
+
+&lt;p&gt;The leading diagonal of a matrix is the diagonal from top left to bottom right.&lt;/p&gt;
+
+&lt;p&gt;An important manipulation from matrices and vector is the transpose denoted by a superscript “&lt;script type=&quot;math/tex&quot;&gt;{T}&lt;/script&gt;”, a reflection about a diagonal line from top to bottom right for a matrix.&lt;/p&gt;
+
+&lt;p&gt;Another common manipulation is the “&lt;em&gt;Hermitian adjoint&lt;/em&gt;”, “&lt;em&gt;Hermitian transpose&lt;/em&gt;”, or “conjugate transpose”, denoted by a superscript “&lt;script type=&quot;math/tex&quot;&gt;{\dagger}&lt;/script&gt;”, a reflection about a diagonal line from top left to bottom right for a matrix and taking the complex conjugate of all the elements.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{D}^{\dagger})_{mn}=\hat{D}^{*}_{nm}&lt;/script&gt;
+
+&lt;p&gt;A matrix is said to be &lt;em&gt;Hermitian&lt;/em&gt; if it is equal to its own Hermitian adjoint:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{B}^{\dagger}=\hat{B}&lt;/script&gt;
+
+&lt;p&gt;In “inner” product of a row and a column vector collapses two vectors to a number, analogous to geometrical vector dot product. An “outer product” of a column and a row vector generates a square matrix.&lt;/p&gt;
+
+&lt;p&gt;Hermitian adjoint of a product is the reversed product of the Hermitian adjoints&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\hat{A}\hat{B})^{\dagger}=\hat{B}^{\dagger}\hat{A}^{\dagger}&lt;/script&gt;
+
+&lt;p&gt;For a matrix, if it has an inverse &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}^{-1}}&lt;/script&gt;, it has the property &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}^{-1}\hat{A}=\hat{I}}&lt;/script&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;linear-algebra-matrices-and-eigen-equations&quot;&gt;1.8. Linear algebra, matrices and eigen equations&lt;/h4&gt;
+
+&lt;p&gt;The determinant of a matrix &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; is written in two notations&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\det(\hat{A})=\left|\begin{array}{cccc} A_{11} &amp; A_{12} &amp; \cdots &amp; A_{1N} \\ A_{21} &amp; A_{22} &amp; \cdots &amp; A_{2N} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ A_{N1} &amp; A_{N2} &amp; \cdots &amp; A_{NN}\end{array}\right| %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;A equation of the from&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{A}d=\lambda d&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{d}&lt;/script&gt; is a vector, &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt; is a number, and &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; is a square matrix is called an eigenequation with eigenvalue &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt; and eigenvector &lt;script type=&quot;math/tex&quot;&gt;{d}&lt;/script&gt;. If there are solutions, they may only exist for specific values of &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;If &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}=\hat{A}-\lambda\hat{I}}&lt;/script&gt; have a inverse, then there is no non-zero solution &lt;script type=&quot;math/tex&quot;&gt;{d}&lt;/script&gt;. Otherwise, there is non-zero solution.&lt;/p&gt;
+
+&lt;h3 id=&quot;introduction-to-quantum-mechanics&quot;&gt;2. Introduction to Quantum Mechanics&lt;/h3&gt;
+
+&lt;h4 id=&quot;planks-proposal-december-14th-1900&quot;&gt;2.1. Plank’s Proposal (December 14th, 1900)&lt;/h4&gt;
+
+&lt;p&gt;Light is emitted in quanta of energy&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;E=h\nu&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\nu}&lt;/script&gt; (Greek letter “nu”) is the light’s frequency in Hz (Hertz) and &lt;script type=&quot;math/tex&quot;&gt;{h}&lt;/script&gt; is Plank’s constant&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h=6.62606957\times 10^{-34}J\cdot s&lt;/script&gt;
+
+&lt;h4 id=&quot;einsteins-proposal-1905&quot;&gt;2.2. Einstein’s Proposal (1905)&lt;/h4&gt;
+
+&lt;p&gt;Light is actually made up out of particles: photons, of energy &lt;script type=&quot;math/tex&quot;&gt;{E=h\nu}&lt;/script&gt;. The kinetic energy of the emitted electrons is the energy left over after the electron has been “lifted” over the work function barrier.&lt;/p&gt;
+
+&lt;h4 id=&quot;bohr-model-of-the-hydrogen-atom&quot;&gt;2.3. Bohr model of the hydrogen atom&lt;/h4&gt;
+
+&lt;p&gt;A small negatively charged electron orbits small positively charged core (the proton) but with electrostatic attraction. Key assumption (Neils Bohr, 1913) is angular momentum is “quantized” in units of Plank’s constant, &lt;script type=&quot;math/tex&quot;&gt;{h}&lt;/script&gt; over &lt;script type=&quot;math/tex&quot;&gt;{2\pi}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hbar\equiv\frac{h}{2\pi}&lt;/script&gt;
+
+&lt;h4 id=&quot;de-broglie-hypothesis&quot;&gt;2.4. de Broglie hypothesis&lt;/h4&gt;
+
+&lt;p&gt;A particle with mass also behaves as a wave with wavelength&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\lambda=\frac{h}{p}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{p}&lt;/script&gt; is the particle’s momentum.&lt;/p&gt;
+
+&lt;h4 id=&quot;quantum-mechanics-formation&quot;&gt;2.5. Quantum mechanics formation&lt;/h4&gt;
+
+&lt;p&gt;Werner Heisenberg (1925) proposed matrix formulation of quantum mechanics.&lt;/p&gt;
+
+&lt;p&gt;Erwin Schrodinger (1926) proposed wave equation.&lt;/p&gt;
+
+&lt;p&gt;More key contributions by Max Born, Pascual Jordan, Paul Dirac, John von Neumann …&lt;/p&gt;
+
+&lt;h3 id=&quot;classical-mechanics-oscillations-and-waves&quot;&gt;3. Classical Mechanics, Oscillations and Waves&lt;/h3&gt;
+
+&lt;h4 id=&quot;elementary-classical-mechanics&quot;&gt;3.1. Elementary classical mechanics&lt;/h4&gt;
+
+&lt;p&gt;For a particle of mass &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; which is a vector because it has direction is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{p}=m\vec{v}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\vec{v}}&lt;/script&gt; is the (vector) velocity.&lt;/p&gt;
+
+&lt;p&gt;The kinetic energy is the energy associated with motion is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;K.E.=\frac{p^{2}}{2m}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{p^2=\vec{p}\cdot\vec{p}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Potential energy is defined as energy due to position. It is usually denoted by &lt;script type=&quot;math/tex&quot;&gt;{V}&lt;/script&gt; in quantum mechanics. It can be written as &lt;script type=&quot;math/tex&quot;&gt;{V(\vec{r})}&lt;/script&gt;. We can talk about potential energy if the energy only depends on where we are, not how we got there. Classical “fields” with this property are called “conservative” or “irrotational” fields.&lt;/p&gt;
+
+&lt;p&gt;The total energy can be the sum of potential energy and kinetic energies. When this total energy is written as a function of position and momentum, it can be called the (classical) “Hamiltonian”. For a classical particle of mass &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; in a conservative potential &lt;script type=&quot;math/tex&quot;&gt;{V(\vec{r})}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;H=\frac{p^{2}}{2m}+V(\vec{r})&lt;/script&gt;
+
+&lt;p&gt;Newton’s second law relates force and acceleration&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{F}=m\vec{a}&lt;/script&gt;
+
+&lt;p&gt;Equivalently,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{F}=\frac{d\vec{p}}{dt}&lt;/script&gt;
+
+&lt;p&gt;The relation between force and potential is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F_{x}=-\frac{dV}{dx}&lt;/script&gt;
+
+&lt;p&gt;We can generalize the relation between force and potential to three dimensions with force as a vector by using the gradient operator&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{F}=-\nabla V=-\left[\frac{\partial V}{\partial x}\vec{i}+\frac{\partial V}{\partial y}\vec{j}+\frac{\partial V}{\partial z}\vec{k}\right]&lt;/script&gt;
+
+&lt;h4 id=&quot;oscillations&quot;&gt;3.2. Oscillations&lt;/h4&gt;
+
+&lt;p&gt;A simple spring will have a restoring force &lt;script type=&quot;math/tex&quot;&gt;{F}&lt;/script&gt; acting on the mass &lt;script type=&quot;math/tex&quot;&gt;{M}&lt;/script&gt; proportional to the amount &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; by which it is stretched. For some “spring constant” &lt;script type=&quot;math/tex&quot;&gt;{K}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F=-Ky&lt;/script&gt;
+
+&lt;p&gt;The minus sign is because this is restoring. This gives a “simple harmonic oscillator”.&lt;/p&gt;
+
+&lt;p&gt;From Newton’s second law&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F=Ma=M\frac{d^{2}y}{dt^{2}}=-Ky&lt;/script&gt;
+
+&lt;p&gt;i.e.,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d^{2}y}{dt^{2}}=-\frac{K}{M}y=-\omega^{2}&lt;/script&gt;
+
+&lt;p&gt;where we define &lt;script type=&quot;math/tex&quot;&gt;{\omega=K/M}&lt;/script&gt;. We have oscillatory solutions of angular frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega=\sqrt{K/M}}&lt;/script&gt;. e.g. &lt;script type=&quot;math/tex&quot;&gt;{y\propto\sin\omega t}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;A physical system described by an equation like&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d^{2}y}{dt^{2}}=-\omega^{2}y&lt;/script&gt;
+
+&lt;p&gt;is called a &lt;em&gt;simple harmonic oscillator&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-classical-wave-equation&quot;&gt;3.3. The classical wave equation&lt;/h4&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\displaystyle  \frac{\partial^{2} y}{\partial z^{2}}-\frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}}=0&lt;/script&gt;
+
+&lt;p&gt;where velocity &lt;script type=&quot;math/tex&quot;&gt;{v=\sqrt{T/\rho}}&lt;/script&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 03 Oct 2013 00:00:00 +0800</pubDate>
+        <link>http://dgyblog.com/oldtimes/2013/10/03/quantum-for-scieng-1/</link>
+        <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/10/03/quantum-for-scieng-1/</guid>
+      </item>
+    
+      <item>
         <title>《梦》 序章</title>
         <description>&lt;p&gt;我总是梦见自己在做梦。梦中的自己能十分清醒的认识到自己在做梦。甚至会利用这一点。肆无忌惮的闯红灯而不担心自己会被撞死拉，满口乱喷脏话而不担心自毁形象拉，见到心仪的女生就上前搭话而丝毫不再畏缩拉之类的。梦中的自己保持了现实自己的意识却没有了那么多规矩与限制，因而活的潇潇洒洒。因此比之现实，我更喜欢做梦。我喜欢在梦中思考人生的种种因果循环。而我的职业恰恰就是梦想家。能从事一项自己喜欢的职业，无疑是最幸福的。&lt;/p&gt;
 
@@ -787,194 +1195,6 @@
         <pubDate>Mon, 21 Jan 2013 00:00:00 +0800</pubDate>
         <link>http://dgyblog.com/oldtimes/2013/01/21/tian-ming-1/</link>
         <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/01/21/tian-ming-1/</guid>
-      </item>
-    
-      <item>
-        <title>我从不写总结，这次也不算。</title>
-        <description>&lt;p&gt;圣诞加新年，两个节日的假期在德国这边连着一起放了。对于学生来说这个假期更是格外的长，从十二月二十二号一直放到一月七号。这么长的时间足够我的刚来德国的博士生室友和他一票同样刚来德国的博士生同学一起去玩一趟欧洲十几日游，也足够我的同学去中餐馆连打十几个全天的工净挣400+的欧元还顺带每天三餐，甚至足够我一个前一段情场失利的学长回一趟国去用故乡的温情来抚慰他严重受伤的内心。对德国人来说这个长假期是理所应当的，就像过年之于中国人一样，他们不会把这看成是一个例行公假，而会看成是快乐幸福的节日。但是对我们留学生来说，或者应该说对我来说，这就是个假期罢了。是个我用来调整身心，补习知识的过渡时段。&lt;/p&gt;
-
-&lt;p&gt;今年这个圣诞假我确实期待已久了———从这学期开学后没多久我就开始期待这个相对较长的假期了。临近放假的那几个星期期待之心尤为强烈。往年我是不怎么对放假有想法的，一般是无所谓的心态，但是今年确实会觉得有这么个假期在学期当中真是太幸福了。原因是这学期事情突然变得多了起来，当然这也是正常的。我在大背景下随着时间很自然的接触到该接触的。这么说可能很含糊，但我也不知道怎么说清这种感觉，或者说我不想说清，因为不是那么一两句就能概括的。结果就是这学期确实忙起来了。于是各种事情完不成，照顾到这块那块就落下了，好不容易赶齐那块这块又欠了一堆债。于是开始寄希望于这个假期。想着十几天的长假怎么也能补全之前落下的东西了，而且应该还会有富余时间来安排和准备好假期之后的学期生活。于是就在期待中迎来了这个假期。假期的开头和以往一切的假期开头都一样，很完美的完成每天的计划，心情大好的放松了一把。然后麻。。。和以往一切的假期发展也都一样，不知不觉就浑浑噩噩的开始了黑白颠倒的颓废生活，计划完成个一半就算奇迹。虽然这样了，但也是在我预料之内的。这么多年了我当然知道自己是个什么样的人。但是这么多年了，我肯定也要变一些吧。下面我就写写我这个假期的变化吧。&lt;/p&gt;
-
-&lt;p&gt;先跳出一下情景。先让我简单说说我正在写这篇文章这件事。&lt;/p&gt;
-
-&lt;p&gt;是的，我正在写这篇文章。上一次写文章已经是大半年前的事了。虽然上一篇文章是个故事还写出了未完待续这样的欠揍语句，但从文章发表日期和我这个人的尿性来看都很明了“待续”不是个很靠谱的事。大半年没有写更新也很证明这一点，而且我也可以现在很郑重的说明那个确实不会有后续了，虽然也没人关心。。。。总之就是我很久没写了。我本来也不是个爱写的人，甚至可以说我每次写几乎都是在排斥和轻微的厌恶中进行的，一如我这个人一贯的做事态度。那么这次写呢其实我也想过很多的。圣诞假，世界末日，新年，最近改变，前途迷茫，人生态度等等等等我都有想过应该写一篇来说说事了。实际情况是在这个假期中我也不止一次想打开wlw开始写。但是我可以明确的说，每次的结果都是我在犹豫写不写的时候就不知不觉点开youtube之类的视频网站然后不知不觉开始看莫名其妙的东西去了。于是一次想写的时候也没写，于是假期就在看各种莫名其妙东西的过程中莫名其妙的过去了大半。但是现在我在写，而且看目前这个状况肯定是会写完上传的。那这次是因为什么写的呢？答案是没有原因。我在没有想法没有计划刚看完一个莫名其妙的视频正准备睡觉的时候大脑突然产生一个写篇文章的念头！于是我就点开软件开写了。而且写的还算顺利，不过由于想到啥写啥写的乱七八糟的。但我以往的文章不也是一样么。开始想的再好写起来也不知不觉就走向想到啥写啥的乱七八糟了，一如我的人生态度。这句话是认真的。&lt;/p&gt;
-
-&lt;p&gt;那么接着说假期的事。我之前说了，这次的假期我是期待已久的。我希望可以在这个假期中把之前落下的东西补全，并且让自己进入一个稳定的生活学习节奏中，而不是像以往的生活一样都是为了赶各种事而疲于奔波。当然了，还有一个计划就是假期永远不变的那些补全计划。这个补全计划主要是指影视动漫游戏之类的东西。这一项计划的实施情况在以往来说也是相比学习计划更能展现出我假期颓废生活的。因为以往的很多假期几乎在这项计划上都是各种搁浅。那你纳闷了，我的假期到底都在干啥呢？又不学习，又不看电影不玩游戏，更不会出去旅游或者做运动，天天黑白颠倒到底干啥呢？答案就是颓废着。这就是我到目前为止的人生。毫无斗志，混吃等死。这种态度注定我干什么都是消极乏力的。然后就是更惨淡的循环。这种内在的东西真的是很深了，说为根深蒂固也不严重。缺乏意志力到起床都起不来的地步，这不是别的问题，说啥身体难受精神困顿都是表象借口，其实还是态度问题。说着说着就说乱了，这个先不细说了，后面谈自己改变时候再说吧。先说说目前为止我这个假期计划的完成情况。说实话，我觉的这个假期虽然整体还是脱离不了懒散杂乱的情况，但是很多事情维持的还是不错的。比如首先说这个做饭吃饭问题，这个假期我的伙食保持的还算挺不错的。当然都是自己打点的啦。除了吃饭，收拾屋子，洗衣服等等也都保持的不错。当然也受益于现在这个住房环境和条件。总之在自己的生活中除了睡觉是硬伤之外都还保持的不错。计划上面么也都有在维持着。尤其我要提到的是这个假期从开始的第一个晚上我就坚持每天一部电影，到目前为止只有一天中断了，可谓完成的非常之好。这是我以往从没干成过的。有人可能觉得一天一部电影有什么可说的，我是觉得对于现在的我来说，每天坚持做一个事情就像治疗厌食症一样，又或者像苏格拉底让他的学生坚持每天甩手一样，是对我心理和态度上的一个锻炼。我已经不知不觉成了厌恶生活的人了，而且是在潜意识里的，而表现出来的情况就是做事极其没有耐心，没有兴趣，也就没有动力和欲望。唉，还是放到后面细说吧。学习方面我做的也是可以的，几乎每天都有在看学习上的东西，而且不看还会不安心，但是更多的可能是受迫于学习上那些我还不会甚至完全对框架结构没有掌握的不安全感，因为我发现我真正看的时候很难像上学期间那样有悟性有感觉，很多时候是一种架空在学科具体内容之上的看。表现出来就是看了就忘，理解不深，不会做题等等。但这也是假期看书的通病，至少对我来说是的。不然我也不会在去年暑假时候预习了那么多结果到这学期开始之后发现没有多大帮助。但是不管怎么说吧，计划上都进展的不错。这已经很了不起了，对我来说。&lt;/p&gt;
-
-&lt;p&gt;然而本质上的东西还是很难改变。至少很难马上在这个假期改变。比如睡眠乱七八糟，比如对正在做的项目态度冷淡。这些问题都是我内心性格上，习惯上，思想上等等的外在体现。可喜的是我发现了一些转机性的东西。一些现在无法改变我但可以从现在开始挽救我的未来的东西。或者说我终于还是要面对一些现实之后必须改变自己了，于是我也试着接受自己必须要改变这一事实，于是转机性的东西就出现了。还是说的比较含糊，但是还是不好一两句说清。接下来我简单说说吧，无外乎又是那些我内心的想法和理念。这次我想说的清楚一点，说给自己听。&lt;/p&gt;
-
-&lt;p&gt;我到底是个什么样的人呢？一般来说用几句简单的话准确描述清楚一个人是很难的，尤其是去描述这个复杂又多变的多元时代下的社会人。而让自己去描述自己就更显得微妙了。有时候可能觉得自己是最了解自己的人，但是当你真正去审视自己的时候，你又会很难用非常客观的视角来看待自己内心最深处的情景。而最为困难的是当你看透自己得出结论之后再去说服自己进行必要性的改变。学会和自己沟通，学会当自己的心灵导师，并且学会控制自己的思维习惯和心理状态或许才是成长的本质。而人的本质，其实是有源可寻的。至少在处于社会层面中的人来看人的社会属性，是可以进行整合规划的。说了很多自以为是的话，说实在点就是我想做出第一个改变，这个改变是我从现在开始要试着去接受自己的社会属性。这意味着我以后的思考倾向和心理状态都要以自己处于社会为基准来进行改变。不再纠结什么世界意义、存在目的等等的“虚幻”玩意。自己不是没目标吗，那就先给自己一个：认真生活下去。&lt;/p&gt;
-
-&lt;p&gt;人其实很容易被自己已成的各种观念所禁锢。无论是大的世界观人生观也好，或是小的事情诸如回家必须先洗手不洗就纠结的啥也干不了也好，一旦成型一旦被自己接受就很难再去改变，尤其是自己迫使自己改变。潜意识无时无刻不在控制着生活的每一个细节性倾向，于是便控制着整个生活的方向。所以初中开始老师就总灌输一个类似性格决定命运的说法。而我，就很早的形成了一套自己的思想体系。多年以来我一直以为自己的思想体系是完备的自成一套的。多年以来我一直越发的不能接受任何其他思想，但其实同时来说是能够接受任何思想的只不过是能够报以不支持也不批判的中立态度去无所谓它而已。但我已经不知不觉变成了一个对什么思想都无所谓都能照着它的理论去理解它但同时又不觉得它有任何可值得我借鉴的。之后发展成为我对任何我所觉得表象的东西一概持不关心无所谓的态度然后按照自己的观念去寻找我所谓的世界真理。再之后就是对生活无比蛋疼的我希望自己干脆变成一个概念体去实现所谓存在的意义。结果当然就是我成为了现在这个样子。现在的我对什么都无所谓，只觉得数学才是世界的本质，只想花一辈子把数学搞搞清楚。至于其他么，什么大学学业，毕业工作，娶妻生子，奢糜行乞全都无所谓！因为这些都太表象了，对于亿万年的宇宙发展来说都太没有意义了。整个人生无非就是一个生死关系而已，所以说那么多还不都是说给人听的？所以诸如什么历史啊政治啊社会啊甚至是物理化学都是无所谓的。那我为什么就还对数学报以希望呢？我之前有过很多理由，现在呢，我必须说，其实我不过是骗自己罢了。&lt;/p&gt;
-
-&lt;p&gt;说真的写上面一段的过程中我真的差点又把自己绕回去那个对什么都无所谓的状态。这一段我们换个角度来说说我自己。我到底是怎么变成那个样子的呢？我现在觉得我其实什么思想也没有。我有的只不过是一个懒惰消极的心理状态罢了。我在成长过程中受到很多因素而变得趋于没有自制力，趋于放纵自我缺乏管制，趋于缺少自省，趋于自以为是，趋于软弱，趋于无所谓。我的不良的心理状态使得我做事乏力，生活混乱。而一旦这种行为养成习惯便根本无法靠当时的我去改变。只能靠突变的环境，但也可能只是改变一时。若要彻底改变，从根清除，看来不是一件容易事。就从事实上来说，我到现在才开始自己意识到这一点。若要彻底改变，还不知要再过几年。其实真正说起来内心这东西说复杂很复杂，难以捉摸，无法察觉。但说简单也很简单，静下心来看待自己，我们都能认识到自己的内心，但是去规划它，去磨合它就是一件很难的事了。这个过程就像走卵石路，高低起伏，时时碰壁。所谓最难战胜的就是自己。但是放下屠刀便能立地成佛。不过现实生活中，情况往往更频乱，更多变。&lt;/p&gt;
-
-&lt;p&gt;我没有认真看过任何心理学的书，也没有认真研究过哲学的资料，没有和拥有大智慧的人交过心，甚至没有真正钻进过一个深刻的数学思想。然而我一直以为自己什么都看透了。我觉得是时候清醒了，是时候做出改变了。我前一段一直有意让我自己人格分出来一部分给一个小女生。现在我觉得我的人格应该再分出来一部分给一个实际的想好好活着的上进的社会人。同时我必须还分出一个特殊的人格来作为自己内心的上帝角色去在关键时刻保持内心的客观性以做出正确的分配和抉择。当然我也会保留自己这十几年来所形成的上述的神仙一样的人格。把自己的人格分配好以应对不同的环境和需求，我想这未尝不是一种对我这样介于善于和不善于内敛之间的人的一个好的生活方式。也许这样也算是对完美的诠释。&lt;/p&gt;
-
-&lt;p&gt;于是内心的问题算是暂时解决了。我需要一段时间来考察这种解决方案的效果。也希望能通过以后的环境来迫使自己改变自己。当然最好的就是两种结合着来，这样我觉得最有希望使我拥有新的自我。但是短时间内环境是不会有太大变化的。我的短期目标就是把本科读完，高效快速保质保量的读完。这其实就够我磨练身心了，就看我自己能不能从现在开始以一个变化过的心态来看待那不变的大学生活。然后嘛，就出来另一个问题了，那就是我的下一步，我的未来的走向。这个学期以来由于接触到很多新的事，也开始考虑本科毕业的走向问题了。而这个假期中和一个人的谈话也让我又一次认真思考了这个可能影响我以后很多的问题。下面我就简单谈谈这个事。&lt;/p&gt;
-
-&lt;p&gt;我记得小学快毕业时候班主任曾和我谈过去哪上初中的问题。当时的我是怎么想的已经无法回忆了，但我记得老师是劝我去市里面比较好的学校而非默默的按片分配（按你户口所在地分配一个最近的学校）。然后当时的一中也在招第一批少年班，我记得我还去试着看了看情况。然而最后的结果是我花钱进了一所比较好的学校。具体那段经历我不是不记得，只是还是不想细说了，说来也没多大意义。我提起这段就是想说一个事，就是国内的教育环境。家长为了让孩子在这个竟争越来越激烈的社会上占有更好的竞争力早早的开始给孩子安排各种增强他综合能力的求学道路。社会也普遍认可好学历才有好未来这一观念。加上中国人口这个谁都懂的问题。孩子的学习成了最最首要的事。现在花钱找关系上个“好的”幼儿园都不再新鲜。更别提往后的小学，初中，高中这些一步步离高考越来越近的等级。至于高考那也是全国每年一次的大事了。总之说了这么还是要回到我个人的情况。我个人在学习成绩方面的成长可以用一个词来概括，那就是每况愈下。小学就显得很聪明，初中还算前列，高中俨然已成为平庸。但是这也很正常，而且我也没想说这个过程的各种缘由结果。我想说的是，虽然我一直在上所谓的好学校，但是我一直不是一个上进的学生。或者说一直是一个不上进的学生。我一直都是对自己很不负责任的，或者说我根本没有意识到自己的状态。或者其实应该说，一如我之前分析自己的结果，我一直都是处于自我洗脑的状态。自己给自己编一套理论，自己把自己培养成一个对生活学习消极怠慢的人，自己把自己的理想奋斗都用所谓人生真理抹杀掉。当然还有一直都扯不清的态度问题，自己的上述内心性格使得自己有一个全然不适合（我不能说绝对的不对）这个社会的人生态度。总之就是在我的初高中时期，也即是在各种观念习惯完整形成的时期，我把自己的前程毁了。丢掉了很多改变自我的机会，放弃了很多奋斗的起点，苟延残喘的混到了高中毕业，平平淡淡的考过了高考。高考前亲人朋友都有问我，你紧张么？我说我不紧张。我平淡的很。为什么呢？因为我根本就没想过自己能考好，根本就没想过自己要上个好大学，根本就没想过自己要为自己的未来打拼，根本就是一如既往的活在我自己的无所谓里。初三临近中考的时候，班主任有一次找我谈话，她说我不知道该怎么评价你，你不像有些学生那样不懂事，你懂很多，你甚至比很多成人还要有思想。但是有思想不能拿高分啊，你很聪明，但更要努力才行。当时的我确实什么都知道。说大道理一套一套的比谁都能扯。后来中考考得很尴尬，再后来说回高考，高考就真是平庸到家了。我给亲戚邻居说了成绩后他们都不相信，说是不是没考好。我说不是，这就是我正常水平。我也不知道情况，但我觉得在很多知道我但不真正了解我的长辈眼里，我一直是个传统意义上的好孩子。但是真正的我已经成了再平凡不过的人了。&lt;/p&gt;
-
-&lt;p&gt;一直给自己灌输消极思想是件很可怕又很常见的事。我一直觉得自己考不了好大学了就真的考不了好大学。我一直觉得自己就这水平了就真的不能再提高。考好了沾沾自喜，考砸了觉得自己就这样了。逐渐就没有了自信，没有了上进心，没有了霸气。什么是霸气？和别人比分数争排名，竞争各种演讲比赛展现自我，傲气凛然，觉得自己狂的不行谁也不服，和其他好学生之间的对话永远充满比拼的火药味。这种霸气在国内屡见不鲜，也很受一般大众的鄙视。大家都觉得你拽什么拽，装什么逼。这些我也不说什么了，这不是重点，这是真正无所谓的东西。我想说的是，我已经失去那些东西了。或者说根本就没有拥有过。穷人的孩子早当家，富人的孩子也不一定是啥也不懂的富二代。但是我不行了。性格上软弱了。一直都是。&lt;/p&gt;
-
-&lt;p&gt;说了这么多都是在说过去。那出国后的我怎么样呢？不是要谈谈我的未来么？不是要谈谈改变么？&lt;/p&gt;
-
-&lt;p&gt;以前我对未来真的没有一点概念。现在也没有。但是人又必须在很多时候做出大大小小的关键性或无关紧要的选择。只要是选择就必然伴随着烦恼。于是人生就是烦恼的。对未来没有规划就意味着面对更多的选择是迷茫的。要是以前的我解决办法绝对是随其自然得过且过。但是现在我要改变。至少我的社会人格需要我活的更好。那就意味着我要看清我的未来，做出一个可行的计划。当然还要为之而努力。于是问题来了，很现实的问题：研究生去哪读？&lt;/p&gt;
-
-&lt;p&gt;以前我不懂，加上迟钝的生活态度，我没想过我要读研。现在应该是铁定要读下去了。甚至读博都已经加在针对读研选择的考虑问题范围内。我以后几十岁的时候回首我的过往，出国绝对是一个影响未来的重大事件。出国后的我尤其是今年的我开始逐渐看清上大学和真正意义上的学习这回事。具体看清他们是怎样的事在这不谈了，也许以后会专门写一篇来总结我的个人感受。这里我想说的是当我处于现在这个大学阶段的时候，我开始考虑读研的走向。目前看来比较实际的问题分歧就是我是选择留在本校继续我这个ISE国际生项目的研究生还是出去闯荡一个德国（其他地方目前看来不实际，比如我很想去的日本）知名学府的研究生。首先我可以摆明的是，单说入学条件，两个都不难。这也是我最近才真正体会到的事：德国的世界知名的好大学入学也不是很难。那有人可能纳闷了，那还有啥好选的，清华北大的研究生和河北大学的研究生都能很轻松的进入，当然选清华北大了！是啊，这么一说确实是很好选，但是进很容易，出来呢？&lt;/p&gt;
-
-&lt;p&gt;以前总听人说国外大学都是宽进严出，不好毕业。实际来这一遭呢，我也不好简单说明这个宽进严出的说法对还是不对。而且我毕竟也没有过国内的大学生活经历，也不好做实质性的对比。但是整体来说，越好的国外大学意味着越难毕业。而德国更是对自己的毕业生严格控制数量。因为人家这里是真正想着培养会学习的人的，或者这只是我自己的说法。不管怎么说吧，我怕难毕业！我当然想去世界知名学府和最优秀的学生在一起听最牛逼的教授讲最深刻的理论知识。我当然想在就业时候拿一个镶着金边的毕业证来体现自己的能力水平。我当然也想让已经认识我的人突然看到我在海外竟然混的这么牛逼。我当然还想借此机会认识更多高水平的人来进入不一样的交际圈。而眼前的机会是如此白给一样的可以轻松抓住。我还犹豫什么呢？&lt;/p&gt;
-
-&lt;p&gt;我还是犹豫了。出来这几年里我确实变得自信了一些，无论是生活能力还是学习水平都有所提高，这些无形中会使人加强自信心。但是我那些个内心的漏洞直到今天才被我彻底认清并希望从此改变。我一向做事不果断，婆婆妈妈，自我挣扎。我分析我这次的犹豫是我内心软弱消极怠慢懒散不负责任的那部分在给自己的虚伪找理由。他们觉得我不够能力，怕进去好学校短时间内毕不了业，怕换一个城市换一个学校适应不了生活和学习，怕跟不上，怕因为经济原因活不下去，然后说出各种荒谬的可能性来打击信心。我觉得除了经济原因是个客观障碍之外，其他那些什么怕毕业怕理解不了课程的都是或者说很大程度上是我内心在给自己找台阶下。人很容易拒绝冒险拒绝拼搏然后给自己找各种台阶下。大事小事都容易，对我这个人更是如此。所以这次我希望抛开客观的经济原因不谈，只是要求自己从主观上不要惧怕畏缩这件事。&lt;/p&gt;
-
-&lt;p&gt;但是话又说回来，客观经济问题确实是个大问题。这也是这两年我开始认真考虑的问题。从某种程度上讲，我的很多性格和内心的缺陷也是和家庭的经济有很大关系的（其实和家庭环境的其他因素也有很多关系，这也是必然的。但是我也不想说了。那会涉及到更多的问题）。李敖曾经说过：“对有钱的、家庭情况很好的孩子，挥金如土的，很豪爽的，这种人他有一个特色：他虽然不晓得天高地厚，可是他们很有信心，他的人生是发亮的、开朗的；因为他觉得他家里有靠山。很多那种苦学成功的人，变得很拘谨，甚至很小气、很萎缩；原因就是说他没有靠山，使他的性格在某种程度的扭曲。”&lt;/p&gt;
-
-&lt;p&gt;我现在留学德国，我不知道其他国家的情况，但是德国的大学其实花销还是很低的。而且福利待遇很多（更多的是对德国人来说）。所以很多德国人是很享受大学生活，因此而故意不毕业的也有不少。但是中国留学生往往是急于毕业的，我们又没有德国那么好的社会保障，当然早毕业早谋生才是首要的。而实际上德国大学阶段的挣钱手段也很多。所以一般来说只要你有能力，只要你肯上进，你的生活一定是可以保障的，你的前途一定是光明的。随便说个例子吧，这也是我假期和一个人谈话得知的一段奋斗史。&lt;/p&gt;
-
-&lt;p&gt;这个人是和我一块从邯郸来德国的女生的现任男朋友。中国人，现在在德国读博士。这次过元旦请我去他们那一块包饺子吃。吃完后聊天中聊到学业上的事，我说我对读研很迷茫。他马上劝我一定要去南德非名校不读。最好是慕尼黑工大，或者卡鲁之类的。然后我说了我的顾忌。然后他说了他的留学经历。他这个人的背景我之前听我那女生同学介绍过。典型的中国式综合好学生。从小学一路高分到高中。喜欢运动又是各种学生会主席参加各种比赛拿下优秀名次。初中开始自己做饭，自己安排自己生活。高考不是非常好考入山大化学系（人就是山东人，山东那地方竞争也激烈）。大学更是叱咤风云。但是那些传奇事迹就不说了，说这么多应该知道他是个什么样的人了。而他给我讲他的留学过程是从大二开始。他大二突然决定要出国读研。于是要开始向那个方向努力。你可能觉得大二就定了应该算很早了吧。其实很多事真的是牵扯很广的。他大二定下来后发现大一已经耽误了不少了。由于大一是刚进大学没有什么想法和安排，所以考试都是随便考得（我也是这样啊。。。）。而申请国外学校是要看大学平均分的，于是他就开始努力的考好后面的科目来提平均分。在国内一本好大学里想毕业虽然仍不是难事，但是想门门考高分就真的很难了。另一个事就是考语言了。为了过语言考试（托福和GRE）每天狂背单词和知识点，真的是把一本词典翻到烂的程度。然后准备工作都做足了临近申请时美国又发生了金融危机（他要申请美国的学校），于是各种奖学金都缩水。如果没有全保的奖学金是很难去那边读高额学费的名牌大学课程的。最后学校告诉他德国这边有项目问他是否有意。虽然他也有了国内大学的保研资格，但他还是选择了德国这个看上去还不错的项目。决定申请后又发现由于之前都是按照美国学校做的准备工作，现在换了德国很多又要重新弄。比如德国这边不认可之前的托福证书还要重新考一个雅思的。再比如更为突兀恐怖的APS审核（德国高校专门针对中国人搞的一个面审制度，主要考察你的专业知识和文凭真实度）。为了通过专业知识的审核，他在短时间内需要把大学所有专业课程的知识内容全部复习一遍，而且要翻译成英文！因为面试官会随机选取一个题目来让你当场用英文作答。他的专业是化学，很多专业名词之前根本不知道英语的表达是什么，这下真是可够准备一通了。硬着头皮最终还是过了。所有资料都通过后总算是定下来要来德国了。这一条出国的路真是打拼出来的。除了这个过程中精神和肉体上的消耗，金钱也投入了不少。各种考试、大学申请、面审都是要交一笔千元以上的费用的。而如果最终全都没中，这些钱也都是有去无回了。来到德国后一切还算顺利，但这意味着另一条奋斗之路的开启。德国读研还是要成绩好才能申请到好的博士职位，没有错！是职位。现在的他就在和我一个州的明斯特大学读博。他很建议我去南德打拼未来。&lt;/p&gt;
-
-&lt;p&gt;那么我到底该怎么打算呢？我也不知道。目前来说一切还都早了点，也许以后看来会觉得现在还没做决定真是耽误事。但我现在确实还需要看看情况。毕竟这个学期和下个学期的发展很关键，也许会给我一些对未来的指向。接下来说说我的学习态度的一些转变吧。尤其是我对工科和理科区别的认识的一些转变。&lt;/p&gt;
-
-&lt;p&gt;小时候有很多电动玩具，这些玩具多半的下场都是被我拆成各种零部件了。从来没有再拼起来过。更别提改造他们了。我的动手能力和想象力仅限于把他们拆到不能再拆，或者干脆一脚踩碎，然后看上两眼就失去兴趣了。现在想想那时总想拆开他们的心态更多的是暴力的涌现而非对其结构原理有多大兴趣。其他活动上的动手能力也是弱到爆，什么剪纸、编绳一概不会，而且极其没有学习的耐性。但是打电子游戏倒是挺能好好玩的，不过现在想想其实那是害了自己。因为那使得自己更多的沉浸在能更快得到快感和发泄的简单活动中，而且对比较现实的物件的拼装和专研越发失去兴趣。其实说到底还是前面说过的那些性格和态度问题。由于家庭原因，相对其他同龄人来说很早的接触了电脑。于是在小学别人还学习打字的时候，我玩了玩Flash，还学了学编程。就是这个时候，我开始表现出了明显的未来的成长道路的趋势，就是还是上面所说过的做事缺乏耐心，缺乏上进心，不肯钻研，三分热度。对于实践的事更是如此。于是小学虽然学了很多东西，比如画画我学了五六年，比如电子琴和吉他都有过短时间的学习，甚至比如纯理论上的数奥也学了三四年，但所有学过的几乎在后来看来都是一事无成，或者说根本就是没入门。当然了，这些的本质原因都是我之前说过的自己的内心就是有极大缺陷的，这种成长没有受到应有的制止，责任谁都有，也不好说到底怪谁，也许人生总在各种偶然中有着必然，很多时候即便你认识到了问题，也很难改变。当然现在我是在努力改变着。&lt;/p&gt;
-
-&lt;p&gt;说了那么多还是回到这段的主题上来，就是我成长中由于对实践失去兴趣，就给自己找了个理由说服了自己为什么不干实践的，这又涉及到我的那一套自我感觉良好的人生理论。我认为人这一生最重要的首先是要明白自己为什么活着、世界为什么存在之类的本质性问题。因为如果你活了一生连这个都没搞明白那就是白活了。而所有实践性的问题的存在意义都是很表层的事。比如汽车生产，技术含量很高，但是在我看来很没用。因为我觉得诸如吃穿住行这类的问题都是人类社会的一个属性，而人类社会的发展目的是什么呢？不得而知。在我看来所有世上的人每天进行的各种财产交换、物质精神消费等等都是没意义的。最有意义的就是所有人都把自己的智慧贡献出来搞数学，思考世界本质，其他的吃饱穿暖满足最基本的生活需要就行，七情六欲也都不要。甚至我觉得最理想的状态就是全部人类都只存在于精神层面，脱离肉体束缚，这样其实就等同于世界是个五行的概念体，它拥有自己的逻辑系统，拥有各种推演法则，然后思考自己的完备性，最终达成一个“完美”的系统……&lt;/p&gt;
-
-&lt;p&gt;说着说着就又没边了。但是我真的是这么想的，也深受其害。当然了，在这里对于这种问题的分析我已经在上面写过了。我觉得这更多的还是自己内心的性格缺陷等等。那么这个思想对我的影响就是我觉得所有和实践有关的问题都是没意义的，至少对我的人生来说是没意义的。而我需要考虑是因为我还活在人类社会中，我为了维持生命还需要遵守人类社会的游戏规则去为自己谋求生计。但在我的认识里这也仅限于维持生计罢了，所以我也不争那么多名利，也就变得不上进，得过且过。说白了还是自己的懒惰心理在为自己找理由说服自己。总之在这样的内心驱动下我越发的从开始去抵触任何实践的东西（其实理论性的也抵触，所以才说明这一切都是内心性格缺陷在做崇）。高中又正式学编程，又不出意外的放弃。给自己的理由是，编程语言这种东西只是个载体，它的算法思想才是我关注的。然后的很长一段时间我都是这么给自己灌输的，甚至有一段我想只接触一下算法思想，完全不想接触语言的细节性应用。直到自己大学课程中出现了C语言才被迫转变的去真正学一门语言。其实也就是课程交啥我学啥，考试考啥我背啥。完全是被真正做程序员的人所不耻的学习行为。同样是由于鄙视应用类的工作，我对任何应用类软件提不起兴趣，当然这也不是这块要说的重点了。&lt;/p&gt;
-
-&lt;p&gt;那么重点是什么呢？重点是我大学专业选的是电子电气工程这一门传统的工科专业的。学之前可能对工科和理科的区别没有任何概念。刚开始学的时候说实话感受也不深。但是最近确实明白一个工科生和一个理科生的本质不同是什么了。说实话以我那种对实践工作不以为然对纯理论工作奉为天命的学习态度，我是很适合学个数学或者理论物理之类的专业的，而且是很不适合学工程类专业的。然而我要是真的是发自内心的想学理论，那我早就成了“好学生”了。因为国内的高中课程全是各种放到国外都秒杀大学生甚至研究生的理论知识，各种竞赛的理论难度更是让很多国外博士生都汗颜的。然而事实证明我只是有个对理论的偏好而已，内心还是负面态度占多。而且智商上（其实我觉得很少有纯粹的高智商，很少。）我也不是学理科的那块料。理科真的那么难学么？我觉得，站在客观角度来说，想要在大学开始学纯理科，真的要看看自己是不是有天分。很多东西其实更多的是靠悟出来的，学是很难学会的。所以理科其实真的很难学，因为它根本就不是靠努力和时间能搞出来的。但是呢，也不尽然，毕竟长期的思想培养和专研思考也能让人产生一个良好的分析心态。至于能力，我也不好多说什么。总之我认为确实需要一些学科天分才能学好纯理论。我有个同学本来和我一块学的工科，大一上完后觉得这个太水了，自己学的没有激情，于是转入物理系开始学理论物理。现在我上大二他重新开始上物理专业的大一。这两天圣诞节假期总是发信息向我诉苦，我说你放假没出去玩玩散散心？他说还玩什么啊，天天憋在家里想问题，一个入门的大一数学知识让他绞尽脑汁白天黑夜的想还是想不通到底什么意思。后来我问了问是什么类型的问题，他说你给我解释解释什么是紧集吧。于是我笑了，这种东西看着玩玩还挺有意思，真成了你的课程内容考试题型的时候，估计只有当事人知道那是怎样一种憋屈和苦闷。其实同样的，对工科也是存在学科天分的（任何科目都有吧）。而我这样常年鄙视动手能力鄙视实践知识的人自然就没有学科天分，甚至是落后于他人很多的。简单的例子就是做实验，很多德国人平常上课笨的要死，一个我们认为极其基础的高中知识在他们眼里可能就是天书，但一旦做实验用到各种仪器连接各种线路的时候他们表现出来的熟练和从容就可以甩我们中国学生好几条街。为什么呢？因为他们从小就玩这个长大的啊！我曾经从德国人手里买过一张二手床，去他家搬得时候床还没卸开，他叫他小儿子（看着挺稚嫩的）拿来一个超专业的工具箱（德国家庭基本都有）三下五除二就把床卸了。可见他们经常捣鼓这些工具。所以我现在缺乏的就是这种实践的能力。虽然我不知道我以后会怎么选择道路，但是目前是要好好培养工科的实践能力。&lt;/p&gt;
-
-&lt;p&gt;学工科和学理科的不同还体现在一个方面，就是对问题的思考角度上。学理科的考虑问题都是概括性很强的和实践（注意不是实际）关联不大的问题。也就是我喜欢的那种。但是工科不一样，工科要解决的问题往往都是实践生产中的很现实的问题。这就总是要求你考虑到经济节约上面的事，或者有关效率的，甚至是产品营销的事。而你的很多设计也要和客户的实际需要连接起来，这就导致你的理念不再是纯粹的学科式的对错那么简单。很多时候对工科来说一个知识点的应用比它的原理要重要一些，尤其是专业课。再有就是你需要培养出一个团队解决工程问题的能力。拿到一个大的项目怎么去分工，怎么统筹各自工作的可拼接性，怎么安排工作计划，怎么计算误差，怎么写好报告等等实际问题都要你作为一个工科生去慢慢体会掌握。而这些对于以前的我都是不屑一顾的。现在显然要做出改变。&lt;/p&gt;
-
-&lt;p&gt;最后再讲个假期生活的事来说明一个问题。快开学的时候同学说要出去吃个饭聚一聚。我去了后发现一个我不太熟悉的面孔。想了想想起来是之前早有耳闻的上一届一个矿大学长。专业和我一样都是电子。前一段一直在外实习，现在实习完了回来准备写毕业论文了。和所有实力强劲的矿大学长一样，他的大学课程都是赶完的。第二学期就把第四学期的课考了，第四学期就把最后一学期的课考了，其他学期也同样是尽可能多的把后面的考掉。那些每学期挂好几门的学生就很奇怪的问人家你怎么能考的那么快？你之前学过么？然后和所有赶课的人一样，回答是不就是考个试么，他考啥你看啥不就行了。了解了一下，他高中上完大二就休学了，因为拿了两个国家竞赛的奖牌就保送了。这是这天去吃饭认识的学长的事迹。还想说一个人是现在跟我做项目的这个学长。他是和我一样走中介过来的。学习异常认真刻苦，每天在家学到两三点，早晨七点起床就去学校听课了。几乎所有的课都去认真听，每次必坐第一排最靠近讲台的位置。特别爱问问题，好几个教授都被问烦了，甚至在学校里躲着他。而且他不仅听自己的课，还听其他他认为有用的课。做事认真细致，希望把每一点都搞懂。有一段时间身体扛不住了，开始吃人参！其他人一般认为他太怪异了，而且说实话他很多问题都是因为他理解能力不够或者说不够有灵性而问出的。在很多人眼里，他这种学习方式就是死读书，缺乏变通。&lt;/p&gt;
-
-&lt;p&gt;说了这么多不知道有多少人能看到这。或者我应该说不知道有多少人看。&lt;/p&gt;
-
-&lt;p&gt;不过反正这些都是写给自己的，而我就是要从此改变，不谈空话，多做实事。&lt;/p&gt;
-
-&lt;p&gt;最后写一下假期每天看的电影吧。来一个一句话评论。（基本按照观看顺序排列）&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;编号&lt;/th&gt;
-      &lt;th&gt;电影中文名&lt;/th&gt;
-      &lt;th&gt;原版名&lt;/th&gt;
-      &lt;th&gt;上映时间&lt;/th&gt;
-      &lt;th&gt;一句话评论&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;寒战&lt;/td&gt;
-      &lt;td&gt;N/A&lt;/td&gt;
-      &lt;td&gt;2012&lt;/td&gt;
-      &lt;td&gt;同学推荐我就看，我真傻！&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;人再囧途之泰囧&lt;/td&gt;
-      &lt;td&gt;N/A&lt;/td&gt;
-      &lt;td&gt;2012&lt;/td&gt;
-      &lt;td&gt;票房越高越说明中国人对贺岁档的需求还停留在十年前。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;3&lt;/td&gt;
-      &lt;td&gt;盗贼同盟&lt;/td&gt;
-      &lt;td&gt;도둑들&lt;/td&gt;
-      &lt;td&gt;2012&lt;/td&gt;
-      &lt;td&gt;好电影自己会说话！&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;蝙蝠侠前传3 黑暗骑士崛起&lt;/td&gt;
-      &lt;td&gt;The Dark Knight Rises&lt;/td&gt;
-      &lt;td&gt;2012&lt;/td&gt;
-      &lt;td&gt;好电影自己会说话！&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;5&lt;/td&gt;
-      &lt;td&gt;百万宝贝&lt;/td&gt;
-      &lt;td&gt;Million Dollar Baby&lt;/td&gt;
-      &lt;td&gt;2004&lt;/td&gt;
-      &lt;td&gt;克林特·伊斯特伍德拍什么都不会让你失望。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;6&lt;/td&gt;
-      &lt;td&gt;帝国的毁灭&lt;/td&gt;
-      &lt;td&gt;The Downfall: Hitler and the End of the Third Reich&lt;/td&gt;
-      &lt;td&gt;2005&lt;/td&gt;
-      &lt;td&gt;我只想问历史上的希特勒真的是说话那个劲儿的么？&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;7&lt;/td&gt;
-      &lt;td&gt;猜火车&lt;/td&gt;
-      &lt;td&gt;Trainspotting&lt;/td&gt;
-      &lt;td&gt;1996&lt;/td&gt;
-      &lt;td&gt;老子就是喜欢这种风格的片子！&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;8&lt;/td&gt;
-      &lt;td&gt;驯龙高手&lt;/td&gt;
-      &lt;td&gt;How to Train Your Dragon&lt;/td&gt;
-      &lt;td&gt;2010&lt;/td&gt;
-      &lt;td&gt;美国人做的动画电影真的不会差。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;9&lt;/td&gt;
-      &lt;td&gt;黄飞鸿之铁鸡斗蜈蚣&lt;/td&gt;
-      &lt;td&gt;N/A&lt;/td&gt;
-      &lt;td&gt;1993&lt;/td&gt;
-      &lt;td&gt;八九十年代的香港电影一去不复返&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;10&lt;/td&gt;
-      &lt;td&gt;毕业生&lt;/td&gt;
-      &lt;td&gt;The Graduate&lt;/td&gt;
-      &lt;td&gt;1967&lt;/td&gt;
-      &lt;td&gt;只看前半段比较好。&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;11&lt;/td&gt;
-      &lt;td&gt;南方公园&lt;/td&gt;
-      &lt;td&gt;South Park: Bigger, Longer &amp;amp; Uncut&lt;/td&gt;
-      &lt;td&gt;1999&lt;/td&gt;
-      &lt;td&gt;This can not be commented in only one fucking sentence!&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;12&lt;/td&gt;
-      &lt;td&gt;东方快车谋杀案&lt;/td&gt;
-      &lt;td&gt;Murder on the Orient Express&lt;/td&gt;
-      &lt;td&gt;1974&lt;/td&gt;
-      &lt;td&gt;以后坚决不再看中译版电影，配音毁了一切！&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;13&lt;/td&gt;
-      &lt;td&gt;不可饶恕&lt;/td&gt;
-      &lt;td&gt;Unforgiven&lt;/td&gt;
-      &lt;td&gt;1992&lt;/td&gt;
-      &lt;td&gt;反正有克林特·伊斯特伍德就怎么都好看！&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;14&lt;/td&gt;
-      &lt;td&gt;无法触碰&lt;/td&gt;
-      &lt;td&gt;Intouchables&lt;/td&gt;
-      &lt;td&gt;2011&lt;/td&gt;
-      &lt;td&gt;看好它拿第85届奥斯卡最佳外语片奖！&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;15&lt;/td&gt;
-      &lt;td&gt;偷自行车的人&lt;/td&gt;
-      &lt;td&gt;Ladri di biciclette&lt;/td&gt;
-      &lt;td&gt;1948&lt;/td&gt;
-      &lt;td&gt;补IMDB的过程中真是让我接触到各种类型的电影&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-        <pubDate>Sun, 06 Jan 2013 00:00:00 +0800</pubDate>
-        <link>http://dgyblog.com/yang/2013/01/06/not-a-summary/</link>
-        <guid isPermaLink="true">http://dgyblog.com/yang/2013/01/06/not-a-summary/</guid>
       </item>
     
   </channel>
