@@ -520,23 +520,15 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;g=ai+b&lt;/script&gt;
 
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; are both real numbers, is called complex number. &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; is called the “real part” of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{a=\text{Re}(g)}&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;{b}&lt;/script&gt; is called the “imaginary part” of &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;{b=\text{Im}(g)}&lt;/script&gt;.&lt;/p&gt;
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt; are both real numbers, is called complex number. &lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt; is called the “real part” of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;a=\text{Re}(g)&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;b&lt;/script&gt; is called the “imaginary part” of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;b=\text{Im}(g)&lt;/script&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition 4 (Complex conjugate and modulus)&lt;/strong&gt; The “complex conjugate” has the sign of the imaginary part reversed. And is indicated by a superscript “&lt;script type=&quot;math/tex&quot;&gt;\star&lt;/script&gt;”&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;g^{\star}=-ai+b&lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Modulus squared of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt;: $$&lt;/td&gt;
-      &lt;td&gt;g&lt;/td&gt;
-      &lt;td&gt;^{2}=g^{\star}g=gg^{\star}&lt;script type=&quot;math/tex&quot;&gt;. The positive square root of this is called the &quot;modulus&quot; of&lt;/script&gt;g$$&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Modulus squared of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;\vert g\vert^{2}=g^{\star}g=gg^{\star}&lt;/script&gt;. The positive square root of this is called the “modulus” of &lt;script type=&quot;math/tex&quot;&gt;g&lt;/script&gt;&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|g|=+\sqrt{|g|^{2}}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert g\vert=+\sqrt{\vert g\vert^{2}}&lt;/script&gt;
 
 &lt;p&gt;&lt;strong&gt;Theorem 5 (Euler’s formula)&lt;/strong&gt;&lt;/p&gt;
 
@@ -552,7 +544,7 @@
 
 &lt;p&gt;For any complex number &lt;script type=&quot;math/tex&quot;&gt;{g=a+ib}&lt;/script&gt;, we can write&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;g=|g|\frac{a+ib}{|g|}=|g|(\cos\theta+i\sin\theta)=|g|exp(i\theta)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g=\vert g\vert\frac{a+ib}{\vert g\vert}=\vert g\vert(\cos\theta+i\sin\theta)=\vert g\vertexp(i\theta)&lt;/script&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt;th roots of unity&lt;/em&gt;: Note that the number &lt;script type=&quot;math/tex&quot;&gt;{\exp(2\pi i/n)}&lt;/script&gt; when raised to the power is 1 (unity)&lt;/p&gt;
 
@@ -566,7 +558,7 @@
 
 &lt;p&gt;&lt;strong&gt;Definition 6 (Dot product)&lt;/strong&gt;&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\cdot\vec{b}=|\vec{a}||\vec{b}|\cos\theta&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\cdot\vec{b}=\vert \vec{a}\vert\vert \vec{b}\vert\cos\theta&lt;/script&gt;
 
 &lt;p&gt;&lt;strong&gt;Definition 7 (Cross product)&lt;/strong&gt; For two vectors:&lt;/p&gt;
 
@@ -576,7 +568,7 @@
 
 &lt;p&gt;the vector cross product is&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\times\vec{b}=\vec{n}|\vec{a}||\vec{b}|\sin\theta&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vec{a}\times\vec{b}=\vec{n}\vert \vec{a}\vert\vert \vec{b}\vert\sin\theta&lt;/script&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;{\vec{n}}&lt;/script&gt; is a unit vector with a direction given by the right hand screw rule.&lt;/p&gt;
 
@@ -586,13 +578,13 @@
 
 &lt;p&gt;A equivalent algebraic formula for the vector cross product is
 &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-\vec{a}\times\vec{b}=\left|\begin{array}{ccc}\vec{i} &amp; \vec{j} &amp; \vec{k} \\ a_{x} &amp; a_{y} &amp; a_{z} \\ b_{x} &amp; b_{y} &amp; b_{z}\end{array}\right| %]]&gt;&lt;/script&gt;&lt;/p&gt;
+\vec{a}\times\vec{b}=\left\vert \begin{array}{ccc}\vec{i} &amp; \vec{j} &amp; \vec{k} \\ a_{x} &amp; a_{y} &amp; a_{z} \\ b_{x} &amp; b_{y} &amp; b_{z}\end{array}\right\vert %]]&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;differential-calculus&quot;&gt;1.4. Differential calculus&lt;/h4&gt;
 
 &lt;p&gt;The derivative at some specific point &lt;script type=&quot;math/tex&quot;&gt;{x_{1}}&lt;/script&gt; can be written&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^{&#39;}(x_{1})\equiv\left.\frac{dy}{dx}\right|_{x_{1}}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^{&#39;}(x_{1})\equiv\left.\frac{dy}{dx}\right\vert _{x_{1}}&lt;/script&gt;
 
 &lt;p&gt;The second derivative is the derivative of the first derivative&lt;/p&gt;
 
@@ -632,23 +624,23 @@
 
 &lt;p&gt;Suppose we have a function &lt;script type=&quot;math/tex&quot;&gt;{f(x,y)}&lt;/script&gt; of two variables. Then we have the gradient of &lt;script type=&quot;math/tex&quot;&gt;{f}&lt;/script&gt; as a function of &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; with &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; held constant, which we write&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial f}{\partial x}\right|_{y}, \text{ or }\frac{\partial f}{\partial x}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left.\frac{\partial f}{\partial x}\right\vert_{y}, \text{ or }\frac{\partial f}{\partial x}&lt;/script&gt;
 
 &lt;p&gt;Second partial derivatives is a measure of the curvature of the function in the &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; direction.&lt;/p&gt;
 
 &lt;p&gt;Cross derivative&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}f}{\partial x\partial y}\equiv\left.\frac{\partial}{\partial x}\right|_{y}\left.\frac{\partial f }{\partial y}\right|_{x}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}f}{\partial x\partial y}\equiv\left.\frac{\partial}{\partial x}\right\vert _{y}\left.\frac{\partial f }{\partial y}\right\vert_{x}&lt;/script&gt;
 
 &lt;p&gt;is a measure of how “warped” a surface is.&lt;/p&gt;
 
 &lt;p&gt;Differential or Exact Differential&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;df=\left.\frac{\partial f}{\partial x}\right|_{y}dx+\left.\frac{\partial f}{\partial y}\right|_{x}dy&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;df=\left.\frac{\partial f}{\partial x}\right\vert _{y}dx+\left.\frac{\partial f}{\partial y}\right\vert_{x}dy&lt;/script&gt;
 
 &lt;p&gt;Total derivative&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{df}{dt}=\left.\frac{\partial f}{\partial x}\right|_{y}\left(\frac{dx}{dt}\right)+\left.\frac{\partial f}{\partial y}\right|_{x}\left(\frac{dy}{dt}\right)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{df}{dt}=\left.\frac{\partial f}{\partial x}\right\vert _{y}\left(\frac{dx}{dt}\right)+\left.\frac{\partial f}{\partial y}\right\vert_{x}\left(\frac{dy}{dt}\right)&lt;/script&gt;
 
 &lt;h4 id=&quot;ordinary-and-partial-differential-equations&quot;&gt;1.6. Ordinary and partial differential equations&lt;/h4&gt;
 
@@ -727,7 +719,7 @@
 &lt;p&gt;The determinant of a matrix &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; is written in two notations&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\det(\hat{A})=\left|\begin{array}{cccc} A_{11} &amp; A_{12} &amp; \cdots &amp; A_{1N} \\ A_{21} &amp; A_{22} &amp; \cdots &amp; A_{2N} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ A_{N1} &amp; A_{N2} &amp; \cdots &amp; A_{NN}\end{array}\right| %]]&gt;&lt;/script&gt;
+\det(\hat{A})=\left\vert \begin{array}{cccc} A_{11} &amp; A_{12} &amp; \cdots &amp; A_{1N} \\ A_{21} &amp; A_{22} &amp; \cdots &amp; A_{2N} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ A_{N1} &amp; A_{N2} &amp; \cdots &amp; A_{NN}\end{array}\right\vert %]]&gt;&lt;/script&gt;
 
 &lt;p&gt;A equation of the from&lt;/p&gt;
 
