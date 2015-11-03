@@ -455,6 +455,347 @@
       </item>
     
       <item>
+        <title>Quantum Mechanics for Scientists and Engineers Notes 3</title>
+        <description>&lt;h3 id=&quot;particles-and-barriers&quot;&gt;1. Particles and Barriers&lt;/h3&gt;
+
+&lt;h4 id=&quot;sets-of-functions&quot;&gt;1.1. Sets of functions&lt;/h4&gt;
+
+&lt;p&gt;Suppose we are interested in the behavior of some function, such as a loudspeaker cone displacement from time 0 to &lt;script type=&quot;math/tex&quot;&gt;{t_{o}}&lt;/script&gt;, presuming it starts and ends at 0 displacement. An appropriate Fourier series would be&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(t)=\sum_{n=1}^{\infty}a_{n}\sin\left(\frac{n\pi t}{t_{o}}\right)&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{a_{n}}&lt;/script&gt; are the amplitudes of those frequency components.&lt;/p&gt;
+
+&lt;p&gt;Similarly, if we had any function &lt;script type=&quot;math/tex&quot;&gt;{f(z)}&lt;/script&gt; over the distance &lt;script type=&quot;math/tex&quot;&gt;{L_{z}}&lt;/script&gt; from &lt;script type=&quot;math/tex&quot;&gt;{z=0}&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;{z=L_{z}}&lt;/script&gt; and that started and ended at 0 height. We could similarly write it as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(z)=\sum_{n=1}^{\infty}a_{n}\sin\left(\frac{n\pi z}{L_{z}}\right)&lt;/script&gt;
+
+&lt;p&gt;for some set of numbers or “amplitudes” &lt;script type=&quot;math/tex&quot;&gt;{a_{n}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;We remember our set of normalized eigenfunctions&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{n}(z)=\sqrt{\frac{2}{L_{z}}}\sin\left(\frac{n\pi z}{L_{z}}\right)&lt;/script&gt;
+
+&lt;p&gt;With some minor change, we could use these instead of sines&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(z)=\sum_{n=1}^{\infty}a_{n}\sin\left(\frac{n\pi z}{L_{z}}\right)=\sum_{n=1}^{\infty}b_{n}\psi_{n}(z)&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{b_{n}=\sqrt{L_{z}/2}a_{n}}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now we can restate the same mathematics in new words&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(z)=\sum_{n=1}^{\infty}b_{n}\psi_{n}(z)&lt;/script&gt;
+
+&lt;p&gt;is now the expansion of &lt;script type=&quot;math/tex&quot;&gt;{f(z)}&lt;/script&gt; in the complete set of (normalized) eigenfunctions &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(z)}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note that, though we have illustrated this by connecting to Fourier series, this will work for other sets of eigenfunctions also.&lt;/p&gt;
+
+&lt;p&gt;A set of function such as the &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(z)}&lt;/script&gt; that can be used in this way to represent a function such as &lt;script type=&quot;math/tex&quot;&gt;{f(z)}&lt;/script&gt; is referred to as a “basis set of functions” or, more simply, a “basis”. The set of “expansion coefficients” (amplitudes) &lt;script type=&quot;math/tex&quot;&gt;{b_{n}}&lt;/script&gt; is then the “representation” of &lt;script type=&quot;math/tex&quot;&gt;{f(z)}&lt;/script&gt; in the basis &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(z)}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;orthogonality-of-functions&quot;&gt;1.2. Orthogonality of functions&lt;/h4&gt;
+
+&lt;p&gt;Two non-zero functions &lt;script type=&quot;math/tex&quot;&gt;{g(z)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{h(z)}&lt;/script&gt; defined from 0 to &lt;script type=&quot;math/tex&quot;&gt;{L_{z}}&lt;/script&gt; are said to be orthogonal if&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{0}^{L_{z}}g^{*}(z)h(z)\,dz=0&lt;/script&gt;
+
+&lt;p&gt;Mutual orthogonality is another common property of the eigenfunctions we will find.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{0}^{L_{z}}\psi_{n}^{*}(z)\psi_{m}(z)\,dz=0 \text{ for } n\neq m&lt;/script&gt;
+
+&lt;p&gt;We can introduce the “Kronecker delta” for our normalized eigenfunctions,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left\{\begin{array}{l} \delta_{nm}=0 \text{ for } n\neq m \\ \delta_{nn}=1 \end{array}\right.&lt;/script&gt;
+
+&lt;p&gt;We can therefore write the orthogonality and the normalization as one condition.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{0}^{L_{z}}\psi_{n}^{*}(z)\psi_{m(z)}\,dz=\delta_{nm}&lt;/script&gt;
+
+&lt;p&gt;A set of functions that is both normalized and mutually orthogonal is “orthonormal”.&lt;/p&gt;
+
+&lt;p&gt;Suppose we want to write the function &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; in terms of a complete set of orthonormal functions &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(x)}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x)=\sum_{n}c_{n}\psi_{n}(x)&lt;/script&gt;
+
+&lt;p&gt;To find the “expansion coefficients” &lt;script type=&quot;math/tex&quot;&gt;{c_{n}}&lt;/script&gt; premultiply &lt;script type=&quot;math/tex&quot;&gt;{\psi_{m}^{*}(x)}&lt;/script&gt; and integrate&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{array}{rcl}  \int\psi_{m}^{*}(x)f(x)\,dx&amp;=&amp;\int\psi_{m}^{*}(x)\left[\sum_{n}c_{n}\psi_{n}(x)\right]\,dx \\ &amp;=&amp;\sum_{n}c_{n}\int\psi_{m}^{*}(x)\psi_{n}(x)\,dx=\sum_{n}c_{n}\delta_{mn} \\ &amp;=&amp;c_{m} \end{array} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;If we have an orthonormal complete set, we can now expand any function in it. Generally, an integral like &lt;script type=&quot;math/tex&quot;&gt;{\int\psi_{m}^{*}(x)f(x)\,dx}&lt;/script&gt; is also called an “overlap integral”.&lt;/p&gt;
+
+&lt;h4 id=&quot;barriers-and-boundary-conditions&quot;&gt;1.3. Barriers and boundary conditions&lt;/h4&gt;
+
+&lt;p&gt;For our Schroedinger equation&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\hbar^{2}}{2m}\frac{d^{2}\psi(z)}{dz^{2}}+V(z)\psi(z)=E\psi(z)&lt;/script&gt;
+
+&lt;p&gt;If we presume that &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{V}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; are finite, then &lt;script type=&quot;math/tex&quot;&gt;{d^{2}\psi/dz^{2}}&lt;/script&gt; must be finite, so &lt;script type=&quot;math/tex&quot;&gt;{d\psi/dz}&lt;/script&gt; &lt;em&gt;must be continuous&lt;/em&gt; (if there is a jump in &lt;script type=&quot;math/tex&quot;&gt;{d\psi/dz}&lt;/script&gt; then &lt;script type=&quot;math/tex&quot;&gt;{d^{2}\psi/dz^{2}}&lt;/script&gt; would be infinite at that point). Also, &lt;script type=&quot;math/tex&quot;&gt;{d\psi/dz}&lt;/script&gt; must be finite otherwise &lt;script type=&quot;math/tex&quot;&gt;{d^{2}\psi/dz^{2}}&lt;/script&gt; could be infinite. For &lt;script type=&quot;math/tex&quot;&gt;{d\psi/dz}&lt;/script&gt; to be finite, &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; &lt;em&gt;must be continuous&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Suppose we have a barrier of height &lt;script type=&quot;math/tex&quot;&gt;{V_{o}}&lt;/script&gt; with potential 0 to the left of the barrier. A quantum mechanical wave is incident from the left. The energy &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt; of this wave is positive. We allow for reflection from the barrier into the general region on the left. Using the general solution on the left with complex exponential waves.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{\text{left}}(z)=C\exp(ikz)+D\exp(-ikz)&lt;/script&gt;
+
+&lt;p&gt;where, as before &lt;script type=&quot;math/tex&quot;&gt;{k=\sqrt{2mE/\hbar^{2}}}&lt;/script&gt;. &lt;script type=&quot;math/tex&quot;&gt;{C\exp(ikz)}&lt;/script&gt; is the incident wave, going right. And &lt;script type=&quot;math/tex&quot;&gt;{D\exp(-ikz)}&lt;/script&gt; is the reflected wave, going left.&lt;/p&gt;
+
+&lt;p&gt;We change the Schroedinger equation to represent the wave equation inside the barrier:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d^{2}\psi(z)}{dz^{2}}=\frac{2m}{\hbar^{2}}(V_{o}-E)\psi(z)&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+{V_{o}&amp;gt;E} %]]&gt;&lt;/script&gt;. The general solution for the wave on the right is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{\text{right}}=F\exp(\kappa z)+G\exp(-\kappa z)&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\kappa=\sqrt{2m(V_{o}-E)/\hbar^{2}}}&lt;/script&gt;, we presume &lt;script type=&quot;math/tex&quot;&gt;{F=0}&lt;/script&gt;, otherwise the wave increases exponentially to the right forever. The solution proposes that the wave inside the barrier is not zero. Instead, it falls off exponentially.&lt;/p&gt;
+
+&lt;p&gt;Using the boundary conditions, according to continuity of the wave function, at &lt;script type=&quot;math/tex&quot;&gt;{z=0}&lt;/script&gt; gives&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;C+D=G&lt;/script&gt;
+
+&lt;p&gt;and according to continuity of the wave function derivative, at &lt;script type=&quot;math/tex&quot;&gt;{z=0}&lt;/script&gt; gives&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;ikC-ikD=-\kappa G.&lt;/script&gt;
+
+&lt;p&gt;The solution to these two equations is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;2C=\left(1+\frac{i\kappa}{k}\right)&lt;/script&gt;
+
+&lt;p&gt;Equivalently,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;G=\frac{2k}{k+i\kappa}C=\frac{2k(k-i\kappa)}{k^{2}+\kappa^{2}}C&lt;/script&gt;
+
+&lt;p&gt;And &lt;script type=&quot;math/tex&quot;&gt;D=\frac{k-i\kappa}{k+i\kappa}C&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;So, we have found the amplitude &lt;script type=&quot;math/tex&quot;&gt;{G}&lt;/script&gt; of the wave in the barrier and the amplitude &lt;script type=&quot;math/tex&quot;&gt;{D}&lt;/script&gt; of the reflected wave in terms of the amplitude &lt;script type=&quot;math/tex&quot;&gt;{C}&lt;/script&gt; of the incident wave.&lt;/p&gt;
+
+&lt;p&gt;Note that&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left\vert \frac{D}{C}\right\vert ^{2}=\frac{k-i\kappa}{k+i\kappa}\frac{k+i\kappa}{k-i\kappa}=1&lt;/script&gt;
+
+&lt;p&gt;So the barrier is 100%; reflecting though there is a phase shift on reflection.&lt;/p&gt;
+
+&lt;p&gt;Probability density &lt;script type=&quot;math/tex&quot;&gt;{\propto\vert \psi_{\text{right}}(z)\vert ^{2}}&lt;/script&gt; with &lt;script type=&quot;math/tex&quot;&gt;{\psi_{\text{right}}\propto\exp(-\kappa z)}&lt;/script&gt; then &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{\text{right}}\vert ^{2}\propto\exp(-2\kappa z)}&lt;/script&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;finite-well-and-harmonic-oscillator&quot;&gt;2. Finite Well and Harmonic Oscillator&lt;/h3&gt;
+
+&lt;h4 id=&quot;the-finite-potential-well&quot;&gt;2.1. The finite potential well&lt;/h4&gt;
+
+&lt;p&gt;We will choose the height of the potential barriers at &lt;script type=&quot;math/tex&quot;&gt;{V_{o}}&lt;/script&gt; with 0 potential energy at the bottom of the well. The thickness of the well is &lt;script type=&quot;math/tex&quot;&gt;{L_{z}}&lt;/script&gt;. Now we will choose the positive origin in the center of the well.&lt;/p&gt;
+
+&lt;p&gt;If there is an energy &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt; for which there is a solution, then we already know what form the solution has to take. Sinusoidal in the middle exponentially decaying on either side.&lt;/p&gt;
+
+&lt;p&gt;For some eigenenergy &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;{k=\sqrt{2mE/\hbar^{2}}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\kappa=\sqrt{2m(V_{o}-E)/\hbar^{2}}}&lt;/script&gt;:&lt;/p&gt;
+
+&lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+{z&amp;lt;-L_{z}/2} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=G\exp(\kappa z)&lt;/script&gt;
+
+&lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+{-L_{z}/2&amp;lt;z&amp;lt;L_{z}/2} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=A\sin(kz)+B\cos(kz)&lt;/script&gt;
+
+&lt;p&gt;for &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+{z&amp;gt;L_{z}/2} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=F\exp(-\kappa z)&lt;/script&gt;
+
+&lt;p&gt;with constant &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{B}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{G}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{F}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;From continuity of the wavefunction at &lt;script type=&quot;math/tex&quot;&gt;{z=L_{z}/2}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;FX_{L}=AS_{L}+BC_{L}&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{X_{L}=exp(-\kappa L_{z}/2)}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{S_{L}=\sin(kL_{z}/2)}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{C_{L}=\cos(kL_{z}/2)}&lt;/script&gt;. Similarly at &lt;script type=&quot;math/tex&quot;&gt;{z=-L_{z}/2}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;GX_{L}=-AS_{L}+BC_{L}&lt;/script&gt;
+
+&lt;p&gt;Continuity of the derivate gives at &lt;script type=&quot;math/tex&quot;&gt;{z=-L_{z}/2}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\kappa}{k}GX_{L}=AC_{L}+BS_{L}&lt;/script&gt;
+
+&lt;p&gt;at &lt;script type=&quot;math/tex&quot;&gt;{z=L_{z}/2}&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\kappa}{k}FX_{L}=AC_{L}-BS_{L}&lt;/script&gt;
+
+&lt;p&gt;Solve the above equations, the following can be obtained as long as &lt;script type=&quot;math/tex&quot;&gt;{F\neq -G}&lt;/script&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\tan\left(\frac{kL_{z}}{2}\right)=\frac{\kappa}{k}&lt;/script&gt;
+
+&lt;p&gt;This relation is effectively a condition for eigenvalues. And as long as &lt;script type=&quot;math/tex&quot;&gt;{F\neq G}&lt;/script&gt;:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\cot\left(\frac{kL_{z}}{2}\right)=\frac{\kappa}{k}&lt;/script&gt;
+
+&lt;p&gt;This relation is also effectively a condition for eigenvalues.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;{F=G}&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;{\tan(kL_{z}/2)=\kappa/k}&lt;/script&gt;. One can derive that &lt;script type=&quot;math/tex&quot;&gt;{A=0}&lt;/script&gt;, therefore, inside the well&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)\propto\cos(kz)&lt;/script&gt;
+
+    &lt;p&gt;which is an even function.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;{F=-G}&lt;/script&gt;, and &lt;script type=&quot;math/tex&quot;&gt;{-\cot(kL_{z}/2)=\kappa/k}&lt;/script&gt;. One can derive that &lt;script type=&quot;math/tex&quot;&gt;{B=0}&lt;/script&gt;, therefore, inside the well&lt;/p&gt;
+
+    &lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)\propto\sin(kz)&lt;/script&gt;
+
+    &lt;p&gt;which is an odd function&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In order to solve for the eigenenergies, we need to change to “dimensionless” units. Let&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;E_{1}^{\infty}=\frac{\hbar^{2}}{2m}\left(\frac{\pi}{L_{z}}\right)^{2}&lt;/script&gt;
+
+&lt;p&gt;as the energy of the first level in the “infinite” potential well width &lt;script type=&quot;math/tex&quot;&gt;{L_{z}}&lt;/script&gt;, leading to dimensionless eigenenergy &lt;script type=&quot;math/tex&quot;&gt;{\varepsilon\equiv E/E_{1}^{\infty}}&lt;/script&gt; and a dimensionless barrier height &lt;script type=&quot;math/tex&quot;&gt;{v_{o}\equiv V_{o}/E_{1}^{\infty}}&lt;/script&gt;, Also&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;k=\sqrt{2mE/\hbar^{2}}=(\pi/L_{z})\sqrt{\varepsilon}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\kappa=\sqrt{2m(V_{o}-E)/\hbar^{2}}=(\pi/L_{z})\sqrt{v_{o}-\varepsilon}&lt;/script&gt;
+
+&lt;p&gt;Consequently,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\kappa}{k}=\sqrt{\frac{v_{o}-\varepsilon}{\varepsilon}}&lt;/script&gt;
+
+&lt;p&gt;So,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{\varepsilon}\tan[(\pi/2)\sqrt{\varepsilon}]=\sqrt{(v_{o}-\varepsilon)}&lt;/script&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\sqrt{\varepsilon}\cot[(\pi/2)\sqrt{\varepsilon}]=\sqrt{(v_{o}-\varepsilon)}&lt;/script&gt;
+
+&lt;p&gt;We can solve the eigenergies by using choosing specific &lt;script type=&quot;math/tex&quot;&gt;{v_{o}}&lt;/script&gt; and use numeric approach to find intersection of above equations.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-harmonic-oscillator&quot;&gt;2.2. The harmonic oscillator&lt;/h4&gt;
+
+&lt;p&gt;The potential from the restoring force &lt;script type=&quot;math/tex&quot;&gt;{F}&lt;/script&gt; is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;V(z)=\int_{0}^{z}-F\,dz_{o}=\int_{0}^{z}Kz_{o}\,dz_{o}=\frac{1}{2}Kz^{2}=\frac{1}{2}m\omega^{2}z^{2}&lt;/script&gt;
+
+&lt;p&gt;Then we plug it into Schroedinger equation is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\hbar^{2}}{2m}\frac{d^{2}\psi}{dz^{2}}+\frac{1}{2}m\omega^{2}z^{2}\psi=E\psi&lt;/script&gt;
+
+&lt;p&gt;For convenience, we define a dimensionless distance unit&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\xi=\sqrt{\frac{m\omega}{\hbar}}z&lt;/script&gt;
+
+&lt;p&gt;so the Schroedinger equation becomes&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{1}{2}\frac{d^{2}\psi}{d\xi^{2}}-\frac{\xi^{2}}{2}\psi=-\frac{E}{\hbar\omega}\psi&lt;/script&gt;
+
+&lt;p&gt;One of the specific solution is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi\propto\exp(-\xi^{2}/2)&lt;/script&gt;
+
+&lt;p&gt;with a corresponding energy &lt;script type=&quot;math/tex&quot;&gt;{E=\hbar\omega/2}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;This suggests we look for solutions of the form&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{n}(\xi)=A_{n}\exp(-\xi^{2}/2)H_{n}(\xi)&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{H_{n}}&lt;/script&gt; is some set of functions still to be determined.&lt;/p&gt;
+
+&lt;p&gt;Substituting the above equation into the Schroedinger equation gives&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d^{2}H_{n}(\xi)}{d\xi^{2}}-2\xi\frac{dH_{n}(\xi)}{d\xi}+\left(\frac{2E}{\hbar\omega}-1\right)H_{n}(\xi)=0&lt;/script&gt;
+
+&lt;p&gt;This is the defining differential equation for the Hermite polynomials.&lt;/p&gt;
+
+&lt;p&gt;The solutions for above equation exist provided&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{2E}{\hbar\omega}-1=2n\quad n=0,1,2,\ldots&lt;/script&gt;
+
+&lt;p&gt;that is,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;E_{n}=\left(n+\frac{1}{2}\right)\hbar\omega \text{ for } n=0,1,2,\ldots&lt;/script&gt;
+
+&lt;p&gt;are eigenengeries. The allowed energy levels are equally spaced separated by an amount &lt;script type=&quot;math/tex&quot;&gt;{\hbar\omega}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;{\omega}&lt;/script&gt; is the classical oscillation frequency.&lt;/p&gt;
+
+&lt;p&gt;The Hermite polynomials are satisfy a “recurrence relations”&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;H_{n}=2\xi H_{n-1}(\xi)-2(n-1)H_{n-2}(\xi)&lt;/script&gt;
+
+&lt;p&gt;and &lt;script type=&quot;math/tex&quot;&gt;{H_{1}=1}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{H_{2}(\xi)=2\xi}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;By normalizing&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{n}(\xi)=A_{n}\exp(-\xi^{2}/2)H_{n}(\xi)&lt;/script&gt;
+
+&lt;p&gt;gives&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A_{n}=\sqrt{\frac{1}{\sqrt{\pi}2^{n}n!}}, \quad \xi=\sqrt{\frac{m\omega}{\hbar}}z&lt;/script&gt;
+
+&lt;p&gt;The above solution is dimensionless form, the original one is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{n}(z)=\sqrt{\frac{1}{2^{n}n!}\sqrt{\frac{m\omega}{\pi\hbar}}}\exp\left(-\frac{m\omega}{2\hbar}z^{2}\right)H_{n}\left(\sqrt{\frac{m\omega}{\hbar}z}\right)&lt;/script&gt;
+
+&lt;p&gt;The intersection of the parabola and the dashed lines gives the “classical turning points” where a classical mass of that energy turns round and goes back downhill. (You need to watch the lecture for this interpretation).&lt;/p&gt;
+
+&lt;h3 id=&quot;the-time-dependent-schroedinger-equation&quot;&gt;3. The Time-Dependent Schroedinger Equation&lt;/h3&gt;
+
+&lt;h4 id=&quot;rationalizing-the-time-dependent-schroedinger-equation&quot;&gt;3.1. Rationalizing the time-dependent Schroedinger equation&lt;/h4&gt;
+
+&lt;p&gt;The relation between energy and frequency for quantum mechanics is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;E=h\nu=\hbar\omega.&lt;/script&gt;
+
+&lt;p&gt;Schroedinger postulated the time-dependent equation&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\hbar^{2}}{2m}\nabla^{2}\Psi(\vec{r},t)+V(\vec{r},t)\Psi(\vec{r},t)=i\hbar\frac{\partial\Psi(\vec{r},t)}{\partial t}&lt;/script&gt;
+
+&lt;p&gt;Note that for a uniform potential. Schroedinger chose a sign for the right hand side, which that a wave with spatial part &lt;script type=&quot;math/tex&quot;&gt;{\propto\exp(ikz)}&lt;/script&gt; is definitely going in the positive &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt; direction. That is, including its time dependence would be of the form (for &lt;script type=&quot;math/tex&quot;&gt;{V=0}&lt;/script&gt;)&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\exp[i(kz-Et/\hbar)]&lt;/script&gt;
+
+&lt;p&gt;To test compatibility with time-independent equation, time-independent equation solution &lt;script type=&quot;math/tex&quot;&gt;{\psi(\vec{r})}&lt;/script&gt; can be written as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Psi(\vec{r},t)=\psi(\vec{r})\exp(-iEt/\hbar)&lt;/script&gt;
+
+&lt;p&gt;We can tested that the above equation is indeed a solution to time-dependent equation. Therefore, every solution of time-independent Schroedinger equation is also a solution to time-dependent equation, with eigenenergy &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;solutions-of-the-time-dependent-schroedinger-equation&quot;&gt;3.2. Solutions of the time-dependent Schroedinger equation&lt;/h4&gt;
+
+&lt;p&gt;Note that Schroedinger’s use of a complex wave equation with the &lt;script type=&quot;math/tex&quot;&gt;{i}&lt;/script&gt; on the right hand side, which means that generally the wave &lt;script type=&quot;math/tex&quot;&gt;{\Psi}&lt;/script&gt; is required to be a complex entity. For example, for &lt;script type=&quot;math/tex&quot;&gt;{V=0}&lt;/script&gt; though &lt;script type=&quot;math/tex&quot;&gt;{\exp[i(kz-Et/\hbar)]}&lt;/script&gt; is a solution, &lt;script type=&quot;math/tex&quot;&gt;{\sin(kz-Et/\hbar)}&lt;/script&gt; is not a solution.&lt;/p&gt;
+
+&lt;p&gt;In Schroedinger’s equation, for a known potential &lt;script type=&quot;math/tex&quot;&gt;{V}&lt;/script&gt;. If we knew the wave function &lt;script type=&quot;math/tex&quot;&gt;{\Psi(\vec{r},t_{o})}&lt;/script&gt; at every point in space at some time &lt;script type=&quot;math/tex&quot;&gt;{t_{o}}&lt;/script&gt;, we could evaluate the left hand side of the equation at that time for all &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}}&lt;/script&gt;, so we would know &lt;script type=&quot;math/tex&quot;&gt;{\partial\Psi(\vec{r},t)/\partial t}&lt;/script&gt; for all &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}}&lt;/script&gt;, so we could integrate the equation to deduce &lt;script type=&quot;math/tex&quot;&gt;{\Psi(\vec{r},t)}&lt;/script&gt; at all future times. Explicitly, knowing &lt;script type=&quot;math/tex&quot;&gt;{\partial\Psi(\vec{r},t)/\partial t}&lt;/script&gt;, we can calculate&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Psi(\vec{r},t_{o}+\delta t)\simeq\Psi(\vec{r},t_{o})+\left.\frac{\partial\Psi}{\partial t}\right\vert_{\vec{r},t_{o}}\delta t&lt;/script&gt;
+
+&lt;p&gt;That is, we can know the new wave function in space at the next instant in time and we can continue on the next instant and so on. We can then predict all future evolution of the wave function.&lt;/p&gt;
+
+&lt;h4 id=&quot;linear-superposition&quot;&gt;3.3. Linear superposition&lt;/h4&gt;
+
+&lt;p&gt;The time-dependent Schroedinger equation is linear in the wave function &lt;script type=&quot;math/tex&quot;&gt;{\Psi}&lt;/script&gt;. One reason is that no higher powers of &lt;script type=&quot;math/tex&quot;&gt;{\Psi}&lt;/script&gt; appear anywhere in the equation. A second reason is that &lt;script type=&quot;math/tex&quot;&gt;{\Psi}&lt;/script&gt; appears in every term there is no additive constant term anywhere.&lt;/p&gt;
+
+&lt;p&gt;Linearity requires two conditions obeyed by Schroedinger time-dependent equation. The two conditions can be summarized in&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Psi_{c}(\vec{r},t)=c_{a}\Psi_{a}(\vec{r},t)+c_{b}\Psi_{b}(\vec{r},t)&lt;/script&gt;
+
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\Psi_{a}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\Psi_{b}}&lt;/script&gt; are solutions to time-dependent equation, &lt;script type=&quot;math/tex&quot;&gt;{c_{a}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{c_{b}}&lt;/script&gt; are (complex) constants. The above equation is also a solution.&lt;/p&gt;
+
+&lt;p&gt;We know that if the potential &lt;script type=&quot;math/tex&quot;&gt;{V}&lt;/script&gt; is constant in time, each of the energy eigenstates &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(\vec{r})}&lt;/script&gt; with eigenenergy &lt;script type=&quot;math/tex&quot;&gt;{E_{n}}&lt;/script&gt; is separately a solution of the time-dependent Schroedinger equation.&lt;/p&gt;
+
+&lt;p&gt;Now we also know that the set of eigenfunctions of problems we will consider is a complete set so the wave function at &lt;script type=&quot;math/tex&quot;&gt;{t=0}&lt;/script&gt; can be expanded in them&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Psi(\vec{r},0)=\sum_{n}a_{n}\psi_{n}(\vec{r})&lt;/script&gt;
+
+&lt;p&gt;where the &lt;script type=&quot;math/tex&quot;&gt;{a_{n}}&lt;/script&gt; are the expansion coefficients.&lt;/p&gt;
+
+&lt;p&gt;But we know that a function that starts out as &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(\vec{r})}&lt;/script&gt; will evolve in time as &lt;script type=&quot;math/tex&quot;&gt;{\Psi_{n}(\vec{r},t)=\exp(-iEt/\hbar)\psi_{n}(\vec{r})}&lt;/script&gt;. So, by linear superposition, the solution at time t is&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\Psi(\vec{r},t)=\sum_{n}a_{n}\Psi_{n}(\vec{r},t)=\sum_{n}a_{n}\exp(-iEt/\hbar)\psi_{n}(\vec{r})&lt;/script&gt;
+</description>
+        <pubDate>Thu, 17 Oct 2013 00:00:00 +0800</pubDate>
+        <link>http://dgyblog.com/oldtimes/2013/10/17/quantum-for-scieng-3/</link>
+        <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/10/17/quantum-for-scieng-3/</guid>
+      </item>
+    
+      <item>
         <title>Quantum Mechanics for Scientists and Engineers Notes 2</title>
         <description>&lt;h3 id=&quot;wave-propagation&quot;&gt;1. Wave Propagation&lt;/h3&gt;
 
@@ -1141,148 +1482,6 @@
         <pubDate>Thu, 14 Mar 2013 00:00:00 +0800</pubDate>
         <link>http://dgyblog.com/yang/2013/03/14/life-of-pi/</link>
         <guid isPermaLink="true">http://dgyblog.com/yang/2013/03/14/life-of-pi/</guid>
-      </item>
-    
-      <item>
-        <title>天明集录 熊掌</title>
-        <description>&lt;h3 id=&quot;section&quot;&gt;正义&lt;/h3&gt;
-
-&lt;p&gt;孟子曰：“鱼，我所欲也；熊掌，亦我所欲也，二者不可得兼，舍鱼而取熊掌者也。生，我所欲也；义，亦我所欲也，二者不可得兼，舍生而取义者也。”这段文字相信很多人都很熟悉，中学的时候都念过，这篇文章的题目呢，当年在课本上取前五字：“鱼我所欲也”，此文出自《孟子 告子上》。&lt;/p&gt;
-
-&lt;p&gt;《孟子 告子上》这一篇中主要记录了孟子和另一位，算是他的徒弟，告子的几次辩论。告子此人，没有留下如《孟子》一样的一部专书，实在是可惜，不过这也算是春秋战国的一个特点，譬如另一位极重要的先生，杨朱，也是没有留下专书。更传奇的是鬼谷子，也没有什么像样的著作。鬼谷子先生纵横捭阖，交出了不少闻名诸侯的人物，现在传说是他的弟子的有庞涓，有孙膑，有张仪，有苏秦。《史记 张仪列传》说：“张仪者，魏人也。始尝与苏秦俱事鬼谷先生，学术，苏秦自以不及张仪。”后来苏秦：“六国从合而并力焉。苏秦为从约长，并相六国。”也算是声势浩大。不过苏秦到底是“不及张仪”，最后赢的，还是连横。这一段算是跑题，诸君勿怪。&lt;/p&gt;
-
-&lt;p&gt;“正义”一词，并非现代有之，其著者有《毛诗正义》。《毛诗正义》者，是注疏也，如《水经注》。其注者奉唐之太宗之命为注五经，是《诗》，《书》，《礼》，《易》，《春秋》。其注《诗》者，传据王德韶，齐威诸人之手，由孔颖达总成。其取“正义”者，是为梳理百代之论，成一统之言。此注成于唐，终唐一世，未有疑议。《四库全书总目提要 经部 诗类》：“《诗》有四家，毛氏独传，唐以前无异论，宋以後则众说争矣。”。又云：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;陈统作《难孙氏毛诗评》，又明郑义（并见《经典释文》）。袒分左右，垂数百年。至唐贞观十六年，命孔颖达等因郑笺为正义，乃论归一定，无复歧途。毛传二十九卷，《隋志》附以郑笺作二十卷，疑为康成所并。颖达等以疏文繁重，又析为四十卷。其书以刘焯《毛诗义疏》、刘炫《毛诗述义》为稿本，故能融贯群言，包罗古义，终唐之世，人无异词。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;可见此“义”于此，是煌煌之声，一总百家之言。&lt;/p&gt;
-
-&lt;p&gt;“正义”一词之“正”，在古书中常用作动词。事实上，“正”确实用作动词较多，如今也很常用，此举一例，如京剧中《红鬃烈马 武家坡》薛平贵唱：“在头上正正沿毡帽。”这里的“正”，有“扶正”之意。《说文》：“正，是也。从止，一以止。”此处有一颇为有趣之事，据《康熙字典》，正之古文有“疋”，此字是“是”字之下部。《说文》：“疋，足也。”又《字汇》：“疋，音雅，正也。”又《五音集韵》：“疋，之绳切，音政。古文正字。”如今疋字到底是念“政”还是念“雅”，就不得而知了。“正”，如《说文》言，是“从止”的。而其意，是“一以止”，意“止于一”。可这说回来，“正”和其根源，“足”似乎又没有什么关系了。《说文》方便了一条：“是也”。《玉篇》：“是，是非也。”也就是说，“正”其实是“非”的反义词。而如今用的最多的，也是此意和此意的延伸意。之于与其源之关系，未见明义，不敢妄言，愿有识者言之。&lt;/p&gt;
-
-&lt;p&gt;《周易 乾卦 文言》：“利者，义之和也”。又云：“利物，足以和义”。《说文》：“义，己之威仪也。从我羊。”这就奇了，《说文解字》是东汉许慎的作品，其意多溯其源。《文言》是孔子的作品，是春秋时期。如果接受《说文》为原意，则不免看出缺漏来，因为其中的转义是不见的。“义”，既然是言“己之威仪”，那么不免要看看“仪”字。《说文》：“仪，度也。”，而“度，法制也”。这又是何意？不免求《周礼 秋官》：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;以九仪辨诸侯之命，等诸臣爵，以同邦国之礼，而待其宾客。上公之礼，执恒圭九寸，缫藉九寸，冕服九章，建常九斿，樊缨九就，贰车九乘，介九人，礼九牢。其朝位，宾主之间九十步，立当车轵，摈者五人，庙中将币三享，王礼再祼而酢。飨礼九献，食礼九举，出入五积，三问三劳。诸侯之礼，执信圭七寸，缫藉七寸，冕服七章，建常七斿，樊缨七就，贰车七乘，介七人，礼七牢。朝位，宾主之间七十步，立当前疾，摈者四人，庙中将币三享，王礼壹祼而酢，飨礼七献，食礼七举，出入四积，再问，再劳。诸伯执躬圭，其他皆如诸侯之礼。诸子执谷璧，五寸，缫藉五寸，冕服五章，建常五斿，樊缨五就，贰车五乘，介五人，礼五牢。朝位，宾主之间五十步，立当车衡，摈者三人，庙中将币三享，王礼壹祼不酢，飨礼五献，食礼五举，出入三积，壹问、壹劳。诸男执蒲璧，其他皆如诸子之礼。凡大国之孤，执皮帛以继小国之君，出入三积，不问、壹劳，朝位当车前，不交摈，庙中无相，以酒礼之，其他皆眡小国之君。凡诸侯之卿，其礼各下其君二等。以下及其大夫士，皆如之。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;“仪”原来是为了方便分清楚要用什么礼的。那么“义”也就清楚了，是方便分清楚自己用什么礼。“义”既然是自己可以使用的“礼”，那么分清楚自己的礼，就叫做“正义”。“义”只有分清楚了，才算是“正”。不过《周礼》一书，成之战国，虽有非周之礼，其意溯源，未见偏差，故用以正。&lt;/p&gt;
-
-&lt;p&gt;清楚了这个意思，那么“义”字就豁然开朗了。《容斋随笔》：“仗正道曰义，义师，义战是也。众所尊戴曰义，义帝是也。”何谓“仗正道”，若以溯源论，是正礼也。何谓“众所尊戴”，以溯源论，是尊礼正者也。所以孟子曰：“舍生而取义者也。”又《史记 仲尼弟子列传》：“子路曰：‘君子死而冠不免。’遂结缨而死。”此义也。&lt;/p&gt;
-
-&lt;p&gt;儒者讲“仁义”，文天祥《绝笔自赞》：“孔曰成仁，孟曰取义；惟其义尽，所以仁至。”即可见“义”比“仁”更加容易一点，也更加宽容一点。从子路即可见，子路舍生取义，可谓“义”也，而《史记 仲尼弟子列传》中则记了这样一则：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;季康子问孔子曰：“厓求仁乎？”曰：“千室之邑，百乘之家，求也可使治其赋。仁则吾不知也。”复问：“子路仁乎？”孔子对曰：“如求。”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;又&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;季康子问：“仲由仁乎？”孔子曰：“千乘之国可使治其赋，不知其仁。”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;冉求，子路，仲由，都可谓义，因为无论是治千乘之国，还是治百乘之家，都可以具其礼，然而是不是仁，孔子却直言“不知”。&lt;/p&gt;
-
-&lt;p&gt;见《汉书 董仲舒传》之《举贤良对策》云：“夫仁、义、礼、知、信五常之道，王者所当修饬也”。然而这五常之道，确实递进而并非对等，信极则知，知极则具礼，礼具则及义，义尽则近仁。《论语 阳货》：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;宰我问：“三年之丧，期已久矣。君子三年不为礼，礼必坏；三年不为乐，乐必崩。旧谷既没，新谷既升，钻燧改火，期可已矣。”&lt;br /&gt;
-子曰：“食夫稻，衣夫锦，于女安乎？”曰：“安！”“女安则为之。夫君子之居丧，食旨不甘，闻乐不乐，居处不安， 故不为也。今女安，则为之。”&lt;br /&gt;
-宰我出。子曰：“予之不仁也！子生三年，然后免于父母之怀。夫三年之丧，天下之通丧也。予也有三年之爱于其父母乎？”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;宰我以丧问孔子礼，这是极其智而不近礼，所以孔子说：“予也有三年之爱于其父母乎？”&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;缪传&lt;/h3&gt;
-
-&lt;p&gt;《史记 项羽本纪》：“楚南公曰：‘楚虽三户，亡秦必楚’也”。陆游《金错刀行》：“楚虽三户能亡秦，岂有堂堂中国空无人。”陆放翁是个好诗人，余时常念其《十一月四日风雨大作》诗，抄录如下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;僵卧孤村不自哀，&lt;br /&gt;
-尚思为国戍轮台。&lt;br /&gt;
-夜阑卧听风吹雨，&lt;br /&gt;
-铁马冰河入梦来。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;又《示儿》：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;死去元知万事空，&lt;br /&gt;
-但悲不见九州同。&lt;br /&gt;
-王师北定中原日，&lt;br /&gt;
-家祭无忘告乃翁。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;此处之“楚虽三户能亡秦”若结合后句“岂有堂堂中国空无人”看，是用《史记集解》说：“楚人怨秦，虽三户犹足以亡秦也”。或从《史记索隐》之韦昭解：“韦昭以为三户，楚三大姓昭、屈、景也”。而《史记索隐》用：“左氏“以畀楚师于三户”，杜预注云“今丹水县北三户亭”，则是地名不疑”意。，《史记正义》注：“服虔云“三户，漳水津也”。孟康云“津峡名也，在鄴西三十里”。括地志云“浊漳水又东经葛公亭北，经三户峡，为三户津，在相州滏阳县界”。然则南公辨阴阳，识废兴之数，知秦亡必於三户，故出此言。後项羽果度三户津破章邯军，降章邯，秦遂亡。是南公之善谶。”所以“三户”者，地名无疑。&lt;/p&gt;
-
-&lt;p&gt;《史记 项羽本纪》：“当是时，秦嘉已立景驹为楚王”。景氏一族，世代仕楚，按韦昭解，与昭，屈为楚之三大姓。去《楚世家》中一翻便知：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;昭氏凡入二人：柱国昭阳、昭雎；&lt;br /&gt;
-屈氏凡入四人：将军屈完、从者屈固、大将军屈匄、大夫屈原；&lt;br /&gt;
-景氏凡入二人：将军景缺、将军景阳。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;此三氏八人，皆立不世之功，辈出贤才良将，故世世为楚宦。然而这个“景驹”却是冒了天下之大不韪。因为这个楚王名不正，名不正则言不顺，何谓名不正？《史记 楚世家》：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;周文王之时，季连之苗裔曰鬻熊。鬻熊子事文王，蚤卒。其子曰熊丽。熊丽生熊狂，熊狂生熊绎。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;楚，熊氏，所以名不正。故《史记 项羽本纪》云：“於是项梁然其言，乃求楚怀王孙心民间，为人牧羊，立以为楚怀王，从民所望也。”或言此王名“孙心”，是大缪也，项梁所立，乃楚怀王之孙熊心。&lt;/p&gt;
-
-&lt;p&gt;《史记 越王句践世家》：“吴既赦越，越王句践反国，乃苦身焦思，置胆於坐，坐卧即仰胆，饮食亦尝胆也。”句践反国，是越王，可以尝胆，未必卧薪。且文章前后，未见“卧薪”句。卧薪尝胆，见苏子《拟孙权答曹操书》：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;仆受遗以来，卧薪尝胆，悼日月之逾迈，而叹功名之不立，上负先臣未报之忠，下忝伯符知人之明。且权先世以德显于吴，权若效诸君有非常之志，纵不蒙显戮，岂不坠其家声耶？&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;而苏子也未明示此卧薪尝胆用句践典故。蒲松龄自勉联&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;有志者，事竞成，破斧沉舟，百二秦关终属楚；
-苦心人，天不负，卧薪尝胆，三千越甲可吞吴。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;此联尤为后人所传诵，窃以为世人缪卧薪尝胆于句践由苏子始，而于聊斋先生时，早已盛矣。&lt;/p&gt;
-
-&lt;p&gt;缪传之事，常颠倒生死以致有心者成事，如《史记 陈涉世家》：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;陈胜曰：“天下苦秦久矣。吾闻二世少子也，不当立，当立者乃公子扶苏。扶苏以数谏故，上使外将兵。今或闻无罪，二世杀之。百姓多闻其贤，未知其死也。项燕为楚将，数有功，爱士卒，楚人怜之。或以为死，或以为亡。今诚以吾众诈自称公子扶苏、项燕，为天下唱，宜多应者。”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;公子扶苏赐死，世所鲜闻，故可以混淆视听。而项燕，为秦将王翦所戮，且世世为楚将，焉能助公子扶苏。又&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;吴广之次所旁丛祠中，夜篝火，狐鸣呼曰“大楚兴，陈胜王”。卒皆夜惊恐。旦日，卒中往往语，皆指目陈胜。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;陈胜非楚之王族，且非大姓，其名则不正，何以言“陈胜王”。又&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;三老、豪杰皆曰：“将军身被坚执锐，伐无道，诛暴秦，复立楚国之社稷，功宜为王。”陈涉乃立为王，号为张楚。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;陈涉自立之为陈王，而号为“张楚”，此又一缪误，而乘秦末之乱，足以惑人，而后章邯破陈，项梁、项羽举事，众乃不信假王，立楚怀王之孙熊心为楚怀王。而陈涉一举而天下动，六国遗孤，天下豪杰，揭竿举事，溯其源，皆“今诚以吾众诈自称公子扶苏、项燕，为天下唱，宜多应者”之功。&lt;/p&gt;
-
-&lt;p&gt;此缪传之事并非一例，见《三国志 蜀志 先主传》&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;二十五年，魏文帝称尊号，改年曰黄初。或传闻汉帝见害，先主乃发丧制服，追谥曰孝愍皇帝。（先主）即皇帝位於成都武担之南。&lt;/p&gt;
-
-  &lt;p&gt;而《三国志 魏志 文帝纪》言&lt;/p&gt;
-
-  &lt;p&gt;黄初元年十一月癸酉，以河内之山阳邑万户奉汉帝为山阳公，行汉正朔，以天子之礼郊祭，上书不称臣，京都有事于太庙，致胙；封公之四子为列侯。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;此昭告天下之事，非刘备之所不能闻，而是借汉帝之假死，使正名能即皇帝位。而群雄逐鹿之时，蜀据荆、益之险，若正之以汉帝之尊，是伐异有名。&lt;/p&gt;
-</description>
-        <pubDate>Sun, 27 Jan 2013 00:00:00 +0800</pubDate>
-        <link>http://dgyblog.com/oldtimes/2013/01/27/tian-ming-2/</link>
-        <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/01/27/tian-ming-2/</guid>
       </item>
     
   </channel>
