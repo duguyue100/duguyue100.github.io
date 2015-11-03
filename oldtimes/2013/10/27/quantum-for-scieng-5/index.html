@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="//khan.github.io/KaTeX/bower_components/katex/dist/katex.min.css" type="text/css" rel="stylesheet">
+    <script src="//khan.github.io/KaTeX/bower_components/katex/dist/katex.min.js" type="text/javascript"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quantum Mechanics for Scientists and Engineers Notes 5 &#8211; DGY Life Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quantum Mechanics Learning Notes">
+    <meta name="author" content="Yuhuang Hu">
+    <meta name="keywords" content="oldtimes">
+    <link rel="canonical" href="http://dgyblog.com/oldtimes/2013/10/27/quantum-for-scieng-5/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css?201511031925" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" type="text/css"
+	  href="http://spratt.github.io/Computer-Modern/cmserif.css" />
+    
+    <!-- Verifications -->
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Quantum Mechanics for Scientists and Engineers Notes 5">
+    <meta property="og:description" content="A proud WE-ARE-NOT-DOOMED fan.">
+    <meta property="og:url" content="http://dgyblog.com/oldtimes/2013/10/27/quantum-for-scieng-5/">
+    <meta property="og:site_name" content="DGY Life Blog">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@duguyue100" />
+    
+    <meta name="twitter:title" content="Quantum Mechanics for Scientists and Engineers Notes 5" />
+    <meta name="twitter:description" content="Quantum Mechanics Learning Notes" />
+    <meta name="twitter:url" content="http://dgyblog.com/oldtimes/2013/10/27/quantum-for-scieng-5/" />
+    
+    
+</head>
+
+<body class="site">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://dgyblog.com" class="site-title">DGY Life Blog</a>
+      <nav class="site-nav">
+        <a href="/about/">About</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+        <div class="social-icons">
+  <div class="social-icons-right">
+    
+      <a class="fa fa-github" href="https://github.com/duguyue100"></a>
+    
+    
+    
+    <a class="fa fa-rss" href="/feed.xml"></a>
+    
+      <a class="fa fa-twitter" href="https://twitter.com/duguyue100"></a>
+    
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/+YuhuangHu/posts"></a>
+    
+    
+      <a class="fa fa-envelope" href="mailto:duguyue100@gmail.com"></a>
+    
+    
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h2>Quantum Mechanics for Scientists and Engineers Notes 5</h2>
+  <span class="post-meta">Oct 27, 2013</span><br>
+  
+  <span class="post-meta small">
+  
+    13 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <h3 id="uncertainty-principle-and-particle-current">1. Uncertainty Principle and Particle Current</h3>
+
+<h4 id="momentum-position-and-the-uncertainty-principle">1.1. Momentum, position, and the uncertainty principle</h4>
+
+<p>For momentum, we write an operator <script type="math/tex">{\hat{p}}</script>. We postulate this can be written as</p>
+
+<script type="math/tex; mode=display">\hat{p}\equiv-i\hbar\nabla</script>
+
+<p>with</p>
+
+<script type="math/tex; mode=display">\nabla\equiv\vec{x}_{o}\frac{\partial}{\partial x}+\vec{y}_{o}\frac{\partial}{\partial y}+\vec{y}_{o}\frac{\partial}{\partial y}</script>
+
+<p>where <script type="math/tex">{\vec{x}_{o}}</script>, <script type="math/tex">{\vec{y}_{o}}</script> and <script type="math/tex">{\vec{z}_{o}}</script> are unit vectors in the <script type="math/tex">{x}</script>, <script type="math/tex">{y}</script> and <script type="math/tex">{z}</script> directions. With this postulated form, we find that</p>
+
+<script type="math/tex; mode=display">\frac{\hat{p}^{2}}{2m}\equiv-\frac{\hbar^{2}}{2m}\nabla^{2}</script>
+
+<p>and we have a correspondence between the classical notion of the energy <script type="math/tex">{E}</script>.</p>
+
+<script type="math/tex; mode=display">E=\frac{\hat{p}^{2}}{2m}+V</script>
+
+<p>and the corresponding Hamiltonian operator of the Schroedinger equation</p>
+
+<script type="math/tex; mode=display">\hat{H}=-\frac{\hbar^{2}}{2m}\nabla^{2}+V=\frac{\hat{p}^{2}}{2m}+V</script>
+
+<p>Note that</p>
+
+<script type="math/tex; mode=display">\hat{p}\exp(i\vec{k}\cdot\vec{r})=i\hbar\nabla\exp(i\vec{k}\cdot\vec{r})=\hbar\vec{k}\exp(i\vec{k}\cdot\vec{r})</script>
+
+<p>This means the plane waves <script type="math/tex">{\exp(i\vec{k}\cdot\vec{r})}</script> are the eigenfunctions of the operator <script type="math/tex">{\hat{p}}</script> with eigenvalues of the operator <script type="math/tex">{\hat{p}}</script> with eigenvalues <script type="math/tex">{\hbar\vec{k}}</script>.</p>
+
+<p>We can therefore say for these eigenstates that the momentum is <script type="math/tex">{\vec{p}=\hbar\vec{k}}</script>. Note that <script type="math/tex">{\vec{p}}</script> is a vector, with three components with scalar values and it is not an operator here.</p>
+
+<p>For the position operator, the postulated operator is almost trivial when we are working with functions of position. It is simply the position vector <script type="math/tex">{\vec{r}}</script> itself. At least when we are working in a representation that is in term of position, we therefore typically do not write <script type="math/tex">{\hat{\vec{r}}}</script> through rigorously we should. The operator for the <script type="math/tex">{z}</script>-component of position would, for example, also simply be <script type="math/tex">{z}</script> itself.</p>
+
+<p>Here we illustrate the position-momentum uncertainty principle by example. We have looked at a Gaussian wavepacket before, we could write this as the sum over waves of different <script type="math/tex">{k}</script>-values, with Gaussian weights, or we could take the limit of that process by using an integration.</p>
+
+<script type="math/tex; mode=display">\Psi_{G}(z,t)\propto\int_{k}\exp\left[-\left(\frac{k-\bar{k}}{2\Delta k}\right)^{2}\right]\exp\{-i[\omega(k)t-kz]\}\,dk</script>
+
+<p>We could rewrite the above equation at time <script type="math/tex">{t=0}</script> as</p>
+
+<script type="math/tex; mode=display">\Psi(z,0)=\int_{k}\Psi_{k}(k)\exp(ikz)\,dk</script>
+
+<p>where</p>
+
+<script type="math/tex; mode=display">\Psi_{k}(k)\propto\exp\left[-\left(\frac{k-\bar{k}}{2\Delta k}\right)^{2}\right]</script>
+
+<table>
+  <tbody>
+    <tr>
+      <td><script type="math/tex">{\Psi_{k}(k)}</script> is the representation of the wave function in <script type="math/tex">{k}</script> space. $$ {</td>
+      <td>\Psi_{k}(k)</td>
+      <td>^{2}}<script type="math/tex">is the probability density</script> {P_{k}}<script type="math/tex">that if we measured the momentum of the particle (actually the</script> {z}<script type="math/tex">component of momentum), it would be found to have value</script> {\hbar k}$$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The probability of finding a value <script type="math/tex">{\hbar k}</script> for the momentum would be</p>
+
+<script type="math/tex; mode=display">P_{k}=|\Psi_{k}(k)|^{2}\propto\exp\left[-\frac{(k-\bar{k})^{2}}{2(\Delta k)^{2}}\right]</script>
+
+<p>This Gaussian corresponds to the statistical Gaussian probability distribution with standard deviation <script type="math/tex">{\Delta k}</script>.</p>
+
+<p>Note also that <script type="math/tex">{\Psi(z,0)=\int_{k}\Psi_{k}(k)\exp(ikz)\,dk}</script> is the Fourier transform <script type="math/tex">{\Psi_{k}(k)}</script> and, as it well known, the Fourier transform of a Gaussian is a Gaussian, specifically here</p>
+
+<script type="math/tex; mode=display">\Psi(z,0)\propto\exp[-(\Delta k)^{2}z^{2}]</script>
+
+<p>and</p>
+
+<script type="math/tex; mode=display">|\Psi(z,0)|^{2}\propto\exp[-2(\Delta k)^{2}z^{2}]</script>
+
+<p>is the standard form</p>
+
+<script type="math/tex; mode=display">|\Psi(z,0)|^{2}\propto\exp\left[-\frac{z^{2}}{2(\Delta z)^{2}}\right]</script>
+
+<p>where the parameter <script type="math/tex">{\Delta z}</script> would now be the standard deviation in the probability distribution for <script type="math/tex">{z}</script>. Then <script type="math/tex">{\Delta k\Delta z=1/2}</script>.</p>
+
+<p>From <script type="math/tex">{\Delta k\Delta z=1/2}</script>, if we now multiply by <script type="math/tex">{\hbar}</script> to get the standard deviation we would measure in momentum, we have</p>
+
+<script type="math/tex; mode=display">\Delta p\Delta z=\frac{\hbar}{2}</script>
+
+<p>which is the relation between the standard deviations we would see in measurements of position and measurements of momentum.</p>
+
+<p>This relation is as good as we can get for a Gaussian. It also turns out that the Gaussian shape is the one with the minimum possible product of <script type="math/tex">{\Delta p}</script> and <script type="math/tex">{\Delta z}</script>, so quite generally</p>
+
+<script type="math/tex; mode=display">\Delta p\Delta z\geq\frac{\hbar}{2}</script>
+
+<p>which is the <em>uncertainty principle</em> for position and momentum in one direction.</p>
+
+<p>Uncertain principles are well known in Fourier analysis. One cannot simultaneously have both a well defined frequency and a well defined time. If a signal is a short pulse, it is necessary made up out of a range of frequencies</p>
+
+<script type="math/tex; mode=display">\Delta\omega\Delta t\geq\frac{1}{2}</script>
+
+<p>The shorter the pulse is, the larger the range of frequencies.</p>
+
+<h4 id="particle-current">1.2. Particle current</h4>
+
+<p>In Cartesian coordinates, the divergence of a vector <script type="math/tex">{\vec{F}}</script> is</p>
+
+<script type="math/tex; mode=display">\text{div}\vec{F}=\nabla\cdot\vec{F}=\frac{\partial F_{x}}{\partial x}+\frac{\partial F_{y}}{\partial y}+\frac{\partial F_{z}}{\partial z}</script>
+
+<p>When we are thinking of flow of particles, to conserve particles</p>
+
+<script type="math/tex; mode=display">\frac{\partial s}{\partial t}=-\nabla\vec{j}_{p}</script>
+
+<p>where <script type="math/tex">{s}</script> is the particle density and <script type="math/tex">{\vec{j}_{p}}</script> is the particle current density.</p>
+
+<p>The minus sign is because the divergence of the flow or current is the the net amount leaving the volume.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>In quantum mechanical case, the particle density is $$ {</td>
+      <td>\Psi(vec{r},t)</td>
+      <td>^{2}}<script type="math/tex">, so we are looking for a relation of the form</script> {\partial s/\partial t=-\nabla\vec{j}_{p}}<script type="math/tex">, but with</script> {</td>
+      <td>\Psi(\vec{r},t)</td>
+      <td>^{2}}<script type="math/tex">instead of</script> {s}$$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We know that</p>
+
+<script type="math/tex; mode=display">\frac{\partial\Psi(\vec{r},t)}{\partial t}=\frac{1}{i\hbar}\hat{H}\Psi(\vec{r},t)</script>
+
+<p>We can also take the complex conjugate of both sides</p>
+
+<script type="math/tex; mode=display">\frac{\partial\Psi^{*}(\vec{r},t)}{\partial t}=-\frac{1}{i\hbar}\hat{H}^{*}\Psi^{*}(\vec{r},t)</script>
+
+<p>Noting that</p>
+
+<script type="math/tex; mode=display">\frac{\partial}{\partial t}[\Psi^{*}\Psi]=\Psi^{*}\frac{\partial\Psi}{\partial t}+\Psi\frac{\partial\Psi^{*}}{\partial t}</script>
+
+<p>Then we have</p>
+
+<script type="math/tex; mode=display">\frac{\partial}{\partial t}[\Psi^{*}\Psi]+\frac{i}{\hbar}(\Psi^{*}\hat{H}\Psi-\Psi\hat{H}^{*}\Psi^{*})=0</script>
+
+<p>Presuming the potential <script type="math/tex">{V}</script> is real and does not depend in time and taking our Hamiltonian to be of the form</p>
+
+<script type="math/tex; mode=display">\hat{H}\equiv-\frac{\hbar^{2}}{2m}\nabla^{2}+V(r)</script>
+
+<p>then</p>
+
+<script type="math/tex; mode=display">\Psi^{*}\hat{H}\Psi-\Psi\hat{H}^{*}\Psi^{*}=-\frac{\hbar^{2}}{2m}[\Psi^{*}\nabla^{2}\Psi-\Psi\nabla^{2}\Psi^{*}]</script>
+
+<p>So our equation becomes</p>
+
+<script type="math/tex; mode=display">\frac{\partial}{\partial t}[\Psi^{*}\Psi]+\frac{i\hbar}{2m}(\Psi^{*}\nabla^{2}\Psi-\Psi\nabla^{2}\Psi^{*})=0</script>
+
+<p>Now we use the following algebraic trick:</p>
+
+<script type="math/tex; mode=display">\Psi\nabla^{2}\Psi^{*}-\Psi^{*}\nabla^{2}\Psi=\nabla\cdot(\Psi\nabla\Psi^{*}-\Psi^{*}\nabla\Psi)</script>
+
+<p>Hence, we have</p>
+
+<script type="math/tex; mode=display">\frac{\partial(\Psi^{*}\Psi)}{\partial t}=-\frac{i\hbar}{2m}\nabla\cdot(\Psi\nabla\Psi^{*}-\Psi^{*}\nabla\Psi)</script>
+
+<p>which is an equation in the same form as <script type="math/tex">{\frac{\partial s}{\partial t}=-\nabla\vec{j}_{p}}</script>. And</p>
+
+<script type="math/tex; mode=display">\vec{j}_{p}=\frac{i\hbar}{2m}(\Psi\nabla\Psi^{*}-\Psi^{*}\nabla\Psi)</script>
+
+<p>So we can calculate particle currents from the wave function when the potential does not depend on time.</p>
+
+<p>This expression applies also for an energy eigenstate. Suppose we are in the <script type="math/tex">{n}</script>th energy eigenstate</p>
+
+<script type="math/tex; mode=display">\Psi_{n}(\vec{r},t)=\exp\left(-i\frac{E_{n}}{\hbar}t\right)\psi_{n}(\vec{r})</script>
+
+<p>Then</p>
+
+<script type="math/tex; mode=display">\vec{j}_{pn}(\vec{r},t)=\frac{i\hbar}{2m}(\Psi_{n}(\vec{r},t)\nabla\Psi_{n}^{*}(\vec{r},t)-\Psi_{n}^{*}(\vec{r},t)\nabla\Psi_{n}(\vec{r},t))</script>
+
+<p>In the equation above, the gradient has no effect on the time factor, so the time term can be factored to the front of the expression and multiply to unity</p>
+
+<script type="math/tex; mode=display">\vec{j}_{pn}(\vec{r},t)=\frac{i\hbar}{2m}(\psi_{n}(\vec{r})\nabla\psi_{n}^{*}(\vec{r})-\psi_{n}^{*}(\vec{r})\nabla\psi_{n}(\vec{r}))</script>
+
+<p>Therefore, the particle current <script type="math/tex">{\vec{j}_{pn}}</script> does not depend on time. That is, for any energy eigenstate <script type="math/tex">{n}</script>,</p>
+
+<script type="math/tex; mode=display">\vec{j}_{pn}(\vec{r},t)=\vec{j}_{pn}(\vec{r})</script>
+
+<p>Therefore, particle current is constant in any energy eigenstate. And for real spatial eigenfunctions, particle current is actually zero.</p>
+
+<h3 id="functions-and-dirac-notation">2. Functions and Dirac Notation</h3>
+
+<h4 id="functions-as-vectors">2.1. Functions as vectors</h4>
+
+<p>One kind of list of arguments would be the list of all real numbers which we could list in order as <script type="math/tex">{x_{1}}</script>, <script type="math/tex">{x_{2}}</script>, <script type="math/tex">{x_{3}}</script> and so on. This is an infinitely long list and the adjacent values in the list are infinitesimally close together but we will regard these infinite as details.</p>
+
+<p>If we presume that we know this list of possible arguments of the function, we can write out the function as the corresponding list of values, and we choose to write this list as a column vector</p>
+
+<script type="math/tex; mode=display">\left[\begin{array}{c}f(x_{1} \\ f(x_{2}) \\ f(x_{3}) \\ \vdots\end{array}\right]</script>
+
+<table>
+  <tbody>
+    <tr>
+      <td>For example, we could specify the function at points spaced by small amount <script type="math/tex">{\delta x}</script>, with <script type="math/tex">{x_{2}=x_{1}+\delta x}</script>, <script type="math/tex">{x_{3}=x_{2}+\delta x}</script> and so on. We would do this for sufficiently many values of <script type="math/tex">{x}</script> and over a sufficient range of <script type="math/tex">{x}</script> to get a sufficiently useful representation for some calculation such as integral. The integral of $$ {</td>
+      <td>f(x)</td>
+      <td>^{2}}$$ could be written as</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="math/tex; mode=display">\int|f(x)|^{2}\,dx\approx[f^{*}(x), f^{*}(x_{2}), f^{*}(x_{3}), \cdots]\left[\begin{array}{c}f(x_{1}) \\ f(x_{2}) \\ f(x_{3}) \\ \vdots\end{array}\right]\delta x</script>
+
+<p>where <script type="math/tex">{\delta x}</script> is sufficiently small and the corresponding vectors therefore sufficiently long, we can get an arbitrarily good approximation to be integral.</p>
+
+<h4 id="dirac-notation">2.2. Dirac notation</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>The first part of the Dirac “bra-ket” notation $$ {</td>
+      <td>f(x)\rangle}<script type="math/tex">is called a "ket", which refers to our column vector. For the case of our function</script> {f(x)}$$, one way to define the “ket” is</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="math/tex; mode=display">|f(x)\rangle\equiv\left[\begin{array}{c}f(x_{1})\sqrt{\delta x} \\ f(x_{2})\sqrt{\delta x} \\ f(x_{3})\sqrt{\delta x} \\ \vdots\end{array}\right]</script>
+
+<p>or the limit of this as <script type="math/tex">{\delta x\rightarrow 0}</script>. We put <script type="math/tex">{\sqrt{\delta x}}</script> into the vector for normalization. The function is still a vector list of numbers.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>We can similarly define the “bra” $$ {\langle f(x)</td>
+      <td>}$$ to refer a row vector</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="math/tex; mode=display">\langle f(x)|\equiv[f^{*}(x_{1})\sqrt{\delta x}\quad f^{*}(x_{2})\sqrt{\delta x}\quad f^{*}(x_{3})\sqrt{\delta x}\quad\cdots]</script>
+
+<p>where we mean the limit of this as <script type="math/tex">{\delta s\rightarrow 0}</script>.</p>
+
+<p>Note that, in our row vector, we take the complex conjugate of all the values. Note that this “bra” refers to exactly the same function as the “ket”. These are different ways to writing the same function.</p>
+
+<p>The vector</p>
+
+<script type="math/tex; mode=display">[a_{1}^{*}\quad a_{2}^{*}\quad a_{3}^{*}\quad\cdots]</script>
+
+<p>is called, variously the <em>Hermitian adjoint</em>, the <em>Hermitian transpose</em>, the <em>Hermitian conjugate</em> or the <em>adjoint</em> of the vector</p>
+
+<script type="math/tex; mode=display">\left[\begin{array}{c}a_{1} \\ a_{2}\\ a_{3}\\ \vdots\end{array}\right]</script>
+
+<p>A common notation used to indicate the Hermitian adjoint is to use the character “<script type="math/tex">{\dag}</script>” as a superscript</p>
+
+<script type="math/tex; mode=display">\left[\begin{array}{c}a_{1} \\ a_{2}\\ a_{3}\\ \vdots\end{array}\right]^{\dag}=[a_{1}^{*}\quad a_{2}^{*}\quad a_{3}^{*}\quad\cdots]</script>
+
+<p>Forming the Hermitian adjoint is like reflecting about a <script type="math/tex">{-45^{\circ}}</script> line, then taking the complex conjugate of all the elements.</p>
+
+<p>The “bra” is the Hermitian adjoint of the “ket” and vice versa</p>
+
+<script type="math/tex; mode=display">(|f(x)\rangle)^{\dag}=\langle f(x)|\qquad (\langle f(x)|)^{\dag}=|f(x)\rangle</script>
+
+<p>The Hermitian adjoint of the Hermitian adjoint brings us back to where we started.</p>
+
+<p>Considering <script type="math/tex">{f(x)}</script> as a vector and following our previous result and adding bra-ket notation</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{array}{rcl}  \int|f(x)|^{2}\,dx&\equiv&[f^{*}(x_{1})\sqrt{\delta x}\quad f^{*}(x_{2})\sqrt{\delta x}\quad f^{*}(x_{3})\sqrt{\delta x}\quad \cdots]\left[\begin{array}{c}f^{*}(x_{1})\sqrt{\delta x} \\ f^{*}(x_{2})\sqrt{\delta x} \\ f^{*}(x_{3})\sqrt{\delta x} \\ \cdots\end{array}\right] \\ &\equiv&\sum_{n}f^{*}(x_{n})\sqrt{\delta x}f(x_{n})\sqrt{\delta x} \\ &\equiv&\langle f(x)|f(x)\rangle \end{array} %]]></script>
+
+<p>where again the strict equality applies in the limit when <script type="math/tex">{\delta x\rightarrow 0}</script>.</p>
+
+<p>Note that the use of the bra-ket notation here eliminates the need to write an integral or a sum. The sum is implicit in the vector multiplication. Note that shorthand for the vector product of the “bra” and “ket”</p>
+
+<script type="math/tex; mode=display">\langle g|\times|f\rangle=\langle g|f\rangle</script>
+
+<p>The middle vertical line is usually omitted though it would not matter if it was still there. This notation is also useful for integrals of two different functions.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>In general this kind of “product” $$ {\langle g</td>
+      <td>\times</td>
+      <td>f\rangle\equiv\langle g</td>
+      <td>f\rangle}<script type="math/tex">is called an inner product in linear algebra. The geometric vector dot product is an inner product. The bra-ket "product"</script> {\langle g</td>
+      <td>f\rangle}<script type="math/tex">is an inner product. The "overlap" integral"</script> {\int g^{*}(x)f(x)\,dx}<script type="math/tex">is an inner product. It is "inner" because it takes two vectors and turns them into a number a "small" entity. In the Dirac notation</script> {\langle g</td>
+      <td>f\rangle}$$, the bra-ket gives an inner “feel” to this product. The special parentheses gives a “closed” look.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="using-dirac-notation">2.3. Using Dirac notation</h4>
+
+<p>Suppose the function is not represented directly as a set of values for each point in space but is expanded in a complete orthonormal basis <script type="math/tex">{\psi_{n}(x)}</script>.</p>
+
+<script type="math/tex; mode=display">f(x)\sum_{n}c_{n}\psi_{n}(x)</script>
+
+<p>We could also write the function as the “ket”</p>
+
+<script type="math/tex; mode=display">|f(x)\rangle\equiv\left[\begin{array}{c}c_{1} \\ c_{2} \\ c_{3} \\ \vdots\end{array}\right]</script>
+
+<p>(with possibly an infinite number of elements)</p>
+
+<p>In this case, the “bra” version becomes</p>
+
+<script type="math/tex; mode=display">\langle f(x)|\equiv [c_{1}^{*}\quad c_{2}^{*}\quad c_{3}^{*}\quad \cdots]</script>
+
+<table>
+  <tbody>
+    <tr>
+      <td>When we write the function in this different form as a vector containing these expansion coefficients, we say we have changed its “representation”. The function <script type="math/tex">{f(x)}</script> is still the same function. The vector $$ {</td>
+      <td>f(x)\rangle}$$ is the same vector in our space. We have just changed the axes we used to represent the function, so the coordinates of the vector have changed.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>The result of a bra-ket expression like $$ {\langle f(x)</td>
+      <td>f(x)\rangle}<script type="math/tex">or</script> {\langle g(x)</td>
+      <td>f(x)\rangle}$$ is simply a number (in general, complex) which is easy to see if we think of this as a vector multiplication. Note that this number is not changed as we change the representation. Just as the dot product of two vectors is independent of the coordinate system.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Evaluating <script type="math/tex">{c_{n}}</script> in <script type="math/tex">{f(x)=\sum_{n}c_{n}\psi_{n}(x)}</script> or the <script type="math/tex">{d_{n}}</script> in <script type="math/tex">{g(x)=\sum_{n}d_{n}\psi_{n}(x)}</script> is simple because the functions <script type="math/tex">{\psi_{n}(x)}</script> are orthonormal. Since <script type="math/tex">{\psi_{n(x)}}</script> is just a function, we write it as a ket $$ {</td>
+      <td>\psi_{n}\rangle}<script type="math/tex">. To evaluate the coefficient</script> {c_{m}}<script type="math/tex">, we premultiply by the bra</script> {\langle\psi_{m}</td>
+      <td>}$$ to get</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="math/tex; mode=display">\langle\psi_{m}(x)|f(x)\rangle=\sum_{n}c_{n}\langle\psi_{m}(x)|\psi_{n}(x)\rangle=\sum_{n}c_{n}\delta_{mn}=c_{m}</script>
+
+<p>Using bra-ket notation, we can write <script type="math/tex">{f(x)=\sum_{n}c_{n}\psi_{n}(x)}</script> as</p>
+
+<script type="math/tex; mode=display">|f(x)\rangle=\sum_{n}c_{n}|\Psi_{n}(x)\rangle=\sum_{n}|\psi_{n}(x)\rangle c_{n}=\sum_{n}|\psi_{n}(x)\rangle\langle\psi_{n}(x)|f(x)\rangle</script>
+
+<p>Because <script type="math/tex">{c_{n}}</script> is just a number, it can be moved about in the product. Multiplication of vectors and numbers is commutative.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>In quantum mechanics, where the function <script type="math/tex">{f}</script> represents the state of quantum mechanical system, such as the wave function. The set of numbers represented by the bra $$ {\langle f</td>
+      <td>}<script type="math/tex">or ket</script> {</td>
+      <td>f\rangle}<script type="math/tex">vector represent the state of the system. Hence, we refer to</script> {</td>
+      <td>f\rangle}<script type="math/tex">as the "state vector" of the system and</script> {\langle f</td>
+      <td>}$$ as the (Hermitian) adjoint of the state vector.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In quantum mechanics, the bra or ket always represents either the quantum mechanical state of the system such as the spatial wave function <script type="math/tex">{\psi(x)}</script> or some state the system could be in such as one of the basis states <script type="math/tex">{\psi_{n}(x)}</script>.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>The convention for what is inside the bra or ket is loose, usually one deduces from the context what is meant. For example, it is obvious what basis we were working with. We might use $$ {</td>
+      <td>n\rangle}<script type="math/tex">to represent the</script> {n}<script type="math/tex">th basis function (or basis "state") rather than the notation</script> {</td>
+      <td>\psi_{n}(x)\rangle}<script type="math/tex">or</script> {</td>
+      <td>\psi_{n}\rangle}$$. The symbols inside the bra or ket should be enough to make it clear what state we are discussing. Other wise there are essentially no rules for the notation.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="vector-spaces-operators-and-matrices">3. Vector Spaces, Operators and Matrices</h3>
+
+<h4 id="vector-space">3.1. Vector space</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>For a function expressed as its value at a set of points, we may have infinite number of orthogonal axes labeled with their associated basis function. Just as we label axes in conventional space with unit vectors, one notation is <script type="math/tex">{\hat{x}}</script>, <script type="math/tex">{\hat{y}}</script> and <script type="math/tex">{\hat{z}}</script> for the unit vectors, so also here we label the axes with the kets $$ {</td>
+      <td>\psi_{n}\rangle}$$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Our vector space has an inner product that defines both the orthogonality of the basis functions</p>
+
+<script type="math/tex; mode=display">\langle\psi_{m}|\psi_{n}\rangle=\delta_{nm}</script>
+
+<table>
+  <tbody>
+    <tr>
+      <td>as well as the components $$ {c_{m}=\langle\psi_{m}</td>
+      <td>f\rangle}$$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>With respect to addition of vectors, our vector space is commutative and associative</p>
+
+<script type="math/tex; mode=display">|f\rangle+|g\rangle=|g\rangle+|f\rangle\qquad |f\rangle+(|g\rangle+|h\rangle)=(|f\rangle+|g\rangle)+|h\rangle</script>
+
+<p>Our vector space is linear in multiplying by constants</p>
+
+<script type="math/tex; mode=display">c(|f\rangle+g\rangle)=c|f\rangle+c|g\rangle</script>
+
+<p>And the inner product is linear, both in multiplying by constants and in superposition of vectors</p>
+
+<script type="math/tex; mode=display">\langle f|cg\rangle=c\langle f|g\rangle</script>
+
+<script type="math/tex; mode=display">\langle f|(|g\rangle+|h\rangle)=\langle f|g\rangle+\langle f|h\rangle</script>
+
+<p>There is a well-defined “length” to a vector formally a “norm”</p>
+
+<script type="math/tex; mode=display">||f||=\sqrt{\langle f|f\rangle}</script>
+
+<p>Any vector in the space can be represented to an arbitrary degree of accuracy as a linear combination of the basis vectors. This is the completeness requirement on the basis set. In vector spaces, this property of the vector space itself is sometimes described as “compactness”.</p>
+
+<p>With complex coefficients rather than real lengths, we choose a non-commutative inner product form</p>
+
+<script type="math/tex; mode=display">\langle f|g\rangle=(\langle g|f\rangle)^{*}</script>
+
+<h4 id="operators">3.2. Operators</h4>
+
+<p>An operator turns one function into another. In the vector space representation of a function. An operator turns one vector into another.</p>
+
+<p>Suppose that we are constructing the new function <script type="math/tex">{g(y)}</script> from the function <script type="math/tex">{f(x)}</script> by acting on <script type="math/tex">{f(x)}</script> with the operator <script type="math/tex">{\hat{A}}</script>. The variables <script type="math/tex">{x}</script> and <script type="math/tex">{y}</script> might be same kind of variable or quite different. A standard notation for writing such any such operation on a function is</p>
+
+<script type="math/tex; mode=display">g(y)=\hat{A}f(x)</script>
+
+<p>This should be read as <script type="math/tex">{\hat{A}}</script> operating on <script type="math/tex">{f(x)}</script>.</p>
+
+<p>For <script type="math/tex">{\hat{A}}</script> to be the most general operation possible, it should be possible for the value of <script type="math/tex">{g(y)}</script>, for example, at some particular value of <script type="math/tex">{y=y_{1}}</script> to depend on the values of <script type="math/tex">{f(x)}</script> for all values of the argument <script type="math/tex">{x}</script>.</p>
+
+<p>We are interested here solely in linear operators. They are only ones we will use in quantum mechanics because of the fundamental linearity of quantum mechanics. A linear operator has the following characteristics</p>
+
+<script type="math/tex; mode=display">\hat{A}[f(x)+g(x)]=\hat{A}f(x)+\hat{A}h(x)</script>
+
+<script type="math/tex; mode=display">\hat{A}[cf(x)]=c\hat{A}f(x)</script>
+
+<p>for any complex number <script type="math/tex">{c}</script>.</p>
+
+<p>Let us consider the most general way we could have the function <script type="math/tex">{g(y)}</script> at some specific value <script type="math/tex">{y_{1}}</script> of its argument, that is, <script type="math/tex">{g(y_{1})}</script> be related to have values of <script type="math/tex">{f(x)}</script> for possibly all values of <script type="math/tex">{x}</script> and still retain the linearity properties for this relation.</p>
+
+<p>Think of the function <script type="math/tex">{f(x)}</script> as being represented by a list of values <script type="math/tex">{f(x_{1})}</script>, <script type="math/tex">{f(x_{2})}</script>, <script type="math/tex">{f(x_{3})}</script>, … . We can take the values of <script type="math/tex">{x}</script> to be as closely spaced as we want. We believe that this representation can give us as accurate a representation of <script type="math/tex">{f(x)}</script> for any calculation we need to perform.</p>
+
+<p>Then we propose that for a linear operation, the value of <script type="math/tex">{g(y_{1})}</script> might be related to the values of <script type="math/tex">{f(x)}</script> by a relation of the form</p>
+
+<script type="math/tex; mode=display">g(y_{1})=a_{11}f(x_{1})+a_{12}f(x_{2})+a_{13}f(x_{3})+\ldots</script>
+
+<p>where the <script type="math/tex">{a_{ij}}</script> are complex constants. This form shows the linearity behavior we want. And we can conclude that this form is the most general form possible for the relation between <script type="math/tex">{g(y_{1})}</script> and <script type="math/tex">{f(x)}</script> if this relation is to a linear operator.</p>
+
+<p>To construct the entire function <script type="math/tex">{g(y)}</script>, if we write <script type="math/tex">{f(x)}</script> and <script type="math/tex">{g(y)}</script> as vectors, then we can write all these series at once</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\left[\begin{array}{c}g(y_{1})\\g(y_{2})\\g(y_{3})\\\vdots\end{array}\right]=\left[\begin{array}{cccc} a_{11} & a_{12} & a_{13} & \cdots \\ a_{21} & a_{22} & a_{23} & \cdots \\ a_{31} & a_{32} & a_{33} & \cdots \\ \vdots & \vdots & \vdots & \ddots\end{array}\right]\left[\begin{array}{c}f(x_{1})\\f(x_{2})\\f(x_{3})\\\vdots\end{array}\right] %]]></script>
+
+<p>The above relation can be written as <script type="math/tex">{g(y)=\hat{A}f(x)}</script> where the operator <script type="math/tex">{\hat{A}}</script> can be written as a matrix</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\left[\begin{array}{cccc} a_{11} & a_{12} & a_{13} & \cdots \\ a_{21} & a_{22} & a_{23} & \cdots \\ a_{31} & a_{32} & a_{33} & \cdots \\ \vdots & \vdots & \vdots & \ddots\end{array}\right] %]]></script>
+
+<p>Presuming functions can be represented as vectors, then linear operators can be represented by matrices. In bra-ket notation, we can write <script type="math/tex">{g(y)=\hat{A}f(x)}</script> as</p>
+
+<script type="math/tex; mode=display">|g\rangle=\hat{A}|f\rangle</script>
+
+<p>If we regard the ket as a vector, we now regard the (linear) operator <script type="math/tex">{\hat{A}}</script> as a matrix.</p>
+
+<h4 id="linear-operators-and-their-algebra">3.3. Linear operators and their algebra</h4>
+
+<p>Operators do not in general commute and it is very important in quantum mechanics. We expanded <script type="math/tex">{f(x)=\sum_{n}\psi_{n}(x)}</script> and <script type="math/tex">{g(x)=\sum_{n}d_{n}\psi_{n}(x)}</script>. We could have followed a similar argument requiring each expansion coefficient <script type="math/tex">{d_{i}}</script> depends linearly on all the expansion coefficients <script type="math/tex">{c_{n}}</script>.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>By similar arguments, we would deduce the most general linear relation between the vectors of expansion coefficients could be represented as a matrix, the bra-ket statement of the relation between <script type="math/tex">{f}</script>, <script type="math/tex">{g}</script> and <script type="math/tex">{\hat{A}}</script> remains unchanged as $$ {</td>
+      <td>g\rangle=\hat{A}</td>
+      <td>f\rangle}$$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\left[\begin{array}{c}d_{1}\\d_{2}\\d_{3}\\\vdots\end{array}\right]=\left[\begin{array}{cccc} A_{11} & A_{12} & A_{13} & \cdots \\ A_{21} & A_{22} & A_{23} & \cdots \\ A_{31} & A_{32} & A_{33} & \cdots \\ \vdots & \vdots & \vdots & \ddots\end{array}\right]\left[\begin{array}{c}c_{1}\\c_{2}\\c_{3}\\\vdots\end{array}\right] %]]></script>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Now we will find out how we can write some operator as a matrix, that is, we will deduce how to calculate all the elements of the matrix if we know the operator. Suppose we choose our function <script type="math/tex">{f(x)}</script> to be the <script type="math/tex">{j}</script>th basis function <script type="math/tex">{\psi_{j}(x)}</script> so <script type="math/tex">{f(x)=\psi_{j}(x)}</script> or equivalently $$ {</td>
+      <td>f\rangle=</td>
+      <td>\psi_{j}\rangle}<script type="math/tex">. Then, in the expansion</script> {f(x)=\sum_{n}c_{n}\psi_{n}(x)}<script type="math/tex">, we are choosing</script> {c_{j}=1}<script type="math/tex">with all operate on this</script> {</td>
+      <td>f\rangle}<script type="math/tex">with</script> {\hat{A}}<script type="math/tex">in</script> {</td>
+      <td>g\rangle=\hat{A}</td>
+      <td>f\rangle}<script type="math/tex">to get</script> {</td>
+      <td>g\rangle}<script type="math/tex">. Suppose specifically we want to know the resulting coefficient</script> {d_{i}}<script type="math/tex">in the expansion</script> {g(x)=\sum_{n}d_{n}\psi_{n}(x)}<script type="math/tex">. With our choice</script> {c_{j}=1}<script type="math/tex">, and all other</script> {c}<script type="math/tex">'s 0 then we would have</script> {d_{i}=A_{ij}}$$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>But, from the expansion for $$ {</td>
+      <td>f\rangle}<script type="math/tex">and</script> {</td>
+      <td>g\rangle}<script type="math/tex">, for the specific case of</script> {</td>
+      <td>f\rangle=</td>
+      <td>\psi_{j}\rangle}$$</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="math/tex; mode=display">|g\rangle=\sum_{n}d_{n}|\psi_{n}\rangle=\hat{A}|f\rangle=\hat{A}|\psi_{j}\rangle</script>
+
+<table>
+  <tbody>
+    <tr>
+      <td>To extract <script type="math/tex">{d_{i}}</script> from this expression, we multiply by $$ {\langle\psi_{i}</td>
+      <td>}$$ on both sides to obtain</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="math/tex; mode=display">d_{i}=\langle\psi_{i}|\hat{A}|\psi_{j}\rangle</script>
+
+<p>But we already concluded for this case that <script type="math/tex">{d_{i}=A_{ij}}</script>, so</p>
+
+<script type="math/tex; mode=display">A_{ij}=\langle\psi_{i}|\hat{A}|\psi_{j}\rangle</script>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Operator <script type="math/tex">{\hat{A}}</script> acting on the unit vector $$ {</td>
+      <td>\psi_{j}\rangle}<script type="math/tex">generates the vector</script> {\hat{A}</td>
+      <td>\psi_{j}\rangle}<script type="math/tex">with generally a new length and direction. The matrix element</script> {\langle\psi_{i}</td>
+      <td>\hat{A}</td>
+      <td>\psi_{j}\rangle}<script type="math/tex">is the projection of</script> {\hat{A}</td>
+      <td>\psi_{j}\rangle}<script type="math/tex">onto the</script> {</td>
+      <td>\psi_{i}\rangle}$$ axis.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We can write the matrix for the operator <script type="math/tex">{\hat{A}}</script></p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\hat{A}\equiv\left[\begin{array}{cccc} \langle\psi_{1}|\hat{A}|\psi_{1}\rangle & \langle\psi_{1}|\hat{A}|\psi_{2}\rangle & \langle\psi_{1}|\hat{A}|\psi_{3}\rangle & \cdots \\ \langle\psi_{2}|\hat{A}|\psi_{1}\rangle & \langle\psi_{2}|\hat{A}|\psi_{2}\rangle & \langle\psi_{2}|\hat{A}|\psi_{3}\rangle & \cdots \\ \langle\psi_{3}|\hat{A}|\psi_{1}\rangle & \langle\psi_{3}|\hat{A}|\psi_{2}\rangle & \langle\psi_{3}|\hat{A}|\psi_{3}\rangle & \cdots \\ \vdots & \vdots & \vdots & \ddots \end{array}\right] %]]></script>
+
+<p>We have now deduce how to set up a function as a vector and a linear operator as a matrix which can operate on the vectors.</p>
+
+</article>
+
+
+  <div class="share-page">
+   
+
+  <div class="share-links">
+    
+      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=http://dgyblog.com/oldtimes/2013/10/27/quantum-for-scieng-5/" rel="nofollow" target="_blank" title="Share on Facebook"></a>
+    
+
+    
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Quantum Mechanics for Scientists and Engineers Notes 5&url=http://dgyblog.com/oldtimes/2013/10/27/quantum-for-scieng-5/" rel="nofollow" target="_blank" title="Share on Twitter"></a>
+    
+
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://dgyblog.com/oldtimes/2013/10/27/quantum-for-scieng-5/" rel="nofollow" target="_blank" title="Share on Google+"></a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+  </div>
+</div>
+
+
+
+
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname  = 'dgyblog';
+    var disqus_identifier = '/oldtimes/2013/10/27/quantum-for-scieng-5';
+    var disqus_title      = '';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <small>
+      Except where otherwise noted, content on this site is licensed under a <br>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> <br>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    </small>
+  </div>
+</footer>
+
+
+<script>
+  $("script[type='math/tex']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    var restex=tex.replace("% <![CDATA[", " ").replace("%]]>", " ");
+    return "<span class=\"inline-equation\">" + 
+           katex.renderToString(restex) +
+           "</span>";
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    var restex=tex.replace("% <![CDATA[", " ").replace("%]]>", " ");
+    return "<div align=\"center\" class=\"equation\">" + 
+           katex.renderToString("\\displaystyle "+restex)+
+           "</div>";
+  });
+</script>
+
+</body>
+</html>
