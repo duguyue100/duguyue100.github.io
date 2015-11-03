@@ -19,7 +19,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201511031746" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201511031753" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -185,11 +185,11 @@
 
 <p>where <script type="math/tex">a</script> and <script type="math/tex">b</script> are both real numbers, is called complex number. <script type="math/tex">a</script> is called the “real part” of <script type="math/tex">g</script>: <script type="math/tex">a=\text{Re}(g)</script>, and <script type="math/tex">b</script> is called the “imaginary part” of <script type="math/tex">g</script>: <script type="math/tex">b=\text{Im}(g)</script>.</p>
 
-<p><strong>Definition 4 (Complex conjugate and modulus)</strong> The “complex conjugate” has the sign of the imaginary part reversed. And is indicated by a superscript “<script type="math/tex">\star</script>”</p>
+<p><strong>Definition 4 (Complex conjugate and modulus)</strong> The “complex conjugate” has the sign of the imaginary part reversed. And is indicated by a superscript “<script type="math/tex">*</script>”</p>
 
-<script type="math/tex; mode=display">g^{\star}=-ai+b</script>
+<script type="math/tex; mode=display">g^{*}=-ai+b</script>
 
-<p>Modulus squared of <script type="math/tex">g</script>: <script type="math/tex">\vert g\vert^{2}=g^{\star}g=gg^{\star}</script>. The positive square root of this is called the “modulus” of <script type="math/tex">g</script></p>
+<p>Modulus squared of <script type="math/tex">g</script>: <script type="math/tex">\vert g\vert^{2}=g^{*}g=gg^{*}</script>. The positive square root of this is called the “modulus” of <script type="math/tex">g</script></p>
 
 <script type="math/tex; mode=display">\vert g\vert=+\sqrt{\vert g\vert^{2}}</script>
 
@@ -199,7 +199,7 @@
 
 <p>Note that</p>
 
-<script type="math/tex; mode=display">[\exp(i\theta)]^{\star}=\exp(-i\theta)</script>
+<script type="math/tex; mode=display">[\exp(i\theta)]^{*}=\exp(-i\theta)</script>
 
 <p>Also</p>
 
@@ -239,9 +239,10 @@
 
 <script type="math/tex; mode=display">\vec{a}\times\vec{b}=-\vec{b}\times\vec{a}</script>
 
-<p>A equivalent algebraic formula for the vector cross product is
-<script type="math/tex">% <![CDATA[
-\vec{a}\times\vec{b}=\left\vert \begin{array}{ccc}\vec{i} & \vec{j} & \vec{k} \\ a_{x} & a_{y} & a_{z} \\ b_{x} & b_{y} & b_{z}\end{array}\right\vert %]]></script></p>
+<p>A equivalent algebraic formula for the vector cross product is</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\vec{a}\times\vec{b}=\begin{vmatrix}\vec{i} & \vec{j} & \vec{k} \\ a_{x} & a_{y} & a_{z} \\ b_{x} & b_{y} & b_{z}\end{vmatrix} %]]></script>
 
 <h4 id="differential-calculus">1.4. Differential calculus</h4>
 
@@ -382,7 +383,7 @@
 <p>The determinant of a matrix <script type="math/tex">{\hat{A}}</script> is written in two notations</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
-\det(\hat{A})=\left\vert \begin{array}{cccc} A_{11} & A_{12} & \cdots & A_{1N} \\ A_{21} & A_{22} & \cdots & A_{2N} \\ \vdots & \vdots & \ddots & \vdots \\ A_{N1} & A_{N2} & \cdots & A_{NN}\end{array}\right\vert %]]></script>
+\det(\hat{A})=\begin{vmatrix} A_{11} & A_{12} & \cdots & A_{1N} \\ A_{21} & A_{22} & \cdots & A_{2N} \\ \vdots & \vdots & \ddots & \vdots \\ A_{N1} & A_{N2} & \cdots & A_{NN}\end{vmatrix} %]]></script>
 
 <p>A equation of the from</p>
 
