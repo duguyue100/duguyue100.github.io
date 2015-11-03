@@ -466,61 +466,33 @@
 
 &lt;p&gt;For this superposition, the probability density:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|\Psi(z,t)|^{2}=\frac{1}{L_{z}}\left[\sin^{2}\left(\frac{\pi z}{L_{z}}\right)+\sin^{2}\left(\frac{2\pi z}{L_{z}}\right)+2\cos\left(\frac{E_{2}-E_{1}}{\hbar}t\right)\sin\left(\frac{\pi z}{L_{z}}\right)\sin\left(\frac{2\pi z}{L_{z}}\right)\right]&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert \Psi(z,t)\vert ^{2}=\frac{1}{L_{z}}\left[\sin^{2}\left(\frac{\pi z}{L_{z}}\right)+\sin^{2}\left(\frac{2\pi z}{L_{z}}\right)+2\cos\left(\frac{E_{2}-E_{1}}{\hbar}t\right)\sin\left(\frac{\pi z}{L_{z}}\right)\sin\left(\frac{2\pi z}{L_{z}}\right)\right]&lt;/script&gt;
 
 &lt;p&gt;Note that this probability density has a part that is oscillating time at an angular frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega_{21}=(E_{2}-E_{1})/\hbar=3E_{1}/\hbar}&lt;/script&gt;. Note also that the absolute energy origin does not matter here for this measurable quantity, only the energy difference &lt;script type=&quot;math/tex&quot;&gt;{E_{2}-E_{1}}&lt;/script&gt; matters.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;For the probability density $$ {&lt;/td&gt;
-      &lt;td&gt;\psi_{1}(z)&lt;/td&gt;
-      &lt;td&gt;^{2}}&lt;script type=&quot;math/tex&quot;&gt;is same as the probability density&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;\Psi_{1}(z,t)&lt;/td&gt;
-      &lt;td&gt;^{2}}$$ where&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;For the probability density &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{1}(z)\vert ^{2}}&lt;/script&gt; is same as the probability density &lt;script type=&quot;math/tex&quot;&gt;{\vert \Psi_{1}(z,t)\vert ^{2}}&lt;/script&gt; where&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\Psi_{1}(z,t)=\exp\left(-i\frac{E_{1}}{\hbar}t\right)\psi_{1}(z)&lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;And it’s the same fact for $$ {&lt;/td&gt;
-      &lt;td&gt;\psi_{2}(z)&lt;/td&gt;
-      &lt;td&gt;^{2}}&lt;script type=&quot;math/tex&quot;&gt;and&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;\Psi_{2}(z,t)&lt;/td&gt;
-      &lt;td&gt;^{2}}$$.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;And it’s the same fact for &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{2}(z)\vert ^{2}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\vert \Psi_{2}(z,t)\vert ^{2}}&lt;/script&gt;.&lt;/p&gt;
 
 &lt;p&gt;However, when you add the amplitude up and take the probability of the sum, the equal superposition of the two oscillates at th angular frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega_{21}=(E_{2}-E_{1})/\hbar=3E_{1}/\hbar}&lt;/script&gt; (just like we worked out).&lt;/p&gt;
 
 &lt;h4 id=&quot;superposition-for-the-harmonic-oscillator&quot;&gt;1.2. Superposition for the harmonic oscillator&lt;/h4&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Quite generally, if we make a linear combination of two energy eigenstates with energies &lt;script type=&quot;math/tex&quot;&gt;{E_{a}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{E_{b}}&lt;/script&gt;. The resulting probability distribution with oscillate at the (angular) frequency $$ {\omega_{ab}=&lt;/td&gt;
-      &lt;td&gt;E_{a}-E_{b}&lt;/td&gt;
-      &lt;td&gt;/\hbar}$$. So, if we have a superposition wave function&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Quite generally, if we make a linear combination of two energy eigenstates with energies &lt;script type=&quot;math/tex&quot;&gt;{E_{a}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{E_{b}}&lt;/script&gt;. The resulting probability distribution with oscillate at the (angular) frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega_{ab}=\vert E_{a}-E_{b}\vert /\hbar}&lt;/script&gt;. So, if we have a superposition wave function&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\Psi_{ab}(\vec{r},t)=c_{a}\exp\left(-i\frac{E_{a}}{\hbar}t\right)\psi_{a}(\vec{r})+c_{b}\exp\left(-i\frac{E_{b}}{\hbar}t\right)\psi_{b}(\vec{r})&lt;/script&gt;
 
 &lt;p&gt;then the probability distribution will be&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|\Psi_{ab}(\vec{r},t)|^{2}=|c_{a}|^{2}|\psi_{a}(\vec{r})|^{2}+|c_{b}|^{2}|\psi_{b}(\vec{r})|^{2}+2|c_{a}^{*}\psi_{a}^{*}(\vec{r})c_{b}\psi_{b}(\vec{r})|\cos\left[\frac{(E_{a}-E_{b})t}{\hbar}-\theta_{ab}\right]&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert \Psi_{ab}(\vec{r},t)\vert ^{2}=\vert c_{a}\vert ^{2}\vert \psi_{a}(\vec{r})\vert ^{2}+\vert c_{b}\vert ^{2}\vert \psi_{b}(\vec{r})\vert ^{2}+2\vert c_{a}^{*}\psi_{a}^{*}(\vec{r})c_{b}\psi_{b}(\vec{r})\vert \cos\left[\frac{(E_{a}-E_{b})t}{\hbar}-\theta_{ab}\right]&lt;/script&gt;
 
 &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\theta_{ab}=\arg(c_{a}\psi_{a}(\vec{r})c_{b}^{*}\psi_{b}^{*}(\vec{r}))}&lt;/script&gt;.&lt;/p&gt;
 
 &lt;p&gt;In harmonic oscillator, we take the first and second state as example, the probability density is&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|\Psi(z,t)|^{2}=|\Psi_{0}(z,t)+\Psi_{1}(z,t)|^{2}=|\Psi_{0}(z)|^{2}+|\Psi_{1}(z)|^{2}+2\cos(\omega t)\psi_{0}(z)\psi_{1}(z)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert \Psi(z,t)\vert ^{2}=\vert \Psi_{0}(z,t)+\Psi_{1}(z,t)\vert ^{2}=\vert \Psi_{0}(z)\vert ^{2}+\vert \Psi_{1}(z)\vert ^{2}+2\cos(\omega t)\psi_{0}(z)\psi_{1}(z)&lt;/script&gt;
 
 &lt;p&gt;where the angular frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega=(E_{1}-E_{0})/\hbar}&lt;/script&gt;.&lt;/p&gt;
 
@@ -538,7 +510,7 @@
 
 &lt;p&gt;Incidentally, note that for the expansion coefficients &lt;script type=&quot;math/tex&quot;&gt;{c_{Nn}}&lt;/script&gt;&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|c_{Nn}|^{2}=\frac{N^{n}\exp(-N)}{n!}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert c_{Nn}\vert ^{2}=\frac{N^{n}\exp(-N)}{n!}&lt;/script&gt;
 
 &lt;p&gt;This is the Poisson distribution from statistics with mean &lt;script type=&quot;math/tex&quot;&gt;{N}&lt;/script&gt; and standard deviation &lt;script type=&quot;math/tex&quot;&gt;{\sqrt{N}}&lt;/script&gt;.&lt;/p&gt;
 
@@ -622,29 +594,21 @@
 
 &lt;p&gt;Then the fact that &lt;script type=&quot;math/tex&quot;&gt;{\Psi(\vec{r},t)}&lt;/script&gt; is normalized means that we know the answer for the normalization integral&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{-\infty}^{\infty}|\Psi(\vec{r},t)|^{2}\,d^{3}\vec{r}=\int_{-\infty}^{\infty}\left[\sum_{n}c_{n}^{*}(t)\psi_{n}^{*}(\vec{r})\right]\times\left[\sum_{m}c_{m}(t)\psi_{m}(\vec{r})\right]\,d^{3}\vec{r}=1&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{-\infty}^{\infty}\vert \Psi(\vec{r},t)\vert ^{2}\,d^{3}\vec{r}=\int_{-\infty}^{\infty}\left[\sum_{n}c_{n}^{*}(t)\psi_{n}^{*}(\vec{r})\right]\times\left[\sum_{m}c_{m}(t)\psi_{m}(\vec{r})\right]\,d^{3}\vec{r}=1&lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Because of the orthogonality of the basis functions, only the terms with &lt;script type=&quot;math/tex&quot;&gt;{n=m}&lt;/script&gt; survive the integration. Because of the orthonormality of the basis functions, the result from any such term will simply be $$ {&lt;/td&gt;
-      &lt;td&gt;c_{n}(t)&lt;/td&gt;
-      &lt;td&gt;^{2}}$$, hence we have&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Because of the orthogonality of the basis functions, only the terms with &lt;script type=&quot;math/tex&quot;&gt;{n=m}&lt;/script&gt; survive the integration. Because of the orthonormality of the basis functions, the result from any such term will simply be &lt;script type=&quot;math/tex&quot;&gt;{\vert c_{n}(t)\vert ^{2}}&lt;/script&gt;, hence we have&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n}|c_{n}|^{2}=1&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sum_{n}\vert c_{n}\vert ^{2}=1&lt;/script&gt;
 
 &lt;p&gt;On measurement of a state, the system collapses into the &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt;-th eigenstate of the quantity being measured with probability:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;P_{n}=|c_{n}|^{2}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P_{n}=\vert c_{n}\vert ^{2}&lt;/script&gt;
 
 &lt;p&gt;In the expansion of the state in the eigenfunctions of the quantity being measured &lt;script type=&quot;math/tex&quot;&gt;{c_{n}}&lt;/script&gt; is the expansion coefficient of the &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt;-th eigenfunction.&lt;/p&gt;
 
 &lt;p&gt;Suppose we do an experiment to measure the energy &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt; of some quantum mechanical system. We could repeat the experiment many times and get statistical distribution of results. Given the probabilities &lt;script type=&quot;math/tex&quot;&gt;{P_{n}}&lt;/script&gt; of getting a specific energy eigenstate, with energy &lt;script type=&quot;math/tex&quot;&gt;{E_{n}}&lt;/script&gt;. We would get an average answer:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle E\rangle=\sum_{n} E_{n}P_{n}=\sum_{n}E_{n}|c_{n}|^{2}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle E\rangle=\sum_{n} E_{n}P_{n}=\sum_{n}E_{n}\vert c_{n}\vert ^{2}&lt;/script&gt;
 
 &lt;p&gt;where we call this average &lt;script type=&quot;math/tex&quot;&gt;{\langle E\rangle}&lt;/script&gt; the “&lt;em&gt;expectation value&lt;/em&gt;”.&lt;/p&gt;
 
@@ -682,7 +646,7 @@
 
 &lt;p&gt;Because of the orthonormality of the basis functions &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(\vec{r})}&lt;/script&gt;, the only terms in the double sum that survive are the ones for which &lt;script type=&quot;math/tex&quot;&gt;{n=m}&lt;/script&gt;. So&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int\Psi^{*}(\vec{r},t)\hat{H}\Psi(\vec{r},t)\,d^{3}\vec{r}=\sum_{n}E_{n}|c_{n}|^{2}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int\Psi^{*}(\vec{r},t)\hat{H}\Psi(\vec{r},t)\,d^{3}\vec{r}=\sum_{n}E_{n}\vert c_{n}\vert^{2}&lt;/script&gt;
 
 &lt;p&gt;Equally,&lt;/p&gt;
 
