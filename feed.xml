@@ -544,7 +544,7 @@
 
 &lt;p&gt;For any complex number &lt;script type=&quot;math/tex&quot;&gt;{g=a+ib}&lt;/script&gt;, we can write&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;g=\vert g\vert\frac{a+ib}{\vert g\vert}=\vert g\vert(\cos\theta+i\sin\theta)=\vert g\vertexp(i\theta)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;g=\vert g\vert\frac{a+ib}{\vert g\vert}=\vert g\vert(\cos\theta+i\sin\theta)=\vert g\vert exp(i\theta)&lt;/script&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt;th roots of unity&lt;/em&gt;: Note that the number &lt;script type=&quot;math/tex&quot;&gt;{\exp(2\pi i/n)}&lt;/script&gt; when raised to the power is 1 (unity)&lt;/p&gt;
 
@@ -585,7 +585,7 @@
 
 &lt;p&gt;The derivative at some specific point &lt;script type=&quot;math/tex&quot;&gt;{x_{1}}&lt;/script&gt; can be written&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^{&#39;}(x_{1})\equiv\left.\frac{dy}{dx}\right\vert _{x_{1}}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;y^{&#39;}(x_{1})\equiv\left.\frac{dy}{dx}\right\vert_{x_{1}}&lt;/script&gt;
 
 &lt;p&gt;The second derivative is the derivative of the first derivative&lt;/p&gt;
 
@@ -631,17 +631,17 @@
 
 &lt;p&gt;Cross derivative&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}f}{\partial x\partial y}\equiv\left.\frac{\partial}{\partial x}\right\vert _{y}\left.\frac{\partial f }{\partial y}\right\vert_{x}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}f}{\partial x\partial y}\equiv\left.\frac{\partial}{\partial x}\right\vert_{y}\left.\frac{\partial f }{\partial y}\right\vert_{x}&lt;/script&gt;
 
 &lt;p&gt;is a measure of how “warped” a surface is.&lt;/p&gt;
 
 &lt;p&gt;Differential or Exact Differential&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;df=\left.\frac{\partial f}{\partial x}\right\vert _{y}dx+\left.\frac{\partial f}{\partial y}\right\vert_{x}dy&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;df=\left.\frac{\partial f}{\partial x}\right\vert_{y}dx+\left.\frac{\partial f}{\partial y}\right\vert_{x}dy&lt;/script&gt;
 
 &lt;p&gt;Total derivative&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{df}{dt}=\left.\frac{\partial f}{\partial x}\right\vert _{y}\left(\frac{dx}{dt}\right)+\left.\frac{\partial f}{\partial y}\right\vert_{x}\left(\frac{dy}{dt}\right)&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{df}{dt}=\left.\frac{\partial f}{\partial x}\right\vert_{y}\left(\frac{dx}{dt}\right)+\left.\frac{\partial f}{\partial y}\right\vert_{x}\left(\frac{dy}{dt}\right)&lt;/script&gt;
 
 &lt;h4 id=&quot;ordinary-and-partial-differential-equations&quot;&gt;1.6. Ordinary and partial differential equations&lt;/h4&gt;
 
