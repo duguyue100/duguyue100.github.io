@@ -458,7 +458,7 @@
         <title>Quantum Mechanics for Scientists and Engineers Notes 2</title>
         <description>&lt;h3 id=&quot;wave-propagation&quot;&gt;1. Wave Propagation&lt;/h3&gt;
 
-&lt;h4 id=&quot;plane-waves-and-interference-b&quot;&gt;1.1. Plane waves and interference &amp;lt;/b&amp;gt;&lt;/h4&gt;
+&lt;h4 id=&quot;plane-waves-and-interference&quot;&gt;1.1. Plane waves and interference&lt;/h4&gt;
 
 &lt;p&gt;Generalizing to 3 dimensions, the wave equation becomes&lt;/p&gt;
 
@@ -472,7 +472,7 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\equiv \nabla\cdot\nabla=\left(\hat{x}\frac{\partial}{\partial x}+\hat{y}\frac{\partial}{\partial y}+\hat{z}\frac{\partial}{\partial z}\right)\left(\hat{x}\frac{\partial}{\partial x}+\hat{y}\frac{\partial}{\partial y}+\hat{z}\frac{\partial}{\partial z}\right)&lt;/script&gt;
 
-&lt;p&gt;Here is an example of plane wave. We can check that a monochromatic (one frequency) “plane wave” of the form &lt;script type=&quot;math/tex&quot;&gt;{\exp[i(\vec{k}\dot\vec{r}-\omega t)]}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}=x\hat{x}+y\hat{y}+z\hat{z}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\vec{k}=k_{x}\hat{x}+k_{y}\hat{y}+k_{z}\hat{z}}&lt;/script&gt; is a solution when &lt;script type=&quot;math/tex&quot;&gt;{k=\omega/c}&lt;/script&gt;.&lt;/p&gt;
+&lt;p&gt;Here is an example of plane wave. We can check that a monochromatic (one frequency) “plane wave” of the form &lt;script type=&quot;math/tex&quot;&gt;{\exp[i(\vec{k}\cdot\vec{r}-\omega t)]}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}=x\hat{x}+y\hat{y}+z\hat{z}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\vec{k}=k_{x}\hat{x}+k_{y}\hat{y}+k_{z}\hat{z}}&lt;/script&gt; is a solution when &lt;script type=&quot;math/tex&quot;&gt;{k=\omega/c}&lt;/script&gt;.&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\exp[i(\vec{k}\cdot\vec{r}-\omega t)]=\nabla\cdot\nabla\exp[i(\vec{k}\cdot\vec{r}-\omega t)]=-(k_{x}^{2}+k_{y}^{2}+k_{z}^{2})\exp[i(\vec{k}\cdot\vec{r}-\omega t)]&lt;/script&gt;
 
