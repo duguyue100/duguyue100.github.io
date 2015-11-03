@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="//khan.github.io/KaTeX/bower_components/katex/dist/katex.min.css" type="text/css" rel="stylesheet">
+    <script src="//khan.github.io/KaTeX/bower_components/katex/dist/katex.min.js" type="text/javascript"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quantum Mechanics for Scientists and Engineers Notes 4 &#8211; DGY Life Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quantum Mechanics Learning Notes">
+    <meta name="author" content="Yuhuang Hu">
+    <meta name="keywords" content="oldtimes">
+    <link rel="canonical" href="http://dgyblog.com/oldtimes/2013/10/23/quantum-for-scieng-4/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/pixyll.css?201511031907" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" type="text/css"
+	  href="http://spratt.github.io/Computer-Modern/cmserif.css" />
+    
+    <!-- Verifications -->
+    
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Quantum Mechanics for Scientists and Engineers Notes 4">
+    <meta property="og:description" content="A proud WE-ARE-NOT-DOOMED fan.">
+    <meta property="og:url" content="http://dgyblog.com/oldtimes/2013/10/23/quantum-for-scieng-4/">
+    <meta property="og:site_name" content="DGY Life Blog">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    
+        <meta name="twitter:site" content="@duguyue100" />
+    
+    <meta name="twitter:title" content="Quantum Mechanics for Scientists and Engineers Notes 4" />
+    <meta name="twitter:description" content="Quantum Mechanics Learning Notes" />
+    <meta name="twitter:url" content="http://dgyblog.com/oldtimes/2013/10/23/quantum-for-scieng-4/" />
+    
+    
+</head>
+
+<body class="site">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://dgyblog.com" class="site-title">DGY Life Blog</a>
+      <nav class="site-nav">
+        <a href="/about/">About</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+        <div class="social-icons">
+  <div class="social-icons-right">
+    
+      <a class="fa fa-github" href="https://github.com/duguyue100"></a>
+    
+    
+    
+    <a class="fa fa-rss" href="/feed.xml"></a>
+    
+      <a class="fa fa-twitter" href="https://twitter.com/duguyue100"></a>
+    
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/+YuhuangHu/posts"></a>
+    
+    
+      <a class="fa fa-envelope" href="mailto:duguyue100@gmail.com"></a>
+    
+    
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h2>Quantum Mechanics for Scientists and Engineers Notes 4</h2>
+  <span class="post-meta">Oct 23, 2013</span><br>
+  
+  <span class="post-meta small">
+  
+    8 minute read
+  
+  </span>
+</div>
+
+<article class="post-content">
+  <h3 id="time-evolution">1. Time Evolution</h3>
+
+<h4 id="superposition-for-particle-in-a-box">1.1. Superposition for particle in a box</h4>
+
+<p>Suppose we have an infinitely deep potential well with the particle in a linear superposition, for example, with equal parts of the first and second states of the well (This superposition is normalized)</p>
+
+<script type="math/tex; mode=display">\Psi(z,t)=\frac{1}{\sqrt{L_{z}}}\left[\exp\left(-i\frac{E_{1}}{\hbar}t\right)\sin\left(\frac{\pi z}{L_{z}}\right)+\exp\left(-i\frac{E_{2}}{\hbar}t\right)\sin\left(\frac{2\pi z}{L_{z}}\right)\right]</script>
+
+<p>For this superposition, the probability density:</p>
+
+<script type="math/tex; mode=display">|\Psi(z,t)|^{2}=\frac{1}{L_{z}}\left[\sin^{2}\left(\frac{\pi z}{L_{z}}\right)+\sin^{2}\left(\frac{2\pi z}{L_{z}}\right)+2\cos\left(\frac{E_{2}-E_{1}}{\hbar}t\right)\sin\left(\frac{\pi z}{L_{z}}\right)\sin\left(\frac{2\pi z}{L_{z}}\right)\right]</script>
+
+<p>Note that this probability density has a part that is oscillating time at an angular frequency <script type="math/tex">{\omega_{21}=(E_{2}-E_{1})/\hbar=3E_{1}/\hbar}</script>. Note also that the absolute energy origin does not matter here for this measurable quantity, only the energy difference <script type="math/tex">{E_{2}-E_{1}}</script> matters.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>For the probability density $$ {</td>
+      <td>\psi_{1}(z)</td>
+      <td>^{2}}<script type="math/tex">is same as the probability density</script> {</td>
+      <td>\Psi_{1}(z,t)</td>
+      <td>^{2}}$$ where</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="math/tex; mode=display">\Psi_{1}(z,t)=\exp\left(-i\frac{E_{1}}{\hbar}t\right)\psi_{1}(z)</script>
+
+<table>
+  <tbody>
+    <tr>
+      <td>And it’s the same fact for $$ {</td>
+      <td>\psi_{2}(z)</td>
+      <td>^{2}}<script type="math/tex">and</script> {</td>
+      <td>\Psi_{2}(z,t)</td>
+      <td>^{2}}$$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>However, when you add the amplitude up and take the probability of the sum, the equal superposition of the two oscillates at th angular frequency <script type="math/tex">{\omega_{21}=(E_{2}-E_{1})/\hbar=3E_{1}/\hbar}</script> (just like we worked out).</p>
+
+<h4 id="superposition-for-the-harmonic-oscillator">1.2. Superposition for the harmonic oscillator</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Quite generally, if we make a linear combination of two energy eigenstates with energies <script type="math/tex">{E_{a}}</script> and <script type="math/tex">{E_{b}}</script>. The resulting probability distribution with oscillate at the (angular) frequency $$ {\omega_{ab}=</td>
+      <td>E_{a}-E_{b}</td>
+      <td>/\hbar}$$. So, if we have a superposition wave function</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="math/tex; mode=display">\Psi_{ab}(\vec{r},t)=c_{a}\exp\left(-i\frac{E_{a}}{\hbar}t\right)\psi_{a}(\vec{r})+c_{b}\exp\left(-i\frac{E_{b}}{\hbar}t\right)\psi_{b}(\vec{r})</script>
+
+<p>then the probability distribution will be</p>
+
+<script type="math/tex; mode=display">|\Psi_{ab}(\vec{r},t)|^{2}=|c_{a}|^{2}|\psi_{a}(\vec{r})|^{2}+|c_{b}|^{2}|\psi_{b}(\vec{r})|^{2}+2|c_{a}^{*}\psi_{a}^{*}(\vec{r})c_{b}\psi_{b}(\vec{r})|\cos\left[\frac{(E_{a}-E_{b})t}{\hbar}-\theta_{ab}\right]</script>
+
+<p>where <script type="math/tex">{\theta_{ab}=\arg(c_{a}\psi_{a}(\vec{r})c_{b}^{*}\psi_{b}^{*}(\vec{r}))}</script>.</p>
+
+<p>In harmonic oscillator, we take the first and second state as example, the probability density is</p>
+
+<script type="math/tex; mode=display">|\Psi(z,t)|^{2}=|\Psi_{0}(z,t)+\Psi_{1}(z,t)|^{2}=|\Psi_{0}(z)|^{2}+|\Psi_{1}(z)|^{2}+2\cos(\omega t)\psi_{0}(z)\psi_{1}(z)</script>
+
+<p>where the angular frequency <script type="math/tex">{\omega=(E_{1}-E_{0})/\hbar}</script>.</p>
+
+<h4 id="the-coherent-state">1.3. The coherent state</h4>
+
+<p>The coherent state for a harmonic oscillator of frequency <script type="math/tex">{\omega}</script> is</p>
+
+<script type="math/tex; mode=display">\Psi_{N}(\xi, t)=\sum_{n=0}^{\infty}c_{Nn}\exp\left[-i\left(n+\frac{1}{2}\right)\omega t\right]\psi_{n}(\xi)</script>
+
+<p>where</p>
+
+<script type="math/tex; mode=display">c_{Nn}=\sqrt{\frac{N^{n}\exp(-N)}{n!}}</script>
+
+<p>and the <script type="math/tex">{\psi_{n}(\xi)}</script> are the harmonic oscillator eigenstates.</p>
+
+<p>Incidentally, note that for the expansion coefficients <script type="math/tex">{c_{Nn}}</script></p>
+
+<script type="math/tex; mode=display">|c_{Nn}|^{2}=\frac{N^{n}\exp(-N)}{n!}</script>
+
+<p>This is the Poisson distribution from statistics with mean <script type="math/tex">{N}</script> and standard deviation <script type="math/tex">{\sqrt{N}}</script>.</p>
+
+<h3 id="wavepackets">2. Wavepackets</h3>
+
+<h4 id="group-velocity">2.1. Group velocity</h4>
+
+<p>Consider two waves at different frequencies <script type="math/tex">{\omega_{1}}</script> and <script type="math/tex">{\omega_{2}}</script> and suppose that the wave velocity <script type="math/tex">{v}</script> is the same independent of frequency. Then the corresponding wavevector magnitude <script type="math/tex">{k=\omega/v}</script> is the same for both wave. If we take two such waves of equal amplitudes and add them together, then we get spatial beats — a “spatial envelope”. The envelope moves at the same speed as the wave.</p>
+
+<p>Algebraically, for two waves at different frequencies, one at frequency <script type="math/tex">{\omega+\delta\omega}</script> and wavevector <script type="math/tex">{k+\delta k}</script> and one at frequency <script type="math/tex">{\omega-\delta\omega}</script> and wavevector <script type="math/tex">{k-\delta k}</script>. By using complex exponential waves, we got a total wave</p>
+
+<script type="math/tex; mode=display">f(z,t)=\exp\left\{-i\left[(\omega+\delta\omega)t-(k+\delta k)z\right]\right\}+\exp\exp\left\{-i\left[(\omega-\delta\omega)t-(k-\delta k)z\right]\right\}</script>
+
+<p>The equation can be rewritten as</p>
+
+<script type="math/tex; mode=display">f(z,t)=2\cos(\delta\omega t-\delta kz)\exp[-i(\omega t-kz)]</script>
+
+<p>Note here, because <script type="math/tex">{k=\omega/v}</script> and <script type="math/tex">{v=\omega/k}</script> then <script type="math/tex">{\delta k=\delta w/v}</script> and <script type="math/tex">{v=\delta w/\delta k}</script>.</p>
+
+<p>But suppose the wave velocity is different for different frequencies (e.g. suppose the higher frequency wave has a slower velocity). Then the “envelope velocity” <script type="math/tex">{v_{g}=\delta w/\delta k}</script> which we will call the <em>group velocity</em> is not the same as the underlying wave velocity. More precisely, we define</p>
+
+<script type="math/tex; mode=display">v_{g}=\frac{d\omega}{dk}</script>
+
+<p>as group velocity. And</p>
+
+<script type="math/tex; mode=display">v_{p}=\frac{\omega}{k}</script>
+
+<p>as <em>phase velocity</em>.</p>
+
+<h4 id="group-velocity-for-a-free-electron">2.2. Group velocity for a free electron</h4>
+
+<p>The small dispersion in glass gives significant effects in long fibers. Large dispersions are found near absorption lines. In waveguides, different spatial forms (modes) propagate at different velocities dispersion from geometry or structure. Any structure whose physical properties such as refractive index change on a scale with a wavelength will also show string “structural” dispersion.</p>
+
+<p>For a free electron where <script type="math/tex">{V(z)=0}</script>, in one direction <script type="math/tex">{z}</script> the Schroedinger equation is</p>
+
+<script type="math/tex; mode=display">\frac{-\hbar^{2}}{2m}\frac{d^{2}\psi}{dz^{2}}=E\psi</script>
+
+<p>with solution <script type="math/tex">{\psi(z)\propto\psi\exp(\pm ikz)}</script> and <script type="math/tex">{E=\frac{\hbar^{2}k^{2}}{2m}}</script>. This means that</p>
+
+<script type="math/tex; mode=display">\omega=\frac{E}{\hbar}=\frac{\hbar k^{2}}{2m}</script>
+
+<p>so <script type="math/tex">\omega \propto k^{2}</script></p>
+
+<p><em>not</em> <script type="math/tex">{\omega\propto k}</script>.</p>
+
+<p>The group velocity of a free electron is given by</p>
+
+<script type="math/tex; mode=display">v_{g}=\frac{d\omega}{dk}=\frac{1}{\hbar}\frac{dE}{dk}=\frac{\hbar k}{m}=\sqrt{\frac{2E}{m}}</script>
+
+<p>The group velocity <script type="math/tex">{v_{g}=\sqrt{\frac{2E}{m}}}</script> does gives us <script type="math/tex">{E=\frac{1}{2}mv_{g}^{2}}</script> which corresponds with out classical ideas of velocity and kinetic energy. This suggests it is meaningful to think of the electron as moving at the group velocity.</p>
+
+<p>Note that phase velocity does not give us this kind of relation with <script type="math/tex">{E\equiv\hbar\omega=\hbar^{2}k^{2}/2m}</script>, we have <script type="math/tex">{\frac{\omega}{k}\equiv v_{p}=\frac{\hbar k}{2m}}</script>, then we can deduce</p>
+
+<script type="math/tex; mode=display">E=2mv_{p}^{2}</script>
+
+<h4 id="electron-wavepackets">2.3. Electron wavepackets</h4>
+
+<p>We can construct a “wavepacket” by putting together a liner superposition of energy eigensolutions. For a free electron or a similar particle of mass <script type="math/tex">{m}</script>, the individual eignsolutions are plane waves. For propagating in the <script type="math/tex">{z}</script> direction, these are of the form</p>
+
+<script type="math/tex; mode=display">\Psi_{k}(z,t)\propto\exp\left\{-i\left[\frac{E(k)}{\hbar}t-kz\right]\right\}=\exp\{-i[\omega(k)t-kz\}</script>
+
+<p>for some chosen value of <script type="math/tex">{k}</script>, and hence of</p>
+
+<script type="math/tex; mode=display">\text{energy: } E(k)=\frac{\hbar^{2}k^{2}}{2m} \text{ frequency: }\omega(k)=\frac{E(k)}{\hbar}</script>
+
+<p>One convenient and useful set of <script type="math/tex">{k}</script> values and amplitudes <script type="math/tex">{a_{k}}</script> to choose is a set of equally spaced <script type="math/tex">{k}</script> values with Gaussian amplitudes or “weights” for <script type="math/tex">{a_{k}}</script></p>
+
+<script type="math/tex; mode=display">\Psi_{G}(z,t)\propto\sum_{k}\exp\left[-\left(\frac{k-\bar{k}}{2\Delta k}\right)^{2}\right]\exp\{-i[\omega(k)t-kz\}</script>
+
+<p>Here <script type="math/tex">{\bar{k}}</script> is the center of the distribution of <script type="math/tex">{k}</script> values, <script type="math/tex">{\Delta k}</script> is width parameter for the Gaussian function. Note that this gives a “pulse” that is also Gaussian in space.</p>
+
+<p>As we let time evolve, by simply adding up the terms in our wavepackets sum at each time. We can see the wavepacket propagate moving to the right and getting wider. A wavepackets that increases in width as it propagates is said to be “dispersing”. It gets wider because the change in <script type="math/tex">{\omega}</script> with <script type="math/tex">{k}</script> is not even linear. The effect is known as group velocity dispersion.</p>
+
+<h3 id="measurement-operators-and-expectation-values">3. Measurement, Operators and Expectation Values</h3>
+
+<h4 id="quantum-mechanical-measurement">3.1. Quantum-mechanical measurement</h4>
+
+<p>Suppose we take some (normalized) quantum mechanical wave function <script type="math/tex">{\Psi(\vec{r},t)}</script> and expand it in some complete orthonormal set of spatial functions <script type="math/tex">{\psi_{n}(\vec{r})}</script>. At least if we allow the expansion coefficients <script type="math/tex">{c_{n}}</script> to vary in time. We know we can always do this:</p>
+
+<script type="math/tex; mode=display">\Psi(\vec{r},t)=\sum_{n}c_{n}(t)\psi_{n}(\vec{r})</script>
+
+<p>Then the fact that <script type="math/tex">{\Psi(\vec{r},t)}</script> is normalized means that we know the answer for the normalization integral</p>
+
+<script type="math/tex; mode=display">\int_{-\infty}^{\infty}|\Psi(\vec{r},t)|^{2}\,d^{3}\vec{r}=\int_{-\infty}^{\infty}\left[\sum_{n}c_{n}^{*}(t)\psi_{n}^{*}(\vec{r})\right]\times\left[\sum_{m}c_{m}(t)\psi_{m}(\vec{r})\right]\,d^{3}\vec{r}=1</script>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Because of the orthogonality of the basis functions, only the terms with <script type="math/tex">{n=m}</script> survive the integration. Because of the orthonormality of the basis functions, the result from any such term will simply be $$ {</td>
+      <td>c_{n}(t)</td>
+      <td>^{2}}$$, hence we have</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="math/tex; mode=display">\sum_{n}|c_{n}|^{2}=1</script>
+
+<p>On measurement of a state, the system collapses into the <script type="math/tex">{n}</script>-th eigenstate of the quantity being measured with probability:</p>
+
+<script type="math/tex; mode=display">P_{n}=|c_{n}|^{2}</script>
+
+<p>In the expansion of the state in the eigenfunctions of the quantity being measured <script type="math/tex">{c_{n}}</script> is the expansion coefficient of the <script type="math/tex">{n}</script>-th eigenfunction.</p>
+
+<p>Suppose we do an experiment to measure the energy <script type="math/tex">{E}</script> of some quantum mechanical system. We could repeat the experiment many times and get statistical distribution of results. Given the probabilities <script type="math/tex">{P_{n}}</script> of getting a specific energy eigenstate, with energy <script type="math/tex">{E_{n}}</script>. We would get an average answer:</p>
+
+<script type="math/tex; mode=display">\langle E\rangle=\sum_{n} E_{n}P_{n}=\sum_{n}E_{n}|c_{n}|^{2}</script>
+
+<p>where we call this average <script type="math/tex">{\langle E\rangle}</script> the “<em>expectation value</em>”.</p>
+
+<p>In the following context, we are describing Stern-Gerlach experiment with electrons which has shocking different result than classical view of the experiment. The apparatus has a non-uniform magnetic filed where locally the magnetic filed is more concentrated near the north pole magnet face. Imagine firing some small magnets. Initially along the dashed line (you need to see the video to get this). Because the magnetic field is non-uniform, a vertical magnet will be deflected up or down. A horizontally-oriented magnet will not be deflected and magnets of other orientations should be deflected by intermediate amounts. After “firing” many randomly oriented magnets, we should end up with a line on the screen.</p>
+
+<p>Electrons have a quantum mechanical property called spin. It gives them a “magnetic moment” just like a small magnet. And when we fire electrons with no particular “orientation” of the spin into the Stern-Gerlach apparatus, we got only two dots! The explanation of this would be that we are measuring the vertical component of the spin. There are two eigenstates of this component: “up” and “down”, so we have collapsed to the eigenstates.</p>
+
+<h4 id="expectation-values-and-operators">3.2. Expectation values and operators</h4>
+
+<p>In classical mechanics, the Hamiltonian is a function of position and momentum representing the total energy of the system. In quantum mechanical systems that can be analyzed by Schroedinger equation, we can define the entity</p>
+
+<script type="math/tex; mode=display">\hat{H}=-\frac{\hbar^{2}}{2m}\nabla^{2}+V(\vec{r},t)</script>
+
+<p>we can write the Schroedinger equation as</p>
+
+<script type="math/tex; mode=display">\hat{H}\psi(\vec{r})=E\psi(\vec{r}) \text{ and } \hat{H}\Psi(\vec{r},t)=i\hbar\frac{\partial\Psi(\vec{r},t)}{\partial t}</script>
+
+<p>The entity <script type="math/tex">{\hat{H}}</script> is an “operator”. The most general definition of an operator is an entity that turns one function into another. The particular operator <script type="math/tex">{\hat{H}}</script> is called the Hamiltonian operator. Just like the classical Hamiltonian function, it is related to the total energy of the system. This Hamiltonian idea extends beyond the specific Schroedinger-equation definition we have so far which is for single, non-magnetic particles. In general, in non-relativistic quantum mechanics, the Hamiltonian is the operator related to the total energy of the system.</p>
+
+<p>In order to understand the relation between the Hamiltonian operator, the wave function and the expectation value of the energy. We start by looking at the integral</p>
+
+<script type="math/tex; mode=display">I=\int\Psi^{*}(\vec{r},t)\hat{H}\Psi(\vec{r},t)\,d^{3}\vec{r}</script>
+
+<p>where <script type="math/tex">{\Psi(\vec{r},t)}</script> is the wave function of some system of interest. Let expend the wave function <script type="math/tex">{\Psi(\vec{r},t)}</script> in the (normalized) energy eigenstates <script type="math/tex">{\psi_{n}(\vec{r})}</script></p>
+
+<script type="math/tex; mode=display">\Psi(\vec{r},t)=\sum_{n}c_{n}(t)\psi_{n}(\vec{r})</script>
+
+<p>So</p>
+
+<script type="math/tex; mode=display">\hat{H}\Psi(\vec{r},t)=\left[-\frac{\hbar^{2}}{2m}\nabla^{2}+V(\vec{r},t)\right]\Psi(\vec{r},t)=\sum_{n}c_{n}E_{n}\psi_{n}(\vec{r})</script>
+
+<p>Hence the integral becomes</p>
+
+<script type="math/tex; mode=display">\int\Psi^{*}(\vec{r},t)\hat{H}\Psi(\vec{r},t)\,d^{3}\vec{r}=\int_{-\infty}^{\infty}\left[\sum_{m}c_{m}^{*}(t)\psi_{m}^{*}(\vec{r})\right]\times\left[\sum_{n}c_{n}(t)E_{n}\psi_{n}(\vec{r})\right]\,d^{3}\vec{r}</script>
+
+<p>Because of the orthonormality of the basis functions <script type="math/tex">{\psi_{n}(\vec{r})}</script>, the only terms in the double sum that survive are the ones for which <script type="math/tex">{n=m}</script>. So</p>
+
+<script type="math/tex; mode=display">\int\Psi^{*}(\vec{r},t)\hat{H}\Psi(\vec{r},t)\,d^{3}\vec{r}=\sum_{n}E_{n}|c_{n}|^{2}</script>
+
+<p>Equally,</p>
+
+<script type="math/tex; mode=display">\langle E\rangle=\int\Psi^{*}(\vec{r},t)\hat{H}\Psi(\vec{r},t)\,d^{3}\vec{r}</script>
+
+<h4 id="time-evolution-and-the-hamiltonian">3.3. Time evolution and the Hamiltonian</h4>
+
+<p>Taking Schroedinger’s time dependent equation and rewriting as</p>
+
+<script type="math/tex; mode=display">\frac{\partial\Psi(\vec{r},t)}{\partial t}=-\frac{i\hat{H}}{\hbar}\Psi(\vec{r},t)</script>
+
+<p>And now, we are targeting to seek the relationship between two different states in different times.</p>
+
+<p>First we note that, because <script type="math/tex">{\hat{H}}</script> is a linear operator, for any number <script type="math/tex">{a}</script></p>
+
+<script type="math/tex; mode=display">\hat{H}[a\Psi(\vec{r},t)]=a[\hat{H}\Psi(\vec{r},t)]</script>
+
+<p>Since this works for any function <script type="math/tex">{\Psi(\vec{r},t)}</script>, we can write as a shorthand</p>
+
+<script type="math/tex; mode=display">\hat{H}a\equiv a\hat{H}</script>
+
+<p>We define</p>
+
+<script type="math/tex; mode=display">\hat{H}^{2}=\hat{H}[\hat{H}\Psi(\vec{r},t)]</script>
+
+<p>Specifically, for example, for the energy eigenfunction <script type="math/tex">{\psi_{n}(\vec{r})}</script></p>
+
+<script type="math/tex; mode=display">\hat{H}^{2}\psi_{n}(\vec{r})=\hat{H}[\hat{H}\psi_{n}(\vec{r})]=\hat{H}[E_{n}\psi_{n}(\vec{r})]=E_{n}^{2}\psi_{n}(\vec{r})</script>
+
+<p>We can proceed inductively to define all higher powers: <script type="math/tex">{\hat{H}^{m+1}=\hat{H}[\hat{H}^{m}]}</script> which will give, for an energy eigenfunction</p>
+
+<script type="math/tex; mode=display">\hat{H}^{m}\psi_{n}(\vec{r})=E_{n}^{m}\psi_{n}(\vec{r})</script>
+
+<p>Suppose the wave function at time <script type="math/tex">{t_{0}}</script> is <script type="math/tex">{\psi(\vec{r})}</script> which we expand in the energy eigenfunction <script type="math/tex">{\psi_{n}(\vec{r})}</script> as <script type="math/tex">{\psi(\vec{r})=\sum_{n}a_{n}\psi_{n}(\vec{r})}</script>, and we know that</p>
+
+<script type="math/tex; mode=display">\Psi(\vec{r},t_{1})=\sum_{n}a_{n}\exp\left[-\frac{iE_{n}(t_{1}-t_{0})}{\hbar}\right]\psi_{n}(\vec{r})</script>
+
+<p>We can write exponentials as power series,</p>
+
+<script type="math/tex; mode=display">\Psi(\vec{r},t_{1})=\sum_{n}a_{n}\left[1+\left(-\frac{iE_{n}(t_{1}-t_{0})}{\hbar}\right)+\frac{1}{2!}\left(-\frac{iE_{n}(t_{1}-t_{0})}{\hbar}\right)^{2}+\ldots\right]\psi_{n}(\vec{r})</script>
+
+<p>Because we showed that <script type="math/tex">{\hat{H}^{m}\psi_{n}(\vec{r})=E_{n}^{m}\psi_{n}(\vec{r})}</script>,</p>
+
+<script type="math/tex; mode=display">\Psi(\vec{r},t_{1})=\sum_{n}a_{n}\left[1+\left(-\frac{i\hat{H}(t_{1}-t_{0})}{\hbar}\right)+\frac{1}{2!}\left(-\frac{i\hat{H}(t_{1}-t_{0})}{\hbar}\right)^{2}+\ldots\right]\psi_{n}(\vec{r})</script>
+
+<p>Because the operator <script type="math/tex">{\hat{H}}</script> and all its power commute with scalar quantities (numbers) we can rewrite</p>
+
+<script type="math/tex; mode=display">\Psi(\vec{r},t_{1})=\left[1+\left(-\frac{i\hat{H}(t_{1}-t_{0})}{\hbar}\right)+\frac{1}{2!}\left(-\frac{i\hat{H}(t_{1}-t_{0})}{\hbar}\right)^{2}+\ldots\right]\sum_{n}a_{n}\psi_{n}(\vec{r})</script>
+
+<p>And this equation can be reverse to exponential</p>
+
+<script type="math/tex; mode=display">\Psi(\vec{r},t_{1})=\exp\left(-\frac{i\hat{H}(t_{1}-t_{0})}{\hbar}\right)\Psi(\vec{r},t_{0})</script>
+
+</article>
+
+
+  <div class="share-page">
+   
+
+  <div class="share-links">
+    
+      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=http://dgyblog.com/oldtimes/2013/10/23/quantum-for-scieng-4/" rel="nofollow" target="_blank" title="Share on Facebook"></a>
+    
+
+    
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Quantum Mechanics for Scientists and Engineers Notes 4&url=http://dgyblog.com/oldtimes/2013/10/23/quantum-for-scieng-4/" rel="nofollow" target="_blank" title="Share on Twitter"></a>
+    
+
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://dgyblog.com/oldtimes/2013/10/23/quantum-for-scieng-4/" rel="nofollow" target="_blank" title="Share on Google+"></a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+  </div>
+</div>
+
+
+
+
+
+
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname  = 'dgyblog';
+    var disqus_identifier = '/oldtimes/2013/10/23/quantum-for-scieng-4';
+    var disqus_title      = '';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <small>
+      Except where otherwise noted, content on this site is licensed under a <br>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> <br>
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    </small>
+  </div>
+</footer>
+
+
+<script>
+  $("script[type='math/tex']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    var restex=tex.replace("% <![CDATA[", " ").replace("%]]>", " ");
+    return "<span class=\"inline-equation\">" + 
+           katex.renderToString(restex) +
+           "</span>";
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    var restex=tex.replace("% <![CDATA[", " ").replace("%]]>", " ");
+    return "<div align=\"center\" class=\"equation\">" + 
+           katex.renderToString("\\displaystyle "+restex)+
+           "</div>";
+  });
+</script>
+
+</body>
+</html>
