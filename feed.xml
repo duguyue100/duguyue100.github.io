@@ -502,19 +502,11 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\Psi_{k}(k)\propto\exp\left[-\left(\frac{k-\bar{k}}{2\Delta k}\right)^{2}\right]&lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;script type=&quot;math/tex&quot;&gt;{\Psi_{k}(k)}&lt;/script&gt; is the representation of the wave function in &lt;script type=&quot;math/tex&quot;&gt;{k}&lt;/script&gt; space. $$ {&lt;/td&gt;
-      &lt;td&gt;\Psi_{k}(k)&lt;/td&gt;
-      &lt;td&gt;^{2}}&lt;script type=&quot;math/tex&quot;&gt;is the probability density&lt;/script&gt; {P_{k}}&lt;script type=&quot;math/tex&quot;&gt;that if we measured the momentum of the particle (actually the&lt;/script&gt; {z}&lt;script type=&quot;math/tex&quot;&gt;component of momentum), it would be found to have value&lt;/script&gt; {\hbar k}$$.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;{\Psi_{k}(k)}&lt;/script&gt; is the representation of the wave function in &lt;script type=&quot;math/tex&quot;&gt;{k}&lt;/script&gt; space. &lt;script type=&quot;math/tex&quot;&gt;{\vert \Psi_{k}(k)\vert ^{2}}&lt;/script&gt; is the probability density &lt;script type=&quot;math/tex&quot;&gt;{P_{k}}&lt;/script&gt; that if we measured the momentum of the particle (actually the &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt; component of momentum), it would be found to have value &lt;script type=&quot;math/tex&quot;&gt;{\hbar k}&lt;/script&gt;.&lt;/p&gt;
 
 &lt;p&gt;The probability of finding a value &lt;script type=&quot;math/tex&quot;&gt;{\hbar k}&lt;/script&gt; for the momentum would be&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;P_{k}=|\Psi_{k}(k)|^{2}\propto\exp\left[-\frac{(k-\bar{k})^{2}}{2(\Delta k)^{2}}\right]&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P_{k}=\vert \Psi_{k}(k)\vert ^{2}\propto\exp\left[-\frac{(k-\bar{k})^{2}}{2(\Delta k)^{2}}\right]&lt;/script&gt;
 
 &lt;p&gt;This Gaussian corresponds to the statistical Gaussian probability distribution with standard deviation &lt;script type=&quot;math/tex&quot;&gt;{\Delta k}&lt;/script&gt;.&lt;/p&gt;
 
@@ -524,11 +516,11 @@
 
 &lt;p&gt;and&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|\Psi(z,0)|^{2}\propto\exp[-2(\Delta k)^{2}z^{2}]&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert \Psi(z,0)\vert ^{2}\propto\exp[-2(\Delta k)^{2}z^{2}]&lt;/script&gt;
 
 &lt;p&gt;is the standard form&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|\Psi(z,0)|^{2}\propto\exp\left[-\frac{z^{2}}{2(\Delta z)^{2}}\right]&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert \Psi(z,0)\vert ^{2}\propto\exp\left[-\frac{z^{2}}{2(\Delta z)^{2}}\right]&lt;/script&gt;
 
 &lt;p&gt;where the parameter &lt;script type=&quot;math/tex&quot;&gt;{\Delta z}&lt;/script&gt; would now be the standard deviation in the probability distribution for &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt;. Then &lt;script type=&quot;math/tex&quot;&gt;{\Delta k\Delta z=1/2}&lt;/script&gt;.&lt;/p&gt;
 
@@ -564,17 +556,7 @@
 
 &lt;p&gt;The minus sign is because the divergence of the flow or current is the the net amount leaving the volume.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;In quantum mechanical case, the particle density is $$ {&lt;/td&gt;
-      &lt;td&gt;\Psi(vec{r},t)&lt;/td&gt;
-      &lt;td&gt;^{2}}&lt;script type=&quot;math/tex&quot;&gt;, so we are looking for a relation of the form&lt;/script&gt; {\partial s/\partial t=-\nabla\vec{j}_{p}}&lt;script type=&quot;math/tex&quot;&gt;, but with&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;\Psi(\vec{r},t)&lt;/td&gt;
-      &lt;td&gt;^{2}}&lt;script type=&quot;math/tex&quot;&gt;instead of&lt;/script&gt; {s}$$.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;In quantum mechanical case, the particle density is &lt;script type=&quot;math/tex&quot;&gt;{\vert \Psi(vec{r},t)\vert ^{2}}&lt;/script&gt;, so we are looking for a relation of the form &lt;script type=&quot;math/tex&quot;&gt;{\partial s/\partial t=-\nabla\vec{j}_{p}}&lt;/script&gt;, but with &lt;script type=&quot;math/tex&quot;&gt;{\vert \Psi(\vec{r},t)\vert ^{2}}&lt;/script&gt; instead of &lt;script type=&quot;math/tex&quot;&gt;{s}&lt;/script&gt;.&lt;/p&gt;
 
 &lt;p&gt;We know that&lt;/p&gt;
 
@@ -646,45 +628,23 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\left[\begin{array}{c}f(x_{1} \\ f(x_{2}) \\ f(x_{3}) \\ \vdots\end{array}\right]&lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;For example, we could specify the function at points spaced by small amount &lt;script type=&quot;math/tex&quot;&gt;{\delta x}&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;{x_{2}=x_{1}+\delta x}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{x_{3}=x_{2}+\delta x}&lt;/script&gt; and so on. We would do this for sufficiently many values of &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; and over a sufficient range of &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; to get a sufficiently useful representation for some calculation such as integral. The integral of $$ {&lt;/td&gt;
-      &lt;td&gt;f(x)&lt;/td&gt;
-      &lt;td&gt;^{2}}$$ could be written as&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;For example, we could specify the function at points spaced by small amount &lt;script type=&quot;math/tex&quot;&gt;{\delta x}&lt;/script&gt;, with &lt;script type=&quot;math/tex&quot;&gt;{x_{2}=x_{1}+\delta x}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{x_{3}=x_{2}+\delta x}&lt;/script&gt; and so on. We would do this for sufficiently many values of &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; and over a sufficient range of &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; to get a sufficiently useful representation for some calculation such as integral. The integral of &lt;script type=&quot;math/tex&quot;&gt;{\vert f(x)\vert ^{2}}&lt;/script&gt; could be written as&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int|f(x)|^{2}\,dx\approx[f^{*}(x), f^{*}(x_{2}), f^{*}(x_{3}), \cdots]\left[\begin{array}{c}f(x_{1}) \\ f(x_{2}) \\ f(x_{3}) \\ \vdots\end{array}\right]\delta x&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int\vert f(x)\vert ^{2}\,dx\approx[f^{*}(x), f^{*}(x_{2}), f^{*}(x_{3}), \cdots]\left[\begin{array}{c}f(x_{1}) \\ f(x_{2}) \\ f(x_{3}) \\ \vdots\end{array}\right]\delta x&lt;/script&gt;
 
 &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\delta x}&lt;/script&gt; is sufficiently small and the corresponding vectors therefore sufficiently long, we can get an arbitrarily good approximation to be integral.&lt;/p&gt;
 
 &lt;h4 id=&quot;dirac-notation&quot;&gt;2.2. Dirac notation&lt;/h4&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;The first part of the Dirac “bra-ket” notation $$ {&lt;/td&gt;
-      &lt;td&gt;f(x)\rangle}&lt;script type=&quot;math/tex&quot;&gt;is called a &quot;ket&quot;, which refers to our column vector. For the case of our function&lt;/script&gt; {f(x)}$$, one way to define the “ket” is&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;The first part of the Dirac “bra-ket” notation &lt;script type=&quot;math/tex&quot;&gt;{\vert f(x)\rangle}&lt;/script&gt; is called a “ket”, which refers to our column vector. For the case of our function &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt;, one way to define the “ket” is&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|f(x)\rangle\equiv\left[\begin{array}{c}f(x_{1})\sqrt{\delta x} \\ f(x_{2})\sqrt{\delta x} \\ f(x_{3})\sqrt{\delta x} \\ \vdots\end{array}\right]&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert f(x)\rangle\equiv\left[\begin{array}{c}f(x_{1})\sqrt{\delta x} \\ f(x_{2})\sqrt{\delta x} \\ f(x_{3})\sqrt{\delta x} \\ \vdots\end{array}\right]&lt;/script&gt;
 
 &lt;p&gt;or the limit of this as &lt;script type=&quot;math/tex&quot;&gt;{\delta x\rightarrow 0}&lt;/script&gt;. We put &lt;script type=&quot;math/tex&quot;&gt;{\sqrt{\delta x}}&lt;/script&gt; into the vector for normalization. The function is still a vector list of numbers.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;We can similarly define the “bra” $$ {\langle f(x)&lt;/td&gt;
-      &lt;td&gt;}$$ to refer a row vector&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;We can similarly define the “bra” &lt;script type=&quot;math/tex&quot;&gt;{\langle f(x)\vert }&lt;/script&gt; to refer a row vector&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle f(x)|\equiv[f^{*}(x_{1})\sqrt{\delta x}\quad f^{*}(x_{2})\sqrt{\delta x}\quad f^{*}(x_{3})\sqrt{\delta x}\quad\cdots]&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle f(x)\vert \equiv[f^{*}(x_{1})\sqrt{\delta x}\quad f^{*}(x_{2})\sqrt{\delta x}\quad f^{*}(x_{3})\sqrt{\delta x}\quad\cdots]&lt;/script&gt;
 
 &lt;p&gt;where we mean the limit of this as &lt;script type=&quot;math/tex&quot;&gt;{\delta s\rightarrow 0}&lt;/script&gt;.&lt;/p&gt;
 
@@ -706,35 +666,24 @@
 
 &lt;p&gt;The “bra” is the Hermitian adjoint of the “ket” and vice versa&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;(|f(x)\rangle)^{\dag}=\langle f(x)|\qquad (\langle f(x)|)^{\dag}=|f(x)\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;(\vert f(x)\rangle)^{\dag}=\langle f(x)\vert \qquad (\langle f(x)\vert )^{\dag}=\vert f(x)\rangle&lt;/script&gt;
 
 &lt;p&gt;The Hermitian adjoint of the Hermitian adjoint brings us back to where we started.&lt;/p&gt;
 
 &lt;p&gt;Considering &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; as a vector and following our previous result and adding bra-ket notation&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{array}{rcl}  \int|f(x)|^{2}\,dx&amp;\equiv&amp;[f^{*}(x_{1})\sqrt{\delta x}\quad f^{*}(x_{2})\sqrt{\delta x}\quad f^{*}(x_{3})\sqrt{\delta x}\quad \cdots]\left[\begin{array}{c}f^{*}(x_{1})\sqrt{\delta x} \\ f^{*}(x_{2})\sqrt{\delta x} \\ f^{*}(x_{3})\sqrt{\delta x} \\ \cdots\end{array}\right] \\ &amp;\equiv&amp;\sum_{n}f^{*}(x_{n})\sqrt{\delta x}f(x_{n})\sqrt{\delta x} \\ &amp;\equiv&amp;\langle f(x)|f(x)\rangle \end{array} %]]&gt;&lt;/script&gt;
+\begin{array}{rcl}  \int\vert f(x)\vert ^{2}\,dx&amp;\equiv&amp;[f^{*}(x_{1})\sqrt{\delta x}\quad f^{*}(x_{2})\sqrt{\delta x}\quad f^{*}(x_{3})\sqrt{\delta x}\quad \cdots]\left[\begin{array}{c}f^{*}(x_{1})\sqrt{\delta x} \\ f^{*}(x_{2})\sqrt{\delta x} \\ f^{*}(x_{3})\sqrt{\delta x} \\ \cdots\end{array}\right] \\ &amp;\equiv&amp;\sum_{n}f^{*}(x_{n})\sqrt{\delta x}f(x_{n})\sqrt{\delta x} \\ &amp;\equiv&amp;\langle f(x)\vert f(x)\rangle \end{array} %]]&gt;&lt;/script&gt;
 
 &lt;p&gt;where again the strict equality applies in the limit when &lt;script type=&quot;math/tex&quot;&gt;{\delta x\rightarrow 0}&lt;/script&gt;.&lt;/p&gt;
 
 &lt;p&gt;Note that the use of the bra-ket notation here eliminates the need to write an integral or a sum. The sum is implicit in the vector multiplication. Note that shorthand for the vector product of the “bra” and “ket”&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle g|\times|f\rangle=\langle g|f\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle g\vert \times\vert f\rangle=\langle g\vert f\rangle&lt;/script&gt;
 
 &lt;p&gt;The middle vertical line is usually omitted though it would not matter if it was still there. This notation is also useful for integrals of two different functions.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;In general this kind of “product” $$ {\langle g&lt;/td&gt;
-      &lt;td&gt;\times&lt;/td&gt;
-      &lt;td&gt;f\rangle\equiv\langle g&lt;/td&gt;
-      &lt;td&gt;f\rangle}&lt;script type=&quot;math/tex&quot;&gt;is called an inner product in linear algebra. The geometric vector dot product is an inner product. The bra-ket &quot;product&quot;&lt;/script&gt; {\langle g&lt;/td&gt;
-      &lt;td&gt;f\rangle}&lt;script type=&quot;math/tex&quot;&gt;is an inner product. The &quot;overlap&quot; integral&quot;&lt;/script&gt; {\int g^{*}(x)f(x)\,dx}&lt;script type=&quot;math/tex&quot;&gt;is an inner product. It is &quot;inner&quot; because it takes two vectors and turns them into a number a &quot;small&quot; entity. In the Dirac notation&lt;/script&gt; {\langle g&lt;/td&gt;
-      &lt;td&gt;f\rangle}$$, the bra-ket gives an inner “feel” to this product. The special parentheses gives a “closed” look.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;In general this kind of “product” &lt;script type=&quot;math/tex&quot;&gt;{\langle g\vert \times\vert f\rangle\equiv\langle g\vert f\rangle}&lt;/script&gt; is called an inner product in linear algebra. The geometric vector dot product is an inner product. The bra-ket “product” &lt;script type=&quot;math/tex&quot;&gt;{\langle g\vert f\rangle}&lt;/script&gt; is an inner product. The “overlap” integral” &lt;script type=&quot;math/tex&quot;&gt;{\int g^{*}(x)f(x)\,dx}&lt;/script&gt; is an inner product. It is “inner” because it takes two vectors and turns them into a number a “small” entity. In the Dirac notation &lt;script type=&quot;math/tex&quot;&gt;{\langle g\vert f\rangle}&lt;/script&gt;, the bra-ket gives an inner “feel” to this product. The special parentheses gives a “closed” look.&lt;/p&gt;
 
 &lt;h4 id=&quot;using-dirac-notation&quot;&gt;2.3. Using Dirac notation&lt;/h4&gt;
 
@@ -744,125 +693,69 @@
 
 &lt;p&gt;We could also write the function as the “ket”&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|f(x)\rangle\equiv\left[\begin{array}{c}c_{1} \\ c_{2} \\ c_{3} \\ \vdots\end{array}\right]&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert f(x)\rangle\equiv\left[\begin{array}{c}c_{1} \\ c_{2} \\ c_{3} \\ \vdots\end{array}\right]&lt;/script&gt;
 
 &lt;p&gt;(with possibly an infinite number of elements)&lt;/p&gt;
 
 &lt;p&gt;In this case, the “bra” version becomes&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle f(x)|\equiv [c_{1}^{*}\quad c_{2}^{*}\quad c_{3}^{*}\quad \cdots]&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle f(x)\vert \equiv [c_{1}^{*}\quad c_{2}^{*}\quad c_{3}^{*}\quad \cdots]&lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;When we write the function in this different form as a vector containing these expansion coefficients, we say we have changed its “representation”. The function &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; is still the same function. The vector $$ {&lt;/td&gt;
-      &lt;td&gt;f(x)\rangle}$$ is the same vector in our space. We have just changed the axes we used to represent the function, so the coordinates of the vector have changed.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;When we write the function in this different form as a vector containing these expansion coefficients, we say we have changed its “representation”. The function &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; is still the same function. The vector &lt;script type=&quot;math/tex&quot;&gt;{\vert f(x)\rangle}&lt;/script&gt; is the same vector in our space. We have just changed the axes we used to represent the function, so the coordinates of the vector have changed.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;The result of a bra-ket expression like $$ {\langle f(x)&lt;/td&gt;
-      &lt;td&gt;f(x)\rangle}&lt;script type=&quot;math/tex&quot;&gt;or&lt;/script&gt; {\langle g(x)&lt;/td&gt;
-      &lt;td&gt;f(x)\rangle}$$ is simply a number (in general, complex) which is easy to see if we think of this as a vector multiplication. Note that this number is not changed as we change the representation. Just as the dot product of two vectors is independent of the coordinate system.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;The result of a bra-ket expression like &lt;script type=&quot;math/tex&quot;&gt;{\langle f(x)\vert f(x)\rangle}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\langle g(x)\vert f(x)\rangle}&lt;/script&gt; is simply a number (in general, complex) which is easy to see if we think of this as a vector multiplication. Note that this number is not changed as we change the representation. Just as the dot product of two vectors is independent of the coordinate system.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Evaluating &lt;script type=&quot;math/tex&quot;&gt;{c_{n}}&lt;/script&gt; in &lt;script type=&quot;math/tex&quot;&gt;{f(x)=\sum_{n}c_{n}\psi_{n}(x)}&lt;/script&gt; or the &lt;script type=&quot;math/tex&quot;&gt;{d_{n}}&lt;/script&gt; in &lt;script type=&quot;math/tex&quot;&gt;{g(x)=\sum_{n}d_{n}\psi_{n}(x)}&lt;/script&gt; is simple because the functions &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(x)}&lt;/script&gt; are orthonormal. Since &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n(x)}}&lt;/script&gt; is just a function, we write it as a ket $$ {&lt;/td&gt;
-      &lt;td&gt;\psi_{n}\rangle}&lt;script type=&quot;math/tex&quot;&gt;. To evaluate the coefficient&lt;/script&gt; {c_{m}}&lt;script type=&quot;math/tex&quot;&gt;, we premultiply by the bra&lt;/script&gt; {\langle\psi_{m}&lt;/td&gt;
-      &lt;td&gt;}$$ to get&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Evaluating &lt;script type=&quot;math/tex&quot;&gt;{c_{n}}&lt;/script&gt; in &lt;script type=&quot;math/tex&quot;&gt;{f(x)=\sum_{n}c_{n}\psi_{n}(x)}&lt;/script&gt; or the &lt;script type=&quot;math/tex&quot;&gt;{d_{n}}&lt;/script&gt; in &lt;script type=&quot;math/tex&quot;&gt;{g(x)=\sum_{n}d_{n}\psi_{n}(x)}&lt;/script&gt; is simple because the functions &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(x)}&lt;/script&gt; are orthonormal. Since &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n(x)}}&lt;/script&gt; is just a function, we write it as a ket &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt;. To evaluate the coefficient &lt;script type=&quot;math/tex&quot;&gt;{c_{m}}&lt;/script&gt;, we premultiply by the bra &lt;script type=&quot;math/tex&quot;&gt;{\langle\psi_{m}\vert }&lt;/script&gt; to get&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle\psi_{m}(x)|f(x)\rangle=\sum_{n}c_{n}\langle\psi_{m}(x)|\psi_{n}(x)\rangle=\sum_{n}c_{n}\delta_{mn}=c_{m}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle\psi_{m}(x)\vert f(x)\rangle=\sum_{n}c_{n}\langle\psi_{m}(x)\vert \psi_{n}(x)\rangle=\sum_{n}c_{n}\delta_{mn}=c_{m}&lt;/script&gt;
 
 &lt;p&gt;Using bra-ket notation, we can write &lt;script type=&quot;math/tex&quot;&gt;{f(x)=\sum_{n}c_{n}\psi_{n}(x)}&lt;/script&gt; as&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|f(x)\rangle=\sum_{n}c_{n}|\Psi_{n}(x)\rangle=\sum_{n}|\psi_{n}(x)\rangle c_{n}=\sum_{n}|\psi_{n}(x)\rangle\langle\psi_{n}(x)|f(x)\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert f(x)\rangle=\sum_{n}c_{n}\vert \Psi_{n}(x)\rangle=\sum_{n}\vert \psi_{n}(x)\rangle c_{n}=\sum_{n}\vert \psi_{n}(x)\rangle\langle\psi_{n}(x)\vert f(x)\rangle&lt;/script&gt;
 
 &lt;p&gt;Because &lt;script type=&quot;math/tex&quot;&gt;{c_{n}}&lt;/script&gt; is just a number, it can be moved about in the product. Multiplication of vectors and numbers is commutative.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;In quantum mechanics, where the function &lt;script type=&quot;math/tex&quot;&gt;{f}&lt;/script&gt; represents the state of quantum mechanical system, such as the wave function. The set of numbers represented by the bra $$ {\langle f&lt;/td&gt;
-      &lt;td&gt;}&lt;script type=&quot;math/tex&quot;&gt;or ket&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;f\rangle}&lt;script type=&quot;math/tex&quot;&gt;vector represent the state of the system. Hence, we refer to&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;f\rangle}&lt;script type=&quot;math/tex&quot;&gt;as the &quot;state vector&quot; of the system and&lt;/script&gt; {\langle f&lt;/td&gt;
-      &lt;td&gt;}$$ as the (Hermitian) adjoint of the state vector.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;In quantum mechanics, where the function &lt;script type=&quot;math/tex&quot;&gt;{f}&lt;/script&gt; represents the state of quantum mechanical system, such as the wave function. The set of numbers represented by the bra &lt;script type=&quot;math/tex&quot;&gt;{\langle f\vert }&lt;/script&gt; or ket &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; vector represent the state of the system. Hence, we refer to &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; as the “state vector” of the system and &lt;script type=&quot;math/tex&quot;&gt;{\langle f\vert }&lt;/script&gt; as the (Hermitian) adjoint of the state vector.&lt;/p&gt;
 
 &lt;p&gt;In quantum mechanics, the bra or ket always represents either the quantum mechanical state of the system such as the spatial wave function &lt;script type=&quot;math/tex&quot;&gt;{\psi(x)}&lt;/script&gt; or some state the system could be in such as one of the basis states &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(x)}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;The convention for what is inside the bra or ket is loose, usually one deduces from the context what is meant. For example, it is obvious what basis we were working with. We might use $$ {&lt;/td&gt;
-      &lt;td&gt;n\rangle}&lt;script type=&quot;math/tex&quot;&gt;to represent the&lt;/script&gt; {n}&lt;script type=&quot;math/tex&quot;&gt;th basis function (or basis &quot;state&quot;) rather than the notation&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;\psi_{n}(x)\rangle}&lt;script type=&quot;math/tex&quot;&gt;or&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;\psi_{n}\rangle}$$. The symbols inside the bra or ket should be enough to make it clear what state we are discussing. Other wise there are essentially no rules for the notation.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;The convention for what is inside the bra or ket is loose, usually one deduces from the context what is meant. For example, it is obvious what basis we were working with. We might use &lt;script type=&quot;math/tex&quot;&gt;{\vert n\rangle}&lt;/script&gt; to represent the &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt;th basis function (or basis “state”) rather than the notation &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}(x)\rangle}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt;. The symbols inside the bra or ket should be enough to make it clear what state we are discussing. Other wise there are essentially no rules for the notation.&lt;/p&gt;
 
 &lt;h3 id=&quot;vector-spaces-operators-and-matrices&quot;&gt;3. Vector Spaces, Operators and Matrices&lt;/h3&gt;
 
 &lt;h4 id=&quot;vector-space&quot;&gt;3.1. Vector space&lt;/h4&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;For a function expressed as its value at a set of points, we may have infinite number of orthogonal axes labeled with their associated basis function. Just as we label axes in conventional space with unit vectors, one notation is &lt;script type=&quot;math/tex&quot;&gt;{\hat{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{y}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{z}}&lt;/script&gt; for the unit vectors, so also here we label the axes with the kets $$ {&lt;/td&gt;
-      &lt;td&gt;\psi_{n}\rangle}$$.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;For a function expressed as its value at a set of points, we may have infinite number of orthogonal axes labeled with their associated basis function. Just as we label axes in conventional space with unit vectors, one notation is &lt;script type=&quot;math/tex&quot;&gt;{\hat{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{y}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{z}}&lt;/script&gt; for the unit vectors, so also here we label the axes with the kets &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt;.&lt;/p&gt;
 
 &lt;p&gt;Our vector space has an inner product that defines both the orthogonality of the basis functions&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle\psi_{m}|\psi_{n}\rangle=\delta_{nm}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle\psi_{m}\vert \psi_{n}\rangle=\delta_{nm}&lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;as well as the components $$ {c_{m}=\langle\psi_{m}&lt;/td&gt;
-      &lt;td&gt;f\rangle}$$.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;as well as the components &lt;script type=&quot;math/tex&quot;&gt;{c_{m}=\langle\psi_{m}\vert f\rangle}&lt;/script&gt;.&lt;/p&gt;
 
 &lt;p&gt;With respect to addition of vectors, our vector space is commutative and associative&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|f\rangle+|g\rangle=|g\rangle+|f\rangle\qquad |f\rangle+(|g\rangle+|h\rangle)=(|f\rangle+|g\rangle)+|h\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert f\rangle+\vert g\rangle=\vert g\rangle+\vert f\rangle\qquad \vert f\rangle+(\vert g\rangle+\vert h\rangle)=(\vert f\rangle+\vert g\rangle)+\vert h\rangle&lt;/script&gt;
 
 &lt;p&gt;Our vector space is linear in multiplying by constants&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;c(|f\rangle+g\rangle)=c|f\rangle+c|g\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;c(\vert f\rangle+g\rangle)=c\vert f\rangle+c\vert g\rangle&lt;/script&gt;
 
 &lt;p&gt;And the inner product is linear, both in multiplying by constants and in superposition of vectors&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle f|cg\rangle=c\langle f|g\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle f\vert cg\rangle=c\langle f\vert g\rangle&lt;/script&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle f|(|g\rangle+|h\rangle)=\langle f|g\rangle+\langle f|h\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle f\vert (\vert g\rangle+\vert h\rangle)=\langle f\vert g\rangle+\langle f\vert h\rangle&lt;/script&gt;
 
 &lt;p&gt;There is a well-defined “length” to a vector formally a “norm”&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;||f||=\sqrt{\langle f|f\rangle}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert \vert f\vert \vert =\sqrt{\langle f\vert f\rangle}&lt;/script&gt;
 
 &lt;p&gt;Any vector in the space can be represented to an arbitrary degree of accuracy as a linear combination of the basis vectors. This is the completeness requirement on the basis set. In vector spaces, this property of the vector space itself is sometimes described as “compactness”.&lt;/p&gt;
 
 &lt;p&gt;With complex coefficients rather than real lengths, we choose a non-commutative inner product form&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle f|g\rangle=(\langle g|f\rangle)^{*}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle f\vert g\rangle=(\langle g\vert f\rangle)^{*}&lt;/script&gt;
 
 &lt;h4 id=&quot;operators&quot;&gt;3.2. Operators&lt;/h4&gt;
 
@@ -906,7 +799,7 @@
 
 &lt;p&gt;Presuming functions can be represented as vectors, then linear operators can be represented by matrices. In bra-ket notation, we can write &lt;script type=&quot;math/tex&quot;&gt;{g(y)=\hat{A}f(x)}&lt;/script&gt; as&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|g\rangle=\hat{A}|f\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert g\rangle=\hat{A}\vert f\rangle&lt;/script&gt;
 
 &lt;p&gt;If we regard the ket as a vector, we now regard the (linear) operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; as a matrix.&lt;/p&gt;
 
@@ -914,80 +807,31 @@
 
 &lt;p&gt;Operators do not in general commute and it is very important in quantum mechanics. We expanded &lt;script type=&quot;math/tex&quot;&gt;{f(x)=\sum_{n}\psi_{n}(x)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{g(x)=\sum_{n}d_{n}\psi_{n}(x)}&lt;/script&gt;. We could have followed a similar argument requiring each expansion coefficient &lt;script type=&quot;math/tex&quot;&gt;{d_{i}}&lt;/script&gt; depends linearly on all the expansion coefficients &lt;script type=&quot;math/tex&quot;&gt;{c_{n}}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;By similar arguments, we would deduce the most general linear relation between the vectors of expansion coefficients could be represented as a matrix, the bra-ket statement of the relation between &lt;script type=&quot;math/tex&quot;&gt;{f}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; remains unchanged as $$ {&lt;/td&gt;
-      &lt;td&gt;g\rangle=\hat{A}&lt;/td&gt;
-      &lt;td&gt;f\rangle}$$.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;By similar arguments, we would deduce the most general linear relation between the vectors of expansion coefficients could be represented as a matrix, the bra-ket statement of the relation between &lt;script type=&quot;math/tex&quot;&gt;{f}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{g}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; remains unchanged as &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle=\hat{A}\vert f\rangle}&lt;/script&gt;.&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \left[\begin{array}{c}d_{1}\\d_{2}\\d_{3}\\\vdots\end{array}\right]=\left[\begin{array}{cccc} A_{11} &amp; A_{12} &amp; A_{13} &amp; \cdots \\ A_{21} &amp; A_{22} &amp; A_{23} &amp; \cdots \\ A_{31} &amp; A_{32} &amp; A_{33} &amp; \cdots \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots\end{array}\right]\left[\begin{array}{c}c_{1}\\c_{2}\\c_{3}\\\vdots\end{array}\right] %]]&gt;&lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Now we will find out how we can write some operator as a matrix, that is, we will deduce how to calculate all the elements of the matrix if we know the operator. Suppose we choose our function &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; to be the &lt;script type=&quot;math/tex&quot;&gt;{j}&lt;/script&gt;th basis function &lt;script type=&quot;math/tex&quot;&gt;{\psi_{j}(x)}&lt;/script&gt; so &lt;script type=&quot;math/tex&quot;&gt;{f(x)=\psi_{j}(x)}&lt;/script&gt; or equivalently $$ {&lt;/td&gt;
-      &lt;td&gt;f\rangle=&lt;/td&gt;
-      &lt;td&gt;\psi_{j}\rangle}&lt;script type=&quot;math/tex&quot;&gt;. Then, in the expansion&lt;/script&gt; {f(x)=\sum_{n}c_{n}\psi_{n}(x)}&lt;script type=&quot;math/tex&quot;&gt;, we are choosing&lt;/script&gt; {c_{j}=1}&lt;script type=&quot;math/tex&quot;&gt;with all operate on this&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;f\rangle}&lt;script type=&quot;math/tex&quot;&gt;with&lt;/script&gt; {\hat{A}}&lt;script type=&quot;math/tex&quot;&gt;in&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;g\rangle=\hat{A}&lt;/td&gt;
-      &lt;td&gt;f\rangle}&lt;script type=&quot;math/tex&quot;&gt;to get&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;g\rangle}&lt;script type=&quot;math/tex&quot;&gt;. Suppose specifically we want to know the resulting coefficient&lt;/script&gt; {d_{i}}&lt;script type=&quot;math/tex&quot;&gt;in the expansion&lt;/script&gt; {g(x)=\sum_{n}d_{n}\psi_{n}(x)}&lt;script type=&quot;math/tex&quot;&gt;. With our choice&lt;/script&gt; {c_{j}=1}&lt;script type=&quot;math/tex&quot;&gt;, and all other&lt;/script&gt; {c}&lt;script type=&quot;math/tex&quot;&gt;&#39;s 0 then we would have&lt;/script&gt; {d_{i}=A_{ij}}$$.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Now we will find out how we can write some operator as a matrix, that is, we will deduce how to calculate all the elements of the matrix if we know the operator. Suppose we choose our function &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt; to be the &lt;script type=&quot;math/tex&quot;&gt;{j}&lt;/script&gt;th basis function &lt;script type=&quot;math/tex&quot;&gt;{\psi_{j}(x)}&lt;/script&gt; so &lt;script type=&quot;math/tex&quot;&gt;{f(x)=\psi_{j}(x)}&lt;/script&gt; or equivalently &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle=\vert \psi_{j}\rangle}&lt;/script&gt;. Then, in the expansion &lt;script type=&quot;math/tex&quot;&gt;{f(x)=\sum_{n}c_{n}\psi_{n}(x)}&lt;/script&gt;, we are choosing &lt;script type=&quot;math/tex&quot;&gt;{c_{j}=1}&lt;/script&gt; with all operate on this &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; with &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; in &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle=\hat{A}\vert f\rangle}&lt;/script&gt; to get &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle}&lt;/script&gt;. Suppose specifically we want to know the resulting coefficient &lt;script type=&quot;math/tex&quot;&gt;{d_{i}}&lt;/script&gt; in the expansion &lt;script type=&quot;math/tex&quot;&gt;{g(x)=\sum_{n}d_{n}\psi_{n}(x)}&lt;/script&gt;. With our choice &lt;script type=&quot;math/tex&quot;&gt;{c_{j}=1}&lt;/script&gt;, and all other &lt;script type=&quot;math/tex&quot;&gt;{c}&lt;/script&gt;’s 0 then we would have &lt;script type=&quot;math/tex&quot;&gt;{d_{i}=A_{ij}}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;But, from the expansion for $$ {&lt;/td&gt;
-      &lt;td&gt;f\rangle}&lt;script type=&quot;math/tex&quot;&gt;and&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;g\rangle}&lt;script type=&quot;math/tex&quot;&gt;, for the specific case of&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;f\rangle=&lt;/td&gt;
-      &lt;td&gt;\psi_{j}\rangle}$$&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;But, from the expansion for &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle}&lt;/script&gt;, for the specific case of &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle=\vert \psi_{j}\rangle}&lt;/script&gt;&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;|g\rangle=\sum_{n}d_{n}|\psi_{n}\rangle=\hat{A}|f\rangle=\hat{A}|\psi_{j}\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert g\rangle=\sum_{n}d_{n}\vert \psi_{n}\rangle=\hat{A}\vert f\rangle=\hat{A}\vert \psi_{j}\rangle&lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;To extract &lt;script type=&quot;math/tex&quot;&gt;{d_{i}}&lt;/script&gt; from this expression, we multiply by $$ {\langle\psi_{i}&lt;/td&gt;
-      &lt;td&gt;}$$ on both sides to obtain&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;To extract &lt;script type=&quot;math/tex&quot;&gt;{d_{i}}&lt;/script&gt; from this expression, we multiply by &lt;script type=&quot;math/tex&quot;&gt;{\langle\psi_{i}\vert }&lt;/script&gt; on both sides to obtain&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;d_{i}=\langle\psi_{i}|\hat{A}|\psi_{j}\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;d_{i}=\langle\psi_{i}\vert \hat{A}\vert \psi_{j}\rangle&lt;/script&gt;
 
 &lt;p&gt;But we already concluded for this case that &lt;script type=&quot;math/tex&quot;&gt;{d_{i}=A_{ij}}&lt;/script&gt;, so&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;A_{ij}=\langle\psi_{i}|\hat{A}|\psi_{j}\rangle&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A_{ij}=\langle\psi_{i}\vert \hat{A}\vert \psi_{j}\rangle&lt;/script&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; acting on the unit vector $$ {&lt;/td&gt;
-      &lt;td&gt;\psi_{j}\rangle}&lt;script type=&quot;math/tex&quot;&gt;generates the vector&lt;/script&gt; {\hat{A}&lt;/td&gt;
-      &lt;td&gt;\psi_{j}\rangle}&lt;script type=&quot;math/tex&quot;&gt;with generally a new length and direction. The matrix element&lt;/script&gt; {\langle\psi_{i}&lt;/td&gt;
-      &lt;td&gt;\hat{A}&lt;/td&gt;
-      &lt;td&gt;\psi_{j}\rangle}&lt;script type=&quot;math/tex&quot;&gt;is the projection of&lt;/script&gt; {\hat{A}&lt;/td&gt;
-      &lt;td&gt;\psi_{j}\rangle}&lt;script type=&quot;math/tex&quot;&gt;onto the&lt;/script&gt; {&lt;/td&gt;
-      &lt;td&gt;\psi_{i}\rangle}$$ axis.&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; acting on the unit vector &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{j}\rangle}&lt;/script&gt; generates the vector &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}\vert \psi_{j}\rangle}&lt;/script&gt; with generally a new length and direction. The matrix element &lt;script type=&quot;math/tex&quot;&gt;{\langle\psi_{i}\vert \hat{A}\vert \psi_{j}\rangle}&lt;/script&gt; is the projection of &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}\vert \psi_{j}\rangle}&lt;/script&gt; onto the &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle}&lt;/script&gt; axis.&lt;/p&gt;
 
 &lt;p&gt;We can write the matrix for the operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt;&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\hat{A}\equiv\left[\begin{array}{cccc} \langle\psi_{1}|\hat{A}|\psi_{1}\rangle &amp; \langle\psi_{1}|\hat{A}|\psi_{2}\rangle &amp; \langle\psi_{1}|\hat{A}|\psi_{3}\rangle &amp; \cdots \\ \langle\psi_{2}|\hat{A}|\psi_{1}\rangle &amp; \langle\psi_{2}|\hat{A}|\psi_{2}\rangle &amp; \langle\psi_{2}|\hat{A}|\psi_{3}\rangle &amp; \cdots \\ \langle\psi_{3}|\hat{A}|\psi_{1}\rangle &amp; \langle\psi_{3}|\hat{A}|\psi_{2}\rangle &amp; \langle\psi_{3}|\hat{A}|\psi_{3}\rangle &amp; \cdots \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots \end{array}\right] %]]&gt;&lt;/script&gt;
+\hat{A}\equiv\left[\begin{array}{cccc} \langle\psi_{1}\vert \hat{A}\vert \psi_{1}\rangle &amp; \langle\psi_{1}\vert \hat{A}\vert \psi_{2}\rangle &amp; \langle\psi_{1}\vert \hat{A}\vert \psi_{3}\rangle &amp; \cdots \\ \langle\psi_{2}\vert \hat{A}\vert \psi_{1}\rangle &amp; \langle\psi_{2}\vert \hat{A}\vert \psi_{2}\rangle &amp; \langle\psi_{2}\vert \hat{A}\vert \psi_{3}\rangle &amp; \cdots \\ \langle\psi_{3}\vert \hat{A}\vert \psi_{1}\rangle &amp; \langle\psi_{3}\vert \hat{A}\vert \psi_{2}\rangle &amp; \langle\psi_{3}\vert \hat{A}\vert \psi_{3}\rangle &amp; \cdots \\ \vdots &amp; \vdots &amp; \vdots &amp; \ddots \end{array}\right] %]]&gt;&lt;/script&gt;
 
 &lt;p&gt;We have now deduce how to set up a function as a vector and a linear operator as a matrix which can operate on the vectors.&lt;/p&gt;
 </description>
