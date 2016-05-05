@@ -7,6 +7,41 @@
     <atom:link href="http://dgyblog.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>What I did and what I didn&#39;t</title>
+        <description>&lt;p&gt;OK, so the last post I wrote (contains only one sentence in Chinese) is about
+7 months ago. Since then, a lot of things have changed around me.&lt;/p&gt;
+
+&lt;p&gt;First, I’ve moved to Zurich, a beautiful town, very expensive, and not as boring
+as I thought. I’ve started my journey to my Master degree here at INI, &lt;a href=&quot;https://www.ini.uzh.ch/people/yuhu&quot;&gt;check out
+my profile photo&lt;/a&gt;. Somehow they chose to
+use my middle name (which I don’t have one) and my last name as my ID.
+Well, it’s not exactly the ugliest ID I’ve ever had, but close. I got 4 more
+email addresses (thanks to independent IT infrastructure everywhere). And
+surprisingly more than one homepage and disk resources that I can dispose.
+I’ve met many fantastic people (including Professors, Drs, PhDs, masters, etc).
+Not much social life back to my student house since I’m not that into partying,
+and also not much on cooking.&lt;/p&gt;
+
+&lt;p&gt;(&lt;em&gt;Side Thought: Am I giving too much information to myself? Is this gonna
+backfire me when I’m famous someday? Am I thinking too much?&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;I’m not much a blogging guy anymore (that guy is dead about 4 years ago).
+I switched from Emacs to Atom. And I love Atom now. For one big reason, I can
+write more standardized code than using Emacs. I love Markdown by the way.
+My English is still bad. But I’m clearly not the worst. I did my first
+semester project. And I’m about to publish it (exciting!!). I like the lab,
+everyone is helping everyone (if you ask). I attended my first set of classes,
+some of them are difficult, some of them are not that difficult.
+I did work more on course-work than I did in UM (basically sleeping all the time
+when I was an undergraduate). I attended countless seminars (thanks to INI’s
+arrangements). So far so good.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 May 2016 00:00:00 +0200</pubDate>
+        <link>http://dgyblog.com/life/2016/05/05/what-i-did-and-didnt/</link>
+        <guid isPermaLink="true">http://dgyblog.com/life/2016/05/05/what-i-did-and-didnt/</guid>
+      </item>
+    
+      <item>
         <title>天明集录三 接舆</title>
         <description>&lt;p&gt;近因学校庆祝周年庆典&lt;/p&gt;
 </description>
@@ -1824,210 +1859,6 @@ z&lt;-L_{z}/2 %]]&gt;&lt;/script&gt;&lt;/p&gt;
         <pubDate>Thu, 17 Oct 2013 00:00:00 +0200</pubDate>
         <link>http://dgyblog.com/oldtimes/2013/10/17/quantum-for-scieng-3/</link>
         <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/10/17/quantum-for-scieng-3/</guid>
-      </item>
-    
-      <item>
-        <title>Quantum Mechanics for Scientists and Engineers Notes 2</title>
-        <description>&lt;h3 id=&quot;wave-propagation&quot;&gt;1. Wave Propagation&lt;/h3&gt;
-
-&lt;h4 id=&quot;plane-waves-and-interference&quot;&gt;1.1. Plane waves and interference&lt;/h4&gt;
-
-&lt;p&gt;Generalizing to 3 dimensions, the wave equation becomes&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\phi-\frac{1}{c^{2}}\frac{\partial^{2}\phi}{\partial t^{2}}=0&lt;/script&gt;
-
-&lt;p&gt;where&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\equiv \frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}&lt;/script&gt;
-
-&lt;p&gt;or equivalently, with unit vectors &lt;script type=&quot;math/tex&quot;&gt;{\hat{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{y}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{z}}&lt;/script&gt; in the corresponding directions&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\equiv \nabla\cdot\nabla=\left(\hat{x}\frac{\partial}{\partial x}+\hat{y}\frac{\partial}{\partial y}+\hat{z}\frac{\partial}{\partial z}\right)\left(\hat{x}\frac{\partial}{\partial x}+\hat{y}\frac{\partial}{\partial y}+\hat{z}\frac{\partial}{\partial z}\right)&lt;/script&gt;
-
-&lt;p&gt;Here is an example of plane wave. We can check that a monochromatic (one frequency) “plane wave” of the form &lt;script type=&quot;math/tex&quot;&gt;{\exp[i(\vec{k}\cdot\vec{r}-\omega t)]}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}=x\hat{x}+y\hat{y}+z\hat{z}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\vec{k}=k_{x}\hat{x}+k_{y}\hat{y}+k_{z}\hat{z}}&lt;/script&gt; is a solution when &lt;script type=&quot;math/tex&quot;&gt;{k=\omega/c}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\exp[i(\vec{k}\cdot\vec{r}-\omega t)]=\nabla\cdot\nabla\exp[i(\vec{k}\cdot\vec{r}-\omega t)]=-(k_{x}^{2}+k_{y}^{2}+k_{z}^{2})\exp[i(\vec{k}\cdot\vec{r}-\omega t)]&lt;/script&gt;
-
-&lt;p&gt;and&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial^{2}}{\partial t^{2}}\exp[i(\vec{k}\cdot\vec{r}-\omega t)]=-\omega^{2}\exp[i(k\cdot r-\omega t)]&lt;/script&gt;
-
-&lt;p&gt;Then choosing &lt;script type=&quot;math/tex&quot;&gt;{k=\omega/c}&lt;/script&gt;, the left hand of wave equation is 0.&lt;/p&gt;
-
-&lt;p&gt;Because the wave equation is linear, the sum is also a solution showing interference.&lt;/p&gt;
-
-&lt;h4 id=&quot;diffraction&quot;&gt;1.2. Diffraction&lt;/h4&gt;
-
-&lt;p&gt;For a source or aperture of width &lt;script type=&quot;math/tex&quot;&gt;{d}&lt;/script&gt;, the diffraction angle&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta\sim\frac{\lambda}{d}&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt; is the wavelength.&lt;/p&gt;
-
-&lt;h4 id=&quot;diffraction-from-periodic-structures&quot;&gt;1.3. Diffraction from Periodic Structures&lt;/h4&gt;
-
-&lt;p&gt;The angle &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt; of theses diffracted waves is given by simple geometry&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sin\theta=\frac{\lambda}{s}&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt; is the wave length.&lt;/p&gt;
-
-&lt;h3 id=&quot;schroedingers-wave-equation&quot;&gt;2. Schroedinger’s Wave Equation&lt;/h3&gt;
-
-&lt;h4 id=&quot;from-de-broglie-to-schroedinger&quot;&gt;2.1. From de Broglie to Schroedinger&lt;/h4&gt;
-
-&lt;p&gt;Recall de Broglie is that the electron wavelength &lt;script type=&quot;math/tex&quot;&gt;{\lambda}&lt;/script&gt; is given by&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\lambda=\frac{h}{p}&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{p}&lt;/script&gt; is the electron momentum and &lt;script type=&quot;math/tex&quot;&gt;{h}&lt;/script&gt; is Plank’s constant: &lt;script type=&quot;math/tex&quot;&gt;{h=6.63\times10^{-34}J\cdot s}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;In three dimensions, we can rewrite Helmholtz wave equation as:&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\psi=-k^{2}\psi&lt;/script&gt;
-
-&lt;p&gt;And with de Broglie hypothesis and the definition &lt;script type=&quot;math/tex&quot;&gt;{k=2\pi/\lambda}&lt;/script&gt;, therefore &lt;script type=&quot;math/tex&quot;&gt;{k=p/\hbar}&lt;/script&gt;. Hence,&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\nabla^{2}\psi=-\frac{p^{2}}{\hbar^{2}}\psi&lt;/script&gt;
-
-&lt;p&gt;Suppose the mass of the particle is &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt;, then we can change the equation to&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\hbar{2}}{2m}\nabla^{2}\psi=\frac{p^{2}}{2m}\psi&lt;/script&gt;
-
-&lt;p&gt;Notice that &lt;script type=&quot;math/tex&quot;&gt;{\frac{p^{2}}{2m}}&lt;/script&gt; is the kinetic energy of the particle. Let &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt; as the total energy of the particle and &lt;script type=&quot;math/tex&quot;&gt;{V(\vec{r})}&lt;/script&gt; as potential energy of the particle. Finally, we can generate time-independent Schroedinger equation&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left(-\frac{\hbar^{2}}{2m}\nabla^{2}+V(\vec{r})\right)\psi=E\psi&lt;/script&gt;
-
-&lt;p&gt;Born’s postulate is that the probability &lt;script type=&quot;math/tex&quot;&gt;{P(\vec{r})}&lt;/script&gt; of finding an electron near any specific point &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}}&lt;/script&gt; in space is proportional to the modulus squared &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi(\vec{r})\vert ^{2}}&lt;/script&gt; of the wave amplitude &lt;script type=&quot;math/tex&quot;&gt;{\psi(\vec{r})}&lt;/script&gt;. &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi(\vec{r}\vert ^{2}}&lt;/script&gt; can therefore be viewed as a “probability density” with &lt;script type=&quot;math/tex&quot;&gt;{\psi(\vec{r})}&lt;/script&gt; called a “probability amplitude” or a “quantum mechanical amplitude”.&lt;/p&gt;
-
-&lt;h4 id=&quot;diffraction-by-two-slits&quot;&gt;2.2. Diffraction by two slits&lt;/h4&gt;
-
-&lt;p&gt;Young’s slits is an opaque mask has two slits cut in it, a distance &lt;script type=&quot;math/tex&quot;&gt;{s}&lt;/script&gt; apart. Then we shine a plane wave on the mask from the left. The slits as point sources give an interference pattern.&lt;/p&gt;
-
-&lt;p&gt;The distance from the upper source to point &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; on the screen is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{(x-s/2)^{2}+z_{o}^{2}}&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; is the distance between the point and middle point of the screen, &lt;script type=&quot;math/tex&quot;&gt;{s}&lt;/script&gt; is the distance between two slits, and &lt;script type=&quot;math/tex&quot;&gt;{z_{o}}&lt;/script&gt; is the distance between mask and screen. Take the approximation of the above equation&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{\left(x-\frac{s}{2}\right)^{2}+z_{o}^{2}}\simeq z_{o}+\frac{(x-s/2)^{2}}{2z_{o}}=z_{o}+\frac{x^{2}}{2z_{o}}+\frac{s^{2}}{8z_{o}}-\frac{sx}{2z_{o}}&lt;/script&gt;
-
-&lt;p&gt;Similarly, the distance from the lower source to point &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; on the screen is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{(x+s/2)^{2}+z_{o}^{2}}&lt;/script&gt;
-
-&lt;p&gt;and the approximation is given by&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\sqrt{\left(x+\frac{s}{2}\right)^{2}+z_{o}^{2}}\simeq z_{o}+\frac{(x+s/2)^{2}}{2z_{o}}=z_{o}+\frac{x^{2}}{2z_{o}}+\frac{s^{2}}{8z_{o}}+\frac{sx}{2z_{o}}&lt;/script&gt;
-
-&lt;p&gt;For large &lt;script type=&quot;math/tex&quot;&gt;{z_{o}}&lt;/script&gt; the waves are approximately uniformly “bright”&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{s}(x)\propto \exp\left[ik\sqrt{\left(x-\frac{s}{2}\right)^{2}+z_{o}^{2}}\right]+\exp\left[ik\sqrt{\left(x+\frac{s}{2}\right)^{2}+z_{o}^{2}}\right]&lt;/script&gt;
-
-&lt;p&gt;Using the approximation for the distance gives&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{s}(x)\propto \exp(i\alpha)\left\{\exp\left[ik\frac{sx}{2z_{o}}\right]+\exp\left[-ik\frac{sx}{2z_{o}}\right]\right\}&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\alpha=k(z_{o}+x^{2}/2z_{o}+s^{2}/8z_{o})}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now, noted that &lt;script type=&quot;math/tex&quot;&gt;{\exp(i\theta)+\exp(-i\theta)=2\cos(\theta)}&lt;/script&gt; and in general, angular wavenumber &lt;script type=&quot;math/tex&quot;&gt;{k=2\pi/\lambda}&lt;/script&gt;&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{s}(x)\propto \exp(i\alpha)\cos\left(k\frac{sx}{2z_{o}}\right)=\exp(i\alpha)\cos\left(\frac{\pi sx}{\lambda z_{o}}\right)&lt;/script&gt;
-
-&lt;p&gt;So the “intensity” of the beam&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\vert \psi_{s}(x)\vert ^{2}\propto \cos^{2}\left(\frac{\pi sx}{\lambda z_{o}}\right)=\frac{1}{2}\left[1+\cos\left(\frac{2\pi sx}{\lambda z_{o}}\right)\right]&lt;/script&gt;
-
-&lt;p&gt;Therefore, the interference fringes are spaced by &lt;script type=&quot;math/tex&quot;&gt;{d_{s}=\lambda z_{o}/s}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;particle-in-box&quot;&gt;3. Particle in Box&lt;/h3&gt;
-
-&lt;h4 id=&quot;linearity-and-normalization&quot;&gt;3.1. Linearity and normalization&lt;/h4&gt;
-
-&lt;p&gt;We see that Schroedinger’s equation is linear. The wave function &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; appears only in first order, there are no second order or higher order terms. So if &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; is a solution to Schroedinger’s equation, so also is &lt;script type=&quot;math/tex&quot;&gt;{a\psi}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;Born postulated the probability &lt;script type=&quot;math/tex&quot;&gt;{P(\vec{r})}&lt;/script&gt; of finding a particle near a point &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}}&lt;/script&gt; is &lt;script type=&quot;math/tex&quot;&gt;{\propto\vert \psi(\vec{r})\vert ^{2}}&lt;/script&gt;. Specifically let us define &lt;script type=&quot;math/tex&quot;&gt;{P(\vec{r})}&lt;/script&gt; as a “probability density”. For some very small (infinitesimal) volume &lt;script type=&quot;math/tex&quot;&gt;{d^{3}\vec{r}}&lt;/script&gt; around &lt;script type=&quot;math/tex&quot;&gt;{\vec{r}}&lt;/script&gt;. The probability of finding the particle in that volume is &lt;script type=&quot;math/tex&quot;&gt;{P(\vec{r})d^{3}r}&lt;/script&gt;. So, the sum of all such probabilities should be 1&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int P(\vec{r})d^{3}\vec{r}=1&lt;/script&gt;
-
-&lt;p&gt;However, unless we have been lucky, out solution to Schroedinger’s equation did not give a &lt;script type=&quot;math/tex&quot;&gt;{\psi(\vec{r})}&lt;/script&gt; so that &lt;script type=&quot;math/tex&quot;&gt;{\int\vert \psi(\vec{r})\vert ^{2}d^{3}\vec{r}=1}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;Generally, this integral would give some other real positive number which we could write as &lt;script type=&quot;math/tex&quot;&gt;{1/\vert a\vert ^{2}}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; is some (possible complex) number. That is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int\vert \psi(\vec{r})\vert ^{2}d^{3}\vec{r}=\frac{1}{\vert a\vert ^{2}}&lt;/script&gt;
-
-&lt;p&gt;But we know that if &lt;script type=&quot;math/tex&quot;&gt;{\psi(\vec{r})}&lt;/script&gt; is a solution of Schroedinger equation, so also is &lt;script type=&quot;math/tex&quot;&gt;{a\psi(\vec{r})}&lt;/script&gt;. So if we use the solution &lt;script type=&quot;math/tex&quot;&gt;{\psi_{N}=a\psi}&lt;/script&gt; instead of &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; then&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int\vert \psi_{N}(\vec{r})\vert ^{2}d^{3}\vec{r}=1&lt;/script&gt;
-
-&lt;p&gt;and we can use &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{N}(\vec{r})\vert ^{2}}&lt;/script&gt; as the probability density. &lt;script type=&quot;math/tex&quot;&gt;{\psi_{N}(\vec{r})}&lt;/script&gt; would then be called a “normalization wave function”.&lt;/p&gt;
-
-&lt;p&gt;Note that normalization only sets the magnitude of &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt;, not the phase. We are free to choose any phase for &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt; or indeed for the original solution &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt;. If we think of space as infinite functions like &lt;script type=&quot;math/tex&quot;&gt;{\sin(kx)}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\cos(kx)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\exp(i\vec{k}\cdot\vec{r})}&lt;/script&gt; cannot be normalized in this way. Technically, their squared modulus is not “Lebesgue integrable” (They are not “L2” functions). This difficulty is mathematical, not physical. It is caused by over-idealizing the mathematics to get functions that are simple to use. There are few “work-around” for this difficulty&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;only work with finite volumes in actual problems (this is the most common solution)&lt;/li&gt;
-  &lt;li&gt;use “normalization to delta function” (introduces another infinity to compensate for the first one)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;solving-for-the-particle-in-a-box&quot;&gt;3.2. Solving for the particle in a box&lt;/h4&gt;
-
-&lt;p&gt;We consider a particle of mass &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; with a spatially-varying potential &lt;script type=&quot;math/tex&quot;&gt;{V(z)}&lt;/script&gt; in the &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt; direction, so the Schroedinger equation&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\hbar^{2}}{2m}\frac{d^{2}\psi(z)}{dz^{2}}+V(z)\psi(z)=E\psi(z)&lt;/script&gt;
-
-&lt;p&gt;when &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt; is the energy of the particle and &lt;script type=&quot;math/tex&quot;&gt;{\psi(z)}&lt;/script&gt; is the wave function.&lt;/p&gt;
-
-&lt;p&gt;Suppose the potential energy is a simple “rectangular” potential well thickness &lt;script type=&quot;math/tex&quot;&gt;{L_{z}}&lt;/script&gt;. Potential energy is constant inside, and we choose &lt;script type=&quot;math/tex&quot;&gt;{V=0}&lt;/script&gt; there. Rising to infinity at the walls. We will sometimes call this an infinite or infinitely deep (potential) well. Because these potentials at &lt;script type=&quot;math/tex&quot;&gt;{z=0}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{z=L_{z}}&lt;/script&gt; are infinitely high, but the particle’s energy &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt; is presumably finite. We presume there is no possibility of finding the particle outside. So the wave function &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; is 0 there so &lt;script type=&quot;math/tex&quot;&gt;{\psi}&lt;/script&gt; should be 0 at the walls. With these choices, the Schroedinger’s equation becomes&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\hbar^{2}}{2m}\frac{d^{2}\psi(z)}{dz^{2}}=E\psi(z)&lt;/script&gt;
-
-&lt;p&gt;with the boundary conditions &lt;script type=&quot;math/tex&quot;&gt;{\psi(0)=0}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\psi(L_{z})=0}&lt;/script&gt;.&lt;/p&gt;
-
-&lt;p&gt;The general solution to previous equation is&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=A\sin(kz)+B\cos(kz)&lt;/script&gt;
-
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{B}&lt;/script&gt; are constants and &lt;script type=&quot;math/tex&quot;&gt;{k\sqrt{2mE/\hbar^{2}}}&lt;/script&gt;. The boundary condition &lt;script type=&quot;math/tex&quot;&gt;{\psi(0)=0}&lt;/script&gt;, means &lt;script type=&quot;math/tex&quot;&gt;{B=0}&lt;/script&gt;. Then the solution reduced to&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi(z)=A\sin(kz)&lt;/script&gt;
-
-&lt;p&gt;and because of boundary &lt;script type=&quot;math/tex&quot;&gt;{\psi(L_{z})=0}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{kz}&lt;/script&gt; must be multiple of &lt;script type=&quot;math/tex&quot;&gt;{\pi}&lt;/script&gt;, therefore &lt;script type=&quot;math/tex&quot;&gt;{k=\sqrt{2mE/\hbar^{2}}=n\pi/L_{z}}&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; is an integer. Since &lt;script type=&quot;math/tex&quot;&gt;{E=(\hbar^{2}k^{2})/2m}&lt;/script&gt;, the solutions are&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi_{n}(z)=A\sin\left(\frac{n\pi z}{L_{z}}\right) \text{ with } E_{n}=\frac{\hbar^{2}}{2m}\left(\frac{n\pi}{L_{z}}\right)^{2}&lt;/script&gt;
-
-&lt;p&gt;We restrict &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; to positive integers for following reasons: since &lt;script type=&quot;math/tex&quot;&gt;{\sin(-a)=-sin(a)}&lt;/script&gt; for any real number &lt;script type=&quot;math/tex&quot;&gt;{a}&lt;/script&gt;, the wave functions with negative &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; are same as those with positive &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt; with an arbitrary factor, here -1. The wave function for &lt;script type=&quot;math/tex&quot;&gt;{n=0}&lt;/script&gt; is trivial, the wave function is 0 everywhere.&lt;/p&gt;
-
-&lt;p&gt;We can normalize the wave function&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\int_{0}^{L_{z}}\vert A_{n}\vert ^{2}\sin^{2}\left(\frac{n\pi z}{L_{z}}\right)\,dz=\vert A_{n}\vert ^{2}\frac{L_{z}}{2}&lt;/script&gt;
-
-&lt;p&gt;to have this integral equal 1 by choosing &lt;script type=&quot;math/tex&quot;&gt;{\vert A_{n}\vert=\sqrt{2/L_{z}}}&lt;/script&gt;. Note that &lt;script type=&quot;math/tex&quot;&gt;{A_{n}}&lt;/script&gt; can be complex.&lt;/p&gt;
-
-&lt;h4 id=&quot;nature-of-the-particle-in-a-box-solutions&quot;&gt;3.3. Nature of the particle-in-a-box solutions&lt;/h4&gt;
-
-&lt;p&gt;Solutions with a specific set of allowed values of a parameter (here energy) are eigenvalues and with a particular function associated with each such value are eigenfunctions or eigensolutions. Here, since the parameter is an energy, we can call the eigenvalues as eigenenergies and we can refer to the eigenfunctions as the energy eigenfunctions.&lt;/p&gt;
-
-&lt;p&gt;Note in some problem, it can be possible to have more then one eigenfunction with a given eigenvalue, this phenomenon is known as “degeneracy”. The number of such states with a same eigenvalue is called “the degeneracy” of that state.&lt;/p&gt;
-
-&lt;p&gt;Note that these eigenfunctions have definite symmetry the &lt;script type=&quot;math/tex&quot;&gt;{n=2k-1}&lt;/script&gt; functions are the mirror image on the left of what they are on the right, such a function has “even parity” or is said to be an “even function”. The &lt;script type=&quot;math/tex&quot;&gt;{n=2k}&lt;/script&gt; eigenfunctions are an inverted image. The value at any point on the right of the center is exactly minus the value of the “mirror image” point on the left of the center. Such a function has “odd parity” or is said to be an “odd function”.&lt;/p&gt;
-
-&lt;p&gt;This particle-in-a-box behavior is very different from the classical case&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;there is only a discrete set of possible value for the energy&lt;/li&gt;
-  &lt;li&gt;there is a minimum possible energy for the particle, corresponding to &lt;script type=&quot;math/tex&quot;&gt;{n=1}&lt;/script&gt;, sometimes called a “zero-point energy”&lt;/li&gt;
-  &lt;li&gt;the particle is not uniformly distributed over the box, and its distribution is different for different energies. The probability obeys a standing wave pattern.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In quantum mechanical calculations, we can always use Joules as unit of energy but these are rather large. A very convenient energy unit which also has a simple physical significance is electron-volt (eV)&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;1\text{eV}\simeq1.602\times10^{-19}J&lt;/script&gt;
-
-&lt;p&gt;1 eV is the energy change of an electron in moving through an electrostatic potential change of 1 V.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 07 Oct 2013 00:00:00 +0200</pubDate>
-        <link>http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/</link>
-        <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/</guid>
       </item>
     
   </channel>
