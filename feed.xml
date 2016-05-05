@@ -10,7 +10,7 @@
         <title>天明集录三 接舆</title>
         <description>&lt;p&gt;近因学校庆祝周年庆典&lt;/p&gt;
 </description>
-        <pubDate>Fri, 02 Oct 2015 00:00:00 +0800</pubDate>
+        <pubDate>Fri, 02 Oct 2015 00:00:00 +0200</pubDate>
         <link>http://dgyblog.com/review/2015/10/02/tianming-3/</link>
         <guid isPermaLink="true">http://dgyblog.com/review/2015/10/02/tianming-3/</guid>
       </item>
@@ -36,7 +36,7 @@
 &lt;/div&gt;
 
 </description>
-        <pubDate>Tue, 29 Sep 2015 00:00:00 +0800</pubDate>
+        <pubDate>Tue, 29 Sep 2015 00:00:00 +0200</pubDate>
         <link>http://dgyblog.com/life/2015/09/29/the-day-i-leave-wordpress/</link>
         <guid isPermaLink="true">http://dgyblog.com/life/2015/09/29/the-day-i-leave-wordpress/</guid>
       </item>
@@ -61,7 +61,7 @@
 
 &lt;p&gt;作為很弱的我經常分析問題都是憑直覺的。我並沒有什麼很好的數學能力，無論從經驗上還是邏輯上。眼下導師特別想讓我自己推導很多式子，分析很多問題。並且給我很多好的數學材料去閱讀并一再強調遇到問題不要遲疑想問就問，他會盡量解答。當然除了數學上的，導師還很熱衷於給我講通信網絡的知識（畢竟我們的課題就是干這些的）。每每當我覺得我的英語表達還是不盡人意讓我有種有力使不上的感覺的時候，我更多的是欣喜於通過和導師討論快速的得到知識的快感。這樣的環境使我這個弱爆了的懶蛋有了一絲進取的精神。這是我最最最缺乏的元素了。希望這是個好的開始吧。&lt;/p&gt;
 </description>
-        <pubDate>Sun, 30 Aug 2015 00:00:00 +0800</pubDate>
+        <pubDate>Sun, 30 Aug 2015 00:00:00 +0200</pubDate>
         <link>http://dgyblog.com/yang/2015/08/30/help-me/</link>
         <guid isPermaLink="true">http://dgyblog.com/yang/2015/08/30/help-me/</guid>
       </item>
@@ -98,7 +98,7 @@
 
 &lt;p&gt;不写了。&lt;/p&gt;
 </description>
-        <pubDate>Mon, 29 Dec 2014 00:00:00 +0800</pubDate>
+        <pubDate>Mon, 29 Dec 2014 00:00:00 +0100</pubDate>
         <link>http://dgyblog.com/yang/2014/12/29/only-one/</link>
         <guid isPermaLink="true">http://dgyblog.com/yang/2014/12/29/only-one/</guid>
       </item>
@@ -449,7 +449,7 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;Ry=-\langle E_{total}\rangle\approx 13.6eV&lt;/script&gt;
 </description>
-        <pubDate>Thu, 14 Nov 2013 00:00:00 +0800</pubDate>
+        <pubDate>Thu, 14 Nov 2013 00:00:00 +0100</pubDate>
         <link>http://dgyblog.com/oldtimes/2013/11/14/quantum-for-scieng-7/</link>
         <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/11/14/quantum-for-scieng-7/</guid>
       </item>
@@ -845,7 +845,7 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\Delta\omega\Delta t\geq\frac{1}{2}&lt;/script&gt;
 </description>
-        <pubDate>Fri, 01 Nov 2013 00:00:00 +0800</pubDate>
+        <pubDate>Fri, 01 Nov 2013 00:00:00 +0100</pubDate>
         <link>http://dgyblog.com/oldtimes/2013/11/01/quantum-for-scieng-6/</link>
         <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/11/01/quantum-for-scieng-6/</guid>
       </item>
@@ -1231,7 +1231,7 @@
 
 &lt;p&gt;We have now deduce how to set up a function as a vector and a linear operator as a matrix which can operate on the vectors.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 27 Oct 2013 00:00:00 +0800</pubDate>
+        <pubDate>Sun, 27 Oct 2013 00:00:00 +0200</pubDate>
         <link>http://dgyblog.com/oldtimes/2013/10/27/quantum-for-scieng-5/</link>
         <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/10/27/quantum-for-scieng-5/</guid>
       </item>
@@ -1482,7 +1482,7 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\Psi(\vec{r},t_{1})=\exp\left(-\frac{i\hat{H}(t_{1}-t_{0})}{\hbar}\right)\Psi(\vec{r},t_{0})&lt;/script&gt;
 </description>
-        <pubDate>Wed, 23 Oct 2013 00:00:00 +0800</pubDate>
+        <pubDate>Wed, 23 Oct 2013 00:00:00 +0200</pubDate>
         <link>http://dgyblog.com/oldtimes/2013/10/23/quantum-for-scieng-4/</link>
         <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/10/23/quantum-for-scieng-4/</guid>
       </item>
@@ -1821,7 +1821,7 @@ z&lt;-L_{z}/2 %]]&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\Psi(\vec{r},t)=\sum_{n}a_{n}\Psi_{n}(\vec{r},t)=\sum_{n}a_{n}\exp(-iEt/\hbar)\psi_{n}(\vec{r})&lt;/script&gt;
 </description>
-        <pubDate>Thu, 17 Oct 2013 00:00:00 +0800</pubDate>
+        <pubDate>Thu, 17 Oct 2013 00:00:00 +0200</pubDate>
         <link>http://dgyblog.com/oldtimes/2013/10/17/quantum-for-scieng-3/</link>
         <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/10/17/quantum-for-scieng-3/</guid>
       </item>
@@ -2025,7 +2025,7 @@ z&lt;-L_{z}/2 %]]&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;1 eV is the energy change of an electron in moving through an electrostatic potential change of 1 V.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 07 Oct 2013 00:00:00 +0800</pubDate>
+        <pubDate>Mon, 07 Oct 2013 00:00:00 +0200</pubDate>
         <link>http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/</link>
         <guid isPermaLink="true">http://dgyblog.com/oldtimes/2013/10/07/quantum-for-scieng-2/</guid>
       </item>
