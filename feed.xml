@@ -12,8 +12,8 @@
 7 months ago. Since then, a lot of things have changed around me.&lt;/p&gt;
 
 &lt;p&gt;First, I’ve moved to Zurich, a beautiful town, very expensive, and not as boring
-as I thought. I’ve started my journey to my Master degree here at INI, &lt;a href=&quot;https://www.ini.uzh.ch/people/yuhu&quot;&gt;check out
-my profile photo&lt;/a&gt;. Somehow they chose to
+as I thought. I’ve started my journey to my Master degree here at INI, &lt;a href=&quot;https://www.ini.uzh.ch/people/yuhu&quot;&gt;check
+out my profile photo&lt;/a&gt;. Somehow they chose to
 use my middle name (which I don’t have one) and my last name as my ID.
 Well, it’s not exactly the ugliest ID I’ve ever had, but close. I got 4 more
 email addresses (thanks to independent IT infrastructure everywhere). And
@@ -35,6 +35,11 @@ some of them are difficult, some of them are not that difficult.
 I did work more on course-work than I did in UM (basically sleeping all the time
 when I was an undergraduate). I attended countless seminars (thanks to INI’s
 arrangements). So far so good.&lt;/p&gt;
+
+&lt;h3 id=&quot;updates-on-july-5th&quot;&gt;Updates on July 5th&lt;/h3&gt;
+
+&lt;p&gt;I have moved to a new place. It’s lovely. I still have lots to figure out,
+somehow I also survived by using daily data plan.&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 May 2016 00:00:00 +0200</pubDate>
         <link>http://dgyblog.com/life/2016/05/05/what-i-did-and-didnt/</link>
@@ -181,7 +186,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;Unlike operators for position and for linear momentum, the different components of this angular momentum operator do not commute with one another. Though a particle can have simultaneously a well-defined position in both &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; directions or have simultaneously a well-defined momentum in both the &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{y}&lt;/script&gt; directions. A particle cannot in general simultaneously have a well-defined angular momentum component in more than one direction.&lt;/p&gt;
 
-&lt;h3 id=&quot;angular-momentum-eigenfunctions&quot;&gt;1.2. Angular momentum eigenfunctions&lt;/h3&gt;
+&lt;p&gt;###1.2. Angular momentum eigenfunctions&lt;/p&gt;
 
 &lt;p&gt;The relation between spherical polar and Cartesian coordinates is&lt;/p&gt;
 
@@ -216,9 +221,9 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;The requirements that the wavefunction and its derivative are continuous when we return to where we started, mean that &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt; must be an integer (positive, negative or zero). Hence we find that the angular momentum around the &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt; axis is quantized with units of angular momentum of &lt;script type=&quot;math/tex&quot;&gt;{\hbar}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-l-squared-operator&quot;&gt;2. The L Squared Operator&lt;/h2&gt;
+&lt;p&gt;##2. The L Squared Operator&lt;/p&gt;
 
-&lt;h3 id=&quot;separating-the-l-squared-operator&quot;&gt;2.1. Separating the L squared operator&lt;/h3&gt;
+&lt;p&gt;###2.1. Separating the L squared operator&lt;/p&gt;
 
 &lt;p&gt;In quantum mechanics, we also consider another operator associated with angular momentum the operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}^{2}}&lt;/script&gt;. This should be thought of as the “dot” product of &lt;script type=&quot;math/tex&quot;&gt;{\hat{\mathbf{L}}}&lt;/script&gt; with itself and is defined as&lt;/p&gt;
 
@@ -308,7 +313,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;It makes no difference to the &lt;script type=&quot;math/tex&quot;&gt;{\hat{L}_{z}}&lt;/script&gt; eigenfunctions if we multiply them by a function of &lt;script type=&quot;math/tex&quot;&gt;{\theta}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;visualizing-spherical-harmonics&quot;&gt;2.2. Visualizing spherical harmonics&lt;/h3&gt;
+&lt;p&gt;###2.2. Visualizing spherical harmonics&lt;/p&gt;
 
 &lt;p&gt;The lowest solution &lt;script type=&quot;math/tex&quot;&gt;{l=0}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{m=0}&lt;/script&gt; is called “breathing” mode. The spherical shell expands and contracts periodically. For all other solutions there are one or more nodal circles on the sphere. A nodal circle is one that is unchanged in that particular oscillating mode.&lt;/p&gt;
 
@@ -321,7 +326,7 @@ arrangements). So far so good.&lt;/p&gt;
   &lt;li&gt;the remaining nodal circles are either equatorial or parallel to the equator symmetrically distributed between top and bottom halves of the sphere.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;notations-for-spherical-harmonics&quot;&gt;2.3. Notations for spherical harmonics&lt;/h3&gt;
+&lt;p&gt;###2.3. Notations for spherical harmonics&lt;/p&gt;
 
 &lt;p&gt;We often use Dirac notation in writing equations associated with angular momentum. It is common to write&lt;/p&gt;
 
@@ -342,9 +347,9 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;Each of these is now identified with the specific values of &lt;script type=&quot;math/tex&quot;&gt;{l}&lt;/script&gt;. Now we also alphabetically extend to higher &lt;script type=&quot;math/tex&quot;&gt;{l}&lt;/script&gt; values: s: &lt;script type=&quot;math/tex&quot;&gt;{l=0}&lt;/script&gt;, p: &lt;script type=&quot;math/tex&quot;&gt;{l=1}&lt;/script&gt;, d: &lt;script type=&quot;math/tex&quot;&gt;{l=2}&lt;/script&gt;, f: &lt;script type=&quot;math/tex&quot;&gt;{l=3}&lt;/script&gt;, g: &lt;script type=&quot;math/tex&quot;&gt;{l=4}&lt;/script&gt;, h: &lt;script type=&quot;math/tex&quot;&gt;{l=5}&lt;/script&gt; and so on. It is convenient that the “s” wavefunctions are all spherically symmetric even though the “s” of the notation originally had nothing to do with the spherical symmetry.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-hydrogen-atom&quot;&gt;3. The Hydrogen Atom&lt;/h2&gt;
+&lt;p&gt;##3. The Hydrogen Atom&lt;/p&gt;
 
-&lt;h3 id=&quot;multiple-particle-wavefunctions&quot;&gt;3.1. Multiple particle wavefunctions&lt;/h3&gt;
+&lt;p&gt;###3.1. Multiple particle wavefunctions&lt;/p&gt;
 
 &lt;p&gt;We start by generalizing the Schroedinger equation, writing generally for time-dependent problems&lt;/p&gt;
 
@@ -354,7 +359,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;For a hydrogen atom, there are two particles: the electron and the proton. Each of these has a set of coordinates associated with it: &lt;script type=&quot;math/tex&quot;&gt;{x_{e}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{y_{e}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{z_{e}}&lt;/script&gt; for the electron and &lt;script type=&quot;math/tex&quot;&gt;{x_{p}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{y_{p}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{z_{p}}&lt;/script&gt; for the proton. The wavefunction will therefore in general be a function of all six of these coordinates.&lt;/p&gt;
 
-&lt;h3 id=&quot;solving-the-hydrogen-atom-problem&quot;&gt;3.2. Solving the hydrogen atom problem&lt;/h3&gt;
+&lt;p&gt;###3.2. Solving the hydrogen atom problem&lt;/p&gt;
 
 &lt;p&gt;The electron and proton each have a mass &lt;script type=&quot;math/tex&quot;&gt;{m_{e}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{m_{p}}&lt;/script&gt; respectively. We expected kinetic energy operators associated with each of theses masses and potential energy from the electrostatic attraction of electron and proton.&lt;/p&gt;
 
@@ -452,7 +457,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;The &lt;em&gt;relative motion&lt;/em&gt; equation corresponds to the “internal” relative motion of the electron and proton and will give us the internal states of the hydrogen atom.&lt;/p&gt;
 
-&lt;h3 id=&quot;informal-solution-for-the-relative-motion&quot;&gt;3.3. Informal solution for the relative motion&lt;/h3&gt;
+&lt;p&gt;###3.3. Informal solution for the relative motion&lt;/p&gt;
 
 &lt;p&gt;We presume that the hydrogen atom will have some characteristic size which is called the Bohr radius &lt;script type=&quot;math/tex&quot;&gt;{a_{0}}&lt;/script&gt;. We expect that the “average” potential energy strictly, its expectation value will therefore be&lt;/p&gt;
 
@@ -491,9 +496,9 @@ arrangements). So far so good.&lt;/p&gt;
     
       <item>
         <title>Quantum Mechanics for Scientists and Engineers Notes 6</title>
-        <description>&lt;h3 id=&quot;types-of-linear-operators&quot;&gt;1. Types of Linear Operators&lt;/h3&gt;
+        <description>&lt;p&gt;###1. Types of Linear Operators&lt;/p&gt;
 
-&lt;h4 id=&quot;bilinear-expansion-of-operators&quot;&gt;1.1. Bilinear expansion of operators&lt;/h4&gt;
+&lt;p&gt;####1.1. Bilinear expansion of operators&lt;/p&gt;
 
 &lt;p&gt;We know that we can expand functions in a basis set as in &lt;script type=&quot;math/tex&quot;&gt;{f(x)=\sum_{n}c_{n}\psi_{n}(x)}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\vert f(x)\rangle=\sum_{n}c_{n}\vert \psi_{n}(x)\rangle}&lt;/script&gt;. What is the equivalent expansion for an operator? We can deduce this from our matrix representation.&lt;/p&gt;
 
@@ -529,7 +534,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;The Dirac form of expansion contains an outer product of two vectors. An outer product expression of the form &lt;script type=&quot;math/tex&quot;&gt;{\vert g\rangle\langle f\vert }&lt;/script&gt; generates matrix. The specific notation &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}\equiv A_{ij}\vert \psi_{i}\rangle\langle\psi_{j}\vert }&lt;/script&gt; is actually, then, a sum of matrices. In the matrix &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{i}\rangle\langle\psi_{j}\vert }&lt;/script&gt; the element in the &lt;script type=&quot;math/tex&quot;&gt;{j}&lt;/script&gt;th column and &lt;script type=&quot;math/tex&quot;&gt;{i}&lt;/script&gt;th row is 1, all other elements are zero.&lt;/p&gt;
 
-&lt;h4 id=&quot;the-identity-operator&quot;&gt;1.2. The identity operator&lt;/h4&gt;
+&lt;p&gt;####1.2. The identity operator&lt;/p&gt;
 
 &lt;p&gt;The identity operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{I}}&lt;/script&gt; is the operator that when it operates on a vector (function) leaves it unchanged. In matrix form, the identity operator is&lt;/p&gt;
 
@@ -567,7 +572,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;Hence the trace of an operator (the sum of the diagonal elements) is independent of the basis used to represent the operator.&lt;/p&gt;
 
-&lt;h4 id=&quot;inverse-and-unitary-operators&quot;&gt;1.3. Inverse and unitary operators&lt;/h4&gt;
+&lt;p&gt;####1.3. Inverse and unitary operators&lt;/p&gt;
 
 &lt;p&gt;For an operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; on an arbitrary function &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt;, then the inverse operator, if it exists is that operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}^{-1}}&lt;/script&gt; such that&lt;/p&gt;
 
@@ -605,9 +610,9 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;Hence, the unitary operation does not change the inner product. So, in particular &lt;script type=&quot;math/tex&quot;&gt;{\langle f_{new}\vert f_{new}\rangle=\langle f_{old}\vert f_{old}\rangle}&lt;/script&gt;, the length of a vector is not changed by a unitary operator.&lt;/p&gt;
 
-&lt;h3 id=&quot;unitary-and-hermitian-operators&quot;&gt;2. Unitary and Hermitian Operators&lt;/h3&gt;
+&lt;p&gt;###2. Unitary and Hermitian Operators&lt;/p&gt;
 
-&lt;h4 id=&quot;using-unitary-operators&quot;&gt;2.1. Using unitary operators&lt;/h4&gt;
+&lt;p&gt;####2.1. Using unitary operators&lt;/p&gt;
 
 &lt;p&gt;Suppose that we have a vector (function) &lt;script type=&quot;math/tex&quot;&gt;{\vert f_{old}\rangle}&lt;/script&gt; that is represented when expressed as an expansion on the function &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt; as the mathematical column vector&lt;/p&gt;
 
@@ -646,7 +651,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;then &lt;script type=&quot;math/tex&quot;&gt;{\sum_{n}\vert a_{n}\vert ^{2}=1}&lt;/script&gt;. And if the particle is to be conserved then this sum is retained as the quantum mechanical system evolves in time. Hence, a unitary operator, which conserves length describes changes that conserve the particle.&lt;/p&gt;
 
-&lt;h4 id=&quot;hermitian-operators&quot;&gt;2.2. Hermitian operators&lt;/h4&gt;
+&lt;p&gt;####2.2. Hermitian operators&lt;/p&gt;
 
 &lt;p&gt;A Hermitian operator is equal to its own Hermitian adjoint&lt;/p&gt;
 
@@ -707,7 +712,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;It is quite possible and common in symmetric problems to have more than one eigenfunction associated with a given eigenvalue. This situation is known as degeneracy. It is provable that the number of such degenerate solutions for a given finite eigenvalue is itself finite.&lt;/p&gt;
 
-&lt;h4 id=&quot;matrix-from-of-derivative-operators&quot;&gt;2.3. Matrix from of derivative operators&lt;/h4&gt;
+&lt;p&gt;####2.3. Matrix from of derivative operators&lt;/p&gt;
 
 &lt;p&gt;Returning to our original discussion of functions as vectors, we can postulate a form for the differential operator&lt;/p&gt;
 
@@ -731,9 +736,9 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;If &lt;script type=&quot;math/tex&quot;&gt;{V(x)}&lt;/script&gt; is real then its matrix is Hermitian as required for &lt;script type=&quot;math/tex&quot;&gt;{\hat{H}}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;operators-and-quantum-mechanics&quot;&gt;3. Operators and Quantum Mechanics&lt;/h3&gt;
+&lt;p&gt;###3. Operators and Quantum Mechanics&lt;/p&gt;
 
-&lt;h4 id=&quot;hermitian-operators-in-quantum-mechanics&quot;&gt;3.1. Hermitian operators in quantum mechanics&lt;/h4&gt;
+&lt;p&gt;####3.1. Hermitian operators in quantum mechanics&lt;/p&gt;
 
 &lt;p&gt;For Hermitian operators &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}}&lt;/script&gt; representing physical variables. It is very important to know if they commute, i.e., &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}\hat{B}=\hat{B}\hat{A}}&lt;/script&gt;. Remember that because these linear operators obey the same algebra as matrices in general operators do not commute.&lt;/p&gt;
 
@@ -785,7 +790,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;Since we have proved this for an arbitrary function, we have proved that the operators commute hence proving the statement operators that share the same set of eigenfunctions commute.&lt;/p&gt;
 
-&lt;h4 id=&quot;general-form-of-the-uncertainty-principle&quot;&gt;3.2. General form of the uncertainty principle&lt;/h4&gt;
+&lt;p&gt;####3.2. General form of the uncertainty principle&lt;/p&gt;
 
 &lt;p&gt;First, we need to set up the concepts of the mean and variance of an expectation value. Using &lt;script type=&quot;math/tex&quot;&gt;{\bar{A}}&lt;/script&gt; to denote the mean value of a quantity &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt;. We have, in the bra-ket notation, for a measurable quantity associated with the Hermitian operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; when the state of the system is &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt;&lt;/p&gt;
 
@@ -851,7 +856,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;The conclusion above is generally true. Only if the operators &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{B}}&lt;/script&gt; commute. or if they do not commute, but we are in a state &lt;script type=&quot;math/tex&quot;&gt;{\vert f\rangle}&lt;/script&gt; for which &lt;script type=&quot;math/tex&quot;&gt;{\langle f\vert \hat{C}\vert f\rangle=0}&lt;/script&gt;. Only in those cases it is possible for both &lt;script type=&quot;math/tex&quot;&gt;{A}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{B}&lt;/script&gt; simultaneously to have exact measurable values.&lt;/p&gt;
 
-&lt;h4 id=&quot;specific-uncertainty-principles&quot;&gt;3.3. Specific uncertainty principles&lt;/h4&gt;
+&lt;p&gt;####3.3. Specific uncertainty principles&lt;/p&gt;
 
 &lt;p&gt;We now formally derive the position-momentum relation. Consider the commutator of &lt;script type=&quot;math/tex&quot;&gt;{\hat{p}_{x}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; (we treat the function &lt;script type=&quot;math/tex&quot;&gt;{x}&lt;/script&gt; as the operator for position). To be sure we are taking derivatives correctly, we have the commutator operate on an arbitrary function:&lt;/p&gt;
 
@@ -887,9 +892,9 @@ arrangements). So far so good.&lt;/p&gt;
     
       <item>
         <title>Quantum Mechanics for Scientists and Engineers Notes 5</title>
-        <description>&lt;h3 id=&quot;uncertainty-principle-and-particle-current&quot;&gt;1. Uncertainty Principle and Particle Current&lt;/h3&gt;
+        <description>&lt;p&gt;###1. Uncertainty Principle and Particle Current&lt;/p&gt;
 
-&lt;h4 id=&quot;momentum-position-and-the-uncertainty-principle&quot;&gt;1.1. Momentum, position, and the uncertainty principle&lt;/h4&gt;
+&lt;p&gt;####1.1. Momentum, position, and the uncertainty principle&lt;/p&gt;
 
 &lt;p&gt;For momentum, we write an operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{p}}&lt;/script&gt;. We postulate this can be written as&lt;/p&gt;
 
@@ -973,7 +978,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;The shorter the pulse is, the larger the range of frequencies.&lt;/p&gt;
 
-&lt;h4 id=&quot;particle-current&quot;&gt;1.2. Particle current&lt;/h4&gt;
+&lt;p&gt;####1.2. Particle current&lt;/p&gt;
 
 &lt;p&gt;In Cartesian coordinates, the divergence of a vector &lt;script type=&quot;math/tex&quot;&gt;{\vec{F}}&lt;/script&gt; is&lt;/p&gt;
 
@@ -1049,9 +1054,9 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;Therefore, particle current is constant in any energy eigenstate. And for real spatial eigenfunctions, particle current is actually zero.&lt;/p&gt;
 
-&lt;h3 id=&quot;functions-and-dirac-notation&quot;&gt;2. Functions and Dirac Notation&lt;/h3&gt;
+&lt;p&gt;###2. Functions and Dirac Notation&lt;/p&gt;
 
-&lt;h4 id=&quot;functions-as-vectors&quot;&gt;2.1. Functions as vectors&lt;/h4&gt;
+&lt;p&gt;####2.1. Functions as vectors&lt;/p&gt;
 
 &lt;p&gt;One kind of list of arguments would be the list of all real numbers which we could list in order as &lt;script type=&quot;math/tex&quot;&gt;{x_{1}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{x_{2}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{x_{3}}&lt;/script&gt; and so on. This is an infinitely long list and the adjacent values in the list are infinitesimally close together but we will regard these infinite as details.&lt;/p&gt;
 
@@ -1065,7 +1070,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;{\delta x}&lt;/script&gt; is sufficiently small and the corresponding vectors therefore sufficiently long, we can get an arbitrarily good approximation to be integral.&lt;/p&gt;
 
-&lt;h4 id=&quot;dirac-notation&quot;&gt;2.2. Dirac notation&lt;/h4&gt;
+&lt;p&gt;####2.2. Dirac notation&lt;/p&gt;
 
 &lt;p&gt;The first part of the Dirac “bra-ket” notation &lt;script type=&quot;math/tex&quot;&gt;{\vert f(x)\rangle}&lt;/script&gt; is called a “ket”, which refers to our column vector. For the case of our function &lt;script type=&quot;math/tex&quot;&gt;{f(x)}&lt;/script&gt;, one way to define the “ket” is&lt;/p&gt;
 
@@ -1116,7 +1121,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;In general this kind of “product” &lt;script type=&quot;math/tex&quot;&gt;{\langle g\vert \times\vert f\rangle\equiv\langle g\vert f\rangle}&lt;/script&gt; is called an inner product in linear algebra. The geometric vector dot product is an inner product. The bra-ket “product” &lt;script type=&quot;math/tex&quot;&gt;{\langle g\vert f\rangle}&lt;/script&gt; is an inner product. The “overlap” integral” &lt;script type=&quot;math/tex&quot;&gt;{\int g^{*}(x)f(x)\,dx}&lt;/script&gt; is an inner product. It is “inner” because it takes two vectors and turns them into a number a “small” entity. In the Dirac notation &lt;script type=&quot;math/tex&quot;&gt;{\langle g\vert f\rangle}&lt;/script&gt;, the bra-ket gives an inner “feel” to this product. The special parentheses gives a “closed” look.&lt;/p&gt;
 
-&lt;h4 id=&quot;using-dirac-notation&quot;&gt;2.3. Using Dirac notation&lt;/h4&gt;
+&lt;p&gt;####2.3. Using Dirac notation&lt;/p&gt;
 
 &lt;p&gt;Suppose the function is not represented directly as a set of values for each point in space but is expanded in a complete orthonormal basis &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(x)}&lt;/script&gt;.&lt;/p&gt;
 
@@ -1152,9 +1157,9 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;The convention for what is inside the bra or ket is loose, usually one deduces from the context what is meant. For example, it is obvious what basis we were working with. We might use &lt;script type=&quot;math/tex&quot;&gt;{\vert n\rangle}&lt;/script&gt; to represent the &lt;script type=&quot;math/tex&quot;&gt;{n}&lt;/script&gt;th basis function (or basis “state”) rather than the notation &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}(x)\rangle}&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt;. The symbols inside the bra or ket should be enough to make it clear what state we are discussing. Other wise there are essentially no rules for the notation.&lt;/p&gt;
 
-&lt;h3 id=&quot;vector-spaces-operators-and-matrices&quot;&gt;3. Vector Spaces, Operators and Matrices&lt;/h3&gt;
+&lt;p&gt;###3. Vector Spaces, Operators and Matrices&lt;/p&gt;
 
-&lt;h4 id=&quot;vector-space&quot;&gt;3.1. Vector space&lt;/h4&gt;
+&lt;p&gt;####3.1. Vector space&lt;/p&gt;
 
 &lt;p&gt;For a function expressed as its value at a set of points, we may have infinite number of orthogonal axes labeled with their associated basis function. Just as we label axes in conventional space with unit vectors, one notation is &lt;script type=&quot;math/tex&quot;&gt;{\hat{x}}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;{\hat{y}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\hat{z}}&lt;/script&gt; for the unit vectors, so also here we label the axes with the kets &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{n}\rangle}&lt;/script&gt;.&lt;/p&gt;
 
@@ -1188,7 +1193,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle f\vert g\rangle=(\langle g\vert f\rangle)^{*}&lt;/script&gt;
 
-&lt;h4 id=&quot;operators&quot;&gt;3.2. Operators&lt;/h4&gt;
+&lt;p&gt;####3.2. Operators&lt;/p&gt;
 
 &lt;p&gt;An operator turns one function into another. In the vector space representation of a function. An operator turns one vector into another.&lt;/p&gt;
 
@@ -1234,7 +1239,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;If we regard the ket as a vector, we now regard the (linear) operator &lt;script type=&quot;math/tex&quot;&gt;{\hat{A}}&lt;/script&gt; as a matrix.&lt;/p&gt;
 
-&lt;h4 id=&quot;linear-operators-and-their-algebra&quot;&gt;3.3. Linear operators and their algebra&lt;/h4&gt;
+&lt;p&gt;####3.3. Linear operators and their algebra&lt;/p&gt;
 
 &lt;p&gt;Operators do not in general commute and it is very important in quantum mechanics. We expanded &lt;script type=&quot;math/tex&quot;&gt;{f(x)=\sum_{n}\psi_{n}(x)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{g(x)=\sum_{n}d_{n}\psi_{n}(x)}&lt;/script&gt;. We could have followed a similar argument requiring each expansion coefficient &lt;script type=&quot;math/tex&quot;&gt;{d_{i}}&lt;/script&gt; depends linearly on all the expansion coefficients &lt;script type=&quot;math/tex&quot;&gt;{c_{n}}&lt;/script&gt;.&lt;/p&gt;
 
@@ -1273,9 +1278,9 @@ arrangements). So far so good.&lt;/p&gt;
     
       <item>
         <title>Quantum Mechanics for Scientists and Engineers Notes 4</title>
-        <description>&lt;h3 id=&quot;time-evolution&quot;&gt;1. Time Evolution&lt;/h3&gt;
+        <description>&lt;p&gt;###1. Time Evolution&lt;/p&gt;
 
-&lt;h4 id=&quot;superposition-for-particle-in-a-box&quot;&gt;1.1. Superposition for particle in a box&lt;/h4&gt;
+&lt;p&gt;####1.1. Superposition for particle in a box&lt;/p&gt;
 
 &lt;p&gt;Suppose we have an infinitely deep potential well with the particle in a linear superposition, for example, with equal parts of the first and second states of the well (This superposition is normalized)&lt;/p&gt;
 
@@ -1295,7 +1300,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;However, when you add the amplitude up and take the probability of the sum, the equal superposition of the two oscillates at th angular frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega_{21}=(E_{2}-E_{1})/\hbar=3E_{1}/\hbar}&lt;/script&gt; (just like we worked out).&lt;/p&gt;
 
-&lt;h4 id=&quot;superposition-for-the-harmonic-oscillator&quot;&gt;1.2. Superposition for the harmonic oscillator&lt;/h4&gt;
+&lt;p&gt;####1.2. Superposition for the harmonic oscillator&lt;/p&gt;
 
 &lt;p&gt;Quite generally, if we make a linear combination of two energy eigenstates with energies &lt;script type=&quot;math/tex&quot;&gt;{E_{a}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{E_{b}}&lt;/script&gt;. The resulting probability distribution with oscillate at the (angular) frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega_{ab}=\vert E_{a}-E_{b}\vert /\hbar}&lt;/script&gt;. So, if we have a superposition wave function&lt;/p&gt;
 
@@ -1313,7 +1318,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;where the angular frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega=(E_{1}-E_{0})/\hbar}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;h4 id=&quot;the-coherent-state&quot;&gt;1.3. The coherent state&lt;/h4&gt;
+&lt;p&gt;####1.3. The coherent state&lt;/p&gt;
 
 &lt;p&gt;The coherent state for a harmonic oscillator of frequency &lt;script type=&quot;math/tex&quot;&gt;{\omega}&lt;/script&gt; is&lt;/p&gt;
 
@@ -1331,9 +1336,9 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;This is the Poisson distribution from statistics with mean &lt;script type=&quot;math/tex&quot;&gt;{N}&lt;/script&gt; and standard deviation &lt;script type=&quot;math/tex&quot;&gt;{\sqrt{N}}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;wavepackets&quot;&gt;2. Wavepackets&lt;/h3&gt;
+&lt;p&gt;###2. Wavepackets&lt;/p&gt;
 
-&lt;h4 id=&quot;group-velocity&quot;&gt;2.1. Group velocity&lt;/h4&gt;
+&lt;p&gt;####2.1. Group velocity&lt;/p&gt;
 
 &lt;p&gt;Consider two waves at different frequencies &lt;script type=&quot;math/tex&quot;&gt;{\omega_{1}}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{\omega_{2}}&lt;/script&gt; and suppose that the wave velocity &lt;script type=&quot;math/tex&quot;&gt;{v}&lt;/script&gt; is the same independent of frequency. Then the corresponding wavevector magnitude &lt;script type=&quot;math/tex&quot;&gt;{k=\omega/v}&lt;/script&gt; is the same for both wave. If we take two such waves of equal amplitudes and add them together, then we get spatial beats — a “spatial envelope”. The envelope moves at the same speed as the wave.&lt;/p&gt;
 
@@ -1357,7 +1362,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;as &lt;em&gt;phase velocity&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h4 id=&quot;group-velocity-for-a-free-electron&quot;&gt;2.2. Group velocity for a free electron&lt;/h4&gt;
+&lt;p&gt;####2.2. Group velocity for a free electron&lt;/p&gt;
 
 &lt;p&gt;The small dispersion in glass gives significant effects in long fibers. Large dispersions are found near absorption lines. In waveguides, different spatial forms (modes) propagate at different velocities dispersion from geometry or structure. Any structure whose physical properties such as refractive index change on a scale with a wavelength will also show string “structural” dispersion.&lt;/p&gt;
 
@@ -1383,7 +1388,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;E=2mv_{p}^{2}&lt;/script&gt;
 
-&lt;h4 id=&quot;electron-wavepackets&quot;&gt;2.3. Electron wavepackets&lt;/h4&gt;
+&lt;p&gt;####2.3. Electron wavepackets&lt;/p&gt;
 
 &lt;p&gt;We can construct a “wavepacket” by putting together a liner superposition of energy eigensolutions. For a free electron or a similar particle of mass &lt;script type=&quot;math/tex&quot;&gt;{m}&lt;/script&gt;, the individual eignsolutions are plane waves. For propagating in the &lt;script type=&quot;math/tex&quot;&gt;{z}&lt;/script&gt; direction, these are of the form&lt;/p&gt;
 
@@ -1401,9 +1406,9 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;As we let time evolve, by simply adding up the terms in our wavepackets sum at each time. We can see the wavepacket propagate moving to the right and getting wider. A wavepackets that increases in width as it propagates is said to be “dispersing”. It gets wider because the change in &lt;script type=&quot;math/tex&quot;&gt;{\omega}&lt;/script&gt; with &lt;script type=&quot;math/tex&quot;&gt;{k}&lt;/script&gt; is not even linear. The effect is known as group velocity dispersion.&lt;/p&gt;
 
-&lt;h3 id=&quot;measurement-operators-and-expectation-values&quot;&gt;3. Measurement, Operators and Expectation Values&lt;/h3&gt;
+&lt;p&gt;###3. Measurement, Operators and Expectation Values&lt;/p&gt;
 
-&lt;h4 id=&quot;quantum-mechanical-measurement&quot;&gt;3.1. Quantum-mechanical measurement&lt;/h4&gt;
+&lt;p&gt;####3.1. Quantum-mechanical measurement&lt;/p&gt;
 
 &lt;p&gt;Suppose we take some (normalized) quantum mechanical wave function &lt;script type=&quot;math/tex&quot;&gt;{\Psi(\vec{r},t)}&lt;/script&gt; and expand it in some complete orthonormal set of spatial functions &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(\vec{r})}&lt;/script&gt;. At least if we allow the expansion coefficients &lt;script type=&quot;math/tex&quot;&gt;{c_{n}}&lt;/script&gt; to vary in time. We know we can always do this:&lt;/p&gt;
 
@@ -1433,7 +1438,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;Electrons have a quantum mechanical property called spin. It gives them a “magnetic moment” just like a small magnet. And when we fire electrons with no particular “orientation” of the spin into the Stern-Gerlach apparatus, we got only two dots! The explanation of this would be that we are measuring the vertical component of the spin. There are two eigenstates of this component: “up” and “down”, so we have collapsed to the eigenstates.&lt;/p&gt;
 
-&lt;h4 id=&quot;expectation-values-and-operators&quot;&gt;3.2. Expectation values and operators&lt;/h4&gt;
+&lt;p&gt;####3.2. Expectation values and operators&lt;/p&gt;
 
 &lt;p&gt;In classical mechanics, the Hamiltonian is a function of position and momentum representing the total energy of the system. In quantum mechanical systems that can be analyzed by Schroedinger equation, we can define the entity&lt;/p&gt;
 
@@ -1469,7 +1474,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\langle E\rangle=\int\Psi^{*}(\vec{r},t)\hat{H}\Psi(\vec{r},t)\,d^{3}\vec{r}&lt;/script&gt;
 
-&lt;h4 id=&quot;time-evolution-and-the-hamiltonian&quot;&gt;3.3. Time evolution and the Hamiltonian&lt;/h4&gt;
+&lt;p&gt;####3.3. Time evolution and the Hamiltonian&lt;/p&gt;
 
 &lt;p&gt;Taking Schroedinger’s time dependent equation and rewriting as&lt;/p&gt;
 
@@ -1524,9 +1529,9 @@ arrangements). So far so good.&lt;/p&gt;
     
       <item>
         <title>Quantum Mechanics for Scientists and Engineers Notes 3</title>
-        <description>&lt;h3 id=&quot;particles-and-barriers&quot;&gt;1. Particles and Barriers&lt;/h3&gt;
+        <description>&lt;p&gt;###1. Particles and Barriers&lt;/p&gt;
 
-&lt;h4 id=&quot;sets-of-functions&quot;&gt;1.1. Sets of functions&lt;/h4&gt;
+&lt;p&gt;####1.1. Sets of functions&lt;/p&gt;
 
 &lt;p&gt;Suppose we are interested in the behavior of some function, such as a loudspeaker cone displacement from time 0 to &lt;script type=&quot;math/tex&quot;&gt;{t_{o}}&lt;/script&gt;, presuming it starts and ends at 0 displacement. An appropriate Fourier series would be&lt;/p&gt;
 
@@ -1560,7 +1565,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;A set of function such as the &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(z)}&lt;/script&gt; that can be used in this way to represent a function such as &lt;script type=&quot;math/tex&quot;&gt;{f(z)}&lt;/script&gt; is referred to as a “basis set of functions” or, more simply, a “basis”. The set of “expansion coefficients” (amplitudes) &lt;script type=&quot;math/tex&quot;&gt;{b_{n}}&lt;/script&gt; is then the “representation” of &lt;script type=&quot;math/tex&quot;&gt;{f(z)}&lt;/script&gt; in the basis &lt;script type=&quot;math/tex&quot;&gt;{\psi_{n}(z)}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;h4 id=&quot;orthogonality-of-functions&quot;&gt;1.2. Orthogonality of functions&lt;/h4&gt;
+&lt;p&gt;####1.2. Orthogonality of functions&lt;/p&gt;
 
 &lt;p&gt;Two non-zero functions &lt;script type=&quot;math/tex&quot;&gt;{g(z)}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;{h(z)}&lt;/script&gt; defined from 0 to &lt;script type=&quot;math/tex&quot;&gt;{L_{z}}&lt;/script&gt; are said to be orthogonal if&lt;/p&gt;
 
@@ -1591,7 +1596,7 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;If we have an orthonormal complete set, we can now expand any function in it. Generally, an integral like &lt;script type=&quot;math/tex&quot;&gt;{\int\psi_{m}^{*}(x)f(x)\,dx}&lt;/script&gt; is also called an “overlap integral”.&lt;/p&gt;
 
-&lt;h4 id=&quot;barriers-and-boundary-conditions&quot;&gt;1.3. Barriers and boundary conditions&lt;/h4&gt;
+&lt;p&gt;####1.3. Barriers and boundary conditions&lt;/p&gt;
 
 &lt;p&gt;For our Schroedinger equation&lt;/p&gt;
 
@@ -1643,9 +1648,9 @@ arrangements). So far so good.&lt;/p&gt;
 
 &lt;p&gt;Probability density &lt;script type=&quot;math/tex&quot;&gt;{\propto\vert \psi_{\text{right}}(z)\vert ^{2}}&lt;/script&gt; with &lt;script type=&quot;math/tex&quot;&gt;{\psi_{\text{right}}\propto\exp(-\kappa z)}&lt;/script&gt; then &lt;script type=&quot;math/tex&quot;&gt;{\vert \psi_{\text{right}}\vert ^{2}\propto\exp(-2\kappa z)}&lt;/script&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;finite-well-and-harmonic-oscillator&quot;&gt;2. Finite Well and Harmonic Oscillator&lt;/h3&gt;
+&lt;p&gt;###2. Finite Well and Harmonic Oscillator&lt;/p&gt;
 
-&lt;h4 id=&quot;the-finite-potential-well&quot;&gt;2.1. The finite potential well&lt;/h4&gt;
+&lt;p&gt;####2.1. The finite potential well&lt;/p&gt;
 
 &lt;p&gt;We will choose the height of the potential barriers at &lt;script type=&quot;math/tex&quot;&gt;{V_{o}}&lt;/script&gt; with 0 potential energy at the bottom of the well. The thickness of the well is &lt;script type=&quot;math/tex&quot;&gt;{L_{z}}&lt;/script&gt;. Now we will choose the positive origin in the center of the well.&lt;/p&gt;
 
@@ -1736,7 +1741,7 @@ z&lt;-L_{z}/2 %]]&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;We can solve the eigenergies by using choosing specific &lt;script type=&quot;math/tex&quot;&gt;{v_{o}}&lt;/script&gt; and use numeric approach to find intersection of above equations.&lt;/p&gt;
 
-&lt;h4 id=&quot;the-harmonic-oscillator&quot;&gt;2.2. The harmonic oscillator&lt;/h4&gt;
+&lt;p&gt;####2.2. The harmonic oscillator&lt;/p&gt;
 
 &lt;p&gt;The potential from the restoring force &lt;script type=&quot;math/tex&quot;&gt;{F}&lt;/script&gt; is&lt;/p&gt;
 
@@ -1802,9 +1807,9 @@ z&lt;-L_{z}/2 %]]&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;The intersection of the parabola and the dashed lines gives the “classical turning points” where a classical mass of that energy turns round and goes back downhill. (You need to watch the lecture for this interpretation).&lt;/p&gt;
 
-&lt;h3 id=&quot;the-time-dependent-schroedinger-equation&quot;&gt;3. The Time-Dependent Schroedinger Equation&lt;/h3&gt;
+&lt;p&gt;###3. The Time-Dependent Schroedinger Equation&lt;/p&gt;
 
-&lt;h4 id=&quot;rationalizing-the-time-dependent-schroedinger-equation&quot;&gt;3.1. Rationalizing the time-dependent Schroedinger equation&lt;/h4&gt;
+&lt;p&gt;####3.1. Rationalizing the time-dependent Schroedinger equation&lt;/p&gt;
 
 &lt;p&gt;The relation between energy and frequency for quantum mechanics is&lt;/p&gt;
 
@@ -1824,7 +1829,7 @@ z&lt;-L_{z}/2 %]]&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;We can tested that the above equation is indeed a solution to time-dependent equation. Therefore, every solution of time-independent Schroedinger equation is also a solution to time-dependent equation, with eigenenergy &lt;script type=&quot;math/tex&quot;&gt;{E}&lt;/script&gt;.&lt;/p&gt;
 
-&lt;h4 id=&quot;solutions-of-the-time-dependent-schroedinger-equation&quot;&gt;3.2. Solutions of the time-dependent Schroedinger equation&lt;/h4&gt;
+&lt;p&gt;####3.2. Solutions of the time-dependent Schroedinger equation&lt;/p&gt;
 
 &lt;p&gt;Note that Schroedinger’s use of a complex wave equation with the &lt;script type=&quot;math/tex&quot;&gt;{i}&lt;/script&gt; on the right hand side, which means that generally the wave &lt;script type=&quot;math/tex&quot;&gt;{\Psi}&lt;/script&gt; is required to be a complex entity. For example, for &lt;script type=&quot;math/tex&quot;&gt;{V=0}&lt;/script&gt; though &lt;script type=&quot;math/tex&quot;&gt;{\exp[i(kz-Et/\hbar)]}&lt;/script&gt; is a solution, &lt;script type=&quot;math/tex&quot;&gt;{\sin(kz-Et/\hbar)}&lt;/script&gt; is not a solution.&lt;/p&gt;
 
@@ -1834,7 +1839,7 @@ z&lt;-L_{z}/2 %]]&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;That is, we can know the new wave function in space at the next instant in time and we can continue on the next instant and so on. We can then predict all future evolution of the wave function.&lt;/p&gt;
 
-&lt;h4 id=&quot;linear-superposition&quot;&gt;3.3. Linear superposition&lt;/h4&gt;
+&lt;p&gt;####3.3. Linear superposition&lt;/p&gt;
 
 &lt;p&gt;The time-dependent Schroedinger equation is linear in the wave function &lt;script type=&quot;math/tex&quot;&gt;{\Psi}&lt;/script&gt;. One reason is that no higher powers of &lt;script type=&quot;math/tex&quot;&gt;{\Psi}&lt;/script&gt; appear anywhere in the equation. A second reason is that &lt;script type=&quot;math/tex&quot;&gt;{\Psi}&lt;/script&gt; appears in every term there is no additive constant term anywhere.&lt;/p&gt;
 

@@ -14,12 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Quantum Mechanics Learning Notes">
     <meta name="author" content="Yuhuang Hu">
-    <meta name="keywords" content="oldtimes">
+    <meta name="keywords" content="OldTimes">
     <link rel="canonical" href="http://dgyblog.com/oldtimes/2013/10/27/quantum-for-scieng-5/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201605052233" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201607051401" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -119,9 +119,9 @@
 </div>
 
 <article class="post-content">
-  <h3 id="uncertainty-principle-and-particle-current">1. Uncertainty Principle and Particle Current</h3>
+  <p>###1. Uncertainty Principle and Particle Current</p>
 
-<h4 id="momentum-position-and-the-uncertainty-principle">1.1. Momentum, position, and the uncertainty principle</h4>
+<p>####1.1. Momentum, position, and the uncertainty principle</p>
 
 <p>For momentum, we write an operator <script type="math/tex">{\hat{p}}</script>. We postulate this can be written as</p>
 
@@ -205,7 +205,7 @@
 
 <p>The shorter the pulse is, the larger the range of frequencies.</p>
 
-<h4 id="particle-current">1.2. Particle current</h4>
+<p>####1.2. Particle current</p>
 
 <p>In Cartesian coordinates, the divergence of a vector <script type="math/tex">{\vec{F}}</script> is</p>
 
@@ -281,9 +281,9 @@
 
 <p>Therefore, particle current is constant in any energy eigenstate. And for real spatial eigenfunctions, particle current is actually zero.</p>
 
-<h3 id="functions-and-dirac-notation">2. Functions and Dirac Notation</h3>
+<p>###2. Functions and Dirac Notation</p>
 
-<h4 id="functions-as-vectors">2.1. Functions as vectors</h4>
+<p>####2.1. Functions as vectors</p>
 
 <p>One kind of list of arguments would be the list of all real numbers which we could list in order as <script type="math/tex">{x_{1}}</script>, <script type="math/tex">{x_{2}}</script>, <script type="math/tex">{x_{3}}</script> and so on. This is an infinitely long list and the adjacent values in the list are infinitesimally close together but we will regard these infinite as details.</p>
 
@@ -297,7 +297,7 @@
 
 <p>where <script type="math/tex">{\delta x}</script> is sufficiently small and the corresponding vectors therefore sufficiently long, we can get an arbitrarily good approximation to be integral.</p>
 
-<h4 id="dirac-notation">2.2. Dirac notation</h4>
+<p>####2.2. Dirac notation</p>
 
 <p>The first part of the Dirac “bra-ket” notation <script type="math/tex">{\vert f(x)\rangle}</script> is called a “ket”, which refers to our column vector. For the case of our function <script type="math/tex">{f(x)}</script>, one way to define the “ket” is</p>
 
@@ -348,7 +348,7 @@
 
 <p>In general this kind of “product” <script type="math/tex">{\langle g\vert \times\vert f\rangle\equiv\langle g\vert f\rangle}</script> is called an inner product in linear algebra. The geometric vector dot product is an inner product. The bra-ket “product” <script type="math/tex">{\langle g\vert f\rangle}</script> is an inner product. The “overlap” integral” <script type="math/tex">{\int g^{*}(x)f(x)\,dx}</script> is an inner product. It is “inner” because it takes two vectors and turns them into a number a “small” entity. In the Dirac notation <script type="math/tex">{\langle g\vert f\rangle}</script>, the bra-ket gives an inner “feel” to this product. The special parentheses gives a “closed” look.</p>
 
-<h4 id="using-dirac-notation">2.3. Using Dirac notation</h4>
+<p>####2.3. Using Dirac notation</p>
 
 <p>Suppose the function is not represented directly as a set of values for each point in space but is expanded in a complete orthonormal basis <script type="math/tex">{\psi_{n}(x)}</script>.</p>
 
@@ -384,9 +384,9 @@
 
 <p>The convention for what is inside the bra or ket is loose, usually one deduces from the context what is meant. For example, it is obvious what basis we were working with. We might use <script type="math/tex">{\vert n\rangle}</script> to represent the <script type="math/tex">{n}</script>th basis function (or basis “state”) rather than the notation <script type="math/tex">{\vert \psi_{n}(x)\rangle}</script> or <script type="math/tex">{\vert \psi_{n}\rangle}</script>. The symbols inside the bra or ket should be enough to make it clear what state we are discussing. Other wise there are essentially no rules for the notation.</p>
 
-<h3 id="vector-spaces-operators-and-matrices">3. Vector Spaces, Operators and Matrices</h3>
+<p>###3. Vector Spaces, Operators and Matrices</p>
 
-<h4 id="vector-space">3.1. Vector space</h4>
+<p>####3.1. Vector space</p>
 
 <p>For a function expressed as its value at a set of points, we may have infinite number of orthogonal axes labeled with their associated basis function. Just as we label axes in conventional space with unit vectors, one notation is <script type="math/tex">{\hat{x}}</script>, <script type="math/tex">{\hat{y}}</script> and <script type="math/tex">{\hat{z}}</script> for the unit vectors, so also here we label the axes with the kets <script type="math/tex">{\vert \psi_{n}\rangle}</script>.</p>
 
@@ -420,7 +420,7 @@
 
 <script type="math/tex; mode=display">\langle f\vert g\rangle=(\langle g\vert f\rangle)^{*}</script>
 
-<h4 id="operators">3.2. Operators</h4>
+<p>####3.2. Operators</p>
 
 <p>An operator turns one function into another. In the vector space representation of a function. An operator turns one vector into another.</p>
 
@@ -466,7 +466,7 @@
 
 <p>If we regard the ket as a vector, we now regard the (linear) operator <script type="math/tex">{\hat{A}}</script> as a matrix.</p>
 
-<h4 id="linear-operators-and-their-algebra">3.3. Linear operators and their algebra</h4>
+<p>####3.3. Linear operators and their algebra</p>
 
 <p>Operators do not in general commute and it is very important in quantum mechanics. We expanded <script type="math/tex">{f(x)=\sum_{n}\psi_{n}(x)}</script> and <script type="math/tex">{g(x)=\sum_{n}d_{n}\psi_{n}(x)}</script>. We could have followed a similar argument requiring each expansion coefficient <script type="math/tex">{d_{i}}</script> depends linearly on all the expansion coefficients <script type="math/tex">{c_{n}}</script>.</p>
 

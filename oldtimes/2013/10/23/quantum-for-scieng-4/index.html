@@ -14,12 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Quantum Mechanics Learning Notes">
     <meta name="author" content="Yuhuang Hu">
-    <meta name="keywords" content="oldtimes">
+    <meta name="keywords" content="OldTimes">
     <link rel="canonical" href="http://dgyblog.com/oldtimes/2013/10/23/quantum-for-scieng-4/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201605052233" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201607051401" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -119,9 +119,9 @@
 </div>
 
 <article class="post-content">
-  <h3 id="time-evolution">1. Time Evolution</h3>
+  <p>###1. Time Evolution</p>
 
-<h4 id="superposition-for-particle-in-a-box">1.1. Superposition for particle in a box</h4>
+<p>####1.1. Superposition for particle in a box</p>
 
 <p>Suppose we have an infinitely deep potential well with the particle in a linear superposition, for example, with equal parts of the first and second states of the well (This superposition is normalized)</p>
 
@@ -141,7 +141,7 @@
 
 <p>However, when you add the amplitude up and take the probability of the sum, the equal superposition of the two oscillates at th angular frequency <script type="math/tex">{\omega_{21}=(E_{2}-E_{1})/\hbar=3E_{1}/\hbar}</script> (just like we worked out).</p>
 
-<h4 id="superposition-for-the-harmonic-oscillator">1.2. Superposition for the harmonic oscillator</h4>
+<p>####1.2. Superposition for the harmonic oscillator</p>
 
 <p>Quite generally, if we make a linear combination of two energy eigenstates with energies <script type="math/tex">{E_{a}}</script> and <script type="math/tex">{E_{b}}</script>. The resulting probability distribution with oscillate at the (angular) frequency <script type="math/tex">{\omega_{ab}=\vert E_{a}-E_{b}\vert /\hbar}</script>. So, if we have a superposition wave function</p>
 
@@ -159,7 +159,7 @@
 
 <p>where the angular frequency <script type="math/tex">{\omega=(E_{1}-E_{0})/\hbar}</script>.</p>
 
-<h4 id="the-coherent-state">1.3. The coherent state</h4>
+<p>####1.3. The coherent state</p>
 
 <p>The coherent state for a harmonic oscillator of frequency <script type="math/tex">{\omega}</script> is</p>
 
@@ -177,9 +177,9 @@
 
 <p>This is the Poisson distribution from statistics with mean <script type="math/tex">{N}</script> and standard deviation <script type="math/tex">{\sqrt{N}}</script>.</p>
 
-<h3 id="wavepackets">2. Wavepackets</h3>
+<p>###2. Wavepackets</p>
 
-<h4 id="group-velocity">2.1. Group velocity</h4>
+<p>####2.1. Group velocity</p>
 
 <p>Consider two waves at different frequencies <script type="math/tex">{\omega_{1}}</script> and <script type="math/tex">{\omega_{2}}</script> and suppose that the wave velocity <script type="math/tex">{v}</script> is the same independent of frequency. Then the corresponding wavevector magnitude <script type="math/tex">{k=\omega/v}</script> is the same for both wave. If we take two such waves of equal amplitudes and add them together, then we get spatial beats — a “spatial envelope”. The envelope moves at the same speed as the wave.</p>
 
@@ -203,7 +203,7 @@
 
 <p>as <em>phase velocity</em>.</p>
 
-<h4 id="group-velocity-for-a-free-electron">2.2. Group velocity for a free electron</h4>
+<p>####2.2. Group velocity for a free electron</p>
 
 <p>The small dispersion in glass gives significant effects in long fibers. Large dispersions are found near absorption lines. In waveguides, different spatial forms (modes) propagate at different velocities dispersion from geometry or structure. Any structure whose physical properties such as refractive index change on a scale with a wavelength will also show string “structural” dispersion.</p>
 
@@ -229,7 +229,7 @@
 
 <script type="math/tex; mode=display">E=2mv_{p}^{2}</script>
 
-<h4 id="electron-wavepackets">2.3. Electron wavepackets</h4>
+<p>####2.3. Electron wavepackets</p>
 
 <p>We can construct a “wavepacket” by putting together a liner superposition of energy eigensolutions. For a free electron or a similar particle of mass <script type="math/tex">{m}</script>, the individual eignsolutions are plane waves. For propagating in the <script type="math/tex">{z}</script> direction, these are of the form</p>
 
@@ -247,9 +247,9 @@
 
 <p>As we let time evolve, by simply adding up the terms in our wavepackets sum at each time. We can see the wavepacket propagate moving to the right and getting wider. A wavepackets that increases in width as it propagates is said to be “dispersing”. It gets wider because the change in <script type="math/tex">{\omega}</script> with <script type="math/tex">{k}</script> is not even linear. The effect is known as group velocity dispersion.</p>
 
-<h3 id="measurement-operators-and-expectation-values">3. Measurement, Operators and Expectation Values</h3>
+<p>###3. Measurement, Operators and Expectation Values</p>
 
-<h4 id="quantum-mechanical-measurement">3.1. Quantum-mechanical measurement</h4>
+<p>####3.1. Quantum-mechanical measurement</p>
 
 <p>Suppose we take some (normalized) quantum mechanical wave function <script type="math/tex">{\Psi(\vec{r},t)}</script> and expand it in some complete orthonormal set of spatial functions <script type="math/tex">{\psi_{n}(\vec{r})}</script>. At least if we allow the expansion coefficients <script type="math/tex">{c_{n}}</script> to vary in time. We know we can always do this:</p>
 
@@ -279,7 +279,7 @@
 
 <p>Electrons have a quantum mechanical property called spin. It gives them a “magnetic moment” just like a small magnet. And when we fire electrons with no particular “orientation” of the spin into the Stern-Gerlach apparatus, we got only two dots! The explanation of this would be that we are measuring the vertical component of the spin. There are two eigenstates of this component: “up” and “down”, so we have collapsed to the eigenstates.</p>
 
-<h4 id="expectation-values-and-operators">3.2. Expectation values and operators</h4>
+<p>####3.2. Expectation values and operators</p>
 
 <p>In classical mechanics, the Hamiltonian is a function of position and momentum representing the total energy of the system. In quantum mechanical systems that can be analyzed by Schroedinger equation, we can define the entity</p>
 
@@ -315,7 +315,7 @@
 
 <script type="math/tex; mode=display">\langle E\rangle=\int\Psi^{*}(\vec{r},t)\hat{H}\Psi(\vec{r},t)\,d^{3}\vec{r}</script>
 
-<h4 id="time-evolution-and-the-hamiltonian">3.3. Time evolution and the Hamiltonian</h4>
+<p>####3.3. Time evolution and the Hamiltonian</p>
 
 <p>Taking Schroedinger’s time dependent equation and rewriting as</p>
 

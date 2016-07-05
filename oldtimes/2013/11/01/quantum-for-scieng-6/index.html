@@ -14,12 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Quantum Mechanics Learning Notes">
     <meta name="author" content="Yuhuang Hu">
-    <meta name="keywords" content="oldtimes">
+    <meta name="keywords" content="OldTimes">
     <link rel="canonical" href="http://dgyblog.com/oldtimes/2013/11/01/quantum-for-scieng-6/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for DGY Life Blog" href="/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/pixyll.css?201605052233" type="text/css">
+    <link rel="stylesheet" href="/css/pixyll.css?201607051401" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -119,9 +119,9 @@
 </div>
 
 <article class="post-content">
-  <h3 id="types-of-linear-operators">1. Types of Linear Operators</h3>
+  <p>###1. Types of Linear Operators</p>
 
-<h4 id="bilinear-expansion-of-operators">1.1. Bilinear expansion of operators</h4>
+<p>####1.1. Bilinear expansion of operators</p>
 
 <p>We know that we can expand functions in a basis set as in <script type="math/tex">{f(x)=\sum_{n}c_{n}\psi_{n}(x)}</script> or <script type="math/tex">{\vert f(x)\rangle=\sum_{n}c_{n}\vert \psi_{n}(x)\rangle}</script>. What is the equivalent expansion for an operator? We can deduce this from our matrix representation.</p>
 
@@ -157,7 +157,7 @@
 
 <p>The Dirac form of expansion contains an outer product of two vectors. An outer product expression of the form <script type="math/tex">{\vert g\rangle\langle f\vert }</script> generates matrix. The specific notation <script type="math/tex">{\hat{A}\equiv A_{ij}\vert \psi_{i}\rangle\langle\psi_{j}\vert }</script> is actually, then, a sum of matrices. In the matrix <script type="math/tex">{\vert \psi_{i}\rangle\langle\psi_{j}\vert }</script> the element in the <script type="math/tex">{j}</script>th column and <script type="math/tex">{i}</script>th row is 1, all other elements are zero.</p>
 
-<h4 id="the-identity-operator">1.2. The identity operator</h4>
+<p>####1.2. The identity operator</p>
 
 <p>The identity operator <script type="math/tex">{\hat{I}}</script> is the operator that when it operates on a vector (function) leaves it unchanged. In matrix form, the identity operator is</p>
 
@@ -195,7 +195,7 @@
 
 <p>Hence the trace of an operator (the sum of the diagonal elements) is independent of the basis used to represent the operator.</p>
 
-<h4 id="inverse-and-unitary-operators">1.3. Inverse and unitary operators</h4>
+<p>####1.3. Inverse and unitary operators</p>
 
 <p>For an operator <script type="math/tex">{\hat{A}}</script> on an arbitrary function <script type="math/tex">{\vert f\rangle}</script>, then the inverse operator, if it exists is that operator <script type="math/tex">{\hat{A}^{-1}}</script> such that</p>
 
@@ -233,9 +233,9 @@
 
 <p>Hence, the unitary operation does not change the inner product. So, in particular <script type="math/tex">{\langle f_{new}\vert f_{new}\rangle=\langle f_{old}\vert f_{old}\rangle}</script>, the length of a vector is not changed by a unitary operator.</p>
 
-<h3 id="unitary-and-hermitian-operators">2. Unitary and Hermitian Operators</h3>
+<p>###2. Unitary and Hermitian Operators</p>
 
-<h4 id="using-unitary-operators">2.1. Using unitary operators</h4>
+<p>####2.1. Using unitary operators</p>
 
 <p>Suppose that we have a vector (function) <script type="math/tex">{\vert f_{old}\rangle}</script> that is represented when expressed as an expansion on the function <script type="math/tex">{\vert \psi_{n}\rangle}</script> as the mathematical column vector</p>
 
@@ -274,7 +274,7 @@
 
 <p>then <script type="math/tex">{\sum_{n}\vert a_{n}\vert ^{2}=1}</script>. And if the particle is to be conserved then this sum is retained as the quantum mechanical system evolves in time. Hence, a unitary operator, which conserves length describes changes that conserve the particle.</p>
 
-<h4 id="hermitian-operators">2.2. Hermitian operators</h4>
+<p>####2.2. Hermitian operators</p>
 
 <p>A Hermitian operator is equal to its own Hermitian adjoint</p>
 
@@ -335,7 +335,7 @@
 
 <p>It is quite possible and common in symmetric problems to have more than one eigenfunction associated with a given eigenvalue. This situation is known as degeneracy. It is provable that the number of such degenerate solutions for a given finite eigenvalue is itself finite.</p>
 
-<h4 id="matrix-from-of-derivative-operators">2.3. Matrix from of derivative operators</h4>
+<p>####2.3. Matrix from of derivative operators</p>
 
 <p>Returning to our original discussion of functions as vectors, we can postulate a form for the differential operator</p>
 
@@ -359,9 +359,9 @@
 
 <p>If <script type="math/tex">{V(x)}</script> is real then its matrix is Hermitian as required for <script type="math/tex">{\hat{H}}</script>.</p>
 
-<h3 id="operators-and-quantum-mechanics">3. Operators and Quantum Mechanics</h3>
+<p>###3. Operators and Quantum Mechanics</p>
 
-<h4 id="hermitian-operators-in-quantum-mechanics">3.1. Hermitian operators in quantum mechanics</h4>
+<p>####3.1. Hermitian operators in quantum mechanics</p>
 
 <p>For Hermitian operators <script type="math/tex">{\hat{A}}</script> and <script type="math/tex">{\hat{B}}</script> representing physical variables. It is very important to know if they commute, i.e., <script type="math/tex">{\hat{A}\hat{B}=\hat{B}\hat{A}}</script>. Remember that because these linear operators obey the same algebra as matrices in general operators do not commute.</p>
 
@@ -413,7 +413,7 @@
 
 <p>Since we have proved this for an arbitrary function, we have proved that the operators commute hence proving the statement operators that share the same set of eigenfunctions commute.</p>
 
-<h4 id="general-form-of-the-uncertainty-principle">3.2. General form of the uncertainty principle</h4>
+<p>####3.2. General form of the uncertainty principle</p>
 
 <p>First, we need to set up the concepts of the mean and variance of an expectation value. Using <script type="math/tex">{\bar{A}}</script> to denote the mean value of a quantity <script type="math/tex">{\hat{A}}</script>. We have, in the bra-ket notation, for a measurable quantity associated with the Hermitian operator <script type="math/tex">{\hat{A}}</script> when the state of the system is <script type="math/tex">{\vert f\rangle}</script></p>
 
@@ -479,7 +479,7 @@
 
 <p>The conclusion above is generally true. Only if the operators <script type="math/tex">{\hat{A}}</script> and <script type="math/tex">{\hat{B}}</script> commute. or if they do not commute, but we are in a state <script type="math/tex">{\vert f\rangle}</script> for which <script type="math/tex">{\langle f\vert \hat{C}\vert f\rangle=0}</script>. Only in those cases it is possible for both <script type="math/tex">{A}</script> and <script type="math/tex">{B}</script> simultaneously to have exact measurable values.</p>
 
-<h4 id="specific-uncertainty-principles">3.3. Specific uncertainty principles</h4>
+<p>####3.3. Specific uncertainty principles</p>
 
 <p>We now formally derive the position-momentum relation. Consider the commutator of <script type="math/tex">{\hat{p}_{x}}</script> and <script type="math/tex">{x}</script> (we treat the function <script type="math/tex">{x}</script> as the operator for position). To be sure we are taking derivatives correctly, we have the commutator operate on an arbitrary function:</p>
 
