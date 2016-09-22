@@ -1,0 +1,77 @@
+# Site settings
+title:       DGY Life Blog
+email:       duguyue100@gmail.com
+author:      Yuhuang Hu
+description: "A proud WE-ARE-NOT-DOOMED fan."
+baseurl:     ""
+url:         "http://dgyblog.com"
+date_format: "%b %-d, %Y"
+
+# Google services
+google_analytics:
+google_verification:
+
+# Optional features
+animated:             false
+show_related_posts:   false
+show_post_footers:    false
+show_social_icons:    true
+ajaxify_contact_form: false
+
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname: dgyblog
+
+# Social icons
+github_username: duguyue100
+bitbucket_username:
+stackoverflow_id:
+twitter_username: duguyue100
+google_plus_id: +YuhuangHu
+linkedin_username:
+angellist_username:
+medium_id:
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+# Post sharing icons
+show_sharing_icons: true
+share_text: ' '
+# Change to 'true' to enable individual icons
+share_facebook: true
+share_twitter: true
+share_googleplus: true
+share_linkedin: false
+share_digg: false
+share_tumblr: false
+share_reddit: false
+share_stumbleupon: false
+share_hackernews: false
+
+# Build settings
+#  math_engine: mathjax
+
+markdown:     kramdown
+kramdown:
+  input:          GFM
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  syntax_highlighter:        coderay
+  coderay_line_numbers:      nil
+  coderay_line_number_start: 1
+  coderay_tab_width:         4
+  coderay_css:               style
+  coderay_wrap:              div
+
+
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+gems: [jekyll-paginate]
+paginate:     10
+sass:
+  compressed: true
