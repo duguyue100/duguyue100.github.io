@@ -20,13 +20,14 @@ I've to say, Atom is a fine editor. It's easy to use, easy to configure, easy to
 
 I thought I'm done, I'm gonna be a hardcore Atom fan after I spent few weeks of configuring Atom as I needed.
 Then there is HackZurich 2016. I met a guy there, without any love story in between, I witnessed a person who can do his job entirely within terminal.This is not how I do my job before. I mean, even though I used Emacs and tried to use Vim, my first thought was to install their GUI version.
+
 For all these years, I'm trying to treat terminal as a individual component in my work flow, not the manager of it.
 And by witnessing that, I decided that I will have to change.
 
 OK, OK, enough history talk. So in this entire post, I'm gonna review my recent attempt of closing a loop: working entirely in terminal.
 And by this point, I'm pretty happy about what I've done. And I hope every sensible developer would also do the same thing.
 
-So, this is what I needed:
+So, these are what I needed:
 
 + iTerm: a much more powerful terminal emulator than Terminal.app
 + `zsh`: so much better than MacBook's `bash` by the way
@@ -36,5 +37,21 @@ So, this is what I needed:
 + `linuxman`: Similar to `macman`, and offer me the same toolkit as I work in Mac.
 
 And.. that's it, or at least I couldn't think about what else do I need to do my jobs.
+
+## iTerm
+
+I don't need many apps. I've used iPhone for over a year, iPad for more than 2 years, and MacOS more than 3 years. But I still manage to have only two panes of apps. I generally against the idea of installing more apps since this would pollute my system. I need my system to be clean at all the time.
+
+This is why it took me around 2 weeks to decide installing it. And now it's been my default terminal emulator for over a month. I configured as a Ubuntu terminal outlook. And my bash highlight scheme is a perfect match.
+
+If you care about your terminal at all, you should change to iTerm. It's not only that it's a better terminal, but also for much more funny functions.
+
+## `zsh`
+
+I've used `bash` as my default shell client for many years. I've never switched to different shell client. I knew they are out there by the way. 
+
+## Vim
+
+## `macman` and `linuxman`
 
 (TO BE CONTINUED)
