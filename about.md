@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 
 permalink: /about/
 ---
 
@@ -9,6 +9,9 @@ permalink: /about/
         <img src="{{ site.baseurl }}/images/my-photo-round.png">
     </center>
     <center>
+        <p>
+            <b>Yuhuang Hu</b>
+        </p>
         <p>
             Institute of Neuroinformatics
         </p>
@@ -19,6 +22,15 @@ permalink: /about/
 </div>
 
 ## Introduction
+
+<div>
+    <center>
+        <img src="{{ site.baseurl }}/images/about-img.png">
+    </center>
+</div>
+
+For more information, please click [here](/res/current_cv.html) for
+my current CV.
 
 ## Method
 
