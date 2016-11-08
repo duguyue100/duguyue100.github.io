@@ -9,6 +9,9 @@ permalink: /about/
         <img src="{{ site.baseurl }}/images/my-photo-round.png">
     </center>
     <center>
+        <img src="{{ site.baseurl }}/images/my-name.png">
+    </center>
+    <center>
         <p>
             <b>Yuhuang Hu</b>
         </p>
