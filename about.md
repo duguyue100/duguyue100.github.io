@@ -13,9 +13,7 @@ permalink: /about/
             <b>Yuhuang Hu</b>
         </p>
         <p>
-            Institute of Neuroinformatics
-        </p>
-        <p>
+            Institute of Neuroinformatics<br>
             University of Zürich and ETH Zürich, Switzerland
         </p>
     </center>
