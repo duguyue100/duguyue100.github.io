@@ -26,9 +26,9 @@ permalink: /about/
 
 <div>
     <center>
-        <img src="{{ site.baseurl }}/images/couplet-left.png" align="middle">
+        <img src="{{ site.baseurl }}/images/couplet-left.png" align="middle" border="3">
         <img src="{{ site.baseurl }}/images/about-img.png" align="middle">
-        <img src="{{ site.baseurl }}/images/couplet-right.png" align="middle">
+        <img src="{{ site.baseurl }}/images/couplet-right.png" align="middle" border="3">
     </center>
 </div>
 
