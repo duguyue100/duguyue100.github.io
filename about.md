@@ -26,7 +26,9 @@ permalink: /about/
 
 <div>
     <center>
-        <img src="{{ site.baseurl }}/images/about-img.png">
+        <img src="{{ site.baseurl }}/images/couplet-left.png" align="middle">
+        <img src="{{ site.baseurl }}/images/about-img.png" align="middle">
+        <img src="{{ site.baseurl }}/images/couplet-right.png" align="middle">
     </center>
 </div>
 
