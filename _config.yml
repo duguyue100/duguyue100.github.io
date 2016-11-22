@@ -60,7 +60,7 @@ kramdown:
   entity_output:  as_char
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  # syntax_highlighter:  coderay
+  syntax_highlighter:  coderay
   syntax_highlighter_opts:
     line_numbers: nil
     line_numbers_start: 1
