@@ -3,7 +3,7 @@ layout: post
 title: Working with Terminal
 date: 2016-10-16
 summary: My journey of unifying my tool set.
-categories: Work, Life
+categories: Work Life
 ---
 
 I've always been a fan of terminal since the first time I hooked my first laptop with Ubuntu.
