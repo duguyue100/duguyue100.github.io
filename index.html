@@ -4,21 +4,22 @@ layout: default
 
 <div class="home">
 
-  <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post py3">
-        <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
-        <p class="post-summary">
-          {% if post.summary %}
-            {{ post.summary }}
-          {% else %}
-            {{ post.excerpt }}
-          {% endif %}
+<div style="display: block; text-align: center; background-color: #f0ffff">
+    <center>
+        <img src="{{ site.baseurl }}/images/my-photo-round.png">
+    </center>
+    <center>
+        <img src="{{ site.baseurl }}/images/my-name.png">
+    </center>
+    <center>
+        <p>
+            <b>Yuhuang Hu</b>
         </p>
-      </div>
-    {% endfor %}
-  </div>
+        <p>
+            Institute of Neuroinformatics<br>
+            University of Zürich and ETH Zürich, Switzerland
+        </p>
+    </center>
+</div>
 
-  {% include pagination.html %}
 </div>
