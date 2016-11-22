@@ -3,8 +3,6 @@ layout: default
 permalink: /blog/
 ---
 
-<div class="home">
-
   <div class="posts">
     {% for post in paginator.posts %}
       <div class="post py3">
@@ -22,4 +20,3 @@ permalink: /blog/
   </div>
 
   {% include pagination.html %}
-</div>
