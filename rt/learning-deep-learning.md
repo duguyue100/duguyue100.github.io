@@ -1,12 +1,14 @@
 ---
 layout: page
-title: 
+title: Learning Deep Learning
 permalink: /learning-deep-learning/
 ---
 
 There are lots of awesome reading lists or posts that summarized materials related to Deep Learning. So why would I commit another one? Well, the primary objective is to develop a complete reading list that allows readers to build a solid academic and practical background of Deep Learning. And this list is developed while I'm preparing my Deep Learning workshop. My research is related to Deep Neural Networks (DNNs) in general. Hence, this posts tends to summary contributions in DNNs instead of generative models.
 
-### For Novice
+__Remarks from 2016-11-22__ I created this list over a year ago. And during this year, a lot of things happened, you can sense the changes by looking at this super long reading list. Now I'm up to refactor, I'm gonna restructure this unorganized list to an organized one.
+
+## For Novice
 
 _If you have no idea about Machine Learning and Scientific Computing, I suggest you learn the following materials while you are reading Machine Learning or Deep Learning books. You don't have to master these materials, but basic understanding is important. It's hard to open a meaningful conversation if the person has no idea about matrix or single variable calculus._
 
@@ -16,7 +18,7 @@ _If you have no idea about Machine Learning and Scientific Computing, I suggest 
 + [Differential Equations](http://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/) by Arthur Mattuck, Haynes Miller, Jeremy Orloff, John Lewis.
 + [Linear Algebra](http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/) by Gilbert Strang.
 
-### Theory of Computation, Learning Theory, Neuroscience, etc
+## Theory of Computation, Learning Theory, Neuroscience, etc
 
 + [Introduction to the Theory of Computation](http://www.cs.virginia.edu/~robins/Sipser_2006_Second_Edition_Problems.pdf) by Michael Sipser.
 
@@ -42,21 +44,21 @@ _If you have no idea about Machine Learning and Scientific Computing, I suggest 
 
 + [Michael I. Jordan Reading List of Machine Learning](https://news.ycombinator.com/item?id=1055042) at Hacker News.
 
-### Fundamentals of Deep Learning
+## Fundamentals of Deep Learning
 
 + [Deep Learning in Neural Networks: An Overview](http://people.idsia.ch/~juergen/deep-learning-overview.html) by Jürgen Schmidhuber.
 
-+ [Deep Learning Book](http://www.iro.umontreal.ca/~bengioy/dlbook/) by Yoshua Bengio, Ian Goodfellow and Aaron Courville.
++ [Deep Learning Book](http://www.deeplearningbook.org/) by Yoshua Bengio, Ian Goodfellow and Aaron Courville.
 
 + [Learning Deep Architectures for AI](http://www.iro.umontreal.ca/~bengioy/papers/ftml_book.pdf) by Yoshua Bengio
 
 + [Representation Learning: A Review and New Perspectives](http://arxiv.org/abs/1206.5538) by Yoshua Bengio, Aaron Courville, Pascal Vincent.
 
-+ [Reading lists for new LISA students](https://docs.google.com/document/d/1IXF3h0RU5zz4ukmTrVKVotPQypChscNGf5k6E25HGvA/edit#heading=h.5r7p5dbrilt4) by LISA Lab, University of Montreal.
++ [Reading lists for new MILA students](https://docs.google.com/document/d/1IXF3h0RU5zz4ukmTrVKVotPQypChscNGf5k6E25HGvA/edit#heading=h.5r7p5dbrilt4) by MILA Lab, University of Montreal.
 
 + [Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908) by Carl Doersch.
 
-### Tutorials, Practical Guides, and Useful Software
+## Tutorials, Practical Guides, and Useful Software
 
 + [Machine Learning](https://www.coursera.org/course/ml) by Andrew Ng.
 
@@ -92,7 +94,13 @@ _If you have no idea about Machine Learning and Scientific Computing, I suggest 
 
 + [Fuel](https://github.com/mila-udem/fuel) by LISA Lab, University of Montreal.
 
-### Literature in Deep Learning and Feature Learning
++ [Brainstorm](https://github.com/IDSIA/brainstorm) by IDSIA, Switzerland.
+
++ [Keras](https://keras.io/) by fchollet and active contributors.
+
++ [Lasagne](http://lasagne.readthedocs.io/en/latest/) by Lasagne.
+
+## Literature in Deep Learning and Feature Learning
 
 _Deep Learning is a fast-moving community. Therefore the line between "Recent Advances" and "Literature that matter" is kind of blurred. Here I collected articles that are either introducing fundamental algorithms, techniques or highly cited by the community._
 
@@ -118,7 +126,7 @@ _Deep Learning is a fast-moving community. Therefore the line between "Recent Ad
 
 + [Supervised Sequence Labelling with Recurrent Neural Networks](http://www.cs.toronto.edu/~graves/preprint.pdf) by Alex Graves.
 
-### Recent Must-Read Advances in Deep Learning
+## Recent Must-Read Advances in Deep Learning
 
 _Most of papers here are produced in 2014 and after. Survey papers or review papers are not included._
 
@@ -912,7 +920,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 
 + [Zoom Better to See Clearer: Huamn Part Segmentation with Auto Zoom Net](http://arxiv.org/abs/1511.06881) by Fangting Xia, Peng Wang, Liang-Chieh Chen, Alan L. Yuille.
 
-### Dataset
+## Dataset
 
 + [Caltech 101](http://www.vision.caltech.edu/Image_Datasets/Caltech101/) by L. Fei-Fei, R. Fergus and P. Perona.
 
@@ -944,7 +952,9 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 
 + [WWW Crowd Dataset](http://www.ee.cuhk.edu.hk/~jshao/WWWCrowdDataset.html) by Jing Shao, Kai Kang, Chen Change Loy, and Xiaogang Wang.
 
-### Podcast, Talks, etc.
++ [Open Images Dataset](https://github.com/openimages/dataset) by Google Inc.
+
+## Podcast, Talks, etc.
 
 + [Talking Machines](http://www.thetalkingmachines.com/) hosted by Katherine Gorman and Ryan Adams.
 
@@ -954,7 +964,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 
 + [Deep Learning Community](https://plus.google.com/communities/112866381580457264725)
 
-### Amazon Web Service Public AMI for Deep Learning
+## Amazon Web Service Public AMI for Deep Learning (Totally out of date, use wisely if it's still there)
 
 _I configured 2 types of GPU instances that are available in AWS and installed necessary software for Deep Learning practice. The first one is DGYDLGPUv4. It is a machine that provides 8-core CPU, 15GB RAM, 500GB SSD and 1 NVIDIA Grid K520 GPU, you can use it to learn Deep Learning or conduct normal size experiment. If you need even more computing resources, you can choose DGYDLGPUXv1. This new released GPU instance offered a 32-core CPU, 60GB RAM, 500GB SSD and 4 NVIDIA Grid K520 GPUs._
 
@@ -973,11 +983,11 @@ _So far the instance is only available at US East (N. Virginia)_
 
 + __Caffe/CuDNN built 2015-05-04__ (ami-763a331e) [For both g2.2xlarge and g2.8xlarge]
 
-### Practical Deep Neural Networks - GPU computing perspective
+## Practical Deep Neural Networks - GPU computing perspective
 
-The following entries are materials I use in the workshop.
+The following entries are materials I used in the workshop.
 
-#### Slides
+### Slides
 
 + [Introduction](../res/dlworkshop/introduction.pdf)
 + [Python Platform for Scientific Computing](../res/dlworkshop/python_for_computing.pdf)
@@ -988,7 +998,7 @@ The following entries are materials I use in the workshop.
 + [Convolutional Neural Networks](../res/dlworkshop/convnet.pdf)
 + [Recurrent Neural Networks](../res/dlworkshop/rnn.pdf)
 
-#### Practical tutorials
+### Practical tutorials
 
 + [Python Warm-up, pre-processing](../tut/tut-dl-basics.html)
 + [Feedforward Layer](../tut/tut-layer.html)
@@ -999,7 +1009,9 @@ The following entries are materials I use in the workshop.
 + [Convolutional Neural Networks](../tut/tut-convnet.html)
 + [Recurrent Neural Networks](../tut/tut-rnn.html)
 
-#### Codes
+### Codes (not maintain anymore, still useful for beginners)
+
+_This piece of code was written when I was preparing my Deep Learning workshop. For beginner, I believe that this show a simple enough example for building Deep Neural Networks.Although I stopped developing this package, but you can still ask questions about it through issues, I will reply as soon as possible._
 
 + [Telauges](https://github.com/duguyue100/telaugesa)
    + A new deep learning library for learning DL.
