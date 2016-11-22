@@ -73,5 +73,6 @@ redcarpet:
 permalink:    pretty
 gems: [jekyll-paginate]
 paginate:     10
+paginate_path: "/blog/page:num"
 sass:
   compressed: true
