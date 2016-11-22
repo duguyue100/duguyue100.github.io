@@ -61,17 +61,11 @@ kramdown:
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
   syntax_highlighter:  coderay
-  syntax_highlighter_opts:
-    line_numbers: nil
-    line_numbers_start: 1
-    tab_width: 4
-    css: style
-    wrap: div
-  # coderay_line_numbers:      nil
-  # coderay_line_number_start: 1
-  # coderay_tab_width:         4
-  # coderay_css:               style
-  # coderay_wrap:              div
+  coderay_line_numbers:      nil
+  coderay_line_number_start: 1
+  coderay_tab_width:         4
+  coderay_css:               style
+  coderay_wrap:              div
 
 
 redcarpet:
