@@ -132,6 +132,26 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 
 _The reconstruction of this section is taken place. Current plan is categoried them in application areas._
 
+<div>
+<hr>
+</div>
+
+_Each article is categorized based on its primary research goal. Each article could also have few tags that show the relevent application areas._
+
+### Machine Learning
+
+### Computer Vision
+
+### Natural Language Processing
+
+### Speech Processing
+
+### Data Processing
+
+<div>
+<hr>
+</div>
+
 + [A Convolutional Attention Network for Extreme Summarization of Source Code](http://arxiv.org/abs/1602.03001) by Miltiadis Allamanis, Hao Peng, Charles Sutton.
 
 + [A Deep Bag-of-Features Model for Music Auto-Tagging](http://arxiv.org/abs/1508.04999) by Juhan Nam, Jorge Herrera, Kyogu Lee.
