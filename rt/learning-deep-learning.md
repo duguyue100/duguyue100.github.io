@@ -136,6 +136,8 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 
 + [A Deep Generative Deconvolutional Image Model](http://arxiv.org/abs/1512.07344) by Yunchen Pu, Xin Yuan, Andrew Stevens, Chunyuan Li, Lawrence Carin.
 
++ [A Deep Learning Approach for Joint Video Frame and Reward Prediction in Atari Games](https://arxiv.org/abs/1611.07078) by Felix Leibfried, Nate Kushman, Katja Hofmann.
+
 + [A Deep Neural Network Compression Pipeline: Pruning, Quantization, Huffman Encoding](http://arxiv.org/abs/1510.00149) by Song Han, Huizi Mao, William J. Dally.
 
 + [A Deep Pyramid Deformable Part Model for Face Detection](http://arxiv.org/abs/1508.04389) by Rajeev Ranjan, Vishal M. Patel, Rama Chellappa.
@@ -706,6 +708,8 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 
 + [Random Maxout Features](http://arxiv.org/abs/1506.03705) by Youssef Mroueh, Steven Rennie, Vaibhava Goel.
 
++ [Recurrent Attention Models for Depth-Based Person Identification](https://arxiv.org/abs/1611.07212) by Albert Haque, Alexandre Alahi, Li Fei-Fei.
+
 + [Recurrent Attentional Networks for Saliency Detection](https://arxiv.org/abs/1604.03227) by Jason Kuen, Zhenhua Wang, Gang Wang.
 
 + [Recurrent Batch Normalization](http://arxiv.org/abs/1603.09025) by Tim Cooijmans, Nicolas Ballas, César Laurent, Aaron Courville
@@ -717,6 +721,8 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 + [Recurrent Network Models for Kinematic Tracking](http://arxiv.org/abs/1508.00271) by Katerina Fragkiadaki, Sergey Levine, Jitendra Malik.
 
 + [Recurrent Neural Networks for Driver Activity Anticipation via Sensory-Fusion Architecture](http://arxiv.org/abs/1509.05016) by Ashesh Jain, Avi Singh, Hema S Koppula, Shane Soh, Ashutosh Saxena.
+
++ [Recurrent Neural Networks With Limited Numerical Precision](https://arxiv.org/abs/1611.07065) by Joachim Ott, Zhouhan Lin, Ying Zhang, Shih-Chii Liu, Yoshua Bengio.
 
 + [Recurrent Reinforcement Learning: A Hybrid Approach](http://arxiv.org/abs/1509.03044) by Xiujun Li, Lihong Li, Jianfeng Gao, Xiaodong He, Jianshu Chen, Li Deng, Ji He.
 
@@ -757,6 +763,8 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 + [Semi-supervised Sequence Learning](http://arxiv.org/abs/1511.01432) by Andrew M. Dai, Quoc V. Le.
 
 + [SentiCap: Generating Image Descriptions with Sentiments](http://arxiv.org/abs/1510.01431) by Alexander Mathews, Lexing Xie, Xuming He.
+
++ [Singularity of the Hessian in Deep Learning](https://arxiv.org/abs/1611.07476) by Levent Sagun, Leon Bottou, Yann LeCun.
 
 + [SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <1MB model size](http://arxiv.org/abs/1602.07360) by Forrest N. Iandola, Matthew W. Moskewicz, Khalid Ashraf, Song Han, William J. Dally, Kurt Keutzer.
 
