@@ -684,6 +684,8 @@ _Each article is categorized based on its primary research goal. Each article co
 
 + [Neural Semantic Encoders](https://arxiv.org/abs/1607.04315) by Tsendsuren Munkhdalai, Hong Yu.
 
++ [Object Recognition with and without Objects](https://arxiv.org/abs/1611.06596) by Zhuotun Zhu, Lingxi Xie, Alan L. Yuille.
+
 + [On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models](http://arxiv.org/abs/1511.09249) by Juergen Schmidhuber.
 
 + [On Multiplicative Integration with Recurrent Neural Networks](https://arxiv.org/abs/1606.06630) by Yuhuai Wu, Saizheng Zhang, Ying Zhang, Yoshua Bengio, Ruslan Salakhutdinov.
