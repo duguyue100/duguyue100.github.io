@@ -540,6 +540,8 @@ _Each article is categorized based on its primary research goal. Each article co
 
 + [Human-level control through deep reinforcement learning](http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) by Google DeepMind.
 
++ [iCaRL: Incremental Classifier and Representation Learning](https://arxiv.org/abs/1611.07725) by Sylvestre-Alvise Rebuffi, Alexander Kolesnikov, Christoph H. Lampert.
+
 + [ImageNet Classification with Deep Convolutional Neural Networks](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional) by Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton.
 
 + [Image Captioning with an Intermediate Attributes Layer](http://arxiv.org/abs/1506.01144) by Qi Wu, Chunhua Shen, Anton van den Hengel, Lingqiao Liu, Anthony Dick.
