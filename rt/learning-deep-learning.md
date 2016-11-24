@@ -166,6 +166,8 @@ _Each article is categorized based on its primary research goal. Each article co
 
 + [A Deep Siamese Network for Scene Detection in Broadcast Videos](http://arxiv.org/abs/1510.08893) by Lorenzo Baraldi, Costantino Grana, Rita Cucchiara.
 
++ [A Hierarchical Approach for Generating Descriptive Image Paragraphs](https://arxiv.org/abs/1611.06607) by Jonathan Krause, Justin Johnson, Ranjay Krishna, Li Fei-Fei.
+
 + [A Hierarchical Recurrent Encoder-Decoder For Generative Context-Aware Query Suggestion](http://arxiv.org/abs/1507.02221) by Alessandro Sordoni, Yoshua Bengio, Hossein Vahabi, Christina Lioma, Jakob G. Simonsen, Jian-Yun Nie.
 
 + [A Large-Scale Car Dataset for Fine-Grained Categorization and Verification](http://arxiv.org/abs/1506.08959) by Linjie Yang, Ping Luo, Chen Change Loy, Xiaoou Tang.
