@@ -204,6 +204,8 @@ _Each article is categorized based on its primary research goal. Each article co
 
 + [adaQN: An Adaptive Quasi-Newton Algorithm for Training RNNs](http://arxiv.org/abs/1511.01169) by Nitish Shirish Keskar, Albert S. Berahas.
 
++ [AdaScan: Adaptive Scan Pooling in Deep Convolutional Neural Networks for Human Action Recognition in Videos](https://arxiv.org/abs/1611.08240) by Amlan Kar, Nishant Rai, Karan Sikka, Gaurav Sharma.
+
 + [Adding Gradient Noise Improves Learning for Very Deep Networks](http://arxiv.org/abs/1511.06807) by Arvind Neelakantan, Luke Vilnis, Quoc V. Le, Ilya Sutskever, Lukasz Kaiser, Karol Kurach, James Martens.
 
 + [Adversarial Autoencoders](http://arxiv.org/abs/1511.05644) by Alireza Makhzani, Jonathon Shlens, Navdeep Jaitly, Ian Goodfellow.
@@ -275,6 +277,8 @@ _Each article is categorized based on its primary research goal. Each article co
 + [Brain4Cars: Car That Knows Before You Do via Sensory-Fusion Deep Learning Architecture](http://arxiv.org/abs/1601.00740) by Ashesh Jain, Hema S Koppula, Shane Soh, Bharad Raghavan, Avi Singh, Ashutosh Saxena.
 
 + [Brain-Inspired Deep Networks for Image Aesthetics Assessment](http://arxiv.org/abs/1601.04155) by Zhangyang Wang, Florin Dolcos, Diane Beck, Shiyu Chang, Thomas S. Huang.
+
++ [Can Active Memory Replace Attention?](https://arxiv.org/abs/1610.08613) by Łukasz Kaiser, Samy Bengio.
 
 + [Character-level Convolutional Networks for Text Classification](http://arxiv.org/abs/1509.01626) by Xiang Zhang, Junbo Zhao, Yann LeCun.
 
@@ -514,6 +518,8 @@ _Each article is categorized based on its primary research goal. Each article co
 
 + [Google's Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation](https://arxiv.org/abs/1611.04558) by Melvin Johnson, Mike Schuster, Quoc V. Le, Maxim Krikun, Yonghui Wu, Zhifeng Chen, Nikhil Thorat, Fernanda Viégas, Martin Wattenberg, Greg Corrado, Macduff Hughes, Jeffrey Dean.
 
++ [Gossip training for deep learning](https://arxiv.org/abs/1611.09726) by Michael Blot, David Picard, Matthieu Cord, Nicolas Thome.
+
 + [Gradual DropIn of Layers to Train Very Deep Neural Networks](http://arxiv.org/abs/1511.06951) by Leslie N. Smith, Emily M. Hand, Timothy Doster.
 
 + [Grid Long Short-Term Memory](http://arxiv.org/abs/1507.01526) by Nal Kalchbrenner, Ivo Danihelka, Alex Graves.
@@ -607,6 +613,8 @@ _Each article is categorized based on its primary research goal. Each article co
 + [Learning to learn by gradient descent by gradient descent](https://arxiv.org/abs/1606.04474) by Marcin Andrychowicz, Misha Denil, Sergio Gomez, Matthew W. Hoffman, David Pfau, Tom Schaul, Nando de Freitas.
 
 + [Learning to Linearize Under Uncertainty](http://arxiv.org/abs/1506.03011) by Ross Goroshin, Michael Mathieu, Yann LeCun.
+
++ [Learning to reinforcement learn](https://arxiv.org/abs/1611.05763) by Jane X Wang, Zeb Kurth-Nelson, Dhruva Tirumala, Hubert Soyer, Joel Z Leibo, Remi Munos, Charles Blundell, Dharshan Kumaran, Matt Botvinick.
 
 + [Learning to See by Moving](http://arxiv.org/abs/1505.01596) by Pulkit Agrawal, Joao Carreira, Jitendra Malik.
 
@@ -906,6 +914,8 @@ _Each article is categorized based on its primary research goal. Each article co
 
 + [Using Descriptive Video Services to Create a Large Data Source for Video Annotation Research](http://arxiv.org/abs/1503.01070) by Atousa Torabi, Christopher Pal, Hugo Larochelle, Aaron Courville.
 
++ [Using Fast Weights to Attend to the Recent Past](https://arxiv.org/abs/1610.06258) by Jimmy Ba, Geoffrey Hinton, Volodymyr Mnih, Joel Z. Leibo, Catalin Ionescu.
+
 + [Variable Rate Image Compression with Recurrent Neural Networks](http://arxiv.org/abs/1511.06085) by George Toderici, Sean M. O'Malley, Sung Jin Hwang, Damien Vincent, David Minnen, Shumeet Baluja, Michele Covell, Rahul Sukthankar.
 
 + [Video Paragraph Captioning using Hierarchical Recurrent Neural Networks](http://arxiv.org/abs/1510.07712) by Haonan Yu, Jiang Wang, Zhiheng Huang, Yi Yang, Wei Xu.
@@ -925,6 +935,8 @@ _Each article is categorized based on its primary research goal. Each article co
 + [We Are Humor Beings: Understanding and Predicting Visual Humor](http://arxiv.org/abs/1512.04407) by Arjun Chandrasekaran, Ashwin K Vijayakumar, Stanislaw Antol, Mohit Bansal, Dhruv Batra, C. Lawrence Zitnick, Devi Parikh.
 
 + [Weakly-Supervised Alignment of Video With Text](http://arxiv.org/abs/1505.06027) by P. Bojanowski, R. Lagugie, Edouard Grave, Francis Bach, I. Laptev, J. Ponce, C. Schmid.
+
++ [Weakly Supervised Cascaded Convolutional Networks](https://arxiv.org/abs/1611.08258) by Ali Diba, Vivek Sharma, Ali Pazandeh, Hamed Pirsiavash, Luc Van Gool.
 
 + [Weakly Supervised Deep Detection Networks](http://arxiv.org/abs/1511.02853) by Hakan Bilen, Andrea Vedaldi.
 
