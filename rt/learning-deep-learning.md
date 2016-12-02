@@ -684,6 +684,8 @@ _Each article is categorized based on its primary research goal. Each article co
 
 + [Net2Net: Accelerating Learning via Knowledge Transfer](http://arxiv.org/abs/1511.05641) by Tianqi Chen, Ian Goodfellow, Jonathon Shlens.
 
++ [Neural Combinatorial Optimization with Reinforcement Learning](https://arxiv.org/abs/1611.09940) by Irwan Bello, Hieu Pham, Quoc V. Le, Mohammad Norouzi, Samy Bengio.
+
 + [Neural Functional Programming](https://arxiv.org/abs/1611.01988) by John K. Feser, Marc Brockschmidt, Alexander L. Gaunt, Daniel Tarlow.
 
 + [Neural GPUs Learn Algorithms](http://arxiv.org/abs/1511.08228) by Łukasz Kaiser, Ilya Sutskever.
