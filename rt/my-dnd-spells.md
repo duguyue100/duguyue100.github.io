@@ -4,6 +4,11 @@ title: My DnD Spells
 permalink: /dnd-spells/
 ---
 
+## Resources
+
++ [Entire Wizard List](https://roll20.net/compendium/dnd5e/Wizard%20Spells%20by%20Level#content)
++ [Wizard Features by Level](https://open5e.com/classes/wizard.html)
+
 ## Level 0
 
 ### Mage Head

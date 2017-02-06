@@ -1004,6 +1004,8 @@ _Each article is categorized based on its primary research goal. Each article co
 
 + [Open Images Dataset](https://github.com/openimages/dataset) by Google Inc.
 
++ [YouTube-BoundingBoxes Dataset](https://research.google.com/youtube-bb/index.html) by Google Research.
+
 ## Podcast, Talks, etc.
 
 + [Talking Machines](http://www.thetalkingmachines.com/) hosted by Katherine Gorman and Ryan Adams.
