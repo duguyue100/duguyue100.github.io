@@ -155,3 +155,70 @@ permalink: /dnd-spells/
 	A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.
 
 +   __At Higher Levels:__ When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
+
+## Level 2
+
+
+### Blur 
+
++   __Casting Time:__ 1 action 
++   __Range:__ Self
++   __Components:__ V
++   __Duration:__ Up to 1 minute
++   __Explanation:__
+
+
+    Your body becomes blurred, shifting and wavering to all who can see you. For the Duration, any creature has disadvantage on Attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight.
+
+
+### Invisibility
+
+
++   __Casting Time:__ 1 action 
++   __Range:__ Touch
++   __Components:__ V, S, M
++   __Materials:__ An eyelash encased in gum arabic	
++   __Duration:__ Up to 1 hour 
++   __Explanation:__
+
+    A creature you touch becomes Invisible until the spell ends. Anything the target is wearing or carrying is Invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.
+
+
++   __At Higher Levels:__ When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd. 
+
+### Mirror Image
+
++   __Casting Time:__ 1 action 
++   __Range:__ Self 
++   __Components:__ V, S
++   __Duration:__ 1 minute 
++   __Explanation:__
+    
+    Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.
+
+    Each time a creature Targets you with an Attack during the spell's Duration, roll a d20 to determine whether the Attack instead Targets one of your duplicates.
+
+    If you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.
+
+    A duplicate's AC equals 10 + your Dexterity modifier. If an Attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an Attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.
+
+    A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.
+
+
+### Enlarge/Reduce
+
+
++   __Casting Time:__ 1 action 
++   __Range:__ 30 ft 
++   __Components:__ V, S, M
++   __Materials:__ A pinch iron powder
++   __Duration:__ Upto 1 minute 
++   __Explanation:__
+
+    You cause a creature or an object you can see within range to grow larger or smaller for the Duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect.
+
+    If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once.
+
+    __Enlarge__. The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category - from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength Checks and Strength saving throws. The target's Weapons also grow to match its new size. While these Weapons are enlarged, the target's Attack with them deal 1d4 extra damage.
+
+    __Reduce__. The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category - from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength Checks and Strength saving throws. The target's Weapons also shrink to match its new size. While these Weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).
