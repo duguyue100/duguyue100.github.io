@@ -76,6 +76,17 @@ permalink: /dnd-spells/
     If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell DC. If the creature discerns the illusion for what it is, the illusion becomes faint to the creature.
 +   __At Higher Levels:__
 
+### True Strike 
+
++   __Casting Time:__ 1 action 
++   __Range:__ 30ft 
++   __Components:__ S
++   __Duration:__ Up to 1 round 
++   __Explanation:__
++   __Concentriation:__ Yes
+
+You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first Attack roll against the target, provided that this spell hasn't ended.
+
 ## Level 1
 
 
@@ -155,6 +166,30 @@ permalink: /dnd-spells/
 	A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn.
 
 +   __At Higher Levels:__ When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
+
+### Unseen Servant
+
++   __Casting Time:__ 1 action 
++   __Range:__ 60 feet
++   __Components:__ V, S, M (A piece of string and a bit of wood)
++   __Duration:__ 1 hour 
++   __Explanation:__
+
+This spell creates an Invisible, mindless, shapeless force that performs simple tasks at your Command until the spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 hit point, and a Strength of 2, and it can't Attack. If it drops to 0 hit points, the spell ends.
+
+Once on each of your turns as a Bonus Action, you can mentally Command the servant to move up to 15 feet and interact with an object. The servant can perform simple tasks that a human servant could do, such as fetching things, cleaning, Mending, folding clothes, lighting fires, serving food, and pouring wine. Once you give the Command, the servant performs the task to the best of its ability until it completes the task, then waits for your next Command.
+
+### False Life
+
++   __Casting Time:__ 1 action 
++   __Range:__ Self 
++   __Components:__ V, S, M (A small amount of alcohol or distilled spirits)
++   __Duration:__ 1 hour 
++   __Explanation:__
+
+Bolstering yourself with a necromantic facsimile of life, you gain 1d4+4 Temporary Hit Points for the Duration.
+
+At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional Temporary Hit Points for each slot level above 1st.
 
 ## Level 2
 
