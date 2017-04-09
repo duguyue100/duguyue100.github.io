@@ -257,3 +257,34 @@ At Higher Levels: When you cast this spell using a spell slot of 2nd level or hi
     __Enlarge__. The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category - from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength Checks and Strength saving throws. The target's Weapons also grow to match its new size. While these Weapons are enlarged, the target's Attack with them deal 1d4 extra damage.
 
     __Reduce__. The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category - from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength Checks and Strength saving throws. The target's Weapons also shrink to match its new size. While these Weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).
+
+## Level 3
+
+### Lighting Bolt
+
++   __Casting Time:__ 1 action 
++   __Range:__ Self
++   __Components:__ V, S, M
++   __Materials:__ A bit of fur and a rod of amber, Crystal, or glass
++   __Duration:__ Instantaneous
++   __Damage Type:__ Lightning
++   __Explanation:__
+
+A stroke of lightning forming a line of 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.
+
+The lightning ignites flammable Objects in the area that aren't being worn or carried.
+
+At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot above 3rd.
+
+### Vampiric Touch
+
++   __Casting Time:__ 1 action 
++   __Range:__ Self
++   __Components:__ V, S
++   __Duration:__ Up to 1 minute
++   __Damage Type:__ Necrotic
++   __Explanation:__
+
+The touch of your shadow-wreathed hand can siphon force from others to heal your wounds. Make a melee spell Attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the Attack again on each of your turns as an action.
+
+At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
