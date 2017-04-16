@@ -6,4 +6,4 @@ summary: My notes to Deep Learning notes
 categories: Notes
 ---
 
-## Regularization for Deep Learning
+## 7. Regularization for Deep Learning
