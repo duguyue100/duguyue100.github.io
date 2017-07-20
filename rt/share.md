@@ -27,12 +27,14 @@ permalink: /share
             callback(false);
         }
 
-        img.src = url+"/favicon.ico";
+        img.src = url;
     }
 
-    isSiteOnline("http://localhost:8000",function(found){
+    share_url = "http://localhost:8000"
+
+    isSiteOnline(share_url,function(found){
         if(found) {
-            document.getElementById("shared-page").innerHTML = '<iframe src="http://localhost:8000"></iframe>';
+            document.getElementById("shared-page").innerHTML = '<iframe src=share_url></iframe>';
         }
         else {
             document.getElementById("shared-page").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/oAPjTHA19Kw" frameborder="0" allowfullscreen></iframe>';
