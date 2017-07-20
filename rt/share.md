@@ -9,37 +9,36 @@ permalink: /share
 <p id="shared-page"></p>
 
 <script>
-    function isSiteOnline(url,callback) {
+    function isSiteOnline(url) {
         // try to load favicon
         var timer = setTimeout(function(){
             // timeout after 5 seconds
-            callback(false);
+            return false;
         },5000)
 
         var img = document.createElement("img");
         img.onload = function() {
             clearTimeout(timer);
-            callback(true);
+            return true;
         }
 
         img.onerror = function() {
             clearTimeout(timer);
-            callback(false);
+            return false;
         }
 
         img.src = url;
     }
 
-    share_url = "http://localhost:8000"
+    var share_url = "http://localhost:8000"
 
-    isSiteOnline(share_url,function(found){
-        if(found) {
-            document.getElementById("shared-page").innerHTML = '<iframe src=share_url></iframe>';
-        }
-        else {
+    if (isSiteOnline(share_url) == true) {
+        document.getElementById("shared-page").innerHTML = '<iframe src=share_url></iframe>';
+    }
+    else {
             document.getElementById("shared-page").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/oAPjTHA19Kw" frameborder="0" allowfullscreen></iframe>';
-        }
-    })
+    }
+
 </script>
 <hr>
 </div>
