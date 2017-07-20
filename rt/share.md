@@ -33,7 +33,7 @@ function isSiteOnline(url,callback) {
 
 isSiteOnline("http://localhost:8000", function(found){
     if(found) {
-        document.getElementById("shared-page").innerHTML = '<iframe src="http://localhost:8000"></iframe>';
+        document.getElementById("shared-page").innerHTML = '<iframe width="560" height="315" src="http://localhost:8000" frameborder="0"></iframe>';
     }
     else {
         document.getElementById("shared-page").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/oAPjTHA19Kw" frameborder="0" allowfullscreen></iframe>';
