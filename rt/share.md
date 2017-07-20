@@ -4,5 +4,40 @@ title: Local File Sharing
 permalink: /share
 ---
 
-<iframe src="http://127.0.0.1:8000" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" >
-    </iframe>
+<div style="display: block; text-align: center; background-color: #f5ecc0">
+<hr>
+<p id="shared-page"></p>
+
+<script>
+    function isSiteOnline(url,callback) {
+        // try to load favicon
+        var timer = setTimeout(function(){
+            // timeout after 5 seconds
+            callback(false);
+        },5000)
+
+        var img = document.createElement("img");
+        img.onload = function() {
+            clearTimeout(timer);
+            callback(true);
+        }
+
+        img.onerror = function() {
+            clearTimeout(timer);
+            callback(false);
+        }
+
+        img.src = url+"/favicon.ico";
+    }
+
+    isSiteOnline("http://www.facebook.com",function(found){
+        if(found) {
+            document.getElementById("shared-page").innerHTML = '<iframe src="http://localhost:8080"></iframe>';
+        }
+        else {
+            document.getElementById("shared-page").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/oAPjTHA19Kw" frameborder="0" allowfullscreen></iframe>';
+        }
+    })
+</script>
+<hr>
+</div>
