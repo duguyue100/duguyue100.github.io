@@ -6,39 +6,41 @@ permalink: /share
 
 <div style="display: block; text-align: center; background-color: #f5ecc0">
 <hr>
+
 <p id="shared-page"></p>
 
-<script>
-    function isSiteOnline(url) {
-        // try to load favicon
-        var timer = setTimeout(function(){
-            // timeout after 5 seconds
-            return false;
-        },5000)
+<script type='text/javascript'>
+function isSiteOnline(url,callback) {
+    // try to load favicon
+    var timer = setTimeout(function(){
+        // timeout after 5 seconds
+        callback(false);
+    },5000)
 
-        var img = document.createElement("img");
-        img.onload = function() {
-            clearTimeout(timer);
-            return true;
-        }
-
-        img.onerror = function() {
-            clearTimeout(timer);
-            return false;
-        }
-
-        img.src = url;
+    var img = document.createElement("img");
+    img.onload = function() {
+        clearTimeout(timer);
+        callback(true);
     }
 
-    var share_url = "http://localhost:8000"
+    img.onerror = function() {
+        clearTimeout(timer);
+        callback(false);
+    }
 
-    if (isSiteOnline(share_url) == true) {
-        document.getElementById("shared-page").innerHTML = '<iframe src=share_url></iframe>';
+    img.src = url+"/favicon.ico";
+}
+
+isSiteOnline("http://localhost:8000", function(found){
+    if(found) {
+        document.getElementById("shared-page").innerHTML = '<iframe src="http://localhost:8000"></iframe>';
     }
     else {
-            document.getElementById("shared-page").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/oAPjTHA19Kw" frameborder="0" allowfullscreen></iframe>';
-    }
+        document.getElementById("shared-page").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/oAPjTHA19Kw" frameborder="0" allowfullscreen></iframe>';
 
+    }
+})
 </script>
+
 <hr>
 </div>
