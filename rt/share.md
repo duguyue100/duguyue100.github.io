@@ -1,7 +1,7 @@
 ---
 layout: page
-title: My DnD Spells
+title: Local File Sharing
 permalink: /share
 ---
 
-`http://127.0.0.1:8080/`
+<div w3-include-html="http://127.0.0.1:8080/"></div>
