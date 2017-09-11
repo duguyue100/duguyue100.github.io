@@ -31,9 +31,9 @@ function isSiteOnline(url,callback) {
     img.src = url+"/favicon.ico";
 }
 
-isSiteOnline("http://172.19.12.175:8000", function(found){
+isSiteOnline("http://172.19.12.141:8000", function(found){
     if(found) {
-        document.getElementById("shared-page").innerHTML = '<iframe width="560" height="315" src="http://172.19.12.175:8000" frameborder="0"></iframe>';
+        document.getElementById("shared-page").innerHTML = '<iframe width="560" height="315" src="http://172.19.12.141:8000" frameborder="0"></iframe>';
     }
     else {
         document.getElementById("shared-page").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/oAPjTHA19Kw" frameborder="0" allowfullscreen></iframe>';
