@@ -55,3 +55,5 @@ I've used `bash` as my default shell client for many years. I've never switched 
 ## `macman` and `linuxman`
 
 (TO BE CONTINUED)
+
+This is some text that I wanted to change so that I know the website can update.
