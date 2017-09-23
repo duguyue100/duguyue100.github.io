@@ -132,7 +132,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition](http://arxiv.org/abs/1507.05717)|Baoguang Shi, Xiang Bai, Cong Yao||
 |[An Uncertain Future: Forecasting from Static Images using Variational Autoencoders](https://arxiv.org/abs/1606.07873)|Jacob Walker, Carl Doersch, Abhinav Gupta, Martial Hebert||
 |[Answer Sequence Learning with Neural Networks for Answer Selection in Community Question Answering](http://arxiv.org/abs/1506.06490)|Xiaoqiang Zhou, Baotian Hu, Qingcai Chen, Buzhou Tang, Xiaolong Wang||
-|[Anticipating the future|watching unlabeled video](http://arxiv.org/abs/1504.08023) by Carl Vondrick, Hamed Pirsiavash, Antonio Torralba||
+|[Anticipating the future|watching unlabeled video](http://arxiv.org/abs/1504.08023)|Carl Vondrick, Hamed Pirsiavash, Antonio Torralba||
 |[Are You Talking to a Machine? Dataset and Methods for Multilingual Image Question Answering](http://arxiv.org/abs/1505.05612)|Haoyuan Gao, Junhua Mao, Jie Zhou, Zhiheng Huang, Lei Wang, Wei Xu||
 |[Artificial Neural Networks Applied to Taxi Destination Prediction](http://arxiv.org/abs/1508.00021)|Alexandre de Brébisson, Étienne Simon, Alex Auvolat, Pascal Vincent, Yoshua Bengio||
 |[Ask, Attend and Answer: Exploring Question-Guided Spatial Attention for Visual Question Answering](http://arxiv.org/abs/1511.05234)|Huijuan Xu, Kate Saenko||
@@ -146,7 +146,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[Attention to Scale: Scale-aware Semantic Image Segmentation](http://arxiv.org/abs/1511.03339)|Liang-Chieh Chen, Yi Yang, Jiang Wang, Wei Xu, Alan L. Yuille||
 |[Attention with Intention for a Neural Network Conversation Model](http://arxiv.org/abs/1510.08565)|Kaisheng Yao, Geoffrey Zweig, Baolin Peng||
 |[AtomNet: A Deep Convolutional Neural Network for Bioactivity Prediction in Structure-based Drug Discovery](http://arxiv.org/abs/1510.02855)|Izhar Wallach, Michael Dzamba, Abraham Heifets||
-|[Batch Normalization: Accelerating Deep Network Training|Reducing Internal Covariate Shift](http://arxiv.org/abs/1502.03167) by Sergey Ioffe and Christian Szegedy||
+|[Batch Normalization: Accelerating Deep Network Training|Reducing Internal Covariate Shift](http://arxiv.org/abs/1502.03167)|Sergey Ioffe and Christian Szegedy||
 |[Batch Normalized Recurrent Neural Networks](http://arxiv.org/abs/1510.01378)|César Laurent, Gabriel Pereyra, Philémon Brakel, Ying Zhang, Yoshua Bengio||
 |[Bayesian SegNet: Model Uncertainty in Deep Convolutional Encoder-Decoder Architectures for Scene Understanding](http://arxiv.org/abs/1511.02680)|Alex Kendall, Vijay Badrinarayanan, Roberto Cipolla||
 |[Better Computer Go Player with Neural Network and Long-term Prediction](http://arxiv.org/abs/1511.06410)|Yuandong Tian, Yan Zhu||
@@ -166,7 +166,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[Compressing Convolutional Neural Networks](http://arxiv.org/abs/1506.04449)|Wenlin Chen, James T. Wilson, Stephen Tyree, Kilian Q. Weinberger, Yixin Chen||
 |[Compressing LSTMs into CNNs](http://arxiv.org/abs/1511.06433)|Krzysztof J. Geras, Abdel-rahman Mohamed, Rich Caruana, Gregor Urban, Shengjie Wang, Ozlem Aslan, Matthai Philipose, Matthew Richardson, Charles Sutton||
 |[Compression of Deep Neural Networks on the Fly](http://arxiv.org/abs/1509.08745)|Guillaume Soulié, Vincent Gripon, Maëlys Robert||
-|[Confusing Deep Convolution Networks|Relabelling](http://arxiv.org/abs/1510.06925) by Leigh Robinson, Benjamin Graham||
+|[Confusing Deep Convolution Networks|Relabelling](http://arxiv.org/abs/1510.06925)|Leigh Robinson, Benjamin Graham||
 |[Constrained Convolutional Neural Networks for Weakly Supervised Segmentation](http://arxiv.org/abs/1506.03648)|Deepak Pathak, Philipp Krähenbühl, Trevor Darrell||
 |[Continuous control with deep reinforcement learning](http://arxiv.org/abs/1509.02971)|Timothy P. Lillicrap, Jonathan J. Hunt, Alexander Pritzel, Nicolas Heess, Tom Erez, Yuval Tassa, David Silver, Daan Wierstra||
 |[Convergent Learning: Do different neural networks learn the same representations?](http://arxiv.org/abs/1511.07543)|Yixuan Li, Jason Yosinski, Jeff Clune, Hod Lipson, John Hopcroft||
@@ -185,7 +185,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[DeepFool: a simple and accurate method to fool deep neural networks](http://arxiv.org/abs/1511.04599)|Seyed-Mohsen Moosavi-Dezfooli, Alhussein Fawzi, Pascal Frossard||
 |[DeepID-Net: Deformable Deep Convolutional Neural Networks for Object Detection](http://arxiv.org/abs/1412.5661)|Wanli Ouyang, Xiaogang Wang, Xingyu Zeng, Shi Qiu, Ping Luo, Yonglong Tian, Hongsheng Li, Shuo Yang, Zhe Wang, Chen-Change Loy, Xiaoou Tang||
 |[DeepLogo: Hitting Logo Recognition with the Deep Neural Network Hammer](http://arxiv.org/abs/1510.02131)|Forrest N. Iandola, Anting Shen, Peter Gao, Kurt Keutzer||
-|[DeepProposal: Hunting Objects|Cascading Deep Convolutional Layers](http://arxiv.org/abs/1510.04445) by Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool||
+|[DeepProposal: Hunting Objects|Cascading Deep Convolutional Layers](http://arxiv.org/abs/1510.04445)|Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool||
 |[DeepSaliency: Multi-Task Deep Neural Network Model for Salient Object Detection](http://arxiv.org/abs/1510.05484)|Xi Li, Liming Zhao, Lina Wei, MingHsuan Yang, Fei Wu, Yueting Zhuang, Haibin Ling, Jingdong Wang||
 |[Deep Attention Recurrent Q-Network](http://arxiv.org/abs/1512.01693)|Ivan Sorokin, Alexey Seleznev, Mikhail Pavlov, Aleksandr Fedorov, Anastasiia Ignateva||
 |[Deep Captioning with Multimodal Recurrent Neural Networks (m-RNN)](http://arxiv.org/abs/1412.6632)|Junhua Mao, Wei Xu, Yi Yang, Jiang Wang, Zhiheng Huang, Alan Yuille||
@@ -211,7 +211,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[Deep Networks Resemble Human Feed-forward Vision in Invariant Object Recognition](http://arxiv.org/abs/1508.03929)|Saeed Reza Kheradpisheh, Masoud Ghodrati, Mohammad Ganjtabesh, Timothée Masquelier||
 |[Deep Networks with Internal Selective Attention through Feedback Connections](http://arxiv.org/abs/1407.3068)|Marijn Stollenga, Jonathan Masci, Faustino Gomez, Jürgen Schmidhuber||
 |[Deep Neural Networks predict Hierarchical Spatio-temporal Cortical Dynamics of Human Visual Object Recognition](http://arxiv.org/abs/1601.02970)|Radoslaw M. Cichy, Aditya Khosla, Dimitrios Pantazis, Antonio Torralba, Aude Oliva||
-|[DeepProposals: Hunting Objects and Actions|Cascading Deep Convolutional Layers](https://arxiv.org/abs/1606.04702) by Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool||
+|[DeepProposals: Hunting Objects and Actions|Cascading Deep Convolutional Layers](https://arxiv.org/abs/1606.04702)|Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool||
 |[Deep Recurrent Q-Learning for Partially Observable MDPs](http://arxiv.org/abs/1507.06527)|Matthew Hausknecht, Peter Stone||
 |[Deep Residual Learning for Image Recognition](http://arxiv.org/abs/1512.03385)|Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun||
 |[Deeply-Recursive Convolutional Network for Image Super-Resolution.pdf](http://arxiv.org/abs/1511.04491)|Jiwon Kim, Jung Kwon Lee, Kyoung Mu Lee||
@@ -232,7 +232,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[DenseCap: Fully Convolutional Localization Networks for Dense Captioning](http://arxiv.org/abs/1511.07571)|Justin Johnson, Andrej Karpathy, Li Fei-Fei||
 |[DenseBox: Unifying Landmark Localization with End to End Object Detection](http://arxiv.org/abs/1509.04874)|Lichao Huang, Yi Yang, Yafeng Deng, Yinan Yu||
 |[Describing Multimedia Content using Attention-based Encoder--Decoder Networks](http://arxiv.org/abs/1507.01053)|Kyunghyun Cho, Aaron Courville, Yoshua Bengio||
-|[Describing Videos|Exploiting Temporal Structure](http://arxiv.org/abs/1502.08029) by Li Yao, Atousa Torabi, Kyunghyun Cho, Nicolas Ballas, Christopher Pal, Hugo Larochelle, Aaron Courville||
+|[Describing Videos|Exploiting Temporal Structure](http://arxiv.org/abs/1502.08029)|Li Yao, Atousa Torabi, Kyunghyun Cho, Nicolas Ballas, Christopher Pal, Hugo Larochelle, Aaron Courville||
 |[Detecting Interrogative Utterances with Recurrent Neural Networks](http://arxiv.org/abs/1511.01042)|Junyoung Chung, Jacob Devlin, Hany Hassan Awadalla||
 |[Dictionary Learning and Sparse Coding for Third-order Super-symmetric Tensors](http://arxiv.org/abs/1509.02970)|Piotr Koniusz, Anoop Cherian||
 |[Digging Deep into the layers of CNNs: In Search of How CNNs Achieve View Invariance](http://arxiv.org/abs/1508.01983)|Amr Bakry, Mohamed Elhoseiny, Tarek El-Gaaly, Ahmed Elgammal||
@@ -261,7 +261,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[FaceNet: A Unified Embedding for Face Recognition and Clustering](http://arxiv.org/abs/1503.03832)|Florian Schroff, Dmitry Kalenichenko, James Philbin||
 |[Factors in Finetuning Deep Model for object detection](http://arxiv.org/abs/1601.05150)|Wanli Ouyang, Xiaogang Wang, Cong Zhang, Xiaokang Yang||
 |[Fast Algorithms for Convolutional Neural Networks](http://arxiv.org/abs/1509.09308)|Andrew Lavin||
-|[Fast and Accurate Deep Network Learning|Exponential Linear Units (ELUs)](http://arxiv.org/abs/1511.07289) by Djork-Arné Clevert, Thomas Unterthiner, Sepp Hochreiter||
+|[Fast and Accurate Deep Network Learning|Exponential Linear Units (ELUs)](http://arxiv.org/abs/1511.07289)|Djork-Arné Clevert, Thomas Unterthiner, Sepp Hochreiter||
 |[Fast-Classifying, High-Accuracy Spiking Deep Networks Through Weight and Threshold Balancing](http://www.ini.uzh.ch/admin/extras/doc_get.php?id=54478)|Peter U. Diehl, Daniel Neil, Jonathan Binas, Matthew Cook, Shih-Chii Liu, and Michael Pfeiffer||
 |[Fast and Accurate Recurrent Neural Network Acoustic Models for Speech Recognition](http://arxiv.org/abs/1507.06947)|Haşim Sak, Andrew Senior, Kanishka Rao, Françoise Beaufays||
 |[Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](http://arxiv.org/abs/1506.01497)|Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun||
@@ -326,10 +326,10 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[Learning Spatiotemporal Features with 3D Convolutional Networks](http://arxiv.org/abs/1412.0767)|Du Tran, Lubomir Bourdev, Rob Fergus, Lorenzo Torresani, Manohar Paluri||
 |[Learning to Communicate to Solve Riddles with Deep Distributed Recurrent Q-Networks](http://arxiv.org/abs/1602.02672)|Jakob N. Foerster, Yannis M. Assael, Nando de Freitas, Shimon Whiteson||
 |[Learning to Compose Neural Networks for Question Answering](http://arxiv.org/abs/1601.01705)|Jacob Andreas, Marcus Rohrbach, Trevor Darrell, Dan Klein||
-|[Learning to learn|gradient descent by gradient descent](https://arxiv.org/abs/1606.04474) by Marcin Andrychowicz, Misha Denil, Sergio Gomez, Matthew W. Hoffman, David Pfau, Tom Schaul, Nando de Freitas||
+|[Learning to learn|gradient descent|gradient descent](https://arxiv.org/abs/1606.04474)|Marcin Andrychowicz, Misha Denil, Sergio Gomez, Matthew W. Hoffman, David Pfau, Tom Schaul, Nando de Freitas||
 |[Learning to Linearize Under Uncertainty](http://arxiv.org/abs/1506.03011)|Ross Goroshin, Michael Mathieu, Yann LeCun||
 |[Learning to reinforcement learn](https://arxiv.org/abs/1611.05763)|Jane X Wang, Zeb Kurth-Nelson, Dhruva Tirumala, Hubert Soyer, Joel Z Leibo, Remi Munos, Charles Blundell, Dharshan Kumaran, Matt Botvinick||
-|[Learning to See|Moving](http://arxiv.org/abs/1505.01596) by Pulkit Agrawal, Joao Carreira, Jitendra Malik||
+|[Learning to See|Moving](http://arxiv.org/abs/1505.01596)|Pulkit Agrawal, Joao Carreira, Jitendra Malik||
 |[Learning to Segment Object Candidates](http://arxiv.org/abs/1506.06204)|Pedro O. Pinheiro, Ronan Collobert, Piotr Dollar||
 |[Learning to Track at 100 FPS with Deep Regression Networks](https://arxiv.org/abs/1604.01802)|David Held, Sebastian Thrun, Silvio Savarese||
 |[Learning to track for spatio-temporal action localization](http://arxiv.org/abs/1506.01929)|Philippe Weinzaepfel, Zaid Harchaoui, Cordelia Schmid||
@@ -346,7 +346,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[LOGO-Net: Large-scale Deep Logo Detection and Brand Recognition with Deep Region-based Convolutional Networks](http://arxiv.org/abs/1511.02462)|Steven C.H. Hoi, Xiongwei Wu, Hantang Liu, Yue Wu, Huiqiong Wang, Hui Xue, Qiang Wu||
 |[Long Short-Term Memory-Networks for Machine Reading](http://arxiv.org/abs/1601.06733)|Jianpeng Cheng, Li Dong, Mirella Lapata||
 |[Long-term Recurrent Convolutional Networks for Visual Recognition and Description](http://jeffdonahue.com/lrcn/)|Jeff Donahue, Lisa Anne Hendricks, Sergio Guadarrama, Marcus Rohrbach, Subhashini Venugopalan, Kate Saenko, Trevor Darrell||
-|[Love Thy Neighbors: Image Annotation|Exploiting Image Metadata](http://arxiv.org/abs/1508.07647) by Justin Johnson, Lamberto Ballan, Fei-Fei Li||
+|[Love Thy Neighbors: Image Annotation|Exploiting Image Metadata](http://arxiv.org/abs/1508.07647)|Justin Johnson, Lamberto Ballan, Fei-Fei Li||
 |[MADE: Masked Autoencoder for Distribution Estimation](http://arxiv.org/abs/1502.03509)|Mathieu Germain, Karol Gregor, Iain Murray, Hugo Larochelle||
 |[Manitest: Are classifiers really invariant?](http://arxiv.org/abs/1507.06535)|Alhussein Fawzi, Pascal Frossard||
 |[Maxout Networks](http://jmlr.org/proceedings/papers/v28/goodfellow13.pdf)|Ian J. Goodfellow, David Warde-Farley, Mehdi Mirza, Aaron Courville, Yoshua Bengio||
@@ -412,7 +412,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[Reuse of Neural Modules for General Video Game Playing](http://arxiv.org/abs/1512.01537)|Alexander Braylan, Mark Hollenbeck, Elliot Meyerson, Risto Miikkulainen||
 |[Rich feature hierarchies for accurate object detection and semantic segmentation](http://arxiv.org/abs/1311.2524)|Ross Girshick, Jeff Donahue, Trevor Darrell, Jitendra Malik||
 |[RL2: Fast Reinforcement Learning via Slow Reinforcement Learning](https://arxiv.org/abs/1611.02779)|Yan Duan, John Schulman, Xi Chen, Peter L. Bartlett, Ilya Sutskever, Pieter Abbeel||
-|[Scaling Up Natural Gradient|Sparsely Factorizing the Inverse Fisher Matrix](http://www.cs.toronto.edu/~rgrosse/icml2015-fang.pdf) by Roger B. Grosse, Ruslan Salakhutdinov||
+|[Scaling Up Natural Gradient|Sparsely Factorizing the Inverse Fisher Matrix](http://www.cs.toronto.edu/~rgrosse/icml2015-fang.pdf)|Roger B. Grosse, Ruslan Salakhutdinov||
 |[SceneNet: Understanding Real World Indoor Scenes With Synthetic Data](http://arxiv.org/abs/1511.07041)|Ankur Handa, Viorica Patraucean, Vijay Badrinarayanan, Simon Stent, Roberto Cipolla||
 |[Scheduled Sampling for Sequence Prediction with Recurrent Neural Networks](http://arxiv.org/abs/1506.03099)|Samy Bengio, Oriol Vinyals, Navdeep Jaitly, Noam Shazeer||
 |[Search-Convolutional Neural Networks](http://arxiv.org/abs/1511.02136)|James Atwood, Don Towsley||
@@ -460,7 +460,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[Towards Vision-Based Deep Reinforcement Learning for Robotic Motion Control](http://arxiv.org/abs/1511.03791)|Fangyi Zhang, Juergen Leitner, Michael Milford, Ben Upcroft, Peter Corke||
 |[Train faster, generalize better: Stability of stochastic gradient descent](http://arxiv.org/abs/1509.01240)|Moritz Hardt, Benjamin Recht, Yoram Singer||
 |[Training a Convolutional Neural Network for Appearance-Invariant Place Recognition](http://arxiv.org/abs/1505.07428)|Ruben Gomez-Ojeda, Manuel Lopez-Antequera, Nicolai Petkov, Javier Gonzalez-Jimenez||
-|[Training Deep Networks with Structured Layers|Matrix Backpropagation](http://arxiv.org/abs/1509.07838) by Catalin Ionescu, Orestis Vantzos, Cristian Sminchisescu||
+|[Training Deep Networks with Structured Layers|Matrix Backpropagation](http://arxiv.org/abs/1509.07838)|Catalin Ionescu, Orestis Vantzos, Cristian Sminchisescu||
 |[Training Deeper Convolutional Networks with Deep Supervision](http://arxiv.org/abs/1505.02496)|Liwei Wang, Chen-Yu Lee, Zhuowen Tu, Svetlana Lazebnik||
 |[Trainable performance upper bounds for image and video captioning](http://arxiv.org/abs/1511.04590)|Li Yao, Nicolas Ballas, Kyunghyun Cho, John R. Smith, Yoshua Bengio||
 |[Training Very Deep Networks](http://arxiv.org/abs/1507.06228)|Rupesh Kumar Srivastava, Klaus Greff, Jürgen Schmidhuber||
@@ -471,12 +471,12 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[Understanding deep learning requires rethinking generalization](https://arxiv.org/abs/1611.03530)|Chiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, Oriol Vinyals||
 |[Understanding Locally Competitive Networks](http://arxiv.org/abs/1410.1165)|Rupesh Kumar Srivastava, Jonathan Masci, Faustino Gomez, Jürgen Schmidhuber||
 |[Understanding Neural Networks Through Deep Visualization](http://arxiv.org/abs/1506.06579)|Jason Yosinski, Jeff Clune, Anh Nguyen, Thomas Fuchs, Hod Lipson||
-|[Understand Scene Categories|Objects: A Semantic Regularized Scene Classifier Using Convolutional Neural Networks](http://arxiv.org/abs/1509.06470) by Yiyi Liao, Sarath Kodagoda, Yue Wang, Lei Shi, Yong Liu||
+|[Understand Scene Categories|Objects: A Semantic Regularized Scene Classifier Using Convolutional Neural Networks](http://arxiv.org/abs/1509.06470)|Yiyi Liao, Sarath Kodagoda, Yue Wang, Lei Shi, Yong Liu||
 |[Unsupervised Extraction of Video Highlights Via Robust Recurrent Auto-encoders](http://arxiv.org/abs/1510.01442)|Huan Yang, Baoyuan Wang, Stephen Lin, David Wipf, Minyi Guo, Baining Guo||
 |[Unsupervised Learning of Video Representations using LSTMs](http://arxiv.org/abs/1502.04681)|Nitish Srivastava, Elman Mansimov, Ruslan Salakhutdinov||
 |[Unsupervised Learning of Visual Representations using Videos](http://arxiv.org/abs/1505.00687)|Xiaolong Wang, Abhinav Gupta||
 |[Unsupervised Semantic Parsing of Video Collections](http://arxiv.org/abs/1506.08438)|Ozan Sener, Amir Zamir, Silvio Savarese, Ashutosh Saxena||
-|[Unsupervised Visual Representation Learning|Context Prediction](http://arxiv.org/abs/1505.05192) by Carl Doersch, Abhinav Gupta, Alexei A. Efros||
+|[Unsupervised Visual Representation Learning|Context Prediction](http://arxiv.org/abs/1505.05192)|Carl Doersch, Abhinav Gupta, Alexei A. Efros||
 |[Using Descriptive Video Services to Create a Large Data Source for Video Annotation Research](http://arxiv.org/abs/1503.01070)|Atousa Torabi, Christopher Pal, Hugo Larochelle, Aaron Courville||
 |[Using Fast Weights to Attend to the Recent Past](https://arxiv.org/abs/1610.06258)|Jimmy Ba, Geoffrey Hinton, Volodymyr Mnih, Joel Z. Leibo, Catalin Ionescu||
 |[Variable Rate Image Compression with Recurrent Neural Networks](http://arxiv.org/abs/1511.06085)|George Toderici, Sean M. O'Malley, Sung Jin Hwang, Damien Vincent, David Minnen, Shumeet Baluja, Michele Covell, Rahul Sukthankar||
@@ -508,49 +508,34 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 
 ## Dataset
 
-+ [Caltech 101](http://www.vision.caltech.edu/Image_Datasets/Caltech101/) by L. Fei-Fei, R. Fergus and P. Perona.
-
-+ [Caltech 256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/) by G. Griffin, AD. Holub, P. Perona.
-
-+ [CIFAR-10](http://www.cs.toronto.edu/~kriz/cifar.html) by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton.
-
-+ [CIFAR-100](http://www.cs.toronto.edu/~kriz/cifar.html) by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton.
-
-+ [The Comprehensive Cars (CompCars) dataset](http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html) by Linjie Yang, Ping Luo, Chen Change Loy, Xiaoou Tang.
-
-+ [Flickr30k](http://shannon.cs.illinois.edu/DenotationGraph/) by Peter Young, Alice Lai, Micah Hodosh, Julia Hockenmaier.
-
-+ [ImageNet](http://image-net.org/download-images) by Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg and Li Fei-Fei.
-
-+ [Microsoft COCO](http://mscoco.org/) by Microsoft Research.
-
-+ [MNIST](http://yann.lecun.com/exdb/mnist/) by Yann LeCun, Corinna Cortes, Christopher J.C. Burges.
-
-+ [Places](http://places.csail.mit.edu/) by MIT Computer Science and Artificial Intelligence Laboratory.
-
-+ [STL-10](http://cs.stanford.edu/~acoates/stl10/) by Adam Coates, Honglak Lee, Andrew Y. Ng.
-
-+ [SVHN](http://ufldl.stanford.edu/housenumbers/) by Yuval Netzer, Tao Wang, Adam Coates, Alessandro Bissacco, Bo Wu, Andrew Y. Ng.
-
-+ [TGIF](https://github.com/raingo/TGIF-Release) by Yuncheng Li, Yale Song, Liangliang Cao, Joel Tetreault, Larry Goldberg, Alejandro Jaimes, Jiebo Luo.
-
-+ [Visual Perception of Forest Trails](http://people.idsia.ch/~giusti/forest/web/) by IDSIA, USI/SUPSI and Robotics and Perception Group, UZH.
-
-+ [WWW Crowd Dataset](http://www.ee.cuhk.edu.hk/~jshao/WWWCrowdDataset.html) by Jing Shao, Kai Kang, Chen Change Loy, and Xiaogang Wang.
-
-+ [Open Images Dataset](https://github.com/openimages/dataset) by Google Inc.
-
-+ [YouTube-BoundingBoxes Dataset](https://research.google.com/youtube-bb/index.html) by Google Research.
+|Title |Author or Source|Tags|
+|:---- |:---------------|:---|
+|[Caltech 101](http://www.vision.caltech.edu/Image_Datasets/Caltech101/)|L. Fei-Fei, R. Fergus and P. Perona||
+|[Caltech 256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/)|G. Griffin, AD. Holub, P. Perona||
+|[CIFAR-10](http://www.cs.toronto.edu/~kriz/cifar.html)|Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton||
+|[CIFAR-100](http://www.cs.toronto.edu/~kriz/cifar.html)|Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton||
+|[The Comprehensive Cars (CompCars) dataset](http://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/index.html)|Linjie Yang, Ping Luo, Chen Change Loy, Xiaoou Tang||
+|[Flickr30k](http://shannon.cs.illinois.edu/DenotationGraph/)|Peter Young, Alice Lai, Micah Hodosh, Julia Hockenmaier||
+|[ImageNet](http://image-net.org/download-images)|Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg and Li Fei-Fei||
+|[Microsoft COCO](http://mscoco.org/)|Microsoft Research||
+|[MNIST](http://yann.lecun.com/exdb/mnist/)|Yann LeCun, Corinna Cortes, Christopher J.C. Burges||
+|[Places](http://places.csail.mit.edu/)|MIT Computer Science and Artificial Intelligence Laboratory||
+|[STL-10](http://cs.stanford.edu/~acoates/stl10/)|Adam Coates, Honglak Lee, Andrew Y. Ng||
+|[SVHN](http://ufldl.stanford.edu/housenumbers/)|Yuval Netzer, Tao Wang, Adam Coates, Alessandro Bissacco, Bo Wu, Andrew Y. Ng||
+|[TGIF](https://github.com/raingo/TGIF-Release)|Yuncheng Li, Yale Song, Liangliang Cao, Joel Tetreault, Larry Goldberg, Alejandro Jaimes, Jiebo Luo||
+|[Visual Perception of Forest Trails](http://people.idsia.ch/~giusti/forest/web/)|IDSIA, USI/SUPSI and Robotics and Perception Group, UZH||
+|[WWW Crowd Dataset](http://www.ee.cuhk.edu.hk/~jshao/WWWCrowdDataset.html)|Jing Shao, Kai Kang, Chen Change Loy, and Xiaogang Wang||
+|[Open Images Dataset](https://github.com/openimages/dataset)|Google Inc||
+|[YouTube-BoundingBoxes Dataset](https://research.google.com/youtube-bb/index.html)|Google Research||
 
 ## Podcast, Talks, etc.
 
-+ [Talking Machines](http://www.thetalkingmachines.com/) hosted by Katherine Gorman and Ryan Adams.
-
-+ [Machine Learning & Computer Vision Talks](http://www.computervisiontalks.com/) by computervisiontalks.
-
-+ [How we're teaching computers to understand pictures](http://www.ted.com/talks/fei_fei_li_how_we_re_teaching_computers_to_understand_pictures?language=en) by Fei-Fei Li, Stanford University.
-
-+ [Deep Learning Community](https://plus.google.com/communities/112866381580457264725)
+|Title |Author or Source|Tags|
+|:---- |:---------------|:---|
+|[Talking Machines](http://www.thetalkingmachines.com/)|hosted by Katherine Gorman and Ryan Adams||
+|[Machine Learning & Computer Vision Talks](http://www.computervisiontalks.com/)|computervisiontalks||
+|[How we're teaching computers to understand pictures](http://www.ted.com/talks/fei_fei_li_how_we_re_teaching_computers_to_understand_pictures?language=en)|Fei-Fei Li, Stanford University||
+|[Deep Learning Community](https://plus.google.com/communities/112866381580457264725)|||
 
 ### Codes (not maintain anymore, still useful for beginners)
 
