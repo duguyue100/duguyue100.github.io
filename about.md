@@ -40,9 +40,10 @@ my current CV.
 ### 2.1 Research Interests
 
 +   Deep Neural Networks
-+   Event-based Learning
++   Event-based Learning and Processing
 +   Feature Learning
 +   Computer Vision
++   Robotic Vision
 +   Image Processing
 +   Artificial General Intelligence
 +   Theory of Everything
@@ -53,11 +54,14 @@ my current CV.
 2.  [macman](/projects-term/macman.html): Handy tools for Mac OS X terminal.
 3.  [en2pinyin](/projects-term/en2pinyin.html): Character-level Chinese text generation and translation.
 4.  [PySealer](/projects-term/pysealer.html): Yet another standalone Python application creator.
+5.  [DDD17+](projects-term/ddd17plus.html): 53-Hour End-To-End DAVIS Driving Dataset.
 
 ### 2.3 Completed Projects
 
 1.  [DVS Benchmark Datasets for Object Tracking, Action Recognition, and Object Recognition](/projects-term/dvs-dataset.html)
 2.  [Max-Pooling Operations in Deep Spiking Neural Networks](/projects-term/spike-max-pool.html)
+3.  [Learning to Navigate without a Map](projects-term/rlvision.html)
+4.  [Understanding Iterative Estimation in Gated Neural Networks](projects-term/iegnns.html)
 
 ## 3. Experiments
 
