@@ -65,7 +65,7 @@ _If you have no idea about Machine Learning and Scientific Computing, I suggest 
 |[neon](http://neon.nervanasys.com/docs/latest/index.html)|Nervana||
 |[cuDNN](https://developer.nvidia.com/cuDNN)|NVIDIA||
 |[ConvNetJS](http://cs.stanford.edu/people/karpathy/convnetjs/index.html)|Andrej Karpathy||
-|[DeepLearning4j](http://deeplearning4j.org/)||
+|[DeepLearning4j](http://deeplearning4j.org/)|||
 |[Chainer: Neural network framework](http://chainer.org/)|Preferred Networks, Inc||
 |[Blocks](https://github.com/mila-udem/blocks)|LISA Lab, University of Montreal||
 |[Fuel](https://github.com/mila-udem/fuel)|LISA Lab, University of Montreal||
