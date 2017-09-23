@@ -22,29 +22,20 @@ _If you have no idea about Machine Learning and Scientific Computing, I suggest 
 
 ## Theory of Computation, Learning Theory, Neuroscience, etc
 
-+ [Introduction to the Theory of Computation](http://www.cs.virginia.edu/~robins/Sipser_2006_Second_Edition_Problems.pdf) by Michael Sipser.
-
-+ [Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu/) by Stuart Russell and Peter Norvig.
-
-+ [Pattern Recognition and Machine Learning](http://research.microsoft.com/en-us/um/people/cmbishop/prml/) by Christopher Bishop.
-
-+ [Machine Learning: A probabilistic perspective](http://www.cs.ubc.ca/~murphyk/MLbook/) by Kevin Patrick Murphy.
-
-+ [CS229 Machine Learning Course Materials](http://cs229.stanford.edu/materials.html) by Andrew Ng at Stanford University.
-
-+ [Reinforcement Learning: An Introduction](http://webdocs.cs.ualberta.ca/~sutton/book/the-book.html) by Richard S. Sutton and Andrew G. Barto.
-
-+ [Probabilistic Graphical Models: Principles and Techniques](http://mitpress.mit.edu/books/probabilistic-graphical-models) by Daphne Koller and Nir Friedman.
-
-+ [Convex Optimization](http://stanford.edu/~boyd/cvxbook/) by Stephen Boyd and Lieven Vandenberghe.
-
-+ [An Introduction to Statistical Learning with application in R](http://www-bcf.usc.edu/~gareth/ISL/) by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani.
-
-+ [Neuronal Dynamics: From single neurons to networks and models of cognition](http://neuronaldynamics.epfl.ch/index.html) by Wulfram Gerstner, Werner M. Kistler, Richard Naud and Liam Paninski.
-
-+ [Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems](http://mitpress.mit.edu/books/theoretical-neuroscience) by Peter Dayan and Laurence F. Abbott.
-
-+ [Michael I. Jordan Reading List of Machine Learning](https://news.ycombinator.com/item?id=1055042) at Hacker News.
+|Title |Author or Source|Tags|
+|:---- |:---------------|:---|
+|[Introduction to the Theory of Computation](http://www.cs.virginia.edu/~robins/Sipser_2006_Second_Edition_Problems.pdf)|Michael Sipser||
+|[Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu/)|Stuart Russell and Peter Norvig||
+|[Pattern Recognition and Machine Learning](http://research.microsoft.com/en-us/um/people/cmbishop/prml/)|Christopher Bishop||
+|[Machine Learning: A probabilistic perspective](http://www.cs.ubc.ca/~murphyk/MLbook/)|Kevin Patrick Murphy||
+|[CS229 Machine Learning Course Materials](http://cs229.stanford.edu/materials.html)|Andrew Ng at Stanford University||
+|[Reinforcement Learning: An Introduction](http://webdocs.cs.ualberta.ca/~sutton/book/the-book.html)|Richard S. Sutton and Andrew G. Barto||
+|[Probabilistic Graphical Models: Principles and Techniques](http://mitpress.mit.edu/books/probabilistic-graphical-models)|Daphne Koller and Nir Friedman||
+|[Convex Optimization](http://stanford.edu/~boyd/cvxbook/)|Stephen Boyd and Lieven Vandenberghe||
+|[An Introduction to Statistical Learning with application in R](http://www-bcf.usc.edu/~gareth/ISL/)|Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani||
+|[Neuronal Dynamics: From single neurons to networks and models of cognition](http://neuronaldynamics.epfl.ch/index.html)|Wulfram Gerstner, Werner M. Kistler, Richard Naud and Liam Paninski||
+|[Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems](http://mitpress.mit.edu/books/theoretical-neuroscience)|Peter Dayan and Laurence F. Abbott||
+|[Michael I. Jordan Reading List of Machine Learning](https://news.ycombinator.com/item?id=1055042)|Hacker News||
 
 ## Fundamentals of Deep Learning
 
