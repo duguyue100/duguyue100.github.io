@@ -39,59 +39,39 @@ _If you have no idea about Machine Learning and Scientific Computing, I suggest 
 
 ## Fundamentals of Deep Learning
 
-+ [Deep Learning in Neural Networks: An Overview](http://people.idsia.ch/~juergen/deep-learning-overview.html) by Jürgen Schmidhuber.
-
-+ [Deep Learning Book](http://www.deeplearningbook.org/) by Yoshua Bengio, Ian Goodfellow and Aaron Courville.
-
-+ [Learning Deep Architectures for AI](http://www.iro.umontreal.ca/~bengioy/papers/ftml_book.pdf) by Yoshua Bengio
-
-+ [Representation Learning: A Review and New Perspectives](http://arxiv.org/abs/1206.5538) by Yoshua Bengio, Aaron Courville, Pascal Vincent.
-
-+ [Reading lists for new MILA students](https://docs.google.com/document/d/1IXF3h0RU5zz4ukmTrVKVotPQypChscNGf5k6E25HGvA/edit#heading=h.5r7p5dbrilt4) by MILA Lab, University of Montreal.
-
-+ [Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908) by Carl Doersch.
+|Title |Author or Source|Tags|
+|:---- |:---------------|:---|
+|[Deep Learning in Neural Networks: An Overview](http://people.idsia.ch/~juergen/deep-learning-overview.html)|Jürgen Schmidhuber||
+|[Deep Learning Book](http://www.deeplearningbook.org/)|Yoshua Bengio, Ian Goodfellow and Aaron Courville||
+|[Learning Deep Architectures for AI](http://www.iro.umontreal.ca/~bengioy/papers/ftml_book.pdf)|Yoshua Bengio||
+|[Representation Learning: A Review and New Perspectives](http://arxiv.org/abs/1206.5538)|Yoshua Bengio, Aaron Courville, Pascal Vincent||
+|[Reading lists for new MILA students](https://docs.google.com/document/d/1IXF3h0RU5zz4ukmTrVKVotPQypChscNGf5k6E25HGvA/edit#heading=h.5r7p5dbrilt4)|MILA Lab, University of Montreal||
+|[Tutorial on Variational Autoencoders](https://arxiv.org/abs/1606.05908)|Carl Doersch||
 
 ## Tutorials, Practical Guides, and Useful Software
 
-+ [Machine Learning](https://www.coursera.org/course/ml) by Andrew Ng.
-
-+ [Neural Networks for Machine Learning](https://www.coursera.org/course/neuralnets) by Geoffrey Hinton.
-
-+ [Deep Learning Tutorial](http://deeplearning.net/tutorial/) by LISA Lab, University of Montreal.
-
-+ [Unsupervised Feature Learning and Deep Learning Tutorial](http://deeplearning.stanford.edu/tutorial/) by AI Lab, Stanford University.
-
-+ [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/) by Stanford University.
-
-+ [CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/) by Stanford University.
-
-+ [Theano](http://deeplearning.net/software/theano/) by LISA Lab, University of Montreal.
-
-+ [PyLearn2](http://deeplearning.net/software/pylearn2/) by LISA Lab, University of Montreal.
-
-+ [Caffe](http://caffe.berkeleyvision.org/) by Berkeley Vision and Learning Center (BVLC) and community contributor Yangqing Jia.
-
-+ [Torch 7](http://torch.ch/)
-
-+ [neon](http://neon.nervanasys.com/docs/latest/index.html) by Nervana.
-
-+ [cuDNN](https://developer.nvidia.com/cuDNN) by NVIDIA.
-
-+ [ConvNetJS](http://cs.stanford.edu/people/karpathy/convnetjs/index.html) by Andrej Karpathy.
-
-+ [DeepLearning4j](http://deeplearning4j.org/)
-
-+ [Chainer: Neural network framework](http://chainer.org/) by Preferred Networks, Inc.
-
-+ [Blocks](https://github.com/mila-udem/blocks) by LISA Lab, University of Montreal.
-
-+ [Fuel](https://github.com/mila-udem/fuel) by LISA Lab, University of Montreal.
-
-+ [Brainstorm](https://github.com/IDSIA/brainstorm) by IDSIA, Switzerland.
-
-+ [Keras](https://keras.io/) by fchollet and active contributors.
-
-+ [Lasagne](http://lasagne.readthedocs.io/en/latest/) by Lasagne.
+|Title |Author or Source|Tags|
+|:---- |:---------------|:---|
+|[Machine Learning](https://www.coursera.org/course/ml)|Andrew Ng||
+|[Neural Networks for Machine Learning](https://www.coursera.org/course/neuralnets)|Geoffrey Hinton||
+|[Deep Learning Tutorial](http://deeplearning.net/tutorial/)|LISA Lab, University of Montreal||
+|[Unsupervised Feature Learning and Deep Learning Tutorial](http://deeplearning.stanford.edu/tutorial/)|AI Lab, Stanford University||
+|[CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)|Stanford University||
+|[CS224d: Deep Learning for Natural Language Processing](http://cs224d.stanford.edu/)|Stanford University||
+|[Theano](http://deeplearning.net/software/theano/)|LISA Lab, University of Montreal||
+|[PyLearn2](http://deeplearning.net/software/pylearn2/)|LISA Lab, University of Montreal||
+|[Caffe](http://caffe.berkeleyvision.org/)|Berkeley Vision and Learning Center (BVLC) and community contributor Yangqing Jia||
+|[Torch 7](http://torch.ch/)|active contributors||
+|[neon](http://neon.nervanasys.com/docs/latest/index.html)|Nervana||
+|[cuDNN](https://developer.nvidia.com/cuDNN)|NVIDIA||
+|[ConvNetJS](http://cs.stanford.edu/people/karpathy/convnetjs/index.html)|Andrej Karpathy||
+|[DeepLearning4j](http://deeplearning4j.org/)||
+|[Chainer: Neural network framework](http://chainer.org/)|Preferred Networks, Inc||
+|[Blocks](https://github.com/mila-udem/blocks)|LISA Lab, University of Montreal||
+|[Fuel](https://github.com/mila-udem/fuel)|LISA Lab, University of Montreal||
+|[Brainstorm](https://github.com/IDSIA/brainstorm)|IDSIA, Switzerland||
+|[Keras](https://keras.io/)|fchollet and active contributors||
+|[Lasagne](http://lasagne.readthedocs.io/en/latest/)|Lasagne||
 
 ## Literature in Deep Learning and Feature Learning
 
