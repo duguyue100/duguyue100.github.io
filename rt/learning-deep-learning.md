@@ -12,11 +12,13 @@ __Remarks from 2016-11-22__ I created this list over a year ago. And during this
 
 _If you have no idea about Machine Learning and Scientific Computing, I suggest you learn the following materials while you are reading Machine Learning or Deep Learning books. You don't have to master these materials, but basic understanding is important. It's hard to open a meaningful conversation if the person has no idea about matrix or single variable calculus._
 
-+ [Introduction to Algorithms](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/) by Erik Demaine and Srinivas Devadas.
-+ [Single Variable Calculus](http://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/) by David Jerison.
-+ [Multivariable Calculus](http://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/) by Denis Auroux.
-+ [Differential Equations](http://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/) by Arthur Mattuck, Haynes Miller, Jeremy Orloff, John Lewis.
-+ [Linear Algebra](http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/) by Gilbert Strang.
+|Title |Author or Source|Tags|
+|:---- |:---------------|:---|
+|[Introduction to Algorithms](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)|Erik Demaine and Srinivas Devadas||
+|[Single Variable Calculus](http://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/)|David Jerison||
+|[Multivariable Calculus](http://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/)|Denis Auroux||
+|[Differential Equations](http://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/)|Arthur Mattuck, Haynes Miller, Jeremy Orloff, John Lewis||
+|[Linear Algebra](http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)|Gilbert Strang||
 
 ## Theory of Computation, Learning Theory, Neuroscience, etc
 
