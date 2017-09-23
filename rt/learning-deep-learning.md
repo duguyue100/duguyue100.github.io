@@ -77,53 +77,23 @@ _If you have no idea about Machine Learning and Scientific Computing, I suggest 
 
 _Deep Learning is a fast-moving community. Therefore the line between "Recent Advances" and "Literature that matter" is kind of blurred. Here I collected articles that are either introducing fundamental algorithms, techniques or highly cited by the community._
 
-+ [Automatic Speech Recognition - A Deep Learning Approach](http://link.springer.com/book/10.1007%2F978-1-4471-5779-3) by Dong Yu and Li Deng (_Published by Springer, no Open Access_)
-
-+ [Backpropagation Applied to Handwritten Zip Code Recognition](https://www.ics.uci.edu/~welling/teaching/273ASpring09/lecun-89e.pdf) by Y. LeCun, B. Boser, J. S. Denker, D. Henderson, R. E. Howard, W. Hubbard and L. D. Jackel.
-
-+ [Comparison of Training Methods for Deep Neural Networks](http://arxiv.org/abs/1504.06825) by Patrick O. Glauner.
-
-+ [Deep Learning](http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html) by Yann LeCun,	Yoshua Bengio, Geoffrey Hinton. (NO FREE COPY AVAILABLE)
-
-+ [Distributed Representations of Words and Phrases and their Compositionality](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf) by Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado and Jeffrey Dean.
-
-+ [Efficient Estimation of Word Representations in Vector Space](http://arxiv.org/abs/1301.3781) by Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean.
-
-+ [Efficient Large Scale Video Classification](http://arxiv.org/abs/1505.06250) by Balakrishnan Varadarajan, George Toderici, Sudheendra Vijayanarasimhan, Apostol Natsev.
-
-+ [Foundations and Trends in Signal Processing: DEEP LEARNING --- Methods and Applications](http://research.microsoft.com/pubs/219984/BOOK2014.pdf) by Li Deng and Dong Yu.
-
-+ [From Frequency to Meaning: Vector Space Models of Semantics](http://www.jair.org/media/2934/live-2934-4846-jair.pdf) by Peter D. Turney and Patrick Pantel.
-
-+ [LSTM: A Search Space Odyssey](http://arxiv.org/abs/1503.04069) by Klaus Greff, Rupesh Kumar Srivastava, Jan Koutník, Bas R. Steunebrink, Jürgen Schmidhuber.
-
-+ [Supervised Sequence Labelling with Recurrent Neural Networks](http://www.cs.toronto.edu/~graves/preprint.pdf) by Alex Graves.
+|Title |Author or Source|Tags|
+|:---- |:---------------|:---|
+|[Automatic Speech Recognition - A Deep Learning Approach](http://link.springer.com/book/10.1007%2F978-1-4471-5779-3)|Dong Yu and Li Deng (_Published by Springer, no Open Access_)||
+|[Backpropagation Applied to Handwritten Zip Code Recognition](https://www.ics.uci.edu/~welling/teaching/273ASpring09/lecun-89e.pdf)|Y. LeCun, B. Boser, J. S. Denker, D. Henderson, R. E. Howard, W. Hubbard and L. D. Jackel||
+|[Comparison of Training Methods for Deep Neural Networks](http://arxiv.org/abs/1504.06825)|Patrick O. Glauner||
+|[Deep Learning](http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html)|Yann LeCun,	Yoshua Bengio, Geoffrey Hinton. (NO FREE COPY AVAILABLE)||
+|[Distributed Representations of Words and Phrases and their Compositionality](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)|Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado and Jeffrey Dean||
+|[Efficient Estimation of Word Representations in Vector Space](http://arxiv.org/abs/1301.3781)|Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean||
+|[Efficient Large Scale Video Classification](http://arxiv.org/abs/1505.06250)|Balakrishnan Varadarajan, George Toderici, Sudheendra Vijayanarasimhan, Apostol Natsev||
+|[Foundations and Trends in Signal Processing: DEEP LEARNING --- Methods and Applications](http://research.microsoft.com/pubs/219984/BOOK2014.pdf)|Li Deng and Dong Yu||
+|[From Frequency to Meaning: Vector Space Models of Semantics](http://www.jair.org/media/2934/live-2934-4846-jair.pdf)|Peter D. Turney and Patrick Pantel||
+|[LSTM: A Search Space Odyssey](http://arxiv.org/abs/1503.04069)|Klaus Greff, Rupesh Kumar Srivastava, Jan Koutník, Bas R. Steunebrink, Jürgen Schmidhuber||
+|[Supervised Sequence Labelling with Recurrent Neural Networks](http://www.cs.toronto.edu/~graves/preprint.pdf)|Alex Graves||
 
 ## Recent Must-Read Advances in Deep Learning
 
 _Most of papers here are produced in 2014 and after. Survey papers or review papers are not included._
-
-_The reconstruction of this section is taken place. Current plan is categoried them in application areas._
-
-<div>
-<hr>
-</div>
-
-_Each article is categorized based on its primary research goal. Each article could also have few tags that show the relevent application areas._
-
-### Machine Learning
-
-### Computer Vision
-
-### Natural Language Processing
-
-### Speech Processing
-
-### Data Processing
-
-<div>
-<hr>
-</div>
 
 + [A Convolutional Attention Network for Extreme Summarization of Source Code](http://arxiv.org/abs/1602.03001) by Miltiadis Allamanis, Hao Peng, Charles Sutton.
 
