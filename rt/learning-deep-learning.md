@@ -211,7 +211,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[Deep Networks Resemble Human Feed-forward Vision in Invariant Object Recognition](http://arxiv.org/abs/1508.03929)|Saeed Reza Kheradpisheh, Masoud Ghodrati, Mohammad Ganjtabesh, Timothée Masquelier||
 |[Deep Networks with Internal Selective Attention through Feedback Connections](http://arxiv.org/abs/1407.3068)|Marijn Stollenga, Jonathan Masci, Faustino Gomez, Jürgen Schmidhuber||
 |[Deep Neural Networks predict Hierarchical Spatio-temporal Cortical Dynamics of Human Visual Object Recognition](http://arxiv.org/abs/1601.02970)|Radoslaw M. Cichy, Aditya Khosla, Dimitrios Pantazis, Antonio Torralba, Aude Oliva||
-|[DeepProposals: Hunting Objects and Actions|Cascading Deep Convolutional Layers](https://arxiv.org/abs/1606.04702)|Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool||
+|[DeepProposals: Hunting Objects and Actions by Cascading Deep Convolutional Layers](https://arxiv.org/abs/1606.04702)|Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool||
 |[Deep Recurrent Q-Learning for Partially Observable MDPs](http://arxiv.org/abs/1507.06527)|Matthew Hausknecht, Peter Stone||
 |[Deep Residual Learning for Image Recognition](http://arxiv.org/abs/1512.03385)|Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun||
 |[Deeply-Recursive Convolutional Network for Image Super-Resolution.pdf](http://arxiv.org/abs/1511.04491)|Jiwon Kim, Jung Kwon Lee, Kyoung Mu Lee||
@@ -326,7 +326,7 @@ _Most of papers here are produced in 2014 and after. Survey papers or review pap
 |[Learning Spatiotemporal Features with 3D Convolutional Networks](http://arxiv.org/abs/1412.0767)|Du Tran, Lubomir Bourdev, Rob Fergus, Lorenzo Torresani, Manohar Paluri||
 |[Learning to Communicate to Solve Riddles with Deep Distributed Recurrent Q-Networks](http://arxiv.org/abs/1602.02672)|Jakob N. Foerster, Yannis M. Assael, Nando de Freitas, Shimon Whiteson||
 |[Learning to Compose Neural Networks for Question Answering](http://arxiv.org/abs/1601.01705)|Jacob Andreas, Marcus Rohrbach, Trevor Darrell, Dan Klein||
-|[Learning to learn by gradient descent|gradient descent](https://arxiv.org/abs/1606.04474)|Marcin Andrychowicz, Misha Denil, Sergio Gomez, Matthew W. Hoffman, David Pfau, Tom Schaul, Nando de Freitas||
+|[Learning to learn by gradient descent by gradient descent](https://arxiv.org/abs/1606.04474)|Marcin Andrychowicz, Misha Denil, Sergio Gomez, Matthew W. Hoffman, David Pfau, Tom Schaul, Nando de Freitas||
 |[Learning to Linearize Under Uncertainty](http://arxiv.org/abs/1506.03011)|Ross Goroshin, Michael Mathieu, Yann LeCun||
 |[Learning to reinforcement learn](https://arxiv.org/abs/1611.05763)|Jane X Wang, Zeb Kurth-Nelson, Dhruva Tirumala, Hubert Soyer, Joel Z Leibo, Remi Munos, Charles Blundell, Dharshan Kumaran, Matt Botvinick||
 |[Learning to See by Moving](http://arxiv.org/abs/1505.01596)|Pulkit Agrawal, Joao Carreira, Jitendra Malik||
