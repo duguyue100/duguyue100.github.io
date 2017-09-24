@@ -14,7 +14,7 @@ knowledge.
 
 In general, 
 
-The old version of this post is now hosted at [here](./learning-deep-learning-backup).
+The old version of this post is now hosted at [here](/learning-deep-learning-backup).
 I will preserve this legacy version only for lookup reasons.
 
 ## For Novice
