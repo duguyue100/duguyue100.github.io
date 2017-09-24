@@ -6,8 +6,6 @@ permalink: /learning-deep-learning/
 
 There are lots of awesome reading lists or posts that summarized materials related to Deep Learning. So why would I commit another one? Well, the primary objective is to develop a complete reading list that allows readers to build a solid academic and practical background of Deep Learning. And this list is developed while I'm preparing my Deep Learning workshop. My research is related to Deep Neural Networks (DNNs) in general. Hence, this posts tends to summary contributions in DNNs instead of generative models.
 
-__Remarks from 2016-11-22__ I created this list over a year ago. And during this year, a lot of things happened, you can sense the changes by looking at this super long reading list. Now I'm up to refactor, I'm gonna restructure this unorganized list to an organized one.
-
 ## For Novice
 
 _If you have no idea about Machine Learning and Scientific Computing, I suggest you learn the following materials while you are reading Machine Learning or Deep Learning books. You don't have to master these materials, but basic understanding is important. It's hard to open a meaningful conversation if the person has no idea about matrix or single variable calculus._
