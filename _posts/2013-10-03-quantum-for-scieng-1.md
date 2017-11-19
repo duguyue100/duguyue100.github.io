@@ -6,9 +6,9 @@ summary: Quantum Mechanics Learning Notes
 categories: OldTimes
 ---
 
-###1. Background Mathematics Review
+### 1. Background Mathematics Review
 
-####1.1. Symbols, Greek letters, algebra notations, functions
+#### 1.1. Symbols, Greek letters, algebra notations, functions
 
 Relational symbols 
 
@@ -54,7 +54,7 @@ Trigonometric functions:
 + Secant: $$ {\sec\theta=\frac{1}{\cos\theta}}$$,
 + Cotangent: $$ {\cot\theta=\frac{\cos\theta}{\sin\theta}}$$. 
 
-####1.2. Power logs, exponentials, complex numbers
+#### 1.2. Power logs, exponentials, complex numbers
 
 
 **Definition 1 (Logarithms)** A chain of $$ {n}$$ numbers $$ {g}$$ multiplied together is $$ {g\times g\times\ldots\times g=g^{n}}$$ and $$ {n}$$ is the "log to the base $$ {g}$$" of $$ {g^{n}}$$: $$ {n=\log_{n}(g^{n})}$$
@@ -97,7 +97,7 @@ $$g=\vert g\vert\frac{a+ib}{\vert g\vert}=\vert g\vert(\cos\theta+i\sin\theta)=\
 
 $$\left[\exp\left(\frac{2\pi i}{n}\right)^{n}\right]=\exp\left(\frac{2\pi i}{n}\times n\right)=\exp(2\pi i)=1$$
 
-####1.3. Coordinates and vectors
+#### 1.3. Coordinates and vectors
 
 *Right-handed axes*: using your right hand, *Thumb*: $$ {x}$$, *Index ("first") finger*: $$ {y}$$, *middle finger*: $$ {z}$$. No matter how you now rotate your whole hand, the axes remain right-handed.
 
@@ -167,7 +167,7 @@ $$\frac{d}{dx}\left(\frac{u}{v}\right)=\frac{v\frac{du}{dx}-u\frac{dv}{dx}}{v^{2
 
 $$\frac{d}{dx}f(g(x))=\left(\frac{df}{dg}\right)\times\left(\frac{dg}{dx}\right)$$
 
-####1.5. Partial differentiation
+#### 1.5. Partial differentiation
 
 Suppose we have a function $$ {f(x,y)}$$ of two variables. Then we have the gradient of $$ {f}$$ as a function of $$ {x}$$ with $$ {y}$$ held constant, which we write
 
@@ -189,7 +189,7 @@ Total derivative
 
 $$\frac{df}{dt}=\left.\frac{\partial f}{\partial x}\right\vert_{y}\left(\frac{dx}{dt}\right)+\left.\frac{\partial f}{\partial y}\right\vert_{x}\left(\frac{dy}{dt}\right)$$
 
-####1.6. Ordinary and partial differential equations
+#### 1.6. Ordinary and partial differential equations
 
 A differential equation involves derivatives of some function. It is easy to verify solutions, but it can be harder to find them.
 
@@ -239,7 +239,7 @@ The gradient of a function $$ {f(x,y,z)}$$ is
 
 $$\nabla f\equiv\text{grad }f=\vec{i}\frac{\partial f}{\partial x}+\vec{j}\frac{\partial f}{\partial y}+\vec{k}\frac{\partial f}{\partial z}$$
 
-####1.7. Matrices
+#### 1.7. Matrices
 
 The leading diagonal of a matrix is the diagonal from top left to bottom right.
 
@@ -261,7 +261,7 @@ $$(\hat{A}\hat{B})^{\dagger}=\hat{B}^{\dagger}\hat{A}^{\dagger}$$
 
 For a matrix, if it has an inverse $$ {\hat{A}^{-1}}$$, it has the property $$ {\hat{A}^{-1}\hat{A}=\hat{I}}$$
 
-####1.8. Linear algebra, matrices and eigen equations
+#### 1.8. Linear algebra, matrices and eigen equations
 
 The determinant of a matrix $$ {\hat{A}}$$ is written in two notations
 
@@ -275,9 +275,9 @@ where $$ {d}$$ is a vector, $$ {\lambda}$$ is a number, and $$ {\hat{A}}$$ is a 
 
 If $$ {\hat{B}=\hat{A}-\lambda\hat{I}}$$ have a inverse, then there is no non-zero solution $$ {d}$$. Otherwise, there is non-zero solution.
 
-###2. Introduction to Quantum Mechanics
+### 2. Introduction to Quantum Mechanics
 
-####2.1. Plank's Proposal (December 14th, 1900)
+#### 2.1. Plank's Proposal (December 14th, 1900)
 
 Light is emitted in quanta of energy
 
@@ -287,17 +287,17 @@ where $$ {\nu}$$ (Greek letter "nu") is the light's frequency in Hz (Hertz) and 
 
 $$h=6.62606957\times 10^{-34}J\cdot s$$
 
-####2.2. Einstein's Proposal (1905)
+#### 2.2. Einstein's Proposal (1905)
 
 Light is actually made up out of particles: photons, of energy $$ {E=h\nu}$$. The kinetic energy of the emitted electrons is the energy left over after the electron has been "lifted" over the work function barrier.
 
-####2.3. Bohr model of the hydrogen atom
+#### 2.3. Bohr model of the hydrogen atom
 
 A small negatively charged electron orbits small positively charged core (the proton) but with electrostatic attraction. Key assumption (Neils Bohr, 1913) is angular momentum is "quantized" in units of Plank's constant, $$ {h}$$ over $$ {2\pi}$$
 
 $$\hbar\equiv\frac{h}{2\pi}$$
 
-####2.4. de Broglie hypothesis
+#### 2.4. de Broglie hypothesis
 
 A particle with mass also behaves as a wave with wavelength
 
@@ -305,7 +305,7 @@ $$\lambda=\frac{h}{p}$$
 
 where $$ {p}$$ is the particle's momentum.
 
-####2.5. Quantum mechanics formation
+#### 2.5. Quantum mechanics formation
 
 Werner Heisenberg (1925) proposed matrix formulation of quantum mechanics.
 
@@ -313,9 +313,9 @@ Erwin Schrodinger (1926) proposed wave equation.
 
 More key contributions by Max Born, Pascual Jordan, Paul Dirac, John von Neumann ...
 
-###3. Classical Mechanics, Oscillations and Waves
+### 3. Classical Mechanics, Oscillations and Waves
 
-####3.1. Elementary classical mechanics
+#### 3.1. Elementary classical mechanics
 
 For a particle of mass $$ {m}$$ which is a vector because it has direction is
 
@@ -351,7 +351,7 @@ We can generalize the relation between force and potential to three dimensions w
 
 $$\vec{F}=-\nabla V=-\left[\frac{\partial V}{\partial x}\vec{i}+\frac{\partial V}{\partial y}\vec{j}+\frac{\partial V}{\partial z}\vec{k}\right]$$
 
-####3.2. Oscillations
+#### 3.2. Oscillations
 
 A simple spring will have a restoring force $$ {F}$$ acting on the mass $$ {M}$$ proportional to the amount $$ {y}$$ by which it is stretched. For some "spring constant" $$ {K}$$
 
@@ -375,8 +375,8 @@ $$\frac{d^{2}y}{dt^{2}}=-\omega^{2}y$$
 
 is called a *simple harmonic oscillator*.
 
-####3.3. The classical wave equation
+#### 3.3. The classical wave equation
 
 $$\displaystyle  \frac{\partial^{2} y}{\partial z^{2}}-\frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}}=0$$
 
-where velocity $$ {v=\sqrt{T/\rho}}$$
+where velocity $${v=\sqrt{T/\rho}}$$
