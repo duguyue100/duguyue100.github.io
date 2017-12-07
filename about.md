@@ -81,9 +81,11 @@ my current CV.
 
 ### References
 
+0. B. Rueckauer, I-A. Lungu, Y. Hu, M. Pfeiffer, S-C. Liu, "Conversion of Continuous-Valued Deep Networks to Efficient Event-Driven Networks for Image Classification", Frontiers in Neuroscience, 11:682, 2017.
+
 0.  B. Reckauer, I-A. Lungu, Y. Hu, M. Pfeiffer, "Theory and Conversion of Analog to Spiking Convolutional Neural Netowrks" in _Computing with Spikes NIPS 2016 Workshop_, Barcelona, Spain, 2016.
 
-0.  Y. Hu, H. Liu, M. Pfeiffer, T. Delbruck, "DVS Benchmark Datasets for Object Tracking, Action Recognition and Object Recognition", Frontiers in Neuromorphic Engineering, 10:405, 2016.
+0.  Y. Hu, H. Liu, M. Pfeiffer, T. Delbruck, "DVS Benchmark Datasets for Object Tracking, Action Recognition and Object Recognition", Frontiers in Neuroscience, 10:405, 2016.
 
 0.  DNT. How, Y. Hu, KSM. Sahari, CK. Loo, " Multiple Sequence Behavior Recognition on Humanoid Robot using Long Short-term Memory (LSTM)" in _2014 IEEE International Symposium on Robotics and Manufacturing Automation (ROMA 2014)_, Kuala Lumpur, Malaysia, 2014.
 
