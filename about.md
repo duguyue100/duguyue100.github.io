@@ -79,7 +79,9 @@ my current CV.
 
 `Low Network Speed` `Cannot Explain Myself Precisely` `Another Meeting Delay` `Know-it-all` `Fake Social Manners` `Around with People who I don't like` `All kinds of reunion` `Tourism` `Ambush my back` `Exams` `Intentional delay` `Birthday` `Sending gifts` `Things out of control` `New guy` `Meaningless date` `Boring lecture` `Select gifts` `Blind date` `Season Finale` `Have no idea about what's next` `Coders who don't follow standards` `Person who refuses to learn useful things`
 
-### References
+### Publications
+
+0. MX. Tan, Y. Hu, NI. Nikolov, RHR. Hahnloser, "wubi2en: Character-level Chinese-English Translation through ASCII Encoding", arXiv:abs/1805.03330, 2018.
 
 0. B. Rueckauer, I-A. Lungu, Y. Hu, M. Pfeiffer, S-C. Liu, "Conversion of Continuous-Valued Deep Networks to Efficient Event-Driven Networks for Image Classification", Frontiers in Neuroscience, 11:682, 2017.
 
