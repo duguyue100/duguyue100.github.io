@@ -4,7 +4,7 @@ email:       duguyue100@gmail.com
 author:      Yuhuang Hu
 description: "A proud WE-ARE-NOT-DOOMED fan."
 baseurl:     ""
-url:         "http://dgyblog.com"
+url:         "https://dgyblog.com"
 date_format: "%b %-d, %Y"
 
 # Google services
