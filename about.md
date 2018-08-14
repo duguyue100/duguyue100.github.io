@@ -24,13 +24,15 @@ permalink: /about/
 
 ## 1. Introduction
 
-<div>
-    <center>
-        <img src="{{ site.baseurl }}/images/couplet-left.png" align="middle" border="3">
-        <img src="{{ site.baseurl }}/images/about-img.png" align="middle">
-        <img src="{{ site.baseurl }}/images/couplet-right.png" align="middle" border="3">
-    </center>
-</div>
+<!-- <div> -->
+<!--     <center> -->
+<!--         <img src="{{ site.baseurl }}/images/couplet-left.png" align="middle" border="3"> -->
+<!--         <img src="{{ site.baseurl }}/images/about-img.png" align="middle"> -->
+<!--         <img src="{{ site.baseurl }}/images/couplet-right.png" align="middle" border="3"> -->
+<!--     </center> -->
+<!-- </div> -->
+
+I am a Skeptic, (fake) Hiker, (fake) Biker, (not much) TV addict, ML protégé, AGI supporter, NOT-DOOMED believer, LaTeX tutor, INI Ph.D. student.
 
 For more information, please click [here](/res/current_cv.html) for
 my current CV.
