@@ -63,6 +63,10 @@ my current CV.
 3.  [Learning to Navigate without a Map](projects-term/rlvision.html)
 4.  [Understanding Iterative Estimation in Gated Neural Networks](projects-term/iegnns.html)
 
+### 2.4 TypeRacer
+
+<a href="https://data.typeracer.com/pit/profile?user=duguyue100&ref=badge" target="_top"><img src="https://data.typeracer.com/misc/badge?user=duguyue100" border="0" alt="TypeRacer.com scorecard for user duguyue100"/></a>
+
 ## 3. Experiments
 
 `Python` `C/C++` `GPU` `HTML` `Git` `SVN` `Eclipse` `Emacs` `Vim`
