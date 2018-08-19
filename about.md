@@ -54,7 +54,6 @@ my current CV.
 
 1.  [Learning Deep Learning](/learning-deep-learning): A Deep Learning reading list.
 2.  [macman](/projects-term/macman.html): Handy tools for Mac OS X terminal.
-3.  [en2pinyin](/projects-term/en2pinyin.html): Character-level Chinese text generation and translation.
 4.  [PySealer](/projects-term/pysealer.html): Yet another standalone Python application creator.
 5.  [DDD17+](projects-term/ddd17plus.html): 53-Hour End-To-End DAVIS Driving Dataset.
 
@@ -64,6 +63,7 @@ my current CV.
 2.  [Max-Pooling Operations in Deep Spiking Neural Networks](/projects-term/spike-max-pool.html)
 3.  [Learning to Navigate without a Map](projects-term/rlvision.html)
 4.  [Understanding Iterative Estimation in Gated Neural Networks](projects-term/iegnns.html)
+5.  [Character-level Chinese-English Translation through ASCII Encoding](/projects-term/en2pinyin.html)
 
 ### 2.4 TypeRacer
 
