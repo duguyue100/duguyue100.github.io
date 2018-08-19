@@ -87,7 +87,7 @@ my current CV.
 
 ### Publications
 
-0. N.I. Nikolov, Y. Hu, MX. Tan, R.H.R. Hahnloser, "Character-level Chinese-English Translation through ASCII Encoding" in _Third Conference on Machine Translation (WMT18)_, Brussels, Belgium, 2018.
+0. N.I. Nikolov, Y. Hu, MX. Tan, R.H.R. Hahnloser, "Character-level Chinese-English Translation through ASCII Encoding" in _The Third Conference on Machine Translation (WMT18)_, Brussels, Belgium, 2018.
 
 0. B. Rueckauer, I-A. Lungu, Y. Hu, M. Pfeiffer, S-C. Liu, "Conversion of Continuous-Valued Deep Networks to Efficient Event-Driven Networks for Image Classification", Frontiers in Neuroscience, 11:682, 2017.
 
