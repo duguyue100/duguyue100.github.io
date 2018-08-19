@@ -87,7 +87,7 @@ my current CV.
 
 ### Publications
 
-0. NI. Nikolov, Y. Hu, MX. Tan, RHR. Hahnloser, "Character-level Chinese-English Translation through ASCII Encoding" in _Third Conference on Machine Translation (WMT18)_, Brussels, Belgium, 2018.
+0. N.I. Nikolov, Y. Hu, MX. Tan, R.H.R. Hahnloser, "Character-level Chinese-English Translation through ASCII Encoding" in _Third Conference on Machine Translation (WMT18)_, Brussels, Belgium, 2018.
 
 0. B. Rueckauer, I-A. Lungu, Y. Hu, M. Pfeiffer, S-C. Liu, "Conversion of Continuous-Valued Deep Networks to Efficient Event-Driven Networks for Image Classification", Frontiers in Neuroscience, 11:682, 2017.
 
@@ -95,11 +95,11 @@ my current CV.
 
 0.  Y. Hu, H. Liu, M. Pfeiffer, T. Delbruck, "DVS Benchmark Datasets for Object Tracking, Action Recognition and Object Recognition", Frontiers in Neuroscience, 10:405, 2016.
 
-0.  DNT. How, Y. Hu, KSM. Sahari, CK. Loo, " Multiple Sequence Behavior Recognition on Humanoid Robot using Long Short-term Memory (LSTM)" in _2014 IEEE International Symposium on Robotics and Manufacturing Automation (ROMA 2014)_, Kuala Lumpur, Malaysia, 2014.
+0.  D.N.T. How, Y. Hu, K.S.M. Sahari, C.K. Loo, " Multiple Sequence Behavior Recognition on Humanoid Robot using Long Short-term Memory (LSTM)" in _2014 IEEE International Symposium on Robotics and Manufacturing Automation (ROMA 2014)_, Kuala Lumpur, Malaysia, 2014.
 
-0.  Y. Hu, DNT. How, KSM. Sahari, CK. Loo, "Learning Sufficient Representation for Spatio-temporal Deep Network Using Information Filter" in _2014 IEEE/SICE International Symposium on System Integration_, Korakuen Campus, Chuo University, Tokyo, Japan, 2014.
+0.  Y. Hu, D.N.T. How, K.S.M. Sahari, C.K. Loo, "Learning Sufficient Representation for Spatio-temporal Deep Network Using Information Filter" in _2014 IEEE/SICE International Symposium on System Integration_, Korakuen Campus, Chuo University, Tokyo, Japan, 2014.
 
-0.  Y. Hu, CK. Loo, "A Generalized Quantum-Inspired Decision Making Model for Intelligent Robot", _The Scientific World Journal_, vol. 2014, Article ID 240983, 8 pages, 2014.
+0.  Y. Hu, C.K. Loo, "A Generalized Quantum-Inspired Decision Making Model for Intelligent Robot", _The Scientific World Journal_, vol. 2014, Article ID 240983, 8 pages, 2014.
 
-0.  Y. Hu, WL. Hoo, CS. Chan, "Clustering Algorithms for Scene Classification --- A Performance Comparison between K-means; Fuzzy c-means and GMM" in _IIEEJ 3rd Image Electronics and Visual Computing Workshop_, Kuching, Malaysia, 2012, IIEEJ.
+0.  Y. Hu, W.L. Hoo, C.S. Chan, "Clustering Algorithms for Scene Classification --- A Performance Comparison between K-means; Fuzzy c-means and GMM" in _IIEEJ 3rd Image Electronics and Visual Computing Workshop_, Kuching, Malaysia, 2012, IIEEJ.
 {: reversed="reversed"}
