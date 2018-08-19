@@ -87,7 +87,7 @@ my current CV.
 
 ### Publications
 
-0. MX. Tan, Y. Hu, NI. Nikolov, RHR. Hahnloser, "wubi2en: Character-level Chinese-English Translation through ASCII Encoding", arXiv:abs/1805.03330, 2018.
+0. NI. Nikolov, Y. Hu, MX. Tan, RHR. Hahnloser, "Character-level Chinese-English Translation through ASCII Encoding" in _Third Conference on Machine Translation (WMT18)_, Brussels, Belgium, 2018.
 
 0. B. Rueckauer, I-A. Lungu, Y. Hu, M. Pfeiffer, S-C. Liu, "Conversion of Continuous-Valued Deep Networks to Efficient Event-Driven Networks for Image Classification", Frontiers in Neuroscience, 11:682, 2017.
 
