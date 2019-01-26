@@ -87,6 +87,10 @@ my current CV.
 
 ### Publications
 
+0. Y. Hu, T. Delbruck, S-C. Liu, "Incremental Learning Meets Reduced Precision Networks" in _2019 IEEE International Symposium on Circuits and Systems (ISCAS)_, Sapporo, Japan, 2019.
+
+0. Y. Hu, H.M. Chen, T. Delbruck, "Slasher: Stadium racer for end-to-end event-based camera autonomous driving experiments" in _2019 IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)_, Hsinchu, Taiwan, 2019.
+
 0. N.I. Nikolov, Y. Hu, MX. Tan, R.H.R. Hahnloser, "Character-level Chinese-English Translation through ASCII Encoding" in _The Third Conference on Machine Translation (WMT18)_, Brussels, Belgium, 2018.
 
 0. B. Rueckauer, I-A. Lungu, Y. Hu, M. Pfeiffer, S-C. Liu, "Conversion of Continuous-Valued Deep Networks to Efficient Event-Driven Networks for Image Classification", Frontiers in Neuroscience, 11:682, 2017.
