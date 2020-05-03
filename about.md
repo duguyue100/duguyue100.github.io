@@ -87,6 +87,12 @@ my current CV.
 
 ### Publications
 
+0. Y. Gao, N.I. Nikolov, Y. Hu, R.H.R. Hahnloser, "Character-Level Translation with Self-attention" in _2020 Annual Conference of the Association for Computational Linguistics_, Seattle, Washington, 2020.
+
+0. I.A. Lungu, Y. Hu, S-C. Liu, "Multi-Resolution Siamese Networks for One-Shot Learning" in _2020 2nd IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)_, Genoa, Italy, 2020.
+
+0. S. Wang, Y. Hu, J. Burgués, S. Macro, S-C. Liu, "Prediction of Gas Concentration Using Gated Recurrent Neural Networks" in _2020 2nd IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)_, Genoa, Italy, 2020.
+
 0. Y. Hu, T. Delbruck, S-C. Liu, "Incremental Learning Meets Reduced Precision Networks" in _2019 IEEE International Symposium on Circuits and Systems (ISCAS)_, Sapporo, Japan, 2019.
 
 0. Y. Hu, H.M. Chen, T. Delbruck, "Slasher: Stadium racer for end-to-end event-based camera autonomous driving experiments" in _2019 IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)_, Hsinchu, Taiwan, 2019.
