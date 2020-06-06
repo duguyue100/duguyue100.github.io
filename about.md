@@ -54,8 +54,7 @@ my current CV.
 
 1.  [Learning Deep Learning](/learning-deep-learning): A Deep Learning reading list.
 2.  [macman](/projects-term/macman.html): Handy tools for Mac OS X terminal.
-4.  [PySealer](/projects-term/pysealer.html): Yet another standalone Python application creator.
-5.  [DDD17+](projects-term/ddd17plus.html): 53-Hour End-To-End DAVIS Driving Dataset.
+3.  [PySealer](/projects-term/pysealer.html): Yet another standalone Python application creator.
 
 ### 2.3 Completed Projects
 
@@ -64,6 +63,7 @@ my current CV.
 3.  [Learning to Navigate without a Map](projects-term/rlvision.html)
 4.  [Understanding Iterative Estimation in Gated Neural Networks](projects-term/iegnns.html)
 5.  [Character-level Chinese-English Translation through ASCII Encoding](/projects-term/en2pinyin.html)
+6.  [DDD20 End-to-End Event Camera Driving Dataset](projects-term/ddd20.html)
 
 ### 2.4 TypeRacer
 
@@ -87,7 +87,9 @@ my current CV.
 
 ### Publications
 
-0. Y. Gao, N.I. Nikolov, Y. Hu, R.H.R. Hahnloser, "Character-Level Translation with Self-attention" in _2020 Annual Conference of the Association for Computational Linguistics_, Seattle, Washington, 2020.
+0. Y. Hu, J. Binas, D. Neil, S-C. Liu, T. Delbruck, "DDD20 End-to-End Event Camera Driving Dataset: Fusing Frames and Events with Deep Learning for Improved Steering Prediction" in _Special session Beyond Traditional Sensing for Intelligent Transportation, The 23rd IEEE International Conference on Intelligent Transportation Systems (ITSC)_ Rhodes, Greece, 2020.
+
+0. Y. Gao, N.I. Nikolov, Y. Hu, R.H.R. Hahnloser, "Character-Level Translation with Self-attention" in _2020 Annual Conference of the Association for Computational Linguistics (ACL)_, Seattle, Washington, 2020.
 
 0. I.A. Lungu, Y. Hu, S-C. Liu, "Multi-Resolution Siamese Networks for One-Shot Learning" in _2020 2nd IEEE International Conference on Artificial Intelligence Circuits and Systems (AICAS)_, Genoa, Italy, 2020.
 
