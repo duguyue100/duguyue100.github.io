@@ -87,6 +87,8 @@ my current CV.
 
 ### Publications
 
+0. Y. Hu, T. Delbruck, S-C. Liu, "Learning to Exploit Multiple Vision Modalities by Using Grafted Networks" in _The 16th European Conference on Computer Vision (ECCV)_, Virtual, 2020.
+
 0. Y. Hu, J. Binas, D. Neil, S-C. Liu, T. Delbruck, "DDD20 End-to-End Event Camera Driving Dataset: Fusing Frames and Events with Deep Learning for Improved Steering Prediction" in _Special session Beyond Traditional Sensing for Intelligent Transportation, The 23rd IEEE International Conference on Intelligent Transportation Systems (ITSC)_ Rhodes, Greece, 2020.
 
 0. Y. Gao, N.I. Nikolov, Y. Hu, R.H.R. Hahnloser, "Character-Level Translation with Self-attention" in _2020 Annual Conference of the Association for Computational Linguistics (ACL)_, Seattle, Washington, 2020.
