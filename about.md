@@ -16,8 +16,7 @@ permalink: /about/
             <b>Yuhuang Hu</b>
         </p>
         <p>
-            Institute of Neuroinformatics<br>
-            University of Zürich and ETH Zürich, Switzerland
+            LatticeFlow AG<br>
         </p>
     </center>
 </div>
@@ -32,7 +31,7 @@ permalink: /about/
 <!--     </center> -->
 <!-- </div> -->
 
-I am a Skeptic, (fake) Hiker, (fake) Biker, (not much) TV addict, ML protégé, AGI supporter, NOT-DOOMED believer, LaTeX tutor, INI Ph.D. student.
+Go player, (fake) Hiker, (fake) Biker, (not anymore) TV addict, AGI supporter, NOT-DOOMED believer, (retired) LaTeX tutor, (former) INI Ph.D. student, Senior Computer Vision Engineer at LatticeFlow AG.
 
 For more information, please click [here](/res/current_cv.html) for
 my current CV.
