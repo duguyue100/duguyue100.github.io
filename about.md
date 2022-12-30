@@ -33,7 +33,7 @@ permalink: /about/
 
 Go player, (fake) Hiker, (fake) Biker, (not anymore) TV addict, AGI supporter, NOT-DOOMED believer, (retired) LaTeX tutor, (former) INI Ph.D. student, Senior Computer Vision Engineer at LatticeFlow AG.
 
-For more information, please click [here](/res/current_cv.html) for
+For more information, please click [here](/res/current_cv.pdf) for
 my current CV.
 
 ## 2. Method
