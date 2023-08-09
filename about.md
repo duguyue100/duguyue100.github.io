@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title:
 permalink: /about/
 ---
 
@@ -31,58 +31,60 @@ permalink: /about/
 <!--     </center> -->
 <!-- </div> -->
 
-Go player, (fake) Hiker, (fake) Biker, (not anymore) TV addict, AGI supporter, NOT-DOOMED believer, (retired) LaTeX tutor, (former) INI Ph.D. student, Senior Computer Vision Engineer at LatticeFlow AG.
+Go player, (fake) Hiker, (fake) Biker, (not anymore) TV addict, AGI supporter,
+NOT-DOOMED believer, (retired) LaTeX tutor, (former) INI Ph.D. student, Senior Computer
+Vision Engineer at LatticeFlow AG.
 
-For more information, please click [here](/res/current_cv.pdf) for
-my current CV.
+For more information, please click [here](/res/current_cv.pdf) for my current CV.
 
 ## 2. Method
 
 ### 2.1 Research Interests
 
-+   Deep Neural Networks
-+   Event-based Learning and Processing
-+   Feature Learning
-+   Computer Vision
-+   Robotic Vision
-+   Image Processing
-+   Artificial General Intelligence
-+   Theory of Everything
++ Deep Neural Networks
++ Event-based Learning and Processing
++ Feature Learning
++ Computer Vision
++ Robotic Vision
++ Reliable and Robust AI
++ Artificial General Intelligence
++ Theory of Everything
 
-### 2.2 Active Projects
-
-1.  [Learning Deep Learning](/learning-deep-learning): A Deep Learning reading list.
-2.  [macman](/projects-term/macman.html): Handy tools for Mac OS X terminal.
-3.  [PySealer](/projects-term/pysealer.html): Yet another standalone Python application creator.
-
-### 2.3 Completed Projects
-
-1.  [DVS Benchmark Datasets for Object Tracking, Action Recognition, and Object Recognition](/projects-term/dvs-dataset.html)
-2.  [Max-Pooling Operations in Deep Spiking Neural Networks](/projects-term/spike-max-pool.html)
-3.  [Learning to Navigate without a Map](projects-term/rlvision.html)
-4.  [Understanding Iterative Estimation in Gated Neural Networks](projects-term/iegnns.html)
-5.  [Character-level Chinese-English Translation through ASCII Encoding](/projects-term/en2pinyin.html)
-6.  [DDD20 End-to-End Event Camera Driving Dataset](projects-term/ddd20.html)
-
-### 2.4 TypeRacer
+### 2.2 TypeRacer
 
 <a href="https://data.typeracer.com/pit/profile?user=duguyue100&ref=badge" target="_top"><img src="https://data.typeracer.com/misc/badge?user=duguyue100" border="0" alt="TypeRacer.com scorecard for user duguyue100"/></a>
 
+### 2.3 Coding Time
+
+<a href="https://wakatime.com/@31e0b916-8fe8-465f-8019-a85184b4887b"><img src="https://wakatime.com/badge/user/31e0b916-8fe8-465f-8019-a85184b4887b.svg" alt="Total time coded since Aug 3 2017" /></a>
+
 ## 3. Experiments
 
-`Python` `C/C++` `GPU` `HTML` `Git` `SVN` `Eclipse` `Emacs` `Vim`
-`zsh` `Atom` `Linux` `Mac OS X` `CMake` `QT` `DVS` `DAViS` `LaTeX`
-`macman` `Midnight Commander`
+`Python` `C/C++` `GPU` `HTML` `Git` `SVN` `Emacs` `Vim/neovim` `zsh` `Linux` `Mac OS X`
+`CMake` `DVS` `DAViS` `LaTeX` `macman` `Midnight Commander`
 
 ## 4. Conclusions
 
 ### 4.1 Likes
 
-`Computer` `Science` `Mathematics` `Machine Learning` `Artificial Intelligence` `Pretty PDFs` $$\LaTeX$$ `Git` `Reasoning` `Intellectual Debates` `Moral Consequence` `Robot` `History` `Future` `Bejing Opera` `Markdown` `Marvel` `Ice-cream` `Smart Girl Engineer` `Physics` `TV Shows` `Cats and Dogs pics` `Cash` `Scientific American` `Kid that isn't mine` `Being minority` `GSoC` `Accidentally find a nice song` `Tom Hanks in girl's voice` `Chinese Calligraphy` `New Emacs Tricks` `Surprising ending` `Reading Endless Article` `Machine Learning in Browser` `Write in Emacs` `Recurrent Neural Networks` `Vim` `Terminal`
+`Computer` `Science` `Mathematics` `Machine Learning` `Artificial Intelligence`
+`Pretty PDFs` $$\LaTeX$$ `Git` `Reasoning` `Intellectual Debates` `Moral Consequence`
+`Robot` `History` `Future` `Bejing Opera` `Markdown` `Marvel` `Ice-cream`
+`Smart Girl Engineer` `Physics` `TV Shows` `Cats and Dogs pics` `Scientific American`
+`Being minority` `GSoC` `Accidentally find a nice song` `Tom Hanks in girl's voice`
+`Chinese Calligraphy` `Surprising ending` `Reading Endless Article`
+`Machine Learning in Browser` `Write in Emacs` `Recurrent Neural Networks` `Vim\neovim`
+`Terminal`
 
 ### 4.2 Dislikes
 
-`Low Network Speed` `Cannot Explain Myself Precisely` `Another Meeting Delay` `Know-it-all` `Fake Social Manners` `Around with People who I don't like` `All kinds of reunion` `Tourism` `Ambush my back` `Exams` `Intentional delay` `Birthday` `Sending gifts` `Things out of control` `New guy` `Meaningless date` `Boring lecture` `Select gifts` `Blind date` `Season Finale` `Have no idea about what's next` `Coders who don't follow standards` `Person who refuses to learn useful things`
+`Low Network Speed` `Cannot Explain Myself Precisely` `Another Meeting Delay`
+`Know-it-all` `Fake Social Manners` `Around with People who I don't like`
+`All kinds of reunion` `Tourism` `Ambush my back` `Exams` `Intentional delay`
+`Birthday` `Sending gifts` `Things out of control` `New guy` `Meaningless date`
+`Boring lecture` `Select gifts` `Season Finale`
+`Have no idea about what's next` `Coders who don't follow standards`
+`Person who refuses to learn useful things`
 
 ### Publications
 
