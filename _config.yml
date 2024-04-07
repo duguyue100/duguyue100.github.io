@@ -1,5 +1,5 @@
 # Site settings
-title:       DGY 
+title:       DGY
 email:       duguyue100@gmail.com
 author:      Yuhuang Hu
 description: "A proud WE-ARE-NOT-DOOMED fan."
@@ -20,7 +20,7 @@ ajaxify_contact_form: false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname: dgyblog
+disqus_shortname:
 
 # Social icons
 github_username: duguyue100
