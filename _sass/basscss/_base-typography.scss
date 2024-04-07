@@ -52,8 +52,8 @@ hr {
 }
 
 blockquote {
-  margin-top: $space-3;
-  margin-bottom: $space-3;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 0;
   padding-left: $space-2;
   padding-right: $space-2;
@@ -61,7 +61,7 @@ blockquote {
 
 blockquote,
 blockquote p {
-  font-size: $h3;
+  font-size: $h5;
   font-style: italic;
 }
 
