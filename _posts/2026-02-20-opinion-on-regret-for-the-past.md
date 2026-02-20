@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 读《伤逝》管见
-date: 2026-02-19
+date: 2026-02-20
 summary:
 categories: opinion
 ---
